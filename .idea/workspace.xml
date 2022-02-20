@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\devTools\maven\maven_repository" />
+        <option name="mavenHome" value="E:/devTools/maven/apache-maven-3.5.2" />
+        <option name="userSettingsFile" value="E:\devTools\maven\apache-maven-3.5.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="jdkForImporter" value="1.8" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+    <option name="vmOptions" value="-DarchetypeCatalog=internal" />
+  </component>
+  <component name="ProjectId" id="25MeYJvgTpQdkOs5Z3ZF4iy9c3i" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+  </component>
+  <component name="RunManager" selected="JUnit.IntegerLearn.test">
+    <configuration name="IntegerLearn.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Base-DataType-01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.roily" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.IntegerLearn" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Base-DataType-01" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <option name="METHOD_NAME" value="test01" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.IntegerLearn.test" />
+        <item itemvalue="JUnit.test.test01" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Roly_Fish\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="" />
+      <created>1645341428881</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1645341428881</updated>
+      <workItem from="1645341433850" duration="241000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1237" height="211" key="GridCell.Tab.0.bottom" timestamp="1645341905342">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="211" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1645341905342" />
+    <state width="1237" height="211" key="GridCell.Tab.0.center" timestamp="1645341905342">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="211" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1645341905342" />
+    <state width="1237" height="211" key="GridCell.Tab.0.left" timestamp="1645341905342">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="211" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1645341905342" />
+    <state width="1237" height="211" key="GridCell.Tab.0.right" timestamp="1645341905342">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="211" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1645341905342" />
+    <state x="27" y="69" key="new project wizard" timestamp="1645341540177">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="27" y="69" key="new project wizard/0.0.1280.720@0.0.1280.720" timestamp="1645341540177" />
+  </component>
+</project>
