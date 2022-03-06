@@ -12,6 +12,7 @@
         <module>Base-DataType-01</module>
         <module>Base-Collection-01</module>
         <module>Base-Collection-02</module>
+        <module>Mysql-jdbc</module>
     </modules>
 
     <dependencies>
