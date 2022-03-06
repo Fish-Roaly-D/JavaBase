@@ -40,7 +40,6 @@ public class ArrayListLearn {
         Field elementData21 = list.getClass().getDeclaredField("elementData");
         System.out.println(VM.current().addressOf(elementData21));
 
-
         for (int i = 0; i < 15; i++) {
             list.add("a");
         }
