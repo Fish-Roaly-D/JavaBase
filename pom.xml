@@ -13,6 +13,7 @@
         <module>Base-Collection-01</module>
         <module>Base-Collection-02</module>
         <module>Mysql-jdbc</module>
+        <module>Mysql-DataSource</module>
     </modules>
 
     <dependencies>

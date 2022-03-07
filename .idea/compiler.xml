@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Mysql-DataSource" />
         <module name="Mysql-jdbc" />
         <module name="Base-Collection-01" />
         <module name="Base-Collection-02" />

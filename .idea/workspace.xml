@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="" />
+    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,7 +102,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Mysql-DataSource/src/main/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -107,80 +112,98 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.roily.test01" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\programmeTools\idea\git\JavaBase\Mysql-DataSource\src\main\resources" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.TransactionTest">
-    <configuration name="ConnectionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.roily.test02.ConnectionTest" />
-      <module name="Mysql-jdbc" />
+  <component name="RunManager" selected="JUnit.DruidTest.test03">
+    <configuration name="C3P0Test.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mysql-DataSource" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.test02.*" />
+          <option name="PATTERN" value="com.roily.C3P0.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.roily.C3P0" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.C3P0.C3P0Test" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DaoTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.roily.test02.DaoTest" />
-      <module name="Mysql-jdbc" />
+    <configuration name="DBCPTest.testConn4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mysql-DataSource" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.test02.*" />
+          <option name="PATTERN" value="com.roily.dbcp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.roily.dbcp" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.dbcp.DBCPTest" />
+      <option name="METHOD_NAME" value="testConn4" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MysqlTest02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.roily.test01.MysqlTest02" />
-      <module name="Mysql-jdbc" />
+    <configuration name="DruidTest.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mysql-DataSource" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.test01.*" />
+          <option name="PATTERN" value="com.roily.Druid.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.roily.Druid" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.Druid.DruidTest" />
+      <option name="METHOD_NAME" value="test01" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MysqlTest03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.roily.test01.MysqlTest03" />
-      <module name="Mysql-jdbc" />
+    <configuration name="DruidTest.test02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mysql-DataSource" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.test01.*" />
+          <option name="PATTERN" value="com.roily.Druid.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.roily.Druid" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.Druid.DruidTest" />
+      <option name="METHOD_NAME" value="test02" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TransactionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.roily.test03.TransactionTest" />
-      <module name="Mysql-jdbc" />
+    <configuration name="DruidTest.test03" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mysql-DataSource" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.test03.*" />
+          <option name="PATTERN" value="com.roily.Druid.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.roily.Druid" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.Druid.DruidTest" />
+      <option name="METHOD_NAME" value="test03" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TransactionTest" />
-        <item itemvalue="Application.DaoTest" />
-        <item itemvalue="Application.ConnectionTest" />
-        <item itemvalue="Application.MysqlTest03" />
-        <item itemvalue="Application.MysqlTest02" />
+        <item itemvalue="JUnit.DruidTest.test03" />
+        <item itemvalue="JUnit.DruidTest.test02" />
+        <item itemvalue="JUnit.DruidTest.test01" />
+        <item itemvalue="JUnit.DBCPTest.testConn4" />
+        <item itemvalue="JUnit.C3P0Test.test" />
       </list>
     </recent_temporary>
   </component>
@@ -198,6 +221,11 @@
       <workItem from="1646272561825" duration="613000" />
       <workItem from="1646306440317" duration="59000" />
       <workItem from="1646541844353" duration="22775000" />
+      <workItem from="1646583025898" duration="1245000" />
+      <workItem from="1646616814364" duration="5665000" />
+      <workItem from="1646628942399" duration="1791000" />
+      <workItem from="1646642449260" duration="1070000" />
+      <workItem from="1646658734327" duration="10360000" />
     </task>
     <servers />
   </component>
@@ -205,14 +233,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="233" y="19" key="#Project_Structure" timestamp="1646542086424">
+    <state x="233" y="19" key="#Project_Structure" timestamp="1646583300297">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="233" y="19" key="#Project_Structure/0.0.1280.720@0.0.1280.720" timestamp="1646542086424" />
-    <state x="184" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1646543346486">
+    <state x="233" y="19" key="#Project_Structure/0.0.1280.720@0.0.1280.720" timestamp="1646583300297" />
+    <state x="184" y="31" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1646662066958">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="184" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1646543346486" />
+    <state x="184" y="31" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1646662066958" />
     <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser" timestamp="1646554306980">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -225,22 +253,26 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="357" y="205" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.720@0.0.1280.720" timestamp="1646561752636" />
-    <state width="1237" height="153" key="GridCell.Tab.0.bottom" timestamp="1646577594304">
+    <state x="421" y="116" key="FileChooserDialogImpl" timestamp="1646660877641">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="153" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1646577594304" />
-    <state width="1237" height="153" key="GridCell.Tab.0.center" timestamp="1646577594304">
+    <state x="421" y="116" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1646660877641" />
+    <state width="1237" height="232" key="GridCell.Tab.0.bottom" timestamp="1646668957439">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="153" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1646577594304" />
-    <state width="1237" height="153" key="GridCell.Tab.0.left" timestamp="1646577594304">
+    <state width="1237" height="232" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1646668957439" />
+    <state width="1237" height="232" key="GridCell.Tab.0.center" timestamp="1646668957439">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="153" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1646577594304" />
-    <state width="1237" height="153" key="GridCell.Tab.0.right" timestamp="1646577594304">
+    <state width="1237" height="232" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1646668957439" />
+    <state width="1237" height="232" key="GridCell.Tab.0.left" timestamp="1646668957439">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="153" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1646577594304" />
+    <state width="1237" height="232" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1646668957439" />
+    <state width="1237" height="232" key="GridCell.Tab.0.right" timestamp="1646668957439">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="232" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1646668957439" />
     <state width="1237" height="167" key="GridCell.Tab.1.bottom" timestamp="1646060506771">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -257,6 +289,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state width="1237" height="167" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1646060506771" />
+    <state x="171" y="16" key="Maven.ArtifactSearchDialog" timestamp="1646665959803">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="171" y="16" key="Maven.ArtifactSearchDialog/0.0.1280.720@0.0.1280.720" timestamp="1646665959803" />
     <state width="560" height="718" key="com.intellij.byteCodeViewer.ShowByteCodeAction" timestamp="1645774390229">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -269,17 +305,31 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="371" y="125" key="extract.method.dialog/0.0.1280.720@0.0.1280.720" timestamp="1646565264800" />
-    <state x="56" y="67" key="new project wizard" timestamp="1646542073200">
+    <state x="56" y="54" key="new project wizard" timestamp="1646583289280">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="56" y="67" key="new project wizard/0.0.1280.720@0.0.1280.720" timestamp="1646542073200" />
+    <state x="56" y="54" key="new project wizard/0.0.1280.720@0.0.1280.720" timestamp="1646583289280" />
     <state x="297" y="161" key="run.anything.popup" timestamp="1645518340461">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="297" y="161" key="run.anything.popup/0.0.1280.720@0.0.1280.720" timestamp="1645518340461" />
-    <state x="426" y="149" width="672" height="678" key="search.everywhere.popup" timestamp="1645770089702">
+    <state x="549" y="287" width="672" height="678" key="search.everywhere.popup" timestamp="1646666843072">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="426" y="149" width="672" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1645770089702" />
+    <state x="549" y="287" width="672" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1646666843072" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>jar://E:/devTools/maven/maven_repository/com/mchange/c3p0/0.9.5.5/c3p0-0.9.5.5-sources.jar!/com/mchange/v2/c3p0/impl/NewProxyConnection.java</url>
+          <line>1864</line>
+          <properties class="com.mchange.v2.c3p0.impl.NewProxyConnection" method="isWrapperForInner">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
