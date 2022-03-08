@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.roily.mapper.DepartmentMapper">
+    <select id="queryBatch" resultType="com.roily.entity.Department">
+        select * from department
+    </select>
+
+    <select id="queryBatch2" resultType="department">
+        select * from department
+    </select>
+
+    <select id="queryById" parameterType="integer" resultType="department">
+        select * from department where deptId = #{id}
+    </select>
+
+    <insert id="insertIntoDept">
+        insert into department(`deptName`,`delete`,`create_time`,`modify_time`)
+        values (#{deptName},#{delete},#{createTime},#{modifyTime})
+    </insert>
+
+    <insert id="insertIntoDept2">
+        insert into `department`(`deptName` , `delete`)
+        values(#{deptName}, #{delete})
+    </insert>
+
+    <delete id="deleteById">
+        delete from `department` where `deptId` = #{id}
+    </delete>
+
+    <update id="modifyById" >
+        update `department`
+        set
+        `deptName` = #{deptName},
+        `modify_time` = #{modifyTime}
+        where `deptId` = #{deptId}
+    </update>
+</mapper>

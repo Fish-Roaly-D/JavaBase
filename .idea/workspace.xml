@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Mybatis-01/Mybatis-01.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -46,6 +49,28 @@
         <item name="mybatis_plus: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="department: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost [2]" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost [2]" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost [2]" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="mybatis_plus: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost [2]" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="mybatis_plus: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="department: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
@@ -55,8 +80,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Mybatis" />
         <option value="db.properties" />
         <option value="Class" />
+        <option value="MybatisMapper" />
       </list>
     </option>
   </component>
@@ -102,7 +129,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Mysql-DataSource/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../space/workspace2/mybatis" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -113,85 +140,86 @@
       <recent name="com.roily.test01" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\programmeTools\idea\git\JavaBase\Mybatis-01\src\main\java\com\roily\mapper" />
       <recent name="E:\programmeTools\idea\git\JavaBase\Mysql-DataSource\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DruidTest.test03">
-    <configuration name="C3P0Test.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Mysql-DataSource" />
+  <component name="RunManager" selected="JUnit.test01.testConn9">
+    <configuration name="test01.testConn5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mybatis-01" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.C3P0.*" />
+          <option name="PATTERN" value="com.roily.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.C3P0" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.C3P0.C3P0Test" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="PACKAGE_NAME" value="com.roily.test" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.test.test01" />
+      <option name="METHOD_NAME" value="testConn5" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DBCPTest.testConn4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Mysql-DataSource" />
+    <configuration name="test01.testConn6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mybatis-01" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.dbcp.*" />
+          <option name="PATTERN" value="com.roily.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.dbcp" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.dbcp.DBCPTest" />
-      <option name="METHOD_NAME" value="testConn4" />
+      <option name="PACKAGE_NAME" value="com.roily.test" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.test.test01" />
+      <option name="METHOD_NAME" value="testConn6" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DruidTest.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Mysql-DataSource" />
+    <configuration name="test01.testConn7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mybatis-01" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.Druid.*" />
+          <option name="PATTERN" value="com.roily.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.Druid" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.Druid.DruidTest" />
-      <option name="METHOD_NAME" value="test01" />
+      <option name="PACKAGE_NAME" value="com.roily.test" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.test.test01" />
+      <option name="METHOD_NAME" value="testConn7" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DruidTest.test02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Mysql-DataSource" />
+    <configuration name="test01.testConn8" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mybatis-01" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.Druid.*" />
+          <option name="PATTERN" value="com.roily.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.Druid" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.Druid.DruidTest" />
-      <option name="METHOD_NAME" value="test02" />
+      <option name="PACKAGE_NAME" value="com.roily.test" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.test.test01" />
+      <option name="METHOD_NAME" value="testConn8" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DruidTest.test03" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Mysql-DataSource" />
+    <configuration name="test01.testConn9" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mybatis-01" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.Druid.*" />
+          <option name="PATTERN" value="com.roily.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.Druid" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.Druid.DruidTest" />
-      <option name="METHOD_NAME" value="test03" />
+      <option name="PACKAGE_NAME" value="com.roily.test" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.test.test01" />
+      <option name="METHOD_NAME" value="testConn9" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -199,11 +227,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DruidTest.test03" />
-        <item itemvalue="JUnit.DruidTest.test02" />
-        <item itemvalue="JUnit.DruidTest.test01" />
-        <item itemvalue="JUnit.DBCPTest.testConn4" />
-        <item itemvalue="JUnit.C3P0Test.test" />
+        <item itemvalue="JUnit.test01.testConn9" />
+        <item itemvalue="JUnit.test01.testConn8" />
+        <item itemvalue="JUnit.test01.testConn7" />
+        <item itemvalue="JUnit.test01.testConn6" />
+        <item itemvalue="JUnit.test01.testConn5" />
       </list>
     </recent_temporary>
   </component>
@@ -225,7 +253,10 @@
       <workItem from="1646616814364" duration="5665000" />
       <workItem from="1646628942399" duration="1791000" />
       <workItem from="1646642449260" duration="1070000" />
-      <workItem from="1646658734327" duration="10360000" />
+      <workItem from="1646658734327" duration="10636000" />
+      <workItem from="1646716468169" duration="2505000" />
+      <workItem from="1646733516537" duration="3275000" />
+      <workItem from="1646743902664" duration="11128000" />
     </task>
     <servers />
   </component>
@@ -237,14 +268,18 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="233" y="19" key="#Project_Structure/0.0.1280.720@0.0.1280.720" timestamp="1646583300297" />
-    <state x="184" y="31" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1646662066958">
+    <state x="11" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1646718397211">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="184" y="31" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1646662066958" />
+    <state x="11" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1646718397211" />
     <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser" timestamp="1646554306980">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1646554306980" />
+    <state x="238" y="286" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1646718677552">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="238" y="286" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1280.720@0.0.1280.720" timestamp="1646718677552" />
     <state x="371" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1645348752112">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -253,26 +288,26 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="357" y="205" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.720@0.0.1280.720" timestamp="1646561752636" />
-    <state x="421" y="116" key="FileChooserDialogImpl" timestamp="1646660877641">
+    <state x="421" y="116" key="FileChooserDialogImpl" timestamp="1646745552611">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="421" y="116" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1646660877641" />
-    <state width="1237" height="232" key="GridCell.Tab.0.bottom" timestamp="1646668957439">
+    <state x="421" y="116" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1646745552611" />
+    <state width="1237" height="218" key="GridCell.Tab.0.bottom" timestamp="1646754952566">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="232" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1646668957439" />
-    <state width="1237" height="232" key="GridCell.Tab.0.center" timestamp="1646668957439">
+    <state width="1237" height="218" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1646754952566" />
+    <state width="1237" height="218" key="GridCell.Tab.0.center" timestamp="1646754952566">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="232" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1646668957439" />
-    <state width="1237" height="232" key="GridCell.Tab.0.left" timestamp="1646668957439">
+    <state width="1237" height="218" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1646754952566" />
+    <state width="1237" height="218" key="GridCell.Tab.0.left" timestamp="1646754952566">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="232" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1646668957439" />
-    <state width="1237" height="232" key="GridCell.Tab.0.right" timestamp="1646668957439">
+    <state width="1237" height="218" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1646754952566" />
+    <state width="1237" height="218" key="GridCell.Tab.0.right" timestamp="1646754952566">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="232" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1646668957439" />
+    <state width="1237" height="218" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1646754952566" />
     <state width="1237" height="167" key="GridCell.Tab.1.bottom" timestamp="1646060506771">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -305,18 +340,18 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="371" y="125" key="extract.method.dialog/0.0.1280.720@0.0.1280.720" timestamp="1646565264800" />
-    <state x="56" y="54" key="new project wizard" timestamp="1646583289280">
+    <state x="56" y="54" key="new project wizard" timestamp="1646716583190">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="56" y="54" key="new project wizard/0.0.1280.720@0.0.1280.720" timestamp="1646583289280" />
+    <state x="56" y="54" key="new project wizard/0.0.1280.720@0.0.1280.720" timestamp="1646716583190" />
     <state x="297" y="161" key="run.anything.popup" timestamp="1645518340461">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="297" y="161" key="run.anything.popup/0.0.1280.720@0.0.1280.720" timestamp="1645518340461" />
-    <state x="549" y="287" width="672" height="678" key="search.everywhere.popup" timestamp="1646666843072">
+    <state x="549" y="287" width="672" height="678" key="search.everywhere.popup" timestamp="1646752788842">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="549" y="287" width="672" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1646666843072" />
+    <state x="549" y="287" width="672" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1646752788842" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
