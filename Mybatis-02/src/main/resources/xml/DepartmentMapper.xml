@@ -17,7 +17,7 @@
 
     <insert id="insertIntoDept">
         insert into department(`deptName`,`delete`,`create_time`,`modify_time`)
-        values (#{deptName},#{delete},#{createTime},#{modifyTime})
+        values (#{deptName,jdbcType=VARCHAR},#{delete},#{createTime},#{modifyTime})
     </insert>
 
     <insert id="insertIntoDept2">

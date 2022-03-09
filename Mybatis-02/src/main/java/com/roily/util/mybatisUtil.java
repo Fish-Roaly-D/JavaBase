@@ -23,12 +23,6 @@ public class mybatisUtil {
 
         try {
             InputStream in = Resources.getResourceAsStream("mybatis-config.xml");
-            //Properties prop = new Properties();
-            //prop.load(in);
-
-            //Properties properties = new Properties();
-            //properties.setProperty("username","rootxx");
-            //sqlSessionFactory = new SqlSessionFactoryBuilder().build(in,properties);
 
             sqlSessionFactory = new SqlSessionFactoryBuilder().build(in);
 

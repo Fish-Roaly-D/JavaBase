@@ -12,6 +12,7 @@
         <module name="Base-Collection-01" />
         <module name="Base-Collection-02" />
         <module name="Base-DataType-01" />
+        <module name="Mybatis-02" />
         <module name="Mybatis-01" />
       </profile>
     </annotationProcessing>

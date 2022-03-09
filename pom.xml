@@ -15,6 +15,7 @@
         <module>Mysql-jdbc</module>
         <module>Mysql-DataSource</module>
         <module>Mybatis-01</module>
+        <module>Mybatis-02</module>
     </modules>
 
     <dependencies>

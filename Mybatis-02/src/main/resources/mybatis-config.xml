@@ -17,7 +17,11 @@
 <!--                <typeAlias type="com.roily.entity.Department" alias="deptAlias"/>-->
     </typeAliases>
 
-    <environments default="dev1">
+    <typeHandlers>
+        <typeHandler handler="com.roily.typeHandler.myCustomTypeHandler" javaType="String" jdbcType="VARCHAR"/>
+    </typeHandlers>
+
+    <environments default="druid">
         <environment id="dev1">
             <transactionManager type="JDBC"/>
             <dataSource type="POOLED">
@@ -38,10 +42,22 @@
                 <property name="password" value="123456"/>
             </dataSource>
         </environment>
+
+        <environment id="druid">
+            <transactionManager type="JDBC"/>
+            <dataSource type="com.roily.util.DruidDataSourceFactory">
+                <property name="driverClassName" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
     </environments>
 
 
     <mappers>
-        <mapper resource="xml/DepartmentMapper.xml"/>
+<!--        <mapper resource="xml/DepartmentMapper.xml"/>-->
+<!--        <mapper url="file:E:/programmeTools/idea/git/JavaBase/Mybatis-02/src/main/resources/xml/DepartmentMapper.xml"/>-->
+            <mapper class="com.roily.mapper.DepartmentMapper"/>
     </mappers>
 </configuration>

@@ -41,7 +41,6 @@ public class test01 {
     public void testConn2() throws IOException {
 
         SqlSession sqlSession = mybatisUtil.OpenSqlSession();
-
         System.out.println(sqlSession);
         System.out.println(sqlSession.getConnection());
     }
@@ -146,6 +145,33 @@ public class test01 {
         sqlSession.commit();
 
         System.out.println(rows);
+    }
+
+
+    @Test
+    public void testConn10() throws IOException {
+
+        SqlSession sqlSession = mybatisUtil.OpenSqlSession();
+
+        DepartmentMapper mapper = sqlSession.getMapper(DepartmentMapper.class);
+
+        List<Department> departments = mapper.queryBatchAliasTest();
+        for (Department department : departments) {
+            System.out.println(department);
+        }
+    }
+
+    @Test
+    public void testConn11() throws IOException {
+
+        SqlSession sqlSession = mybatisUtil.OpenSqlSession();
+
+        DepartmentMapper mapper = sqlSession.getMapper(DepartmentMapper.class);
+
+        List<Department> departments = mapper.queryBatchAliasTest2();
+        for (Department department : departments) {
+            System.out.println(department);
+        }
     }
 
 

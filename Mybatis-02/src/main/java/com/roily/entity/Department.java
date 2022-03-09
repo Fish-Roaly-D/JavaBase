@@ -2,7 +2,6 @@ package com.roily.entity;
 
 
 import lombok.*;
-import org.apache.ibatis.type.Alias;
 
 import java.util.Date;
 
