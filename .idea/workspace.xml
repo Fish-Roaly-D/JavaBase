@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mybatis-01/src/main/java/com/roily/entity/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mybatis-01/src/main/java/com/roily/entity/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mybatis-01/src/main/java/com/roily/mapper/DepartmentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mybatis-01/src/main/java/com/roily/mapper/DepartmentMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mybatis-01/src/main/java/com/roily/test/test01.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mybatis-01/src/main/java/com/roily/test/test01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mybatis-01/src/main/java/com/roily/util/mybatisUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mybatis-01/src/main/java/com/roily/util/mybatisUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mybatis-01/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mybatis-01/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mybatis-01/src/main/resources/xml/DepartmentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mybatis-01/src/main/resources/xml/DepartmentMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -269,7 +261,7 @@
       <workItem from="1646733516537" duration="3275000" />
       <workItem from="1646743902664" duration="26755000" />
       <workItem from="1646816721499" duration="5789000" />
-      <workItem from="1646836168276" duration="1579000" />
+      <workItem from="1646836168276" duration="2292000" />
     </task>
     <servers />
   </component>
