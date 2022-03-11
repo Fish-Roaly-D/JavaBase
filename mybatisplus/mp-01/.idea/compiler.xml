@@ -7,16 +7,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="JavaBaseCollection" />
-        <module name="Mysql-DataSource" />
-        <module name="Mybatis-02" />
-        <module name="Mysql-jdbc" />
-        <module name="Base-Collection-01" />
-        <module name="Base-Collection-02" />
-        <module name="Base-DataType-01" />
-        <module name="Mybatis-plus-01" />
-        <module name="Mybatis-01" />
+        <module name="mp-01" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="mp-01" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="mp-01" options="-parameters" />
+    </option>
   </component>
 </project>

@@ -28,3 +28,5 @@ Base-DataType-01/target
 Mysql-DataSource/target
 Mysql-jdbc/target
 */target
+
+mybatisplus/mp-01/target/
