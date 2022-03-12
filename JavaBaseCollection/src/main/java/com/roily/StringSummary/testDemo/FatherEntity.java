@@ -23,4 +23,10 @@ public class FatherEntity {
     public FatherEntity(StringBuffer sb) {
         this.stringBuffer = sb;
     }
+
+    //提供修改方法
+    public void modifySb(String append){
+
+        stringBuffer.append(append);
+    }
 }

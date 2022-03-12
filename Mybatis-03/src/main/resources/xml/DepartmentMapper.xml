@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.roily.mapper.DepartmentMapper">
+
+    <sql id="department_base_colum">
+        deptId,deptName,`delete`,create_time,modify_time
+    </sql>
+
+    <select id="baseColum" resultType="department">
+        select
+        <include refid="department_base_colum"/>
+        from department
+        <trim prefix="where" prefixOverrides="and |or">
+            and deptId = #{id}
+        </trim>
+    </select>
+
+    <sql id="department_base_colum_map">
+        deptId intProperty,deptName stringProperty,`delete`,create_time dateProperty,modify_time
+    </sql>
+
+    <select id="resultTypeTest" resultType="resultEntity">
+        select
+        <include refid="department_base_colum_map"/>
+        from department
+    </select>
+
+    <select id="resultMapTest" resultMap="resultMapEntity">
+        select
+        <include refid="department_base_colum"/>
+        from department
+    </select>
+
+    <resultMap id="resultMapEntity" type="resultEntity">
+
+        <result column="deptId" property="intProperty"/>
+        <result column="deptName" property="stringProperty"/>
+        <result column="create_time" property="dateProperty"/>
+
+    </resultMap>
+
+    <select id="trimToWhere" resultType="department">
+        select * from department
+        <trim prefix="where" prefixOverrides="and |or">
+            and deptId = #{id}
+        </trim>
+    </select>
+
+
+    <select id="queryById" resultType="department">
+        select * from department
+        <where>
+            and deptId = #{id}
+        </where>
+    </select>
+
+    <select id="queryByIdIf" resultType="department">
+        select * from department
+        <where>
+            <if test="id gt 1">
+                and deptId = #{id}
+            </if>
+        </where>
+    </select>
+
+    <update id="updateByEntity" parameterType="department">
+
+        update department
+        <set>
+            <if test=" deptName!=null and deptName!='' ">
+                deptName = #{deptName},
+            </if>
+            <if test=" delete gte 0 ">
+                `delete` = #{delete},
+            </if>
+        </set>
+        <where>
+            deptId = #{deptId}
+        </where>
+
+    </update>
+
+    <select id="queryIn" resultType="department">
+        select * from department
+        <where>
+            <if test=" ids==null or ids.length==0 ">
+                1 = 2
+            </if>
+            <if test=" ids!=null and ids.length gt 0 ">
+                <foreach collection="ids" item="item" index="index"
+                         open="deptId in (" separator="," close=")">
+                    <!--    #{item}           -->
+                    #{item}
+                </foreach>
+            </if>
+        </where>
+    </select>
+
+
+    <select id="queryInMap" resultType="department">
+        select * from department
+        <where>
+            <if test=" map == null or map.size==0 ">
+                1 = 2
+            </if>
+            <if test=" map!=null and map.size gt 0 ">
+                <foreach collection="map" item="value" index="key"
+                         open="deptId in (" separator="," close=")">
+                    <!--    #{item}           -->
+                    #{value}
+                </foreach>
+            </if>
+        </where>
+    </select>
+
+</mapper>
