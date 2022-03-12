@@ -4,6 +4,12 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.roily.mapper.DepartmentMapper">
 
+    <cache
+            eviction="FIFO"
+            flushInterval="3000"
+            size="512"
+            readOnly="true"/>
+
     <sql id="department_base_colum">
         deptId,deptName,`delete`,create_time,modify_time
     </sql>
@@ -113,6 +119,12 @@
                 </foreach>
             </if>
         </where>
+    </select>
+
+    <select id="selectAsMap" resultType="map">
+        select e.*, d.deptName from department d,employee e
+        where e.deptId = d.deptId
+        and e.id = #{id}
     </select>
 
 </mapper>

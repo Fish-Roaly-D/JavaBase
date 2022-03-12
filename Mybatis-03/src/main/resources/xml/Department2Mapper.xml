@@ -8,5 +8,42 @@
         select * from department
     </select>
 
+    <select id="getDeptListInfo" resultMap="departmentInfo">
+        select * from department
+    </select>
+
+
+    <resultMap id="departmentInfo" type="Department2">
+
+        <!-- Teachers类中新增List<Students> teacherHasStudents属性字段
+                javaType: 指定在java中的字段类型属性
+                ofType: 指定类型所属类
+                select: 使resultMap绑定指定<select>标签
+                column: 使resultMap传递指定的属性字段
+        -->
+        <collection property="employeeList" javaType="list" ofType="department2" select="getEmployeesByDeptId"
+                    column="deptId"/>
+    </resultMap>
+
+    <!-- 子查询：学生信息 -->
+    <select id="getEmployeesByDeptId" resultType="employee">
+	    select * from employee where deptId = #{deptId}
+    </select>
+
+
+    <select id="getDeptListInfoResult" resultMap="departmentInfoResult">
+        select d.deptId, d.deptName,e.id,e.empName
+        from department d,employee e
+        where d.deptId = e.deptId
+    </select>
+    <resultMap id="departmentInfoResult" type="department2">
+        <id property="deptId" column="deptId"/>
+        <result property="deptName" column="deptName"/>
+
+        <collection property="employeeList" ofType="employee">
+            <result property="id" column="id"/>
+            <result property="empName" column="empName"/>
+        </collection>
+    </resultMap>
 
 </mapper>

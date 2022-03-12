@@ -3,6 +3,7 @@ package com.roily.entity;
 
 import lombok.*;
 
+import java.io.Serializable;
 import java.util.Date;
 
 @Data
@@ -11,7 +12,7 @@ import java.util.Date;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Department {
+public class Department implements Serializable {
 
   private long deptId;
   private String deptName;

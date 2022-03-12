@@ -45,4 +45,6 @@ public interface DepartmentMapper {
     List<ResultEntity> resultMapTest();
 
 
+    //baseColum
+    Map<String,Object> selectAsMap(@Param("id") Integer id);
 }

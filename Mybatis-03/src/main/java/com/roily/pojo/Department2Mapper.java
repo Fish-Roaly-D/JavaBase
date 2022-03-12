@@ -11,4 +11,8 @@ import java.util.List;
 public interface Department2Mapper {
 
     List<Department2> getDeptList();
+
+    List<Department2> getDeptListInfo();
+
+    List<Department2> getDeptListInfoResult();
 }

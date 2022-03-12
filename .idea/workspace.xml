@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaBaseCollection/src/main/java/com/roily/StringSummary/testDemo/FatherEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaBaseCollection/src/main/java/com/roily/StringSummary/testDemo/FatherEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaBaseCollection/src/main/java/com/roily/StringSummary/testDemo/SonEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaBaseCollection/src/main/java/com/roily/StringSummary/testDemo/SonEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaBaseCollection/src/main/java/com/roily/StringSummary/testDemo/Test01.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaBaseCollection/src/main/java/com/roily/StringSummary/testDemo/Test01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mysql-jdbc/src/main/java/com/roily/test01/MysqlTest01.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mysql-jdbc/src/main/java/com/roily/test01/MysqlTest01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-03/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mybatis-03/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-03/src/main/java/com/roily/entity/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mybatis-03/src/main/java/com/roily/entity/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-03/src/main/java/com/roily/mapper/DepartmentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mybatis-03/src/main/java/com/roily/mapper/DepartmentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-03/src/main/java/com/roily/pojo/Department2Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mybatis-03/src/main/java/com/roily/pojo/Department2Mapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-03/src/main/java/com/roily/pojo/EmployeeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mybatis-03/src/main/java/com/roily/pojo/EmployeeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-03/src/main/java/com/roily/test/test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mybatis-03/src/main/java/com/roily/test/test2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-03/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mybatis-03/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-03/src/main/resources/xml/Department2Mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mybatis-03/src/main/resources/xml/Department2Mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-03/src/main/resources/xml/DepartmentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mybatis-03/src/main/resources/xml/DepartmentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-03/src/main/resources/xml/EmployeeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mybatis-03/src/main/resources/xml/EmployeeMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +48,20 @@
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="mybatis_plus: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="department: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="mybatis_plus: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="employee: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="@localhost [2]" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
@@ -74,10 +92,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Mybatis" />
-        <option value="db.properties" />
-        <option value="Class" />
         <option value="Interface" />
         <option value="MybatisMapper" />
+        <option value="db.properties" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -150,8 +168,8 @@
       <select />
     </treeState>
   </component>
-  <component name="RunManager" selected="JUnit.test2.test02">
-    <configuration name="test2.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.cachTest.cachTest5">
+    <configuration name="cachTest.cachTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Mybatis-03" />
       <extension name="coverage">
         <pattern>
@@ -160,14 +178,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.roily.test" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.test.test2" />
-      <option name="METHOD_NAME" value="test01" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.test.cachTest" />
+      <option name="METHOD_NAME" value="cachTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test2.test02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="cachTest.cachTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Mybatis-03" />
       <extension name="coverage">
         <pattern>
@@ -176,14 +194,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.roily.test" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.test.test2" />
-      <option name="METHOD_NAME" value="test02" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.test.cachTest" />
+      <option name="METHOD_NAME" value="cachTest2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test.test7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="cachTest.cachTest3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Mybatis-03" />
       <extension name="coverage">
         <pattern>
@@ -192,14 +210,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.roily.test" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.test.test" />
-      <option name="METHOD_NAME" value="test7" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.test.cachTest" />
+      <option name="METHOD_NAME" value="cachTest3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test.test8" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="cachTest.cachTest4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Mybatis-03" />
       <extension name="coverage">
         <pattern>
@@ -208,14 +226,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.roily.test" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.test.test" />
-      <option name="METHOD_NAME" value="test8" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.test.cachTest" />
+      <option name="METHOD_NAME" value="cachTest4" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test.test9" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="cachTest.cachTest5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Mybatis-03" />
       <extension name="coverage">
         <pattern>
@@ -224,8 +242,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.roily.test" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.test.test" />
-      <option name="METHOD_NAME" value="test9" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.test.cachTest" />
+      <option name="METHOD_NAME" value="cachTest5" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -233,13 +251,45 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.test2.test02" />
-        <item itemvalue="JUnit.test2.test01" />
-        <item itemvalue="JUnit.test.test9" />
-        <item itemvalue="JUnit.test.test8" />
-        <item itemvalue="JUnit.test.test7" />
+        <item itemvalue="JUnit.cachTest.cachTest5" />
+        <item itemvalue="JUnit.cachTest.cachTest3" />
+        <item itemvalue="JUnit.cachTest.cachTest4" />
+        <item itemvalue="JUnit.cachTest.cachTest2" />
+        <item itemvalue="JUnit.cachTest.cachTest" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@54e2f247" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@786945e0" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@2b789cd" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration>C:\Users\Roly_Fish\AppData\Roaming\Subversion</configuration>
@@ -269,7 +319,7 @@
       <workItem from="1646897327808" duration="2676000" />
       <workItem from="1646974659056" duration="3159000" />
       <workItem from="1647013168176" duration="7028000" />
-      <workItem from="1647052713041" duration="21168000" />
+      <workItem from="1647052713041" duration="31190000" />
     </task>
     <servers />
   </component>
@@ -313,22 +363,22 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="421" y="116" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1647088594967" />
-    <state width="1237" height="227" key="GridCell.Tab.0.bottom" timestamp="1647089402699">
+    <state width="1237" height="307" key="GridCell.Tab.0.bottom" timestamp="1647101272895">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="227" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1647089402699" />
-    <state width="1237" height="227" key="GridCell.Tab.0.center" timestamp="1647089402698">
+    <state width="1237" height="307" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1647101272895" />
+    <state width="1237" height="307" key="GridCell.Tab.0.center" timestamp="1647101272895">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="227" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1647089402698" />
-    <state width="1237" height="227" key="GridCell.Tab.0.left" timestamp="1647089402698">
+    <state width="1237" height="307" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1647101272895" />
+    <state width="1237" height="307" key="GridCell.Tab.0.left" timestamp="1647101272895">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="227" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1647089402698" />
-    <state width="1237" height="227" key="GridCell.Tab.0.right" timestamp="1647089402698">
+    <state width="1237" height="307" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1647101272895" />
+    <state width="1237" height="307" key="GridCell.Tab.0.right" timestamp="1647101272895">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="227" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1647089402698" />
+    <state width="1237" height="307" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1647101272895" />
     <state width="1237" height="239" key="GridCell.Tab.1.bottom" timestamp="1647085815975">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -373,10 +423,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="297" y="161" key="run.anything.popup/0.0.1280.720@0.0.1280.720" timestamp="1646975692750" />
-    <state x="177" y="120" width="1087" height="678" key="search.everywhere.popup" timestamp="1647085863275">
+    <state x="177" y="120" width="1087" height="678" key="search.everywhere.popup" timestamp="1647093447341">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="177" y="120" width="1087" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1647085863275" />
+    <state x="177" y="120" width="1087" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1647093447341" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

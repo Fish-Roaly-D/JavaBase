@@ -1,5 +1,7 @@
 package com.roily.pojo;
 
+import org.apache.ibatis.annotations.Param;
+
 import java.util.List;
 
 /**
@@ -12,4 +14,9 @@ public interface EmployeeMapper {
 
 
     public List<Employee> getEmployeeList();
+
+
+    public List<Employee> getEmployeeListByResult();
+
+    int modifyEmployee(@Param("id") Integer id);
 }

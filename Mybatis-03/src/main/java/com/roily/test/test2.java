@@ -49,6 +49,51 @@ public class test2 {
 
     }
 
+    @Test
+    public void test03() {
+
+        SqlSession sqlSession = MybatisUtil.getSqlSession();
+
+        EmployeeMapper mapper = sqlSession.getMapper(EmployeeMapper.class);
+
+        List<Employee> employees = mapper.getEmployeeListByResult();
+
+        for (Employee employee : employees) {
+            System.out.println(employee);
+        }
+
+    }
+
+    @Test
+    public void test04() {
+
+        SqlSession sqlSession = MybatisUtil.getSqlSession();
+
+        Department2Mapper mapper = sqlSession.getMapper(Department2Mapper.class);
+
+        List<Department2> depts = mapper.getDeptListInfo();
+
+        for (Department2 dept : depts) {
+            System.out.println(dept);
+        }
+
+    }
+
+    @Test
+    public void test05() {
+
+        SqlSession sqlSession = MybatisUtil.getSqlSession();
+
+        Department2Mapper mapper = sqlSession.getMapper(Department2Mapper.class);
+
+        List<Department2> depts = mapper.getDeptListInfoResult();
+
+        for (Department2 dept : depts) {
+            System.out.println(dept);
+        }
+
+    }
+
 
 }
 

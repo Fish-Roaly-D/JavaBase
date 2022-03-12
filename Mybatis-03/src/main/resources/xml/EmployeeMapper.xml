@@ -4,8 +4,48 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.roily.pojo.EmployeeMapper">
 
-    <select id="getEmployeeList" resultType="employee">
+    <select id="getEmployeeList" resultMap="employeeInfo">
         select * from employee
     </select>
+
+    <resultMap id="employeeInfo" type="employee">
+        <!-- 复杂类型： department类
+                【association】: 对象
+                    - 【property】: 设置获取到的结果集字段 => private Teachers teacher
+                    - 【column】: 设置映射对应的数据库字段 => tid
+                    - 【javaType】: 设置返回类型 => Teachers
+                    - 【select】: 子查询绑定。通过其他<select>标签中的值，指向其他select语句 => <select id="TeachersInfo">
+                【collection】: 集合
+            -->
+        <association property="department" column="deptId" javaType="department2" select="departmentInfo"/>
+
+    </resultMap>
+
+
+    <select id="departmentInfo" resultType="Department2">
+        select * from department where deptId = #{deptId}
+    </select>
+
+
+    <select id="getEmployeeListByResult" resultMap="employeeInfoByResult">
+        select e.id, e.empName, d.deptId, d.deptName from employee e, department d
+        where e.deptId = d.deptId
+    </select>
+    <resultMap id="employeeInfoByResult" type="employee">
+
+        <result property="id" column="id"/>
+        <result property="empName" column="empName"/>
+
+        <association property="department" javaType="department2">
+            <result property="deptId" column="deptId"/>
+            <result property="deptName" column="deptName"/>
+        </association>
+
+    </resultMap>
+
+    <update id="modifyEmployee">
+        update employee set empName = '脏读'
+        where id = #{id}
+    </update>
 
 </mapper>
