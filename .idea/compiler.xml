@@ -8,14 +8,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="JavaBaseCollection" />
-        <module name="Mybatis-plus-01" />
         <module name="Mysql-DataSource" />
-        <module name="Base-Collection-01" />
+        <module name="Mybatis-02" />
         <module name="Mysql-jdbc" />
+        <module name="Base-Collection-01" />
         <module name="Base-Collection-02" />
+        <module name="ThreadBase" />
         <module name="Base-DataType-01" />
         <module name="Mybatis-03" />
-        <module name="Mybatis-02" />
+        <module name="Mybatis-plus-01" />
         <module name="Mybatis-01" />
       </profile>
     </annotationProcessing>

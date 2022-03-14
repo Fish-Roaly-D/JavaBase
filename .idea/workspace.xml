@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ThreadBase/src/main/java/com/roily/thread_01/MyThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mybatis-03/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mybatis-03/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mybatis-03/src/main/java/com/roily/entity/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mybatis-03/src/main/java/com/roily/entity/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mybatis-03/src/main/java/com/roily/mapper/DepartmentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mybatis-03/src/main/java/com/roily/mapper/DepartmentMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mybatis-03/src/main/java/com/roily/pojo/Department2Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mybatis-03/src/main/java/com/roily/pojo/Department2Mapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mybatis-03/src/main/java/com/roily/pojo/EmployeeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mybatis-03/src/main/java/com/roily/pojo/EmployeeMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mybatis-03/src/main/java/com/roily/test/test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mybatis-03/src/main/java/com/roily/test/test2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mybatis-03/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mybatis-03/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mybatis-03/src/main/resources/xml/Department2Mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mybatis-03/src/main/resources/xml/Department2Mapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mybatis-03/src/main/resources/xml/DepartmentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mybatis-03/src/main/resources/xml/DepartmentMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mybatis-03/src/main/resources/xml/EmployeeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mybatis-03/src/main/resources/xml/EmployeeMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,11 +134,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Mybatis-03/src/main/java/com/roily/pojo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.36091954" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -168,82 +161,76 @@
       <select />
     </treeState>
   </component>
-  <component name="RunManager" selected="JUnit.cachTest.cachTest5">
-    <configuration name="cachTest.cachTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Mybatis-03" />
+  <component name="RunManager" selected="Application.joinDemo">
+    <configuration name="joinDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.roily.thread_02.joinDemo" />
+      <module name="ThreadBase" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.test.*" />
+          <option name="PATTERN" value="com.roily.thread_02.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.test" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.test.cachTest" />
-      <option name="METHOD_NAME" value="cachTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="xxdemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.roily.thread_02.xxdemo" />
+      <module name="ThreadBase" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.thread_02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InterruptDemo.interruptTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ThreadBase" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.thread_02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.roily.thread_02" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.thread_02.InterruptDemo" />
+      <option name="METHOD_NAME" value="interruptTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="cachTest.cachTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Mybatis-03" />
+    <configuration name="joinDemo.joinTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ThreadBase" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.test.*" />
+          <option name="PATTERN" value="com.roily.thread_02.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.test" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.test.cachTest" />
-      <option name="METHOD_NAME" value="cachTest2" />
+      <option name="PACKAGE_NAME" value="com.roily.thread_02" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.thread_02.joinDemo" />
+      <option name="METHOD_NAME" value="joinTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="cachTest.cachTest3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Mybatis-03" />
+    <configuration name="joinDemo.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ThreadBase" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.test.*" />
+          <option name="PATTERN" value="com.roily.thread_02.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.test" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.test.cachTest" />
-      <option name="METHOD_NAME" value="cachTest3" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="cachTest.cachTest4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Mybatis-03" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.roily.test" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.test.cachTest" />
-      <option name="METHOD_NAME" value="cachTest4" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="cachTest.cachTest5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Mybatis-03" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.roily.test" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.test.cachTest" />
-      <option name="METHOD_NAME" value="cachTest5" />
+      <option name="PACKAGE_NAME" value="com.roily.thread_02" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.thread_02.joinDemo" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -251,11 +238,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.cachTest.cachTest5" />
-        <item itemvalue="JUnit.cachTest.cachTest3" />
-        <item itemvalue="JUnit.cachTest.cachTest4" />
-        <item itemvalue="JUnit.cachTest.cachTest2" />
-        <item itemvalue="JUnit.cachTest.cachTest" />
+        <item itemvalue="Application.joinDemo" />
+        <item itemvalue="Application.xxdemo" />
+        <item itemvalue="JUnit.joinDemo.test" />
+        <item itemvalue="JUnit.joinDemo.joinTest" />
+        <item itemvalue="JUnit.InterruptDemo.interruptTest" />
       </list>
     </recent_temporary>
   </component>
@@ -319,7 +306,9 @@
       <workItem from="1646897327808" duration="2676000" />
       <workItem from="1646974659056" duration="3159000" />
       <workItem from="1647013168176" duration="7028000" />
-      <workItem from="1647052713041" duration="31190000" />
+      <workItem from="1647052713041" duration="31354000" />
+      <workItem from="1647139613599" duration="19807000" />
+      <workItem from="1647191142504" duration="3212000" />
     </task>
     <servers />
   </component>
@@ -327,18 +316,18 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="233" y="19" key="#Project_Structure" timestamp="1647067809849">
+    <state x="233" y="19" key="#Project_Structure" timestamp="1647162080824">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="233" y="19" key="#Project_Structure/0.0.1280.720@0.0.1280.720" timestamp="1647067809849" />
+    <state x="233" y="19" key="#Project_Structure/0.0.1280.720@0.0.1280.720" timestamp="1647162080824" />
     <state x="11" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1646718397211">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="11" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1646718397211" />
-    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser" timestamp="1647054175512">
+    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser" timestamp="1647170006976">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1647054175512" />
+    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1647170006976" />
     <state x="238" y="286" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1646718677552">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -359,46 +348,50 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="357" y="205" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.720@0.0.1280.720" timestamp="1646561752636" />
-    <state x="421" y="116" key="FileChooserDialogImpl" timestamp="1647088594967">
+    <state x="421" y="116" key="FileChooserDialogImpl" timestamp="1647160195803">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="421" y="116" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1647088594967" />
-    <state width="1237" height="307" key="GridCell.Tab.0.bottom" timestamp="1647101272895">
+    <state x="421" y="116" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1647160195803" />
+    <state width="1237" height="199" key="GridCell.Tab.0.bottom" timestamp="1647219500244">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="307" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1647101272895" />
-    <state width="1237" height="307" key="GridCell.Tab.0.center" timestamp="1647101272895">
+    <state width="1237" height="199" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1647219500244" />
+    <state width="1237" height="199" key="GridCell.Tab.0.center" timestamp="1647219500243">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="307" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1647101272895" />
-    <state width="1237" height="307" key="GridCell.Tab.0.left" timestamp="1647101272895">
+    <state width="1237" height="199" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1647219500243" />
+    <state width="1237" height="199" key="GridCell.Tab.0.left" timestamp="1647219500243">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="307" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1647101272895" />
-    <state width="1237" height="307" key="GridCell.Tab.0.right" timestamp="1647101272895">
+    <state width="1237" height="199" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1647219500243" />
+    <state width="1237" height="199" key="GridCell.Tab.0.right" timestamp="1647219500243">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="307" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1647101272895" />
-    <state width="1237" height="239" key="GridCell.Tab.1.bottom" timestamp="1647085815975">
+    <state width="1237" height="199" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1647219500243" />
+    <state width="1237" height="239" key="GridCell.Tab.1.bottom" timestamp="1647173050098">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="239" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1647085815975" />
-    <state width="1237" height="239" key="GridCell.Tab.1.center" timestamp="1647085815975">
+    <state width="1237" height="239" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1647173050098" />
+    <state width="1237" height="239" key="GridCell.Tab.1.center" timestamp="1647173050098">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="239" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1647085815975" />
-    <state width="1237" height="239" key="GridCell.Tab.1.left" timestamp="1647085815975">
+    <state width="1237" height="239" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1647173050098" />
+    <state width="1237" height="239" key="GridCell.Tab.1.left" timestamp="1647173050098">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="239" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1647085815975" />
-    <state width="1237" height="239" key="GridCell.Tab.1.right" timestamp="1647085815975">
+    <state width="1237" height="239" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1647173050098" />
+    <state width="1237" height="239" key="GridCell.Tab.1.right" timestamp="1647173050098">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="239" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1647085815975" />
+    <state width="1237" height="239" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1647173050098" />
     <state x="171" y="16" key="Maven.ArtifactSearchDialog" timestamp="1646665959803">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="171" y="16" key="Maven.ArtifactSearchDialog/0.0.1280.720@0.0.1280.720" timestamp="1646665959803" />
+    <state x="121" y="0" key="SettingsEditor" timestamp="1647162661678">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="121" y="0" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1647162661678" />
     <state width="560" height="718" key="com.intellij.byteCodeViewer.ShowByteCodeAction" timestamp="1645774390229">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -411,10 +404,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="371" y="125" key="extract.method.dialog/0.0.1280.720@0.0.1280.720" timestamp="1646565264800" />
-    <state x="56" y="79" key="new project wizard" timestamp="1647066126592">
+    <state x="56" y="69" key="new project wizard" timestamp="1647140866221">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="56" y="79" key="new project wizard/0.0.1280.720@0.0.1280.720" timestamp="1647066126592" />
+    <state x="56" y="69" key="new project wizard/0.0.1280.720@0.0.1280.720" timestamp="1647140866221" />
     <state x="383" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1647017687608">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -423,10 +416,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="297" y="161" key="run.anything.popup/0.0.1280.720@0.0.1280.720" timestamp="1646975692750" />
-    <state x="177" y="120" width="1087" height="678" key="search.everywhere.popup" timestamp="1647093447341">
+    <state x="177" y="120" width="1087" height="678" key="search.everywhere.popup" timestamp="1647172494403">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="177" y="120" width="1087" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1647093447341" />
+    <state x="177" y="120" width="1087" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1647172494403" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

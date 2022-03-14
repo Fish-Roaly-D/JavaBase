@@ -19,6 +19,7 @@
         <module>Mybatis-plus-01</module>
         <module>JavaBaseCollection</module>
         <module>Mybatis-03</module>
+        <module>ThreadBase</module>
     </modules>
 
     <dependencies>
