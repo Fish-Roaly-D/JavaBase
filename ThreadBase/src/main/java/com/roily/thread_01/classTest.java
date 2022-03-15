@@ -41,12 +41,7 @@ public class classTest {
 
         //lambda表达式  适用于函数式接口
         Person p2 =() -> System.out.println("xxx");
-
     }
-
-
-
-
 }
 
 //外部类

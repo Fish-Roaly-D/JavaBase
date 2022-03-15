@@ -13,23 +13,31 @@ import java.util.concurrent.*;
 public class testStart {
 
 
+    /**
+     * 继承Thread类创建线程
+     */
     @Test
     public void testThread() {
-
         MyThread myThread = new MyThread();
 
         myThread.start();
-
     }
 
+    /**
+     * 实现runable接口创建线程
+     */
     @Test
     public void testRunable() {
 
         Thread thread = new Thread(new MybRunable());
         thread.start();
-
     }
 
+    /**
+     * 实现callable接口创建线程
+     * @throws ExecutionException
+     * @throws InterruptedException
+     */
     @Test
     public void testCallable() throws ExecutionException, InterruptedException {
 
@@ -43,6 +51,9 @@ public class testStart {
 
     }
 
+    /**
+     * 匿名内部类实现runable接口创建线程
+     */
     @Test
     public void testRunableNoName() {
 
@@ -55,6 +66,10 @@ public class testStart {
 
     }
 
+
+    /**
+     * lambda表达式实现runable接口
+     */
     @Test
     public void testRunableLambda() {
 
@@ -63,6 +78,12 @@ public class testStart {
         }).start();
     }
 
+    /**
+     * futureTask也实现了runable接口
+     * futureTask包装Runable 给Thread创建线程  底层会将runable -》callcable
+     * @throws ExecutionException
+     * @throws InterruptedException
+     */
     @Test
     public void testFutureTask() throws ExecutionException, InterruptedException {
 
@@ -78,18 +99,19 @@ public class testStart {
         System.out.println(o);
     }
 
+
     @Test
     public void testFutureTask_() throws ExecutionException, InterruptedException {
 
-        FutureTask futureTask = null;
+        FutureTask<String> futureTask = null;
         futureTask = new FutureTask<String>(new Runnable() {
             public void run() {
                 System.out.println(1);
             }
-        }, "xxx");
+        }, "result");
         ExecutorService service = Executors.newCachedThreadPool();
         Future<?> submit = service.submit(futureTask);
-        System.out.println(submit);
+        System.out.println(futureTask.get());
     }
 
     @Test
@@ -98,7 +120,7 @@ public class testStart {
         FutureTask<String> futureTask = null;
         new Thread(futureTask = new FutureTask<String>(new Callable<String>() {
             public String call() throws Exception {
-                return "xxxx";
+                return "result";
             }
         })).start();
 
