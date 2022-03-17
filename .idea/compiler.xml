@@ -10,11 +10,11 @@
         <module name="JavaBaseCollection" />
         <module name="Mybatis-plus-01" />
         <module name="Mysql-DataSource" />
-        <module name="Base-Collection-01" />
+        <module name="ThreadBase02" />
         <module name="Mysql-jdbc" />
+        <module name="Base-Collection-01" />
         <module name="Base-Collection-02" />
         <module name="ThreadBase" />
-        <module name="ThreadBase02" />
         <module name="Base-DataType-01" />
         <module name="Mybatis-04" />
         <module name="Mybatis-03" />
