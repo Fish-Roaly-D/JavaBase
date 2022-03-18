@@ -10,7 +10,9 @@ import org.junit.Test;
  */
 public class joinDemo {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
+        System.out.println(Thread.currentThread().getName()+"执行执行");
+
         //之前线程
         Thread previousThread = Thread.currentThread();
 
@@ -21,33 +23,10 @@ public class joinDemo {
             previousThread = currentThread;
         }
 
+        Thread.sleep(2000);
+
         System.out.println(Thread.currentThread().getName()+"执行结束");
     }
-
-    @Test
-    public void test() {
-        Thread t1 = new Thread(() -> {
-            try {
-                Thread.sleep(5000);
-                System.out.println("t1");
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        });
-
-        Thread t2 = new Thread(() -> {
-            System.out.println("t2");
-        });
-
-        Thread t3 = new Thread(() -> {
-            System.out.println("t3");
-        });
-
-        t1.start();
-        t2.start();
-        t3.start();
-    }
-
 }
 
 class MyThread extends Thread {
@@ -62,7 +41,7 @@ class MyThread extends Thread {
     public void run() {
         try {
             thread.join();
-            System.out.println(thread.getName() + "执行");
+            System.out.println(Thread.currentThread().getName() + "执行");
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -81,9 +60,7 @@ class xxdemo{
             }
         });
 
-        Thread t2 = new Thread(() -> {
-            System.out.println("t2");
-        });
+        Thread t2 = new Thread(() -> System.out.println("t2"));
 
         Thread t3 = new Thread(() -> {
             System.out.println("t3");

@@ -80,7 +80,7 @@ public class testStart {
 
     /**
      * futureTask也实现了runable接口
-     * futureTask包装Runable 给Thread创建线程  底层会将runable -》callcable
+     * futureTask包装Runable 给Thread    创建线程  底层会将runable -》callcable
      * @throws ExecutionException
      * @throws InterruptedException
      */
@@ -99,7 +99,12 @@ public class testStart {
         System.out.println(o);
     }
 
-
+    /**
+     * futureTask也实现了runable接口
+     * futureTask包装Runable 给ExecutorService  创建线程  底层会将runable -》callcable
+     * @throws ExecutionException
+     * @throws InterruptedException
+     */
     @Test
     public void testFutureTask_() throws ExecutionException, InterruptedException {
 
@@ -144,6 +149,11 @@ public class testStart {
 
     }
 
+    /**
+     * 将runcable给Executorservice启动，需要设置返回参数。
+     * @throws ExecutionException
+     * @throws InterruptedException
+     */
     @Test
     public void testRunToPoll() throws ExecutionException, InterruptedException {
 

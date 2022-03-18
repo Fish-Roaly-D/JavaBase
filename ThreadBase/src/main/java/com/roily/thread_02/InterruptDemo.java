@@ -1,6 +1,5 @@
 package com.roily.thread_02;
 
-
 public class InterruptDemo {
 
     public static void main(String[] args) {
@@ -29,5 +28,4 @@ public class InterruptDemo {
         System.out.println("sleepThread isInterrupted: " + sleepThread.isInterrupted());
         System.out.println("busyThread isInterrupted: " + busyThread.isInterrupted());
     }
-
 }

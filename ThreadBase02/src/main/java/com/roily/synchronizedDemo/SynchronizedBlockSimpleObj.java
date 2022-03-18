@@ -1,7 +1,5 @@
 package com.roily.synchronizedDemo;
 
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
-
 /**
  * @version 1.0.0
  * @Description TODO
@@ -29,7 +27,6 @@ public class SynchronizedBlockSimpleObj {
         }
 
         Thread.sleep(5000);
-
         System.out.println(b);
 
     }

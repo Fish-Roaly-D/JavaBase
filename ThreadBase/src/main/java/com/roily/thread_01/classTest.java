@@ -20,7 +20,7 @@ public class classTest {
     static class Student3 implements Person {
 
         public void say() {
-            System.out.println("内部类");
+            System.out.println("静态内部类");
         }
     }
 
@@ -28,7 +28,7 @@ public class classTest {
         //局部内部类
         class Student3 implements Person {
             public void say() {
-                System.out.println("内部类");
+                System.out.println("局部内部类");
             }
         }
 
@@ -40,7 +40,7 @@ public class classTest {
         };
 
         //lambda表达式  适用于函数式接口
-        Person p2 =() -> System.out.println("xxx");
+        Person p2 =() -> System.out.println("lambda表达式");
     }
 }
 
@@ -48,7 +48,7 @@ public class classTest {
 class Student1 implements Person {
 
     public void say() {
-        System.out.println("内部类");
+        System.out.println("外部类");
     }
 }
 
