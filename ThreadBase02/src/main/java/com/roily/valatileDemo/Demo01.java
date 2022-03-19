@@ -111,3 +111,21 @@ class Demo04 {
         //Thread.sleep(Integer.MAX_VALUE);
     }
 }
+
+class volatileDemo{
+
+    private volatile static int a = 0;
+    public static void main(String[] args) throws InterruptedException {
+        for (int i = 0; i < 10; i++) {
+
+            new Thread(()->{
+                for (int i1 = 0; i1 < 1000; i1++) {
+                    a++;
+                }
+            }).start();
+
+        }
+        Thread.sleep(2000);
+        System.out.println(a);
+    }
+}

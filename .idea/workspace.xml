@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="线程模块更新">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ThreadBase02/src/main/java/com/roily/SynchronizedDeom01.java" beforeDir="false" afterPath="$PROJECT_DIR$/ThreadBase02/src/main/java/com/roily/synchronizedDemo/SynchronizedDeom01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadBase02/src/main/java/com/roily/valatileDemo/Demo01.java" beforeDir="false" afterPath="$PROJECT_DIR$/ThreadBase02/src/main/java/com/roily/valatileDemo/Demo01.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,20 +162,7 @@
       <select />
     </treeState>
   </component>
-  <component name="RunManager" selected="Application.Demo04">
-    <configuration name="Demo01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.roily.valatileDemo.Demo01" />
-      <module name="ThreadBase02" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.valatileDemo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.volatileDemo">
     <configuration name="Demo03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.roily.valatileDemo.Demo03" />
       <module name="ThreadBase02" />
@@ -204,12 +189,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EntityForDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.roily.valatileDemo.EntityForDemo" />
+    <configuration name="FinalDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.roily.aboutFinal.FinalDemo" />
       <module name="ThreadBase02" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.valatileDemo.*" />
+          <option name="PATTERN" value="com.roily.aboutFinal.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -217,8 +202,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.roily.valatileDemo.TestMain" />
+    <configuration name="Person" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.roily.aboutFinal.Person" />
+      <module name="ThreadBase02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.aboutFinal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="volatileDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.roily.valatileDemo.volatileDemo" />
       <module name="ThreadBase02" />
       <extension name="coverage">
         <pattern>
@@ -232,11 +230,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.volatileDemo" />
+        <item itemvalue="Application.Person" />
+        <item itemvalue="Application.FinalDemo" />
         <item itemvalue="Application.Demo04" />
         <item itemvalue="Application.Demo03" />
-        <item itemvalue="Application.TestMain" />
-        <item itemvalue="Application.EntityForDemo" />
-        <item itemvalue="Application.Demo01" />
       </list>
     </recent_temporary>
   </component>
@@ -313,7 +311,7 @@
       <workItem from="1647517240156" duration="11481000" />
       <workItem from="1647567233142" duration="2102000" />
       <workItem from="1647606293647" duration="1300000" />
-      <workItem from="1647674172759" duration="6874000" />
+      <workItem from="1647674172759" duration="15429000" />
     </task>
     <task id="LOCAL-00001" summary="线程模块更新">
       <created>1647568712086</created>
@@ -368,10 +366,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="11" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1646718397211" />
-    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser" timestamp="1647678654427">
+    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser" timestamp="1647695382250">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1647678654427" />
+    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1647695382250" />
     <state x="238" y="286" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1646718677552">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -404,22 +402,22 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="421" y="116" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1647350574030" />
-    <state width="1237" height="139" key="GridCell.Tab.0.bottom" timestamp="1647683243710">
+    <state width="1237" height="127" key="GridCell.Tab.0.bottom" timestamp="1647699496128">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="139" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1647683243710" />
-    <state width="1237" height="139" key="GridCell.Tab.0.center" timestamp="1647683243710">
+    <state width="1237" height="127" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1647699496128" />
+    <state width="1237" height="127" key="GridCell.Tab.0.center" timestamp="1647699496128">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="139" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1647683243710" />
-    <state width="1237" height="139" key="GridCell.Tab.0.left" timestamp="1647683243709">
+    <state width="1237" height="127" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1647699496128" />
+    <state width="1237" height="127" key="GridCell.Tab.0.left" timestamp="1647699496128">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="139" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1647683243709" />
-    <state width="1237" height="139" key="GridCell.Tab.0.right" timestamp="1647683243710">
+    <state width="1237" height="127" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1647699496128" />
+    <state width="1237" height="127" key="GridCell.Tab.0.right" timestamp="1647699496128">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="139" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1647683243710" />
+    <state width="1237" height="127" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1647699496128" />
     <state width="1237" height="185" key="GridCell.Tab.1.bottom" timestamp="1647536973542">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -468,10 +466,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="440" y="255" key="git4idea.ui.GitResetDialog/0.0.1280.720@0.0.1280.720" timestamp="1647350476739" />
-    <state x="56" y="73" key="new project wizard" timestamp="1647330563092">
+    <state x="-13" y="110" key="new project wizard" timestamp="1647684575161">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="56" y="73" key="new project wizard/0.0.1280.720@0.0.1280.720" timestamp="1647330563092" />
+    <state x="-13" y="110" key="new project wizard/0.0.1280.720@0.0.1280.720" timestamp="1647684575161" />
     <state x="383" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1647017687608">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -484,10 +482,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="234" y="19" key="scopes/0.0.1280.720@0.0.1280.720" timestamp="1647230227486" />
-    <state x="177" y="120" width="1087" height="678" key="search.everywhere.popup" timestamp="1647531744642">
+    <state x="177" y="120" width="1087" height="678" key="search.everywhere.popup" timestamp="1647695557238">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="177" y="120" width="1087" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1647531744642" />
+    <state x="177" y="120" width="1087" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1647695557238" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
