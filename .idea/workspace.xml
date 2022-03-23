@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="线程模块更新">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ThreadBase02/src/main/java/com/roily/valatileDemo/Demo01.java" beforeDir="false" afterPath="$PROJECT_DIR$/ThreadBase02/src/main/java/com/roily/valatileDemo/Demo01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadBase02/src/main/java/com/roily/aboutFinal/FinalDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/ThreadBase02/src/main/java/com/roily/aboutFinal/FinalDemo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +138,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.36091954" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -162,13 +162,13 @@
       <select />
     </treeState>
   </component>
-  <component name="RunManager" selected="Application.volatileDemo">
-    <configuration name="Demo03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.roily.valatileDemo.Demo03" />
+  <component name="RunManager" selected="Application.assertTest">
+    <configuration name="ConditionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.roily.aboutLock.lockTest.ConditionTest" />
       <module name="ThreadBase02" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.valatileDemo.*" />
+          <option name="PATTERN" value="com.roily.aboutLock.lockTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -176,12 +176,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo04" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.roily.valatileDemo.Demo04" />
+    <configuration name="LockTest2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.roily.aboutLock.lockTest.LockTest2" />
       <module name="ThreadBase02" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.valatileDemo.*" />
+          <option name="PATTERN" value="com.roily.aboutLock.lockTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -189,12 +189,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FinalDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.roily.aboutFinal.FinalDemo" />
+    <configuration name="ObjectWaitAndThreadSleep" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.roily.aboutLock.lockTest.ObjectWaitAndThreadSleep" />
       <module name="ThreadBase02" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.aboutFinal.*" />
+          <option name="PATTERN" value="com.roily.aboutLock.lockTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -202,12 +202,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Person" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.roily.aboutFinal.Person" />
+    <configuration name="assertTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.roily.aboutLock.assertTest" />
       <module name="ThreadBase02" />
+      <option name="VM_PARAMETERS" value="-ea" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.aboutFinal.*" />
+          <option name="PATTERN" value="com.roily.aboutLock.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -215,12 +216,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="volatileDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.roily.valatileDemo.volatileDemo" />
+    <configuration name="ttt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.roily.aboutLock.ttt" />
       <module name="ThreadBase02" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.valatileDemo.*" />
+          <option name="PATTERN" value="com.roily.aboutLock.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -228,13 +229,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.assertTest" />
+      <item itemvalue="Application.ConditionTest" />
+      <item itemvalue="Application.LockTest2" />
+      <item itemvalue="Application.ObjectWaitAndThreadSleep" />
+      <item itemvalue="Application.ttt" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.volatileDemo" />
-        <item itemvalue="Application.Person" />
-        <item itemvalue="Application.FinalDemo" />
-        <item itemvalue="Application.Demo04" />
-        <item itemvalue="Application.Demo03" />
+        <item itemvalue="Application.assertTest" />
+        <item itemvalue="Application.ttt" />
+        <item itemvalue="Application.LockTest2" />
+        <item itemvalue="Application.ObjectWaitAndThreadSleep" />
+        <item itemvalue="Application.ConditionTest" />
       </list>
     </recent_temporary>
   </component>
@@ -269,6 +277,10 @@
         </serviceView>
       </list>
     </option>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="AUTOSCROLL_MODE" value="false" />
+    <option name="ACTIVE_ACTIONS" value=",VISIBILITY_SORTER" />
   </component>
   <component name="SvnConfiguration">
     <configuration>C:\Users\Roly_Fish\AppData\Roaming\Subversion</configuration>
@@ -311,7 +323,15 @@
       <workItem from="1647517240156" duration="11481000" />
       <workItem from="1647567233142" duration="2102000" />
       <workItem from="1647606293647" duration="1300000" />
-      <workItem from="1647674172759" duration="15429000" />
+      <workItem from="1647674172759" duration="15476000" />
+      <workItem from="1647786378877" duration="2135000" />
+      <workItem from="1647846837717" duration="1588000" />
+      <workItem from="1647855919679" duration="4514000" />
+      <workItem from="1647868334774" duration="2549000" />
+      <workItem from="1648020625907" duration="3517000" />
+      <workItem from="1648027956980" duration="5564000" />
+      <workItem from="1648038446756" duration="8670000" />
+      <workItem from="1648049104551" duration="1319000" />
     </task>
     <task id="LOCAL-00001" summary="线程模块更新">
       <created>1647568712086</created>
@@ -362,10 +382,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="329" y="211" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/0.0.1280.720@0.0.1280.720" timestamp="1647417010175" />
-    <state x="11" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1646718397211">
+    <state x="76" y="29" width="1089" height="675" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1648049291966">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="11" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1646718397211" />
+    <state x="76" y="29" width="1089" height="675" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1648049291966" />
     <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser" timestamp="1647695382250">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -402,22 +422,22 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="421" y="116" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1647350574030" />
-    <state width="1237" height="127" key="GridCell.Tab.0.bottom" timestamp="1647699496128">
+    <state width="1237" height="133" key="GridCell.Tab.0.bottom" timestamp="1648049317434">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="127" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1647699496128" />
-    <state width="1237" height="127" key="GridCell.Tab.0.center" timestamp="1647699496128">
+    <state width="1237" height="133" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1648049317434" />
+    <state width="1237" height="133" key="GridCell.Tab.0.center" timestamp="1648049317434">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="127" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1647699496128" />
-    <state width="1237" height="127" key="GridCell.Tab.0.left" timestamp="1647699496128">
+    <state width="1237" height="133" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1648049317434" />
+    <state width="1237" height="133" key="GridCell.Tab.0.left" timestamp="1648049317434">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="127" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1647699496128" />
-    <state width="1237" height="127" key="GridCell.Tab.0.right" timestamp="1647699496128">
+    <state width="1237" height="133" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1648049317434" />
+    <state width="1237" height="133" key="GridCell.Tab.0.right" timestamp="1648049317434">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="127" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1647699496128" />
+    <state width="1237" height="133" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1648049317434" />
     <state width="1237" height="185" key="GridCell.Tab.1.bottom" timestamp="1647536973542">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -438,30 +458,38 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="171" y="16" key="Maven.ArtifactSearchDialog/0.0.1280.720@0.0.1280.720" timestamp="1646665959803" />
-    <state x="121" y="0" key="SettingsEditor" timestamp="1647417296586">
+    <state x="221" y="202" key="MavenRunHelper.GoalEditor" timestamp="1648049254239">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="121" y="0" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1647417296586" />
+    <state x="221" y="202" key="MavenRunHelper.GoalEditor/0.0.1280.720@0.0.1280.720" timestamp="1648049254239" />
+    <state x="121" y="0" key="SettingsEditor" timestamp="1648049249935">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="121" y="0" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1648049249935" />
     <state x="233" y="94" key="Vcs.Push.Dialog.v2" timestamp="1647568719081">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="233" y="94" key="Vcs.Push.Dialog.v2/0.0.1280.720@0.0.1280.720" timestamp="1647568719081" />
-    <state width="560" height="718" key="com.intellij.byteCodeViewer.ShowByteCodeAction" timestamp="1645774390229">
+    <state width="560" height="718" key="com.intellij.byteCodeViewer.ShowByteCodeAction" timestamp="1647858362542">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="560" height="718" key="com.intellij.byteCodeViewer.ShowByteCodeAction/0.0.1280.720@0.0.1280.720" timestamp="1645774390229" />
+    <state width="560" height="718" key="com.intellij.byteCodeViewer.ShowByteCodeAction/0.0.1280.720@0.0.1280.720" timestamp="1647858362542" />
     <state x="93" y="93" width="1095" height="535" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1647395040784">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="93" y="93" width="1095" height="535" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1280.720@0.0.1280.720" timestamp="1647395040784" />
-    <state width="88" height="37" key="documentation.popup.size" timestamp="1647268109436">
+    <state x="437" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1647854555715">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="88" height="37" key="documentation.popup.size/0.0.1280.720@0.0.1280.720" timestamp="1647268109436" />
-    <state x="371" y="125" key="extract.method.dialog" timestamp="1646565264800">
+    <state x="437" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.720@0.0.1280.720" timestamp="1647854555715" />
+    <state width="88" height="37" key="documentation.popup.size" timestamp="1647861229262">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="371" y="125" key="extract.method.dialog/0.0.1280.720@0.0.1280.720" timestamp="1646565264800" />
+    <state width="88" height="37" key="documentation.popup.size/0.0.1280.720@0.0.1280.720" timestamp="1647861229262" />
+    <state x="371" y="125" key="extract.method.dialog" timestamp="1648029466468">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="371" y="125" key="extract.method.dialog/0.0.1280.720@0.0.1280.720" timestamp="1648029466468" />
     <state x="440" y="255" key="git4idea.ui.GitResetDialog" timestamp="1647350476739">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -482,10 +510,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="234" y="19" key="scopes/0.0.1280.720@0.0.1280.720" timestamp="1647230227486" />
-    <state x="177" y="120" width="1087" height="678" key="search.everywhere.popup" timestamp="1647695557238">
+    <state x="177" y="120" width="1087" height="678" key="search.everywhere.popup" timestamp="1648044223853">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="177" y="120" width="1087" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1647695557238" />
+    <state x="177" y="120" width="1087" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1648044223853" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

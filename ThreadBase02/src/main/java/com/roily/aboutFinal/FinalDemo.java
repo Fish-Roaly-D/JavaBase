@@ -29,6 +29,7 @@ public class FinalDemo {
         //可在静态代码块赋予初始值
         a1 = "a1";
         a2 = "a22";
+
     }
 
     {
@@ -36,6 +37,7 @@ public class FinalDemo {
         a1 = "a11";
         d1 = "d11";
         d1 = "d22";
+        //c1= "1";
 
     }
     //public FinalDemo(String d1, String d2) {
