@@ -33,14 +33,14 @@ public class classTest {
         }
 
         //匿名内部类
-        Person p1 = new Person(){
+        Person p1 = new Person() {
             public void say() {
                 System.out.println("匿名内部类");
             }
         };
 
         //lambda表达式  适用于函数式接口
-        Person p2 =() -> System.out.println("lambda表达式");
+        Person p2 = () -> System.out.println("lambda表达式");
     }
 }
 
@@ -50,9 +50,41 @@ class Student1 implements Person {
     public void say() {
         System.out.println("外部类");
     }
+
+
 }
 
+@FunctionalInterface
 interface Person {
 
+    static int a = 1;
+
     public void say();
+
+    public static void add() {
+        System.out.println(1);
+    }
+
+    public default int get() {
+        return a;
+    }
+
+}
+
+@FunctionalInterface
+interface Person2 {
+
+    public void say(String str1,String str2);
+}
+
+class tt{
+
+
+    public static void main(String[] args) {
+
+        Person2 person2 = (str1,str2) -> System.out.println(str1+"/n"+str2);
+
+        person2.say("参数1","参数2");
+
+    }
 }

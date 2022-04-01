@@ -22,6 +22,7 @@
         <module>ThreadBase</module>
         <module>Mybatis-04</module>
         <module>ThreadBase02</module>
+        <module>javabase</module>
     </modules>
 
     <dependencies>
