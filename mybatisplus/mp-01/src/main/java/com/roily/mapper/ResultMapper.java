@@ -1,7 +1,6 @@
 package com.roily.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.baomidou.mybatisplus.extension.api.R;
 import com.roily.entity.ResultEntity;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;

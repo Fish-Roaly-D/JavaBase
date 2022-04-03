@@ -16,13 +16,13 @@
         <module>Mysql-DataSource</module>
         <module>Mybatis-01</module>
         <module>Mybatis-02</module>
-        <module>Mybatis-plus-01</module>
         <module>JavaBaseCollection</module>
         <module>Mybatis-03</module>
         <module>ThreadBase</module>
         <module>Mybatis-04</module>
         <module>ThreadBase02</module>
         <module>javabase</module>
+        <module>MybatisPlus-01</module>
     </modules>
 
     <dependencies>
