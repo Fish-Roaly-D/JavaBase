@@ -3,10 +3,7 @@ package com.roily;
 import com.roily.entity.Department;
 import com.roily.mapper.DepartmentMapper;
 import com.roily.util.MybatisUtil;
-import com.roily.vo.PageResult;
-import com.roily.vo.PageUtil;
-import com.roily.vo.QueryParam;
-import com.roily.vo.Result;
+import com.roily.vo.*;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.Test;
 
@@ -82,6 +79,23 @@ public class test<T> {
         pageResult.setLimit(pageUtil.limit);
         Result result = Result.success("ok", pageResult);
         System.out.println(result);
+    }
+
+    @Test
+    public void test05(){
+        SqlSession sqlSession = MybatisUtil.getSqlSession();
+        DepartmentMapper mapper = sqlSession.getMapper(DepartmentMapper.class);
+
+        QueryParam2 queryParam2 = new QueryParam2();
+        queryParam2.setKeyWord("");
+        queryParam2.setCurrentPage(1l);
+        queryParam2.setLimit(5l);
+
+        List<Department> all4 = mapper.getAll4(queryParam2);
+
+        Result ok = Result.success("ok", 123, all4);
+
+        System.out.println(ok);
     }
 
 }

@@ -3,6 +3,7 @@ package com.roily.mapper;
 import com.roily.entity.Department;
 import com.roily.vo.PageUtil;
 import com.roily.vo.QueryParam;
+import com.roily.vo.QueryParam2;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -20,5 +21,8 @@ public interface DepartmentMapper {
     List<Department> getAll2(QueryParam queryParam);
 
     List<Department> getAll3(@Param("queryParam") QueryParam queryParam);
+
+
+    List<Department> getAll4(@Param("queryParam") QueryParam2 queryParam);
 
 }
