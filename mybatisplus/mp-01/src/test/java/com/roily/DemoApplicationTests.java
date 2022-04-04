@@ -1,22 +1,29 @@
 package com.roily;
 
+import com.baomidou.mybatisplus.core.conditions.AbstractWrapper;
 import com.baomidou.mybatisplus.core.conditions.Wrapper;
-import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
+import com.baomidou.mybatisplus.generator.FastAutoGenerator;
+import com.baomidou.mybatisplus.generator.config.OutputFile;
+import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
 import com.roily.entity.Department;
 import com.roily.entity.ResultEntity;
 import com.roily.entity.User2;
-import com.roily.entity.User3;
 import com.roily.mapper.DepartmentMapper;
 import com.roily.mapper.ResultMapper;
 import com.roily.mapper.UserMapper;
+import com.roily.service.UserService;
+import net.minidev.json.JSONObject;
 import org.junit.jupiter.api.Test;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.*;
+import java.util.function.Function;
 
 @SpringBootTest
 class DemoApplicationTests {
@@ -374,5 +381,69 @@ class CompareTest {
 
     }
 
+    @Test
+    public void test09() {
+
+        UpdateWrapper<User2> wrapper = new UpdateWrapper<>();
+
+
+        //wrapper.setSql();
+        List<User2> users = userMapper.selectList(wrapper);
+
+        users.forEach(System.out::println);
+
+    }
 
 }
+
+@SpringBootTest
+class serviceTest {
+
+    @Autowired
+    UserService userService;
+
+    @Test
+    public void test01() {
+
+        QueryWrapper<User2> wrapper = new QueryWrapper<>();
+        wrapper.eq("name", "于延闯");
+        Object obj = userService.getObj(wrapper, (V) ->{
+
+            ArrayList<Object> list = new ArrayList<>();
+            list.add(V);
+
+            return list;
+        });
+
+        System.out.println(obj);
+    }
+
+    @Test
+    public void test2(){
+
+        //User2 one = userService.query().eq("", "").one();
+
+        User2 one1 = userService.lambdaQuery().eq(User2::getId,18L).one();
+
+
+        System.out.println(one1);
+    }
+
+
+}
+
+class mytest implements Function<String,Integer>{
+
+    @Override
+    public Integer apply(String s) {
+        return 1;
+    }
+}
+
+@FunctionalInterface
+interface xxx{
+
+  public   String put();
+}
+
+
