@@ -12,10 +12,27 @@ import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
 import com.baomidou.mybatisplus.generator.fill.Column;
 import com.roily.mp01.base.BaseController;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.Collections;
 import java.util.Map;
+import java.util.Properties;
 
 class CodeMake {
+
+    static {
+        InputStream in = ClassLoader.getSystemResourceAsStream("public/db.properties");
+
+        Properties prop = new Properties();
+
+        try {
+            prop.load(in);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        System.out.println(prop);
+    }
+
     public static void main(String[] args) {
 
         DataSourceConfig.Builder dataSourceConfigBuilder =
@@ -69,18 +86,18 @@ class CodeMake {
                             //.controller("/templates/controller.java")
                             .build();
                 })
-                //.injectionConfig(builder -> {
-                //    builder
-                //            .beforeOutputFile((tableInfo, objectMap) -> {
-                //                    System.out.println("tableInfo: " + tableInfo.getEntityName() + " objectMap: " + objectMap.size());
-                //                    System.out.println(objectMap);
-                //                }
-                //
-                //            )
-                //            .customMap(Collections.singletonMap("test", "baomidou"))
-                //            //.customFile(Collections.singletonMap("test.txt", "/templates/entity.vm"))
-                //            .build();
-                //})
+                .injectionConfig(builder -> {
+                    builder
+                            .beforeOutputFile((tableInfo, objectMap) -> {
+                                    System.out.println("tableInfo: " + tableInfo.getEntityName() + " objectMap: " + objectMap.size());
+                                    System.out.println(objectMap);
+                                }
+
+                            )
+                            .customMap(Collections.singletonMap("test", "baomidou"))
+                            //.customFile(Collections.singletonMap("test.txt", "/templates/entity.vm"))
+                            .build();
+                })
                 .strategyConfig(builder -> {
                     builder.addInclude("user")// 设置需要生成的表名
                             .addTablePrefix("t_", "c_") // 设置过滤表前缀
