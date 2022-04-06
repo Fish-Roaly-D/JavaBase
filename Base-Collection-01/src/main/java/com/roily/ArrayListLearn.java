@@ -47,5 +47,21 @@ public class ArrayListLearn {
         System.out.println(VM.current().addressOf(elementData3));
     }
 
+    @Test
+    public void test(){
+
+        System.out.println(get());
+    }
+
+    public Object get(){
+
+        String str = "123";
+
+        try {
+            return str;
+        }finally {
+            str = "abc";
+        }
+    }
 
 }
