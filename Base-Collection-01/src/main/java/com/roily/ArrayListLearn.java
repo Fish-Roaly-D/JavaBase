@@ -3,11 +3,8 @@ package com.roily;
 import org.junit.Test;
 import org.openjdk.jol.vm.VM;
 
-import java.lang.reflect.Array;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
 
 /**
  * descripte:
