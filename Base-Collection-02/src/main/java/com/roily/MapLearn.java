@@ -4,10 +4,7 @@ import javafx.scene.chart.PieChart;
 import org.junit.Test;
 
 import java.lang.reflect.Method;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Random;
+import java.util.*;
 
 /**
  * descripte:
@@ -29,7 +26,15 @@ public class MapLearn {
                 break;
             }
 
+
         }
+
+        while(true){
+            System.out.println(
+                    "111"
+            );
+        }
+
     }
 
     //tableSizeFor
