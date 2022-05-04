@@ -1,4 +1,4 @@
-package com.roily;
+package com.roily.ArrayBlock;
 
 import org.junit.Test;
 
