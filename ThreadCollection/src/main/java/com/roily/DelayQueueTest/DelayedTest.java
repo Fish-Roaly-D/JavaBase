@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
  * @author: RoilyFish
  * @date: 2022/5/5 19:22
  */
-public class DelayQueueTest {
+class DelayQueueTest {
 
     @Test
     public void testDelayed() throws InterruptedException {
