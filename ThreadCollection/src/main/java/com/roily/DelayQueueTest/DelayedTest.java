@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * @version 1.0.0
  * @Description
- * @ClassName DelayQueueTest.java
+ * @ClassName DelayedTest.java
  * @author: RoilyFish
  * @date: 2022/5/5 19:22
  */
