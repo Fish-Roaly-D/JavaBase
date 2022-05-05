@@ -19,9 +19,12 @@ public class DelayQueueTest {
     public void testDelayed() throws InterruptedException {
 
 
-        MyDelayed myDelayed = new MyDelayed(10000);
-        Thread.sleep(5000);
-        System.out.println(myDelayed.getDelay());
+        MyDelayed myDelayedFirst = new MyDelayed(10000);
+        Thread.sleep(3000);
+        MyDelayed myDelayedEnd = new MyDelayed(10000);
+        Thread.sleep(3000);
+        System.out.println("myDelayedFirst=>" + myDelayedFirst.getDelay());
+        System.out.println("myDelayedEnd=>" + myDelayedEnd.getDelay());
 
     }
 
@@ -61,8 +64,4 @@ class MyDelayed implements Delayed {
         return this.getDelay(timeUnit);
     }
 
-    @Override
-    public String toString() {
-        return "" + time;
-    }
 }
