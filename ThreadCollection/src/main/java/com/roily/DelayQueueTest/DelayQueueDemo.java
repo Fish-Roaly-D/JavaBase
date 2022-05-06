@@ -2,6 +2,7 @@ package com.roily.DelayQueueTest;
 
 import lombok.Data;
 
+import java.util.Objects;
 import java.util.concurrent.DelayQueue;
 import java.util.concurrent.Delayed;
 import java.util.concurrent.TimeUnit;
@@ -69,11 +70,17 @@ public class DelayQueueDemo {
 
         addT1.start();
         addT2.start();
+
+        removeOrder();
+
         getT.start();
 
     }
 
-    public static void getOrder() {
+    //模拟支付完成 退出等待队列
+    public static void removeOrder() {
+        //线程T2：9
+        orderQueue.remove(new Order("线程T2：0"));
 
     }
 
@@ -111,6 +118,19 @@ class Order implements Delayed {
 
         return this.getDelay(overTimeUnit) >= o.getDelay(overTimeUnit) ? 1 : -1;
 
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Order order = (Order) o;
+        return orderNo.equals(order.orderNo);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(orderNo);
     }
 
 }
