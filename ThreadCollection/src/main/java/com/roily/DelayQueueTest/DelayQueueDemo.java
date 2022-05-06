@@ -46,11 +46,7 @@ public class DelayQueueDemo {
             for (int i = 0; i < 10; i++) {
 
                 while (!orderQueue.add(makeOrder(Thread.currentThread().getName() + i))) ;
-                try {
-                    Thread.sleep(1000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+
             }
         }, "线程T2：");
 
@@ -71,6 +67,7 @@ public class DelayQueueDemo {
         addT1.start();
         addT2.start();
 
+        Thread.sleep(3);
         removeOrder();
 
         getT.start();
@@ -79,9 +76,11 @@ public class DelayQueueDemo {
 
     //模拟支付完成 退出等待队列
     public static void removeOrder() {
+        String hadPay = "线程T2：1";
         //线程T2：9
-        orderQueue.remove(new Order("线程T2：0"));
+        orderQueue.remove(new Order(hadPay));
 
+        System.err.println(hadPay+"号订单已经完成支付、退出等待队列");
     }
 
 }
