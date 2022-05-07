@@ -82,7 +82,6 @@ public class DelayQueueDemo {
 
         System.err.println(hadPay+"号订单已经完成支付、退出等待队列");
     }
-
 }
 
 @Data
