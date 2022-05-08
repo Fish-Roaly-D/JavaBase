@@ -44,16 +44,46 @@ public class Test01 {
 
     }
 
+    //continue  跳出当前循环，继续执行循环
+    //如果是双重循环，跳出内循环
     @Test
     public void testContinue() {
 
-        xxx:
-        for (Integer i = 0; i < 5;i++ ) {
-            System.out.println(i);
-            if (i / 4 > 0)
-                continue xxx;
+        final int x = 9;
+        final int y = 9;
 
-            System.out.println("xxxx");
+        for (Integer i = 0; i < x; i++) {
+            Integer iTemp = i + 1;
+            xxx:
+            for (Integer j = 0; j < y; j++) {
+                Integer jTemp = j + 1;
+                System.out.printf(jTemp + "*" + iTemp + "=" + (jTemp * iTemp) + "\t");
+                if (i == j) break xxx;
+                //break  跳出当前循环 继续往下执行
+            }
+            System.out.println();
+        }
+
+    }
+
+    //使用lable
+    @Test
+    public void testContinueLocation() {
+
+        final int x = 9;
+        final int y = 9;
+        lable:
+        for (Integer i = 0; i < x; i++) {
+            Integer iTemp = i + 1;
+            for (Integer j = 0; j < y; j++) {
+                Integer jTemp = j + 1;
+                System.out.printf(jTemp + "*" + iTemp + "=" + (jTemp * iTemp) + "\t");
+                if (i == j) {
+                    System.out.println();
+                    continue lable;
+                }
+            }
+
         }
     }
 
