@@ -5,6 +5,7 @@ import lombok.experimental.Accessors;
 import org.junit.Test;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
+import java.util.concurrent.PriorityBlockingQueue;
 
 /**
  * @version 1.0.0
@@ -85,6 +86,14 @@ public class Test01 {
             }
 
         }
+    }
+
+    //PriorityBlockingQueue writeObject有什么用
+    @Test
+    public void testWO(){
+
+        PriorityBlockingQueue<Object> objects = new PriorityBlockingQueue<>();
+
     }
 
 }
