@@ -1,10 +1,10 @@
 package com.roily;
 
-import javafx.scene.chart.PieChart;
 import org.junit.Test;
 
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.util.*;
+import java.util.HashMap;
 
 /**
  * descripte:
@@ -15,6 +15,7 @@ import java.util.*;
 public class MapLearn {
 
 
+    //for循环break
     @Test
     public void forTest() {
         for (String str = "123", parm; str != null; str = parm) {
@@ -25,16 +26,7 @@ public class MapLearn {
             if (parm.equals("12345")) {
                 break;
             }
-
-
         }
-
-        while(true){
-            System.out.println(
-                    "111"
-            );
-        }
-
     }
 
     //tableSizeFor
@@ -44,6 +36,7 @@ public class MapLearn {
         System.out.println(i);
     }
 
+    //HashMap的tableSizefor方法理解
     public static int tableSizeForTest(int n) {
         //对自然数e求对数。结合换底公式
         double m = Math.log(n) / Math.log(2);
@@ -54,7 +47,7 @@ public class MapLearn {
     }
 
     @Test
-    public void hashMapTest() throws NoSuchMethodException {
+    public void hashMapTest() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
         HashMap<String, String> map = new HashMap<String, String>(10);
         Class<? extends HashMap> aClass = map.getClass();
         Method putVal = aClass.getDeclaredMethod("putVal", int.class, Object.class, Object.class, boolean.class, boolean.class);
