@@ -16,13 +16,14 @@ public class HashMap01 {
 
 
     @Test
-    public void NaNValue(){
+    public void NaNValue() {
         System.out.println(Double.longBitsToDouble(0x7ff8000000000000L));
         System.out.println(Float.intBitsToFloat(0x7fc00000));
     }
 
+    //异或：不相等才为1
     @Test
-    public void yihuo(){
+    public void yihuo() {
 
         System.out.println(1 ^ 1);
         System.out.println(0 ^ 0);
@@ -30,25 +31,25 @@ public class HashMap01 {
         System.out.println(1 ^ 0);
 
     }
+
+    //if里面可以写表达式
     @Test
-    public void iftest(){
-
-        int i  = 1;
-
-       if (true){
-           System.out.println(1);
-       }
-       if ((i = 2 ) > 0){
-           System.out.println(2);
-       }
-
+    public void iftest() {
+        int i = 0;
+        if (true) {
+            System.out.println(i);
+        }
+        if ((i = 2) > 0) {
+            System.out.println(i);
+        }
     }
 
+    //Has和Map的size为节点个数，不是数组长度
     public static void main(String[] args) {
 
-        Map<String, Object> map = new HashMap<String,Object>();
+        Map<String, Object> map = new HashMap<String, Object>();
 
-        map.put("a",123);
+        map.put("a", 123);
         System.out.println(map.size());
 
         HashMap<String, Object> map1 = new HashMap<String, Object>(map);
