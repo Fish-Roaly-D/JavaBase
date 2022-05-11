@@ -11,7 +11,7 @@
     <modules>
         <module>Base-DataType-01</module>
         <module>Base-Collection-01</module>
-        <module>Base-Collection-02</module>
+        <module>Base-Map-01</module>
         <module>Mysql-jdbc</module>
         <module>Mysql-DataSource</module>
         <module>Mybatis-01</module>
@@ -22,7 +22,6 @@
         <module>Mybatis-04</module>
         <module>ThreadBase02</module>
         <module>javabase</module>
-        <module>MybatisPlus-01</module>
         <module>ThreadCollection</module>
     </modules>
 
