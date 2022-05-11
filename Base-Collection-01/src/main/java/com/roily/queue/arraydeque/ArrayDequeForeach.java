@@ -1,4 +1,4 @@
-package com.roily.queue.queue01;
+package com.roily.queue.arraydeque;
 
 import org.junit.Test;
 

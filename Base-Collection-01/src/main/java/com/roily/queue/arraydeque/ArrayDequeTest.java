@@ -1,4 +1,4 @@
-package com.roily.queue.queue01;
+package com.roily.queue.arraydeque;
 
 import org.junit.Test;
 
@@ -16,39 +16,36 @@ import java.util.Arrays;
 public class ArrayDequeTest {
 
 
-
+    /**
+     * ArrayDeque.addFirst(),在head对应下标为0时，是从数组尾部开始添加元素的
+     * addLast(),在tail对应下标开始添加元素
+     * getFirst(),获取head对应下标元素
+     * getLast()，获取tail对应下标元素
+     */
     @Test
-    public void test(){
-
+    public void test() {
         //默认16
         ArrayDeque<String> strings = new ArrayDeque<>();
-
         strings.addFirst("abc");
-
         // 1000 0000 0000 0000 0000 0000
         // 0000                     1111
-        System.out.println( (-1) & 15);
+        System.out.println((-1) & 15);
     }
 
     @Test
-    public void getFirst(){
-
+    public void getFirst() {
         //默认16
         ArrayDeque<String> strings = new ArrayDeque<>();
-
         strings.addFirst("1");
         strings.addFirst("2");
         strings.addFirst("3");
         strings.addFirst("4");
-
         System.out.println(strings.element());
         System.out.println(strings.getFirst());
-        //System.out.println(strings.getLast());
-        //System.out.println(strings.pop());
     }
 
     @Test
-    public void getLaset(){
+    public void getLaset() {
 
         //默认16
         ArrayDeque<String> strings = new ArrayDeque<>();
@@ -69,8 +66,9 @@ public class ArrayDequeTest {
     }
 
 
+    //测试System.arraycopy
     @Test
-    public void testArraycopy(){
+    public void testArraycopy() {
 
         String[] strs = new String[10];
 
@@ -81,25 +79,25 @@ public class ArrayDequeTest {
         strs[8] = "8";
         strs[9] = "9";
 
-        Arrays.stream(strs).forEach((str)->{
-            System.out.printf(str+",");
+        Arrays.stream(strs).forEach((str) -> {
+            System.out.printf(str + ",");
         });
 
         System.out.println();
         String[] strs2 = new String[20];
 
         //将strs  拷贝到 strs2里
-        System.arraycopy(strs,0,strs2,0,10);
+        System.arraycopy(strs, 0, strs2, 0, 10);
 
-        Arrays.stream(strs2).forEach((str)->{
-            System.out.printf(str+",");
+        Arrays.stream(strs2).forEach((str) -> {
+            System.out.printf(str + ",");
         });
 
     }
 
 
     @Test
-    public void remove(){
+    public void remove() {
 
         //默认16
         ArrayDeque<String> strings = new ArrayDeque<>();
@@ -118,7 +116,7 @@ public class ArrayDequeTest {
         //strings.removeFirstOccurrence("1");
         strings.removeLastOccurrence("1");
 
-        strings.stream().forEach((obj)->{
+        strings.stream().forEach((obj) -> {
             System.out.println(obj);
         });
 
