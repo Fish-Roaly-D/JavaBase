@@ -13,6 +13,10 @@ import org.junit.Test;
  */
 public class Testdengdengyu {
 
+    /**
+     * 测试同一个实例的不同引用是否相等
+     * 在修改后是否相等
+     */
     @Test
     public void testDDY() {
 
@@ -27,6 +31,25 @@ public class Testdengdengyu {
         System.out.println(p == q);
     }
 
+    /**
+     * 两个null是否相等
+     */
+    @Test
+    public void testNull(){
+
+        MyTestClassTestdengdengyu t1 = null;
+
+        MyTestClassTestdengdengyu t2 = t1;
+
+        System.out.println(t1 == t2);
+
+
+        MyTestClassTestdengdengyu t3 = null;
+
+        MyTestClassTestdengdengyu t4 = null;
+
+        System.out.println(t3 == t4);
+    }
 
 }
 
