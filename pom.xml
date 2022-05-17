@@ -9,8 +9,8 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>Base-DataType-01</module>
-        <module>Base-Collection-01</module>
+        <module>base-collection-01</module>
+        <module>base-datatype-01</module>
         <module>Base-Map-01</module>
         <module>Mysql-jdbc</module>
         <module>Mysql-DataSource</module>
