@@ -1,4 +1,4 @@
-package com.roily.ArrayList;
+package com.roily.arraylist;
 
 import org.junit.Test;
 

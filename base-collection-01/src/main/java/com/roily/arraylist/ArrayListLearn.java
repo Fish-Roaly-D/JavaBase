@@ -1,11 +1,10 @@
-package com.roily.ArrayList;
+package com.roily.arraylist;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import org.junit.Test;
 import org.openjdk.jol.vm.VM;
 
-import java.lang.reflect.Array;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Arrays;

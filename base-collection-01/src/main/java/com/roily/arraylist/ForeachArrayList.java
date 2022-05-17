@@ -1,9 +1,8 @@
-package com.roily.ArrayList;
+package com.roily.arraylist;
 
 import org.junit.Test;
 
 import java.util.*;
-import java.util.stream.Stream;
 
 /**
  * @version 1.0.0

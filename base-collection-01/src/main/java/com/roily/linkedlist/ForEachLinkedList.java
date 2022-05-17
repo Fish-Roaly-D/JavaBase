@@ -1,4 +1,4 @@
-package com.roily.LinkedList;
+package com.roily.linkedlist;
 
 import org.junit.Test;
 
