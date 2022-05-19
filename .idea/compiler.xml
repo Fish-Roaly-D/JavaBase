@@ -7,27 +7,22 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ThreadBase02" />
-        <module name="ThreadBase" />
-        <module name="Mysql-DataSource" />
+        <module name="threadbase" />
+        <module name="threadcollection" />
+        <module name="threadbase02" />
+        <module name="javabase-collection" />
         <module name="base-collection-01" />
+        <module name="mysql-datasource" />
         <module name="javabase" />
-        <module name="Mybatis-01" />
-        <module name="Mysql-jdbc" />
-        <module name="Mybatis-04" />
-        <module name="Mybatis-03" />
-        <module name="Mybatis-02" />
-        <module name="Base-Map-01" />
-        <module name="ThreadCollection" />
         <module name="base-datatype-01" />
-        <module name="JavaBaseCollection" />
+        <module name="base-map-01" />
+        <module name="mysql-jdbc" />
+        <module name="mybatis-04" />
+        <module name="mybatis-03" />
+        <module name="mybatis-02" />
+        <module name="mybatis-01" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8">
-      <module name="Base-Collection-02" target="8" />
-      <module name="Mybatis-plus-01" target="8" />
-      <module name="MybatisPlus" target="1.5" />
-      <module name="MybatisPlus-01" target="1.5" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="8" />
   </component>
 </project>

@@ -3,7 +3,156 @@
   <component name="ChangeListManager">
     <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Base-Map-01/Base-Map-01.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Base-Map-01/Map.assets/image-20220225140958797.png" beforeDir="false" afterPath="$PROJECT_DIR$/base-map-01/Map.assets/image-20220225140958797.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Base-Map-01/Map.md" beforeDir="false" afterPath="$PROJECT_DIR$/base-map-01/Map.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Base-Map-01/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/base-map-01/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Base-Map-01/src/main/java/com/roily/HashMap01.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-map-01/src/main/java/com/roily/HashMap01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Base-Map-01/src/main/java/com/roily/MapLearn.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-map-01/src/main/java/com/roily/MapLearn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Base-Map-01/src/main/java/com/roily/hashMapForeach/HashMapForeach.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-map-01/src/main/java/com/roily/hashMapForeach/HashMapForeach.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Base-Map-01/src/main/java/com/roily/hashMapForeach/KeyForeach.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-map-01/src/main/java/com/roily/hashMapForeach/KeyForeach.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Base-Map-01/src/main/java/com/roily/hashMapForeach/ValueForeach.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-map-01/src/main/java/com/roily/hashMapForeach/ValueForeach.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Base-Map-01/src/main/java/com/roily/linkedHashMap/simple/Simple01.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-map-01/src/main/java/com/roily/linkedHashMap/simple/Simple01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Base-Map-01/src/main/java/com/roily/split/HashMapSpliter.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-map-01/src/main/java/com/roily/split/HashMapSpliter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaBase.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaBaseCollection/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/javabase-collection/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaBaseCollection/src/main/java/com/roily/StringSummary/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase-collection/src/main/java/com/roily/StringSummary/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaBaseCollection/src/main/java/com/roily/StringSummary/test/FinalDescripteBaseType.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase-collection/src/main/java/com/roily/StringSummary/test/FinalDescripteBaseType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaBaseCollection/src/main/java/com/roily/StringSummary/test/FinalDescripteQuoteType.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase-collection/src/main/java/com/roily/StringSummary/test/FinalDescripteQuoteType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaBaseCollection/src/main/java/com/roily/StringSummary/testDemo/FatherEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase-collection/src/main/java/com/roily/StringSummary/testDemo/FatherEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaBaseCollection/src/main/java/com/roily/StringSummary/testDemo/SonEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase-collection/src/main/java/com/roily/StringSummary/testDemo/SonEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaBaseCollection/src/main/java/com/roily/StringSummary/testDemo/Test01.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase-collection/src/main/java/com/roily/StringSummary/testDemo/Test01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaBaseCollection/src/main/java/com/roily/StringSummary/testDemo2/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase-collection/src/main/java/com/roily/StringSummary/testDemo2/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-01/Mybatis-01.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-01/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-01/src/main/java/com/roily/entity/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01/src/main/java/com/roily/entity/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-01/src/main/java/com/roily/mapper/DepartmentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01/src/main/java/com/roily/mapper/DepartmentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-01/src/main/java/com/roily/mapper/DepartmentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01/src/main/java/com/roily/mapper/DepartmentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-01/src/main/java/com/roily/test/test01.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01/src/main/java/com/roily/test/test01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-01/src/main/java/com/roily/util/mybatisUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01/src/main/java/com/roily/util/mybatisUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-01/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01/src/main/resources/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-01/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-01/src/main/resources/xml/DepartmentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01/src/main/resources/xml/DepartmentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-02/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-02/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-02/src/main/java/com/roily/entity/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-02/src/main/java/com/roily/entity/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-02/src/main/java/com/roily/entity/TestEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-02/src/main/java/com/roily/entity/TestEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-02/src/main/java/com/roily/mapper/DepartmentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-02/src/main/java/com/roily/mapper/DepartmentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-02/src/main/java/com/roily/mapper/DepartmentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-02/src/main/java/com/roily/mapper/DepartmentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-02/src/main/java/com/roily/test/test01.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-02/src/main/java/com/roily/test/test01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-02/src/main/java/com/roily/typeHandler/myCustomTypeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-02/src/main/java/com/roily/typeHandler/myCustomTypeHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-02/src/main/java/com/roily/util/DruidDataSourceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-02/src/main/java/com/roily/util/DruidDataSourceFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-02/src/main/java/com/roily/util/mybatisUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-02/src/main/java/com/roily/util/mybatisUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-02/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-02/src/main/resources/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-02/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-02/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-02/src/main/resources/xml/DepartmentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-02/src/main/resources/xml/DepartmentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-03/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-03/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-03/src/main/java/com/roily/entity/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-03/src/main/java/com/roily/entity/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-03/src/main/java/com/roily/entity/ResultEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-03/src/main/java/com/roily/entity/ResultEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-03/src/main/java/com/roily/mapper/DepartmentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-03/src/main/java/com/roily/mapper/DepartmentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-03/src/main/java/com/roily/pojo/Department2.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-03/src/main/java/com/roily/pojo/Department2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-03/src/main/java/com/roily/pojo/Department2Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-03/src/main/java/com/roily/pojo/Department2Mapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-03/src/main/java/com/roily/pojo/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-03/src/main/java/com/roily/pojo/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-03/src/main/java/com/roily/pojo/EmployeeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-03/src/main/java/com/roily/pojo/EmployeeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-03/src/main/java/com/roily/test/cachTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-03/src/main/java/com/roily/test/cachTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-03/src/main/java/com/roily/test/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-03/src/main/java/com/roily/test/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-03/src/main/java/com/roily/test/test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-03/src/main/java/com/roily/test/test2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-03/src/main/java/com/roily/util/MybatisUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-03/src/main/java/com/roily/util/MybatisUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-03/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-03/src/main/resources/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-03/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-03/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-03/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-03/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-03/src/main/resources/xml/Department2Mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-03/src/main/resources/xml/Department2Mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-03/src/main/resources/xml/DepartmentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-03/src/main/resources/xml/DepartmentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-03/src/main/resources/xml/EmployeeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-03/src/main/resources/xml/EmployeeMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-04/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-04/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-04/src/main/java/com/roily/entity/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-04/src/main/java/com/roily/entity/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-04/src/main/java/com/roily/mapper/DepartmentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-04/src/main/java/com/roily/mapper/DepartmentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-04/src/main/java/com/roily/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-04/src/main/java/com/roily/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-04/src/main/java/com/roily/util/MybatisUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-04/src/main/java/com/roily/util/MybatisUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-04/src/main/java/com/roily/vo/PageResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-04/src/main/java/com/roily/vo/PageResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-04/src/main/java/com/roily/vo/PageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-04/src/main/java/com/roily/vo/PageUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-04/src/main/java/com/roily/vo/QueryParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-04/src/main/java/com/roily/vo/QueryParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-04/src/main/java/com/roily/vo/QueryParam2.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-04/src/main/java/com/roily/vo/QueryParam2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-04/src/main/java/com/roily/vo/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-04/src/main/java/com/roily/vo/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-04/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-04/src/main/resources/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-04/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-04/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-04/src/main/resources/xml/DepartmentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-04/src/main/resources/xml/DepartmentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mysql-DataSource/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-datasource/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mysql-DataSource/src/main/java/com/roily/C3P0/C3P0Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-datasource/src/main/java/com/roily/C3P0/C3P0Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mysql-DataSource/src/main/java/com/roily/C3P0/C3P0Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-datasource/src/main/java/com/roily/C3P0/C3P0Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mysql-DataSource/src/main/java/com/roily/DataSourceDemo/MysqlDataSourceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-datasource/src/main/java/com/roily/DataSourceDemo/MysqlDataSourceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mysql-DataSource/src/main/java/com/roily/DataSourceDemo/MysqlDataSourceUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-datasource/src/main/java/com/roily/DataSourceDemo/MysqlDataSourceUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mysql-DataSource/src/main/java/com/roily/Druid/DruidTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-datasource/src/main/java/com/roily/Druid/DruidTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mysql-DataSource/src/main/java/com/roily/Druid/DruidUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-datasource/src/main/java/com/roily/Druid/DruidUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mysql-DataSource/src/main/java/com/roily/dbcp/DBCPDataSourceUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-datasource/src/main/java/com/roily/dbcp/DBCPDataSourceUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mysql-DataSource/src/main/java/com/roily/dbcp/DBCPTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-datasource/src/main/java/com/roily/dbcp/DBCPTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mysql-DataSource/src/main/resources/c3p0-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-datasource/src/main/resources/c3p0-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mysql-DataSource/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-datasource/src/main/resources/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mysql-DataSource/src/main/resources/druid.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-datasource/src/main/resources/druid.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mysql-jdbc/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-jdbc/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mysql-jdbc/src/main/java/com/roily/test01/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-jdbc/src/main/java/com/roily/test01/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mysql-jdbc/src/main/java/com/roily/test01/MysqlTest01.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-jdbc/src/main/java/com/roily/test01/MysqlTest01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mysql-jdbc/src/main/java/com/roily/test01/MysqlTest02.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-jdbc/src/main/java/com/roily/test01/MysqlTest02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mysql-jdbc/src/main/java/com/roily/test01/MysqlTest03.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-jdbc/src/main/java/com/roily/test01/MysqlTest03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mysql-jdbc/src/main/java/com/roily/test02/BaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-jdbc/src/main/java/com/roily/test02/BaseDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mysql-jdbc/src/main/java/com/roily/test02/ConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-jdbc/src/main/java/com/roily/test02/ConnectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mysql-jdbc/src/main/java/com/roily/test02/DaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-jdbc/src/main/java/com/roily/test02/DaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mysql-jdbc/src/main/java/com/roily/test03/TransactionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-jdbc/src/main/java/com/roily/test03/TransactionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mysql-jdbc/src/main/java/com/roily/util/JdbcConnectionUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-jdbc/src/main/java/com/roily/util/JdbcConnectionUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mysql-jdbc/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-jdbc/src/main/resources/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadBase/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/threadbase/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadBase/src/main/java/com/roily/ThreadJUBUBIANLIANG.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadbase/src/main/java/com/roily/ThreadJUBUBIANLIANG.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadBase/src/main/java/com/roily/newxxxx/DeadLock2.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadbase/src/main/java/com/roily/newxxxx/DeadLock2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadBase/src/main/java/com/roily/thread_01/MyCallable.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadbase/src/main/java/com/roily/thread_01/MyCallable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadBase/src/main/java/com/roily/thread_01/MyThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadbase/src/main/java/com/roily/thread_01/MyThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadBase/src/main/java/com/roily/thread_01/MybRunable.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadbase/src/main/java/com/roily/thread_01/MybRunable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadBase/src/main/java/com/roily/thread_01/classTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadbase/src/main/java/com/roily/thread_01/classTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadBase/src/main/java/com/roily/thread_01/testStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadbase/src/main/java/com/roily/thread_01/testStart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadBase/src/main/java/com/roily/thread_02/InterruptDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadbase/src/main/java/com/roily/thread_02/InterruptDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadBase/src/main/java/com/roily/thread_02/joinDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadbase/src/main/java/com/roily/thread_02/joinDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadBase/src/main/java/com/roily/thread_03/Daemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadbase/src/main/java/com/roily/thread_03/Daemon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadBase/src/main/java/com/roily/thread_03/DaemonDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadbase/src/main/java/com/roily/thread_03/DaemonDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadBase/src/main/java/com/roily/thread_03/SleepAndWait.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadbase/src/main/java/com/roily/thread_03/SleepAndWait.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadBase02/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/threadbase02/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadBase02/src/main/java/com/roily/LockSuportDemo/Demo01.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadbase02/src/main/java/com/roily/LockSuportDemo/Demo01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadBase02/src/main/java/com/roily/ReenTrantLockDemo/Demo01.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadbase02/src/main/java/com/roily/ReenTrantLockDemo/Demo01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadBase02/src/main/java/com/roily/aboutFinal/Father.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadbase02/src/main/java/com/roily/aboutFinal/Father.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadBase02/src/main/java/com/roily/aboutFinal/FinalDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadbase02/src/main/java/com/roily/aboutFinal/FinalDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadBase02/src/main/java/com/roily/aboutFinal/FinalDemoSimple.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadbase02/src/main/java/com/roily/aboutFinal/FinalDemoSimple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadBase02/src/main/java/com/roily/aboutFinal/Son.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadbase02/src/main/java/com/roily/aboutFinal/Son.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadBase02/src/main/java/com/roily/aboutLock/LockDemo01.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadbase02/src/main/java/com/roily/aboutLock/LockDemo01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadBase02/src/main/java/com/roily/aboutLock/Mutex.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadbase02/src/main/java/com/roily/aboutLock/Mutex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadBase02/src/main/java/com/roily/aboutLock/lockTest/ConditionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadbase02/src/main/java/com/roily/aboutLock/lockTest/ConditionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadBase02/src/main/java/com/roily/aboutLock/lockTest/LockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadbase02/src/main/java/com/roily/aboutLock/lockTest/LockTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadBase02/src/main/java/com/roily/aboutLock/lockTest/TryLockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadbase02/src/main/java/com/roily/aboutLock/lockTest/TryLockTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadBase02/src/main/java/com/roily/aqsDemo/AQSDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadbase02/src/main/java/com/roily/aqsDemo/AQSDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadBase02/src/main/java/com/roily/aqsDemo/NodeStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadbase02/src/main/java/com/roily/aqsDemo/NodeStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadBase02/src/main/java/com/roily/synchronizedDemo/SynchonizedDemo02.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadbase02/src/main/java/com/roily/synchronizedDemo/SynchonizedDemo02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadBase02/src/main/java/com/roily/synchronizedDemo/SynchronizedBlockClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadbase02/src/main/java/com/roily/synchronizedDemo/SynchronizedBlockClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadBase02/src/main/java/com/roily/synchronizedDemo/SynchronizedBlockObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadbase02/src/main/java/com/roily/synchronizedDemo/SynchronizedBlockObj.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadBase02/src/main/java/com/roily/synchronizedDemo/SynchronizedBlockSimpleObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadbase02/src/main/java/com/roily/synchronizedDemo/SynchronizedBlockSimpleObj.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadBase02/src/main/java/com/roily/synchronizedDemo/SynchronizedDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadbase02/src/main/java/com/roily/synchronizedDemo/SynchronizedDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadBase02/src/main/java/com/roily/synchronizedDemo/SynchronizedDeom01.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadbase02/src/main/java/com/roily/synchronizedDemo/SynchronizedDeom01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadBase02/src/main/java/com/roily/valatileDemo/Demo01.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadbase02/src/main/java/com/roily/valatileDemo/Demo01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadBase02/src/main/java/com/roily/wrlock/WrlDemo01.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadbase02/src/main/java/com/roily/wrlock/WrlDemo01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadCollection/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/threadcollection/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadCollection/src/main/java/com/roily/ArrayBlock/ArrayBlockForeach.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadcollection/src/main/java/com/roily/ArrayBlock/ArrayBlockForeach.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadCollection/src/main/java/com/roily/ArrayBlock/ArrayBlockGet.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadcollection/src/main/java/com/roily/ArrayBlock/ArrayBlockGet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadCollection/src/main/java/com/roily/ArrayBlock/ArrayBlockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadcollection/src/main/java/com/roily/ArrayBlock/ArrayBlockTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadCollection/src/main/java/com/roily/DelayQueueTest/ConditionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadcollection/src/main/java/com/roily/DelayQueueTest/ConditionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadCollection/src/main/java/com/roily/DelayQueueTest/ConditionTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadcollection/src/main/java/com/roily/DelayQueueTest/ConditionTest2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadCollection/src/main/java/com/roily/DelayQueueTest/DelayQueueDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadcollection/src/main/java/com/roily/DelayQueueTest/DelayQueueDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadCollection/src/main/java/com/roily/DelayQueueTest/DelayedAdd.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadcollection/src/main/java/com/roily/DelayQueueTest/DelayedAdd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadCollection/src/main/java/com/roily/DelayQueueTest/DelayedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadcollection/src/main/java/com/roily/DelayQueueTest/DelayedTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadCollection/src/main/java/com/roily/LinkedBlock/AutomaticIntegerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadcollection/src/main/java/com/roily/LinkedBlock/AutomaticIntegerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadCollection/src/main/java/com/roily/LinkedBlock/IntMaxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadcollection/src/main/java/com/roily/LinkedBlock/IntMaxTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadCollection/src/main/java/com/roily/LinkedBlock/LinkedBlockingQueueAddTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadcollection/src/main/java/com/roily/LinkedBlock/LinkedBlockingQueueAddTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadCollection/src/main/java/com/roily/LinkedBlock/LinkedBlockingQueueForeach.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadcollection/src/main/java/com/roily/LinkedBlock/LinkedBlockingQueueForeach.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadCollection/src/main/java/com/roily/LinkedBlockingDequeTest/Foreach.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadcollection/src/main/java/com/roily/LinkedBlockingDequeTest/Foreach.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadCollection/src/main/java/com/roily/LinkedBlockingDequeTest/TestAddAndGet.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadcollection/src/main/java/com/roily/LinkedBlockingDequeTest/TestAddAndGet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadCollection/src/main/java/com/roily/PriorityBlockingQueue/Test01.java" beforeDir="false" afterPath="$PROJECT_DIR$/threadcollection/src/main/java/com/roily/PriorityBlockingQueue/Test01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-collection-01/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/base-collection-01/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,11 +262,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Base-Collection-01/src/main/java/com/roily/queue/blockingqueue/delayQueue" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/javabase-collection" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.36091954" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="project.structure.side.proportion" value="0.31609195" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -146,100 +295,141 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AVLTree.test">
-    <configuration name="AVLTree.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="base-collection-01" />
+  <component name="RunManager" selected="Application.FinalDescripteBaseType">
+    <configuration name="Copy01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.roily.aboutCopy.Copy01" />
+      <module name="javabase" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.tree.*" />
+          <option name="PATTERN" value="com.roily.aboutCopy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.tree" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.tree.AVLTree" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BST" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="base-collection-01" />
+    <configuration name="FinalDescripteBaseType" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.roily.StringSummary.test.FinalDescripteBaseType" />
+      <module name="javabase-collection" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.tree.*" />
+          <option name="PATTERN" value="com.roily.StringSummary.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.tree" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.tree.BST" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClassLoaderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="base-datatype-01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.roily" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.ClassLoaderTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BST.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="base-collection-01" />
+    <configuration name="IntegerLearn.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="base-datatype-01" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.tree.*" />
+          <option name="PATTERN" value="com.roily.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.tree" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.tree.BST" />
+      <option name="PACKAGE_NAME" value="com.roily" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.IntegerLearn" />
+      <option name="METHOD_NAME" value="test01" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KeyForeach.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="base-map-01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.hashMapForeach.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.roily.hashMapForeach" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.hashMapForeach.KeyForeach" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TreeSetTest.testAddNotComparableXXX" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="base-collection-01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.set.treeset.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.roily.set.treeset" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.set.treeset.TreeSetTest" />
-      <option name="METHOD_NAME" value="testAddNotComparableXXX" />
-      <option name="TEST_OBJECT" value="method" />
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="mybatis-03" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TrieTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="base-collection-01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.tree.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.roily.tree" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.tree.TrieTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="mybatis-03" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.TreeSetTest.testAddNotComparableXXX" />
-      <item itemvalue="JUnit.TrieTest.test" />
-      <item itemvalue="JUnit.BST.test" />
-      <item itemvalue="JUnit.BST" />
-      <item itemvalue="JUnit.AVLTree.test" />
+      <item itemvalue="JUnit.ClassLoaderTest" />
+      <item itemvalue="JUnit.IntegerLearn.test01" />
+      <item itemvalue="JUnit.KeyForeach.test" />
+      <item itemvalue="Application.Copy01" />
+      <item itemvalue="Application.FinalDescripteBaseType" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AVLTree.test" />
-        <item itemvalue="JUnit.BST.test" />
-        <item itemvalue="JUnit.BST" />
-        <item itemvalue="JUnit.TrieTest.test" />
-        <item itemvalue="JUnit.TreeSetTest.testAddNotComparableXXX" />
+        <item itemvalue="Application.FinalDescripteBaseType" />
+        <item itemvalue="Application.Copy01" />
+        <item itemvalue="JUnit.KeyForeach.test" />
+        <item itemvalue="JUnit.IntegerLearn.test01" />
+        <item itemvalue="JUnit.ClassLoaderTest" />
       </list>
     </recent_temporary>
   </component>
@@ -382,21 +572,11 @@
       <workItem from="1652763754747" duration="2929000" />
       <workItem from="1652767079992" duration="11400000" />
       <workItem from="1652799183895" duration="6450000" />
-      <workItem from="1652885715564" duration="2118000" />
-    </task>
-    <task id="LOCAL-00002" summary="线程模块更新">
-      <created>1648775921609</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1648775921609</updated>
-    </task>
-    <task id="LOCAL-00003" summary="mybatis更新">
-      <created>1649010335881</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1649010335881</updated>
+      <workItem from="1652885715564" duration="14176000" />
+      <workItem from="1652940467348" duration="5976000" />
+      <workItem from="1652964493022" duration="5214000" />
+      <workItem from="1652981786234" duration="1250000" />
+      <workItem from="1652983086951" duration="433000" />
     </task>
     <task id="LOCAL-00004" summary="mybatisplus更新">
       <created>1649010380856</created>
@@ -727,7 +907,21 @@
       <option name="project" value="LOCAL" />
       <updated>1652806453217</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="java实现二叉排序树">
+      <created>1652888045948</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1652888045949</updated>
+    </task>
+    <task id="LOCAL-00052" summary="二叉查找树">
+      <created>1652972081840</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1652972081841</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -787,7 +981,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="生成多个订单" />
     <MESSAGE value="回退" />
     <MESSAGE value="模拟退出等待队列" />
     <MESSAGE value="订单支付-模拟" />
@@ -812,7 +1005,8 @@
     <MESSAGE value="set" />
     <MESSAGE value="java实现字典树" />
     <MESSAGE value="java实现二叉排序树" />
-    <option name="LAST_COMMIT_MESSAGE" value="java实现二叉排序树" />
+    <MESSAGE value="二叉查找树" />
+    <option name="LAST_COMMIT_MESSAGE" value="二叉查找树" />
   </component>
   <component name="WindowStateProjectService">
     <state x="318" y="103" key="#Customize_Data_Views" timestamp="1652372741178">
@@ -839,22 +1033,22 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="222" y="0" key="#MapLearn.forTest/0.0.1280.720@0.0.1280.720" timestamp="1652202854611" />
-    <state x="233" y="19" key="#Project_Structure" timestamp="1652886987667">
+    <state x="233" y="19" key="#Project_Structure" timestamp="1652981144119">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="233" y="19" key="#Project_Structure/0.0.1280.720@0.0.1280.720" timestamp="1652886987667" />
+    <state x="233" y="19" key="#Project_Structure/0.0.1280.720@0.0.1280.720" timestamp="1652981144119" />
     <state x="329" y="211" key="#com.intellij.codeInsight.template.impl.EditVariableDialog" timestamp="1647417010175">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="329" y="211" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/0.0.1280.720@0.0.1280.720" timestamp="1647417010175" />
-    <state x="76" y="29" width="1089" height="675" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1648912101612">
+    <state x="104" y="39" width="1089" height="675" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1652983030891">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="76" y="29" width="1089" height="675" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1648912101612" />
-    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser" timestamp="1652885998701">
+    <state x="104" y="39" width="1089" height="675" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1652983030891" />
+    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser" timestamp="1652889620700">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1652885998701" />
+    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1652889620700" />
     <state x="238" y="286" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1652766169324">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -871,6 +1065,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="371" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.720@0.0.1280.720" timestamp="1647229891741" />
+    <state x="371" y="107" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1652900898105">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="371" y="107" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1280.720@0.0.1280.720" timestamp="1652900898105" />
     <state x="396" y="63" key="#xdebugger.evaluate" timestamp="1648661574160">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -879,50 +1077,50 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="357" y="205" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.720@0.0.1280.720" timestamp="1646561752636" />
-    <state x="242" y="0" key="CommitChangelistDialog2" timestamp="1652806450902">
+    <state x="242" y="0" key="CommitChangelistDialog2" timestamp="1652972078113">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="242" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1652806450902" />
+    <state x="242" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1652972078113" />
     <state x="93" y="93" width="1095" height="535" key="DiffContextDialog" timestamp="1652806442722">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="93" y="93" width="1095" height="535" key="DiffContextDialog/0.0.1280.720@0.0.1280.720" timestamp="1652806442722" />
-    <state x="421" y="116" key="FileChooserDialogImpl" timestamp="1652457989868">
+    <state x="421" y="101" key="FileChooserDialogImpl" timestamp="1652983519242">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="421" y="116" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1652457989868" />
-    <state width="1237" height="290" key="GridCell.Tab.0.bottom" timestamp="1652887304682">
+    <state x="421" y="101" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1652983519242" />
+    <state width="1237" height="204" key="GridCell.Tab.0.bottom" timestamp="1652983582298">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="290" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1652887304682" />
-    <state width="1237" height="290" key="GridCell.Tab.0.center" timestamp="1652887304682">
+    <state width="1237" height="204" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1652983582298" />
+    <state width="1237" height="204" key="GridCell.Tab.0.center" timestamp="1652983582297">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="290" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1652887304682" />
-    <state width="1237" height="290" key="GridCell.Tab.0.left" timestamp="1652887304682">
+    <state width="1237" height="204" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1652983582297" />
+    <state width="1237" height="204" key="GridCell.Tab.0.left" timestamp="1652983582297">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="290" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1652887304682" />
-    <state width="1237" height="290" key="GridCell.Tab.0.right" timestamp="1652887304682">
+    <state width="1237" height="204" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1652983582297" />
+    <state width="1237" height="204" key="GridCell.Tab.0.right" timestamp="1652983582298">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="290" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1652887304682" />
-    <state width="1237" height="290" key="GridCell.Tab.1.bottom" timestamp="1652887305202">
+    <state width="1237" height="204" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1652983582298" />
+    <state width="1237" height="178" key="GridCell.Tab.1.bottom" timestamp="1652953145298">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="290" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1652887305202" />
-    <state width="1237" height="290" key="GridCell.Tab.1.center" timestamp="1652887305202">
+    <state width="1237" height="178" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1652953145298" />
+    <state width="1237" height="178" key="GridCell.Tab.1.center" timestamp="1652953145298">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="290" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1652887305202" />
-    <state width="1237" height="290" key="GridCell.Tab.1.left" timestamp="1652887305202">
+    <state width="1237" height="178" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1652953145298" />
+    <state width="1237" height="178" key="GridCell.Tab.1.left" timestamp="1652953145298">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="290" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1652887305202" />
-    <state width="1237" height="290" key="GridCell.Tab.1.right" timestamp="1652887305202">
+    <state width="1237" height="178" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1652953145298" />
+    <state width="1237" height="178" key="GridCell.Tab.1.right" timestamp="1652953145298">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="290" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1652887305202" />
+    <state width="1237" height="178" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1652953145298" />
     <state width="1237" height="198" key="GridCell.Tab.2.bottom" timestamp="1648131415309">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -963,14 +1161,18 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="221" y="202" key="MavenRunHelper.GoalEditor/0.0.1280.720@0.0.1280.720" timestamp="1648049254239" />
-    <state x="159" y="73" width="1038" height="647" key="SettingsEditor" timestamp="1652886958565">
+    <state x="447" y="93" width="717" height="604" key="NewModule_or_Project.wizard" timestamp="1652983520425">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="159" y="73" width="1038" height="647" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1652886958565" />
-    <state x="233" y="94" key="Vcs.Push.Dialog.v2" timestamp="1652806456097">
+    <state x="447" y="93" width="717" height="604" key="NewModule_or_Project.wizard/0.0.1280.720@0.0.1280.720" timestamp="1652983520425" />
+    <state x="242" y="13" width="1038" height="707" key="SettingsEditor" timestamp="1652983521715">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="233" y="94" key="Vcs.Push.Dialog.v2/0.0.1280.720@0.0.1280.720" timestamp="1652806456097" />
+    <state x="242" y="13" width="1038" height="707" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1652983521715" />
+    <state x="233" y="94" key="Vcs.Push.Dialog.v2" timestamp="1652972084134">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="233" y="94" key="Vcs.Push.Dialog.v2/0.0.1280.720@0.0.1280.720" timestamp="1652972084134" />
     <state width="560" height="718" key="com.intellij.byteCodeViewer.ShowByteCodeAction" timestamp="1648746723739">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -1003,22 +1205,22 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="56" y="63" key="new project wizard/0.0.1280.720@0.0.1280.720" timestamp="1651586293414" />
-    <state x="383" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1647017687608">
+    <state x="383" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1652900877573">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="383" y="0" key="refactoring.ChangeSignatureDialog/0.0.1280.720@0.0.1280.720" timestamp="1647017687608" />
-    <state x="297" y="161" width="672" height="677" key="run.anything.popup" timestamp="1652766497052">
+    <state x="383" y="0" key="refactoring.ChangeSignatureDialog/0.0.1280.720@0.0.1280.720" timestamp="1652900877573" />
+    <state x="297" y="161" width="672" height="677" key="run.anything.popup" timestamp="1652981090471">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="297" y="161" width="672" height="677" key="run.anything.popup/0.0.1280.720@0.0.1280.720" timestamp="1652766497052" />
+    <state x="297" y="161" width="672" height="677" key="run.anything.popup/0.0.1280.720@0.0.1280.720" timestamp="1652981090471" />
     <state x="234" y="19" key="scopes" timestamp="1647230227486">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="234" y="19" key="scopes/0.0.1280.720@0.0.1280.720" timestamp="1647230227486" />
-    <state x="177" y="120" width="1087" height="678" key="search.everywhere.popup" timestamp="1652886402231">
+    <state x="177" y="120" width="1087" height="678" key="search.everywhere.popup" timestamp="1652971259034">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="177" y="120" width="1087" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1652886402231" />
+    <state x="177" y="120" width="1087" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1652971259034" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1050,11 +1252,6 @@
           <url>file://$PROJECT_DIR$/base-collection-01/src/main/java/com/roily/tree/BST.java</url>
           <line>74</line>
           <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/base-collection-01/src/main/java/com/roily/tree/AVLTree.java</url>
-          <line>95</line>
-          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

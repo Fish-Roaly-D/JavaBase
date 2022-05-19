@@ -11,18 +11,18 @@
     <modules>
         <module>base-collection-01</module>
         <module>base-datatype-01</module>
-        <module>Base-Map-01</module>
-        <module>Mysql-jdbc</module>
-        <module>Mysql-DataSource</module>
-        <module>Mybatis-01</module>
-        <module>Mybatis-02</module>
-        <module>JavaBaseCollection</module>
-        <module>Mybatis-03</module>
-        <module>ThreadBase</module>
-        <module>Mybatis-04</module>
-        <module>ThreadBase02</module>
+        <module>base-map-01</module>
+        <module>mysql-jdbc</module>
+        <module>mysql-datasource</module>
+        <module>mybatis-01</module>
+        <module>mybatis-02</module>
+        <module>javabase-collection</module>
+        <module>mybatis-03</module>
+        <module>threadbase</module>
+        <module>mybatis-04</module>
+        <module>threadbase02</module>
         <module>javabase</module>
-        <module>ThreadCollection</module>
+        <module>threadcollection</module>
     </modules>
 
     <dependencies>
@@ -55,5 +55,17 @@
         </dependency>
 
     </dependencies>
-
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.3</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
