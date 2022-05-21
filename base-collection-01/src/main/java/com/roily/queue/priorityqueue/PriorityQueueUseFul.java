@@ -57,6 +57,7 @@ public class PriorityQueueUseFul {
     @Data
     @AllArgsConstructor
     class MyException extends Exception{
+        private static final long serialVersionUID = -473139374078790810L;
         String msg;
     }
 
