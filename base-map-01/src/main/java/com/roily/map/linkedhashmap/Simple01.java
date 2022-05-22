@@ -1,4 +1,4 @@
-package com.roily.linkedHashMap.simple;
+package com.roily.map.linkedhashmap;
 
 import org.junit.Test;
 
@@ -6,18 +6,20 @@ import java.util.*;
 
 /**
  * @version 1.0.0
- * @Description TODO
+ * @Description 有序性：插入、当前最晚未被使用
  * @ClassName Simple01.java
  * @author: RoilyFish
  * @date: 2022/4/25 21:33
  */
 public class Simple01 {
 
-    //在开始前呢，我们理解一下，LinkedHashMap为什么出现？
-    //因为hashMap作为'散列表'，他的读取顺序与我们存放顺序是不同的
-    //实际应用中，我们往往需要一个有序的map。
+    /**
+     * 在开始前呢，我们理解一下，LinkedHashMap为什么出现？
+     * 因为hashMap作为'散列表'，他的读取顺序与我们存放顺序是不同的
+     * 实际应用中，我们往往需要一个有序的map。
+     */
 
-    //此例说明hashMap不会按存储顺序来读取
+    //hashMap存储元素，根据key的哈希值散列，是无序的
     @Test
     public void test1() {
         Map<Object, Object> map = new HashMap<>();
@@ -33,19 +35,26 @@ public class Simple01 {
     }
 
 
+    /**
+     * LinkedHashMap是有序的
+     */
     @Test
     public void test01() {
 
         LinkedHashMap<Object, Object> map = new LinkedHashMap<>();
-
         map.put("a", 1);
-
-        map.forEach((a, b) -> {
-            System.out.println(a);
+        map.put("b", 2);
+        map.put("c", 3);
+        map.put("d", 4);
+        map.forEach((key, value) -> {
+            System.out.println("{key:"+key+","+"value:"+value+"}");
         });
     }
 
 
+    /**
+     * Map的replaceAll方法
+     */
     @Test
     public void testReplaceAll() {
 
@@ -67,6 +76,11 @@ public class Simple01 {
         });
     }
 
+    /**
+     * LinkedHashMap的有序性：
+     * ①插入顺序
+     * ②当前最晚未被访问（当元素被访问时，会将元素移到链表尾部）
+     */
     @Test
     public void testAfterAccess() {
 

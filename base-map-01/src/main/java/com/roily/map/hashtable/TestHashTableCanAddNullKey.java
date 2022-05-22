@@ -23,11 +23,11 @@ public class TestHashTableCanAddNullKey {
 
         Hashtable<String, String> table = new Hashtable<>();
 
-        //报错  空指针异常
+        ////报错  空指针异常
         table.put(null,"1");
 
         //报错  空指针异常
-        table.put("zx","");
+        table.put("zx",null);
     }
 
 

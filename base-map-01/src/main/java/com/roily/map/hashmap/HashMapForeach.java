@@ -1,4 +1,4 @@
-package com.roily.hashMapForeach;
+package com.roily.map.hashmap;
 
 import org.junit.Test;
 
@@ -6,7 +6,7 @@ import java.util.*;
 
 /**
  * @version 1.0.0
- * @Description TODO
+ * @Description
  * @ClassName HashMapForeach.java
  * @author: RoilyFish
  * @date: 2022/4/25 0:31
@@ -34,11 +34,6 @@ public class HashMapForeach {
          * ③自带的迭代器（实现迭代器接口），map接口并未继承迭代器
          * ④增强for循环
          */
-        //for循环（普通、增强）
-        //迭代器
-        //Iterable接口的 forEach
-        //Stream Api的forEach
-
         System.out.println("=======stream  api========");
         map.entrySet().stream().forEach((entry) -> {
             System.out.println(entry);

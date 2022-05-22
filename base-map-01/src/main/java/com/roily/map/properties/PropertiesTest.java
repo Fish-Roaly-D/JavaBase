@@ -9,7 +9,7 @@ import java.util.Properties;
 
 /**
  * @version 1.0.0
- * @Description
+ * @Description  properties也是一个kv的数据结构，是hashTable的子类
  * @ClassName PropertiesTest.java
  * @author: RoilyFish
  * @date: 2022/5/20 23:40

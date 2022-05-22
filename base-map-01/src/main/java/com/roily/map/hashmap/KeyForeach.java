@@ -1,4 +1,4 @@
-package com.roily.hashMapForeach;
+package com.roily.map.hashmap;
 
 import org.junit.Test;
 

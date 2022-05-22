@@ -15,21 +15,36 @@ import java.util.HashMap;
 public class MapLearn {
 
 
-    //for循环break
+    //for循环break，结束循环
     @Test
-    public void forTest() {
-        for (String str = "123", parm; str != null; str = parm) {
-            str = "123";
-            parm = "123";
-            System.out.println(parm += "4");
-            System.out.println(parm += "5");
-            if (parm.equals("12345")) {
+    public void forBreak() {
+        for (int i = 0; i < 100; i++) {
+            if (i>=20){
+                System.out.println(i);
                 break;
             }
         }
     }
 
-    //tableSizeFor
+    //for循环break，结束循环,带lable。结束内部循环，继续外循环
+    @Test
+    public void forBreak2() {
+
+        for (int i = 0; i < 100; i++) {
+            xxx:
+            for (int j = 0; i < 100; i++) {
+                if (j>=20){
+                    System.out.println(j);
+                    break xxx;
+                }
+            }
+        }
+
+    }
+
+    /**
+     * hashMap的tableSizeFor方法，使用Math工具类实现
+     */
     @Test
     public void tableSizeForTest() {
         int i = tableSizeForTest(33);
@@ -46,29 +61,7 @@ public class MapLearn {
         return (int) Math.pow(2, m2);
     }
 
-    @Test
-    public void hashMapTest() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
-        HashMap<String, String> map = new HashMap<String, String>(10);
-        Class<? extends HashMap> aClass = map.getClass();
-        Method putVal = aClass.getDeclaredMethod("putVal", int.class, Object.class, Object.class, boolean.class, boolean.class);
-        System.out.println(putVal.getName());
-    }
 
-    @Test
-    public void putValTest() {
-
-        Roilyfish roilyfish = new Roilyfish();
-        System.out.println(roilyfish.getValue("123"));
-
-    }
-
-    @Test
-    public void putValTest2() {
-
-        Roilyfish2<Integer> integerRoilyfish2 = new Roilyfish2<Integer>();
-        System.out.println(integerRoilyfish2.getValue(12345));
-
-    }
 }
 
 class Roilyfish {
@@ -78,12 +71,17 @@ class Roilyfish {
         return str;
     }
 
-}
-
-class Roilyfish2<T> {
-
-    final T getValue(T t) {
-        return t;
+    //可以被重载
+    String getValue() {
+        return "str";
     }
 
+}
+
+class Roilyfish2 extends Roilyfish {
+    //不可以被重写
+    //@Override
+    //String getValue(String str) {
+    //    return super.getValue();
+    //}
 }
