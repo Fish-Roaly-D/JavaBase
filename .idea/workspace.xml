@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base-collection-01/src/main/java/com/roily/ComparatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-collection-01/src/main/java/com/roily/othertest/ComparatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base-collection-01/src/main/java/com/roily/RandownTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-collection-01/src/main/java/com/roily/othertest/RandownTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base-collection-01/src/main/java/com/roily/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-collection-01/src/main/java/com/roily/othertest/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-datatype-01/src/main/java/com/roily/ClassLoaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-datatype-01/src/main/java/com/roily/classloader/ClassLoaderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-datatype-01/src/main/java/com/roily/EqualsAnd.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-datatype-01/src/main/java/com/roily/equalsanddengdengyu/EqualsAnd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-datatype-01/src/main/java/com/roily/IntegerLearn.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-datatype-01/src/main/java/com/roily/integer/IntegerLearn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-datatype-01/src/main/java/com/roily/StringAndStringBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-datatype-01/src/main/java/com/roily/stringandsb/StringAndStringBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-datatype-01/src/main/java/com/roily/StringLearn.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-datatype-01/src/main/java/com/roily/stringandsb/StringLearn.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,35 +149,16 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RandownTest.intTest">
-    <configuration name="ComparatorTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="base-collection-01" />
+  <component name="RunManager" selected="JUnit.StringLearn.UnChange01">
+    <configuration name="StringAndStringBuilder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.roily.stringandsb.StringAndStringBuilder" />
+      <module name="base-datatype-01" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.othertest.*" />
+          <option name="PATTERN" value="com.roily.stringandsb.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.othertest" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.othertest.ComparatorTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LinkedStackTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="base-collection-01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.stack.linkedstack.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.roily.stack.linkedstack" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.stack.linkedstack.LinkedStackTest" />
-      <option name="METHOD_NAME" value="test2" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -222,6 +205,22 @@
       <option name="PACKAGE_NAME" value="com.roily.othertest" />
       <option name="MAIN_CLASS_NAME" value="com.roily.othertest.RandownTest" />
       <option name="METHOD_NAME" value="randomTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringLearn.UnChange01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="base-datatype-01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.stringandsb.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.roily.stringandsb" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.stringandsb.StringLearn" />
+      <option name="METHOD_NAME" value="UnChange01" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -275,19 +274,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.LinkedStackTest.test2" />
-      <item itemvalue="JUnit.ComparatorTest.test" />
       <item itemvalue="JUnit.RandownTest" />
       <item itemvalue="JUnit.RandownTest.randomTest" />
       <item itemvalue="JUnit.RandownTest.intTest" />
+      <item itemvalue="Application.StringAndStringBuilder" />
+      <item itemvalue="JUnit.StringLearn.UnChange01" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StringLearn.UnChange01" />
+        <item itemvalue="Application.StringAndStringBuilder" />
         <item itemvalue="JUnit.RandownTest.intTest" />
         <item itemvalue="JUnit.RandownTest.randomTest" />
         <item itemvalue="JUnit.RandownTest" />
-        <item itemvalue="JUnit.ComparatorTest.test" />
-        <item itemvalue="JUnit.LinkedStackTest.test2" />
       </list>
     </recent_temporary>
   </component>
@@ -438,14 +437,7 @@
       <workItem from="1653060345310" duration="13608000" />
       <workItem from="1653125700518" duration="4778000" />
       <workItem from="1653199971828" duration="1365000" />
-      <workItem from="1653220321379" duration="11783000" />
-    </task>
-    <task id="LOCAL-00013" summary="ArrayBlocking Foreach">
-      <created>1651600830232</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1651600830232</updated>
+      <workItem from="1653220321379" duration="12343000" />
     </task>
     <task id="LOCAL-00014" summary="LinkedBlockingQueue">
       <created>1651687666075</created>
@@ -783,7 +775,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653243005704</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="调整">
+      <created>1653243613109</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1653243613109</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -843,7 +842,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="hashmap修改" />
     <MESSAGE value="HashMap" />
     <MESSAGE value="对列相关更新" />
     <MESSAGE value="ABQ测试" />
@@ -868,7 +866,8 @@
     <MESSAGE value="栈的使用-中缀表达式转后缀表达式" />
     <MESSAGE value="栈的使用-计算后缀表达式" />
     <MESSAGE value="基于ArrayList&amp;LinkedList实现顺序栈和链式栈" />
-    <option name="LAST_COMMIT_MESSAGE" value="基于ArrayList&amp;LinkedList实现顺序栈和链式栈" />
+    <MESSAGE value="调整" />
+    <option name="LAST_COMMIT_MESSAGE" value="调整" />
   </component>
   <component name="WindowStateProjectService">
     <state x="318" y="103" key="#Customize_Data_Views" timestamp="1652372741178">
@@ -939,10 +938,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="357" y="205" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.720@0.0.1280.720" timestamp="1646561752636" />
-    <state x="383" y="0" key="CommitChangelistDialog2" timestamp="1653243003931">
+    <state x="383" y="0" key="CommitChangelistDialog2" timestamp="1653243611100">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="383" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1653243003931" />
+    <state x="383" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1653243611100" />
     <state x="93" y="93" width="1095" height="535" key="DiffContextDialog" timestamp="1653125940070">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -951,22 +950,22 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="421" y="101" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1652983519242" />
-    <state width="1237" height="238" key="GridCell.Tab.0.bottom" timestamp="1653243585997">
+    <state width="1237" height="123" key="GridCell.Tab.0.bottom" timestamp="1653243991243">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="238" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1653243585997" />
-    <state width="1237" height="238" key="GridCell.Tab.0.center" timestamp="1653243585996">
+    <state width="1237" height="123" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1653243991243" />
+    <state width="1237" height="123" key="GridCell.Tab.0.center" timestamp="1653243991243">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="238" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1653243585996" />
-    <state width="1237" height="238" key="GridCell.Tab.0.left" timestamp="1653243585996">
+    <state width="1237" height="123" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1653243991243" />
+    <state width="1237" height="123" key="GridCell.Tab.0.left" timestamp="1653243991243">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="238" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1653243585996" />
-    <state width="1237" height="238" key="GridCell.Tab.0.right" timestamp="1653243585997">
+    <state width="1237" height="123" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1653243991243" />
+    <state width="1237" height="123" key="GridCell.Tab.0.right" timestamp="1653243991243">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="238" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1653243585997" />
+    <state width="1237" height="123" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1653243991243" />
     <state width="1237" height="223" key="GridCell.Tab.1.bottom" timestamp="1653241053682">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
