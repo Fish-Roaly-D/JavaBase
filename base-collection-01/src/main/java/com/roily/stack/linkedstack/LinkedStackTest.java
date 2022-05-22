@@ -1,5 +1,6 @@
 package com.roily.stack.linkedstack;
 
+import com.roily.stack.Stack;
 import org.junit.Test;
 
 /**
@@ -26,6 +27,23 @@ public class LinkedStackTest {
 
         System.out.println("----");
 
+        while (!lStack.isEmpty()){
+            System.out.println(lStack.pop());
+        }
+
+    }
+
+    /**
+     * 借助LinkedList实现顺序栈
+     */
+    @Test
+    public void test2(){
+
+        Stack<Object> lStack = new LinkedStackByLinkedList<>();
+
+        lStack.push(1);
+        lStack.push(2);
+        lStack.push(3);
         while (!lStack.isEmpty()){
             System.out.println(lStack.pop());
         }

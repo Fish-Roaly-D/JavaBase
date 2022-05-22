@@ -1,5 +1,6 @@
 package com.roily.stack.arraystack;
 
+import com.roily.stack.Stack;
 import org.junit.Test;
 
 
@@ -13,6 +14,9 @@ import org.junit.Test;
 public class ArrayStackTest {
 
 
+    /**
+     * 自定义栈逻辑，实现栈
+     */
     @Test
     public void test01() {
         ArrayStack<String> aStack = new ArrayStack<>();
@@ -25,6 +29,25 @@ public class ArrayStackTest {
             System.out.printf(element + ",");
         });
         System.out.println();
+
+        //出栈
+        while (!aStack.isEmpty()) {
+            System.out.println(aStack.pop());
+        }
+
+    }
+
+
+    /**
+     * 借助ArrayList实现站栈
+     */
+    @Test
+    public void test02() {
+        Stack<String> aStack = new ArrayStackByArrayList<>();
+        //入栈
+        aStack.push("a");
+        aStack.push("b");
+        aStack.push("c");
 
         //出栈
         while (!aStack.isEmpty()) {
