@@ -42,6 +42,20 @@ public class test01 {
     }
 
     /**
+     * 上面的例子完全可以这样写
+     */
+    @Test
+    public void test(){
+        int intX = 32;
+        int longX = 64;
+        System.out.println(1L>>1);
+        System.out.println((1L >> 64)+"等价于"+ (1L >> (64 & longX-1)));
+        System.out.println((1L >> 65)+"等价于"+ (1L >> (65 & longX-1)));
+        System.out.println((1L >> 66)+"等价于"+ (1L >> (66 & longX-1)));
+
+    }
+
+    /**
      * ~  波浪号取反的意思：二进制按位取反（结果计算机存为补码，转化为机器码（原码））
      *
      * 表现为：取反减一
@@ -54,11 +68,25 @@ public class test01 {
         System.out.println(~-10);
     }
 
+    /**
+     * 测试break再if中执行
+     * 跳出for循环
+     */
+    @Test
+    public void testBreak(){
+        for (int i = 0; i < 10; i++) {
+            if (i == 5 ){
+                break;
+            }
+            System.out.println(i);
+        }
+    }
+
     @Test
     public void testAddAndGet() {
 
         BitSet bitSet = new BitSet();
-        bitSet.set(0);
+        //bitSet.set(0);
         bitSet.set(1);
         bitSet.set(2);
         bitSet.set(3);

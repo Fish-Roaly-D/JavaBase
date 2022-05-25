@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-collection-01/src/main/java/com/roily/bitset/test01.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-collection-01/src/main/java/com/roily/bitset/test01.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,8 +145,8 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.test01.ttt">
-    <configuration name="test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.test01.test">
+    <configuration name="BitSetTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="base-collection-01" />
       <extension name="coverage">
         <pattern>
@@ -154,29 +155,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.roily.bitset" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.bitset.test01" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test01.shift" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="base-collection-01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.bitset.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.roily.bitset" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.bitset.test01" />
-      <option name="METHOD_NAME" value="shift" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.bitset.BitSetTest" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test01.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="test01.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="base-collection-01" />
       <extension name="coverage">
         <pattern>
@@ -186,7 +172,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.roily.bitset" />
       <option name="MAIN_CLASS_NAME" value="com.roily.bitset.test01" />
-      <option name="METHOD_NAME" value="test01" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -203,6 +189,22 @@
       <option name="PACKAGE_NAME" value="com.roily.bitset" />
       <option name="MAIN_CLASS_NAME" value="com.roily.bitset.test01" />
       <option name="METHOD_NAME" value="testAddAndGet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test01.testBreak" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="base-collection-01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.bitset.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.roily.bitset" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.bitset.test01" />
+      <option name="METHOD_NAME" value="testBreak" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -272,19 +274,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.test01.test01" />
-      <item itemvalue="JUnit.test01.testAddAndGet" />
-      <item itemvalue="JUnit.test01.shift" />
-      <item itemvalue="JUnit.test01" />
       <item itemvalue="JUnit.test01.ttt" />
+      <item itemvalue="JUnit.BitSetTest.test" />
+      <item itemvalue="JUnit.test01.testBreak" />
+      <item itemvalue="JUnit.test01.test" />
+      <item itemvalue="JUnit.test01.testAddAndGet" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.test01.ttt" />
-        <item itemvalue="JUnit.test01" />
-        <item itemvalue="JUnit.test01.shift" />
+        <item itemvalue="JUnit.test01.test" />
         <item itemvalue="JUnit.test01.testAddAndGet" />
-        <item itemvalue="JUnit.test01.test01" />
+        <item itemvalue="JUnit.test01.testBreak" />
+        <item itemvalue="JUnit.BitSetTest.test" />
+        <item itemvalue="JUnit.test01.ttt" />
       </list>
     </recent_temporary>
   </component>
@@ -437,14 +439,8 @@
       <workItem from="1653199971828" duration="1365000" />
       <workItem from="1653220321379" duration="14546000" />
       <workItem from="1653291715684" duration="8616000" />
-      <workItem from="1653400028382" duration="6029000" />
-    </task>
-    <task id="LOCAL-00016" summary="DelayQueue">
-      <created>1651765943668</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1651765943668</updated>
+      <workItem from="1653400028382" duration="9197000" />
+      <workItem from="1653444749527" duration="6993000" />
     </task>
     <task id="LOCAL-00017" summary="Delayed接口">
       <created>1651767712295</created>
@@ -782,7 +778,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653245606122</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="bitset">
+      <created>1653406800537</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1653406800538</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -842,7 +845,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="HashMap" />
     <MESSAGE value="对列相关更新" />
     <MESSAGE value="ABQ测试" />
     <MESSAGE value="LBQ" />
@@ -867,7 +869,8 @@
     <MESSAGE value="栈的使用-计算后缀表达式" />
     <MESSAGE value="基于ArrayList&amp;LinkedList实现顺序栈和链式栈" />
     <MESSAGE value="调整" />
-    <option name="LAST_COMMIT_MESSAGE" value="调整" />
+    <MESSAGE value="bitset" />
+    <option name="LAST_COMMIT_MESSAGE" value="bitset" />
   </component>
   <component name="WindowStateProjectService">
     <state x="318" y="103" key="#Customize_Data_Views" timestamp="1652372741178">
@@ -938,10 +941,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="357" y="205" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.720@0.0.1280.720" timestamp="1646561752636" />
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1653245602857">
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1653406796876">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1653245602857" />
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1653406796876" />
     <state x="93" y="93" width="1095" height="535" key="DiffContextDialog" timestamp="1653125940070">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -950,38 +953,38 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="421" y="101" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1652983519242" />
-    <state width="1237" height="217" key="GridCell.Tab.0.bottom" timestamp="1653403362385">
+    <state width="1237" height="182" key="GridCell.Tab.0.bottom" timestamp="1653458253415">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="217" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1653403362385" />
-    <state width="1237" height="217" key="GridCell.Tab.0.center" timestamp="1653403362385">
+    <state width="1237" height="182" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1653458253415" />
+    <state width="1237" height="182" key="GridCell.Tab.0.center" timestamp="1653458253415">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="217" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1653403362385" />
-    <state width="1237" height="217" key="GridCell.Tab.0.left" timestamp="1653403362385">
+    <state width="1237" height="182" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1653458253415" />
+    <state width="1237" height="182" key="GridCell.Tab.0.left" timestamp="1653458253415">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="217" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1653403362385" />
-    <state width="1237" height="217" key="GridCell.Tab.0.right" timestamp="1653403362385">
+    <state width="1237" height="182" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1653458253415" />
+    <state width="1237" height="182" key="GridCell.Tab.0.right" timestamp="1653458253415">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="217" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1653403362385" />
-    <state width="1237" height="223" key="GridCell.Tab.1.bottom" timestamp="1653273456881">
+    <state width="1237" height="182" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1653458253415" />
+    <state width="1237" height="182" key="GridCell.Tab.1.bottom" timestamp="1653458253415">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="223" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1653273456881" />
-    <state width="1237" height="223" key="GridCell.Tab.1.center" timestamp="1653273456880">
+    <state width="1237" height="182" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1653458253415" />
+    <state width="1237" height="182" key="GridCell.Tab.1.center" timestamp="1653458253415">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="223" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1653273456880" />
-    <state width="1237" height="223" key="GridCell.Tab.1.left" timestamp="1653273456880">
+    <state width="1237" height="182" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1653458253415" />
+    <state width="1237" height="182" key="GridCell.Tab.1.left" timestamp="1653458253415">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="223" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1653273456880" />
-    <state width="1237" height="223" key="GridCell.Tab.1.right" timestamp="1653273456881">
+    <state width="1237" height="182" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1653458253415" />
+    <state width="1237" height="182" key="GridCell.Tab.1.right" timestamp="1653458253415">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="223" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1653273456881" />
+    <state width="1237" height="182" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1653458253415" />
     <state width="1237" height="198" key="GridCell.Tab.2.bottom" timestamp="1648131415309">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -1030,10 +1033,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="160" y="13" width="1038" height="707" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1653245117679" />
-    <state x="11" y="55" width="1036" height="571" key="Vcs.Push.Dialog.v2" timestamp="1653245610651">
+    <state x="11" y="55" width="1036" height="571" key="Vcs.Push.Dialog.v2" timestamp="1653406803017">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="11" y="55" width="1036" height="571" key="Vcs.Push.Dialog.v2/0.0.1280.720@0.0.1280.720" timestamp="1653245610651" />
+    <state x="11" y="55" width="1036" height="571" key="Vcs.Push.Dialog.v2/0.0.1280.720@0.0.1280.720" timestamp="1653406803017" />
     <state width="560" height="718" key="com.intellij.byteCodeViewer.ShowByteCodeAction" timestamp="1648746723739">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -1136,6 +1139,16 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/base-collection-01/src/main/java/com/roily/stack/stackuseful/CalculateSuffix.java</url>
           <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/base-collection-01/src/main/java/com/roily/bitset/test01.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/base-collection-01/src/main/java/com/roily/bitset/test01.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
