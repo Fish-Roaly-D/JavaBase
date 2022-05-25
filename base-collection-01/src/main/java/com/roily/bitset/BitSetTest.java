@@ -15,37 +15,62 @@ public class BitSetTest {
 
 
     /**
-     * 计算素数
+     * 测试nextSetBit
      */
     @Test
-    public void test(){
+    public void testNextSetBit(){
 
-        int n = 100;
-        BitSet b = new BitSet(n + 1);
-        int i;
-        for(i = 2; i <= n; i++){
-            b.set(i);
-        }
+        BitSet bitSet = new BitSet();
 
-        i = 2;
-        while(i * i <= n){
-            if(b.get(i)){
-                int k = 2 * i;
-                while(k <=n){
-                    b.clear(k);
-                    k += i;
-                }
-            }
-            i++;
-        }
+        bitSet.set(10);
+        bitSet.set(5);
 
-        i = 0;
-        while(i <= n){
-            if(b.get(i)){
-                System.out.println(i);
-            }
-            i++;
-        }
+
+        System.out.println("//0 -4  下一个为5");
+        System.out.println(bitSet.nextSetBit(0));
+        System.out.println(bitSet.nextSetBit(1));
+        System.out.println(bitSet.nextSetBit(2));
+        System.out.println(bitSet.nextSetBit(3));
+        System.out.println(bitSet.nextSetBit(4));
+        System.out.println(bitSet.nextSetBit(5));
+
+
+        System.out.println("//6 -9  下一个为10");
+        System.out.println(bitSet.nextSetBit(6));
+        System.out.println(bitSet.nextSetBit(7));
+        System.out.println(bitSet.nextSetBit(8));
+        System.out.println(bitSet.nextSetBit(9));
+
+
     }
 
+    /**
+     * 测试nextClearBit
+     */
+    @Test
+    public void testNextClearBit(){
+        BitSet bitSet = new BitSet();
+        bitSet.set(10);
+        bitSet.set(5);
+        bitSet.set(6);
+        bitSet.set(7);
+        bitSet.set(8);
+        System.out.println("5下一个为0   的是9");
+        System.out.println(bitSet.nextClearBit(0));
+        System.out.println(bitSet.nextClearBit(5));
+    }
+
+    /**
+     * 测试Long的bitCount()
+     *
+     * 返回long的二进制表示法 为1的个数
+     */
+    @Test
+    public void testBitCount(){
+
+        System.out.println(Long.bitCount(10L));
+        System.out.println(Long.bitCount(7L));
+        System.out.println(Long.bitCount(5L));
+        System.out.println(Long.bitCount(4L));
+    }
 }
