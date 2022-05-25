@@ -56,6 +56,35 @@ public class test01 {
     }
 
     /**
+     * 测试移负数位
+     */
+    @Test
+    public void testShift(){
+        System.out.println(0xffffffffffffffffL);
+        //无符号移位，不论正负 符号位补0
+        System.out.println(0xffffffffffffffffL >>> 1);
+        //互补等同
+        System.out.println(0xffffffffffffffffL >>> -2);
+        System.out.println(0xffffffffffffffffL >>> 62);
+        System.out.println(0xffffffffffffffffL >>> 48);
+
+        System.out.println(0xffffffffffffffffL << 1);
+        System.out.println(0xffffffffffffffffL << 65);
+
+        System.out.println(0xffffffffffffffffL << 64);
+
+    }
+
+    /**
+     * 负数取余
+     */
+    @Test
+    public void testQuyu(){
+        System.out.println(-2L % 64);
+        System.out.println(-(2L & 63));
+    }
+
+    /**
      * ~  波浪号取反的意思：二进制按位取反（结果计算机存为补码，转化为机器码（原码））
      *
      * 表现为：取反减一
