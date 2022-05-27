@@ -4,6 +4,7 @@ import org.junit.Test;
 import org.openjdk.jol.vm.VM;
 
 import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @version 1.0.0
@@ -81,9 +82,23 @@ public class ArrayBlockingQueueTest {
             System.out.println(VM.current().addressOf(abq.peek()));
             abq.poll();
         }
-
-
     }
 
 
+    /**
+     * 测试ABQ offer(E e, long time).
+     * 在1达到超时时间，会返回false
+     */
+    @Test
+    public void test() throws InterruptedException {
+
+        ArrayBlockingQueue<Integer> integers = new ArrayBlockingQueue<>(10);
+
+        for (int i = 0; i < 10; i++) {
+            integers.add(i);
+        }
+        boolean offer = integers.offer(1, 1000, TimeUnit.MILLISECONDS);
+        System.out.println(offer);
+        while (true);
+    }
 }
