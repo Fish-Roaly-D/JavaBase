@@ -63,4 +63,7 @@ public class ABQConcurrent {
     }
 
 
+    /**
+     * 测试ABQ在达到容量后，再次执行添加元素操作会阻塞
+     */
 }

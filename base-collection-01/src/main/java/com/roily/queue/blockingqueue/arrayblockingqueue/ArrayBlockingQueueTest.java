@@ -48,14 +48,13 @@ public class ArrayBlockingQueueTest {
         int i = 5;
 
         while (i != 4) {
-
+            elements[i] = "" + i;
             if (++i == elements.length)
                 i = 0;
-            elements[i] = "" + i;
         }
 
         for (int i1 = 0; i1 < elements.length; i1++) {
-
+            //System.err.println(elements[i1]);
             System.out.println(VM.current().addressOf(elements[i1]));
         }
 
