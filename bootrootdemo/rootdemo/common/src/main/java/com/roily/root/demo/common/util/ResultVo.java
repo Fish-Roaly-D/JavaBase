@@ -1,4 +1,4 @@
-package com.roily.root.demo.common.common.util;
+package com.roily.root.demo.common.util;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
