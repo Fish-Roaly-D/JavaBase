@@ -1,6 +1,8 @@
 package com.roily.root.demo.aboutfile.controller;
 
 import com.roily.root.demo.common.common.exception.GlobalCustomException;
+import lombok.extern.log4j.Log4j;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -19,16 +21,19 @@ import java.net.URLEncoder;
  * @author: RoilyFish
  * @date: 2022/5/27 0:17
  */
+@Slf4j
 @RestController
 public class FileDownload {
 
     @RequestMapping(value = "/download", method = RequestMethod.GET)
-    public String download(HttpServletResponse resp) {
+    public void download(HttpServletResponse resp) {
         String path = System.getProperty("user.dir");
         String filename = "download.txt";
+        log.info("文件名称：{}", filename);
         File file = new File(path + "/file", filename);
         if (!file.exists()) {
-            return "资源不存在";
+            log.info("文件资源不存在,{path:{}，filename:{}}", path, filename);
+            throw new GlobalCustomException("5000", "资源不存在");
         }
         //2、 读取文件--输入流
         InputStream input = null;
@@ -56,9 +61,9 @@ public class FileDownload {
             out.close();
             input.close();
         } catch (IOException e) {
-
+            log.info("文件传输出现异常:{}", e.getMessage());
+            throw new GlobalCustomException("5000", "文件传输出现异常");
         }
-        return null;
     }
 
 
