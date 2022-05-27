@@ -25,27 +25,27 @@ public class ResultVo<T> implements Serializable {
     private static final String DEFAULT_ERROR_CODE = "5000";
     // 默认成功代码
     private static final String DEFAULT_SUCCESS_CODE = "2000";
-    //默认失败消息
+    //默认失败提示信息
     private static final String DEFAULT_ERROR_MSG = "请求失败";
-    // 默认成功消息
+    // 默认失败提示信息
     private static final String DEFAULT_SUCCESS_MSG = "请求成功";
 
     @ApiModelProperty("状态码")
     private String code;
 
-    @ApiModelProperty("结果描述")
+    @ApiModelProperty("提示信息")
     private String msg;
 
-    @ApiModelProperty("信息")
+    @ApiModelProperty("数据")
     private T data;
 
     /**
      * 参数完全的返回对象
      *
-     * @param code
-     * @param msg
-     * @param data
-     * @param <T>
+     * @param code 状态码
+     * @param msg  提示信息
+     * @param data 数据
+     * @param <T>  范型
      * @return ResultVo<T>
      */
     public static <T> ResultVo<T> info(String code, String msg, T data) {
@@ -58,7 +58,9 @@ public class ResultVo<T> implements Serializable {
     /**
      * 成功返回消息和信息
      *
-     * @param msg
+     * @param msg  提示信息
+     * @param data 数据
+     * @param <T>  范型
      * @return ResultVo<T>
      */
     public static <T> ResultVo<T> success(String msg, T data) {
@@ -67,8 +69,8 @@ public class ResultVo<T> implements Serializable {
 
     /**
      * 成功返回消息
-     *
-     * @param msg
+     * @param msg  提示信息
+     * @param <T>  范型
      * @return ResultVo<T>
      */
     public static <T> ResultVo<T> success(String msg) {
@@ -78,7 +80,8 @@ public class ResultVo<T> implements Serializable {
 
     /**
      * 成功返回data
-     *
+     * @param data 数据
+     * @param <T>  范型
      * @return ResultVo<T>
      */
     public static <T> ResultVo<T> success(T data) {
@@ -87,7 +90,7 @@ public class ResultVo<T> implements Serializable {
 
     /**
      * 使用默认模板返回结果
-     *
+     * @param <T>  范型
      * @return ResultVo<T>
      */
     public static <T> ResultVo<T> success() {
@@ -95,9 +98,10 @@ public class ResultVo<T> implements Serializable {
     }
 
     /**
-     * 失败返回消息和信息
-     *
-     * @param msg
+     * 错误返回消息和信息
+     * @param msg  提示信息
+     * @param data 数据
+     * @param <T>  范型
      * @return ResultVo<T>
      */
     public static <T> ResultVo<T> error(String msg, T data) {
@@ -106,9 +110,10 @@ public class ResultVo<T> implements Serializable {
     }
 
     /**
-     * 成功返回消息
+     * 错误返回消息
      *
-     * @param msg
+     * @param msg  提示信息
+     * @param <T>  范型
      * @return ResultVo<T>
      */
     public static <T> ResultVo<T> error(String msg) {
@@ -117,8 +122,10 @@ public class ResultVo<T> implements Serializable {
 
 
     /**
-     * 成功返回data
+     * 错误返回data
      *
+     * @param data 数据
+     * @param <T>  范型
      * @return ResultVo<T>
      */
     public static <T> ResultVo<T> error(T data) {
@@ -128,6 +135,7 @@ public class ResultVo<T> implements Serializable {
     /**
      * 使用默认模板返回结果
      *
+     * @param <T>  范型
      * @return ResultVo<T>
      */
     public static <T> ResultVo<T> error() {
