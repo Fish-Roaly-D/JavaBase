@@ -3,26 +3,26 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.roily.root.demo</groupId>
         <artifactId>root_demo</artifactId>
+        <groupId>com.roily.root.demo</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <groupId>com.roily.root.demo.aboutfile</groupId>
-    <artifactId>aboutfile</artifactId>
+
+    <groupId>com.roily.root.demo</groupId>
+    <artifactId>aboutvalid</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>aboutfile</name>
-    <description>aboutfile</description>
+    <name>aboutvalid</name>
+    <description>valid</description>
+
     <properties>
         <java.version>1.8</java.version>
     </properties>
     <dependencies>
-        <!--基础公共包-->
         <dependency>
             <groupId>com.roily.root.demo</groupId>
             <artifactId>common</artifactId>
             <version>${common.version}</version>
         </dependency>
-
     </dependencies>
 
     <build>
@@ -38,7 +38,6 @@
                     </execution>
                 </executions>
             </plugin>
-
         </plugins>
     </build>
 

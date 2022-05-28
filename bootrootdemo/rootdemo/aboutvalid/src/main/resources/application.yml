@@ -1,0 +1,4 @@
+server:
+  servlet:
+    context-path: /aboutvalid
+  port: 8082
