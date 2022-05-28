@@ -129,7 +129,7 @@ public class ResultVo<T> implements Serializable {
      * @return ResultVo<T>
      */
     public static <T> ResultVo<T> error(T data) {
-        return error(DEFAULT_SUCCESS_MSG, data);
+        return error(DEFAULT_ERROR_MSG, data);
     }
 
     /**
@@ -139,7 +139,7 @@ public class ResultVo<T> implements Serializable {
      * @return ResultVo<T>
      */
     public static <T> ResultVo<T> error() {
-        return success(DEFAULT_ERROR_MSG, null);
+        return error(DEFAULT_ERROR_MSG, null);
     }
 
 }

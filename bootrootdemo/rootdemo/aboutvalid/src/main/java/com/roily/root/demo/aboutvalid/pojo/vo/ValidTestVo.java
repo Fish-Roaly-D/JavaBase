@@ -29,7 +29,7 @@ public class ValidTestVo {
     String param01;
 
     @ApiModelProperty("参数二，不为空校验")
-    @NotNull(message = "参数不能为空")
+    @NotBlank(message = "参数不能为空")
     String param02;
 
     @ApiModelProperty("参数三，最大值校验")

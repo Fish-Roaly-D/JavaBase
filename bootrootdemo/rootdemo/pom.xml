@@ -20,6 +20,7 @@
         <springboot.version>2.6.6</springboot.version>
         <springboot.starter.thymeleaf.version>2.6.6</springboot.starter.thymeleaf.version>
         <spring-boot-starter-validation.version>2.6.6</spring-boot-starter-validation.version>
+        <com.alibaba.fastjson.version>2.0.4</com.alibaba.fastjson.version>
         <mysql.version>8.0.28</mysql.version>
         <druid.version>1.2.8</druid.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -86,6 +87,13 @@
                 <artifactId>springfox-swagger2</artifactId>
                 <version>${swagger2.version}</version>
             </dependency>
+            <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${com.alibaba.fastjson.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
