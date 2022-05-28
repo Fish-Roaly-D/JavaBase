@@ -4,6 +4,7 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 
@@ -17,10 +18,12 @@ import lombok.experimental.Accessors;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
+@EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
 @ApiModel(value = "GlobalCustomException", description = "全区自定义异常")
 public class GlobalCustomException extends RuntimeException {
 
+    private static final long serialVersionUID = -7278881947512853935L;
     @ApiModelProperty("异常代码")
     private String code;
     @ApiModelProperty("异常描述")

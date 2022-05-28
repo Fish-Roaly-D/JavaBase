@@ -2,7 +2,8 @@ package com.roily.root.demo.common.common.exception;
 
 import com.roily.root.demo.common.util.ResultVo;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 /**
  * @version 1.0.0

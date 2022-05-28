@@ -1,8 +1,6 @@
 package com.roily.root.demo.aboutfile.service.impl;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.roily.root.demo.aboutfile.service.FileInterface;
-import com.roily.root.demo.common.common.VO.aboutfile.req.FileReqVo;
 import com.roily.root.demo.common.common.VO.aboutfile.resp.FileRespVo;
 import com.roily.root.demo.common.common.exception.GlobalCustomException;
 import com.roily.root.demo.common.util.ResultVo;
@@ -15,8 +13,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 import java.net.URLEncoder;
 import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.UUID;
 
 /**
@@ -71,39 +67,46 @@ public class FileInterfaceImpl implements FileInterface {
     }
 
     @Override
-    public ResultVo<FileRespVo> uploadFile(FileReqVo fileReqVo, MultipartFile file) {
+    public ResultVo<FileRespVo> uploadFile(MultipartFile file) {
+
         if (file.isEmpty()) {
             return ResultVo.error("上传为空，请重试！", null);
         }
+        //获取文件名
+        String originalFilename = file.getOriginalFilename();
+        log.info("文件名：{}", originalFilename);
+        //文件类型
+        String contentType = file.getContentType();
+        log.info("文件类型：{}", contentType);
+        //文件大小
+        Long size = file.getSize();
+        log.info("文件大小：{}", size.toString());
+        //获取当前项目  父级目录
+        String root = System.getProperty("user.dir");
+        File fileRoot = new File(root, "/file");
+        if (!fileRoot.exists()) {
+            fileRoot.mkdirs();
+        }
+        //唯一性处理 这里简单 （雪花算法。。。。）
+        long time = new Date().getTime();
+        String uuid = UUID.randomUUID().toString().replace("-", "");
+        String fileName = time + "-" + uuid + "-" + originalFilename;
+        log.info("文件按存储名：{}", fileName);
         try {
-
-            //获取文件名
-            String originalFilename = file.getOriginalFilename();
-            log.info("文件名：{}", originalFilename);
-            //文件类型
-            String contentType = file.getContentType();
-            log.info("文件类型：{}", contentType);
-            //文件大小
-            Long size = file.getSize();
-            log.info("文件大小：{}", size.toString());
-            //获取当前项目  父级目录
-            String root = System.getProperty("user.dir");
-            File fileRoot = new File(root, "/file");
-            if (!fileRoot.exists()) {
-                fileRoot.mkdirs();
-            }
-            //唯一性处理 这里简单 （雪花算法。。。。）
-            long time = new Date().getTime();
-            String uuid = UUID.randomUUID().toString().replace("-", "");
-            String fileName = time + "-" + uuid + "-" + originalFilename;
-            log.info("文件按存储名：{}", fileName);
-            //File.separator  文件分割符 =》  '/'
+            //File.separator  文件分割符 =>  '/'
             file.transferTo(new File(root + File.separator + "img" + File.separator, fileName));
             log.info("真实存储路径：{}", root + File.separator + "img" + File.separator + fileName);
         } catch (IOException e) {
             throw new GlobalCustomException("5000", "文件上传异常！");
         }
-        return null;
+        FileRespVo fileRespVo = new FileRespVo()
+                .setFileName(originalFilename)
+                .setFilePath(root + File.separator + "img" + File.separator + fileName)
+                .setFileStorageName(fileName)
+                .setFileType(contentType)
+                .setSize(size.toString());
+
+        return ResultVo.success("文件上传成功", fileRespVo);
     }
 
 }

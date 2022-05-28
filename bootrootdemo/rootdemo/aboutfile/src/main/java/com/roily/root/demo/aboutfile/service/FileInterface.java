@@ -18,6 +18,6 @@ public interface FileInterface {
 
     void downloadFile(String filePath, String fileName, HttpServletResponse resp);
 
-    ResultVo<FileRespVo> uploadFile(FileReqVo fileReqVo, MultipartFile file);
+    ResultVo<FileRespVo> uploadFile(MultipartFile file);
 
 }
