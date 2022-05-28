@@ -33,11 +33,8 @@ public class ParamsValidTest {
     public ResultVo<Object> validTest01(@RequestBody ValidTestVo validTestVo) {
 
         if (!ObjectUtils.isEmpty(validTestVo)){
-            if (ObjectUtils.isEmpty(validTestVo.getParam01())){
+            if (ObjectUtils.isEmpty(validTestVo.getParam01a())){
                 return ResultVo.error("param01参数不能为空");
-            }
-            if (ObjectUtils.isEmpty(validTestVo.getParam02())){
-                return ResultVo.error("param02参数不能为空");
             }
             //、、、、
         }

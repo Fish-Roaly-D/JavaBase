@@ -1,6 +1,7 @@
 package com.roily.root.demo.common.common.exception;
 
 import com.alibaba.fastjson.JSON;
+import com.fasterxml.jackson.databind.exc.InvalidFormatException;
 import com.roily.root.demo.common.util.ResultVo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.validation.BeanPropertyBindingResult;
@@ -61,6 +62,19 @@ public class GlobalCustomExceptionHandler {
         log.error("请求参数不合法:{}", JSON.toJSONString(errorDesc));
         return ResultVo.error(errorDesc);
     }
+
+    ///**
+    // * 参数格式错误
+    // *
+    // * @param invalidFormat 请求参数不合法异常
+    // * @return ResultVo<String>
+    // */
+    //@ExceptionHandler(value = InvalidFormatException.class)
+    //public ResultVo<Map<String, Object>> invalidFormatException(InvalidFormatException invalidFormat) {
+    //    System.err.println(invalidFormat.getValue());
+    //    log.error("请求参数格式错误:{}", JSON.toJSONString(invalidFormat));
+    //    return ResultVo.error(invalidFormat.toString());
+    //}
 
     /**
      * 解析异常
