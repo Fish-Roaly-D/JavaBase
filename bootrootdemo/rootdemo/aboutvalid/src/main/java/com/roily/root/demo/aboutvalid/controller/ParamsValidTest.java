@@ -1,5 +1,6 @@
 package com.roily.root.demo.aboutvalid.controller;
 
+import com.roily.root.demo.aboutvalid.pojo.vo.Param01;
 import com.roily.root.demo.aboutvalid.pojo.vo.ValidTestVo;
 import com.roily.root.demo.common.util.ResultVo;
 import lombok.extern.slf4j.Slf4j;
@@ -60,5 +61,27 @@ public class ParamsValidTest {
         return ResultVo.success();
     }
 
+    @RequestMapping(value = "/validated2", method = RequestMethod.POST)
+    public ResultVo<Object> validTest03(@RequestBody @Validated  Param01 param01) {
+
+        log.info("参数:{}", param01);
+
+        return ResultVo.success();
+
+    }
+
+    /**
+     * 聚合校验
+     * @param param01
+     * @return
+     */
+    @RequestMapping(value = "/validX", method = RequestMethod.POST)
+    public ResultVo<Object> validTest04(@RequestBody @Valid Param01 param01) {
+
+        log.info("参数:{}", param01);
+        //log.info("参数校验结果:{}", bindingResult);
+
+        return ResultVo.success();
+    }
 
 }

@@ -1,6 +1,5 @@
 package com.roily.root.demo.aboutvalid.pojo.vo;
 
-import com.alibaba.fastjson.annotation.JSONField;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -9,7 +8,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 import org.hibernate.validator.constraints.Length;
-import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.validation.constraints.*;
 import java.util.Date;
@@ -27,7 +25,7 @@ import java.util.List;
 @Accessors(chain = true)
 @AllArgsConstructor
 @NoArgsConstructor
-public class ValidTestVo {
+public class ValidTestVo extends BaseParam {
 
     @ApiModelProperty("参数1a，不为null校验")
     @NotNull(message = "参数不能为null")
