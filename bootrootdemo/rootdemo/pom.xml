@@ -8,11 +8,12 @@
     <artifactId>root_demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>root_demo</name>
-    <description>root_demo</description>
+    <description>版本管理</description>
 
     <modules>
         <module>common</module>
         <module>aboutfile</module>
+        <module>aboutvalid</module>
         <module>aboutannotation</module>
     </modules>
     <properties>

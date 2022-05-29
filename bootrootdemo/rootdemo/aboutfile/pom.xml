@@ -7,11 +7,11 @@
         <artifactId>root_demo</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <groupId>com.roily.root.demo.aboutfile</groupId>
+
     <artifactId>aboutfile</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>aboutfile</name>
-    <description>aboutfile</description>
+    <description>文件相关</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>
