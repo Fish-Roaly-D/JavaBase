@@ -41,7 +41,7 @@ public class ValidTestVo extends BaseParam {
 
     @ApiModelProperty("参数3，集合")
     @NotEmpty(message = "集合不为null，且长度大于0")
-    List<Object> param03;
+    List<String> param03;
 
     @ApiModelProperty("参数4，数组")
     @NotEmpty(message = "数组不为null，且长度大于0") //或者

@@ -2,8 +2,10 @@ package com.roily.root.demo.common.common.exception;
 
 import com.alibaba.fastjson.JSON;
 import com.fasterxml.jackson.databind.exc.InvalidFormatException;
+import com.fasterxml.jackson.databind.exc.MismatchedInputException;
 import com.roily.root.demo.common.util.ResultVo;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.converter.HttpMessageConversionException;
 import org.springframework.validation.BeanPropertyBindingResult;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
@@ -32,8 +34,8 @@ public class GlobalCustomExceptionHandler {
      * @param e 异常
      * @return ResultVo<String>
      */
-    @ExceptionHandler(value = Exception.class)
-    public ResultVo<String> unKnownException(Exception e) {
+    @ExceptionHandler(value = RuntimeException.class)
+    public ResultVo<String> unKnownException(RuntimeException e) {
         log.error("系统出现异常:{}", e.getMessage());
         return ResultVo.error(e.getMessage());
     }
@@ -61,6 +63,18 @@ public class GlobalCustomExceptionHandler {
         Map<String, Object> errorDesc = parse(notValid);
         log.error("请求参数不合法:{}", JSON.toJSONString(errorDesc));
         return ResultVo.error(errorDesc);
+    }
+
+    /**
+     * 参数转换异常
+     *
+     * @param conversionException 参数转换异常
+     * @return ResultVo<String>
+     */
+    @ExceptionHandler(value = HttpMessageConversionException.class)
+    public ResultVo<Map<String, Object>> MismatchedInputException(HttpMessageConversionException conversionException) {
+        log.error("参数解析异常:{}", conversionException.getMessage());
+        return ResultVo.error("参数解析异常" + conversionException.getMessage());
     }
 
     ///**
