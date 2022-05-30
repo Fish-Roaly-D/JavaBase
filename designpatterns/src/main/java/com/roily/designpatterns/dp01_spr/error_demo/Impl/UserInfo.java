@@ -4,7 +4,7 @@ import com.roily.designpatterns.dp01_spr.error_demo.IUserInfo;
 
 /**
  * @version 1.0.0
- * @Description TODO
+ * @Description
  * @ClassName UserInfo.java
  * @author: RoilyFish
  * @date: 2022/5/30 13:42
