@@ -23,6 +23,7 @@
         <module>threadbase02</module>
         <module>javabase</module>
         <module>threadcollection</module>
+        <module>designpatterns</module>
     </modules>
 
     <dependencies>
