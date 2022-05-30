@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="ABQ-offer(param1,param2,param3)">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dp01_spr/error_demo/IUserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dp01_spr/error_demo/IUserInfo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +112,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.31609195" />
@@ -121,18 +120,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.roily.designpatterns.dp01_spr.ok_demo" />
       <recent name="com.roily.stack.linkedstack" />
       <recent name="com.roily.hashMapForeach" />
       <recent name="com.roily.vo" />
       <recent name="com.roily.synchronizedDemo" />
-      <recent name="com.roily" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\programmeTools\idea\git\JavaBase\designpatterns\src\main\java\com\roily\designpatterns" />
+      <recent name="E:\programmeTools\idea\git\JavaBase\designpatterns\src\main\java\com\roily\designpatterns\dp02_spr\ok_demo" />
       <recent name="E:\programmeTools\idea\git\JavaBase\Base-Collection-01\src\main\java\com\roily\queue\blockingqueue\delayQueue" />
       <recent name="E:\programmeTools\idea\git\JavaBase\ThreadBase02\src\main\java\com\roily" />
       <recent name="E:\programmeTools\idea\git\JavaBase\Mybatis-04\src\main\resources" />
-      <recent name="E:\programmeTools\idea\git\JavaBase\Mybatis-03\src\main\resources" />
-      <recent name="E:\programmeTools\idea\git\JavaBase\Mybatis-02\src\main\java\com\roily\mapper" />
     </key>
   </component>
   <component name="RestServicesNavigator">
@@ -446,21 +445,9 @@
       <workItem from="1653567972652" duration="3883000" />
       <workItem from="1653660457568" duration="3476000" />
       <workItem from="1653744800813" duration="6709000" />
-      <workItem from="1653882141517" duration="2064000" />
-    </task>
-    <task id="LOCAL-00022" summary="订单例子">
-      <created>1651852672086</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1651852672086</updated>
-    </task>
-    <task id="LOCAL-00023" summary="修改">
-      <created>1651852695259</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1651852695259</updated>
+      <workItem from="1653882141517" duration="2113000" />
+      <workItem from="1653913247036" duration="1474000" />
+      <workItem from="1653919637449" duration="5109000" />
     </task>
     <task id="LOCAL-00024" summary="生成多个订单">
       <created>1651852717296</created>
@@ -791,7 +778,21 @@
       <option name="project" value="LOCAL" />
       <updated>1653662606547</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="designpatterns模块创建">
+      <created>1653889467884</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1653889467884</updated>
+    </task>
+    <task id="LOCAL-00072" summary="designpatterns模块创建">
+      <created>1653889477775</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1653889477775</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -851,7 +852,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="condition 测试" />
     <MESSAGE value="arrayQueue" />
     <MESSAGE value="Delayed接口测试" />
     <MESSAGE value="DelayQueue Demo" />
@@ -876,7 +876,8 @@
     <MESSAGE value="bitset-用法" />
     <MESSAGE value="数组内存地址连续性和添加顺序无关" />
     <MESSAGE value="ABQ-offer(param1,param2,param3)" />
-    <option name="LAST_COMMIT_MESSAGE" value="ABQ-offer(param1,param2,param3)" />
+    <MESSAGE value="designpatterns模块创建" />
+    <option name="LAST_COMMIT_MESSAGE" value="designpatterns模块创建" />
   </component>
   <component name="WindowStateProjectService">
     <state x="318" y="103" key="#Customize_Data_Views" timestamp="1652372741178">
@@ -915,10 +916,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="104" y="39" width="1089" height="675" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1652983030891" />
-    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser" timestamp="1653889367348">
+    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser" timestamp="1653925153316">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1653889367348" />
+    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1653925153316" />
     <state x="238" y="286" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1653120535649">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -947,10 +948,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="357" y="205" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.720@0.0.1280.720" timestamp="1646561752636" />
-    <state x="395" y="0" key="CommitChangelistDialog2" timestamp="1653889465687">
+    <state x="395" y="0" key="CommitChangelistDialog2" timestamp="1653889475633">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="395" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1653889465687" />
+    <state x="395" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1653889475633" />
     <state x="93" y="93" width="1095" height="535" key="DiffContextDialog" timestamp="1653125940070">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -1091,10 +1092,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="234" y="19" key="scopes/0.0.1280.720@0.0.1280.720" timestamp="1647230227486" />
-    <state x="323" y="177" width="1087" height="678" key="search.everywhere.popup" timestamp="1653748693816">
+    <state x="323" y="177" width="1087" height="678" key="search.everywhere.popup" timestamp="1653921735253">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="323" y="177" width="1087" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1653748693816" />
+    <state x="323" y="177" width="1087" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1653921735253" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

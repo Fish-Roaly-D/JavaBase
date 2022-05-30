@@ -11,11 +11,9 @@ public interface IUserInfo {
 
     /**
      * 用户管理模块，将用户信息管理、权限管理放入同一个接口。
-     *
+     * <p>
      * 模拟一个耦合度较高的接口
-     *
      */
-
     //获取用户名称
     String getUserName();
 
