@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dp01_spr/error_demo/IUserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dp01_spr/error_demo/IUserInfo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +111,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dp05_lsp/error_demo" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.31609195" />
@@ -127,11 +126,11 @@
       <recent name="com.roily.synchronizedDemo" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\programmeTools\idea\git\JavaBase\designpatterns\src\main\java\com\roily\designpatterns\dp05_lsp\error_demo" />
       <recent name="E:\programmeTools\idea\git\JavaBase\designpatterns\src\main\java\com\roily\designpatterns" />
       <recent name="E:\programmeTools\idea\git\JavaBase\designpatterns\src\main\java\com\roily\designpatterns\dp02_spr\ok_demo" />
       <recent name="E:\programmeTools\idea\git\JavaBase\Base-Collection-01\src\main\java\com\roily\queue\blockingqueue\delayQueue" />
       <recent name="E:\programmeTools\idea\git\JavaBase\ThreadBase02\src\main\java\com\roily" />
-      <recent name="E:\programmeTools\idea\git\JavaBase\Mybatis-04\src\main\resources" />
     </key>
   </component>
   <component name="RestServicesNavigator">
@@ -145,7 +144,7 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ArrayBlockingQueueTest.test">
+  <component name="RunManager" selected="JUnit.PersonBase.test">
     <configuration name="ArrayBlockingQueueTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="base-collection-01" />
       <extension name="coverage">
@@ -178,38 +177,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BitSetUseful.sort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="base-collection-01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.bitset.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.roily.bitset" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.bitset.BitSetUseful" />
-      <option name="METHOD_NAME" value="sort" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BitSetUseful.testIsMissingBig" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="base-collection-01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.bitset.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.roily.bitset" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.bitset.BitSetUseful" />
-      <option name="METHOD_NAME" value="testIsMissingBig" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="BitSetUseful.tesxxxt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="base-collection-01" />
       <extension name="coverage">
@@ -221,6 +188,38 @@
       <option name="PACKAGE_NAME" value="com.roily.bitset" />
       <option name="MAIN_CLASS_NAME" value="com.roily.bitset.BitSetUseful" />
       <option name="METHOD_NAME" value="tesxxxt" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonBase.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="designpatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.designpatterns.dp05_lsp.error_demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dp05_lsp.error_demo" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dp05_lsp.error_demo.PersonBase" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestClass.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="designpatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.designpatterns.dp05_lsp.error_demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dp05_lsp.error_demo" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dp05_lsp.error_demo.TestClass" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -274,19 +273,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.BitSetUseful.testIsMissingBig" />
-      <item itemvalue="JUnit.BitSetUseful.sort" />
       <item itemvalue="JUnit.BitSetUseful.tesxxxt" />
       <item itemvalue="JUnit.ArrayBlockingQueueTest.testArray02" />
       <item itemvalue="JUnit.ArrayBlockingQueueTest.test" />
+      <item itemvalue="JUnit.TestClass.test" />
+      <item itemvalue="JUnit.PersonBase.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PersonBase.test" />
+        <item itemvalue="JUnit.TestClass.test" />
         <item itemvalue="JUnit.ArrayBlockingQueueTest.test" />
         <item itemvalue="JUnit.ArrayBlockingQueueTest.testArray02" />
         <item itemvalue="JUnit.BitSetUseful.tesxxxt" />
-        <item itemvalue="JUnit.BitSetUseful.sort" />
-        <item itemvalue="JUnit.BitSetUseful.testIsMissingBig" />
       </list>
     </recent_temporary>
   </component>
@@ -447,14 +446,7 @@
       <workItem from="1653744800813" duration="6709000" />
       <workItem from="1653882141517" duration="2113000" />
       <workItem from="1653913247036" duration="1474000" />
-      <workItem from="1653919637449" duration="5109000" />
-    </task>
-    <task id="LOCAL-00024" summary="生成多个订单">
-      <created>1651852717296</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1651852717296</updated>
+      <workItem from="1653919637449" duration="10691000" />
     </task>
     <task id="LOCAL-00025" summary="回退">
       <created>1651852736934</created>
@@ -792,7 +784,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653889477775</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="designpatterns-单一职责">
+      <created>1653925263708</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1653925263708</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -852,7 +851,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="arrayQueue" />
     <MESSAGE value="Delayed接口测试" />
     <MESSAGE value="DelayQueue Demo" />
     <MESSAGE value="CLQ" />
@@ -877,7 +875,8 @@
     <MESSAGE value="数组内存地址连续性和添加顺序无关" />
     <MESSAGE value="ABQ-offer(param1,param2,param3)" />
     <MESSAGE value="designpatterns模块创建" />
-    <option name="LAST_COMMIT_MESSAGE" value="designpatterns模块创建" />
+    <MESSAGE value="designpatterns-单一职责" />
+    <option name="LAST_COMMIT_MESSAGE" value="designpatterns-单一职责" />
   </component>
   <component name="WindowStateProjectService">
     <state x="318" y="103" key="#Customize_Data_Views" timestamp="1652372741178">
@@ -916,10 +915,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="104" y="39" width="1089" height="675" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1652983030891" />
-    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser" timestamp="1653925153316">
+    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser" timestamp="1653936115404">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1653925153316" />
+    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1653936115404" />
     <state x="238" y="286" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1653120535649">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -932,10 +931,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.720@0.0.1280.720" timestamp="1651685213347" />
-    <state x="371" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1647229891741">
+    <state x="371" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1653934019800">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="371" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.720@0.0.1280.720" timestamp="1647229891741" />
+    <state x="371" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.720@0.0.1280.720" timestamp="1653934019800" />
     <state x="371" y="107" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1652900898105">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -948,10 +947,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="357" y="205" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.720@0.0.1280.720" timestamp="1646561752636" />
-    <state x="395" y="0" key="CommitChangelistDialog2" timestamp="1653889475633">
+    <state x="395" y="0" key="CommitChangelistDialog2" timestamp="1653925260635">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="395" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1653889475633" />
+    <state x="395" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1653925260635" />
     <state x="93" y="93" width="1095" height="535" key="DiffContextDialog" timestamp="1653125940070">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -960,22 +959,22 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="421" y="101" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1653577440452" />
-    <state width="1237" height="116" key="GridCell.Tab.0.bottom" timestamp="1653663971992">
+    <state width="1237" height="151" key="GridCell.Tab.0.bottom" timestamp="1653934093272">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="116" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1653663971992" />
-    <state width="1237" height="116" key="GridCell.Tab.0.center" timestamp="1653663971992">
+    <state width="1237" height="151" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1653934093272" />
+    <state width="1237" height="151" key="GridCell.Tab.0.center" timestamp="1653934093272">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="116" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1653663971992" />
-    <state width="1237" height="116" key="GridCell.Tab.0.left" timestamp="1653663971992">
+    <state width="1237" height="151" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1653934093272" />
+    <state width="1237" height="151" key="GridCell.Tab.0.left" timestamp="1653934093272">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="116" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1653663971992" />
-    <state width="1237" height="116" key="GridCell.Tab.0.right" timestamp="1653663971992">
+    <state width="1237" height="151" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1653934093272" />
+    <state width="1237" height="151" key="GridCell.Tab.0.right" timestamp="1653934093272">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="116" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1653663971992" />
+    <state width="1237" height="151" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1653934093272" />
     <state width="1237" height="221" key="GridCell.Tab.1.bottom" timestamp="1653503401692">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -1040,10 +1039,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="160" y="13" width="1038" height="707" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1653245117679" />
-    <state x="11" y="55" width="1036" height="571" key="Vcs.Push.Dialog.v2" timestamp="1653663965433">
+    <state x="11" y="55" width="1036" height="571" key="Vcs.Push.Dialog.v2" timestamp="1653925270366">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="11" y="55" width="1036" height="571" key="Vcs.Push.Dialog.v2/0.0.1280.720@0.0.1280.720" timestamp="1653663965433" />
+    <state x="11" y="55" width="1036" height="571" key="Vcs.Push.Dialog.v2/0.0.1280.720@0.0.1280.720" timestamp="1653925270366" />
     <state width="560" height="718" key="com.intellij.byteCodeViewer.ShowByteCodeAction" timestamp="1648746723739">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
