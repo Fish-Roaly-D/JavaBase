@@ -448,13 +448,7 @@
       <workItem from="1653913247036" duration="1474000" />
       <workItem from="1653919637449" duration="10726000" />
       <workItem from="1653986577523" duration="4165000" />
-    </task>
-    <task id="LOCAL-00026" summary="模拟退出等待队列">
-      <created>1651853305148</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1651853305148</updated>
+      <workItem from="1654001797749" duration="689000" />
     </task>
     <task id="LOCAL-00027" summary="订单支付-模拟">
       <created>1651854119086</created>
@@ -792,7 +786,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653967658892</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="designpatterns-依赖倒置原则">
+      <created>1654001870656</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1654001870656</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -852,7 +853,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="DelayQueue Demo" />
     <MESSAGE value="CLQ" />
     <MESSAGE value="rename" />
     <MESSAGE value="set" />
@@ -877,7 +877,8 @@
     <MESSAGE value="designpatterns模块创建" />
     <MESSAGE value="designpatterns-单一职责" />
     <MESSAGE value="designpatterns-里氏替换职责" />
-    <option name="LAST_COMMIT_MESSAGE" value="designpatterns-里氏替换职责" />
+    <MESSAGE value="designpatterns-依赖倒置原则" />
+    <option name="LAST_COMMIT_MESSAGE" value="designpatterns-依赖倒置原则" />
   </component>
   <component name="WindowStateProjectService">
     <state x="318" y="103" key="#Customize_Data_Views" timestamp="1652372741178">
@@ -948,10 +949,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="357" y="205" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.720@0.0.1280.720" timestamp="1646561752636" />
-    <state x="395" y="0" key="CommitChangelistDialog2" timestamp="1653967656668">
+    <state x="395" y="0" key="CommitChangelistDialog2" timestamp="1654001867425">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="395" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1653967656668" />
+    <state x="395" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1654001867425" />
     <state x="93" y="93" width="1095" height="535" key="DiffContextDialog" timestamp="1653125940070">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -1092,10 +1093,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="234" y="19" key="scopes/0.0.1280.720@0.0.1280.720" timestamp="1647230227486" />
-    <state x="323" y="177" width="1087" height="678" key="search.everywhere.popup" timestamp="1653921735253">
+    <state x="111" y="140" width="1087" height="678" key="search.everywhere.popup" timestamp="1654001897473">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="323" y="177" width="1087" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1653921735253" />
+    <state x="111" y="140" width="1087" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1654001897473" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
