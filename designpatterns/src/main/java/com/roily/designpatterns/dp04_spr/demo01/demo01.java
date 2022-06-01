@@ -3,7 +3,7 @@ package com.roily.designpatterns.dp04_spr.demo01;
 /**
  * @version 1.0.0
  * @Description TODO
- * @ClassName demo01.java
+ * @ClassName Demo01.java
  * @author: RoilyFish
  * @date: 2022/5/30 23:34
  */

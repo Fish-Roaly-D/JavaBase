@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dp04_spr/demo01/demo01.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dp04_spr/demo01/demo01.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,17 +145,65 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Demo04.test">
-    <configuration name="Demo03.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Demo04.test (1)">
+    <configuration name="Demo01.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="designpatterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.do06_dip.error_demo.*" />
+          <option name="PATTERN" value="com.roily.designpatterns.dp07_LOD.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.designpatterns.do06_dip.error_demo" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.do06_dip.error_demo.Demo03" />
+      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dp07_LOD" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dp07_LOD.Demo01" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo02.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="designpatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.designpatterns.dp07_LOD.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dp07_LOD" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dp07_LOD.Demo02" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo03.test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="designpatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.designpatterns.dp07_LOD.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dp07_LOD" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dp07_LOD.Demo03" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo04.test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="designpatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.designpatterns.dp07_LOD.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dp07_LOD" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dp07_LOD.Demo04" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -171,54 +220,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.roily.designpatterns.do06_dip.error_demo" />
       <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.do06_dip.error_demo.Demo04" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PersonBase.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="designpatterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dp05_lsp.error_demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dp05_lsp.error_demo" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dp05_lsp.error_demo.PersonBase" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Sure.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="designpatterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.do06_dip.error_demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.roily.designpatterns.do06_dip.error_demo" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.do06_dip.error_demo.Sure" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestClass.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="designpatterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dp05_lsp.error_demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dp05_lsp.error_demo" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dp05_lsp.error_demo.TestClass" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -273,19 +274,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.TestClass.test" />
-      <item itemvalue="JUnit.PersonBase.test" />
-      <item itemvalue="JUnit.Sure.test" />
-      <item itemvalue="JUnit.Demo03.test" />
       <item itemvalue="JUnit.Demo04.test" />
+      <item itemvalue="JUnit.Demo01.test" />
+      <item itemvalue="JUnit.Demo02.test" />
+      <item itemvalue="JUnit.Demo03.test (1)" />
+      <item itemvalue="JUnit.Demo04.test (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Demo04.test (1)" />
+        <item itemvalue="JUnit.Demo03.test (1)" />
+        <item itemvalue="JUnit.Demo02.test" />
+        <item itemvalue="JUnit.Demo01.test" />
         <item itemvalue="JUnit.Demo04.test" />
-        <item itemvalue="JUnit.Demo03.test" />
-        <item itemvalue="JUnit.Sure.test" />
-        <item itemvalue="JUnit.PersonBase.test" />
-        <item itemvalue="JUnit.TestClass.test" />
       </list>
     </recent_temporary>
   </component>
@@ -448,14 +449,8 @@
       <workItem from="1653913247036" duration="1474000" />
       <workItem from="1653919637449" duration="10726000" />
       <workItem from="1653986577523" duration="4165000" />
-      <workItem from="1654001797749" duration="689000" />
-    </task>
-    <task id="LOCAL-00027" summary="订单支付-模拟">
-      <created>1651854119086</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1651854119086</updated>
+      <workItem from="1654001797749" duration="3772000" />
+      <workItem from="1654093970716" duration="600000" />
     </task>
     <task id="LOCAL-00028" summary="引用拷贝">
       <created>1651936648595</created>
@@ -793,7 +788,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654001870656</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="designpatterns-依赖倒置原则">
+      <created>1654009832939</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1654009832939</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -949,10 +951,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="357" y="205" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.720@0.0.1280.720" timestamp="1646561752636" />
-    <state x="395" y="0" key="CommitChangelistDialog2" timestamp="1654001867425">
+    <state x="395" y="0" key="CommitChangelistDialog2" timestamp="1654009831054">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="395" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1654001867425" />
+    <state x="395" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1654009831054" />
     <state x="93" y="93" width="1095" height="535" key="DiffContextDialog" timestamp="1653125940070">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -961,22 +963,22 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="421" y="101" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1653577440452" />
-    <state width="1237" height="191" key="GridCell.Tab.0.bottom" timestamp="1653996288032">
+    <state width="1237" height="139" key="GridCell.Tab.0.bottom" timestamp="1654013504565">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="191" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1653996288032" />
-    <state width="1237" height="191" key="GridCell.Tab.0.center" timestamp="1653996288032">
+    <state width="1237" height="139" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1654013504565" />
+    <state width="1237" height="139" key="GridCell.Tab.0.center" timestamp="1654013504564">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="191" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1653996288032" />
-    <state width="1237" height="191" key="GridCell.Tab.0.left" timestamp="1653996288032">
+    <state width="1237" height="139" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1654013504564" />
+    <state width="1237" height="139" key="GridCell.Tab.0.left" timestamp="1654013504564">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="191" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1653996288032" />
-    <state width="1237" height="191" key="GridCell.Tab.0.right" timestamp="1653996288032">
+    <state width="1237" height="139" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1654013504564" />
+    <state width="1237" height="139" key="GridCell.Tab.0.right" timestamp="1654013504564">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="191" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1653996288032" />
+    <state width="1237" height="139" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1654013504564" />
     <state width="1237" height="221" key="GridCell.Tab.1.bottom" timestamp="1653503401692">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -1041,10 +1043,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="160" y="13" width="1038" height="707" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1653245117679" />
-    <state x="11" y="55" width="1036" height="571" key="Vcs.Push.Dialog.v2" timestamp="1653925270366">
+    <state x="11" y="55" width="1036" height="571" key="Vcs.Push.Dialog.v2" timestamp="1654009837289">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="11" y="55" width="1036" height="571" key="Vcs.Push.Dialog.v2/0.0.1280.720@0.0.1280.720" timestamp="1653925270366" />
+    <state x="11" y="55" width="1036" height="571" key="Vcs.Push.Dialog.v2/0.0.1280.720@0.0.1280.720" timestamp="1654009837289" />
     <state width="560" height="718" key="com.intellij.byteCodeViewer.ShowByteCodeAction" timestamp="1648746723739">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
