@@ -1,4 +1,4 @@
-package com.roily.designpatterns.do06_dip.error_demo;
+package com.roily.designpatterns.dp06_dip.error_demo;
 
 /**
  * @version 1.0.0
