@@ -56,6 +56,7 @@
         <option value="MybatisMapper" />
         <option value="db.properties" />
         <option value="Interface" />
+        <option value="Kotlin File" />
         <option value="Class" />
       </list>
     </option>
@@ -144,7 +145,23 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Demo04.test (1)">
+  <component name="RunManager" selected="JUnit.BookStore.test">
+    <configuration name="BookStore.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="designpatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.designpatterns.dp08_OCP.demo01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dp08_OCP.demo01" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dp08_OCP.demo01.BookStore" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Demo01.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="designpatterns" />
       <extension name="coverage">
@@ -209,22 +226,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo04.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="designpatterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.do06_dip.error_demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.roily.designpatterns.do06_dip.error_demo" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.do06_dip.error_demo.Demo04" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
       <module name="mybatis-03" />
       <option name="VM_PARAMETERS" />
@@ -273,19 +274,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.Demo04.test" />
       <item itemvalue="JUnit.Demo01.test" />
       <item itemvalue="JUnit.Demo02.test" />
       <item itemvalue="JUnit.Demo03.test (1)" />
       <item itemvalue="JUnit.Demo04.test (1)" />
+      <item itemvalue="JUnit.BookStore.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BookStore.test" />
         <item itemvalue="JUnit.Demo04.test (1)" />
         <item itemvalue="JUnit.Demo03.test (1)" />
         <item itemvalue="JUnit.Demo02.test" />
         <item itemvalue="JUnit.Demo01.test" />
-        <item itemvalue="JUnit.Demo04.test" />
       </list>
     </recent_temporary>
   </component>
@@ -449,14 +450,7 @@
       <workItem from="1653919637449" duration="10726000" />
       <workItem from="1653986577523" duration="4165000" />
       <workItem from="1654001797749" duration="3772000" />
-      <workItem from="1654093970716" duration="916000" />
-    </task>
-    <task id="LOCAL-00029" summary="1">
-      <created>1651936669375</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1651936669375</updated>
+      <workItem from="1654093970716" duration="4483000" />
     </task>
     <task id="LOCAL-00030" summary="break and continue">
       <created>1652018755899</created>
@@ -794,7 +788,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654094939666</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="designpatterns-包名调整">
+      <created>1654095350850</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1654095350850</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -854,7 +855,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="rename" />
     <MESSAGE value="set" />
     <MESSAGE value="java实现字典树" />
     <MESSAGE value="java实现二叉排序树" />
@@ -879,7 +879,8 @@
     <MESSAGE value="designpatterns-里氏替换职责" />
     <MESSAGE value="designpatterns-依赖倒置原则" />
     <MESSAGE value="designpatterns-接口隔离原则" />
-    <option name="LAST_COMMIT_MESSAGE" value="designpatterns-接口隔离原则" />
+    <MESSAGE value="designpatterns-包名调整" />
+    <option name="LAST_COMMIT_MESSAGE" value="designpatterns-包名调整" />
   </component>
   <component name="WindowStateProjectService">
     <state x="318" y="103" key="#Customize_Data_Views" timestamp="1652372741178">
@@ -918,10 +919,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="104" y="39" width="1089" height="675" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1652983030891" />
-    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser" timestamp="1653993969923">
+    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser" timestamp="1654098276424">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1653993969923" />
+    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1654098276424" />
     <state x="238" y="286" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1654095269673">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -950,10 +951,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="357" y="205" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.720@0.0.1280.720" timestamp="1646561752636" />
-    <state x="395" y="219" width="850" height="501" key="CommitChangelistDialog2" timestamp="1654094936174">
+    <state x="395" y="219" width="850" height="501" key="CommitChangelistDialog2" timestamp="1654095348044">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="395" y="219" width="850" height="501" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1654094936174" />
+    <state x="395" y="219" width="850" height="501" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1654095348044" />
     <state x="93" y="93" width="1095" height="535" key="DiffContextDialog" timestamp="1653125940070">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -962,22 +963,22 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="421" y="101" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1653577440452" />
-    <state width="1237" height="139" key="GridCell.Tab.0.bottom" timestamp="1654013504565">
+    <state width="1237" height="109" key="GridCell.Tab.0.bottom" timestamp="1654098176835">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="139" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1654013504565" />
-    <state width="1237" height="139" key="GridCell.Tab.0.center" timestamp="1654013504564">
+    <state width="1237" height="109" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1654098176835" />
+    <state width="1237" height="109" key="GridCell.Tab.0.center" timestamp="1654098176834">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="139" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1654013504564" />
-    <state width="1237" height="139" key="GridCell.Tab.0.left" timestamp="1654013504564">
+    <state width="1237" height="109" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1654098176834" />
+    <state width="1237" height="109" key="GridCell.Tab.0.left" timestamp="1654098176834">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="139" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1654013504564" />
-    <state width="1237" height="139" key="GridCell.Tab.0.right" timestamp="1654013504564">
+    <state width="1237" height="109" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1654098176834" />
+    <state width="1237" height="109" key="GridCell.Tab.0.right" timestamp="1654098176835">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="139" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1654013504564" />
+    <state width="1237" height="109" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1654098176835" />
     <state width="1237" height="221" key="GridCell.Tab.1.bottom" timestamp="1653503401692">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
