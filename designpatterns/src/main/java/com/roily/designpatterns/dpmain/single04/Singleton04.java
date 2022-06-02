@@ -1,4 +1,4 @@
-package com.roily.designpatterns.dpmain.single;
+package com.roily.designpatterns.dpmain.single04;
 
 /**
  * @version 1.0.0

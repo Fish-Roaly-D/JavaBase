@@ -1,4 +1,4 @@
-package com.roily.designpatterns.dpmain.single;
+package com.roily.designpatterns.dpmain.single07;
 
 import java.io.IOException;
 import java.io.InputStream;

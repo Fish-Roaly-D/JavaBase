@@ -2,8 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dp08_OCP/demo01/IDiscountBookImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/DataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single07/DataSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/Dtest.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single07/Dtest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/Singleton01.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single01/Singleton01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/Singleton02_Lock.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single02/Singleton02_Lock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/Singleton02_Syn.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single02/Singleton02_Syn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/Singleton03.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single03/Singleton03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/Singleton04.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single04/Singleton04.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/Singleton05.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single05/Singleton05.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/Singleton06.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single06/Singleton06.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/Test01.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single01/Test01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/Test02_Lock.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single02/Test02_Lock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/Test02_Syn.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single02/Test02_Syn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/Test03.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single03/Test03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/Test04.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single04/Test04.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/Test05.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single05/Test05.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/Test06.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single06/Test06.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +128,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dp05_lsp/error_demo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.31609195" />
@@ -129,11 +143,11 @@
       <recent name="com.roily.vo" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\programmeTools\idea\git\JavaBase\designpatterns\src\main\java\com\roily\designpatterns\dpmain" />
       <recent name="E:\programmeTools\idea\git\JavaBase\designpatterns\src\main\java\com\roily\designpatterns\dp05_lsp\error_demo" />
       <recent name="E:\programmeTools\idea\git\JavaBase\designpatterns\src\main\java\com\roily\designpatterns" />
       <recent name="E:\programmeTools\idea\git\JavaBase\designpatterns\src\main\java\com\roily\designpatterns\dp02_spr\ok_demo" />
       <recent name="E:\programmeTools\idea\git\JavaBase\Base-Collection-01\src\main\java\com\roily\queue\blockingqueue\delayQueue" />
-      <recent name="E:\programmeTools\idea\git\JavaBase\ThreadBase02\src\main\java\com\roily" />
     </key>
   </component>
   <component name="RestServicesNavigator">
@@ -149,11 +163,11 @@
   </component>
   <component name="RunManager" selected="JUnit.Test01.test01">
     <configuration name="Singleton05" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.single.Singleton05" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.single05.Singleton05" />
       <module name="designpatterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.single.*" />
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.single01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -162,11 +176,11 @@
       </method>
     </configuration>
     <configuration name="Singleton06" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.single.Singleton06" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.single06.Singleton06" />
       <module name="designpatterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.single.*" />
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.single01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -175,11 +189,11 @@
       </method>
     </configuration>
     <configuration name="Test06" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.single.Test06" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.single06.Test06" />
       <module name="designpatterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.single.*" />
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.single01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -191,12 +205,12 @@
       <module name="designpatterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.single.*" />
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.single01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.single" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.single.Dtest" />
+      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.single07" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.single07.Dtest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -207,12 +221,12 @@
       <module name="designpatterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.single.*" />
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.single01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.single" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.single.Test01" />
+      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.single01" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.single01.Test01" />
       <option name="METHOD_NAME" value="test01" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -443,14 +457,7 @@
       <workItem from="1653919637449" duration="10726000" />
       <workItem from="1653986577523" duration="4165000" />
       <workItem from="1654001797749" duration="3772000" />
-      <workItem from="1654093970716" duration="15157000" />
-    </task>
-    <task id="LOCAL-00031" summary="ArrayList学习">
-      <created>1652185339195</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1652185339195</updated>
+      <workItem from="1654093970716" duration="15459000" />
     </task>
     <task id="LOCAL-00032" summary="ArrayList总结">
       <created>1652185358445</created>
@@ -788,7 +795,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654099119865</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="单例模式">
+      <created>1654148132307</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1654148132307</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -848,7 +862,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="set" />
     <MESSAGE value="java实现字典树" />
     <MESSAGE value="java实现二叉排序树" />
     <MESSAGE value="二叉查找树" />
@@ -873,7 +886,8 @@
     <MESSAGE value="designpatterns-依赖倒置原则" />
     <MESSAGE value="designpatterns-接口隔离原则" />
     <MESSAGE value="designpatterns-包名调整" />
-    <option name="LAST_COMMIT_MESSAGE" value="designpatterns-包名调整" />
+    <MESSAGE value="单例模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="单例模式" />
   </component>
   <component name="WindowStateProjectService">
     <state x="318" y="103" key="#Customize_Data_Views" timestamp="1652372741178">
@@ -944,10 +958,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="357" y="205" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.720@0.0.1280.720" timestamp="1646561752636" />
-    <state x="395" y="219" width="850" height="501" key="CommitChangelistDialog2" timestamp="1654099117329">
+    <state x="395" y="219" width="850" height="501" key="CommitChangelistDialog2" timestamp="1654148129232">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="395" y="219" width="850" height="501" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1654099117329" />
+    <state x="395" y="219" width="850" height="501" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1654148129232" />
     <state x="93" y="93" width="1095" height="535" key="DiffContextDialog" timestamp="1653125940070">
       <screen x="0" y="0" width="1280" height="720" />
     </state>

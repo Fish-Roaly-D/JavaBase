@@ -1,4 +1,4 @@
-package com.roily.designpatterns.dpmain.single;
+package com.roily.designpatterns.dpmain.single02;
 
 import java.util.concurrent.locks.ReentrantLock;
 
