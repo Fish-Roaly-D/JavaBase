@@ -1,4 +1,4 @@
-package com.roily.designpatterns.dpmain.single01;
+package com.roily.designpatterns.dpmain.single.single01;
 
 import org.junit.Test;
 

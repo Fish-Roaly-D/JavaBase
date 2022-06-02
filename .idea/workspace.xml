@@ -163,11 +163,11 @@
   </component>
   <component name="RunManager" selected="JUnit.Test01.test01">
     <configuration name="Singleton05" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.single05.Singleton05" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.single.single05.Singleton05" />
       <module name="designpatterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.single01.*" />
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.single.single01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -176,11 +176,11 @@
       </method>
     </configuration>
     <configuration name="Singleton06" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.single06.Singleton06" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.single.single06.Singleton06" />
       <module name="designpatterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.single01.*" />
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.single.single01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -189,11 +189,11 @@
       </method>
     </configuration>
     <configuration name="Test06" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.single06.Test06" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.single.single06.Test06" />
       <module name="designpatterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.single01.*" />
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.single.single01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -205,12 +205,12 @@
       <module name="designpatterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.single01.*" />
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.single.single01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.single07" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.single07.Dtest" />
+      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.single.single07" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.single.single07.Dtest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -221,12 +221,12 @@
       <module name="designpatterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.single01.*" />
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.single.single01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.single01" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.single01.Test01" />
+      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.single.single01" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.single.single01.Test01" />
       <option name="METHOD_NAME" value="test01" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -930,10 +930,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1654147221210" />
-    <state x="238" y="286" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1654095269673">
+    <state x="238" y="286" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1654148252356">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="238" y="286" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1280.720@0.0.1280.720" timestamp="1654095269673" />
+    <state x="238" y="286" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1280.720@0.0.1280.720" timestamp="1654148252356" />
     <state x="355" y="63" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog" timestamp="1651853386344">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -958,10 +958,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="357" y="205" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.720@0.0.1280.720" timestamp="1646561752636" />
-    <state x="395" y="219" width="850" height="501" key="CommitChangelistDialog2" timestamp="1654148129232">
+    <state x="395" y="219" width="850" height="501" key="CommitChangelistDialog2" timestamp="1654148242966">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="395" y="219" width="850" height="501" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1654148129232" />
+    <state x="395" y="219" width="850" height="501" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1654148242966" />
     <state x="93" y="93" width="1095" height="535" key="DiffContextDialog" timestamp="1653125940070">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
