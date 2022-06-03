@@ -3,14 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/factory/method/IFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/factory/method/Operation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/factory/method/OperationAddFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/factory/method/OperationSubtractionFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/factory/method/test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/factory/simple/Operation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/factory/simple/OperationFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/factory/simple/test.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +113,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/factory/simple/method" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/factory/method" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.31609195" />
@@ -136,11 +128,11 @@
       <recent name="com.roily.hashMapForeach" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\programmeTools\idea\git\JavaBase\designpatterns\src\main\java\com\roily\designpatterns\dpmain\single\factory\method" />
       <recent name="E:\programmeTools\idea\git\JavaBase\designpatterns\src\main\java\com\roily\designpatterns\dpmain\single\factory\simple\method" />
       <recent name="E:\programmeTools\idea\git\JavaBase\designpatterns\src\main\java\com\roily\designpatterns\dpmain" />
       <recent name="E:\programmeTools\idea\git\JavaBase\designpatterns\src\main\java\com\roily\designpatterns\dp05_lsp\error_demo" />
       <recent name="E:\programmeTools\idea\git\JavaBase\designpatterns\src\main\java\com\roily\designpatterns" />
-      <recent name="E:\programmeTools\idea\git\JavaBase\designpatterns\src\main\java\com\roily\designpatterns\dp02_spr\ok_demo" />
     </key>
   </component>
   <component name="RestServicesNavigator">
@@ -462,21 +454,7 @@
       <workItem from="1654093970716" duration="18831000" />
       <workItem from="1654170543218" duration="774000" />
       <workItem from="1654184774121" duration="630000" />
-      <workItem from="1654269035211" duration="5434000" />
-    </task>
-    <task id="LOCAL-00038" summary="LBQ">
-      <created>1652376502327</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1652376502327</updated>
-    </task>
-    <task id="LOCAL-00039" summary="PBQ">
-      <created>1652456937462</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1652456937463</updated>
+      <workItem from="1654269035211" duration="5932000" />
     </task>
     <task id="LOCAL-00040" summary="condition 测试">
       <created>1652537224133</created>
@@ -807,7 +785,21 @@
       <option name="project" value="LOCAL" />
       <updated>1654274253243</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="简单工厂模式">
+      <created>1654275343545</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1654275343545</updated>
+    </task>
+    <task id="LOCAL-00088" summary="简单工厂模式">
+      <created>1654275360180</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1654275360181</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -890,9 +882,9 @@
     <MESSAGE value="designpatterns-包名调整" />
     <MESSAGE value="单例模式" />
     <MESSAGE value="工厂模式-init" />
-    <MESSAGE value="简单工厂模式" />
     <MESSAGE value="工厂方法模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="工厂方法模式" />
+    <MESSAGE value="简单工厂模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="简单工厂模式" />
   </component>
   <component name="WindowStateProjectService">
     <state x="318" y="103" key="#Customize_Data_Views" timestamp="1652372741178">
@@ -931,10 +923,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="104" y="39" width="1089" height="675" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1652983030891" />
-    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser" timestamp="1654274636589">
+    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser" timestamp="1654275560519">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1654274636589" />
+    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1654275560519" />
     <state x="204" y="286" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1654271976310">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -963,10 +955,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="357" y="205" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.720@0.0.1280.720" timestamp="1646561752636" />
-    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2" timestamp="1654275341782">
+    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2" timestamp="1654275358156">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1654275341782" />
+    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1654275358156" />
     <state x="93" y="93" width="1095" height="535" key="DiffContextDialog" timestamp="1653125940070">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -1107,10 +1099,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="234" y="19" key="scopes/0.0.1280.720@0.0.1280.720" timestamp="1647230227486" />
-    <state x="111" y="140" width="1087" height="678" key="search.everywhere.popup" timestamp="1654272943218">
+    <state x="111" y="140" width="1087" height="678" key="search.everywhere.popup" timestamp="1654275683745">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="111" y="140" width="1087" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1654272943218" />
+    <state x="111" y="140" width="1087" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1654275683745" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
