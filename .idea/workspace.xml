@@ -3,6 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/factory/method/IFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/factory/method/Operation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/factory/method/OperationAddFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/factory/method/OperationSubtractionFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/factory/method/test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/factory/simple/Operation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/factory/simple/OperationFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/factory/simple/test.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -454,14 +462,7 @@
       <workItem from="1654093970716" duration="18831000" />
       <workItem from="1654170543218" duration="774000" />
       <workItem from="1654184774121" duration="630000" />
-      <workItem from="1654269035211" duration="4350000" />
-    </task>
-    <task id="LOCAL-00037" summary="ABQ测试">
-      <created>1652374520347</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1652374520347</updated>
+      <workItem from="1654269035211" duration="5434000" />
     </task>
     <task id="LOCAL-00038" summary="LBQ">
       <created>1652376502327</created>
@@ -799,7 +800,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654271392271</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="工厂方法模式">
+      <created>1654274253243</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1654274253243</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -859,7 +867,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="二叉查找树" />
     <MESSAGE value="项目调整" />
     <MESSAGE value="HashTable" />
     <MESSAGE value="map-properties" />
@@ -884,7 +891,8 @@
     <MESSAGE value="单例模式" />
     <MESSAGE value="工厂模式-init" />
     <MESSAGE value="简单工厂模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="简单工厂模式" />
+    <MESSAGE value="工厂方法模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="工厂方法模式" />
   </component>
   <component name="WindowStateProjectService">
     <state x="318" y="103" key="#Customize_Data_Views" timestamp="1652372741178">
@@ -923,10 +931,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="104" y="39" width="1089" height="675" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1652983030891" />
-    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser" timestamp="1654271707307">
+    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser" timestamp="1654274636589">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1654271707307" />
+    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1654274636589" />
     <state x="204" y="286" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1654271976310">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -955,10 +963,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="357" y="205" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.720@0.0.1280.720" timestamp="1646561752636" />
-    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2" timestamp="1654271390719">
+    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2" timestamp="1654274251141">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1654271390719" />
+    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1654274251141" />
     <state x="93" y="93" width="1095" height="535" key="DiffContextDialog" timestamp="1653125940070">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -1047,10 +1055,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="160" y="13" width="1038" height="707" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1654099340898" />
-    <state x="11" y="55" width="1036" height="571" key="Vcs.Push.Dialog.v2" timestamp="1654272041782">
+    <state x="11" y="55" width="1036" height="571" key="Vcs.Push.Dialog.v2" timestamp="1654274258440">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="11" y="55" width="1036" height="571" key="Vcs.Push.Dialog.v2/0.0.1280.720@0.0.1280.720" timestamp="1654272041782" />
+    <state x="11" y="55" width="1036" height="571" key="Vcs.Push.Dialog.v2/0.0.1280.720@0.0.1280.720" timestamp="1654274258440" />
     <state width="560" height="718" key="com.intellij.byteCodeViewer.ShowByteCodeAction" timestamp="1648746723739">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
