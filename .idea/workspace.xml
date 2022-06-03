@@ -451,14 +451,7 @@
       <workItem from="1654093970716" duration="18831000" />
       <workItem from="1654170543218" duration="774000" />
       <workItem from="1654184774121" duration="630000" />
-      <workItem from="1654269035211" duration="1886000" />
-    </task>
-    <task id="LOCAL-00035" summary="HashMap">
-      <created>1652203251747</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1652203251747</updated>
+      <workItem from="1654269035211" duration="2326000" />
     </task>
     <task id="LOCAL-00036" summary="对列相关更新">
       <created>1652289690444</created>
@@ -796,7 +789,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654269320493</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="简单工厂模式">
+      <created>1654271151765</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1654271151765</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -856,7 +856,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="java实现二叉排序树" />
     <MESSAGE value="二叉查找树" />
     <MESSAGE value="项目调整" />
     <MESSAGE value="HashTable" />
@@ -881,7 +880,8 @@
     <MESSAGE value="designpatterns-包名调整" />
     <MESSAGE value="单例模式" />
     <MESSAGE value="工厂模式-init" />
-    <option name="LAST_COMMIT_MESSAGE" value="工厂模式-init" />
+    <MESSAGE value="简单工厂模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="简单工厂模式" />
   </component>
   <component name="WindowStateProjectService">
     <state x="318" y="103" key="#Customize_Data_Views" timestamp="1652372741178">
@@ -952,10 +952,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="357" y="205" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.720@0.0.1280.720" timestamp="1646561752636" />
-    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2" timestamp="1654269317899">
+    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2" timestamp="1654271149831">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1654269317899" />
+    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1654271149831" />
     <state x="93" y="93" width="1095" height="535" key="DiffContextDialog" timestamp="1653125940070">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
