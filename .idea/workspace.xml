@@ -1,23 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/DataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single07/DataSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/Dtest.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single07/Dtest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/Singleton01.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single01/Singleton01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/Singleton02_Lock.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single02/Singleton02_Lock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/Singleton02_Syn.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single02/Singleton02_Syn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/Singleton03.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single03/Singleton03.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/Singleton04.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single04/Singleton04.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/Singleton05.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single05/Singleton05.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/Singleton06.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single06/Singleton06.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/Test01.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single01/Test01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/Test02_Lock.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single02/Test02_Lock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/Test02_Syn.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single02/Test02_Syn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/Test03.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single03/Test03.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/Test04.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single04/Test04.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/Test05.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single05/Test05.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single/Test06.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/single06/Test06.java" afterDir="false" />
+    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="单例模式">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -457,21 +442,10 @@
       <workItem from="1653919637449" duration="10726000" />
       <workItem from="1653986577523" duration="4165000" />
       <workItem from="1654001797749" duration="3772000" />
-      <workItem from="1654093970716" duration="15459000" />
-    </task>
-    <task id="LOCAL-00032" summary="ArrayList总结">
-      <created>1652185358445</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1652185358445</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Foreach">
-      <created>1652195743928</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1652195743928</updated>
+      <workItem from="1654093970716" duration="18831000" />
+      <workItem from="1654170543218" duration="774000" />
+      <workItem from="1654184774121" duration="630000" />
+      <workItem from="1654269035211" duration="254000" />
     </task>
     <task id="LOCAL-00034" summary="hashmap修改">
       <created>1652202113364</created>
@@ -802,7 +776,21 @@
       <option name="project" value="LOCAL" />
       <updated>1654148132307</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="单例模式">
+      <created>1654148246092</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1654148246092</updated>
+    </task>
+    <task id="LOCAL-00082" summary="单例模式">
+      <created>1654148268924</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1654148268924</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -958,10 +946,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="357" y="205" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.720@0.0.1280.720" timestamp="1646561752636" />
-    <state x="395" y="219" width="850" height="501" key="CommitChangelistDialog2" timestamp="1654148242966">
+    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2" timestamp="1654184800247">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="395" y="219" width="850" height="501" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1654148242966" />
+    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1654184800247" />
     <state x="93" y="93" width="1095" height="535" key="DiffContextDialog" timestamp="1653125940070">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -970,38 +958,38 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="421" y="101" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1653577440452" />
-    <state width="1237" height="230" key="GridCell.Tab.0.bottom" timestamp="1654148092935">
+    <state width="1237" height="221" key="GridCell.Tab.0.bottom" timestamp="1654161012462">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="230" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1654148092935" />
-    <state width="1237" height="230" key="GridCell.Tab.0.center" timestamp="1654148092935">
+    <state width="1237" height="221" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1654161012462" />
+    <state width="1237" height="221" key="GridCell.Tab.0.center" timestamp="1654161012462">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="230" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1654148092935" />
-    <state width="1237" height="230" key="GridCell.Tab.0.left" timestamp="1654148092935">
+    <state width="1237" height="221" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1654161012462" />
+    <state width="1237" height="221" key="GridCell.Tab.0.left" timestamp="1654161012462">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="230" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1654148092935" />
-    <state width="1237" height="230" key="GridCell.Tab.0.right" timestamp="1654148092935">
+    <state width="1237" height="221" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1654161012462" />
+    <state width="1237" height="221" key="GridCell.Tab.0.right" timestamp="1654161012462">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="230" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1654148092935" />
-    <state width="1237" height="221" key="GridCell.Tab.1.bottom" timestamp="1654146292652">
+    <state width="1237" height="221" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1654161012462" />
+    <state width="1237" height="221" key="GridCell.Tab.1.bottom" timestamp="1654161012462">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="221" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1654146292652" />
-    <state width="1237" height="221" key="GridCell.Tab.1.center" timestamp="1654146292652">
+    <state width="1237" height="221" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1654161012462" />
+    <state width="1237" height="221" key="GridCell.Tab.1.center" timestamp="1654161012462">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="221" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1654146292652" />
-    <state width="1237" height="221" key="GridCell.Tab.1.left" timestamp="1654146292652">
+    <state width="1237" height="221" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1654161012462" />
+    <state width="1237" height="221" key="GridCell.Tab.1.left" timestamp="1654161012462">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="221" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1654146292652" />
-    <state width="1237" height="221" key="GridCell.Tab.1.right" timestamp="1654146292652">
+    <state width="1237" height="221" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1654161012462" />
+    <state width="1237" height="221" key="GridCell.Tab.1.right" timestamp="1654161012462">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="221" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1654146292652" />
+    <state width="1237" height="221" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1654161012462" />
     <state width="1237" height="198" key="GridCell.Tab.2.bottom" timestamp="1648131415309">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -1050,10 +1038,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="160" y="13" width="1038" height="707" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1654099340898" />
-    <state x="11" y="55" width="1036" height="571" key="Vcs.Push.Dialog.v2" timestamp="1654099122317">
+    <state x="11" y="55" width="1036" height="571" key="Vcs.Push.Dialog.v2" timestamp="1654269057947">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="11" y="55" width="1036" height="571" key="Vcs.Push.Dialog.v2/0.0.1280.720@0.0.1280.720" timestamp="1654099122317" />
+    <state x="11" y="55" width="1036" height="571" key="Vcs.Push.Dialog.v2/0.0.1280.720@0.0.1280.720" timestamp="1654269057947" />
     <state width="560" height="718" key="com.intellij.byteCodeViewer.ShowByteCodeAction" timestamp="1648746723739">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -1102,10 +1090,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="234" y="19" key="scopes/0.0.1280.720@0.0.1280.720" timestamp="1647230227486" />
-    <state x="111" y="140" width="1087" height="678" key="search.everywhere.popup" timestamp="1654001897473">
+    <state x="111" y="140" width="1087" height="678" key="search.everywhere.popup" timestamp="1654160755810">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="111" y="140" width="1087" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1654001897473" />
+    <state x="111" y="140" width="1087" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1654160755810" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
