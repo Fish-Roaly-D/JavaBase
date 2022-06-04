@@ -1,6 +1,6 @@
-package com.roily.designpatterns.dpmain.single.factory.method;
+package com.roily.designpatterns.dpmain.factory.method;
 
-import com.roily.designpatterns.dpmain.single.factory.simple.ElectronicProduct;
+import com.roily.designpatterns.dpmain.factory.simple.ElectronicProduct;
 import org.junit.Test;
 
 /**
@@ -15,7 +15,7 @@ public class test {
     @Test
     public void test(){
         ElectronicFactory computerFactory = new ComputerFactory();
-        ElectronicProduct computer = computerFactory.createProduct();
+        com.roily.designpatterns.dpmain.factory.simple.ElectronicProduct computer = computerFactory.createProduct();
 
         ElectronicFactory phoneFactory = new PhoneFactory();
         ElectronicProduct phone = phoneFactory.createProduct();

@@ -1,7 +1,7 @@
-package com.roily.designpatterns.dpmain.single.factory.method;
+package com.roily.designpatterns.dpmain.factory.method;
 
-import com.roily.designpatterns.dpmain.single.factory.simple.Computer;
-import com.roily.designpatterns.dpmain.single.factory.simple.ElectronicProduct;
+import com.roily.designpatterns.dpmain.factory.simple.Computer;
+import com.roily.designpatterns.dpmain.factory.simple.ElectronicProduct;
 
 /**
  * @version 1.0.0

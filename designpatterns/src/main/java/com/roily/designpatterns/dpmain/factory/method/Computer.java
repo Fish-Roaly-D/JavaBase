@@ -1,4 +1,4 @@
-package com.roily.designpatterns.dpmain.single.factory.method;
+package com.roily.designpatterns.dpmain.factory.method;
 
 /**
  * @version 1.0.0

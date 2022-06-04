@@ -1,4 +1,4 @@
-package com.roily.designpatterns.dpmain.single.factory.abstractF;
+package com.roily.designpatterns.dpmain.factory.abstractF;
 
 
 /**

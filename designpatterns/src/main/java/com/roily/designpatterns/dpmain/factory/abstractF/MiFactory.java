@@ -1,6 +1,4 @@
-package com.roily.designpatterns.dpmain.single.factory.abstractF;
-
-import com.roily.designpatterns.dpmain.single.factory.simple.ElectronicProduct;
+package com.roily.designpatterns.dpmain.factory.abstractF;
 
 /**
  * @version 1.0.0

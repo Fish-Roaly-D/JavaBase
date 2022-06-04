@@ -1,4 +1,4 @@
-package com.roily.designpatterns.dpmain.single.factory.simple;
+package com.roily.designpatterns.dpmain.factory.method;
 
 /**
  * @version 1.0.0
@@ -7,7 +7,7 @@ package com.roily.designpatterns.dpmain.single.factory.simple;
  * @author: RoilyFish
  * @date: 2022/6/4 0:42
  */
-public class Phone implements ElectronicProduct{
+public class Phone implements ElectronicProduct {
 
     @Override
     public void Production() {
