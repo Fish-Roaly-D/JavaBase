@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootrootdemo/rootdemo/aboutfile/src/main/java/com/roily/root/demo/aboutfile/controller/FileUpload.java" beforeDir="false" afterPath="$PROJECT_DIR$/bootrootdemo/rootdemo/aboutfile/src/main/java/com/roily/root/demo/aboutfile/controller/FileUpload.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootrootdemo/rootdemo/aboutfile/src/main/java/com/roily/root/demo/aboutfile/service/FileInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/bootrootdemo/rootdemo/aboutfile/src/main/java/com/roily/root/demo/aboutfile/service/FileInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootrootdemo/rootdemo/aboutfile/src/main/java/com/roily/root/demo/aboutfile/service/impl/FileInterfaceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bootrootdemo/rootdemo/aboutfile/src/main/java/com/roily/root/demo/aboutfile/service/impl/FileInterfaceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootrootdemo/rootdemo/aboutfile/src/main/resources/templates/upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/bootrootdemo/rootdemo/aboutfile/src/main/resources/templates/upload.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootrootdemo/rootdemo/aboutfile/src/test/java/com/roily/root/demo/aboutfile/AboutfileApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/bootrootdemo/rootdemo/aboutfile/src/test/java/com/roily/root/demo/aboutfile/AboutfileApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +146,20 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Client.test01">
+  <component name="RunManager" selected="Application.Client">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.filter.Client" />
+      <module name="designpatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.filter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MacPC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.adapter.MacPC" />
       <module name="designpatterns" />
@@ -210,22 +218,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateObjDependIO.init" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="designpatterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.prototype.aboutclone.prototype.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.prototype.aboutclone.prototype" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.prototype.aboutclone.prototype.CreateObjDependIO" />
-      <option name="METHOD_NAME" value="init" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
       <module name="mybatis-03" />
       <option name="VM_PARAMETERS" />
@@ -274,19 +266,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.CreateObjDependIO.init" />
-      <item itemvalue="JUnit.CreateObjDependIO.createObjWithIo" />
       <item itemvalue="Application.MacPC" />
       <item itemvalue="Application.Testxx" />
+      <item itemvalue="JUnit.CreateObjDependIO.createObjWithIo" />
       <item itemvalue="JUnit.Client.test01" />
+      <item itemvalue="Application.Client" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Client" />
         <item itemvalue="JUnit.Client.test01" />
         <item itemvalue="Application.Testxx" />
         <item itemvalue="Application.MacPC" />
         <item itemvalue="JUnit.CreateObjDependIO.createObjWithIo" />
-        <item itemvalue="JUnit.CreateObjDependIO.init" />
       </list>
     </recent_temporary>
   </component>
@@ -948,10 +940,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="383" y="163" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.720@0.0.1280.720" timestamp="1654491667181" />
-    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser" timestamp="1654516113454">
+    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser" timestamp="1654533243558">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1654516113454" />
+    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1654533243558" />
     <state x="198" y="286" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1654514809002">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -992,22 +984,22 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="421" y="101" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1654519211349" />
-    <state width="1237" height="179" key="GridCell.Tab.0.bottom" timestamp="1654517003549">
+    <state width="1237" height="180" key="GridCell.Tab.0.bottom" timestamp="1654533471916">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="179" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1654517003549" />
-    <state width="1237" height="179" key="GridCell.Tab.0.center" timestamp="1654517003549">
+    <state width="1237" height="180" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1654533471916" />
+    <state width="1237" height="180" key="GridCell.Tab.0.center" timestamp="1654533471915">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="179" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1654517003549" />
-    <state width="1237" height="179" key="GridCell.Tab.0.left" timestamp="1654517003548">
+    <state width="1237" height="180" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1654533471915" />
+    <state width="1237" height="180" key="GridCell.Tab.0.left" timestamp="1654533471915">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="179" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1654517003548" />
-    <state width="1237" height="179" key="GridCell.Tab.0.right" timestamp="1654517003549">
+    <state width="1237" height="180" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1654533471915" />
+    <state width="1237" height="180" key="GridCell.Tab.0.right" timestamp="1654533471916">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="179" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1654517003549" />
+    <state width="1237" height="180" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1654533471916" />
     <state width="1237" height="144" key="GridCell.Tab.1.bottom" timestamp="1654493580095">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -1072,10 +1064,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="160" y="13" width="1038" height="707" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1654099340898" />
-    <state x="11" y="55" width="1036" height="571" key="Vcs.Push.Dialog.v2" timestamp="1654519175013">
+    <state x="11" y="55" width="1036" height="571" key="Vcs.Push.Dialog.v2" timestamp="1654528640047">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="11" y="55" width="1036" height="571" key="Vcs.Push.Dialog.v2/0.0.1280.720@0.0.1280.720" timestamp="1654519175013" />
+    <state x="11" y="55" width="1036" height="571" key="Vcs.Push.Dialog.v2/0.0.1280.720@0.0.1280.720" timestamp="1654528640047" />
     <state width="560" height="718" key="com.intellij.byteCodeViewer.ShowByteCodeAction" timestamp="1648746723739">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
