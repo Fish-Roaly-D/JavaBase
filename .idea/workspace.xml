@@ -3,17 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/factory/method/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/factory/method/Phone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/factory/simple/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/factory/simple/Phone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/prototype/aboutclone/adapter/ArmSoft.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/adapter/ArmSoft.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/prototype/aboutclone/adapter/ISoftware.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/adapter/ISoftware.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/prototype/aboutclone/adapter/MacPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/adapter/MacPC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/prototype/aboutclone/adapter/Rosetta2.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/adapter/Rosetta2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/prototype/aboutclone/adapter/Testxx.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/adapter/Testxx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/prototype/aboutclone/adapter/X86Soft.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/adapter/X86Soft.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/prototype/aboutclone/prototype/CreateMostObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/prototype/prototype/CreateMostObj.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/prototype/aboutclone/prototype/CreateObjDependIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/prototype/prototype/CreateObjDependIO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/prototype/aboutclone/prototype/Prototype.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/prototype/prototype/Prototype.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootrootdemo/rootdemo/aboutfile/src/main/java/com/roily/root/demo/aboutfile/controller/FileUpload.java" beforeDir="false" afterPath="$PROJECT_DIR$/bootrootdemo/rootdemo/aboutfile/src/main/java/com/roily/root/demo/aboutfile/controller/FileUpload.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootrootdemo/rootdemo/aboutfile/src/main/java/com/roily/root/demo/aboutfile/service/FileInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/bootrootdemo/rootdemo/aboutfile/src/main/java/com/roily/root/demo/aboutfile/service/FileInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootrootdemo/rootdemo/aboutfile/src/main/java/com/roily/root/demo/aboutfile/service/impl/FileInterfaceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bootrootdemo/rootdemo/aboutfile/src/main/java/com/roily/root/demo/aboutfile/service/impl/FileInterfaceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootrootdemo/rootdemo/aboutfile/src/main/resources/templates/upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/bootrootdemo/rootdemo/aboutfile/src/main/resources/templates/upload.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootrootdemo/rootdemo/aboutfile/src/test/java/com/roily/root/demo/aboutfile/AboutfileApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/bootrootdemo/rootdemo/aboutfile/src/test/java/com/roily/root/demo/aboutfile/AboutfileApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +118,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/bridge" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/bootrootdemo/rootdemo" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.31609195" />
@@ -461,21 +455,7 @@
       <workItem from="1654184774121" duration="630000" />
       <workItem from="1654269035211" duration="19562000" />
       <workItem from="1654434551203" duration="6599000" />
-      <workItem from="1654484702281" duration="20375000" />
-    </task>
-    <task id="LOCAL-00047" summary="rename">
-      <created>1652767268911</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1652767268911</updated>
-    </task>
-    <task id="LOCAL-00048" summary="set">
-      <created>1652777455066</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1652777455066</updated>
+      <workItem from="1654484702281" duration="21676000" />
     </task>
     <task id="LOCAL-00049" summary="java实现字典树">
       <created>1652806422342</created>
@@ -806,7 +786,21 @@
       <option name="project" value="LOCAL" />
       <updated>1654514351489</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="适配器模式">
+      <created>1654519139814</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1654519139814</updated>
+    </task>
+    <task id="LOCAL-00097" summary="桥接模式">
+      <created>1654519172382</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1654519172382</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -886,7 +880,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="栈的使用-中缀表达式转后缀表达式" />
     <MESSAGE value="栈的使用-计算后缀表达式" />
     <MESSAGE value="基于ArrayList&amp;LinkedList实现顺序栈和链式栈" />
     <MESSAGE value="调整" />
@@ -911,7 +904,8 @@
     <MESSAGE value="原型模式-拷贝" />
     <MESSAGE value="原型模式-循环创建、io" />
     <MESSAGE value="适配器模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="适配器模式" />
+    <MESSAGE value="桥接模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="桥接模式" />
   </component>
   <component name="WindowStateProjectService">
     <state x="318" y="103" key="#Customize_Data_Views" timestamp="1652372741178">
@@ -994,10 +988,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="93" y="93" width="1095" height="535" key="DiffContextDialog/0.0.1280.720@0.0.1280.720" timestamp="1654519125209" />
-    <state x="421" y="101" key="FileChooserDialogImpl" timestamp="1654433553645">
+    <state x="421" y="101" key="FileChooserDialogImpl" timestamp="1654519211349">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="421" y="101" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1654433553645" />
+    <state x="421" y="101" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1654519211349" />
     <state width="1237" height="179" key="GridCell.Tab.0.bottom" timestamp="1654517003549">
       <screen x="0" y="0" width="1280" height="720" />
     </state>

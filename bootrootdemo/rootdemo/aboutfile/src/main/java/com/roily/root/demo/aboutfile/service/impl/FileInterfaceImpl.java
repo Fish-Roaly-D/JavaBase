@@ -12,8 +12,7 @@ import org.springframework.web.multipart.MultipartFile;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 import java.net.URLEncoder;
-import java.util.Date;
-import java.util.UUID;
+import java.util.*;
 
 /**
  * @version 1.0.0
@@ -83,7 +82,7 @@ public class FileInterfaceImpl implements FileInterface {
         log.info("文件大小：{}", size.toString());
         //获取当前项目  父级目录
         String root = System.getProperty("user.dir");
-        File fileRoot = new File(root, "/file");
+        File fileRoot = new File(root, "/file/img");
         if (!fileRoot.exists()) {
             fileRoot.mkdirs();
         }
@@ -93,15 +92,17 @@ public class FileInterfaceImpl implements FileInterface {
         String fileName = time + "-" + uuid + "-" + originalFilename;
         log.info("文件按存储名：{}", fileName);
         try {
+            File target = new File(fileRoot.getPath() + File.separator, fileName);
             //File.separator  文件分割符 =>  '/'
-            file.transferTo(new File(root + File.separator + "img" + File.separator, fileName));
-            log.info("真实存储路径：{}", root + File.separator + "img" + File.separator + fileName);
+            file.transferTo(target);
+            log.info("真实存储路径：{}", root + File.separator + File.separator + fileName);
         } catch (IOException e) {
             throw new GlobalCustomException("5000", "文件上传异常！");
         }
+
         FileRespVo fileRespVo = new FileRespVo()
                 .setFileName(originalFilename)
-                .setFilePath(root + File.separator + "img" + File.separator + fileName)
+                .setFilePath(fileRoot.getPath() + File.separator + fileName)
                 .setFileStorageName(fileName)
                 .setFileType(contentType)
                 .setSize(size.toString());
@@ -109,4 +110,17 @@ public class FileInterfaceImpl implements FileInterface {
         return ResultVo.success("文件上传成功", fileRespVo);
     }
 
+    @Override
+    public ResultVo<List<FileRespVo>> uploadFiles(List<MultipartFile> files) {
+
+        List<FileRespVo> list = new ArrayList<>();
+        files.forEach(file -> {
+            ResultVo<FileRespVo> resultVo = this.uploadFile(file);
+            if (resultVo.isSuccess()) {
+                list.add(resultVo.getData());
+            }
+        });
+
+        return ResultVo.success("文件上传成功", list);
+    }
 }

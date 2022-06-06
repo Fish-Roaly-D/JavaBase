@@ -11,9 +11,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.multipart.MultipartHttpServletRequest;
 
 import javax.annotation.Resource;
 import javax.validation.Valid;
+import java.util.List;
 
 /**
  * @version 1.0.0
@@ -32,9 +34,20 @@ public class FileUpload {
 
     @RequestMapping("/upload")
     @ResponseBody
-    public ResultVo<FileRespVo> upload2(MultipartFile file) {
+    public ResultVo<FileRespVo> upload(MultipartFile file) {
 
         return fileInterface.uploadFile(file);
+
+    }
+
+    @RequestMapping("/uploadbatch")
+    @ResponseBody
+    public ResultVo<List<FileRespVo>> uploadBatch(MultipartHttpServletRequest files) {
+
+        List<MultipartFile> file = files.getFiles("file");
+        assert file.size() > 0;
+
+        return fileInterface.uploadFiles(file);
 
     }
 
