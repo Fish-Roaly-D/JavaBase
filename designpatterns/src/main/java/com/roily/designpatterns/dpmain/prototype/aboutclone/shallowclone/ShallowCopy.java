@@ -35,6 +35,9 @@ public class ShallowCopy {
         System.out.println(personCopy == person);
         //内部属性 String
         System.out.println(person.getSex() == personCopy.getSex());
+
+        //内部属性 String
+        System.out.println(person.getName() == personCopy.getName());
         //内部属性 Integer
         System.out.println(person.getAge() == personCopy.getAge());
         //内部属性 Date
