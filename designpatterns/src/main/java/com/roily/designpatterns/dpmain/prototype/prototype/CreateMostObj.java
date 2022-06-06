@@ -1,10 +1,8 @@
-package com.roily.designpatterns.dpmain.prototype.aboutclone.prototype;
+package com.roily.designpatterns.dpmain.prototype.prototype;
 
 import org.junit.Test;
 
 import java.util.Calendar;
-import java.util.Date;
-import java.util.concurrent.TimeUnit;
 
 /**
  * @version 1.0.0

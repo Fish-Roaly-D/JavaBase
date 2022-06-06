@@ -1,4 +1,4 @@
-package com.roily.designpatterns.dpmain.prototype.aboutclone.prototype;
+package com.roily.designpatterns.dpmain.prototype.prototype;
 
 import org.junit.Test;
 
@@ -6,7 +6,6 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.List;
 
 /**
  * @version 1.0.0

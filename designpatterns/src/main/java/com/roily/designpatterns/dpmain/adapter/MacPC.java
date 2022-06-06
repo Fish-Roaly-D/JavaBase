@@ -1,4 +1,4 @@
-package com.roily.designpatterns.dpmain.prototype.aboutclone.adapter;
+package com.roily.designpatterns.dpmain.adapter;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
