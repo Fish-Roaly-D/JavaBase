@@ -69,8 +69,9 @@ public class ResultVo<T> implements Serializable {
 
     /**
      * 成功返回消息
-     * @param msg  提示信息
-     * @param <T>  范型
+     *
+     * @param msg 提示信息
+     * @param <T> 范型
      * @return ResultVo<T>
      */
     public static <T> ResultVo<T> success(String msg) {
@@ -80,6 +81,7 @@ public class ResultVo<T> implements Serializable {
 
     /**
      * 成功返回data
+     *
      * @param data 数据
      * @param <T>  范型
      * @return ResultVo<T>
@@ -90,7 +92,8 @@ public class ResultVo<T> implements Serializable {
 
     /**
      * 使用默认模板返回结果
-     * @param <T>  范型
+     *
+     * @param <T> 范型
      * @return ResultVo<T>
      */
     public static <T> ResultVo<T> success() {
@@ -99,6 +102,7 @@ public class ResultVo<T> implements Serializable {
 
     /**
      * 错误返回消息和信息
+     *
      * @param msg  提示信息
      * @param data 数据
      * @param <T>  范型
@@ -112,8 +116,8 @@ public class ResultVo<T> implements Serializable {
     /**
      * 错误返回消息
      *
-     * @param msg  提示信息
-     * @param <T>  范型
+     * @param msg 提示信息
+     * @param <T> 范型
      * @return ResultVo<T>
      */
     public static <T> ResultVo<T> error(String msg) {
@@ -135,11 +139,18 @@ public class ResultVo<T> implements Serializable {
     /**
      * 使用默认模板返回结果
      *
-     * @param <T>  范型
+     * @param <T> 范型
      * @return ResultVo<T>
      */
     public static <T> ResultVo<T> error() {
         return error(DEFAULT_ERROR_MSG, null);
     }
 
+    /**
+     * 判断请求是否成功
+     * @return Boolean
+     */
+    public Boolean isSuccess() {
+        return this.getCode().equals(DEFAULT_SUCCESS_CODE);
+    }
 }
