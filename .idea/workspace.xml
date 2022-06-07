@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -147,7 +146,20 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FlyweightInJava.testInteger">
+  <component name="RunManager" selected="Application.Client (1)">
+    <configuration name="Client (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.flyweight.flyweightindemo.Client" />
+      <module name="designpatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.flyweight.flyweightindemo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.facade.Client" />
       <module name="designpatterns" />
@@ -172,22 +184,6 @@
       <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.decorator.transparent" />
       <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.decorator.transparent.Client" />
       <option name="METHOD_NAME" value="test01" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Client.test02 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="designpatterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.decorator.transparent.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.decorator.transparent" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.decorator.transparent.Client" />
-      <option name="METHOD_NAME" value="test02" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -275,17 +271,17 @@
     <list>
       <item itemvalue="Application.Client" />
       <item itemvalue="JUnit.Client.test01 (1)" />
-      <item itemvalue="JUnit.Client.test02 (1)" />
       <item itemvalue="JUnit.FlyweightInJava.testString" />
       <item itemvalue="JUnit.FlyweightInJava.testInteger" />
+      <item itemvalue="Application.Client (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Client (1)" />
         <item itemvalue="JUnit.FlyweightInJava.testInteger" />
         <item itemvalue="JUnit.FlyweightInJava.testString" />
         <item itemvalue="Application.Client" />
         <item itemvalue="JUnit.Client.test01 (1)" />
-        <item itemvalue="JUnit.Client.test02 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -455,14 +451,7 @@
       <workItem from="1654269035211" duration="19562000" />
       <workItem from="1654434551203" duration="6599000" />
       <workItem from="1654484702281" duration="21677000" />
-      <workItem from="1654615009036" duration="1459000" />
-    </task>
-    <task id="LOCAL-00053" summary="项目调整">
-      <created>1652983663366</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1652983663367</updated>
+      <workItem from="1654615009036" duration="5005000" />
     </task>
     <task id="LOCAL-00054" summary="HashTable">
       <created>1652986727579</created>
@@ -800,7 +789,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654600724701</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="享元模式在java中的应用">
+      <created>1654616639077</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1654616639077</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -880,7 +876,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="bitset-原理测试" />
     <MESSAGE value="bitset-用法" />
     <MESSAGE value="数组内存地址连续性和添加顺序无关" />
     <MESSAGE value="ABQ-offer(param1,param2,param3)" />
@@ -905,7 +900,8 @@
     <MESSAGE value="组合模式" />
     <MESSAGE value="装饰器模式" />
     <MESSAGE value="包装模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="包装模式" />
+    <MESSAGE value="享元模式在java中的应用" />
+    <option name="LAST_COMMIT_MESSAGE" value="享元模式在java中的应用" />
   </component>
   <component name="WindowStateProjectService">
     <state x="318" y="103" key="#Customize_Data_Views" timestamp="1652372741178">
@@ -948,10 +944,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="383" y="163" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.720@0.0.1280.720" timestamp="1654491667181" />
-    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser" timestamp="1654582699275">
+    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser" timestamp="1654617868468">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1654582699275" />
+    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1654617868468" />
     <state x="198" y="286" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1654514809002">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -980,10 +976,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="357" y="205" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.720@0.0.1280.720" timestamp="1646561752636" />
-    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2" timestamp="1654600715223">
+    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2" timestamp="1654616636482">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1654600715223" />
+    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1654616636482" />
     <state x="93" y="93" width="1095" height="535" key="DiffContextDialog" timestamp="1654519125209">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -992,38 +988,38 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="421" y="101" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1654519211349" />
-    <state width="1237" height="173" key="GridCell.Tab.0.bottom" timestamp="1654616106244">
+    <state width="1237" height="319" key="GridCell.Tab.0.bottom" timestamp="1654619942027">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="173" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1654616106244" />
-    <state width="1237" height="173" key="GridCell.Tab.0.center" timestamp="1654616106243">
+    <state width="1237" height="319" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1654619942027" />
+    <state width="1237" height="319" key="GridCell.Tab.0.center" timestamp="1654619942027">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="173" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1654616106243" />
-    <state width="1237" height="173" key="GridCell.Tab.0.left" timestamp="1654616106243">
+    <state width="1237" height="319" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1654619942027" />
+    <state width="1237" height="319" key="GridCell.Tab.0.left" timestamp="1654619942027">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="173" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1654616106243" />
-    <state width="1237" height="173" key="GridCell.Tab.0.right" timestamp="1654616106243">
+    <state width="1237" height="319" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1654619942027" />
+    <state width="1237" height="319" key="GridCell.Tab.0.right" timestamp="1654619942027">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="173" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1654616106243" />
-    <state width="1237" height="144" key="GridCell.Tab.1.bottom" timestamp="1654605757823">
+    <state width="1237" height="319" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1654619942027" />
+    <state width="1237" height="319" key="GridCell.Tab.1.bottom" timestamp="1654619939947">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="144" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1654605757823" />
-    <state width="1237" height="144" key="GridCell.Tab.1.center" timestamp="1654605757823">
+    <state width="1237" height="319" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1654619939947" />
+    <state width="1237" height="319" key="GridCell.Tab.1.center" timestamp="1654619939947">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="144" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1654605757823" />
-    <state width="1237" height="144" key="GridCell.Tab.1.left" timestamp="1654605757823">
+    <state width="1237" height="319" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1654619939947" />
+    <state width="1237" height="319" key="GridCell.Tab.1.left" timestamp="1654619939947">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="144" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1654605757823" />
-    <state width="1237" height="144" key="GridCell.Tab.1.right" timestamp="1654605757823">
+    <state width="1237" height="319" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1654619939947" />
+    <state width="1237" height="319" key="GridCell.Tab.1.right" timestamp="1654619939947">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="144" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1654605757823" />
+    <state width="1237" height="319" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1654619939947" />
     <state width="1237" height="198" key="GridCell.Tab.2.bottom" timestamp="1648131415309">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -1072,10 +1068,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="160" y="13" width="1038" height="707" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1654099340898" />
-    <state x="11" y="55" width="1036" height="571" key="Vcs.Push.Dialog.v2" timestamp="1654600743272">
+    <state x="11" y="55" width="1036" height="571" key="Vcs.Push.Dialog.v2" timestamp="1654616642276">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="11" y="55" width="1036" height="571" key="Vcs.Push.Dialog.v2/0.0.1280.720@0.0.1280.720" timestamp="1654600743272" />
+    <state x="11" y="55" width="1036" height="571" key="Vcs.Push.Dialog.v2/0.0.1280.720@0.0.1280.720" timestamp="1654616642276" />
     <state width="560" height="718" key="com.intellij.byteCodeViewer.ShowByteCodeAction" timestamp="1648746723739">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -1177,6 +1173,11 @@
           <url>file://$PROJECT_DIR$/base-collection-01/src/main/java/com/roily/bitset/test01.java</url>
           <line>119</line>
           <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/flyweight/flyweightindemo/Client.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
