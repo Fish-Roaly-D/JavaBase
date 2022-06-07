@@ -121,11 +121,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.roily.designpatterns.dpmain.decorator.transparent" />
+      <recent name="com.roily.designpatterns.dpmain.decorator.simple" />
       <recent name="com.roily.designpatterns.dpmain.composite.open" />
       <recent name="com.roily.designpatterns.dpmain.bridge" />
       <recent name="com.roily.designpatterns.dpmain.builder.usebuilder" />
-      <recent name="com.roily.designpatterns.dpmain.single.factory.abstractF" />
-      <recent name="com.roily.designpatterns.dpmain.single.factory.simple" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\programmeTools\idea\git\JavaBase\designpatterns\src\main\java\com\roily\designpatterns\dpmain\bridge" />
@@ -146,7 +146,7 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.Client (1)">
+  <component name="RunManager" selected="JUnit.Client.test01 (1)">
     <configuration name="Client (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.composite.open.Client" />
       <module name="designpatterns" />
@@ -160,56 +160,65 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.filter.Client" />
+    <configuration name="Client.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="designpatterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.filter.*" />
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.decorator.simple.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.decorator.simple" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.decorator.simple.Client" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MacPC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.adapter.MacPC" />
+    <configuration name="Client.test01 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="designpatterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.adapter.*" />
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.decorator.transparent.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Testxx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.adapter.Testxx" />
-      <module name="designpatterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.adapter.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Client.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="designpatterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.bridge.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.bridge" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.bridge.Client" />
+      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.decorator.transparent" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.decorator.transparent.Client" />
       <option name="METHOD_NAME" value="test01" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client.test02 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="designpatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.decorator.transparent.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.decorator.transparent" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.decorator.transparent.Client" />
+      <option name="METHOD_NAME" value="test02" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client.test02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="designpatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.decorator.simple.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.decorator.simple" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.decorator.simple.Client" />
+      <option name="METHOD_NAME" value="test02" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -263,19 +272,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.MacPC" />
-      <item itemvalue="Application.Testxx" />
-      <item itemvalue="JUnit.Client.test01" />
-      <item itemvalue="Application.Client" />
       <item itemvalue="Application.Client (1)" />
+      <item itemvalue="JUnit.Client.test" />
+      <item itemvalue="JUnit.Client.test02" />
+      <item itemvalue="JUnit.Client.test01 (1)" />
+      <item itemvalue="JUnit.Client.test02 (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Client.test01 (1)" />
+        <item itemvalue="JUnit.Client.test02 (1)" />
+        <item itemvalue="JUnit.Client.test02" />
+        <item itemvalue="JUnit.Client.test" />
         <item itemvalue="Application.Client (1)" />
-        <item itemvalue="Application.Client" />
-        <item itemvalue="JUnit.Client.test01" />
-        <item itemvalue="Application.Testxx" />
-        <item itemvalue="Application.MacPC" />
       </list>
     </recent_temporary>
   </component>
@@ -445,13 +454,6 @@
       <workItem from="1654269035211" duration="19562000" />
       <workItem from="1654434551203" duration="6599000" />
       <workItem from="1654484702281" duration="21677000" />
-    </task>
-    <task id="LOCAL-00050" summary="java实现二叉排序树">
-      <created>1652806453216</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1652806453217</updated>
     </task>
     <task id="LOCAL-00051" summary="java实现二叉排序树">
       <created>1652888045948</created>
@@ -789,7 +791,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654533728974</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="组合模式">
+      <created>1654538550088</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1654538550088</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -869,7 +878,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="基于ArrayList&amp;LinkedList实现顺序栈和链式栈" />
     <MESSAGE value="调整" />
     <MESSAGE value="bitset" />
     <MESSAGE value="bitset-原理测试" />
@@ -894,7 +902,8 @@
     <MESSAGE value="适配器模式" />
     <MESSAGE value="桥接模式" />
     <MESSAGE value="过滤器模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="过滤器模式" />
+    <MESSAGE value="组合模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="组合模式" />
   </component>
   <component name="WindowStateProjectService">
     <state x="318" y="103" key="#Customize_Data_Views" timestamp="1652372741178">
@@ -937,10 +946,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="383" y="163" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.720@0.0.1280.720" timestamp="1654491667181" />
-    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser" timestamp="1654536459345">
+    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser" timestamp="1654582699275">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1654536459345" />
+    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1654582699275" />
     <state x="198" y="286" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1654514809002">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -969,10 +978,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="357" y="205" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.720@0.0.1280.720" timestamp="1646561752636" />
-    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2" timestamp="1654533726681">
+    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2" timestamp="1654583232045">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1654533726681" />
+    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1654583232045" />
     <state x="93" y="93" width="1095" height="535" key="DiffContextDialog" timestamp="1654519125209">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -981,22 +990,22 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="421" y="101" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1654519211349" />
-    <state width="1237" height="206" key="GridCell.Tab.0.bottom" timestamp="1654538229696">
+    <state width="1237" height="176" key="GridCell.Tab.0.bottom" timestamp="1654582957282">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="206" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1654538229696" />
-    <state width="1237" height="206" key="GridCell.Tab.0.center" timestamp="1654538229696">
+    <state width="1237" height="176" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1654582957282" />
+    <state width="1237" height="176" key="GridCell.Tab.0.center" timestamp="1654582957282">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="206" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1654538229696" />
-    <state width="1237" height="206" key="GridCell.Tab.0.left" timestamp="1654538229695">
+    <state width="1237" height="176" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1654582957282" />
+    <state width="1237" height="176" key="GridCell.Tab.0.left" timestamp="1654582957282">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="206" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1654538229695" />
-    <state width="1237" height="206" key="GridCell.Tab.0.right" timestamp="1654538229696">
+    <state width="1237" height="176" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1654582957282" />
+    <state width="1237" height="176" key="GridCell.Tab.0.right" timestamp="1654582957282">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="206" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1654538229696" />
+    <state width="1237" height="176" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1654582957282" />
     <state width="1237" height="144" key="GridCell.Tab.1.bottom" timestamp="1654493580095">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -1061,10 +1070,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="160" y="13" width="1038" height="707" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1654099340898" />
-    <state x="11" y="55" width="1036" height="571" key="Vcs.Push.Dialog.v2" timestamp="1654533735782">
+    <state x="11" y="55" width="1036" height="571" key="Vcs.Push.Dialog.v2" timestamp="1654538556051">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="11" y="55" width="1036" height="571" key="Vcs.Push.Dialog.v2/0.0.1280.720@0.0.1280.720" timestamp="1654533735782" />
+    <state x="11" y="55" width="1036" height="571" key="Vcs.Push.Dialog.v2/0.0.1280.720@0.0.1280.720" timestamp="1654538556051" />
     <state width="560" height="718" key="com.intellij.byteCodeViewer.ShowByteCodeAction" timestamp="1648746723739">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -1101,10 +1110,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="47" y="95" key="new project wizard/0.0.1280.720@0.0.1280.720" timestamp="1653888585456" />
-    <state x="383" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1652900877573">
+    <state x="383" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1654582784082">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="383" y="0" key="refactoring.ChangeSignatureDialog/0.0.1280.720@0.0.1280.720" timestamp="1652900877573" />
+    <state x="383" y="0" key="refactoring.ChangeSignatureDialog/0.0.1280.720@0.0.1280.720" timestamp="1654582784082" />
     <state x="297" y="161" width="672" height="677" key="run.anything.popup" timestamp="1652981090471">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
