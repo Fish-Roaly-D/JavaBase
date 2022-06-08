@@ -37,8 +37,8 @@ class Father3 {
 
 class Son3 extends Father3 {
     @Override
-    Comparable doSomeThing(Integer i) throws Exception {
+    Integer doSomeThing(Integer i) throws Exception {
 
-        return super.doSomeThing(i);
+        return (Integer)super.doSomeThing(i);
     }
 }
