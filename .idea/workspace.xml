@@ -57,8 +57,8 @@
         <option value="Kotlin File" />
         <option value="Enum" />
         <option value="db.properties" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -113,7 +113,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/proxy/staticproxy" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/proxy/jdkproxy" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.31609195" />
@@ -128,11 +128,11 @@
       <recent name="com.roily.designpatterns.dpmain.builder.usebuilder" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\programmeTools\idea\git\JavaBase\designpatterns\src\main\java\com\roily\designpatterns\dpmain\proxy\jdkproxy" />
       <recent name="E:\programmeTools\idea\git\JavaBase\designpatterns\src\main\java\com\roily\designpatterns\dpmain\proxy\staticproxy" />
       <recent name="E:\programmeTools\idea\git\JavaBase\designpatterns\src\main\java\com\roily\designpatterns\dpmain\bridge" />
       <recent name="E:\programmeTools\idea\git\JavaBase\designpatterns\src\main\java\com\roily\designpatterns\dpmain\single\factory\abstractF" />
       <recent name="E:\programmeTools\idea\git\JavaBase\designpatterns\src\main\java\com\roily\designpatterns\dpmain\single\factory\abstract" />
-      <recent name="E:\programmeTools\idea\git\JavaBase\designpatterns\src\main\java\com\roily\designpatterns\dpmain\single\factory\method" />
     </key>
   </component>
   <component name="RestServicesNavigator">
@@ -146,20 +146,7 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Client.test2">
-    <configuration name="Client (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.flyweight.flyweightindemo.Client" />
-      <module name="designpatterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.flyweight.flyweightindemo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.Clinet.test2">
     <configuration name="Client.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="designpatterns" />
       <extension name="coverage">
@@ -192,33 +179,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FlyweightInJava.testInteger" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Clinet.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="designpatterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.flyweight.flyweightinjava.*" />
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.proxy.common.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.flyweight.flyweightinjava" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.flyweight.flyweightinjava.FlyweightInJava" />
-      <option name="METHOD_NAME" value="testInteger" />
+      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.proxy.jdkproxy" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.proxy.jdkproxy.Clinet" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FlyweightInJava.testString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Clinet.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="designpatterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.flyweight.flyweightinjava.*" />
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.proxy.common.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.flyweight.flyweightinjava" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.flyweight.flyweightinjava.FlyweightInJava" />
-      <option name="METHOD_NAME" value="testString" />
+      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.proxy.jdkproxy" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.proxy.jdkproxy.Clinet" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HouseOwner.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="designpatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.proxy.common.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.proxy.jdkproxy" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.proxy.jdkproxy.HouseOwner" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -272,19 +275,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Client (1)" />
-      <item itemvalue="JUnit.FlyweightInJava.testString" />
-      <item itemvalue="JUnit.FlyweightInJava.testInteger" />
       <item itemvalue="JUnit.Client.test" />
       <item itemvalue="JUnit.Client.test2" />
+      <item itemvalue="JUnit.Clinet.test" />
+      <item itemvalue="JUnit.HouseOwner.test" />
+      <item itemvalue="JUnit.Clinet.test2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Clinet.test2" />
+        <item itemvalue="JUnit.HouseOwner.test" />
+        <item itemvalue="JUnit.Clinet.test" />
         <item itemvalue="JUnit.Client.test2" />
         <item itemvalue="JUnit.Client.test" />
-        <item itemvalue="Application.Client (1)" />
-        <item itemvalue="JUnit.FlyweightInJava.testInteger" />
-        <item itemvalue="JUnit.FlyweightInJava.testString" />
       </list>
     </recent_temporary>
   </component>
@@ -456,14 +459,7 @@
       <workItem from="1654484702281" duration="21677000" />
       <workItem from="1654615009036" duration="5115000" />
       <workItem from="1654679305870" duration="1282000" />
-      <workItem from="1654692027920" duration="5403000" />
-    </task>
-    <task id="LOCAL-00056" summary="顺序栈的设计与实现">
-      <created>1653125968736</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1653125968737</updated>
+      <workItem from="1654692027920" duration="7467000" />
     </task>
     <task id="LOCAL-00057" summary="链式栈的设计与实现">
       <created>1653131193459</created>
@@ -801,7 +797,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654696554886</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="静态代理">
+      <created>1654702781635</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1654702781635</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -881,7 +884,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ABQ-offer(param1,param2,param3)" />
     <MESSAGE value="designpatterns模块创建" />
     <MESSAGE value="designpatterns-单一职责" />
     <MESSAGE value="designpatterns-里氏替换职责" />
@@ -906,7 +908,8 @@
     <MESSAGE value="享元模式在java中的应用" />
     <MESSAGE value="享元模式" />
     <MESSAGE value="里氏替换原则" />
-    <option name="LAST_COMMIT_MESSAGE" value="里氏替换原则" />
+    <MESSAGE value="静态代理" />
+    <option name="LAST_COMMIT_MESSAGE" value="静态代理" />
   </component>
   <component name="WindowStateProjectService">
     <state x="318" y="103" key="#Customize_Data_Views" timestamp="1652372741178">
@@ -949,10 +952,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="383" y="163" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.720@0.0.1280.720" timestamp="1654491667181" />
-    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser" timestamp="1654701641015">
+    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser" timestamp="1654704444578">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1654701641015" />
+    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1654704444578" />
     <state x="198" y="286" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1654514809002">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -981,10 +984,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="357" y="205" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.720@0.0.1280.720" timestamp="1646561752636" />
-    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2" timestamp="1654696549103">
+    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2" timestamp="1654702779225">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1654696549103" />
+    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1654702779225" />
     <state x="93" y="93" width="1095" height="535" key="DiffContextDialog" timestamp="1654519125209">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -993,22 +996,22 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="421" y="101" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1654519211349" />
-    <state width="1237" height="192" key="GridCell.Tab.0.bottom" timestamp="1654700639530">
+    <state width="1237" height="150" key="GridCell.Tab.0.bottom" timestamp="1654704853948">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="192" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1654700639530" />
-    <state width="1237" height="192" key="GridCell.Tab.0.center" timestamp="1654700639530">
+    <state width="1237" height="150" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1654704853948" />
+    <state width="1237" height="150" key="GridCell.Tab.0.center" timestamp="1654704853948">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="192" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1654700639530" />
-    <state width="1237" height="192" key="GridCell.Tab.0.left" timestamp="1654700639529">
+    <state width="1237" height="150" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1654704853948" />
+    <state width="1237" height="150" key="GridCell.Tab.0.left" timestamp="1654704853948">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="192" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1654700639529" />
-    <state width="1237" height="192" key="GridCell.Tab.0.right" timestamp="1654700639530">
+    <state width="1237" height="150" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1654704853948" />
+    <state width="1237" height="150" key="GridCell.Tab.0.right" timestamp="1654704853948">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="192" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1654700639530" />
+    <state width="1237" height="150" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1654704853948" />
     <state width="1237" height="417" key="GridCell.Tab.1.bottom" timestamp="1654652452622">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
