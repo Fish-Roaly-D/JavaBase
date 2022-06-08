@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="享元模式">
+    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dp05_lsp/error_demo/ParamTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dp05_lsp/error_demo/ParamTest2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,8 +57,8 @@
         <option value="Kotlin File" />
         <option value="Enum" />
         <option value="db.properties" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -114,7 +113,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/bootrootdemo/rootdemo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/proxy/staticproxy" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.31609195" />
@@ -129,11 +128,11 @@
       <recent name="com.roily.designpatterns.dpmain.builder.usebuilder" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\programmeTools\idea\git\JavaBase\designpatterns\src\main\java\com\roily\designpatterns\dpmain\proxy\staticproxy" />
       <recent name="E:\programmeTools\idea\git\JavaBase\designpatterns\src\main\java\com\roily\designpatterns\dpmain\bridge" />
       <recent name="E:\programmeTools\idea\git\JavaBase\designpatterns\src\main\java\com\roily\designpatterns\dpmain\single\factory\abstractF" />
       <recent name="E:\programmeTools\idea\git\JavaBase\designpatterns\src\main\java\com\roily\designpatterns\dpmain\single\factory\abstract" />
       <recent name="E:\programmeTools\idea\git\JavaBase\designpatterns\src\main\java\com\roily\designpatterns\dpmain\single\factory\method" />
-      <recent name="E:\programmeTools\idea\git\JavaBase\designpatterns\src\main\java\com\roily\designpatterns\dpmain\single\factory\simple\method" />
     </key>
   </component>
   <component name="RestServicesNavigator">
@@ -147,7 +146,7 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.Client (1)">
+  <component name="RunManager" selected="JUnit.Client.test2">
     <configuration name="Client (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.flyweight.flyweightindemo.Client" />
       <module name="designpatterns" />
@@ -161,30 +160,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.facade.Client" />
+    <configuration name="Client.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="designpatterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.facade.*" />
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.proxy.notstaticproxy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.proxy.notstaticproxy" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.proxy.notstaticproxy.Client" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Client.test01 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Client.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="designpatterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.decorator.transparent.*" />
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.proxy.notstaticproxy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.decorator.transparent" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.decorator.transparent.Client" />
-      <option name="METHOD_NAME" value="test01" />
+      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.proxy.notstaticproxy" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.proxy.notstaticproxy.Client" />
+      <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -270,19 +272,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Client" />
       <item itemvalue="Application.Client (1)" />
-      <item itemvalue="JUnit.Client.test01 (1)" />
       <item itemvalue="JUnit.FlyweightInJava.testString" />
       <item itemvalue="JUnit.FlyweightInJava.testInteger" />
+      <item itemvalue="JUnit.Client.test" />
+      <item itemvalue="JUnit.Client.test2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Client.test2" />
+        <item itemvalue="JUnit.Client.test" />
         <item itemvalue="Application.Client (1)" />
         <item itemvalue="JUnit.FlyweightInJava.testInteger" />
         <item itemvalue="JUnit.FlyweightInJava.testString" />
-        <item itemvalue="Application.Client" />
-        <item itemvalue="JUnit.Client.test01 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -454,14 +456,7 @@
       <workItem from="1654484702281" duration="21677000" />
       <workItem from="1654615009036" duration="5115000" />
       <workItem from="1654679305870" duration="1282000" />
-      <workItem from="1654692027920" duration="2340000" />
-    </task>
-    <task id="LOCAL-00055" summary="map-properties">
-      <created>1653065554703</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1653065554704</updated>
+      <workItem from="1654692027920" duration="5403000" />
     </task>
     <task id="LOCAL-00056" summary="顺序栈的设计与实现">
       <created>1653125968736</created>
@@ -799,7 +794,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654620149903</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="里氏替换原则">
+      <created>1654696554885</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1654696554886</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -879,7 +881,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="数组内存地址连续性和添加顺序无关" />
     <MESSAGE value="ABQ-offer(param1,param2,param3)" />
     <MESSAGE value="designpatterns模块创建" />
     <MESSAGE value="designpatterns-单一职责" />
@@ -904,7 +905,8 @@
     <MESSAGE value="包装模式" />
     <MESSAGE value="享元模式在java中的应用" />
     <MESSAGE value="享元模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="享元模式" />
+    <MESSAGE value="里氏替换原则" />
+    <option name="LAST_COMMIT_MESSAGE" value="里氏替换原则" />
   </component>
   <component name="WindowStateProjectService">
     <state x="318" y="103" key="#Customize_Data_Views" timestamp="1652372741178">
@@ -947,10 +949,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="383" y="163" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.720@0.0.1280.720" timestamp="1654491667181" />
-    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser" timestamp="1654617868468">
+    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser" timestamp="1654701641015">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1654617868468" />
+    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1654701641015" />
     <state x="198" y="286" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1654514809002">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -979,10 +981,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="357" y="205" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.720@0.0.1280.720" timestamp="1646561752636" />
-    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2" timestamp="1654679328324">
+    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2" timestamp="1654696549103">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1654679328324" />
+    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1654696549103" />
     <state x="93" y="93" width="1095" height="535" key="DiffContextDialog" timestamp="1654519125209">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -991,22 +993,22 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="421" y="101" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1654519211349" />
-    <state width="1237" height="417" key="GridCell.Tab.0.bottom" timestamp="1654652452622">
+    <state width="1237" height="192" key="GridCell.Tab.0.bottom" timestamp="1654700639530">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="417" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1654652452622" />
-    <state width="1237" height="417" key="GridCell.Tab.0.center" timestamp="1654652452622">
+    <state width="1237" height="192" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1654700639530" />
+    <state width="1237" height="192" key="GridCell.Tab.0.center" timestamp="1654700639530">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="417" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1654652452622" />
-    <state width="1237" height="417" key="GridCell.Tab.0.left" timestamp="1654652452622">
+    <state width="1237" height="192" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1654700639530" />
+    <state width="1237" height="192" key="GridCell.Tab.0.left" timestamp="1654700639529">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="417" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1654652452622" />
-    <state width="1237" height="417" key="GridCell.Tab.0.right" timestamp="1654652452622">
+    <state width="1237" height="192" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1654700639529" />
+    <state width="1237" height="192" key="GridCell.Tab.0.right" timestamp="1654700639530">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="417" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1654652452622" />
+    <state width="1237" height="192" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1654700639530" />
     <state width="1237" height="417" key="GridCell.Tab.1.bottom" timestamp="1654652452622">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
