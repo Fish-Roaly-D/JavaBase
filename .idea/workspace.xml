@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/proxy/common/CommonInvocationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/proxy/jdkproxy/CommonInvocationHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/proxy/jdkproxy/Clinet.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/proxy/jdkproxy/Clinet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -460,14 +459,7 @@
       <workItem from="1654484702281" duration="21677000" />
       <workItem from="1654615009036" duration="5115000" />
       <workItem from="1654679305870" duration="1282000" />
-      <workItem from="1654692027920" duration="8393000" />
-    </task>
-    <task id="LOCAL-00058" summary="栈的使用-符号匹配">
-      <created>1653235323416</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1653235323418</updated>
+      <workItem from="1654692027920" duration="8846000" />
     </task>
     <task id="LOCAL-00059" summary="栈的使用-中缀表达式转后缀表达式">
       <created>1653239709617</created>
@@ -805,7 +797,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654705034918</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="动态代理">
+      <created>1654705796885</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1654705796885</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -953,10 +952,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="383" y="163" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.720@0.0.1280.720" timestamp="1654491667181" />
-    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser" timestamp="1654704444578">
+    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser" timestamp="1654706028611">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1654704444578" />
+    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1654706028611" />
     <state x="198" y="286" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1654514809002">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -985,10 +984,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="357" y="205" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.720@0.0.1280.720" timestamp="1646561752636" />
-    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2" timestamp="1654705032811">
+    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2" timestamp="1654705794869">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1654705032811" />
+    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1654705794869" />
     <state x="93" y="93" width="1095" height="535" key="DiffContextDialog" timestamp="1654519125209">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
