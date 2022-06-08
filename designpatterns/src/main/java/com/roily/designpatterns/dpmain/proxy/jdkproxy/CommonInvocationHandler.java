@@ -1,4 +1,4 @@
-package com.roily.designpatterns.dpmain.proxy.common;
+package com.roily.designpatterns.dpmain.proxy.jdkproxy;
 
 import lombok.Data;
 

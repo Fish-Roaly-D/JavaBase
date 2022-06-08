@@ -1,6 +1,5 @@
 package com.roily.designpatterns.dpmain.proxy.jdkproxy;
 
-import com.roily.designpatterns.dpmain.proxy.common.CommonInvocationHandler;
 import org.junit.Test;
 
 /**
