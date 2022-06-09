@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/proxy/jdkproxy/Clinet.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/proxy/jdkproxy/Clinet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,19 +146,29 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Clinet.test4">
-    <configuration name="Clinet.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Client">
+    <configuration name="CgLibProxy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.proxy.cglibproxy.CgLibProxy" />
       <module name="designpatterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.proxy.jdkproxy.*" />
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.proxy.cglibproxy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.proxy.jdkproxy" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.proxy.jdkproxy.Clinet" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.proxy.cglibproxy.Client" />
+      <module name="designpatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.proxy.cglibproxy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -207,22 +216,6 @@
       <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.proxy.jdkproxy" />
       <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.proxy.jdkproxy.Clinet" />
       <option name="METHOD_NAME" value="test4" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HouseOwner.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="designpatterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.proxy.jdkproxy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.proxy.jdkproxy" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.proxy.jdkproxy.HouseOwner" />
-      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -276,19 +269,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.Clinet.test" />
-      <item itemvalue="JUnit.HouseOwner.test" />
       <item itemvalue="JUnit.Clinet.test2" />
       <item itemvalue="JUnit.Clinet.test3" />
       <item itemvalue="JUnit.Clinet.test4" />
+      <item itemvalue="Application.CgLibProxy" />
+      <item itemvalue="Application.Client" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.CgLibProxy" />
         <item itemvalue="JUnit.Clinet.test4" />
         <item itemvalue="JUnit.Clinet.test3" />
         <item itemvalue="JUnit.Clinet.test2" />
-        <item itemvalue="JUnit.HouseOwner.test" />
-        <item itemvalue="JUnit.Clinet.test" />
       </list>
     </recent_temporary>
   </component>
@@ -461,20 +454,7 @@
       <workItem from="1654615009036" duration="5115000" />
       <workItem from="1654679305870" duration="1282000" />
       <workItem from="1654692027920" duration="9725000" />
-    </task>
-    <task id="LOCAL-00060" summary="栈的使用-计算后缀表达式">
-      <created>1653241324302</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1653241324302</updated>
-    </task>
-    <task id="LOCAL-00061" summary="基于ArrayList&amp;LinkedList实现顺序栈和链式栈">
-      <created>1653243005704</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1653243005704</updated>
+      <workItem from="1654789311343" duration="3360000" />
     </task>
     <task id="LOCAL-00062" summary="调整">
       <created>1653243613109</created>
@@ -805,7 +785,21 @@
       <option name="project" value="LOCAL" />
       <updated>1654706251213</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="jdk动态代理智能代理实现接口的类">
+      <created>1654789373852</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1654789373852</updated>
+    </task>
+    <task id="LOCAL-00110" summary="cglib添加依赖">
+      <created>1654789487219</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1654789487219</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -885,8 +879,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="designpatterns-单一职责" />
-    <MESSAGE value="designpatterns-里氏替换职责" />
     <MESSAGE value="designpatterns-依赖倒置原则" />
     <MESSAGE value="designpatterns-接口隔离原则" />
     <MESSAGE value="designpatterns-包名调整" />
@@ -910,7 +902,9 @@
     <MESSAGE value="里氏替换原则" />
     <MESSAGE value="静态代理" />
     <MESSAGE value="动态代理" />
-    <option name="LAST_COMMIT_MESSAGE" value="动态代理" />
+    <MESSAGE value="jdk动态代理智能代理实现接口的类" />
+    <MESSAGE value="cglib添加依赖" />
+    <option name="LAST_COMMIT_MESSAGE" value="cglib添加依赖" />
   </component>
   <component name="WindowStateProjectService">
     <state x="318" y="103" key="#Customize_Data_Views" timestamp="1652372741178">
@@ -953,10 +947,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="383" y="163" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.720@0.0.1280.720" timestamp="1654491667181" />
-    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser" timestamp="1654706628942">
+    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser" timestamp="1654789959490">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1654706628942" />
+    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1654789959490" />
     <state x="198" y="286" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1654514809002">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -985,10 +979,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="357" y="205" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.720@0.0.1280.720" timestamp="1646561752636" />
-    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2" timestamp="1654789370086">
+    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2" timestamp="1654789485087">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1654789370086" />
+    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1654789485087" />
     <state x="93" y="93" width="1095" height="535" key="DiffContextDialog" timestamp="1654519125209">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -997,38 +991,38 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="421" y="101" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1654519211349" />
-    <state width="1237" height="214" key="GridCell.Tab.0.bottom" timestamp="1654707129819">
+    <state width="1237" height="140" key="GridCell.Tab.0.bottom" timestamp="1654792062925">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="214" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1654707129819" />
-    <state width="1237" height="214" key="GridCell.Tab.0.center" timestamp="1654707129819">
+    <state width="1237" height="140" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1654792062925" />
+    <state width="1237" height="140" key="GridCell.Tab.0.center" timestamp="1654792062925">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="214" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1654707129819" />
-    <state width="1237" height="214" key="GridCell.Tab.0.left" timestamp="1654707129819">
+    <state width="1237" height="140" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1654792062925" />
+    <state width="1237" height="140" key="GridCell.Tab.0.left" timestamp="1654792062925">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="214" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1654707129819" />
-    <state width="1237" height="214" key="GridCell.Tab.0.right" timestamp="1654707129819">
+    <state width="1237" height="140" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1654792062925" />
+    <state width="1237" height="140" key="GridCell.Tab.0.right" timestamp="1654792062925">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="214" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1654707129819" />
-    <state width="1237" height="214" key="GridCell.Tab.1.bottom" timestamp="1654707129819">
+    <state width="1237" height="140" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1654792062925" />
+    <state width="1237" height="135" key="GridCell.Tab.1.bottom" timestamp="1654790215513">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="214" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1654707129819" />
-    <state width="1237" height="214" key="GridCell.Tab.1.center" timestamp="1654707129819">
+    <state width="1237" height="135" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1654790215513" />
+    <state width="1237" height="135" key="GridCell.Tab.1.center" timestamp="1654790215513">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="214" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1654707129819" />
-    <state width="1237" height="214" key="GridCell.Tab.1.left" timestamp="1654707129819">
+    <state width="1237" height="135" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1654790215513" />
+    <state width="1237" height="135" key="GridCell.Tab.1.left" timestamp="1654790215513">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="214" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1654707129819" />
-    <state width="1237" height="214" key="GridCell.Tab.1.right" timestamp="1654707129819">
+    <state width="1237" height="135" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1654790215513" />
+    <state width="1237" height="135" key="GridCell.Tab.1.right" timestamp="1654790215513">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="214" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1654707129819" />
+    <state width="1237" height="135" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1654790215513" />
     <state width="1237" height="198" key="GridCell.Tab.2.bottom" timestamp="1648131415309">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -1077,10 +1071,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="160" y="13" width="1038" height="707" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1654099340898" />
-    <state x="11" y="55" width="1036" height="571" key="Vcs.Push.Dialog.v2" timestamp="1654789378072">
+    <state x="11" y="55" width="1036" height="571" key="Vcs.Push.Dialog.v2" timestamp="1654789490846">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="11" y="55" width="1036" height="571" key="Vcs.Push.Dialog.v2/0.0.1280.720@0.0.1280.720" timestamp="1654789378072" />
+    <state x="11" y="55" width="1036" height="571" key="Vcs.Push.Dialog.v2/0.0.1280.720@0.0.1280.720" timestamp="1654789490846" />
     <state width="560" height="718" key="com.intellij.byteCodeViewer.ShowByteCodeAction" timestamp="1648746723739">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -1093,10 +1087,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="246" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1280.720@0.0.1280.720" timestamp="1652375048855" />
-    <state x="437" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1649010570424">
+    <state x="437" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1654792808433">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="437" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.720@0.0.1280.720" timestamp="1649010570424" />
+    <state x="437" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.720@0.0.1280.720" timestamp="1654792808433" />
     <state x="412" y="63" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1653121182875">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
