@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/proxy/jdkproxy/Clinet.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/proxy/jdkproxy/Clinet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,11 +122,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.roily.designpatterns.dpmain.proxy.jdkproxy" />
       <recent name="com.roily.designpatterns.dpmain.decorator.transparent" />
       <recent name="com.roily.designpatterns.dpmain.decorator.simple" />
       <recent name="com.roily.designpatterns.dpmain.composite.open" />
       <recent name="com.roily.designpatterns.dpmain.bridge" />
-      <recent name="com.roily.designpatterns.dpmain.builder.usebuilder" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\programmeTools\idea\git\JavaBase\designpatterns\src\main\java\com\roily\designpatterns\dpmain\proxy\jdkproxy" />
@@ -146,39 +147,7 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Clinet.test2">
-    <configuration name="Client.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="designpatterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.proxy.notstaticproxy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.proxy.notstaticproxy" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.proxy.notstaticproxy.Client" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Client.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="designpatterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.proxy.notstaticproxy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.proxy.notstaticproxy" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.proxy.notstaticproxy.Client" />
-      <option name="METHOD_NAME" value="test2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.Clinet.test4">
     <configuration name="Clinet.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="designpatterns" />
       <extension name="coverage">
@@ -206,6 +175,38 @@
       <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.proxy.jdkproxy" />
       <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.proxy.jdkproxy.Clinet" />
       <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Clinet.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="designpatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.proxy.jdkproxy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.proxy.jdkproxy" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.proxy.jdkproxy.Clinet" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Clinet.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="designpatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.proxy.jdkproxy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.proxy.jdkproxy" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.proxy.jdkproxy.Clinet" />
+      <option name="METHOD_NAME" value="test4" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -275,19 +276,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.Client.test" />
-      <item itemvalue="JUnit.Client.test2" />
       <item itemvalue="JUnit.Clinet.test" />
       <item itemvalue="JUnit.HouseOwner.test" />
       <item itemvalue="JUnit.Clinet.test2" />
+      <item itemvalue="JUnit.Clinet.test3" />
+      <item itemvalue="JUnit.Clinet.test4" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Clinet.test4" />
+        <item itemvalue="JUnit.Clinet.test3" />
         <item itemvalue="JUnit.Clinet.test2" />
         <item itemvalue="JUnit.HouseOwner.test" />
         <item itemvalue="JUnit.Clinet.test" />
-        <item itemvalue="JUnit.Client.test2" />
-        <item itemvalue="JUnit.Client.test" />
       </list>
     </recent_temporary>
   </component>
@@ -459,14 +460,7 @@
       <workItem from="1654484702281" duration="21677000" />
       <workItem from="1654615009036" duration="5115000" />
       <workItem from="1654679305870" duration="1282000" />
-      <workItem from="1654692027920" duration="8846000" />
-    </task>
-    <task id="LOCAL-00059" summary="栈的使用-中缀表达式转后缀表达式">
-      <created>1653239709617</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1653239709617</updated>
+      <workItem from="1654692027920" duration="9725000" />
     </task>
     <task id="LOCAL-00060" summary="栈的使用-计算后缀表达式">
       <created>1653241324302</created>
@@ -804,7 +798,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654705796885</updated>
     </task>
-    <option name="localTasksCounter" value="108" />
+    <task id="LOCAL-00108" summary="动态代理">
+      <created>1654706251213</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1654706251213</updated>
+    </task>
+    <option name="localTasksCounter" value="109" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -952,10 +953,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="383" y="163" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.720@0.0.1280.720" timestamp="1654491667181" />
-    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser" timestamp="1654706028611">
+    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser" timestamp="1654706628942">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1654706028611" />
+    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1654706628942" />
     <state x="198" y="286" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1654514809002">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -984,10 +985,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="357" y="205" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.720@0.0.1280.720" timestamp="1646561752636" />
-    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2" timestamp="1654705794869">
+    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2" timestamp="1654706249508">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1654705794869" />
+    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1654706249508" />
     <state x="93" y="93" width="1095" height="535" key="DiffContextDialog" timestamp="1654519125209">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -996,38 +997,38 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="421" y="101" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1654519211349" />
-    <state width="1237" height="69" key="GridCell.Tab.0.bottom" timestamp="1654705571877">
+    <state width="1237" height="214" key="GridCell.Tab.0.bottom" timestamp="1654707129819">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="69" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1654705571877" />
-    <state width="1237" height="69" key="GridCell.Tab.0.center" timestamp="1654705571877">
+    <state width="1237" height="214" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1654707129819" />
+    <state width="1237" height="214" key="GridCell.Tab.0.center" timestamp="1654707129819">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="69" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1654705571877" />
-    <state width="1237" height="69" key="GridCell.Tab.0.left" timestamp="1654705571876">
+    <state width="1237" height="214" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1654707129819" />
+    <state width="1237" height="214" key="GridCell.Tab.0.left" timestamp="1654707129819">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="69" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1654705571876" />
-    <state width="1237" height="69" key="GridCell.Tab.0.right" timestamp="1654705571877">
+    <state width="1237" height="214" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1654707129819" />
+    <state width="1237" height="214" key="GridCell.Tab.0.right" timestamp="1654707129819">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="69" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1654705571877" />
-    <state width="1237" height="417" key="GridCell.Tab.1.bottom" timestamp="1654652452622">
+    <state width="1237" height="214" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1654707129819" />
+    <state width="1237" height="214" key="GridCell.Tab.1.bottom" timestamp="1654707129819">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="417" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1654652452622" />
-    <state width="1237" height="417" key="GridCell.Tab.1.center" timestamp="1654652452622">
+    <state width="1237" height="214" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1654707129819" />
+    <state width="1237" height="214" key="GridCell.Tab.1.center" timestamp="1654707129819">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="417" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1654652452622" />
-    <state width="1237" height="417" key="GridCell.Tab.1.left" timestamp="1654652452622">
+    <state width="1237" height="214" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1654707129819" />
+    <state width="1237" height="214" key="GridCell.Tab.1.left" timestamp="1654707129819">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="417" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1654652452622" />
-    <state width="1237" height="417" key="GridCell.Tab.1.right" timestamp="1654652452622">
+    <state width="1237" height="214" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1654707129819" />
+    <state width="1237" height="214" key="GridCell.Tab.1.right" timestamp="1654707129819">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="417" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1654652452622" />
+    <state width="1237" height="214" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1654707129819" />
     <state width="1237" height="198" key="GridCell.Tab.2.bottom" timestamp="1648131415309">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -1076,10 +1077,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="160" y="13" width="1038" height="707" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1654099340898" />
-    <state x="11" y="55" width="1036" height="571" key="Vcs.Push.Dialog.v2" timestamp="1654679335604">
+    <state x="11" y="55" width="1036" height="571" key="Vcs.Push.Dialog.v2" timestamp="1654706256770">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="11" y="55" width="1036" height="571" key="Vcs.Push.Dialog.v2/0.0.1280.720@0.0.1280.720" timestamp="1654679335604" />
+    <state x="11" y="55" width="1036" height="571" key="Vcs.Push.Dialog.v2/0.0.1280.720@0.0.1280.720" timestamp="1654706256770" />
     <state width="560" height="718" key="com.intellij.byteCodeViewer.ShowByteCodeAction" timestamp="1648746723739">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -1186,6 +1187,11 @@
           <url>file://$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/flyweight/flyweightindemo/Client.java</url>
           <line>21</line>
           <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/proxy/jdkproxy/Clinet.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

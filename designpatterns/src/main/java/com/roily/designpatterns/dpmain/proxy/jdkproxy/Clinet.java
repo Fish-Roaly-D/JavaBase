@@ -31,4 +31,26 @@ public class Clinet {
         proxy.sell();
     }
 
+    /**
+     * 测试不能代理抽像类类
+     */
+    @Test
+    public void test3(){
+        CommonInvocationHandler commonInvocationHandler = new CommonInvocationHandler();
+        commonInvocationHandler.setObject(new AbsL());
+        Absclass proxy = (Absclass)commonInvocationHandler.getProxy();
+        proxy.aaa();
+    }
+
+    /**
+     * 测试不能代理抽像类类
+     */
+    @Test
+    public void test4(){
+        CommonInvocationHandler commonInvocationHandler = new CommonInvocationHandler();
+        commonInvocationHandler.setObject(new AbsL2());
+        AbsL2 proxy = (AbsL2)commonInvocationHandler.getProxy();
+        proxy.aaa();
+    }
+
 }
