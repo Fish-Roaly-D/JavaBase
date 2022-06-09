@@ -15,6 +15,7 @@
         <module name="base-collection-01" />
         <module name="mysql-datasource" />
         <module name="javabase" />
+        <module name="Mybatis-01" />
         <module name="base-datatype-01" />
         <module name="base-map-01" />
         <module name="mysql-jdbc" />

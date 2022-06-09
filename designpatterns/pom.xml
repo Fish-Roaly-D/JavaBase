@@ -13,4 +13,11 @@
     <artifactId>designpatterns</artifactId>
     <description>设计模式</description>
 
+    <dependencies>
+        <dependency>
+            <groupId>cglib</groupId>
+            <artifactId>cglib</artifactId>
+            <version>3.3.0</version>
+        </dependency>
+    </dependencies>
 </project>
