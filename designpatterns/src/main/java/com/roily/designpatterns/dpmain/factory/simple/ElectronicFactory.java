@@ -27,6 +27,13 @@ public class ElectronicFactory {
         return temp;
     }
 
+    public ElectronicProduct createPhone(){
+        return new Phone();
+    }
+    public ElectronicProduct createComputer(){
+        return new Computer();
+    }
+
     @Test
     public void Client() {
         ElectronicProduct phone = ElectronicFactory.createProduct("phone");
