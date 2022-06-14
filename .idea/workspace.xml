@@ -7,11 +7,17 @@
     <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base-collection-01/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/base-collection-01/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base-map-01/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/base-map-01/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-jdbc/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-jdbc/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-01/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-01/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01/src/main/resources/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-02/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-02/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-02/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-02/src/main/resources/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-03/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-03/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-03/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-03/src/main/resources/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +131,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.31609195" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -134,13 +140,6 @@
       <recent name="com.roily.designpatterns.dpmain.decorator.simple" />
       <recent name="com.roily.designpatterns.dpmain.composite.open" />
       <recent name="com.roily.designpatterns.dpmain.bridge" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\programmeTools\idea\git\JavaBase\designpatterns\src\main\java\com\roily\designpatterns\dpmain\proxy\jdkproxy" />
-      <recent name="E:\programmeTools\idea\git\JavaBase\designpatterns\src\main\java\com\roily\designpatterns\dpmain\proxy\staticproxy" />
-      <recent name="E:\programmeTools\idea\git\JavaBase\designpatterns\src\main\java\com\roily\designpatterns\dpmain\bridge" />
-      <recent name="E:\programmeTools\idea\git\JavaBase\designpatterns\src\main\java\com\roily\designpatterns\dpmain\single\factory\abstractF" />
-      <recent name="E:\programmeTools\idea\git\JavaBase\designpatterns\src\main\java\com\roily\designpatterns\dpmain\single\factory\abstract" />
     </key>
   </component>
   <component name="RestServicesNavigator">
@@ -154,82 +153,82 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.test01.shift">
-    <configuration name="BitSetTest.testNextSetBit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="base-collection-01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.bitset.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.roily.bitset" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.bitset.BitSetTest" />
-      <option name="METHOD_NAME" value="testNextSetBit" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BitSetUseful.testIsMissing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="base-collection-01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.bitset.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.roily.bitset" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.bitset.BitSetUseful" />
-      <option name="METHOD_NAME" value="testIsMissing" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Father.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.test.test01">
+    <configuration name="ClassAdapterTest.classAdapterTest01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="designpatterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dp05_lsp.promise.*" />
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.adapter.classadapter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dp05_lsp.promise" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dp05_lsp.promise.Father" />
+      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.adapter.classadapter" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.adapter.classadapter.ClassAdapterTest" />
+      <option name="METHOD_NAME" value="classAdapterTest01" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test01.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.roily.test" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.test.test01" />
+      <option name="METHOD_NAME" value="test01" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test01.testConn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.roily.test" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.test.test01" />
+      <option name="METHOD_NAME" value="testConn" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test.test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.roily.test" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.test.test" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test01.shift" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="base-collection-01" />
+    <configuration name="test.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-04" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.bitset.*" />
+          <option name="PATTERN" value="com.roily.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.bitset" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.bitset.test01" />
-      <option name="METHOD_NAME" value="shift" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="designpatterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dp01_spr.ok_demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dp01_spr.ok_demo" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dp01_spr.ok_demo.test" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="PACKAGE_NAME" value="com.roily" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.test" />
+      <option name="METHOD_NAME" value="test01" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -249,19 +248,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.Father.test" />
-      <item itemvalue="JUnit.BitSetTest.testNextSetBit" />
-      <item itemvalue="JUnit.test.test" />
-      <item itemvalue="JUnit.BitSetUseful.testIsMissing" />
-      <item itemvalue="JUnit.test01.shift" />
+      <item itemvalue="JUnit.ClassAdapterTest.classAdapterTest01" />
+      <item itemvalue="JUnit.test01.test01" />
+      <item itemvalue="JUnit.test.test (1)" />
+      <item itemvalue="JUnit.test01.testConn" />
+      <item itemvalue="JUnit.test.test01" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.test01.shift" />
-        <item itemvalue="JUnit.BitSetUseful.testIsMissing" />
-        <item itemvalue="JUnit.test.test" />
-        <item itemvalue="JUnit.BitSetTest.testNextSetBit" />
-        <item itemvalue="JUnit.Father.test" />
+        <item itemvalue="JUnit.test.test01" />
+        <item itemvalue="JUnit.test01.testConn" />
+        <item itemvalue="JUnit.test.test (1)" />
+        <item itemvalue="JUnit.test01.test01" />
+        <item itemvalue="JUnit.ClassAdapterTest.classAdapterTest01" />
       </list>
     </recent_temporary>
   </component>
@@ -438,35 +437,9 @@
       <workItem from="1654789311343" duration="3988000" />
       <workItem from="1654867156169" duration="4574000" />
       <workItem from="1655184013648" duration="66000" />
-      <workItem from="1655184196153" duration="459000" />
-    </task>
-    <task id="LOCAL-00063" summary="调整">
-      <created>1653244087653</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1653244087653</updated>
-    </task>
-    <task id="LOCAL-00064" summary="调整">
-      <created>1653245606122</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1653245606122</updated>
-    </task>
-    <task id="LOCAL-00065" summary="bitset">
-      <created>1653406800537</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1653406800538</updated>
-    </task>
-    <task id="LOCAL-00066" summary="bitset-原理测试">
-      <created>1653485531189</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1653485531190</updated>
+      <workItem from="1655184196153" duration="7591000" />
+      <workItem from="1655220999102" duration="1520000" />
+      <workItem from="1655222537066" duration="151000" />
     </task>
     <task id="LOCAL-00067" summary="bitset-原理测试">
       <created>1653494619668</created>
@@ -783,7 +756,35 @@
       <option name="project" value="LOCAL" />
       <updated>1654792826146</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="项目移动mac">
+      <created>1655185122368</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1655185122368</updated>
+    </task>
+    <task id="LOCAL-00113" summary="类的适配器模式">
+      <created>1655219594692</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1655219594692</updated>
+    </task>
+    <task id="LOCAL-00114" summary="项目调整">
+      <created>1655220830761</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1655220830761</updated>
+    </task>
+    <task id="LOCAL-00115" summary="类的适配器模式">
+      <created>1655220849728</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1655220849728</updated>
+    </task>
+    <option name="localTasksCounter" value="116" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -862,9 +863,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="designpatterns-接口隔离原则" />
-    <MESSAGE value="designpatterns-包名调整" />
-    <MESSAGE value="单例模式" />
     <MESSAGE value="工厂模式-init" />
     <MESSAGE value="简单工厂模式" />
     <MESSAGE value="工厂方法模式" />
@@ -887,7 +885,10 @@
     <MESSAGE value="jdk动态代理智能代理实现接口的类" />
     <MESSAGE value="cglib添加依赖" />
     <MESSAGE value="cglib动态代理" />
-    <option name="LAST_COMMIT_MESSAGE" value="cglib动态代理" />
+    <MESSAGE value="项目移动mac" />
+    <MESSAGE value="项目调整" />
+    <MESSAGE value="类的适配器模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="类的适配器模式" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

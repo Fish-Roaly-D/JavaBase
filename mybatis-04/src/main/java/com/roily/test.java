@@ -27,8 +27,8 @@ public class test<T> {
         DepartmentMapper mapper = sqlSession.getMapper(DepartmentMapper.class);
 
         PageUtil pageUtil = new PageUtil();
-        pageUtil.setCurrentPage(1l);
-        pageUtil.setLimit(5l);
+        pageUtil.setCurrentPage(1L);
+        pageUtil.setLimit(5L);
 
         List<Department> all = mapper.getAll(QueryParam.builder().keyWord("").build(), pageUtil);
 
@@ -43,8 +43,8 @@ public class test<T> {
         SqlSession sqlSession = MybatisUtil.getSqlSession();
         DepartmentMapper mapper = sqlSession.getMapper(DepartmentMapper.class);
         PageUtil pageUtil = new PageUtil();
-        pageUtil.setCurrentPage(1l);
-        pageUtil.setLimit(5l);
+        pageUtil.setCurrentPage(1L);
+        pageUtil.setLimit(5L);
         List<Department> all = mapper.getAll2(QueryParam.builder().keyWord("").pageUtil(pageUtil).build());
         System.out.println(all);
 
@@ -56,8 +56,8 @@ public class test<T> {
         SqlSession sqlSession = MybatisUtil.getSqlSession();
         DepartmentMapper mapper = sqlSession.getMapper(DepartmentMapper.class);
         PageUtil pageUtil = new PageUtil();
-        pageUtil.setCurrentPage(2l);
-        pageUtil.setLimit(5l);
+        pageUtil.setCurrentPage(2L);
+        pageUtil.setLimit(5L);
         List<Department> all = mapper.getAll3(QueryParam.builder().keyWord("").pageUtil(pageUtil).build());
         System.out.println(all);
 
@@ -68,11 +68,11 @@ public class test<T> {
         SqlSession sqlSession = MybatisUtil.getSqlSession();
         DepartmentMapper mapper = sqlSession.getMapper(DepartmentMapper.class);
         PageUtil pageUtil = new PageUtil();
-        pageUtil.setCurrentPage(2l);
-        pageUtil.setLimit(5l);
+        pageUtil.setCurrentPage(2L);
+        pageUtil.setLimit(5L);
         List<Department> all = mapper.getAll3(QueryParam.builder().keyWord("").pageUtil(pageUtil).build());
         PageResult pageResult = PageResult.builder()
-                .totalCount(5l).totalPage(5l)
+                .totalCount(5L).totalPage(5L)
                 .build();
         pageResult.setList(all);
         pageResult.setCurrentPage(pageUtil.currentPage);
@@ -88,8 +88,8 @@ public class test<T> {
 
         QueryParam2 queryParam2 = new QueryParam2();
         queryParam2.setKeyWord("");
-        queryParam2.setCurrentPage(1l);
-        queryParam2.setLimit(5l);
+        queryParam2.setCurrentPage(1L);
+        queryParam2.setLimit(5L);
 
         List<Department> all4 = mapper.getAll4(queryParam2);
 

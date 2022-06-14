@@ -13,13 +13,13 @@
         <module>base-datatype-01</module>
         <module>base-map-01</module>
         <module>mysql-jdbc</module>
-        <module>mysql-datasource</module>
         <module>mybatis-01</module>
         <module>mybatis-02</module>
-        <module>javabase-collection</module>
         <module>mybatis-03</module>
-        <module>threadbase</module>
         <module>mybatis-04</module>
+        <module>mysql-datasource</module>
+        <module>javabase-collection</module>
+        <module>threadbase</module>
         <module>threadbase02</module>
         <module>javabase</module>
         <module>threadcollection</module>
@@ -27,10 +27,11 @@
     </modules>
 
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/junit/junit -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.12</version>
+            <version>4.13.2</version>
         </dependency>
 
         <dependency>
@@ -47,6 +48,7 @@
             <version>0.16</version>
             <scope>provided</scope>
         </dependency>
+
 
         <!-- spring -->
         <dependency>
