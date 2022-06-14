@@ -5,19 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-01/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-01/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01/src/main/resources/db.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-02/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-02/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-02/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-02/src/main/resources/db.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-03/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-03/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-03/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-03/src/main/resources/db.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +74,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="MERGE" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
     <exe-path />
@@ -135,11 +131,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.roily.designpatterns.dpmain.decorator.transparentdecorator" />
+      <recent name="com.roily.designpatterns.dpmain.adapter.Interfacesplit" />
+      <recent name="com.roily.designpatterns.dpmain.adapter.interfaceadapter" />
       <recent name="com.roily.designpatterns.dpmain.proxy.jdkproxy" />
       <recent name="com.roily.designpatterns.dpmain.decorator.transparent" />
-      <recent name="com.roily.designpatterns.dpmain.decorator.simple" />
-      <recent name="com.roily.designpatterns.dpmain.composite.open" />
-      <recent name="com.roily.designpatterns.dpmain.bridge" />
     </key>
   </component>
   <component name="RestServicesNavigator">
@@ -153,82 +149,82 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.test.test01">
-    <configuration name="ClassAdapterTest.classAdapterTest01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Testy.test03">
+    <configuration name="DecoratorTest.decoratorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="designpatterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.adapter.classadapter.*" />
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.decorator.simpledecorator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.adapter.classadapter" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.adapter.classadapter.ClassAdapterTest" />
-      <option name="METHOD_NAME" value="classAdapterTest01" />
+      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.decorator.simpledecorator" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.decorator.simpledecorator.DecoratorTest" />
+      <option name="METHOD_NAME" value="decoratorTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test01.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis-02" />
+    <configuration name="Testy.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="designpatterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.test.*" />
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.decorator.transparentdecorator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.test" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.test.test01" />
-      <option name="METHOD_NAME" value="test01" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test01.testConn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis-01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.roily.test" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.test.test01" />
-      <option name="METHOD_NAME" value="testConn" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test.test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis-03" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.roily.test" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.test.test" />
+      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.decorator.transparentdecorator" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.decorator.transparentdecorator.Testy" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis-04" />
+    <configuration name="Testy.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="designpatterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.*" />
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.decorator.transparentdecorator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.test" />
+      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.decorator.transparentdecorator" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.decorator.transparentdecorator.Testy" />
       <option name="METHOD_NAME" value="test01" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Testy.test02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="designpatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.decorator.transparentdecorator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.decorator.transparentdecorator" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.decorator.transparentdecorator.Testy" />
+      <option name="METHOD_NAME" value="test02" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Testy.test03" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="designpatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.decorator.transparentdecorator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.decorator.transparentdecorator" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.decorator.transparentdecorator.Testy" />
+      <option name="METHOD_NAME" value="test03" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -248,19 +244,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ClassAdapterTest.classAdapterTest01" />
-      <item itemvalue="JUnit.test01.test01" />
-      <item itemvalue="JUnit.test.test (1)" />
-      <item itemvalue="JUnit.test01.testConn" />
-      <item itemvalue="JUnit.test.test01" />
+      <item itemvalue="JUnit.DecoratorTest.decoratorTest" />
+      <item itemvalue="JUnit.Testy.test" />
+      <item itemvalue="JUnit.Testy.test02" />
+      <item itemvalue="JUnit.Testy.test01" />
+      <item itemvalue="JUnit.Testy.test03" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.test.test01" />
-        <item itemvalue="JUnit.test01.testConn" />
-        <item itemvalue="JUnit.test.test (1)" />
-        <item itemvalue="JUnit.test01.test01" />
-        <item itemvalue="JUnit.ClassAdapterTest.classAdapterTest01" />
+        <item itemvalue="JUnit.Testy.test03" />
+        <item itemvalue="JUnit.Testy.test02" />
+        <item itemvalue="JUnit.Testy.test01" />
+        <item itemvalue="JUnit.Testy.test" />
+        <item itemvalue="JUnit.DecoratorTest.decoratorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -439,35 +435,7 @@
       <workItem from="1655184013648" duration="66000" />
       <workItem from="1655184196153" duration="7591000" />
       <workItem from="1655220999102" duration="1520000" />
-      <workItem from="1655222537066" duration="151000" />
-    </task>
-    <task id="LOCAL-00067" summary="bitset-原理测试">
-      <created>1653494619668</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1653494619668</updated>
-    </task>
-    <task id="LOCAL-00068" summary="bitset-用法">
-      <created>1653503335499</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1653503335499</updated>
-    </task>
-    <task id="LOCAL-00069" summary="数组内存地址连续性和添加顺序无关">
-      <created>1653661308015</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1653661308015</updated>
-    </task>
-    <task id="LOCAL-00070" summary="ABQ-offer(param1,param2,param3)">
-      <created>1653662606547</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1653662606547</updated>
+      <workItem from="1655222537066" duration="8068000" />
     </task>
     <task id="LOCAL-00071" summary="designpatterns模块创建">
       <created>1653889467884</created>
@@ -784,7 +752,35 @@
       <option name="project" value="LOCAL" />
       <updated>1655220849728</updated>
     </task>
-    <option name="localTasksCounter" value="116" />
+    <task id="LOCAL-00116" summary="项目调整">
+      <created>1655222926562</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1655222926562</updated>
+    </task>
+    <task id="LOCAL-00117" summary="方法的适配器模式">
+      <created>1655223634380</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1655223634380</updated>
+    </task>
+    <task id="LOCAL-00118" summary="接口的适配器模式">
+      <created>1655226134511</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1655226134511</updated>
+    </task>
+    <task id="LOCAL-00119" summary="简单装饰器模式">
+      <created>1655229698011</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1655229698011</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -863,9 +859,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="工厂模式-init" />
-    <MESSAGE value="简单工厂模式" />
-    <MESSAGE value="工厂方法模式" />
     <MESSAGE value="抽象工厂模式" />
     <MESSAGE value="工厂模式-调整" />
     <MESSAGE value="建造者模式" />
@@ -886,9 +879,12 @@
     <MESSAGE value="cglib添加依赖" />
     <MESSAGE value="cglib动态代理" />
     <MESSAGE value="项目移动mac" />
-    <MESSAGE value="项目调整" />
     <MESSAGE value="类的适配器模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="类的适配器模式" />
+    <MESSAGE value="项目调整" />
+    <MESSAGE value="方法的适配器模式" />
+    <MESSAGE value="接口的适配器模式" />
+    <MESSAGE value="简单装饰器模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="简单装饰器模式" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
