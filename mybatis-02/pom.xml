@@ -11,11 +11,6 @@
 
     <artifactId>mybatis-02</artifactId>
     <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
-        </dependency>
 
         <!--        <dependency>-->
         <!--            <groupId>log4j</groupId>-->
@@ -23,10 +18,11 @@
         <!--            <version>1.2.17</version>-->
         <!--        </dependency>-->
 
+        <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
-            <version>3.5.7</version>
+            <version>3.5.10</version>
         </dependency>
 
         <dependency>
