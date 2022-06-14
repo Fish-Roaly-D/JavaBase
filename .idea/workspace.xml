@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-collection-01/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/base-collection-01/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-map-01/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/base-map-01/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql-jdbc/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-jdbc/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,14 +89,13 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="E:\devTools\maven\maven_repository" />
-        <option name="mavenHome" value="E:/devTools/maven/apache-maven-3.5.2" />
-        <option name="userSettingsFile" value="E:\devTools\maven\apache-maven-3.5.2\conf\settings.xml" />
+        <option name="localRepository" value="$PROJECT_DIR$/../../../software/maven/maven_repository" />
+        <option name="mavenHome" value="/opt/homebrew/Cellar/maven@3.5/3.5.4_1/libexec" />
+        <option name="userSettingsFile" value="/opt/homebrew/Cellar/maven@3.5/3.5.4_1/libexec/conf/settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
       <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
         <option name="jdkForImporter" value="1.8" />
         <option name="vmOptionsForImporter" value="-Xmx768m" />
       </MavenImportingSettings>
@@ -103,21 +111,21 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql.8&#10;mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/proxy/jdkproxy" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.31609195" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -146,60 +154,34 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Father.test">
-    <configuration name="CgLibProxy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.proxy.cglibproxy.CgLibProxy" />
-      <module name="designpatterns" />
+  <component name="RunManager" selected="JUnit.test01.shift">
+    <configuration name="BitSetTest.testNextSetBit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="base-collection-01" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.proxy.cglibproxy.*" />
+          <option name="PATTERN" value="com.roily.bitset.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.proxy.cglibproxy.Client" />
-      <module name="designpatterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.proxy.cglibproxy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Clinet.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="designpatterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.proxy.jdkproxy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.proxy.jdkproxy" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.proxy.jdkproxy.Clinet" />
-      <option name="METHOD_NAME" value="test3" />
+      <option name="PACKAGE_NAME" value="com.roily.bitset" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.bitset.BitSetTest" />
+      <option name="METHOD_NAME" value="testNextSetBit" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Clinet.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="designpatterns" />
+    <configuration name="BitSetUseful.testIsMissing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="base-collection-01" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.proxy.jdkproxy.*" />
+          <option name="PATTERN" value="com.roily.bitset.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.proxy.jdkproxy" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.proxy.jdkproxy.Clinet" />
-      <option name="METHOD_NAME" value="test4" />
+      <option name="PACKAGE_NAME" value="com.roily.bitset" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.bitset.BitSetUseful" />
+      <option name="METHOD_NAME" value="testIsMissing" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -221,67 +203,65 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <module name="mybatis-03" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
+    <configuration name="test01.shift" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="base-collection-01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.bitset.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.roily.bitset" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.bitset.test01" />
+      <option name="METHOD_NAME" value="shift" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+    <configuration name="test.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="designpatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.designpatterns.dp01_spr.ok_demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dp01_spr.ok_demo" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dp01_spr.ok_demo.test" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="mybatis-03" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <module name="mybatis-03" />
       <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.CgLibProxy" />
-      <item itemvalue="Application.Client" />
-      <item itemvalue="JUnit.Clinet.test3" />
-      <item itemvalue="JUnit.Clinet.test4" />
       <item itemvalue="JUnit.Father.test" />
+      <item itemvalue="JUnit.BitSetTest.testNextSetBit" />
+      <item itemvalue="JUnit.test.test" />
+      <item itemvalue="JUnit.BitSetUseful.testIsMissing" />
+      <item itemvalue="JUnit.test01.shift" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.test01.shift" />
+        <item itemvalue="JUnit.BitSetUseful.testIsMissing" />
+        <item itemvalue="JUnit.test.test" />
+        <item itemvalue="JUnit.BitSetTest.testNextSetBit" />
         <item itemvalue="JUnit.Father.test" />
-        <item itemvalue="Application.Client" />
-        <item itemvalue="Application.CgLibProxy" />
-        <item itemvalue="JUnit.Clinet.test4" />
-        <item itemvalue="JUnit.Clinet.test3" />
       </list>
     </recent_temporary>
   </component>
@@ -317,6 +297,7 @@
       </list>
     </option>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="StructureViewFactory">
     <option name="AUTOSCROLL_FROM_SOURCE" value="true" />
     <option name="ACTIVE_ACTIONS" value=",VISIBILITY_SORTER" />
@@ -456,6 +437,8 @@
       <workItem from="1654692027920" duration="9725000" />
       <workItem from="1654789311343" duration="3988000" />
       <workItem from="1654867156169" duration="4574000" />
+      <workItem from="1655184013648" duration="66000" />
+      <workItem from="1655184196153" duration="459000" />
     </task>
     <task id="LOCAL-00063" summary="调整">
       <created>1653244087653</created>
@@ -804,7 +787,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ORDER">
@@ -871,13 +854,12 @@
         </entry>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="designpatterns-接口隔离原则" />
@@ -906,232 +888,6 @@
     <MESSAGE value="cglib添加依赖" />
     <MESSAGE value="cglib动态代理" />
     <option name="LAST_COMMIT_MESSAGE" value="cglib动态代理" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="318" y="103" key="#Customize_Data_Views" timestamp="1652372741178">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="318" y="103" key="#Customize_Data_Views/0.0.1280.720@0.0.1280.720" timestamp="1652372741178" />
-    <state x="342" y="17" key="#HashMap01" timestamp="1652202925130">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="222" y="0" key="#HashMap01.iftest" timestamp="1652202944584">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="222" y="0" key="#HashMap01.iftest/0.0.1280.720@0.0.1280.720" timestamp="1652202944584" />
-    <state x="342" y="17" key="#HashMap01/0.0.1280.720@0.0.1280.720" timestamp="1652202925130" />
-    <state x="233" y="19" key="#Inspections" timestamp="1648911420409">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="233" y="19" key="#Inspections/0.0.1280.720@0.0.1280.720" timestamp="1648911420409" />
-    <state x="138" y="0" key="#Java_Type_Renderers" timestamp="1652372563566">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="138" y="0" key="#Java_Type_Renderers/0.0.1280.720@0.0.1280.720" timestamp="1652372563566" />
-    <state x="222" y="0" key="#MapLearn.forTest" timestamp="1652202854611">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="222" y="0" key="#MapLearn.forTest/0.0.1280.720@0.0.1280.720" timestamp="1652202854611" />
-    <state x="233" y="19" key="#Project_Structure" timestamp="1653888610368">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="233" y="19" key="#Project_Structure/0.0.1280.720@0.0.1280.720" timestamp="1653888610368" />
-    <state x="329" y="211" key="#com.intellij.codeInsight.template.impl.EditVariableDialog" timestamp="1647417010175">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="329" y="211" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/0.0.1280.720@0.0.1280.720" timestamp="1647417010175" />
-    <state x="104" y="39" width="1089" height="675" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1652983030891">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="104" y="39" width="1089" height="675" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1652983030891" />
-    <state x="383" y="163" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1654491667181">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="383" y="163" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.720@0.0.1280.720" timestamp="1654491667181" />
-    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser" timestamp="1654924929451">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1654924929451" />
-    <state x="198" y="286" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1654514809002">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="198" y="286" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1280.720@0.0.1280.720" timestamp="1654514809002" />
-    <state x="355" y="63" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog" timestamp="1651853386344">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="355" y="63" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog/0.0.1280.720@0.0.1280.720" timestamp="1651853386344" />
-    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1654437912113">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.720@0.0.1280.720" timestamp="1654437912113" />
-    <state x="371" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1654278913190">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="371" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.720@0.0.1280.720" timestamp="1654278913190" />
-    <state x="371" y="107" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1652900898105">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="371" y="107" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1280.720@0.0.1280.720" timestamp="1652900898105" />
-    <state x="396" y="63" key="#xdebugger.evaluate" timestamp="1648661574160">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="396" y="63" key="#xdebugger.evaluate/0.0.1280.720@0.0.1280.720" timestamp="1648661574160" />
-    <state x="357" y="205" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1646561752636">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="357" y="205" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.720@0.0.1280.720" timestamp="1646561752636" />
-    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2" timestamp="1654792824251">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="283" y="79" width="850" height="501" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1654792824251" />
-    <state x="93" y="93" width="1095" height="535" key="DiffContextDialog" timestamp="1654519125209">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="93" y="93" width="1095" height="535" key="DiffContextDialog/0.0.1280.720@0.0.1280.720" timestamp="1654519125209" />
-    <state x="421" y="101" key="FileChooserDialogImpl" timestamp="1654519211349">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="421" y="101" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1654519211349" />
-    <state width="1237" height="246" key="GridCell.Tab.0.bottom" timestamp="1654925449823">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1237" height="246" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1654925449823" />
-    <state width="1237" height="246" key="GridCell.Tab.0.center" timestamp="1654925449823">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1237" height="246" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1654925449823" />
-    <state width="1237" height="246" key="GridCell.Tab.0.left" timestamp="1654925449823">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1237" height="246" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1654925449823" />
-    <state width="1237" height="246" key="GridCell.Tab.0.right" timestamp="1654925449823">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1237" height="246" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1654925449823" />
-    <state width="1237" height="135" key="GridCell.Tab.1.bottom" timestamp="1654827110950">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1237" height="135" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1654827110950" />
-    <state width="1237" height="135" key="GridCell.Tab.1.center" timestamp="1654827110949">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1237" height="135" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1654827110949" />
-    <state width="1237" height="135" key="GridCell.Tab.1.left" timestamp="1654827110949">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1237" height="135" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1654827110949" />
-    <state width="1237" height="135" key="GridCell.Tab.1.right" timestamp="1654827110950">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1237" height="135" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1654827110950" />
-    <state width="1237" height="198" key="GridCell.Tab.2.bottom" timestamp="1648131415309">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1237" height="198" key="GridCell.Tab.2.bottom/0.0.1280.720@0.0.1280.720" timestamp="1648131415309" />
-    <state width="1237" height="198" key="GridCell.Tab.2.center" timestamp="1648131415309">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1237" height="198" key="GridCell.Tab.2.center/0.0.1280.720@0.0.1280.720" timestamp="1648131415309" />
-    <state width="1237" height="198" key="GridCell.Tab.2.left" timestamp="1648131415309">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1237" height="198" key="GridCell.Tab.2.left/0.0.1280.720@0.0.1280.720" timestamp="1648131415309" />
-    <state width="1237" height="198" key="GridCell.Tab.2.right" timestamp="1648131415309">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1237" height="198" key="GridCell.Tab.2.right/0.0.1280.720@0.0.1280.720" timestamp="1648131415309" />
-    <state width="1237" height="198" key="GridCell.Tab.4.bottom" timestamp="1648131395349">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1237" height="198" key="GridCell.Tab.4.bottom/0.0.1280.720@0.0.1280.720" timestamp="1648131395349" />
-    <state width="1237" height="198" key="GridCell.Tab.4.center" timestamp="1648131395349">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1237" height="198" key="GridCell.Tab.4.center/0.0.1280.720@0.0.1280.720" timestamp="1648131395349" />
-    <state width="1237" height="198" key="GridCell.Tab.4.left" timestamp="1648131395349">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1237" height="198" key="GridCell.Tab.4.left/0.0.1280.720@0.0.1280.720" timestamp="1648131395349" />
-    <state width="1237" height="198" key="GridCell.Tab.4.right" timestamp="1648131395349">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1237" height="198" key="GridCell.Tab.4.right/0.0.1280.720@0.0.1280.720" timestamp="1648131395349" />
-    <state x="171" y="16" key="Maven.ArtifactSearchDialog" timestamp="1646665959803">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="171" y="16" key="Maven.ArtifactSearchDialog/0.0.1280.720@0.0.1280.720" timestamp="1646665959803" />
-    <state x="221" y="202" key="MavenRunHelper.GoalEditor" timestamp="1648049254239">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="221" y="202" key="MavenRunHelper.GoalEditor/0.0.1280.720@0.0.1280.720" timestamp="1648049254239" />
-    <state x="447" y="93" width="717" height="604" key="NewModule_or_Project.wizard" timestamp="1652983520425">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="447" y="93" width="717" height="604" key="NewModule_or_Project.wizard/0.0.1280.720@0.0.1280.720" timestamp="1652983520425" />
-    <state x="160" y="13" width="1038" height="707" key="SettingsEditor" timestamp="1654099340898">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="160" y="13" width="1038" height="707" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1654099340898" />
-    <state x="11" y="55" width="1036" height="571" key="Vcs.Push.Dialog.v2" timestamp="1654955374003">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="11" y="55" width="1036" height="571" key="Vcs.Push.Dialog.v2/0.0.1280.720@0.0.1280.720" timestamp="1654955374003" />
-    <state width="560" height="718" key="com.intellij.byteCodeViewer.ShowByteCodeAction" timestamp="1648746723739">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="560" height="718" key="com.intellij.byteCodeViewer.ShowByteCodeAction/0.0.1280.720@0.0.1280.720" timestamp="1648746723739" />
-    <state x="93" y="93" width="1095" height="535" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1647395040784">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="93" y="93" width="1095" height="535" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1280.720@0.0.1280.720" timestamp="1647395040784" />
-    <state x="246" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1652375048855">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="246" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1280.720@0.0.1280.720" timestamp="1652375048855" />
-    <state x="437" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1654792808433">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="437" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.720@0.0.1280.720" timestamp="1654792808433" />
-    <state x="412" y="63" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1653121182875">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="412" y="63" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.720@0.0.1280.720" timestamp="1653121182875" />
-    <state x="93" y="93" width="1095" height="535" key="dock-window-1" timestamp="1654615564635">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="93" y="93" width="1095" height="535" key="dock-window-1/0.0.1280.720@0.0.1280.720" timestamp="1654615564635" />
-    <state width="88" height="37" key="documentation.popup.size" timestamp="1649749645976">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="88" height="37" key="documentation.popup.size/0.0.1280.720@0.0.1280.720" timestamp="1649749645976" />
-    <state x="371" y="125" key="extract.method.dialog" timestamp="1648029466468">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="371" y="125" key="extract.method.dialog/0.0.1280.720@0.0.1280.720" timestamp="1648029466468" />
-    <state x="440" y="255" key="git4idea.ui.GitResetDialog" timestamp="1652766834949">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="440" y="255" key="git4idea.ui.GitResetDialog/0.0.1280.720@0.0.1280.720" timestamp="1652766834949" />
-    <state x="47" y="95" key="new project wizard" timestamp="1653888585456">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="47" y="95" key="new project wizard/0.0.1280.720@0.0.1280.720" timestamp="1653888585456" />
-    <state x="383" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1654582784082">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="383" y="0" key="refactoring.ChangeSignatureDialog/0.0.1280.720@0.0.1280.720" timestamp="1654582784082" />
-    <state x="297" y="161" width="672" height="677" key="run.anything.popup" timestamp="1652981090471">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="297" y="161" width="672" height="677" key="run.anything.popup/0.0.1280.720@0.0.1280.720" timestamp="1652981090471" />
-    <state x="234" y="19" key="scopes" timestamp="1647230227486">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="234" y="19" key="scopes/0.0.1280.720@0.0.1280.720" timestamp="1647230227486" />
-    <state x="111" y="140" width="1087" height="678" key="search.everywhere.popup" timestamp="1654705139805">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="111" y="140" width="1087" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1654705139805" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
