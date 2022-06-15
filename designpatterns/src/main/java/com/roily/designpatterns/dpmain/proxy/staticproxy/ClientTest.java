@@ -5,11 +5,11 @@ import org.junit.Test;
 /**
  * @version 1.0.0
  * @Description 我想买房子
- * @ClassName Client.java
+ * @ClassName ClientTest.java
  * @author: RoilyFish
  * @date: 2022/6/8 23:00
  */
-public class Client {
+public class ClientTest {
 
     /**
      * 直接找房东买：两个人都会不签合同，房东信息容易泄露
@@ -30,7 +30,5 @@ public class Client {
         houseProxy.setHouseOwner(new HouseOwner());
         houseProxy.sell();
     }
-
-
 
 }

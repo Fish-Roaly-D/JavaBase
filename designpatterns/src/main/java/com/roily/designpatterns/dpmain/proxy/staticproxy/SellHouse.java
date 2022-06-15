@@ -9,5 +9,8 @@ package com.roily.designpatterns.dpmain.proxy.staticproxy;
  */
 public interface SellHouse {
 
+    /**
+     * 卖房子
+     */
     void sell();
 }

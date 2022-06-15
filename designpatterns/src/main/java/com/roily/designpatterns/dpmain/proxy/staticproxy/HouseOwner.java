@@ -9,6 +9,7 @@ package com.roily.designpatterns.dpmain.proxy.staticproxy;
  */
 public class HouseOwner implements SellHouse{
 
+    @Override
     public void sell(){
         System.out.println("房东卖房子");
     }

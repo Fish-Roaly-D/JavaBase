@@ -9,14 +9,19 @@ package com.roily.designpatterns.dpmain.proxy.staticproxy;
  */
 public class HouseProxy implements SellHouse{
 
-    //被代理对象
+    /**
+     * 被代理对象
+     */
     private SellHouse houseOwner;
 
     public void setHouseOwner(SellHouse houseOwner) {
         this.houseOwner = houseOwner;
     }
 
-    //销售也卖房子,但是包括前置服务和后续维护服务
+    /**
+     * 销售也卖房子,但是包括前置服务和后续维护服务
+     */
+    @Override
     public void sell(){
         prevWork();
         houseOwner.sell();
