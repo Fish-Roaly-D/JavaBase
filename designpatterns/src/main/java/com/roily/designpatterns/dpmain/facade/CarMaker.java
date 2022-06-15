@@ -8,29 +8,14 @@ package com.roily.designpatterns.dpmain.facade;
  * @date: 2022/6/7 16:51
  */
 public class CarMaker {
+    /**
+     * 如果不是静态方法可以将需要的类组合进来
+     */
 
-
-    public void makeCar() {
-        //第一步：设计
-        System.out.println("设计。。。。。。");
-
-        //第二步：生产配件
-        System.out.println("生产配件。。。。。。");
-
-        //第三步：组装
-        System.out.println("组装。。。。。。");
-
-        //第四步：测试
-        System.out.println("测试。。。。。。");
-
-        //第五步：优化
-        System.out.println("优化。。。。。。");
-
-        //第六步：生产
-        System.out.println("生产。。。。。。");
-
-        System.out.println("车子出来了");
-
+    public static void makeCar() {
+        DesignCar.design();
+        Produce.produce();
+        Assemble.assemble();
     }
 
 }

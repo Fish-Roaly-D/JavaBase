@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="享元模式">
+    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="System.CopyOf是浅拷贝">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/prototype/prototype/CreateMostObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/prototype/prototype/CreateMostObj.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/facade/CarMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/facade/CarMaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/facade/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/facade/Client.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +130,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.31609195" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -437,14 +439,7 @@
       <workItem from="1655184196153" duration="7591000" />
       <workItem from="1655220999102" duration="1520000" />
       <workItem from="1655222537066" duration="8514000" />
-      <workItem from="1655256655200" duration="13484000" />
-    </task>
-    <task id="LOCAL-00078" summary="designpatterns-包名调整">
-      <created>1654095350850</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1654095350850</updated>
+      <workItem from="1655256655200" duration="15200000" />
     </task>
     <task id="LOCAL-00079" summary="designpatterns-包名调整">
       <created>1654099119865</created>
@@ -782,7 +777,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655303354147</updated>
     </task>
-    <option name="localTasksCounter" value="127" />
+    <task id="LOCAL-00127" summary="System.CopyOf是浅拷贝">
+      <created>1655310496858</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1655310496858</updated>
+    </task>
+    <option name="localTasksCounter" value="128" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -861,7 +863,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="原型模式-拷贝" />
     <MESSAGE value="原型模式-循环创建、io" />
     <MESSAGE value="适配器模式" />
     <MESSAGE value="过滤器模式" />
@@ -886,7 +887,8 @@
     <MESSAGE value="jdk动态代理代理、通用写法" />
     <MESSAGE value="桥接模式" />
     <MESSAGE value="享元模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="享元模式" />
+    <MESSAGE value="System.CopyOf是浅拷贝" />
+    <option name="LAST_COMMIT_MESSAGE" value="System.CopyOf是浅拷贝" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
