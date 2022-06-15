@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="桥接模式">
+    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="享元模式">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/prototype/prototype/CreateMostObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/prototype/prototype/CreateMostObj.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +150,7 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ClientTest.test">
+  <component name="RunManager" selected="JUnit.CreateMostObj.testArrayListCopy">
     <configuration name="BridgeTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="designpatterns" />
       <extension name="coverage">
@@ -214,17 +215,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Testy.test03" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CreateMostObj.testArrayListCopy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="designpatterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.decorator.transparentdecorator.*" />
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.prototype.prototype.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.decorator.transparentdecorator" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.decorator.transparentdecorator.Testy" />
-      <option name="METHOD_NAME" value="test03" />
+      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.prototype.prototype" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.prototype.prototype.CreateMostObj" />
+      <option name="METHOD_NAME" value="testArrayListCopy" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -244,19 +245,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.Testy.test03" />
       <item itemvalue="JUnit.CanNotProxyAbsClass.test3" />
       <item itemvalue="JUnit.CanNotProxyAbsClass.test4" />
       <item itemvalue="JUnit.BridgeTest.test" />
       <item itemvalue="JUnit.ClientTest.test" />
+      <item itemvalue="JUnit.CreateMostObj.testArrayListCopy" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CreateMostObj.testArrayListCopy" />
         <item itemvalue="JUnit.ClientTest.test" />
         <item itemvalue="JUnit.BridgeTest.test" />
         <item itemvalue="JUnit.CanNotProxyAbsClass.test4" />
         <item itemvalue="JUnit.CanNotProxyAbsClass.test3" />
-        <item itemvalue="JUnit.Testy.test03" />
       </list>
     </recent_temporary>
   </component>
@@ -436,14 +437,7 @@
       <workItem from="1655184196153" duration="7591000" />
       <workItem from="1655220999102" duration="1520000" />
       <workItem from="1655222537066" duration="8514000" />
-      <workItem from="1655256655200" duration="12243000" />
-    </task>
-    <task id="LOCAL-00077" summary="designpatterns-接口隔离原则">
-      <created>1654094939665</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1654094939666</updated>
+      <workItem from="1655256655200" duration="13484000" />
     </task>
     <task id="LOCAL-00078" summary="designpatterns-包名调整">
       <created>1654095350850</created>
@@ -781,7 +775,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655298827789</updated>
     </task>
-    <option name="localTasksCounter" value="126" />
+    <task id="LOCAL-00126" summary="享元模式">
+      <created>1655303354147</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1655303354147</updated>
+    </task>
+    <option name="localTasksCounter" value="127" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -868,7 +869,6 @@
     <MESSAGE value="装饰器模式" />
     <MESSAGE value="包装模式" />
     <MESSAGE value="享元模式在java中的应用" />
-    <MESSAGE value="享元模式" />
     <MESSAGE value="里氏替换原则" />
     <MESSAGE value="动态代理" />
     <MESSAGE value="jdk动态代理智能代理实现接口的类" />
@@ -885,7 +885,8 @@
     <MESSAGE value="简单静态代理" />
     <MESSAGE value="jdk动态代理代理、通用写法" />
     <MESSAGE value="桥接模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="桥接模式" />
+    <MESSAGE value="享元模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="享元模式" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

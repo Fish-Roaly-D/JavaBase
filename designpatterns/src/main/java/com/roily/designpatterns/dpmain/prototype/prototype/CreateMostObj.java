@@ -2,6 +2,7 @@ package com.roily.designpatterns.dpmain.prototype.prototype;
 
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 
 /**
@@ -44,5 +45,17 @@ public class CreateMostObj {
 
     }
 
+    @Test
+    public void testArrayListCopy() {
+
+        ArrayList<Prototype> prototypes = new ArrayList<>();
+        prototypes.add(new Prototype().setSb(new StringBuffer("123")));
+        System.out.println("拷贝前：" + prototypes);
+
+        ArrayList<Prototype> clone = (ArrayList<Prototype>) prototypes.clone();
+        Prototype prototype = clone.get(0);
+        prototype.getSb().append("abc");
+        System.out.println("使用拷贝对象修改后：" + prototypes);
+    }
 
 }
