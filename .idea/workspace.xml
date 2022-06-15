@@ -4,12 +4,18 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="">
+    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="jdk动态代理代理、通用写法">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/proxy/staticproxy/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/proxy/staticproxy/ClientTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/proxy/staticproxy/HouseOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/proxy/staticproxy/HouseOwner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/proxy/staticproxy/HouseProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/proxy/staticproxy/HouseProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/proxy/staticproxy/SellHouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/proxy/staticproxy/SellHouse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/bridge/Apple.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/bridge/ApplePC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/bridge/ApplePhone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/bridge/Brand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/bridge/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/bridge/ElectronicProduct.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/bridge/MI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/bridge/MIPC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/bridge/MIPhone.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +137,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.31609195" />
-    <property name="settings.editor.selected.configurable" value="yiiguxing.plugin.translate" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -153,50 +159,50 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Testy.test03">
-    <configuration name="DecoratorTest.decoratorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.BridgeTest.test">
+    <configuration name="BridgeTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="designpatterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.decorator.simpledecorator.*" />
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.bridge.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.decorator.simpledecorator" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.decorator.simpledecorator.DecoratorTest" />
-      <option name="METHOD_NAME" value="decoratorTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Testy.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="designpatterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.decorator.transparentdecorator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.decorator.transparentdecorator" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.decorator.transparentdecorator.Testy" />
+      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.bridge" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.bridge.BridgeTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Testy.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CanNotProxyAbsClass.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="designpatterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.decorator.transparentdecorator.*" />
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.proxy.jdkproxy.jdkcannotproxyabsclass.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.decorator.transparentdecorator" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.decorator.transparentdecorator.Testy" />
-      <option name="METHOD_NAME" value="test01" />
+      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.proxy.jdkproxy.jdkcannotproxyabsclass" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.proxy.jdkproxy.jdkcannotproxyabsclass.CanNotProxyAbsClass" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CanNotProxyAbsClass.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="designpatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.proxy.jdkproxy.jdkcannotproxyabsclass.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.proxy.jdkproxy.jdkcannotproxyabsclass" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.proxy.jdkproxy.jdkcannotproxyabsclass.CanNotProxyAbsClass" />
+      <option name="METHOD_NAME" value="test4" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -248,19 +254,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.DecoratorTest.decoratorTest" />
-      <item itemvalue="JUnit.Testy.test" />
       <item itemvalue="JUnit.Testy.test02" />
-      <item itemvalue="JUnit.Testy.test01" />
       <item itemvalue="JUnit.Testy.test03" />
+      <item itemvalue="JUnit.CanNotProxyAbsClass.test3" />
+      <item itemvalue="JUnit.CanNotProxyAbsClass.test4" />
+      <item itemvalue="JUnit.BridgeTest.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BridgeTest.test" />
+        <item itemvalue="JUnit.CanNotProxyAbsClass.test4" />
+        <item itemvalue="JUnit.CanNotProxyAbsClass.test3" />
         <item itemvalue="JUnit.Testy.test03" />
         <item itemvalue="JUnit.Testy.test02" />
-        <item itemvalue="JUnit.Testy.test01" />
-        <item itemvalue="JUnit.Testy.test" />
-        <item itemvalue="JUnit.DecoratorTest.decoratorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -440,28 +446,7 @@
       <workItem from="1655184196153" duration="7591000" />
       <workItem from="1655220999102" duration="1520000" />
       <workItem from="1655222537066" duration="8514000" />
-      <workItem from="1655256655200" duration="2837000" />
-    </task>
-    <task id="LOCAL-00072" summary="designpatterns模块创建">
-      <created>1653889477775</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1653889477775</updated>
-    </task>
-    <task id="LOCAL-00073" summary="designpatterns-单一职责">
-      <created>1653925263708</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1653925263708</updated>
-    </task>
-    <task id="LOCAL-00074" summary="designpatterns-里氏替换职责">
-      <created>1653967658892</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1653967658892</updated>
+      <workItem from="1655256655200" duration="8827000" />
     </task>
     <task id="LOCAL-00075" summary="designpatterns-依赖倒置原则">
       <created>1654001870656</created>
@@ -785,7 +770,28 @@
       <option name="project" value="LOCAL" />
       <updated>1655232012076</updated>
     </task>
-    <option name="localTasksCounter" value="121" />
+    <task id="LOCAL-00121" summary="静态代理">
+      <created>1655289110618</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1655289110618</updated>
+    </task>
+    <task id="LOCAL-00122" summary="简单静态代理">
+      <created>1655289240402</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1655289240402</updated>
+    </task>
+    <task id="LOCAL-00123" summary="jdk动态代理代理、通用写法">
+      <created>1655290513661</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1655290513661</updated>
+    </task>
+    <option name="localTasksCounter" value="124" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -864,8 +870,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="工厂模式-调整" />
-    <MESSAGE value="建造者模式" />
     <MESSAGE value="原型模式-拷贝" />
     <MESSAGE value="原型模式-循环创建、io" />
     <MESSAGE value="适配器模式" />
@@ -877,7 +881,6 @@
     <MESSAGE value="享元模式在java中的应用" />
     <MESSAGE value="享元模式" />
     <MESSAGE value="里氏替换原则" />
-    <MESSAGE value="静态代理" />
     <MESSAGE value="动态代理" />
     <MESSAGE value="jdk动态代理智能代理实现接口的类" />
     <MESSAGE value="cglib添加依赖" />
@@ -889,7 +892,10 @@
     <MESSAGE value="接口的适配器模式" />
     <MESSAGE value="简单装饰器模式" />
     <MESSAGE value="透明化装饰器模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="透明化装饰器模式" />
+    <MESSAGE value="静态代理" />
+    <MESSAGE value="简单静态代理" />
+    <MESSAGE value="jdk动态代理代理、通用写法" />
+    <option name="LAST_COMMIT_MESSAGE" value="jdk动态代理代理、通用写法" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -940,11 +946,6 @@
           <url>file://$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/flyweight/flyweightindemo/Client.java</url>
           <line>21</line>
           <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/proxy/jdkproxy/Clinet.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

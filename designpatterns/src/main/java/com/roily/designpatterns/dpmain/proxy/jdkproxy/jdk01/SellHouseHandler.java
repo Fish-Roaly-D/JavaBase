@@ -1,4 +1,4 @@
-package com.roily.designpatterns.dpmain.proxy.jdkproxy;
+package com.roily.designpatterns.dpmain.proxy.jdkproxy.jdk01;
 
 import lombok.Data;
 
@@ -17,7 +17,9 @@ import java.util.Arrays;
 @Data
 public class SellHouseHandler implements InvocationHandler {
 
-    //代理SellHouse这一类的真实角色
+    /**
+     * 代理SellHouse这一类的真实角色
+     */
     private SellHouse sellHouse;
 
     /**

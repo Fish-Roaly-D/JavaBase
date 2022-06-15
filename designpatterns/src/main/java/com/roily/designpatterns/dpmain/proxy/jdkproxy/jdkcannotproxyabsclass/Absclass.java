@@ -1,4 +1,4 @@
-package com.roily.designpatterns.dpmain.proxy.jdkproxy;
+package com.roily.designpatterns.dpmain.proxy.jdkproxy.jdkcannotproxyabsclass;
 
 /**
  * @version 1.0.0

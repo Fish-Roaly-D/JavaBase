@@ -1,4 +1,4 @@
-package com.roily.designpatterns.dpmain.proxy.jdkproxy;
+package com.roily.designpatterns.dpmain.proxy.jdkproxy.jdk01;
 
 /**
  * @version 1.0.0
@@ -9,5 +9,8 @@ package com.roily.designpatterns.dpmain.proxy.jdkproxy;
  */
 public interface SellHouse {
 
+    /**
+     * 抽象方法
+     */
     void sell();
 }

@@ -17,7 +17,9 @@ import java.util.Arrays;
 @Data
 public class CommonInvocationHandler implements InvocationHandler {
 
-    //代理所有对象
+    /**
+     * 代理所有对象
+     */
     private Object object;
 
     public Object getProxy() {

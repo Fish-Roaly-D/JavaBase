@@ -1,4 +1,4 @@
-package com.roily.designpatterns.dpmain.proxy.jdkproxy;
+package com.roily.designpatterns.dpmain.proxy.jdkproxy.jdk01;
 
 import org.junit.Test;
 
@@ -14,6 +14,7 @@ import java.lang.reflect.Method;
  */
 public class HouseOwner implements SellHouse {
 
+    @Override
     public void sell(){
         System.out.println("房东卖房子");
     }
@@ -22,7 +23,7 @@ public class HouseOwner implements SellHouse {
     public void test() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
         HouseOwner houseOwner = new HouseOwner();
         Method sell = HouseOwner.class.getDeclaredMethod("sell");
-        sell.invoke(houseOwner,null);
+        sell.invoke(houseOwner, (Object) null);
     }
 
 }
