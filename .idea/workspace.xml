@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="System.CopyOf是浅拷贝">
+    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="外观模式">
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/facade/CarMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/facade/CarMaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/facade/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/facade/Client.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +99,7 @@
     </option>
     <option name="importingSettings">
       <MavenImportingSettings>
+        <option name="downloadSourcesAutomatically" value="true" />
         <option name="jdkForImporter" value="1.8" />
         <option name="vmOptionsForImporter" value="-Xmx768m" />
       </MavenImportingSettings>
@@ -130,7 +129,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.31609195" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -439,14 +438,7 @@
       <workItem from="1655184196153" duration="7591000" />
       <workItem from="1655220999102" duration="1520000" />
       <workItem from="1655222537066" duration="8514000" />
-      <workItem from="1655256655200" duration="15200000" />
-    </task>
-    <task id="LOCAL-00079" summary="designpatterns-包名调整">
-      <created>1654099119865</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1654099119865</updated>
+      <workItem from="1655256655200" duration="16467000" />
     </task>
     <task id="LOCAL-00080" summary="单例模式">
       <created>1654148132307</created>
@@ -784,7 +776,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655310496858</updated>
     </task>
-    <option name="localTasksCounter" value="128" />
+    <task id="LOCAL-00128" summary="外观模式">
+      <created>1655312194720</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1655312194720</updated>
+    </task>
+    <option name="localTasksCounter" value="129" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -863,7 +862,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="原型模式-循环创建、io" />
     <MESSAGE value="适配器模式" />
     <MESSAGE value="过滤器模式" />
     <MESSAGE value="组合模式" />
@@ -888,7 +886,8 @@
     <MESSAGE value="桥接模式" />
     <MESSAGE value="享元模式" />
     <MESSAGE value="System.CopyOf是浅拷贝" />
-    <option name="LAST_COMMIT_MESSAGE" value="System.CopyOf是浅拷贝" />
+    <MESSAGE value="外观模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="外观模式" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
