@@ -9,11 +9,15 @@ package com.roily.designpatterns.dpmain.proxy.notstaticproxy;
  */
 public class HouseProxy {
 
-    //被代理对象,只代理一个
+    /**
+     * 被代理对象,只代理一个
+     */
     private HouseOwner houseOwner = new HouseOwner();
 
 
-    //销售也卖房子,但是包括前置服务和后续维护服务
+    /**
+     * 销售也卖房子,但是包括前置服务和后续维护服务
+     */
     public void sell(){
         prevWork();
         houseOwner.sell();

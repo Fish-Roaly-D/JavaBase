@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/proxy/staticproxy/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/proxy/staticproxy/ClientTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/proxy/staticproxy/HouseOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/proxy/staticproxy/HouseOwner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/proxy/staticproxy/HouseProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/proxy/staticproxy/HouseProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/proxy/staticproxy/SellHouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/proxy/staticproxy/SellHouse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +131,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.31609195" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
+    <property name="settings.editor.selected.configurable" value="yiiguxing.plugin.translate" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -435,14 +439,8 @@
       <workItem from="1655184013648" duration="66000" />
       <workItem from="1655184196153" duration="7591000" />
       <workItem from="1655220999102" duration="1520000" />
-      <workItem from="1655222537066" duration="8068000" />
-    </task>
-    <task id="LOCAL-00071" summary="designpatterns模块创建">
-      <created>1653889467884</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1653889467884</updated>
+      <workItem from="1655222537066" duration="8514000" />
+      <workItem from="1655256655200" duration="2837000" />
     </task>
     <task id="LOCAL-00072" summary="designpatterns模块创建">
       <created>1653889477775</created>
@@ -780,7 +778,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655229698011</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task id="LOCAL-00120" summary="透明化装饰器模式">
+      <created>1655232012076</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1655232012076</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -859,7 +864,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="抽象工厂模式" />
     <MESSAGE value="工厂模式-调整" />
     <MESSAGE value="建造者模式" />
     <MESSAGE value="原型模式-拷贝" />
@@ -884,7 +888,8 @@
     <MESSAGE value="方法的适配器模式" />
     <MESSAGE value="接口的适配器模式" />
     <MESSAGE value="简单装饰器模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="简单装饰器模式" />
+    <MESSAGE value="透明化装饰器模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="透明化装饰器模式" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -943,5 +948,9 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
