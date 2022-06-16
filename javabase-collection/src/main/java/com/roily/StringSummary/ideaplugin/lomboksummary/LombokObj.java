@@ -1,4 +1,4 @@
-package com.roily.StringSummary.lomboksummary;
+package com.roily.StringSummary.ideaplugin.lomboksummary;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -21,9 +21,11 @@ import org.junit.Test;
 public class LombokObj {
 
 
+
     String name;
 
     Integer age;
+
 
     @Test
     public void test() {
@@ -35,12 +37,12 @@ public class LombokObj {
         lombokObj.setName("");
         lombokObj.setAge(1);
 
+
         /**
          * @AllArgsConstructor
          * @NoArgsConstructor
          * 构造器，支持无参、全参
          */
-        new LombokObj();
         new LombokObj("", 21);
 
         /**
@@ -59,6 +61,8 @@ public class LombokObj {
                 .age(21)
                 .name("")
                 .build();
+
     }
+
 }
 
