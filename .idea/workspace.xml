@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="lombok">
+    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="lombok UseFul">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javabase-collection/src/main/java/com/roily/StringSummary/lomboksummary/LombokObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase-collection/src/main/java/com/roily/StringSummary/ideaplugin/lomboksummary/LombokObj.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +64,7 @@
         <option value="Enum" />
         <option value="db.properties" />
         <option value="Interface" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -136,11 +136,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.roily.designpatterns.dpmain.strategy" />
       <recent name="com.roily.designpatterns.dpmain.decorator.transparentdecorator" />
       <recent name="com.roily.designpatterns.dpmain.adapter.Interfacesplit" />
       <recent name="com.roily.designpatterns.dpmain.adapter.interfaceadapter" />
       <recent name="com.roily.designpatterns.dpmain.proxy.jdkproxy" />
-      <recent name="com.roily.designpatterns.dpmain.decorator.transparent" />
     </key>
   </component>
   <component name="RestServicesNavigator">
@@ -154,7 +154,7 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CreateMostObj.testArrayListCopy">
+  <component name="RunManager" selected="JUnit.StrategyTest.test">
     <configuration name="BridgeTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="designpatterns" />
       <extension name="coverage">
@@ -166,22 +166,6 @@
       <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.bridge" />
       <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.bridge.BridgeTest" />
       <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CanNotProxyAbsClass.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="designpatterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.proxy.jdkproxy.jdkcannotproxyabsclass.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.proxy.jdkproxy.jdkcannotproxyabsclass" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.proxy.jdkproxy.jdkcannotproxyabsclass.CanNotProxyAbsClass" />
-      <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -235,6 +219,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StrategyTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="designpatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.strategy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.strategy" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.strategy.StrategyTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="mybatis-03" />
       <method v="2">
@@ -249,19 +249,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.CanNotProxyAbsClass.test3" />
       <item itemvalue="JUnit.CanNotProxyAbsClass.test4" />
       <item itemvalue="JUnit.BridgeTest.test" />
       <item itemvalue="JUnit.ClientTest.test" />
       <item itemvalue="JUnit.CreateMostObj.testArrayListCopy" />
+      <item itemvalue="JUnit.StrategyTest.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StrategyTest.test" />
         <item itemvalue="JUnit.CreateMostObj.testArrayListCopy" />
         <item itemvalue="JUnit.ClientTest.test" />
         <item itemvalue="JUnit.BridgeTest.test" />
         <item itemvalue="JUnit.CanNotProxyAbsClass.test4" />
-        <item itemvalue="JUnit.CanNotProxyAbsClass.test3" />
       </list>
     </recent_temporary>
   </component>
@@ -443,13 +443,7 @@
       <workItem from="1655222537066" duration="8514000" />
       <workItem from="1655256655200" duration="18223000" />
       <workItem from="1655315231973" duration="339000" />
-    </task>
-    <task id="LOCAL-00081" summary="单例模式">
-      <created>1654148246092</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1654148246092</updated>
+      <workItem from="1655395834625" duration="1671000" />
     </task>
     <task id="LOCAL-00082" summary="单例模式">
       <created>1654148268924</created>
@@ -787,7 +781,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655313466751</updated>
     </task>
-    <option name="localTasksCounter" value="130" />
+    <task id="LOCAL-00130" summary="lombok UseFul">
+      <created>1655395865388</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1655395865388</updated>
+    </task>
+    <option name="localTasksCounter" value="131" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -866,7 +867,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="过滤器模式" />
     <MESSAGE value="组合模式" />
     <MESSAGE value="装饰器模式" />
     <MESSAGE value="包装模式" />
@@ -891,7 +891,8 @@
     <MESSAGE value="System.CopyOf是浅拷贝" />
     <MESSAGE value="外观模式" />
     <MESSAGE value="lombok" />
-    <option name="LAST_COMMIT_MESSAGE" value="lombok" />
+    <MESSAGE value="lombok UseFul" />
+    <option name="LAST_COMMIT_MESSAGE" value="lombok UseFul" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
