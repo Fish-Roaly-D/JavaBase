@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="观察者模式">
+    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="迭代器模式">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -154,7 +154,7 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.IteratorTest.testMyCollection">
+  <component name="RunManager" selected="JUnit.ChainOfResponsibilityTest.test">
     <configuration name="DemoTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.strategy.strategydemo.DemoTest" />
       <module name="designpatterns" />
@@ -181,16 +181,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ChainOfResponsibilityTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="designpatterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.strategy.strategydemo.*" />
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.chainofresponsibility.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.strategy.strategydemo" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.strategy.strategydemo.DemoTest" />
+      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.chainofresponsibility" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.chainofresponsibility.ChainOfResponsibilityTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -244,18 +244,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.DemoTest" />
-      <item itemvalue="JUnit.DemoTest.test" />
       <item itemvalue="JUnit.TemplateTest.test" />
       <item itemvalue="Application.ObserverTest" />
       <item itemvalue="JUnit.IteratorTest.testMyCollection" />
+      <item itemvalue="JUnit.ChainOfResponsibilityTest.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ChainOfResponsibilityTest.test" />
         <item itemvalue="JUnit.IteratorTest.testMyCollection" />
         <item itemvalue="Application.ObserverTest" />
         <item itemvalue="JUnit.TemplateTest.test" />
         <item itemvalue="Application.DemoTest" />
-        <item itemvalue="JUnit.DemoTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -437,14 +437,7 @@
       <workItem from="1655222537066" duration="8514000" />
       <workItem from="1655256655200" duration="18223000" />
       <workItem from="1655315231973" duration="339000" />
-      <workItem from="1655395834625" duration="14023000" />
-    </task>
-    <task id="LOCAL-00087" summary="简单工厂模式">
-      <created>1654275343545</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1654275343545</updated>
+      <workItem from="1655395834625" duration="15965000" />
     </task>
     <task id="LOCAL-00088" summary="简单工厂模式">
       <created>1654275360180</created>
@@ -782,7 +775,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655444267171</updated>
     </task>
-    <option name="localTasksCounter" value="136" />
+    <task id="LOCAL-00136" summary="迭代器模式">
+      <created>1655479273619</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1655479273619</updated>
+    </task>
+    <option name="localTasksCounter" value="137" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -861,7 +861,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="里氏替换原则" />
     <MESSAGE value="动态代理" />
     <MESSAGE value="jdk动态代理智能代理实现接口的类" />
     <MESSAGE value="cglib添加依赖" />
@@ -886,7 +885,8 @@
     <MESSAGE value="策略模式useful" />
     <MESSAGE value="模板方法模式" />
     <MESSAGE value="观察者模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="观察者模式" />
+    <MESSAGE value="迭代器模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="迭代器模式" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
