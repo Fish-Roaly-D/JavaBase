@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="lombok UseFul">
+    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="策略模式simple">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -136,11 +136,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.roily.designpatterns.dpmain.strategy.strategydemo" />
       <recent name="com.roily.designpatterns.dpmain.strategy" />
       <recent name="com.roily.designpatterns.dpmain.decorator.transparentdecorator" />
       <recent name="com.roily.designpatterns.dpmain.adapter.Interfacesplit" />
       <recent name="com.roily.designpatterns.dpmain.adapter.interfaceadapter" />
-      <recent name="com.roily.designpatterns.dpmain.proxy.jdkproxy" />
     </key>
   </component>
   <component name="RestServicesNavigator">
@@ -154,35 +154,16 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StrategyTest.test">
-    <configuration name="BridgeTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.DemoTest">
+    <configuration name="DemoTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.strategy.strategydemo.DemoTest" />
       <module name="designpatterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.bridge.*" />
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.strategy.strategydemo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.bridge" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.bridge.BridgeTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CanNotProxyAbsClass.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="designpatterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.proxy.jdkproxy.jdkcannotproxyabsclass.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.proxy.jdkproxy.jdkcannotproxyabsclass" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.proxy.jdkproxy.jdkcannotproxyabsclass.CanNotProxyAbsClass" />
-      <option name="METHOD_NAME" value="test4" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -219,6 +200,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DemoTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="designpatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.strategy.strategydemo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.strategy.strategydemo" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.strategy.strategydemo.DemoTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StrategyTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="designpatterns" />
       <extension name="coverage">
@@ -249,19 +246,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.CanNotProxyAbsClass.test4" />
-      <item itemvalue="JUnit.BridgeTest.test" />
       <item itemvalue="JUnit.ClientTest.test" />
       <item itemvalue="JUnit.CreateMostObj.testArrayListCopy" />
       <item itemvalue="JUnit.StrategyTest.test" />
+      <item itemvalue="Application.DemoTest" />
+      <item itemvalue="JUnit.DemoTest.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DemoTest" />
+        <item itemvalue="JUnit.DemoTest.test" />
         <item itemvalue="JUnit.StrategyTest.test" />
         <item itemvalue="JUnit.CreateMostObj.testArrayListCopy" />
         <item itemvalue="JUnit.ClientTest.test" />
-        <item itemvalue="JUnit.BridgeTest.test" />
-        <item itemvalue="JUnit.CanNotProxyAbsClass.test4" />
       </list>
     </recent_temporary>
   </component>
@@ -443,21 +440,7 @@
       <workItem from="1655222537066" duration="8514000" />
       <workItem from="1655256655200" duration="18223000" />
       <workItem from="1655315231973" duration="339000" />
-      <workItem from="1655395834625" duration="1671000" />
-    </task>
-    <task id="LOCAL-00082" summary="单例模式">
-      <created>1654148268924</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1654148268924</updated>
-    </task>
-    <task id="LOCAL-00083" summary="工厂模式-init">
-      <created>1654269320493</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1654269320493</updated>
+      <workItem from="1655395834625" duration="6997000" />
     </task>
     <task id="LOCAL-00084" summary="简单工厂模式">
       <created>1654271151765</created>
@@ -788,7 +771,21 @@
       <option name="project" value="LOCAL" />
       <updated>1655395865388</updated>
     </task>
-    <option name="localTasksCounter" value="131" />
+    <task id="LOCAL-00131" summary="策略模式simple">
+      <created>1655398073896</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1655398073896</updated>
+    </task>
+    <task id="LOCAL-00132" summary="策略模式simple">
+      <created>1655398104653</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1655398104653</updated>
+    </task>
+    <option name="localTasksCounter" value="133" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -867,7 +864,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="组合模式" />
     <MESSAGE value="装饰器模式" />
     <MESSAGE value="包装模式" />
     <MESSAGE value="享元模式在java中的应用" />
@@ -892,7 +888,8 @@
     <MESSAGE value="外观模式" />
     <MESSAGE value="lombok" />
     <MESSAGE value="lombok UseFul" />
-    <option name="LAST_COMMIT_MESSAGE" value="lombok UseFul" />
+    <MESSAGE value="策略模式simple" />
+    <option name="LAST_COMMIT_MESSAGE" value="策略模式simple" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -900,7 +897,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>jar://E:/devTools/maven/maven_repository/com/mchange/c3p0/0.9.5.5/c3p0-0.9.5.5-sources.jar!/com/mchange/v2/c3p0/impl/NewProxyConnection.java</url>
           <line>1864</line>
-          <properties class="com.mchange.v2.c3p0.impl.NewProxyConnection" method="isWrapperForInner">
+          <properties class="com.mchange.v2.c3p0.impl.NewProxyConnection">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="1" />
@@ -938,6 +935,16 @@
           <url>file://$PROJECT_DIR$/base-collection-01/src/main/java/com/roily/bitset/test01.java</url>
           <line>119</line>
           <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/strategy/strategydemo/Context.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/strategy/strategydemo/DemoTest.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
