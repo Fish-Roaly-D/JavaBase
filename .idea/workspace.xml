@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="策略模式useful">
+    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="模板方法模式">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,8 +63,8 @@
         <option value="Kotlin File" />
         <option value="Enum" />
         <option value="db.properties" />
-        <option value="Interface" />
         <option value="AnnotationType" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -154,7 +154,7 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TemplateTest.test">
+  <component name="RunManager" selected="Application.ObserverTest">
     <configuration name="DemoTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.strategy.strategydemo.DemoTest" />
       <module name="designpatterns" />
@@ -168,18 +168,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateMostObj.testArrayListCopy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ObserverTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.observer.ObserverTest" />
       <module name="designpatterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.prototype.prototype.*" />
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.observer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.prototype.prototype" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.prototype.prototype.CreateMostObj" />
-      <option name="METHOD_NAME" value="testArrayListCopy" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -246,19 +243,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.CreateMostObj.testArrayListCopy" />
       <item itemvalue="JUnit.StrategyTest.test" />
       <item itemvalue="Application.DemoTest" />
       <item itemvalue="JUnit.DemoTest.test" />
       <item itemvalue="JUnit.TemplateTest.test" />
+      <item itemvalue="Application.ObserverTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ObserverTest" />
         <item itemvalue="JUnit.TemplateTest.test" />
         <item itemvalue="Application.DemoTest" />
         <item itemvalue="JUnit.DemoTest.test" />
         <item itemvalue="JUnit.StrategyTest.test" />
-        <item itemvalue="JUnit.CreateMostObj.testArrayListCopy" />
       </list>
     </recent_temporary>
   </component>
@@ -440,14 +437,7 @@
       <workItem from="1655222537066" duration="8514000" />
       <workItem from="1655256655200" duration="18223000" />
       <workItem from="1655315231973" duration="339000" />
-      <workItem from="1655395834625" duration="8766000" />
-    </task>
-    <task id="LOCAL-00085" summary="简单工厂模式">
-      <created>1654271392271</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1654271392271</updated>
+      <workItem from="1655395834625" duration="10736000" />
     </task>
     <task id="LOCAL-00086" summary="工厂方法模式">
       <created>1654274253243</created>
@@ -785,7 +775,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655440231400</updated>
     </task>
-    <option name="localTasksCounter" value="134" />
+    <task id="LOCAL-00134" summary="模板方法模式">
+      <created>1655442009848</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1655442009848</updated>
+    </task>
+    <option name="localTasksCounter" value="135" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -864,7 +861,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="包装模式" />
     <MESSAGE value="享元模式在java中的应用" />
     <MESSAGE value="里氏替换原则" />
     <MESSAGE value="动态代理" />
@@ -889,7 +885,8 @@
     <MESSAGE value="lombok UseFul" />
     <MESSAGE value="策略模式simple" />
     <MESSAGE value="策略模式useful" />
-    <option name="LAST_COMMIT_MESSAGE" value="策略模式useful" />
+    <MESSAGE value="模板方法模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="模板方法模式" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
