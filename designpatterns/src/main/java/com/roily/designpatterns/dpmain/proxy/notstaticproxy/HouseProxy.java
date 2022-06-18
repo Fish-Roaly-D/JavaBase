@@ -7,7 +7,7 @@ package com.roily.designpatterns.dpmain.proxy.notstaticproxy;
  * @author: RoilyFish
  * @date: 2022/6/8 22:57
  */
-public class HouseProxy {
+public class HouseProxy implements SellHouse, IHouseProxy {
 
     /**
      * 被代理对象,只代理一个
@@ -18,20 +18,23 @@ public class HouseProxy {
     /**
      * 销售也卖房子,但是包括前置服务和后续维护服务
      */
-    public void sell(){
+    @Override
+    public void sellHouse() {
         prevWork();
-        houseOwner.sell();
+        houseOwner.sellHouse();
         nextWork();
     }
 
 
-    private void prevWork(){
+    @Override
+    public void prevWork() {
         System.out.println("挂牌");
         System.out.println("联系客户");
         System.out.println("签合同");
     }
 
-    private void nextWork(){
+    @Override
+    public void nextWork() {
         System.out.println("维护");
     }
 

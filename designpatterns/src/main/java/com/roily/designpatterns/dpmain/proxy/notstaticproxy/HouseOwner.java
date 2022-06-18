@@ -7,10 +7,10 @@ package com.roily.designpatterns.dpmain.proxy.notstaticproxy;
  * @author: RoilyFish
  * @date: 2022/6/8 22:56
  */
-public class HouseOwner {
+public class HouseOwner implements SellHouse {
 
-    public void sell(){
+    @Override
+    public void sellHouse() {
         System.out.println("房东卖房子");
     }
-
 }

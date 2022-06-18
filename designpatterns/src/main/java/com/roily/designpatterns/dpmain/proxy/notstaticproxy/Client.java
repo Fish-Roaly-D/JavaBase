@@ -17,7 +17,7 @@ public class Client {
     @Test
     public void test01(){
         HouseOwner houseOwner = new HouseOwner();
-        houseOwner.sell();
+        houseOwner.sellHouse();
     }
 
     /**
@@ -27,7 +27,7 @@ public class Client {
     public void test2(){
         //经纪人
         HouseProxy houseProxy = new HouseProxy();
-        houseProxy.sell();
+        houseProxy.sellHouse();
     }
 
 
