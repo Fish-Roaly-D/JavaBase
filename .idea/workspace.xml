@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="代理模式对比装饰器模式">
+    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="外观模式">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -136,11 +137,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.roily.designpatterns.dpmain.facade.demo" />
       <recent name="com.roily.designpatterns.dpmain.chainofresponsibility.demo" />
       <recent name="com.roily.designpatterns.dpmain.strategy.strategydemo" />
       <recent name="com.roily.designpatterns.dpmain.strategy" />
       <recent name="com.roily.designpatterns.dpmain.decorator.transparentdecorator" />
-      <recent name="com.roily.designpatterns.dpmain.adapter.Interfacesplit" />
     </key>
   </component>
   <component name="RestServicesNavigator">
@@ -154,13 +155,13 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.Client">
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.proxy.cglibproxy.Client" />
+  <component name="RunManager" selected="Application.Client (1)">
+    <configuration name="Client (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.facade.demo.Client" />
       <module name="designpatterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.proxy.cglibproxy.*" />
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.facade.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -168,12 +169,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DoOperate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.chainofresponsibility.demo.DoOperate" />
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.proxy.cglibproxy.Client" />
       <module name="designpatterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.chainofresponsibility.demo.*" />
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.proxy.cglibproxy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -243,19 +244,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.DoOperate" />
       <item itemvalue="Application.Client" />
       <item itemvalue="JUnit.Client.test2" />
       <item itemvalue="JUnit.CanNotProxyAbsClass.test3" />
       <item itemvalue="JUnit.CanNotProxyAbsClass.test4" />
+      <item itemvalue="Application.Client (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Client (1)" />
         <item itemvalue="Application.Client" />
         <item itemvalue="JUnit.CanNotProxyAbsClass.test4" />
         <item itemvalue="JUnit.CanNotProxyAbsClass.test3" />
         <item itemvalue="JUnit.Client.test2" />
-        <item itemvalue="Application.DoOperate" />
       </list>
     </recent_temporary>
   </component>
@@ -438,14 +439,7 @@
       <workItem from="1655256655200" duration="18223000" />
       <workItem from="1655315231973" duration="339000" />
       <workItem from="1655395834625" duration="19747000" />
-      <workItem from="1655651429705" duration="1706000" />
-    </task>
-    <task id="LOCAL-00091" summary="工厂模式-调整">
-      <created>1654315485326</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1654315485326</updated>
+      <workItem from="1655651429705" duration="3878000" />
     </task>
     <task id="LOCAL-00092" summary="建造者模式">
       <created>1654324670358</created>
@@ -783,7 +777,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655562089728</updated>
     </task>
-    <option name="localTasksCounter" value="140" />
+    <task id="LOCAL-00140" summary="外观模式">
+      <created>1655653645951</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1655653645951</updated>
+    </task>
+    <option name="localTasksCounter" value="141" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -876,7 +877,6 @@
     <MESSAGE value="桥接模式" />
     <MESSAGE value="享元模式" />
     <MESSAGE value="System.CopyOf是浅拷贝" />
-    <MESSAGE value="外观模式" />
     <MESSAGE value="lombok" />
     <MESSAGE value="lombok UseFul" />
     <MESSAGE value="策略模式simple" />
@@ -887,7 +887,8 @@
     <MESSAGE value="责任链模式" />
     <MESSAGE value="责任链模式demo" />
     <MESSAGE value="代理模式对比装饰器模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="代理模式对比装饰器模式" />
+    <MESSAGE value="外观模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="外观模式" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
