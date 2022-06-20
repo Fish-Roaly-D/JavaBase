@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="外观模式demo">
+    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="命令模式">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -136,11 +136,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.roily.designpatterns.dpmain.memento" />
       <recent name="com.roily.designpatterns.dpmain.facade.demo" />
       <recent name="com.roily.designpatterns.dpmain.chainofresponsibility.demo" />
       <recent name="com.roily.designpatterns.dpmain.strategy.strategydemo" />
       <recent name="com.roily.designpatterns.dpmain.strategy" />
-      <recent name="com.roily.designpatterns.dpmain.decorator.transparentdecorator" />
     </key>
   </component>
   <component name="RestServicesNavigator">
@@ -154,7 +154,7 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.Client (2)">
+  <component name="RunManager" selected="Application.Client (3)">
     <configuration name="Client (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.facade.demo.Client" />
       <module name="designpatterns" />
@@ -181,6 +181,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Client (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.memento.Client" />
+      <module name="designpatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.memento.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.proxy.cglibproxy.Client" />
       <module name="designpatterns" />
@@ -194,33 +207,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CanNotProxyAbsClass.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Client.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="designpatterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.proxy.jdkproxy.jdkcannotproxyabsclass.*" />
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.memento.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.proxy.jdkproxy.jdkcannotproxyabsclass" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.proxy.jdkproxy.jdkcannotproxyabsclass.CanNotProxyAbsClass" />
-      <option name="METHOD_NAME" value="test3" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CanNotProxyAbsClass.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="designpatterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.proxy.jdkproxy.jdkcannotproxyabsclass.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.proxy.jdkproxy.jdkcannotproxyabsclass" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.proxy.jdkproxy.jdkcannotproxyabsclass.CanNotProxyAbsClass" />
-      <option name="METHOD_NAME" value="test4" />
+      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.memento" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.memento.Client" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -241,18 +238,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Client" />
-      <item itemvalue="JUnit.CanNotProxyAbsClass.test3" />
-      <item itemvalue="JUnit.CanNotProxyAbsClass.test4" />
       <item itemvalue="Application.Client (1)" />
       <item itemvalue="Application.Client (2)" />
+      <item itemvalue="Application.Client (3)" />
+      <item itemvalue="JUnit.Client.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Client (3)" />
+        <item itemvalue="JUnit.Client.test" />
         <item itemvalue="Application.Client (2)" />
         <item itemvalue="Application.Client (1)" />
         <item itemvalue="Application.Client" />
-        <item itemvalue="JUnit.CanNotProxyAbsClass.test4" />
-        <item itemvalue="JUnit.CanNotProxyAbsClass.test3" />
       </list>
     </recent_temporary>
   </component>
@@ -435,14 +432,8 @@
       <workItem from="1655256655200" duration="18223000" />
       <workItem from="1655315231973" duration="339000" />
       <workItem from="1655395834625" duration="19747000" />
-      <workItem from="1655651429705" duration="6027000" />
-    </task>
-    <task id="LOCAL-00093" summary="原型模式-拷贝">
-      <created>1654441503440</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1654441503440</updated>
+      <workItem from="1655651429705" duration="9916000" />
+      <workItem from="1655738379652" duration="885000" />
     </task>
     <task id="LOCAL-00094" summary="原型模式-循环创建、io">
       <created>1654495851570</created>
@@ -780,7 +771,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655695570819</updated>
     </task>
-    <option name="localTasksCounter" value="142" />
+    <task id="LOCAL-00142" summary="命令模式">
+      <created>1655700090791</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1655700090791</updated>
+    </task>
+    <option name="localTasksCounter" value="143" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -859,7 +857,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="项目移动mac" />
     <MESSAGE value="类的适配器模式" />
     <MESSAGE value="项目调整" />
     <MESSAGE value="方法的适配器模式" />
@@ -884,7 +881,8 @@
     <MESSAGE value="代理模式对比装饰器模式" />
     <MESSAGE value="外观模式" />
     <MESSAGE value="外观模式demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="外观模式demo" />
+    <MESSAGE value="命令模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="命令模式" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -940,6 +938,11 @@
           <url>file://$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/strategy/strategydemo/DemoTest.java</url>
           <line>22</line>
           <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/memento/Client.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

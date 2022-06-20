@@ -1,6 +1,6 @@
 package com.roily.classloader;
 
-import com.sun.javafx.animation.TickCalculation;
+//import com.sun.javafx.animation.TickCalculation;
 import org.junit.Test;
 
 /**
@@ -41,7 +41,7 @@ public class ClassLoaderTest {
         //扩展类加载器  jre/lib/ext下的类及子包下的类都是由ext加载器加载
         ClassLoader parent = systemClassLoader.getParent();
         System.out.println(parent);
-        System.out.println(TickCalculation.class.getClassLoader());
+//        System.out.println(TickCalculation.class.getClassLoader());
 
         //根加载器  代码无法获取根加载器
         ClassLoader parent1 = parent.getParent();
