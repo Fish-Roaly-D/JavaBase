@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="命令模式">
+    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="备忘录模式">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -128,19 +128,22 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/state" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.31609195" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/state" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.roily.designpatterns.dpmain.state" />
       <recent name="com.roily.designpatterns.dpmain.memento" />
       <recent name="com.roily.designpatterns.dpmain.facade.demo" />
       <recent name="com.roily.designpatterns.dpmain.chainofresponsibility.demo" />
       <recent name="com.roily.designpatterns.dpmain.strategy.strategydemo" />
-      <recent name="com.roily.designpatterns.dpmain.strategy" />
     </key>
   </component>
   <component name="RestServicesNavigator">
@@ -154,7 +157,7 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.Client (3)">
+  <component name="RunManager" selected="Application.StateTest">
     <configuration name="Client (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.facade.demo.Client" />
       <module name="designpatterns" />
@@ -194,12 +197,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.proxy.cglibproxy.Client" />
+    <configuration name="StateTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.state.StateTest" />
       <module name="designpatterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.proxy.cglibproxy.*" />
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.state.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -237,19 +240,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Client" />
       <item itemvalue="Application.Client (1)" />
       <item itemvalue="Application.Client (2)" />
       <item itemvalue="Application.Client (3)" />
       <item itemvalue="JUnit.Client.test" />
+      <item itemvalue="Application.StateTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StateTest" />
         <item itemvalue="Application.Client (3)" />
         <item itemvalue="JUnit.Client.test" />
         <item itemvalue="Application.Client (2)" />
         <item itemvalue="Application.Client (1)" />
-        <item itemvalue="Application.Client" />
       </list>
     </recent_temporary>
   </component>
@@ -433,14 +436,7 @@
       <workItem from="1655315231973" duration="339000" />
       <workItem from="1655395834625" duration="19747000" />
       <workItem from="1655651429705" duration="9916000" />
-      <workItem from="1655738379652" duration="885000" />
-    </task>
-    <task id="LOCAL-00094" summary="原型模式-循环创建、io">
-      <created>1654495851570</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1654495851572</updated>
+      <workItem from="1655738379652" duration="2739000" />
     </task>
     <task id="LOCAL-00095" summary="适配器模式">
       <created>1654514351489</created>
@@ -778,7 +774,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655700090791</updated>
     </task>
-    <option name="localTasksCounter" value="143" />
+    <task id="LOCAL-00143" summary="备忘录模式">
+      <created>1655739785800</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1655739785800</updated>
+    </task>
+    <option name="localTasksCounter" value="144" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -857,7 +860,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="类的适配器模式" />
     <MESSAGE value="项目调整" />
     <MESSAGE value="方法的适配器模式" />
     <MESSAGE value="接口的适配器模式" />
@@ -882,7 +884,8 @@
     <MESSAGE value="外观模式" />
     <MESSAGE value="外观模式demo" />
     <MESSAGE value="命令模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="命令模式" />
+    <MESSAGE value="备忘录模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="备忘录模式" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -938,11 +941,6 @@
           <url>file://$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/strategy/strategydemo/DemoTest.java</url>
           <line>22</line>
           <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/memento/Client.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
