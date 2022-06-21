@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="组合模式">
+    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="finally">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javabase/src/main/java/com/roily/aboutFinal/Demo01.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase/src/main/java/com/roily/aboutFinal/Demo01.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,82 +157,82 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Demo01.test3">
-    <configuration name="Demo01.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CollectionsTest.toUnModify">
+    <configuration name="CollectionsTest.binarySearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javabase (1)" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.aboutFinal.*" />
+          <option name="PATTERN" value="com.roily.usefultools.collections.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.aboutFinal" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.aboutFinal.Demo01" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="PACKAGE_NAME" value="com.roily.usefultools.collections" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.collections.CollectionsTest" />
+      <option name="METHOD_NAME" value="binarySearch" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo01.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CollectionsTest.collectionsSort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javabase (1)" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.aboutFinal.*" />
+          <option name="PATTERN" value="com.roily.usefultools.collections.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.aboutFinal" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.aboutFinal.Demo01" />
-      <option name="METHOD_NAME" value="test3" />
+      <option name="PACKAGE_NAME" value="com.roily.usefultools.collections" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.collections.CollectionsTest" />
+      <option name="METHOD_NAME" value="collectionsSort" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo01.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CollectionsTest.getMaxAndMin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javabase (1)" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.aboutFinal.*" />
+          <option name="PATTERN" value="com.roily.usefultools.collections.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.aboutFinal" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.aboutFinal.Demo01" />
-      <option name="METHOD_NAME" value="test5" />
+      <option name="PACKAGE_NAME" value="com.roily.usefultools.collections" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.collections.CollectionsTest" />
+      <option name="METHOD_NAME" value="getMaxAndMin" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo01.test52" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CollectionsTest.toConcurrentList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javabase (1)" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.aboutFinal.*" />
+          <option name="PATTERN" value="com.roily.usefultools.collections.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.aboutFinal" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.aboutFinal.Demo01" />
-      <option name="METHOD_NAME" value="test52" />
+      <option name="PACKAGE_NAME" value="com.roily.usefultools.collections" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.collections.CollectionsTest" />
+      <option name="METHOD_NAME" value="toConcurrentList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo01.testFinallyBeforeReturn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CollectionsTest.toUnModify" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javabase (1)" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.aboutFinal.*" />
+          <option name="PATTERN" value="com.roily.usefultools.collections.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.aboutFinal" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.aboutFinal.Demo01" />
-      <option name="METHOD_NAME" value="testFinallyBeforeReturn" />
+      <option name="PACKAGE_NAME" value="com.roily.usefultools.collections" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.collections.CollectionsTest" />
+      <option name="METHOD_NAME" value="toUnModify" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -253,19 +252,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.Demo01.test3" />
-      <item itemvalue="JUnit.Demo01.test" />
-      <item itemvalue="JUnit.Demo01.test5" />
-      <item itemvalue="JUnit.Demo01.test52" />
-      <item itemvalue="JUnit.Demo01.testFinallyBeforeReturn" />
+      <item itemvalue="JUnit.CollectionsTest.collectionsSort" />
+      <item itemvalue="JUnit.CollectionsTest.getMaxAndMin" />
+      <item itemvalue="JUnit.CollectionsTest.toConcurrentList" />
+      <item itemvalue="JUnit.CollectionsTest.binarySearch" />
+      <item itemvalue="JUnit.CollectionsTest.toUnModify" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Demo01.test3" />
-        <item itemvalue="JUnit.Demo01.testFinallyBeforeReturn" />
-        <item itemvalue="JUnit.Demo01.test52" />
-        <item itemvalue="JUnit.Demo01.test5" />
-        <item itemvalue="JUnit.Demo01.test" />
+        <item itemvalue="JUnit.CollectionsTest.toUnModify" />
+        <item itemvalue="JUnit.CollectionsTest.binarySearch" />
+        <item itemvalue="JUnit.CollectionsTest.toConcurrentList" />
+        <item itemvalue="JUnit.CollectionsTest.getMaxAndMin" />
+        <item itemvalue="JUnit.CollectionsTest.collectionsSort" />
       </list>
     </recent_temporary>
   </component>
@@ -449,14 +448,7 @@
       <workItem from="1655315231973" duration="339000" />
       <workItem from="1655395834625" duration="19747000" />
       <workItem from="1655651429705" duration="9916000" />
-      <workItem from="1655738379652" duration="11289000" />
-    </task>
-    <task id="LOCAL-00100" summary="装饰器模式">
-      <created>1654583236368</created>
-      <option name="number" value="00100" />
-      <option name="presentableId" value="LOCAL-00100" />
-      <option name="project" value="LOCAL" />
-      <updated>1654583236368</updated>
+      <workItem from="1655738379652" duration="15798000" />
     </task>
     <task id="LOCAL-00101" summary="包装模式">
       <created>1654600724701</created>
@@ -794,7 +786,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655828770602</updated>
     </task>
-    <option name="localTasksCounter" value="149" />
+    <task id="LOCAL-00149" summary="finally">
+      <created>1655832760379</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1655832760379</updated>
+    </task>
+    <option name="localTasksCounter" value="150" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -873,7 +872,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="简单装饰器模式" />
     <MESSAGE value="透明化装饰器模式" />
     <MESSAGE value="静态代理" />
     <MESSAGE value="简单静态代理" />
@@ -898,7 +896,8 @@
     <MESSAGE value="备忘录模" />
     <MESSAGE value="状态模式" />
     <MESSAGE value="组合模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="组合模式" />
+    <MESSAGE value="finally" />
+    <option name="LAST_COMMIT_MESSAGE" value="finally" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -910,65 +909,6 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/base-collection-01/src/main/java/com/roily/tree/BST.java</url>
-          <line>74</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/base-collection-01/src/main/java/com/roily/stack/arraystack/ArrayStackTest.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/base-collection-01/src/main/java/com/roily/stack/linkedstack/LinkedStack.java</url>
-          <line>67</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/base-collection-01/src/main/java/com/roily/stack/stackuseful/ExpressionInfixToSuffix.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/base-collection-01/src/main/java/com/roily/stack/stackuseful/CalculateSuffix.java</url>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/base-collection-01/src/main/java/com/roily/bitset/test01.java</url>
-          <line>120</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/base-collection-01/src/main/java/com/roily/bitset/test01.java</url>
-          <line>119</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/strategy/strategydemo/Context.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/strategy/strategydemo/DemoTest.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/javabase/src/main/java/com/roily/aboutFinal/Demo01.java</url>
-          <line>54</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/javabase/src/main/java/com/roily/aboutFinal/Demo01.java</url>
-          <line>70</line>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/javabase/src/main/java/com/roily/aboutFinal/Demo01.java</url>
-          <line>102</line>
-          <option name="timeStamp" value="34" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
