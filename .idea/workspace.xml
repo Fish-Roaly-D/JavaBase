@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="状态模式">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/state/demo/Finish.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/state/demo/Finish.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/state/demo/StateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/state/demo/StateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/composite/open/CompanyComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/composite/open/CompanyComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/composite/open/DepartmentComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/composite/open/DepartmentComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/composite/open/EmployeeComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/composite/open/EmployeeComponent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,13 +161,13 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.StateTest (1)">
-    <configuration name="Client (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.command.Client" />
+  <component name="RunManager" selected="Application.Client">
+    <configuration name="Client (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.memento.Client" />
       <module name="designpatterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.command.*" />
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.memento.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -174,12 +175,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Client (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.memento.Client" />
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.composite.open.Client" />
       <module name="designpatterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.memento.*" />
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.composite.open.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -243,19 +244,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Client (2)" />
       <item itemvalue="Application.Client (3)" />
       <item itemvalue="JUnit.Client.test" />
       <item itemvalue="Application.StateTest" />
       <item itemvalue="Application.StateTest (1)" />
+      <item itemvalue="Application.Client" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Client" />
         <item itemvalue="Application.StateTest (1)" />
         <item itemvalue="Application.StateTest" />
         <item itemvalue="Application.Client (3)" />
         <item itemvalue="JUnit.Client.test" />
-        <item itemvalue="Application.Client (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -439,21 +440,7 @@
       <workItem from="1655315231973" duration="339000" />
       <workItem from="1655395834625" duration="19747000" />
       <workItem from="1655651429705" duration="9916000" />
-      <workItem from="1655738379652" duration="5086000" />
-    </task>
-    <task id="LOCAL-00097" summary="桥接模式">
-      <created>1654519172382</created>
-      <option name="number" value="00097" />
-      <option name="presentableId" value="LOCAL-00097" />
-      <option name="project" value="LOCAL" />
-      <updated>1654519172382</updated>
-    </task>
-    <task id="LOCAL-00098" summary="过滤器模式">
-      <created>1654533728974</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1654533728974</updated>
+      <workItem from="1655738379652" duration="7419000" />
     </task>
     <task id="LOCAL-00099" summary="组合模式">
       <created>1654538550088</created>
@@ -784,7 +771,21 @@
       <option name="project" value="LOCAL" />
       <updated>1655821698779</updated>
     </task>
-    <option name="localTasksCounter" value="146" />
+    <task id="LOCAL-00146" summary="状态模式">
+      <created>1655822704232</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1655822704232</updated>
+    </task>
+    <task id="LOCAL-00147" summary="状态模式">
+      <created>1655822710586</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1655822710586</updated>
+    </task>
+    <option name="localTasksCounter" value="148" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

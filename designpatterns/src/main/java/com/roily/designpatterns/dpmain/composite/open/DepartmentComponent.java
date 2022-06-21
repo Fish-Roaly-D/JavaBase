@@ -3,7 +3,6 @@ package com.roily.designpatterns.dpmain.composite.open;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -17,9 +16,13 @@ import java.util.List;
 @AllArgsConstructor
 public class DepartmentComponent implements CompanyComponent {
 
-    //组件名称
+    /**
+     * 组件名称
+     */
     private String name;
-    //树枝节点下的叶子
+    /**
+     * 树枝节点下的叶子
+     */
     public List<CompanyComponent> components;
 
 

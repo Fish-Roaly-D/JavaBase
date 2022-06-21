@@ -3,9 +3,6 @@ package com.roily.designpatterns.dpmain.composite.open;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * @version 1.0.0
  * @Description 员工类
@@ -17,7 +14,9 @@ import java.util.List;
 @AllArgsConstructor
 public class EmployeeComponent implements CompanyComponent {
 
-    //组件名称
+    /**
+     * 组件名称
+     */
     private String name;
 
     @Override
@@ -34,7 +33,7 @@ public class EmployeeComponent implements CompanyComponent {
     public void show(int depth) {
         //节点越深，等级越低
         for (int i = 0; i < depth; i++) {
-            System.out.printf("-");
+            System.out.print("-");
         }
         System.out.println(this.getName());
     }
