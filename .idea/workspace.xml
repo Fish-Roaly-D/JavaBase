@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="finally">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="Collections" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -448,14 +446,7 @@
       <workItem from="1655315231973" duration="339000" />
       <workItem from="1655395834625" duration="19747000" />
       <workItem from="1655651429705" duration="9916000" />
-      <workItem from="1655738379652" duration="15798000" />
-    </task>
-    <task id="LOCAL-00101" summary="包装模式">
-      <created>1654600724701</created>
-      <option name="number" value="00101" />
-      <option name="presentableId" value="LOCAL-00101" />
-      <option name="project" value="LOCAL" />
-      <updated>1654600724701</updated>
+      <workItem from="1655738379652" duration="16142000" />
     </task>
     <task id="LOCAL-00102" summary="享元模式在java中的应用">
       <created>1654616639077</created>
@@ -793,7 +784,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655832760379</updated>
     </task>
-    <option name="localTasksCounter" value="150" />
+    <task id="LOCAL-00150" summary="Collections">
+      <created>1655837179467</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1655837179467</updated>
+    </task>
+    <option name="localTasksCounter" value="151" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -872,7 +870,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="透明化装饰器模式" />
     <MESSAGE value="静态代理" />
     <MESSAGE value="简单静态代理" />
     <MESSAGE value="jdk动态代理代理、通用写法" />
@@ -897,7 +894,8 @@
     <MESSAGE value="状态模式" />
     <MESSAGE value="组合模式" />
     <MESSAGE value="finally" />
-    <option name="LAST_COMMIT_MESSAGE" value="finally" />
+    <MESSAGE value="Collections" />
+    <option name="LAST_COMMIT_MESSAGE" value="Collections" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
