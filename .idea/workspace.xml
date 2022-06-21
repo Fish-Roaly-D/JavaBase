@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="状态模式">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/state/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/state/State.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/state/demo/Finish.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/state/demo/Finish.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/state/demo/StateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/state/demo/StateTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,11 +142,11 @@
       <recent name="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/state" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.roily.designpatterns.dpmain.state.demo" />
       <recent name="com.roily.designpatterns.dpmain.state" />
       <recent name="com.roily.designpatterns.dpmain.memento" />
       <recent name="com.roily.designpatterns.dpmain.facade.demo" />
       <recent name="com.roily.designpatterns.dpmain.chainofresponsibility.demo" />
-      <recent name="com.roily.designpatterns.dpmain.strategy.strategydemo" />
     </key>
   </component>
   <component name="RestServicesNavigator">
@@ -158,20 +160,7 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.StateTest">
-    <configuration name="Client (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.facade.demo.Client" />
-      <module name="designpatterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.designpatterns.dpmain.facade.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.StateTest (1)">
     <configuration name="Client (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.command.Client" />
       <module name="designpatterns" />
@@ -191,6 +180,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.roily.designpatterns.dpmain.memento.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StateTest (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.state.demo.StateTest" />
+      <module name="designpatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.state.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -241,19 +243,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Client (1)" />
       <item itemvalue="Application.Client (2)" />
       <item itemvalue="Application.Client (3)" />
       <item itemvalue="JUnit.Client.test" />
       <item itemvalue="Application.StateTest" />
+      <item itemvalue="Application.StateTest (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StateTest (1)" />
         <item itemvalue="Application.StateTest" />
         <item itemvalue="Application.Client (3)" />
         <item itemvalue="JUnit.Client.test" />
         <item itemvalue="Application.Client (2)" />
-        <item itemvalue="Application.Client (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -437,14 +439,7 @@
       <workItem from="1655315231973" duration="339000" />
       <workItem from="1655395834625" duration="19747000" />
       <workItem from="1655651429705" duration="9916000" />
-      <workItem from="1655738379652" duration="4380000" />
-    </task>
-    <task id="LOCAL-00096" summary="适配器模式">
-      <created>1654519139814</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1654519139814</updated>
+      <workItem from="1655738379652" duration="5086000" />
     </task>
     <task id="LOCAL-00097" summary="桥接模式">
       <created>1654519172382</created>
@@ -782,7 +777,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655819955249</updated>
     </task>
-    <option name="localTasksCounter" value="145" />
+    <task id="LOCAL-00145" summary="状态模式">
+      <created>1655821698779</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1655821698779</updated>
+    </task>
+    <option name="localTasksCounter" value="146" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
