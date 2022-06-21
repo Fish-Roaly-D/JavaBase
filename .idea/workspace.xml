@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="备忘录模式">
+    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="状态模式">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/state/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/state/State.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -436,14 +437,7 @@
       <workItem from="1655315231973" duration="339000" />
       <workItem from="1655395834625" duration="19747000" />
       <workItem from="1655651429705" duration="9916000" />
-      <workItem from="1655738379652" duration="2739000" />
-    </task>
-    <task id="LOCAL-00095" summary="适配器模式">
-      <created>1654514351489</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1654514351489</updated>
+      <workItem from="1655738379652" duration="4380000" />
     </task>
     <task id="LOCAL-00096" summary="适配器模式">
       <created>1654519139814</created>
@@ -781,7 +775,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655739785800</updated>
     </task>
-    <option name="localTasksCounter" value="144" />
+    <task id="LOCAL-00144" summary="状态模式">
+      <created>1655819955249</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1655819955249</updated>
+    </task>
+    <option name="localTasksCounter" value="145" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -860,8 +861,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="项目调整" />
-    <MESSAGE value="方法的适配器模式" />
     <MESSAGE value="接口的适配器模式" />
     <MESSAGE value="简单装饰器模式" />
     <MESSAGE value="透明化装饰器模式" />
@@ -885,7 +884,9 @@
     <MESSAGE value="外观模式demo" />
     <MESSAGE value="命令模式" />
     <MESSAGE value="备忘录模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="备忘录模式" />
+    <MESSAGE value="备忘录模" />
+    <MESSAGE value="状态模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="状态模式" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
