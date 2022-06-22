@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="Collections">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="CollectionUtils">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javabase/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/javabase/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javabase/src/main/java/com/roily/usefultools/collections/CollectionUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase/src/main/java/com/roily/usefultools/collections/CollectionUtilsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,8 +158,8 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CollectionUtilsTest.testCollectionMerge">
-    <configuration name="CollectionUtilsTest.testCollectionIsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ListsTest.reverse">
+    <configuration name="ListsTest.cartesianProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javabase (1)" />
       <extension name="coverage">
         <pattern>
@@ -170,14 +168,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.roily.usefultools.collections" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.collections.CollectionUtilsTest" />
-      <option name="METHOD_NAME" value="testCollectionIsEmpty" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.collections.ListsTest" />
+      <option name="METHOD_NAME" value="cartesianProduct" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CollectionUtilsTest.testCollectionMerge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ListsTest.reverse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javabase (1)" />
       <extension name="coverage">
         <pattern>
@@ -186,14 +184,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.roily.usefultools.collections" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.collections.CollectionUtilsTest" />
-      <option name="METHOD_NAME" value="testCollectionMerge" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.collections.ListsTest" />
+      <option name="METHOD_NAME" value="reverse" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CollectionsTest.binarySearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ListsTest.splitList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javabase (1)" />
       <extension name="coverage">
         <pattern>
@@ -202,14 +200,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.roily.usefultools.collections" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.collections.CollectionsTest" />
-      <option name="METHOD_NAME" value="binarySearch" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.collections.ListsTest" />
+      <option name="METHOD_NAME" value="splitList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CollectionsTest.toConcurrentList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ListsTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javabase (1)" />
       <extension name="coverage">
         <pattern>
@@ -218,14 +216,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.roily.usefultools.collections" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.collections.CollectionsTest" />
-      <option name="METHOD_NAME" value="toConcurrentList" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.collections.ListsTest" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CollectionsTest.toUnModify" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ListsTest.transForm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javabase (1)" />
       <extension name="coverage">
         <pattern>
@@ -234,8 +232,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.roily.usefultools.collections" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.collections.CollectionsTest" />
-      <option name="METHOD_NAME" value="toUnModify" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.collections.ListsTest" />
+      <option name="METHOD_NAME" value="transForm" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -255,19 +253,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.CollectionsTest.toConcurrentList" />
-      <item itemvalue="JUnit.CollectionsTest.binarySearch" />
-      <item itemvalue="JUnit.CollectionsTest.toUnModify" />
-      <item itemvalue="JUnit.CollectionUtilsTest.testCollectionIsEmpty" />
-      <item itemvalue="JUnit.CollectionUtilsTest.testCollectionMerge" />
+      <item itemvalue="JUnit.ListsTest.cartesianProduct" />
+      <item itemvalue="JUnit.ListsTest.splitList" />
+      <item itemvalue="JUnit.ListsTest.test" />
+      <item itemvalue="JUnit.ListsTest.transForm" />
+      <item itemvalue="JUnit.ListsTest.reverse" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CollectionUtilsTest.testCollectionMerge" />
-        <item itemvalue="JUnit.CollectionUtilsTest.testCollectionIsEmpty" />
-        <item itemvalue="JUnit.CollectionsTest.toUnModify" />
-        <item itemvalue="JUnit.CollectionsTest.binarySearch" />
-        <item itemvalue="JUnit.CollectionsTest.toConcurrentList" />
+        <item itemvalue="JUnit.ListsTest.reverse" />
+        <item itemvalue="JUnit.ListsTest.transForm" />
+        <item itemvalue="JUnit.ListsTest.test" />
+        <item itemvalue="JUnit.ListsTest.splitList" />
+        <item itemvalue="JUnit.ListsTest.cartesianProduct" />
       </list>
     </recent_temporary>
   </component>
@@ -451,14 +449,7 @@
       <workItem from="1655315231973" duration="339000" />
       <workItem from="1655395834625" duration="19747000" />
       <workItem from="1655651429705" duration="9916000" />
-      <workItem from="1655738379652" duration="21556000" />
-    </task>
-    <task id="LOCAL-00103" summary="享元模式">
-      <created>1654620149903</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
-      <option name="project" value="LOCAL" />
-      <updated>1654620149903</updated>
+      <workItem from="1655738379652" duration="24693000" />
     </task>
     <task id="LOCAL-00104" summary="里氏替换原则">
       <created>1654696554885</created>
@@ -796,7 +787,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655837515942</updated>
     </task>
-    <option name="localTasksCounter" value="152" />
+    <task id="LOCAL-00152" summary="CollectionUtils">
+      <created>1655897692739</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1655897692739</updated>
+    </task>
+    <option name="localTasksCounter" value="153" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -875,7 +873,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="静态代理" />
     <MESSAGE value="简单静态代理" />
     <MESSAGE value="jdk动态代理代理、通用写法" />
     <MESSAGE value="桥接模式" />
@@ -900,7 +897,8 @@
     <MESSAGE value="组合模式" />
     <MESSAGE value="finally" />
     <MESSAGE value="Collections" />
-    <option name="LAST_COMMIT_MESSAGE" value="Collections" />
+    <MESSAGE value="CollectionUtils" />
+    <option name="LAST_COMMIT_MESSAGE" value="CollectionUtils" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

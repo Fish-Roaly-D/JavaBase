@@ -23,7 +23,7 @@ public class CollectionUtilsTest {
      * @param end
      * @return
      */
-    public List<Integer> createRandomCollection(int count, int start, int end) {
+    public static List<Integer> createRandomCollection(int count, int start, int end) {
         List<Integer> list = new ArrayList<>();
         for (int i = 0; i < count; i++) {
             list.add((int) (Math.random() * (end - start)) + start);
