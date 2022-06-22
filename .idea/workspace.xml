@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="Collections" />
+    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="Collections">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javabase/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/javabase/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -155,7 +160,39 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CollectionsTest.toUnModify">
+  <component name="RunManager" selected="JUnit.CollectionUtilsTest.testCollectionMerge">
+    <configuration name="CollectionUtilsTest.testCollectionIsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javabase (1)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.usefultools.collections.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.roily.usefultools.collections" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.collections.CollectionUtilsTest" />
+      <option name="METHOD_NAME" value="testCollectionIsEmpty" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CollectionUtilsTest.testCollectionMerge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javabase (1)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.usefultools.collections.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.roily.usefultools.collections" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.collections.CollectionUtilsTest" />
+      <option name="METHOD_NAME" value="testCollectionMerge" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CollectionsTest.binarySearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javabase (1)" />
       <extension name="coverage">
@@ -167,38 +204,6 @@
       <option name="PACKAGE_NAME" value="com.roily.usefultools.collections" />
       <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.collections.CollectionsTest" />
       <option name="METHOD_NAME" value="binarySearch" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CollectionsTest.collectionsSort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javabase (1)" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.usefultools.collections.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.roily.usefultools.collections" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.collections.CollectionsTest" />
-      <option name="METHOD_NAME" value="collectionsSort" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CollectionsTest.getMaxAndMin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javabase (1)" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.usefultools.collections.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.roily.usefultools.collections" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.collections.CollectionsTest" />
-      <option name="METHOD_NAME" value="getMaxAndMin" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -250,19 +255,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.CollectionsTest.collectionsSort" />
-      <item itemvalue="JUnit.CollectionsTest.getMaxAndMin" />
       <item itemvalue="JUnit.CollectionsTest.toConcurrentList" />
       <item itemvalue="JUnit.CollectionsTest.binarySearch" />
       <item itemvalue="JUnit.CollectionsTest.toUnModify" />
+      <item itemvalue="JUnit.CollectionUtilsTest.testCollectionIsEmpty" />
+      <item itemvalue="JUnit.CollectionUtilsTest.testCollectionMerge" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CollectionUtilsTest.testCollectionMerge" />
+        <item itemvalue="JUnit.CollectionUtilsTest.testCollectionIsEmpty" />
         <item itemvalue="JUnit.CollectionsTest.toUnModify" />
         <item itemvalue="JUnit.CollectionsTest.binarySearch" />
         <item itemvalue="JUnit.CollectionsTest.toConcurrentList" />
-        <item itemvalue="JUnit.CollectionsTest.getMaxAndMin" />
-        <item itemvalue="JUnit.CollectionsTest.collectionsSort" />
       </list>
     </recent_temporary>
   </component>
@@ -446,14 +451,7 @@
       <workItem from="1655315231973" duration="339000" />
       <workItem from="1655395834625" duration="19747000" />
       <workItem from="1655651429705" duration="9916000" />
-      <workItem from="1655738379652" duration="16142000" />
-    </task>
-    <task id="LOCAL-00102" summary="享元模式在java中的应用">
-      <created>1654616639077</created>
-      <option name="number" value="00102" />
-      <option name="presentableId" value="LOCAL-00102" />
-      <option name="project" value="LOCAL" />
-      <updated>1654616639077</updated>
+      <workItem from="1655738379652" duration="21556000" />
     </task>
     <task id="LOCAL-00103" summary="享元模式">
       <created>1654620149903</created>
@@ -791,7 +789,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655837179467</updated>
     </task>
-    <option name="localTasksCounter" value="151" />
+    <task id="LOCAL-00151" summary="Collections">
+      <created>1655837515942</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1655837515942</updated>
+    </task>
+    <option name="localTasksCounter" value="152" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

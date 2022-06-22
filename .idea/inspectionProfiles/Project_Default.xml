@@ -32,6 +32,13 @@
       <option name="IGNORE_POINT_TO_ITSELF" value="false" />
       <option name="myAdditionalJavadocTags" value="author:,date:,description,Description,ClassName,date,className：ClassAdapterTest,description:,dte:,className：ArmSoft,className：Component01,className：CanNotProxyAbsClass,className：Assemble,className：LombokObj,className：OutSideDept,description：上下文对象,className：ActionInteface" />
     </inspection_tool>
+    <inspection_tool class="MavenPackageUpdate" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="excludeList">
+        <list>
+          <option value="org.springframework:spring-context" />
+        </list>
+      </option>
+    </inspection_tool>
     <inspection_tool class="SerializableHasSerialVersionUIDField" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="ignoreAnonymousInnerClasses" value="false" />
       <option name="superClassString" value="java.awt.Component" />
