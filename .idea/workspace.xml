@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="CollectionUtils">
+    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="guaua Lists">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javabase/src/main/java/com/roily/usefultools/collections/CollectionUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase/src/main/java/com/roily/usefultools/collections/CollectionUtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javabase/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/javabase/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,82 +158,82 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ListsTest.reverse">
-    <configuration name="ListsTest.cartesianProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.StringUtilsTest.join">
+    <configuration name="BooleanUtilsTest.booleanUtils" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javabase (1)" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.usefultools.collections.*" />
+          <option name="PATTERN" value="com.roily.usefultools.object.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.usefultools.collections" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.collections.ListsTest" />
-      <option name="METHOD_NAME" value="cartesianProduct" />
+      <option name="PACKAGE_NAME" value="com.roily.usefultools.object" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.object.BooleanUtilsTest" />
+      <option name="METHOD_NAME" value="booleanUtils" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ListsTest.reverse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StringUtilsTest.isEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javabase (1)" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.usefultools.collections.*" />
+          <option name="PATTERN" value="com.roily.usefultools.object.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.usefultools.collections" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.collections.ListsTest" />
-      <option name="METHOD_NAME" value="reverse" />
+      <option name="PACKAGE_NAME" value="com.roily.usefultools.object" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.object.StringUtilsTest" />
+      <option name="METHOD_NAME" value="isEmpty" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ListsTest.splitList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StringUtilsTest.join" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javabase (1)" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.usefultools.collections.*" />
+          <option name="PATTERN" value="com.roily.usefultools.object.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.usefultools.collections" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.collections.ListsTest" />
-      <option name="METHOD_NAME" value="splitList" />
+      <option name="PACKAGE_NAME" value="com.roily.usefultools.object" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.object.StringUtilsTest" />
+      <option name="METHOD_NAME" value="join" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ListsTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StringUtilsTest.split" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javabase (1)" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.usefultools.collections.*" />
+          <option name="PATTERN" value="com.roily.usefultools.object.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.usefultools.collections" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.collections.ListsTest" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="PACKAGE_NAME" value="com.roily.usefultools.object" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.object.StringUtilsTest" />
+      <option name="METHOD_NAME" value="split" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ListsTest.transForm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StringUtilsTest.testIsNumeric" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javabase (1)" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.usefultools.collections.*" />
+          <option name="PATTERN" value="com.roily.usefultools.object.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.usefultools.collections" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.collections.ListsTest" />
-      <option name="METHOD_NAME" value="transForm" />
+      <option name="PACKAGE_NAME" value="com.roily.usefultools.object" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.object.StringUtilsTest" />
+      <option name="METHOD_NAME" value="testIsNumeric" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -253,19 +253,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ListsTest.cartesianProduct" />
-      <item itemvalue="JUnit.ListsTest.splitList" />
-      <item itemvalue="JUnit.ListsTest.test" />
-      <item itemvalue="JUnit.ListsTest.transForm" />
-      <item itemvalue="JUnit.ListsTest.reverse" />
+      <item itemvalue="JUnit.BooleanUtilsTest.booleanUtils" />
+      <item itemvalue="JUnit.StringUtilsTest.isEmpty" />
+      <item itemvalue="JUnit.StringUtilsTest.split" />
+      <item itemvalue="JUnit.StringUtilsTest.testIsNumeric" />
+      <item itemvalue="JUnit.StringUtilsTest.join" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ListsTest.reverse" />
-        <item itemvalue="JUnit.ListsTest.transForm" />
-        <item itemvalue="JUnit.ListsTest.test" />
-        <item itemvalue="JUnit.ListsTest.splitList" />
-        <item itemvalue="JUnit.ListsTest.cartesianProduct" />
+        <item itemvalue="JUnit.StringUtilsTest.join" />
+        <item itemvalue="JUnit.StringUtilsTest.testIsNumeric" />
+        <item itemvalue="JUnit.StringUtilsTest.split" />
+        <item itemvalue="JUnit.StringUtilsTest.isEmpty" />
+        <item itemvalue="JUnit.BooleanUtilsTest.booleanUtils" />
       </list>
     </recent_temporary>
   </component>
@@ -449,14 +449,7 @@
       <workItem from="1655315231973" duration="339000" />
       <workItem from="1655395834625" duration="19747000" />
       <workItem from="1655651429705" duration="9916000" />
-      <workItem from="1655738379652" duration="24693000" />
-    </task>
-    <task id="LOCAL-00104" summary="里氏替换原则">
-      <created>1654696554885</created>
-      <option name="number" value="00104" />
-      <option name="presentableId" value="LOCAL-00104" />
-      <option name="project" value="LOCAL" />
-      <updated>1654696554886</updated>
+      <workItem from="1655738379652" duration="30338000" />
     </task>
     <task id="LOCAL-00105" summary="静态代理">
       <created>1654702781635</created>
@@ -794,7 +787,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655897692739</updated>
     </task>
-    <option name="localTasksCounter" value="153" />
+    <task id="LOCAL-00153" summary="guaua Lists">
+      <created>1655903930284</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1655903930284</updated>
+    </task>
+    <option name="localTasksCounter" value="154" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -873,7 +873,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="简单静态代理" />
     <MESSAGE value="jdk动态代理代理、通用写法" />
     <MESSAGE value="桥接模式" />
     <MESSAGE value="享元模式" />
@@ -898,7 +897,8 @@
     <MESSAGE value="finally" />
     <MESSAGE value="Collections" />
     <MESSAGE value="CollectionUtils" />
-    <option name="LAST_COMMIT_MESSAGE" value="CollectionUtils" />
+    <MESSAGE value="guaua Lists" />
+    <option name="LAST_COMMIT_MESSAGE" value="guaua Lists" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
