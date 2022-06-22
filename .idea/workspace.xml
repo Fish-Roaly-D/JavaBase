@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="StringUtils">
+    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="Assert">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javabase/src/main/java/com/roily/usefultools/assertt/AssertTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase/src/main/java/com/roily/usefultools/assertt/AssertTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +158,55 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AssertTest.isNotEmpty">
+  <component name="RunManager" selected="JUnit.AssertTest.assertAssignable">
+    <configuration name="AssertTest.assertAssignable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javabase (1)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.usefultools.assertt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.roily.usefultools.assertt" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.assertt.AssertTest" />
+      <option name="METHOD_NAME" value="assertAssignable" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AssertTest.assertBoolean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javabase (1)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.usefultools.assertt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.roily.usefultools.assertt" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.assertt.AssertTest" />
+      <option name="METHOD_NAME" value="assertBoolean" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AssertTest.assertInstance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javabase (1)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.usefultools.assertt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.roily.usefultools.assertt" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.assertt.AssertTest" />
+      <option name="METHOD_NAME" value="assertInstance" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AssertTest.isNotEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javabase (1)" />
       <extension name="coverage">
@@ -190,54 +239,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringUtilsTest.join" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javabase (1)" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.usefultools.object.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.roily.usefultools.object" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.object.StringUtilsTest" />
-      <option name="METHOD_NAME" value="join" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StringUtilsTest.split" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javabase (1)" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.usefultools.object.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.roily.usefultools.object" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.object.StringUtilsTest" />
-      <option name="METHOD_NAME" value="split" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StringUtilsTest.testIsNumeric" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javabase (1)" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.usefultools.object.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.roily.usefultools.object" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.object.StringUtilsTest" />
-      <option name="METHOD_NAME" value="testIsNumeric" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="mybatis-03" />
       <method v="2">
@@ -252,19 +253,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.StringUtilsTest.split" />
-      <item itemvalue="JUnit.StringUtilsTest.testIsNumeric" />
-      <item itemvalue="JUnit.StringUtilsTest.join" />
       <item itemvalue="JUnit.AssertTest.testIsNull" />
       <item itemvalue="JUnit.AssertTest.isNotEmpty" />
+      <item itemvalue="JUnit.AssertTest.assertBoolean" />
+      <item itemvalue="JUnit.AssertTest.assertInstance" />
+      <item itemvalue="JUnit.AssertTest.assertAssignable" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AssertTest.assertAssignable" />
+        <item itemvalue="JUnit.AssertTest.assertInstance" />
+        <item itemvalue="JUnit.AssertTest.assertBoolean" />
         <item itemvalue="JUnit.AssertTest.isNotEmpty" />
         <item itemvalue="JUnit.AssertTest.testIsNull" />
-        <item itemvalue="JUnit.StringUtilsTest.join" />
-        <item itemvalue="JUnit.StringUtilsTest.testIsNumeric" />
-        <item itemvalue="JUnit.StringUtilsTest.split" />
       </list>
     </recent_temporary>
   </component>
@@ -448,14 +449,7 @@
       <workItem from="1655315231973" duration="339000" />
       <workItem from="1655395834625" duration="19747000" />
       <workItem from="1655651429705" duration="9916000" />
-      <workItem from="1655738379652" duration="31927000" />
-    </task>
-    <task id="LOCAL-00108" summary="动态代理">
-      <created>1654706251213</created>
-      <option name="number" value="00108" />
-      <option name="presentableId" value="LOCAL-00108" />
-      <option name="project" value="LOCAL" />
-      <updated>1654706251213</updated>
+      <workItem from="1655738379652" duration="32710000" />
     </task>
     <task id="LOCAL-00109" summary="jdk动态代理智能代理实现接口的类">
       <created>1654789373852</created>
@@ -793,7 +787,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655909859965</updated>
     </task>
-    <option name="localTasksCounter" value="157" />
+    <task id="LOCAL-00157" summary="Assert">
+      <created>1655913264685</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1655913264685</updated>
+    </task>
+    <option name="localTasksCounter" value="158" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -872,7 +873,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="System.CopyOf是浅拷贝" />
     <MESSAGE value="lombok" />
     <MESSAGE value="lombok UseFul" />
     <MESSAGE value="策略模式simple" />
@@ -897,7 +897,8 @@
     <MESSAGE value="objectutils" />
     <MESSAGE value="booleanUtils" />
     <MESSAGE value="StringUtils" />
-    <option name="LAST_COMMIT_MESSAGE" value="StringUtils" />
+    <MESSAGE value="Assert" />
+    <option name="LAST_COMMIT_MESSAGE" value="Assert" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -909,6 +910,11 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/javabase/src/main/java/com/roily/usefultools/assertt/AssertTest.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="37" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
