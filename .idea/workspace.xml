@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="Assert">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javabase/src/main/java/com/roily/usefultools/assertt/AssertTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase/src/main/java/com/roily/usefultools/assertt/AssertTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javabase/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/javabase/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,82 +158,81 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AssertTest.assertAssignable">
-    <configuration name="AssertTest.assertAssignable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.IoUtilsTest.fileCopy">
+    <configuration name="IoUtilsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javabase (1)" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.usefultools.assertt.*" />
+          <option name="PATTERN" value="com.roily.usefultools.ioutils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.usefultools.assertt" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.assertt.AssertTest" />
-      <option name="METHOD_NAME" value="assertAssignable" />
+      <option name="PACKAGE_NAME" value="com.roily.usefultools.ioutils" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.ioutils.IoUtilsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IoUtilsTest.fileCopy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javabase (1)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.usefultools.ioutils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.roily.usefultools.ioutils" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.ioutils.IoUtilsTest" />
+      <option name="METHOD_NAME" value="fileCopy" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AssertTest.assertBoolean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IoUtilsTest.readToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javabase (1)" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.usefultools.assertt.*" />
+          <option name="PATTERN" value="com.roily.usefultools.ioutils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.usefultools.assertt" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.assertt.AssertTest" />
-      <option name="METHOD_NAME" value="assertBoolean" />
+      <option name="PACKAGE_NAME" value="com.roily.usefultools.ioutils" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.ioutils.IoUtilsTest" />
+      <option name="METHOD_NAME" value="readToString" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AssertTest.assertInstance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IoUtilsTest.writeToFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javabase (1)" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.usefultools.assertt.*" />
+          <option name="PATTERN" value="com.roily.usefultools.ioutils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.usefultools.assertt" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.assertt.AssertTest" />
-      <option name="METHOD_NAME" value="assertInstance" />
+      <option name="PACKAGE_NAME" value="com.roily.usefultools.ioutils" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.ioutils.IoUtilsTest" />
+      <option name="METHOD_NAME" value="writeToFile" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AssertTest.isNotEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IoUtilsTest.writeToFile2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javabase (1)" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.usefultools.assertt.*" />
+          <option name="PATTERN" value="com.roily.usefultools.ioutils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.usefultools.assertt" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.assertt.AssertTest" />
-      <option name="METHOD_NAME" value="isNotEmpty" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AssertTest.testIsNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javabase (1)" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.usefultools.assertt.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.roily.usefultools.assertt" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.assertt.AssertTest" />
-      <option name="METHOD_NAME" value="testIsNull" />
+      <option name="PACKAGE_NAME" value="com.roily.usefultools.ioutils" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.ioutils.IoUtilsTest" />
+      <option name="METHOD_NAME" value="writeToFile2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -253,19 +252,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.AssertTest.testIsNull" />
-      <item itemvalue="JUnit.AssertTest.isNotEmpty" />
-      <item itemvalue="JUnit.AssertTest.assertBoolean" />
-      <item itemvalue="JUnit.AssertTest.assertInstance" />
-      <item itemvalue="JUnit.AssertTest.assertAssignable" />
+      <item itemvalue="JUnit.IoUtilsTest.readToString" />
+      <item itemvalue="JUnit.IoUtilsTest.writeToFile" />
+      <item itemvalue="JUnit.IoUtilsTest.writeToFile2" />
+      <item itemvalue="JUnit.IoUtilsTest" />
+      <item itemvalue="JUnit.IoUtilsTest.fileCopy" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AssertTest.assertAssignable" />
-        <item itemvalue="JUnit.AssertTest.assertInstance" />
-        <item itemvalue="JUnit.AssertTest.assertBoolean" />
-        <item itemvalue="JUnit.AssertTest.isNotEmpty" />
-        <item itemvalue="JUnit.AssertTest.testIsNull" />
+        <item itemvalue="JUnit.IoUtilsTest.fileCopy" />
+        <item itemvalue="JUnit.IoUtilsTest.writeToFile2" />
+        <item itemvalue="JUnit.IoUtilsTest.readToString" />
+        <item itemvalue="JUnit.IoUtilsTest" />
+        <item itemvalue="JUnit.IoUtilsTest.writeToFile" />
       </list>
     </recent_temporary>
   </component>
@@ -449,14 +448,8 @@
       <workItem from="1655315231973" duration="339000" />
       <workItem from="1655395834625" duration="19747000" />
       <workItem from="1655651429705" duration="9916000" />
-      <workItem from="1655738379652" duration="32710000" />
-    </task>
-    <task id="LOCAL-00109" summary="jdk动态代理智能代理实现接口的类">
-      <created>1654789373852</created>
-      <option name="number" value="00109" />
-      <option name="presentableId" value="LOCAL-00109" />
-      <option name="project" value="LOCAL" />
-      <updated>1654789373852</updated>
+      <workItem from="1655738379652" duration="35741000" />
+      <workItem from="1655919317358" duration="2381000" />
     </task>
     <task id="LOCAL-00110" summary="cglib添加依赖">
       <created>1654789487219</created>
@@ -794,7 +787,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655913264685</updated>
     </task>
-    <option name="localTasksCounter" value="158" />
+    <task id="LOCAL-00158" summary="Assert">
+      <created>1655914046914</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1655914046914</updated>
+    </task>
+    <option name="localTasksCounter" value="159" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -915,6 +915,11 @@
           <url>file://$PROJECT_DIR$/javabase/src/main/java/com/roily/usefultools/assertt/AssertTest.java</url>
           <line>51</line>
           <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../software/maven/maven_repository/commons-io/commons-io/2.11.0/commons-io-2.11.0-sources.jar!/org/apache/commons/io/IOUtils.java</url>
+          <line>3287</line>
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
