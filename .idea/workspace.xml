@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="guaua Lists">
+    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="StringUtils">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javabase/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/javabase/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,34 +157,34 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StringUtilsTest.join">
-    <configuration name="BooleanUtilsTest.booleanUtils" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AssertTest.isNotEmpty">
+    <configuration name="AssertTest.isNotEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javabase (1)" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.usefultools.object.*" />
+          <option name="PATTERN" value="com.roily.usefultools.assertt.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.usefultools.object" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.object.BooleanUtilsTest" />
-      <option name="METHOD_NAME" value="booleanUtils" />
+      <option name="PACKAGE_NAME" value="com.roily.usefultools.assertt" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.assertt.AssertTest" />
+      <option name="METHOD_NAME" value="isNotEmpty" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringUtilsTest.isEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AssertTest.testIsNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javabase (1)" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.usefultools.object.*" />
+          <option name="PATTERN" value="com.roily.usefultools.assertt.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.usefultools.object" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.object.StringUtilsTest" />
-      <option name="METHOD_NAME" value="isEmpty" />
+      <option name="PACKAGE_NAME" value="com.roily.usefultools.assertt" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.assertt.AssertTest" />
+      <option name="METHOD_NAME" value="testIsNull" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -253,19 +252,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.BooleanUtilsTest.booleanUtils" />
-      <item itemvalue="JUnit.StringUtilsTest.isEmpty" />
       <item itemvalue="JUnit.StringUtilsTest.split" />
       <item itemvalue="JUnit.StringUtilsTest.testIsNumeric" />
       <item itemvalue="JUnit.StringUtilsTest.join" />
+      <item itemvalue="JUnit.AssertTest.testIsNull" />
+      <item itemvalue="JUnit.AssertTest.isNotEmpty" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AssertTest.isNotEmpty" />
+        <item itemvalue="JUnit.AssertTest.testIsNull" />
         <item itemvalue="JUnit.StringUtilsTest.join" />
         <item itemvalue="JUnit.StringUtilsTest.testIsNumeric" />
         <item itemvalue="JUnit.StringUtilsTest.split" />
-        <item itemvalue="JUnit.StringUtilsTest.isEmpty" />
-        <item itemvalue="JUnit.BooleanUtilsTest.booleanUtils" />
       </list>
     </recent_temporary>
   </component>
@@ -449,28 +448,7 @@
       <workItem from="1655315231973" duration="339000" />
       <workItem from="1655395834625" duration="19747000" />
       <workItem from="1655651429705" duration="9916000" />
-      <workItem from="1655738379652" duration="30338000" />
-    </task>
-    <task id="LOCAL-00105" summary="静态代理">
-      <created>1654702781635</created>
-      <option name="number" value="00105" />
-      <option name="presentableId" value="LOCAL-00105" />
-      <option name="project" value="LOCAL" />
-      <updated>1654702781635</updated>
-    </task>
-    <task id="LOCAL-00106" summary="动态代理">
-      <created>1654705034918</created>
-      <option name="number" value="00106" />
-      <option name="presentableId" value="LOCAL-00106" />
-      <option name="project" value="LOCAL" />
-      <updated>1654705034918</updated>
-    </task>
-    <task id="LOCAL-00107" summary="动态代理">
-      <created>1654705796885</created>
-      <option name="number" value="00107" />
-      <option name="presentableId" value="LOCAL-00107" />
-      <option name="project" value="LOCAL" />
-      <updated>1654705796885</updated>
+      <workItem from="1655738379652" duration="31927000" />
     </task>
     <task id="LOCAL-00108" summary="动态代理">
       <created>1654706251213</created>
@@ -794,7 +772,28 @@
       <option name="project" value="LOCAL" />
       <updated>1655903930284</updated>
     </task>
-    <option name="localTasksCounter" value="154" />
+    <task id="LOCAL-00154" summary="objectutils">
+      <created>1655909832817</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1655909832817</updated>
+    </task>
+    <task id="LOCAL-00155" summary="booleanUtils">
+      <created>1655909849418</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
+      <option name="project" value="LOCAL" />
+      <updated>1655909849418</updated>
+    </task>
+    <task id="LOCAL-00156" summary="StringUtils">
+      <created>1655909859965</created>
+      <option name="number" value="00156" />
+      <option name="presentableId" value="LOCAL-00156" />
+      <option name="project" value="LOCAL" />
+      <updated>1655909859965</updated>
+    </task>
+    <option name="localTasksCounter" value="157" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -873,9 +872,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="jdk动态代理代理、通用写法" />
-    <MESSAGE value="桥接模式" />
-    <MESSAGE value="享元模式" />
     <MESSAGE value="System.CopyOf是浅拷贝" />
     <MESSAGE value="lombok" />
     <MESSAGE value="lombok UseFul" />
@@ -898,7 +894,10 @@
     <MESSAGE value="Collections" />
     <MESSAGE value="CollectionUtils" />
     <MESSAGE value="guaua Lists" />
-    <option name="LAST_COMMIT_MESSAGE" value="guaua Lists" />
+    <MESSAGE value="objectutils" />
+    <MESSAGE value="booleanUtils" />
+    <MESSAGE value="StringUtils" />
+    <option name="LAST_COMMIT_MESSAGE" value="StringUtils" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
