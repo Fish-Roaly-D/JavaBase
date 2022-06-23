@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="BeanUtils">
+    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="Base64Utils">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javabase/src/main/java/com/roily/usefultools/beanutils/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase/src/main/java/com/roily/usefultools/beanutils/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -451,21 +451,7 @@
       <workItem from="1655651429705" duration="9916000" />
       <workItem from="1655738379652" duration="35741000" />
       <workItem from="1655919317358" duration="3275000" />
-      <workItem from="1655993369841" duration="11320000" />
-    </task>
-    <task id="LOCAL-00115" summary="类的适配器模式">
-      <created>1655220849728</created>
-      <option name="number" value="00115" />
-      <option name="presentableId" value="LOCAL-00115" />
-      <option name="project" value="LOCAL" />
-      <updated>1655220849728</updated>
-    </task>
-    <task id="LOCAL-00116" summary="项目调整">
-      <created>1655222926562</created>
-      <option name="number" value="00116" />
-      <option name="presentableId" value="LOCAL-00116" />
-      <option name="project" value="LOCAL" />
-      <updated>1655222926562</updated>
+      <workItem from="1655993369841" duration="12533000" />
     </task>
     <task id="LOCAL-00117" summary="方法的适配器模式">
       <created>1655223634380</created>
@@ -796,7 +782,21 @@
       <option name="project" value="LOCAL" />
       <updated>1656004618418</updated>
     </task>
-    <option name="localTasksCounter" value="164" />
+    <task id="LOCAL-00164" summary="ReflectionUtils">
+      <created>1656006666194</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1656006666194</updated>
+    </task>
+    <task id="LOCAL-00165" summary="Base64Utils">
+      <created>1656006700745</created>
+      <option name="number" value="00165" />
+      <option name="presentableId" value="LOCAL-00165" />
+      <option name="project" value="LOCAL" />
+      <updated>1656006700745</updated>
+    </task>
+    <option name="localTasksCounter" value="166" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -875,8 +875,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="观察者模式" />
-    <MESSAGE value="迭代器模式" />
     <MESSAGE value="责任链模式" />
     <MESSAGE value="责任链模式demo" />
     <MESSAGE value="代理模式对比装饰器模式" />
@@ -900,7 +898,9 @@
     <MESSAGE value="IOUtils readLines" />
     <MESSAGE value="ClassUtils" />
     <MESSAGE value="BeanUtils" />
-    <option name="LAST_COMMIT_MESSAGE" value="BeanUtils" />
+    <MESSAGE value="ReflectionUtils" />
+    <MESSAGE value="Base64Utils" />
+    <option name="LAST_COMMIT_MESSAGE" value="Base64Utils" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
