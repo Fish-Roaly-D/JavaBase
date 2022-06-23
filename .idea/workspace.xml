@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="StandardCharsets">
+    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="DigestUtils 加密">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -157,7 +157,7 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DigestUtilsTest.md5">
+  <component name="RunManager" selected="JUnit.SerializationUtilsTest.serializationUtilsTest">
     <configuration name="Base64UtilsTest.testEncodeAndDecode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javabase (1)" />
       <extension name="coverage">
@@ -169,22 +169,6 @@
       <option name="PACKAGE_NAME" value="com.roily.usefultools.base64utils" />
       <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.base64utils.Base64UtilsTest" />
       <option name="METHOD_NAME" value="testEncodeAndDecode" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BeanUtilsTest.getMethod" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javabase (1)" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.usefultools.beanutils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.roily.usefultools.beanutils" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.beanutils.BeanUtilsTest" />
-      <option name="METHOD_NAME" value="getMethod" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -238,6 +222,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SerializationUtilsTest.serializationUtilsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javabase (1)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.usefultools.seriazationutils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.roily.usefultools.seriazationutils" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.seriazationutils.SerializationUtilsTest" />
+      <option name="METHOD_NAME" value="serializationUtilsTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="mybatis-03" />
       <method v="2">
@@ -252,19 +252,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.BeanUtilsTest.getMethod" />
       <item itemvalue="JUnit.BeanUtilsTest.getMethodParams" />
       <item itemvalue="JUnit.ReflectionUtilsTest.testSimple" />
       <item itemvalue="JUnit.Base64UtilsTest.testEncodeAndDecode" />
       <item itemvalue="JUnit.DigestUtilsTest.md5" />
+      <item itemvalue="JUnit.SerializationUtilsTest.serializationUtilsTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SerializationUtilsTest.serializationUtilsTest" />
         <item itemvalue="JUnit.DigestUtilsTest.md5" />
         <item itemvalue="JUnit.Base64UtilsTest.testEncodeAndDecode" />
         <item itemvalue="JUnit.ReflectionUtilsTest.testSimple" />
         <item itemvalue="JUnit.BeanUtilsTest.getMethodParams" />
-        <item itemvalue="JUnit.BeanUtilsTest.getMethod" />
       </list>
     </recent_temporary>
   </component>
@@ -450,14 +450,7 @@
       <workItem from="1655651429705" duration="9916000" />
       <workItem from="1655738379652" duration="35741000" />
       <workItem from="1655919317358" duration="3275000" />
-      <workItem from="1655993369841" duration="13495000" />
-    </task>
-    <task id="LOCAL-00118" summary="接口的适配器模式">
-      <created>1655226134511</created>
-      <option name="number" value="00118" />
-      <option name="presentableId" value="LOCAL-00118" />
-      <option name="project" value="LOCAL" />
-      <updated>1655226134511</updated>
+      <workItem from="1655993369841" duration="13812000" />
     </task>
     <task id="LOCAL-00119" summary="简单装饰器模式">
       <created>1655229698011</created>
@@ -795,7 +788,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656007705336</updated>
     </task>
-    <option name="localTasksCounter" value="167" />
+    <task id="LOCAL-00167" summary="DigestUtils 加密">
+      <created>1656008570651</created>
+      <option name="number" value="00167" />
+      <option name="presentableId" value="LOCAL-00167" />
+      <option name="project" value="LOCAL" />
+      <updated>1656008570651</updated>
+    </task>
+    <option name="localTasksCounter" value="168" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -874,7 +874,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="责任链模式demo" />
     <MESSAGE value="代理模式对比装饰器模式" />
     <MESSAGE value="外观模式" />
     <MESSAGE value="外观模式demo" />
@@ -899,7 +898,8 @@
     <MESSAGE value="ReflectionUtils" />
     <MESSAGE value="Base64Utils" />
     <MESSAGE value="StandardCharsets" />
-    <option name="LAST_COMMIT_MESSAGE" value="StandardCharsets" />
+    <MESSAGE value="DigestUtils 加密" />
+    <option name="LAST_COMMIT_MESSAGE" value="DigestUtils 加密" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
