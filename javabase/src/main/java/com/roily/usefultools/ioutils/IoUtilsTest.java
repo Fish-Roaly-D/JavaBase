@@ -1,14 +1,18 @@
 package com.roily.usefultools.ioutils;
 
+import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.io.IOUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
+import java.util.List;
 
 /**
  * @className：IOUtilsTest
@@ -65,6 +69,8 @@ public class IoUtilsTest {
 
     /**
      * 复制文件
+     * <p>
+     * 默认缓存数组大小为8192
      */
     @Test
     public void fileCopy() throws IOException {
@@ -78,5 +84,24 @@ public class IoUtilsTest {
         final int copy = IOUtils.copy(fileReader, fileWriter);
         System.out.println(copy);
         IOUtils.close(fileReader, fileWriter);
+    }
+
+    /**
+     * 如果想一行一行读呢
+     * 可以使用readLines 获取每一行的字符串
+     *
+     * 且可以使用CollectionUtils的filter过滤掉不需要的
+     */
+    @Test
+    public void readOneLine() throws IOException {
+
+        FileInputStream fileInputStream = new FileInputStream(new File(rootPath, "test.txt"));
+        List<String> strings = IOUtils.readLines(fileInputStream, StandardCharsets.UTF_8);
+        System.out.println(strings);
+        System.out.println("==================");
+        CollectionUtils.filter(strings,(str)-> !StringUtils.isEmpty(str));
+        System.out.println(strings);
+        //关闭资源
+        IOUtils.close(fileInputStream);
     }
 }
