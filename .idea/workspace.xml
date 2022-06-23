@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="IOUtils readLines">
+    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="ClassUtils">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -157,82 +157,82 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ClassUtilsTest.isProxy">
-    <configuration name="ClassUtilsTest.getPackageName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.BeanUtilsTest.getMethodParams">
+    <configuration name="BeanUtilsTest.copyProperties" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javabase (1)" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.usefultools.classutils.*" />
+          <option name="PATTERN" value="com.roily.usefultools.beanutils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.usefultools.classutils" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.classutils.ClassUtilsTest" />
-      <option name="METHOD_NAME" value="getPackageName" />
+      <option name="PACKAGE_NAME" value="com.roily.usefultools.beanutils" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.beanutils.BeanUtilsTest" />
+      <option name="METHOD_NAME" value="copyProperties" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClassUtilsTest.isInnerClass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BeanUtilsTest.copyPropertiesEquals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javabase (1)" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.usefultools.classutils.*" />
+          <option name="PATTERN" value="com.roily.usefultools.beanutils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.usefultools.classutils" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.classutils.ClassUtilsTest" />
-      <option name="METHOD_NAME" value="isInnerClass" />
+      <option name="PACKAGE_NAME" value="com.roily.usefultools.beanutils" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.beanutils.BeanUtilsTest" />
+      <option name="METHOD_NAME" value="copyPropertiesEquals" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClassUtilsTest.isProxy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BeanUtilsTest.getMethod" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javabase (1)" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.usefultools.classutils.*" />
+          <option name="PATTERN" value="com.roily.usefultools.beanutils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.usefultools.classutils" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.classutils.ClassUtilsTest" />
-      <option name="METHOD_NAME" value="isProxy" />
+      <option name="PACKAGE_NAME" value="com.roily.usefultools.beanutils" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.beanutils.BeanUtilsTest" />
+      <option name="METHOD_NAME" value="getMethod" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClassUtilsTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BeanUtilsTest.getMethodParams" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javabase (1)" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.usefultools.classutils.*" />
+          <option name="PATTERN" value="com.roily.usefultools.beanutils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.usefultools.classutils" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.classutils.ClassUtilsTest" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="PACKAGE_NAME" value="com.roily.usefultools.beanutils" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.beanutils.BeanUtilsTest" />
+      <option name="METHOD_NAME" value="getMethodParams" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IoUtilsTest.readOneLine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BeanUtilsTest.instant" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javabase (1)" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.usefultools.ioutils.*" />
+          <option name="PATTERN" value="com.roily.usefultools.beanutils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.usefultools.ioutils" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.ioutils.IoUtilsTest" />
-      <option name="METHOD_NAME" value="readOneLine" />
+      <option name="PACKAGE_NAME" value="com.roily.usefultools.beanutils" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.beanutils.BeanUtilsTest" />
+      <option name="METHOD_NAME" value="instant" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -252,19 +252,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.IoUtilsTest.readOneLine" />
-      <item itemvalue="JUnit.ClassUtilsTest.test" />
-      <item itemvalue="JUnit.ClassUtilsTest.getPackageName" />
-      <item itemvalue="JUnit.ClassUtilsTest.isInnerClass" />
-      <item itemvalue="JUnit.ClassUtilsTest.isProxy" />
+      <item itemvalue="JUnit.BeanUtilsTest.copyProperties" />
+      <item itemvalue="JUnit.BeanUtilsTest.copyPropertiesEquals" />
+      <item itemvalue="JUnit.BeanUtilsTest.instant" />
+      <item itemvalue="JUnit.BeanUtilsTest.getMethod" />
+      <item itemvalue="JUnit.BeanUtilsTest.getMethodParams" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ClassUtilsTest.isProxy" />
-        <item itemvalue="JUnit.ClassUtilsTest.isInnerClass" />
-        <item itemvalue="JUnit.ClassUtilsTest.getPackageName" />
-        <item itemvalue="JUnit.ClassUtilsTest.test" />
-        <item itemvalue="JUnit.IoUtilsTest.readOneLine" />
+        <item itemvalue="JUnit.BeanUtilsTest.getMethodParams" />
+        <item itemvalue="JUnit.BeanUtilsTest.getMethod" />
+        <item itemvalue="JUnit.BeanUtilsTest.instant" />
+        <item itemvalue="JUnit.BeanUtilsTest.copyProperties" />
+        <item itemvalue="JUnit.BeanUtilsTest.copyPropertiesEquals" />
       </list>
     </recent_temporary>
   </component>
@@ -450,14 +450,7 @@
       <workItem from="1655651429705" duration="9916000" />
       <workItem from="1655738379652" duration="35741000" />
       <workItem from="1655919317358" duration="3275000" />
-      <workItem from="1655993369841" duration="5086000" />
-    </task>
-    <task id="LOCAL-00113" summary="类的适配器模式">
-      <created>1655219594692</created>
-      <option name="number" value="00113" />
-      <option name="presentableId" value="LOCAL-00113" />
-      <option name="project" value="LOCAL" />
-      <updated>1655219594692</updated>
+      <workItem from="1655993369841" duration="9563000" />
     </task>
     <task id="LOCAL-00114" summary="项目调整">
       <created>1655220830761</created>
@@ -795,7 +788,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655997514152</updated>
     </task>
-    <option name="localTasksCounter" value="162" />
+    <task id="LOCAL-00162" summary="ClassUtils">
+      <created>1655998620732</created>
+      <option name="number" value="00162" />
+      <option name="presentableId" value="LOCAL-00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1655998620732</updated>
+    </task>
+    <option name="localTasksCounter" value="163" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -874,7 +874,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="策略模式useful" />
     <MESSAGE value="模板方法模式" />
     <MESSAGE value="观察者模式" />
     <MESSAGE value="迭代器模式" />
@@ -899,7 +898,8 @@
     <MESSAGE value="IOUtils" />
     <MESSAGE value="ObjectUtils update" />
     <MESSAGE value="IOUtils readLines" />
-    <option name="LAST_COMMIT_MESSAGE" value="IOUtils readLines" />
+    <MESSAGE value="ClassUtils" />
+    <option name="LAST_COMMIT_MESSAGE" value="ClassUtils" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
