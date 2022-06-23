@@ -71,6 +71,7 @@ public class ObjectsTest {
         //抛出空指针异常
         System.out.println(i1 == i2);
     }
+
     @Test
     public void testSimpleType2() {
         long i1 = 1L;
@@ -93,5 +94,22 @@ public class ObjectsTest {
         System.out.println(str.hashCode());
         //这里处理的好，为空返回0，不为空再调用hashCode方法
         System.out.println(Objects.hashCode(str));
+    }
+
+    /**
+     * 使用Objects工具类，如果前者为null，是否抛出空指针异常
+     *
+     * 不会
+     */
+    @Test
+    public void shouldNullException() {
+
+        Object obj1 = null;
+        Object obj2 = new Object();
+        //会抛出空指针异常
+        obj1.equals(obj2);
+        //使用Objects工具类则不会抛出异常
+        Objects.equals(obj1, obj2);
+
     }
 }

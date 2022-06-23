@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="Assert">
+    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="IOUtils">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javabase/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/javabase/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javabase/src/main/java/com/roily/usefultools/object/ObjectsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase/src/main/java/com/roily/usefultools/object/ObjectsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,18 +158,19 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.IoUtilsTest.fileCopy">
-    <configuration name="IoUtilsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ObjectsTest.shouldNullException">
+    <configuration name="CollectionUtilsTest.testCollectionIsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javabase (1)" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.usefultools.ioutils.*" />
+          <option name="PATTERN" value="com.roily.usefultools.collections.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.roily.usefultools.ioutils" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.ioutils.IoUtilsTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.roily.usefultools.collections" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.collections.CollectionUtilsTest" />
+      <option name="METHOD_NAME" value="testCollectionIsEmpty" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -206,22 +207,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IoUtilsTest.writeToFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javabase (1)" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.usefultools.ioutils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.roily.usefultools.ioutils" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.ioutils.IoUtilsTest" />
-      <option name="METHOD_NAME" value="writeToFile" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="IoUtilsTest.writeToFile2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javabase (1)" />
       <extension name="coverage">
@@ -233,6 +218,22 @@
       <option name="PACKAGE_NAME" value="com.roily.usefultools.ioutils" />
       <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.ioutils.IoUtilsTest" />
       <option name="METHOD_NAME" value="writeToFile2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ObjectsTest.shouldNullException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javabase (1)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.usefultools.object.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.roily.usefultools.object" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.object.ObjectsTest" />
+      <option name="METHOD_NAME" value="shouldNullException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -253,18 +254,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.IoUtilsTest.readToString" />
-      <item itemvalue="JUnit.IoUtilsTest.writeToFile" />
       <item itemvalue="JUnit.IoUtilsTest.writeToFile2" />
-      <item itemvalue="JUnit.IoUtilsTest" />
       <item itemvalue="JUnit.IoUtilsTest.fileCopy" />
+      <item itemvalue="JUnit.CollectionUtilsTest.testCollectionIsEmpty" />
+      <item itemvalue="JUnit.ObjectsTest.shouldNullException" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ObjectsTest.shouldNullException" />
+        <item itemvalue="JUnit.CollectionUtilsTest.testCollectionIsEmpty" />
         <item itemvalue="JUnit.IoUtilsTest.fileCopy" />
         <item itemvalue="JUnit.IoUtilsTest.writeToFile2" />
         <item itemvalue="JUnit.IoUtilsTest.readToString" />
-        <item itemvalue="JUnit.IoUtilsTest" />
-        <item itemvalue="JUnit.IoUtilsTest.writeToFile" />
       </list>
     </recent_temporary>
   </component>
@@ -449,14 +450,8 @@
       <workItem from="1655395834625" duration="19747000" />
       <workItem from="1655651429705" duration="9916000" />
       <workItem from="1655738379652" duration="35741000" />
-      <workItem from="1655919317358" duration="2381000" />
-    </task>
-    <task id="LOCAL-00110" summary="cglib添加依赖">
-      <created>1654789487219</created>
-      <option name="number" value="00110" />
-      <option name="presentableId" value="LOCAL-00110" />
-      <option name="project" value="LOCAL" />
-      <updated>1654789487219</updated>
+      <workItem from="1655919317358" duration="3275000" />
+      <workItem from="1655993369841" duration="1561000" />
     </task>
     <task id="LOCAL-00111" summary="cglib动态代理">
       <created>1654792826146</created>
@@ -794,7 +789,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655914046914</updated>
     </task>
-    <option name="localTasksCounter" value="159" />
+    <task id="LOCAL-00159" summary="IOUtils">
+      <created>1655921803025</created>
+      <option name="number" value="00159" />
+      <option name="presentableId" value="LOCAL-00159" />
+      <option name="project" value="LOCAL" />
+      <updated>1655921803025</updated>
+    </task>
+    <option name="localTasksCounter" value="160" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -873,7 +875,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="lombok" />
     <MESSAGE value="lombok UseFul" />
     <MESSAGE value="策略模式simple" />
     <MESSAGE value="策略模式useful" />
@@ -898,7 +899,8 @@
     <MESSAGE value="booleanUtils" />
     <MESSAGE value="StringUtils" />
     <MESSAGE value="Assert" />
-    <option name="LAST_COMMIT_MESSAGE" value="Assert" />
+    <MESSAGE value="IOUtils" />
+    <option name="LAST_COMMIT_MESSAGE" value="IOUtils" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
