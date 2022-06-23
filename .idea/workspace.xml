@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="DigestUtils 加密">
+    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="SerializationUtils">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javabase/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/javabase/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,10 +131,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/state" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.31609195" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -157,7 +160,7 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SerializationUtilsTest.serializationUtilsTest">
+  <component name="RunManager" selected="JUnit.HttpStatusTest.httpStatusTest">
     <configuration name="Base64UtilsTest.testEncodeAndDecode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javabase (1)" />
       <extension name="coverage">
@@ -174,22 +177,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BeanUtilsTest.getMethodParams" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javabase (1)" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.usefultools.beanutils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.roily.usefultools.beanutils" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.beanutils.BeanUtilsTest" />
-      <option name="METHOD_NAME" value="getMethodParams" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DigestUtilsTest.md5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javabase (1)" />
       <extension name="coverage">
@@ -201,6 +188,22 @@
       <option name="PACKAGE_NAME" value="com.roily.usefultools.digestutils" />
       <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.digestutils.DigestUtilsTest" />
       <option name="METHOD_NAME" value="md5" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HttpStatusTest.httpStatusTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javabase (1)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.usefultools.httpstatus.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.roily.usefultools.httpstatus" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.httpstatus.HttpStatusTest" />
+      <option name="METHOD_NAME" value="httpStatusTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -252,19 +255,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.BeanUtilsTest.getMethodParams" />
       <item itemvalue="JUnit.ReflectionUtilsTest.testSimple" />
       <item itemvalue="JUnit.Base64UtilsTest.testEncodeAndDecode" />
       <item itemvalue="JUnit.DigestUtilsTest.md5" />
       <item itemvalue="JUnit.SerializationUtilsTest.serializationUtilsTest" />
+      <item itemvalue="JUnit.HttpStatusTest.httpStatusTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HttpStatusTest.httpStatusTest" />
         <item itemvalue="JUnit.SerializationUtilsTest.serializationUtilsTest" />
         <item itemvalue="JUnit.DigestUtilsTest.md5" />
         <item itemvalue="JUnit.Base64UtilsTest.testEncodeAndDecode" />
         <item itemvalue="JUnit.ReflectionUtilsTest.testSimple" />
-        <item itemvalue="JUnit.BeanUtilsTest.getMethodParams" />
       </list>
     </recent_temporary>
   </component>
@@ -450,14 +453,8 @@
       <workItem from="1655651429705" duration="9916000" />
       <workItem from="1655738379652" duration="35741000" />
       <workItem from="1655919317358" duration="3275000" />
-      <workItem from="1655993369841" duration="13812000" />
-    </task>
-    <task id="LOCAL-00119" summary="简单装饰器模式">
-      <created>1655229698011</created>
-      <option name="number" value="00119" />
-      <option name="presentableId" value="LOCAL-00119" />
-      <option name="project" value="LOCAL" />
-      <updated>1655229698011</updated>
+      <workItem from="1655993369841" duration="14526000" />
+      <workItem from="1656009599483" duration="621000" />
     </task>
     <task id="LOCAL-00120" summary="透明化装饰器模式">
       <created>1655232012076</created>
@@ -795,7 +792,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656008570651</updated>
     </task>
-    <option name="localTasksCounter" value="168" />
+    <task id="LOCAL-00168" summary="SerializationUtils">
+      <created>1656008947192</created>
+      <option name="number" value="00168" />
+      <option name="presentableId" value="LOCAL-00168" />
+      <option name="project" value="LOCAL" />
+      <updated>1656008947192</updated>
+    </task>
+    <option name="localTasksCounter" value="169" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -874,7 +878,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="代理模式对比装饰器模式" />
     <MESSAGE value="外观模式" />
     <MESSAGE value="外观模式demo" />
     <MESSAGE value="命令模式" />
@@ -899,7 +902,8 @@
     <MESSAGE value="Base64Utils" />
     <MESSAGE value="StandardCharsets" />
     <MESSAGE value="DigestUtils 加密" />
-    <option name="LAST_COMMIT_MESSAGE" value="DigestUtils 加密" />
+    <MESSAGE value="SerializationUtils" />
+    <option name="LAST_COMMIT_MESSAGE" value="SerializationUtils" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

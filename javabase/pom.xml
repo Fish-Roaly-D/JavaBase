@@ -41,6 +41,12 @@
             <artifactId>commons-codec</artifactId>
             <version>1.15</version>
         </dependency>
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/org.springframework/spring-web &ndash;&gt;-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>5.3.21</version>
+        </dependency>
 
     </dependencies>
 
