@@ -20,7 +20,7 @@ import java.util.Date;
 @NoArgsConstructor
 public class Person {
     Long id;
-    String name;
+    private String name;
     Integer age;
     String address;
     Date birth;
