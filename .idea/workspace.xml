@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="SerializationUtils">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="HttpStatus">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javabase/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/javabase/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javabase/src/main/java/com/roily/usefultools/collections/CollectionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase/src/main/java/com/roily/usefultools/collections/CollectionsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +88,10 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$PROJECT_DIR$/../../../software/maven/maven_repository/org/springframework/spring-core/5.3.18/spring-core-5.3.18-sources.jar!/org/springframework/util/SerializationUtils.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../../software/maven/maven_repository/org/springframework/spring-web/5.3.21/spring-web-5.3.21-sources.jar!/org/springframework/http/HttpStatus.java" root0="SKIP_INSPECTION" />
+  </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
     <exe-path />
@@ -160,7 +164,7 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HttpStatusTest.httpStatusTest">
+  <component name="RunManager" selected="JUnit.CollectionsTest.toUnModify">
     <configuration name="Base64UtilsTest.testEncodeAndDecode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javabase (1)" />
       <extension name="coverage">
@@ -172,6 +176,22 @@
       <option name="PACKAGE_NAME" value="com.roily.usefultools.base64utils" />
       <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.base64utils.Base64UtilsTest" />
       <option name="METHOD_NAME" value="testEncodeAndDecode" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CollectionsTest.toUnModify" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javabase (1)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.usefultools.collections.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.roily.usefultools.collections" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.collections.CollectionsTest" />
+      <option name="METHOD_NAME" value="toUnModify" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -209,22 +229,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReflectionUtilsTest.testSimple" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javabase (1)" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.usefultools.reflectionutils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.roily.usefultools.reflectionutils" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.reflectionutils.ReflectionUtilsTest" />
-      <option name="METHOD_NAME" value="testSimple" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SerializationUtilsTest.serializationUtilsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javabase (1)" />
       <extension name="coverage">
@@ -255,19 +259,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ReflectionUtilsTest.testSimple" />
       <item itemvalue="JUnit.Base64UtilsTest.testEncodeAndDecode" />
       <item itemvalue="JUnit.DigestUtilsTest.md5" />
       <item itemvalue="JUnit.SerializationUtilsTest.serializationUtilsTest" />
       <item itemvalue="JUnit.HttpStatusTest.httpStatusTest" />
+      <item itemvalue="JUnit.CollectionsTest.toUnModify" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CollectionsTest.toUnModify" />
         <item itemvalue="JUnit.HttpStatusTest.httpStatusTest" />
         <item itemvalue="JUnit.SerializationUtilsTest.serializationUtilsTest" />
         <item itemvalue="JUnit.DigestUtilsTest.md5" />
         <item itemvalue="JUnit.Base64UtilsTest.testEncodeAndDecode" />
-        <item itemvalue="JUnit.ReflectionUtilsTest.testSimple" />
       </list>
     </recent_temporary>
   </component>
@@ -454,14 +458,8 @@
       <workItem from="1655738379652" duration="35741000" />
       <workItem from="1655919317358" duration="3275000" />
       <workItem from="1655993369841" duration="14526000" />
-      <workItem from="1656009599483" duration="621000" />
-    </task>
-    <task id="LOCAL-00120" summary="透明化装饰器模式">
-      <created>1655232012076</created>
-      <option name="number" value="00120" />
-      <option name="presentableId" value="LOCAL-00120" />
-      <option name="project" value="LOCAL" />
-      <updated>1655232012076</updated>
+      <workItem from="1656009599483" duration="1055000" />
+      <workItem from="1656055592973" duration="2506000" />
     </task>
     <task id="LOCAL-00121" summary="静态代理">
       <created>1655289110618</created>
@@ -799,7 +797,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656008947192</updated>
     </task>
-    <option name="localTasksCounter" value="169" />
+    <task id="LOCAL-00169" summary="HttpStatus">
+      <created>1656010365718</created>
+      <option name="number" value="00169" />
+      <option name="presentableId" value="LOCAL-00169" />
+      <option name="project" value="LOCAL" />
+      <updated>1656010365719</updated>
+    </task>
+    <option name="localTasksCounter" value="170" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -878,7 +883,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="外观模式" />
     <MESSAGE value="外观模式demo" />
     <MESSAGE value="命令模式" />
     <MESSAGE value="备忘录模式" />
@@ -903,7 +907,8 @@
     <MESSAGE value="StandardCharsets" />
     <MESSAGE value="DigestUtils 加密" />
     <MESSAGE value="SerializationUtils" />
-    <option name="LAST_COMMIT_MESSAGE" value="SerializationUtils" />
+    <MESSAGE value="HttpStatus" />
+    <option name="LAST_COMMIT_MESSAGE" value="HttpStatus" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
