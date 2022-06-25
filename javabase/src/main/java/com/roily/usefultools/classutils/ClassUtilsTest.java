@@ -16,6 +16,7 @@ import java.util.List;
  */
 public class ClassUtilsTest {
 
+
     /**
      * 获取一个对象的接口列表
      */
@@ -34,7 +35,7 @@ public class ClassUtilsTest {
      */
     @Test
     public void getPackageName() {
-        List<Object> list = new ArrayList<>();
+        final List<Object> list = new ArrayList<>();
         //获取包名
         System.out.println(ClassUtils.getPackageName(list.getClass()));
         //用package对象也可以
@@ -63,7 +64,6 @@ public class ClassUtilsTest {
         System.out.println(ClassUtils.isCglibProxy(list.getClass()));
 
     }
-
 
 
 }
