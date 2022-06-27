@@ -1,6 +1,7 @@
 package com.roily.usefultools.classutils;
 
 import org.junit.Test;
+import org.springframework.aop.support.AopUtils;
 import org.springframework.util.ClassUtils;
 
 import java.util.ArrayList;
@@ -10,7 +11,7 @@ import java.util.List;
 
 /**
  * @className：ClassUtilsTest
- * @author: rolyfish
+ * @author: roilyfish
  * @description: Springframework提供的ClassUtils
  * @dte: 2022/6/23 23:19
  */
@@ -36,6 +37,7 @@ public class ClassUtilsTest {
     @Test
     public void getPackageName() {
         final List<Object> list = new ArrayList<>();
+        list.add(1);
         //获取包名
         System.out.println(ClassUtils.getPackageName(list.getClass()));
         //用package对象也可以
@@ -61,7 +63,7 @@ public class ClassUtilsTest {
     @Test
     public void isProxy() {
         List<Object> list = new ArrayList<>();
-        System.out.println(ClassUtils.isCglibProxy(list.getClass()));
+        System.out.println(AopUtils.isCglibProxy(list.getClass()));
 
     }
 

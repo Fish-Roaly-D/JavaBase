@@ -12,13 +12,21 @@ public class BridgeTest {
 
     @Test
     public void test(){
-        AbstractBridge myBridge = new MyBridge();
+        AbstractBridge myBridge = new MyBridge1();
         //执行Source1的方法
         myBridge.setSource(new Source1());
         myBridge.method();
         //执行Source2的方法
         myBridge.setSource(new Source2());
         myBridge.method();
+        System.out.println("======================");
+        AbstractBridge myBridge2 = new MyBridge2();
+        //执行Source1的方法
+        myBridge2.setSource(new Source1());
+        myBridge2.method();
+        //执行Source2的方法
+        myBridge2.setSource(new Source2());
+        myBridge2.method();
     }
 
 
