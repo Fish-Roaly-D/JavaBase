@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="HttpStatus">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/bridge/BridgeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/bridge/BridgeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/bridge/MyBridge.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/bridge/MyBridge1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javabase/src/main/java/com/roily/usefultools/classutils/ClassUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase/src/main/java/com/roily/usefultools/classutils/ClassUtilsTest.java" afterDir="false" />
+    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="桥接模式fix">
+      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/bridge/demo/DriverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/bridge/demo/DriverTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,11 +144,11 @@
       <recent name="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/state" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.roily.designpatterns.dpmain.bridge.demo" />
       <recent name="com.roily.designpatterns.dpmain.bridge" />
       <recent name="com.roily.designpatterns.dpmain.state.demo" />
       <recent name="com.roily.designpatterns.dpmain.state" />
       <recent name="com.roily.designpatterns.dpmain.memento" />
-      <recent name="com.roily.designpatterns.dpmain.facade.demo" />
     </key>
   </component>
   <component name="RestServicesNavigator">
@@ -165,7 +162,7 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BridgeTest.test">
+  <component name="RunManager" selected="JUnit.DriverTest.test">
     <configuration name="BridgeTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="designpatterns" />
       <extension name="coverage">
@@ -214,6 +211,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DriverTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="designpatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.designpatterns.dpmain.bridge.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.roily.designpatterns.dpmain.bridge.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.designpatterns.dpmain.bridge.demo.DriverTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HttpStatusTest.httpStatusTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javabase (1)" />
       <extension name="coverage">
@@ -225,22 +238,6 @@
       <option name="PACKAGE_NAME" value="com.roily.usefultools.httpstatus" />
       <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.httpstatus.HttpStatusTest" />
       <option name="METHOD_NAME" value="httpStatusTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SerializationUtilsTest.serializationUtilsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javabase (1)" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.usefultools.seriazationutils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.roily.usefultools.seriazationutils" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.seriazationutils.SerializationUtilsTest" />
-      <option name="METHOD_NAME" value="serializationUtilsTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -260,19 +257,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.SerializationUtilsTest.serializationUtilsTest" />
       <item itemvalue="JUnit.HttpStatusTest.httpStatusTest" />
       <item itemvalue="JUnit.CollectionsTest.toUnModify" />
       <item itemvalue="JUnit.ClassUtilsTest.isProxy" />
       <item itemvalue="JUnit.BridgeTest.test" />
+      <item itemvalue="JUnit.DriverTest.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DriverTest.test" />
         <item itemvalue="JUnit.BridgeTest.test" />
         <item itemvalue="JUnit.ClassUtilsTest.isProxy" />
         <item itemvalue="JUnit.CollectionsTest.toUnModify" />
         <item itemvalue="JUnit.HttpStatusTest.httpStatusTest" />
-        <item itemvalue="JUnit.SerializationUtilsTest.serializationUtilsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -462,14 +459,7 @@
       <workItem from="1656009599483" duration="1055000" />
       <workItem from="1656055592973" duration="3128000" />
       <workItem from="1656171900598" duration="1222000" />
-      <workItem from="1656340970466" duration="1105000" />
-    </task>
-    <task id="LOCAL-00123" summary="jdk动态代理代理、通用写法">
-      <created>1655290513661</created>
-      <option name="number" value="00123" />
-      <option name="presentableId" value="LOCAL-00123" />
-      <option name="project" value="LOCAL" />
-      <updated>1655290513661</updated>
+      <workItem from="1656340970466" duration="1962000" />
     </task>
     <task id="LOCAL-00124" summary="桥接模式">
       <created>1655298713278</created>
@@ -807,7 +797,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656172751159</updated>
     </task>
-    <option name="localTasksCounter" value="172" />
+    <task id="LOCAL-00172" summary="桥接模式fix">
+      <created>1656342092522</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1656342092523</updated>
+    </task>
+    <option name="localTasksCounter" value="173" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -886,7 +883,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="外观模式demo" />
     <MESSAGE value="命令模式" />
     <MESSAGE value="备忘录模式" />
     <MESSAGE value="备忘录模" />
@@ -911,7 +907,8 @@
     <MESSAGE value="DigestUtils 加密" />
     <MESSAGE value="SerializationUtils" />
     <MESSAGE value="HttpStatus" />
-    <option name="LAST_COMMIT_MESSAGE" value="HttpStatus" />
+    <MESSAGE value="桥接模式fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="桥接模式fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
