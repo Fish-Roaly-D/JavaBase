@@ -21,7 +21,6 @@
         <module name="base-map-01" />
         <module name="threadbase02" />
         <module name="mysql-jdbc" />
-        <module name="javabase (1)" />
         <module name="threadbase" />
         <module name="javabase-collection" />
       </profile>

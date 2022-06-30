@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="桥接模式fix">
-      <change beforePath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/bridge/demo/DriverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/bridge/demo/DriverTest.java" afterDir="false" />
+    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="桥接模式demo">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,10 +87,6 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="jar://$PROJECT_DIR$/../../../software/maven/maven_repository/org/springframework/spring-core/5.3.18/spring-core-5.3.18-sources.jar!/org/springframework/util/SerializationUtils.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/../../../software/maven/maven_repository/org/springframework/spring-web/5.3.21/spring-web-5.3.21-sources.jar!/org/springframework/http/HttpStatus.java" root0="SKIP_INSPECTION" />
-  </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
     <exe-path />
@@ -137,7 +134,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.31609195" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -162,7 +159,33 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DriverTest.test">
+  <component name="RunManager" selected="Application.DirectInsertSort">
+    <configuration name="Copy01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.roily.aboutCopy.Copy01" />
+      <module name="javabase" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.aboutCopy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DirectInsertSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.roily.algorithm.sort.insertsort.DirectInsertSort" />
+      <module name="javabase" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.algorithm.sort.insertsort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BridgeTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="designpatterns" />
       <extension name="coverage">
@@ -180,7 +203,7 @@
       </method>
     </configuration>
     <configuration name="ClassUtilsTest.isProxy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javabase (1)" />
+      <module name="javabase" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.roily.usefultools.classutils.*" />
@@ -190,22 +213,6 @@
       <option name="PACKAGE_NAME" value="com.roily.usefultools.classutils" />
       <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.classutils.ClassUtilsTest" />
       <option name="METHOD_NAME" value="isProxy" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CollectionsTest.toUnModify" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javabase (1)" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.usefultools.collections.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.roily.usefultools.collections" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.collections.CollectionsTest" />
-      <option name="METHOD_NAME" value="toUnModify" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -227,22 +234,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HttpStatusTest.httpStatusTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javabase (1)" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.usefultools.httpstatus.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.roily.usefultools.httpstatus" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.httpstatus.HttpStatusTest" />
-      <option name="METHOD_NAME" value="httpStatusTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="mybatis-03" />
       <method v="2">
@@ -257,19 +248,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.HttpStatusTest.httpStatusTest" />
-      <item itemvalue="JUnit.CollectionsTest.toUnModify" />
+      <item itemvalue="Application.Copy01" />
       <item itemvalue="JUnit.ClassUtilsTest.isProxy" />
       <item itemvalue="JUnit.BridgeTest.test" />
       <item itemvalue="JUnit.DriverTest.test" />
+      <item itemvalue="Application.DirectInsertSort" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DirectInsertSort" />
+        <item itemvalue="Application.Copy01" />
         <item itemvalue="JUnit.DriverTest.test" />
         <item itemvalue="JUnit.BridgeTest.test" />
         <item itemvalue="JUnit.ClassUtilsTest.isProxy" />
-        <item itemvalue="JUnit.CollectionsTest.toUnModify" />
-        <item itemvalue="JUnit.HttpStatusTest.httpStatusTest" />
       </list>
     </recent_temporary>
   </component>
@@ -459,14 +450,11 @@
       <workItem from="1656009599483" duration="1055000" />
       <workItem from="1656055592973" duration="3128000" />
       <workItem from="1656171900598" duration="1222000" />
-      <workItem from="1656340970466" duration="1962000" />
-    </task>
-    <task id="LOCAL-00124" summary="桥接模式">
-      <created>1655298713278</created>
-      <option name="number" value="00124" />
-      <option name="presentableId" value="LOCAL-00124" />
-      <option name="project" value="LOCAL" />
-      <updated>1655298713278</updated>
+      <workItem from="1656340970466" duration="3429000" />
+      <workItem from="1656346304960" duration="381000" />
+      <workItem from="1656346691325" duration="758000" />
+      <workItem from="1656519923990" duration="1464000" />
+      <workItem from="1656605311520" duration="2505000" />
     </task>
     <task id="LOCAL-00125" summary="桥接模式">
       <created>1655298827789</created>
@@ -804,7 +792,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656342092523</updated>
     </task>
-    <option name="localTasksCounter" value="173" />
+    <task id="LOCAL-00173" summary="桥接模式demo">
+      <created>1656343201328</created>
+      <option name="number" value="00173" />
+      <option name="presentableId" value="LOCAL-00173" />
+      <option name="project" value="LOCAL" />
+      <updated>1656343201328</updated>
+    </task>
+    <option name="localTasksCounter" value="174" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -883,7 +878,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="命令模式" />
     <MESSAGE value="备忘录模式" />
     <MESSAGE value="备忘录模" />
     <MESSAGE value="状态模式" />
@@ -908,7 +902,8 @@
     <MESSAGE value="SerializationUtils" />
     <MESSAGE value="HttpStatus" />
     <MESSAGE value="桥接模式fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="桥接模式fix" />
+    <MESSAGE value="桥接模式demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="桥接模式demo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -930,6 +925,11 @@
           <url>jar://$PROJECT_DIR$/../../../software/maven/maven_repository/commons-io/commons-io/2.11.0/commons-io-2.11.0-sources.jar!/org/apache/commons/io/IOUtils.java</url>
           <line>3287</line>
           <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/javabase/src/main/java/com/roily/algorithm/sort/insertsort/DirectInsertSort.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="42" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
