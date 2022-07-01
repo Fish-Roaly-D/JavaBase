@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="桥接模式demo">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="直接插入排序">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -159,13 +159,26 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.DirectInsertSort">
+  <component name="RunManager" selected="Application.DichotomyInsertSort">
     <configuration name="Copy01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.roily.aboutCopy.Copy01" />
       <module name="javabase" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.roily.aboutCopy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DichotomyInsertSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.roily.algorithm.sort.insertsort.DichotomyInsertSort" />
+      <module name="javabase" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.algorithm.sort.insertsort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -202,22 +215,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClassUtilsTest.isProxy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javabase" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.usefultools.classutils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.roily.usefultools.classutils" />
-      <option name="MAIN_CLASS_NAME" value="com.roily.usefultools.classutils.ClassUtilsTest" />
-      <option name="METHOD_NAME" value="isProxy" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DriverTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="designpatterns" />
       <extension name="coverage">
@@ -249,18 +246,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Copy01" />
-      <item itemvalue="JUnit.ClassUtilsTest.isProxy" />
       <item itemvalue="JUnit.BridgeTest.test" />
       <item itemvalue="JUnit.DriverTest.test" />
       <item itemvalue="Application.DirectInsertSort" />
+      <item itemvalue="Application.DichotomyInsertSort" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DichotomyInsertSort" />
         <item itemvalue="Application.DirectInsertSort" />
         <item itemvalue="Application.Copy01" />
         <item itemvalue="JUnit.DriverTest.test" />
         <item itemvalue="JUnit.BridgeTest.test" />
-        <item itemvalue="JUnit.ClassUtilsTest.isProxy" />
       </list>
     </recent_temporary>
   </component>
@@ -454,14 +451,7 @@
       <workItem from="1656346304960" duration="381000" />
       <workItem from="1656346691325" duration="758000" />
       <workItem from="1656519923990" duration="1464000" />
-      <workItem from="1656605311520" duration="2505000" />
-    </task>
-    <task id="LOCAL-00125" summary="桥接模式">
-      <created>1655298827789</created>
-      <option name="number" value="00125" />
-      <option name="presentableId" value="LOCAL-00125" />
-      <option name="project" value="LOCAL" />
-      <updated>1655298827789</updated>
+      <workItem from="1656605311520" duration="3925000" />
     </task>
     <task id="LOCAL-00126" summary="享元模式">
       <created>1655303354147</created>
@@ -799,7 +789,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656343201328</updated>
     </task>
-    <option name="localTasksCounter" value="174" />
+    <task id="LOCAL-00174" summary="直接插入排序">
+      <created>1656609676474</created>
+      <option name="number" value="00174" />
+      <option name="presentableId" value="LOCAL-00174" />
+      <option name="project" value="LOCAL" />
+      <updated>1656609676475</updated>
+    </task>
+    <option name="localTasksCounter" value="175" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -878,7 +875,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="备忘录模式" />
     <MESSAGE value="备忘录模" />
     <MESSAGE value="状态模式" />
     <MESSAGE value="组合模式" />
@@ -903,7 +899,8 @@
     <MESSAGE value="HttpStatus" />
     <MESSAGE value="桥接模式fix" />
     <MESSAGE value="桥接模式demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="桥接模式demo" />
+    <MESSAGE value="直接插入排序" />
+    <option name="LAST_COMMIT_MESSAGE" value="直接插入排序" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
