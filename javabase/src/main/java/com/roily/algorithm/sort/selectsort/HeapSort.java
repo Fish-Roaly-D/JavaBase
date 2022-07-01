@@ -4,6 +4,7 @@ import com.roily.algorithm.sort.insertsort.DirectInsertSort;
 import org.junit.Test;
 import org.springframework.util.CollectionUtils;
 
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.PriorityQueue;
 
@@ -14,6 +15,8 @@ import java.util.PriorityQueue;
  * @date: 2022/7/2 00:09
  */
 public class HeapSort {
+
+    @SuppressWarnings("unchecked")
     @Test
     public void testPriorityQueue() {
 
@@ -23,7 +26,7 @@ public class HeapSort {
         System.out.println("小顶堆");
         final PriorityQueue<Integer> descHeap = new PriorityQueue<>((Collection<? extends Integer>) CollectionUtils.arrayToList(randomColl));
         descHeap.forEach(element -> {
-            System.out.printf(element + ",");
+            System.out.printf(element + ", ");
         });
         System.out.println();
         System.out.println("大顶堆");
@@ -32,12 +35,71 @@ public class HeapSort {
             ascHeap.add(ele);
         }
         ascHeap.forEach(element -> {
-            System.out.printf(element + ",");
+            System.out.printf(element + ", ");
         });
     }
 }
 
 class HeapSortTest {
 
+    static int[] heap;
 
+    /**
+     * @param k 为父节点
+     * @param x 父节点对应元素
+     */
+    void siftDownComparable(int k, int x,int[] source) {
+        int size = source.length;
+        //一半
+        int half = size >>> 1;
+        while (k < half) {
+            //当前为左子节点下标，后续更新为较小子节点下标
+            int child = (k << 1) + 1;
+            //c当前为左子节点，后续为左右子节点较小值
+            int c = source[child];
+            int right = child + 1;
+            //右子节点小于左子节点，更新child和c
+            if (right < size && c > source[right]) {
+                c = source[child = right];
+            }
+            //父节点小于较小子节点，跳出循环
+            if (x <= c) {
+                break;
+            }
+            //更新父节点
+            source[k] = c;
+            //记录child，因为child对应元素被移动，需要检查其子节点是否合理
+            k = child;
+        }
+        source[k] = x;
+    }
+
+    /**
+     * 生成小顶堆
+     * @param source
+     */
+    private void createHeap(int[] source) {
+        for (int i = (source.length >>> 1) - 1; i >= 0; i--){
+            siftDownComparable(i, source[i],source);
+        }
+    }
+
+    public static void main(String[] args) {
+        final HeapSortTest heapSortTest = new HeapSortTest();
+        heap = DirectInsertSort.createRandomColl(10, 10, 90);
+        System.out.println("原数组");
+        System.out.println(CollectionUtils.arrayToList(heap));
+        heapSortTest.createHeap(heap);
+        System.out.println("生成一个小顶堆");
+        System.out.println(CollectionUtils.arrayToList(heap));
+
+        System.out.println("堆排序后");
+        for (int i = 0; i < heap.length - 1; i++) {
+            //待生成堆集合
+            final int[] tempColl = Arrays.copyOfRange(heap, i, heap.length - 1);
+            heapSortTest.createHeap(tempColl);
+            heap[i] =tempColl[0];
+        }
+        System.out.println(CollectionUtils.arrayToList(heap));
+    }
 }
