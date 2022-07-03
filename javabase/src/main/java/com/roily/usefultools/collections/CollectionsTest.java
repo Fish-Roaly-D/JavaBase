@@ -1,7 +1,8 @@
 package com.roily.usefultools.collections;
 
-import com.sun.tools.javac.util.Assert;
+
 import org.junit.Test;
+import org.springframework.util.Assert;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -25,8 +26,7 @@ public class CollectionsTest {
      * @return
      */
     public List<Integer> createRandomCollection(int count, int start, int end) {
-        //检查count大于0
-        Assert.check(count > 0);
+        Assert.isTrue(count>0,"数组长度需要大于0");
         List<Integer> list = new ArrayList<>();
         for (int i = 0; i < count; i++) {
             list.add((int) (Math.random() * (end - start)) + start);

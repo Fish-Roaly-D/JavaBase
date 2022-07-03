@@ -1,6 +1,6 @@
 package com.roily.algorithm.sort.insertsort;
 
-import com.sun.tools.javac.util.Assert;
+import org.springframework.util.Assert;
 import org.springframework.util.CollectionUtils;
 
 /**
@@ -18,7 +18,8 @@ public class DirectInsertSort {
      * @return int[]
      */
     public static int[] createRandomColl(int size, int lowLimit, int highLimit) {
-        Assert.check(size > 0, "数组长度需要大于0");
+
+        Assert.isTrue(size>0,"数组长度需要大于0");
         final int[] coll = new int[size];
         for (int i = 0; i < size; i++) {
             coll[i] = lowLimit + (int) (Math.random() * (highLimit - lowLimit));

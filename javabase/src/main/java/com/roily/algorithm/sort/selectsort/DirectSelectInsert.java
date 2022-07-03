@@ -1,5 +1,6 @@
 package com.roily.algorithm.sort.selectsort;
 
+
 import com.roily.algorithm.sort.insertsort.DirectInsertSort;
 import org.springframework.util.CollectionUtils;
 
@@ -34,6 +35,7 @@ public class DirectSelectInsert {
     }
 
     public static void main(String[] args) {
+
         final int[] randomColl = DirectInsertSort.createRandomColl(20, 10, 20);
         System.out.println("直接选择排序前");
         System.out.println(CollectionUtils.arrayToList(randomColl));
