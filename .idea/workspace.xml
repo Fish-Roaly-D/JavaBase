@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="rebuild">
+    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="冒泡排序">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -158,7 +158,7 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.BubbleSort">
+  <component name="RunManager" selected="Application.QuickSort">
     <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.roily.algorithm.sort.exchangesort.BubbleSort" />
       <module name="javabase_base" />
@@ -211,12 +211,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="XiErInsertSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.roily.algorithm.sort.insertsort.XiErInsertSort" />
+    <configuration name="QuickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.roily.algorithm.sort.exchangesort.QuickSort" />
       <module name="javabase_base" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.algorithm.sort.insertsort.*" />
+          <option name="PATTERN" value="com.roily.algorithm.sort.exchangesort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -239,11 +239,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.QuickSort" />
         <item itemvalue="Application.BubbleSort" />
         <item itemvalue="Application.DichotomyInsertSort" />
         <item itemvalue="Application.DirectInsertSort" />
         <item itemvalue="Application.DirectSelectInsert" />
-        <item itemvalue="Application.XiErInsertSort" />
       </list>
     </recent_temporary>
   </component>
@@ -441,14 +441,7 @@
       <workItem from="1656827487173" duration="644000" />
       <workItem from="1656828149614" duration="1601000" />
       <workItem from="1657029695471" duration="1375000" />
-      <workItem from="1657031093384" duration="3242000" />
-    </task>
-    <task id="LOCAL-00131" summary="策略模式simple">
-      <created>1655398073896</created>
-      <option name="number" value="00131" />
-      <option name="presentableId" value="LOCAL-00131" />
-      <option name="project" value="LOCAL" />
-      <updated>1655398073896</updated>
+      <workItem from="1657031093384" duration="4924000" />
     </task>
     <task id="LOCAL-00132" summary="策略模式simple">
       <created>1655398104653</created>
@@ -786,7 +779,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657031160514</updated>
     </task>
-    <option name="localTasksCounter" value="180" />
+    <task id="LOCAL-00180" summary="冒泡排序">
+      <created>1657034644874</created>
+      <option name="number" value="00180" />
+      <option name="presentableId" value="LOCAL-00180" />
+      <option name="project" value="LOCAL" />
+      <updated>1657034644874</updated>
+    </task>
+    <option name="localTasksCounter" value="181" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -865,7 +865,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="CollectionUtils" />
     <MESSAGE value="guaua Lists" />
     <MESSAGE value="objectutils" />
     <MESSAGE value="booleanUtils" />
@@ -890,7 +889,8 @@
     <MESSAGE value="直接选择排序" />
     <MESSAGE value="堆排序-priorityQueue" />
     <MESSAGE value="rebuild" />
-    <option name="LAST_COMMIT_MESSAGE" value="rebuild" />
+    <MESSAGE value="冒泡排序" />
+    <option name="LAST_COMMIT_MESSAGE" value="冒泡排序" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
