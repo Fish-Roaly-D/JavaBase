@@ -5,13 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="堆排序-priorityQueue">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javabase/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/javabase/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javabase/src/main/java/com/roily/algorithm/sort/insertsort/DirectInsertSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase/src/main/java/com/roily/algorithm/sort/insertsort/DirectInsertSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javabase/src/main/java/com/roily/algorithm/sort/selectsort/DirectSelectInsert.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase/src/main/java/com/roily/algorithm/sort/selectsort/DirectSelectInsert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javabase/src/main/java/com/roily/algorithm/sort/selectsort/HeapSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase/src/main/java/com/roily/algorithm/sort/selectsort/HeapSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javabase/src/main/java/com/roily/usefultools/collections/CollectionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase/src/main/java/com/roily/usefultools/collections/CollectionsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javabase/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/javabase_base/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javabase/src/main/java/com/roily/aboutAbstract/AboutAbstract.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase_base/src/main/java/com/roily/aboutAbstract/AboutAbstract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javabase/src/main/java/com/roily/aboutCopy/AboutCopy.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase_base/src/main/java/com/roily/aboutCopy/AboutCopy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javabase/src/main/java/com/roily/aboutFinal/Demo01.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase_base/src/main/java/com/roily/aboutFinal/Demo01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javabase/src/main/java/com/roily/algorithm/sort/insertsort/DichotomyInsertSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase_base/src/main/java/com/roily/algorithm/sort/insertsort/DichotomyInsertSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javabase/src/main/java/com/roily/algorithm/sort/insertsort/DirectInsertSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase_base/src/main/java/com/roily/algorithm/sort/insertsort/DirectInsertSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javabase/src/main/java/com/roily/algorithm/sort/insertsort/XiErInsertSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase_base/src/main/java/com/roily/algorithm/sort/insertsort/XiErInsertSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javabase/src/main/java/com/roily/algorithm/sort/selectsort/DirectSelectInsert.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase_base/src/main/java/com/roily/algorithm/sort/selectsort/DirectSelectInsert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javabase/src/main/java/com/roily/algorithm/sort/selectsort/HeapSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase_base/src/main/java/com/roily/algorithm/sort/selectsort/HeapSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javabase/src/main/java/com/roily/usefultools/assertt/AssertTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase_base/src/main/java/com/roily/usefultools/assertt/AssertTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javabase/src/main/java/com/roily/usefultools/base64utils/Base64UtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase_base/src/main/java/com/roily/usefultools/base64utils/Base64UtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javabase/src/main/java/com/roily/usefultools/beanutils/BeanUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase_base/src/main/java/com/roily/usefultools/beanutils/BeanUtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javabase/src/main/java/com/roily/usefultools/beanutils/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase_base/src/main/java/com/roily/usefultools/beanutils/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javabase/src/main/java/com/roily/usefultools/beanutils/PersonDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase_base/src/main/java/com/roily/usefultools/beanutils/PersonDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javabase/src/main/java/com/roily/usefultools/classutils/ClassUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase_base/src/main/java/com/roily/usefultools/classutils/ClassUtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javabase/src/main/java/com/roily/usefultools/collections/CollectionUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase_base/src/main/java/com/roily/usefultools/collections/CollectionUtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javabase/src/main/java/com/roily/usefultools/collections/CollectionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase_base/src/main/java/com/roily/usefultools/collections/CollectionsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javabase/src/main/java/com/roily/usefultools/collections/ListsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase_base/src/main/java/com/roily/usefultools/collections/ListsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javabase/src/main/java/com/roily/usefultools/digestutils/DigestUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase_base/src/main/java/com/roily/usefultools/digestutils/DigestUtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javabase/src/main/java/com/roily/usefultools/httpstatus/HttpStatusTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase_base/src/main/java/com/roily/usefultools/httpstatus/HttpStatusTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javabase/src/main/java/com/roily/usefultools/ioutils/IoUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase_base/src/main/java/com/roily/usefultools/ioutils/IoUtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javabase/src/main/java/com/roily/usefultools/object/BooleanUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase_base/src/main/java/com/roily/usefultools/object/BooleanUtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javabase/src/main/java/com/roily/usefultools/object/ObjectsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase_base/src/main/java/com/roily/usefultools/object/ObjectsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javabase/src/main/java/com/roily/usefultools/object/StringUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase_base/src/main/java/com/roily/usefultools/object/StringUtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javabase/src/main/java/com/roily/usefultools/reflectionutils/ReflectionUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase_base/src/main/java/com/roily/usefultools/reflectionutils/ReflectionUtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javabase/src/main/java/com/roily/usefultools/seriazationutils/SerializationUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase_base/src/main/java/com/roily/usefultools/seriazationutils/SerializationUtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javabase/src/main/java/com/roily/usefultools/standardcharsets/StandardCharsetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabase_base/src/main/java/com/roily/usefultools/standardcharsets/StandardCharsetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +159,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/designpatterns/src/main/java/com/roily/designpatterns/dpmain/state" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15234375" />
     <property name="project.structure.side.proportion" value="0.31609195" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
@@ -164,10 +187,10 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.HeapSortTest">
+  <component name="RunManager" selected="Application.DichotomyInsertSort">
     <configuration name="DichotomyInsertSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.roily.algorithm.sort.insertsort.DichotomyInsertSort" />
-      <module name="javabase" />
+      <module name="javabase_base" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.roily.algorithm.sort.insertsort.*" />
@@ -180,7 +203,7 @@
     </configuration>
     <configuration name="DirectInsertSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.roily.algorithm.sort.insertsort.DirectInsertSort" />
-      <module name="javabase" />
+      <module name="javabase_base" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.roily.algorithm.sort.insertsort.*" />
@@ -193,20 +216,7 @@
     </configuration>
     <configuration name="DirectSelectInsert" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.roily.algorithm.sort.selectsort.DirectSelectInsert" />
-      <module name="javabase" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.algorithm.sort.selectsort.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HeapSortTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.roily.algorithm.sort.selectsort.HeapSortTest" />
-      <module name="javabase" />
+      <module name="javabase_base" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.roily.algorithm.sort.selectsort.*" />
@@ -219,7 +229,7 @@
     </configuration>
     <configuration name="XiErInsertSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.roily.algorithm.sort.insertsort.XiErInsertSort" />
-      <module name="javabase" />
+      <module name="javabase_base" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.roily.algorithm.sort.insertsort.*" />
@@ -243,20 +253,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Application.DirectInsertSort" />
-      <item itemvalue="Application.DichotomyInsertSort" />
-      <item itemvalue="Application.XiErInsertSort" />
-      <item itemvalue="Application.DirectSelectInsert" />
-      <item itemvalue="Application.HeapSortTest" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HeapSortTest" />
-        <item itemvalue="Application.DirectSelectInsert" />
-        <item itemvalue="Application.XiErInsertSort" />
         <item itemvalue="Application.DichotomyInsertSort" />
         <item itemvalue="Application.DirectInsertSort" />
+        <item itemvalue="Application.DirectSelectInsert" />
+        <item itemvalue="Application.XiErInsertSort" />
       </list>
     </recent_temporary>
   </component>
@@ -453,6 +455,7 @@
       <workItem from="1656605311520" duration="14554000" />
       <workItem from="1656827487173" duration="644000" />
       <workItem from="1656828149614" duration="1601000" />
+      <workItem from="1657029695471" duration="1375000" />
     </task>
     <task id="LOCAL-00130" summary="lombok UseFul">
       <created>1655395865388</created>

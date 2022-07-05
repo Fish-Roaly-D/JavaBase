@@ -21,7 +21,7 @@
         <module>javabase-collection</module>
         <module>threadbase</module>
         <module>threadbase02</module>
-        <module>javabase</module>
+        <module>javabase_base</module>
         <module>threadcollection</module>
         <module>designpatterns</module>
     </modules>

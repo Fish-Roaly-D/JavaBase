@@ -15,16 +15,19 @@
         <module name="base-datatype-01" />
         <module name="designpatterns" />
         <module name="mybatis-01" />
-        <module name="javabase" />
         <module name="mysql-datasource" />
         <module name="Mybatis-01" />
         <module name="base-map-01" />
         <module name="threadbase02" />
         <module name="mysql-jdbc" />
+        <module name="javabase_base" />
         <module name="threadbase" />
         <module name="javabase-collection" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8" />
+    <bytecodeTargetLevel target="8">
+      <module name="javabase" target="1.8" />
+      <module name="JavaBase" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
