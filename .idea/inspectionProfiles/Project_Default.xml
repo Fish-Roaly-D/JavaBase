@@ -30,7 +30,7 @@
       <option name="IGNORE_JAVADOC_PERIOD" value="true" />
       <option name="IGNORE_DUPLICATED_THROWS" value="false" />
       <option name="IGNORE_POINT_TO_ITSELF" value="false" />
-      <option name="myAdditionalJavadocTags" value="author:,date:,description,Description,ClassName,date,className：ClassAdapterTest,description:,dte:,className：ArmSoft,className：Component01,className：CanNotProxyAbsClass,className：Assemble,className：LombokObj,className：OutSideDept,description：上下文对象,className：ActionInteface,className：Base64UtilsTest,classname：DichotomyInsertSort" />
+      <option name="myAdditionalJavadocTags" value="author:,date:,description,Description,ClassName,date,className：ClassAdapterTest,description:,dte:,className：ArmSoft,className：Component01,className：CanNotProxyAbsClass,className：Assemble,className：LombokObj,className：OutSideDept,description：上下文对象,className：ActionInteface,className：Base64UtilsTest,classname：DichotomyInsertSort,classname：BuckSort" />
     </inspection_tool>
     <inspection_tool class="MavenPackageUpdate" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="excludeList">
