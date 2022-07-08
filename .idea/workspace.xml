@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="桶排序">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="hashmap">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javabase_base/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/javabase_base/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +166,20 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.HashUseFul">
+  <component name="RunManager" selected="Application.BitSetUseFul">
+    <configuration name="BitSetUseFul" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.roily.algorithm.useful.bloom.BitSetUseFul" />
+      <module name="javabase_base" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.algorithm.useful.bloom.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.roily.algorithm.sort.exchangesort.BubbleSort" />
       <module name="javabase_base" />
@@ -222,19 +232,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadixSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.roily.algorithm.sort.radixsort.RadixSort" />
-      <module name="javabase_base" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.algorithm.sort.radixsort.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="mybatis-03" />
       <method v="2">
@@ -250,11 +247,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BitSetUseFul" />
         <item itemvalue="Application.HashUseFul" />
         <item itemvalue="Application.BubbleSort" />
         <item itemvalue="Application.BuckSort" />
         <item itemvalue="Application.CountSort" />
-        <item itemvalue="Application.RadixSort" />
       </list>
     </recent_temporary>
   </component>
@@ -453,14 +450,7 @@
       <workItem from="1656828149614" duration="1601000" />
       <workItem from="1657029695471" duration="1375000" />
       <workItem from="1657031093384" duration="18910000" />
-      <workItem from="1657279646073" duration="3330000" />
-    </task>
-    <task id="LOCAL-00138" summary="责任链模式demo">
-      <created>1655561043199</created>
-      <option name="number" value="00138" />
-      <option name="presentableId" value="LOCAL-00138" />
-      <option name="project" value="LOCAL" />
-      <updated>1655561043199</updated>
+      <workItem from="1657279646073" duration="6651000" />
     </task>
     <task id="LOCAL-00139" summary="代理模式对比装饰器模式">
       <created>1655562089728</created>
@@ -798,7 +788,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657200772720</updated>
     </task>
-    <option name="localTasksCounter" value="187" />
+    <task id="LOCAL-00187" summary="hashmap">
+      <created>1657300767789</created>
+      <option name="number" value="00187" />
+      <option name="presentableId" value="LOCAL-00187" />
+      <option name="project" value="LOCAL" />
+      <updated>1657300767789</updated>
+    </task>
+    <option name="localTasksCounter" value="188" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -877,7 +874,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="IOUtils" />
     <MESSAGE value="ObjectUtils update" />
     <MESSAGE value="IOUtils readLines" />
     <MESSAGE value="ClassUtils" />
@@ -902,7 +898,8 @@
     <MESSAGE value="基数排序" />
     <MESSAGE value="计数排序" />
     <MESSAGE value="桶排序" />
-    <option name="LAST_COMMIT_MESSAGE" value="桶排序" />
+    <MESSAGE value="hashmap" />
+    <option name="LAST_COMMIT_MESSAGE" value="hashmap" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
