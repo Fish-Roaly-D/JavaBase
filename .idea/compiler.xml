@@ -27,7 +27,6 @@
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
       <module name="javabase" target="1.8" />
-      <module name="JavaBase" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
