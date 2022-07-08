@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="hashmap">
+    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="bitset">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -166,9 +166,22 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.BitSetUseFul">
+  <component name="RunManager" selected="Application.BloomFilter">
     <configuration name="BitSetUseFul" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.roily.algorithm.useful.bloom.BitSetUseFul" />
+      <module name="javabase_base" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.algorithm.useful.bloom.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BloomFilter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.roily.algorithm.useful.bloom.BloomFilter" />
       <module name="javabase_base" />
       <extension name="coverage">
         <pattern>
@@ -193,32 +206,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BuckSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.roily.algorithm.sort.bucksort.BuckSort" />
-      <module name="javabase_base" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.algorithm.sort.bucksort.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CountSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.roily.algorithm.sort.countsort.CountSort" />
-      <module name="javabase_base" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.roily.algorithm.sort.countsort.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="HashUseFul" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.roily.algorithm.useful.bloom.HashUseFul" />
       <module name="javabase_base" />
@@ -228,6 +215,22 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BloomFilter.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javabase_base" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roily.algorithm.useful.bloom.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.roily.algorithm.useful.bloom" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.algorithm.useful.bloom.BloomFilter" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -247,11 +250,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BloomFilter" />
+        <item itemvalue="JUnit.BloomFilter.test" />
         <item itemvalue="Application.BitSetUseFul" />
         <item itemvalue="Application.HashUseFul" />
         <item itemvalue="Application.BubbleSort" />
-        <item itemvalue="Application.BuckSort" />
-        <item itemvalue="Application.CountSort" />
       </list>
     </recent_temporary>
   </component>
@@ -450,14 +453,8 @@
       <workItem from="1656828149614" duration="1601000" />
       <workItem from="1657029695471" duration="1375000" />
       <workItem from="1657031093384" duration="18910000" />
-      <workItem from="1657279646073" duration="6651000" />
-    </task>
-    <task id="LOCAL-00139" summary="代理模式对比装饰器模式">
-      <created>1655562089728</created>
-      <option name="number" value="00139" />
-      <option name="presentableId" value="LOCAL-00139" />
-      <option name="project" value="LOCAL" />
-      <updated>1655562089728</updated>
+      <workItem from="1657279646073" duration="9315000" />
+      <workItem from="1657309889374" duration="2577000" />
     </task>
     <task id="LOCAL-00140" summary="外观模式">
       <created>1655653645951</created>
@@ -795,7 +792,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657300767789</updated>
     </task>
-    <option name="localTasksCounter" value="188" />
+    <task id="LOCAL-00188" summary="bitset">
+      <created>1657306141796</created>
+      <option name="number" value="00188" />
+      <option name="presentableId" value="LOCAL-00188" />
+      <option name="project" value="LOCAL" />
+      <updated>1657306141796</updated>
+    </task>
+    <option name="localTasksCounter" value="189" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -874,7 +878,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ObjectUtils update" />
     <MESSAGE value="IOUtils readLines" />
     <MESSAGE value="ClassUtils" />
     <MESSAGE value="BeanUtils" />
@@ -899,7 +902,8 @@
     <MESSAGE value="计数排序" />
     <MESSAGE value="桶排序" />
     <MESSAGE value="hashmap" />
-    <option name="LAST_COMMIT_MESSAGE" value="hashmap" />
+    <MESSAGE value="bitset" />
+    <option name="LAST_COMMIT_MESSAGE" value="bitset" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
