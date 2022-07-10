@@ -4,9 +4,11 @@ import org.junit.Test;
 import org.openjdk.jol.info.ClassLayout;
 import org.springframework.util.ObjectUtils;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.BitSet;
-import java.util.Properties;
 
 /**
  * @version 1.0.0
@@ -31,9 +33,10 @@ public class BitSetUseful {
             bitSet.set(value);
         }
 
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < 10; i++) {
             if (!bitSet.get(i))
                 System.out.println(i);
+        }
     }
 
     /**
