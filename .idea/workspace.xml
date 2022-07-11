@@ -172,7 +172,7 @@
       <module name="javabase_base" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.algorithm.sort.*" />
+          <option name="PATTERN" value="com.roily.algorithm.useful.bloom.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -185,7 +185,7 @@
       <module name="javabase_base" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.algorithm.sort.*" />
+          <option name="PATTERN" value="com.roily.algorithm.useful.bloom.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -194,11 +194,11 @@
       </method>
     </configuration>
     <configuration name="GoogleBloomFilter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.roily.algorithm.sort.GoogleBloomFilter" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.algorithm.useful.bloom.GoogleBloomFilter" />
       <module name="javabase_base" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.algorithm.sort.*" />
+          <option name="PATTERN" value="com.roily.algorithm.useful.bloom.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -211,7 +211,7 @@
       <module name="javabase_base" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.algorithm.sort.*" />
+          <option name="PATTERN" value="com.roily.algorithm.useful.bloom.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -223,7 +223,7 @@
       <module name="javabase_base" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.algorithm.sort.*" />
+          <option name="PATTERN" value="com.roily.algorithm.useful.bloom.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
