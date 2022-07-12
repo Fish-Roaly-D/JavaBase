@@ -22,11 +22,11 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
-Base-Collection-01/target
-Base-Collection-02/target
-Base-DataType-01/target
-Mysql-DataSource/target
-Mysql-jdbc/target
+*/target
+*/target
+*/target
+*/target
+*/target
 */target
 mybatisplus/mp-01/target/
-.idea
+**/idea
