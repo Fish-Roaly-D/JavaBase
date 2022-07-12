@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="bloomfilter">
+    <list default="true" id="47559c70-b1d8-46b1-8914-6ca208a20d1d" name="Default Changelist" comment="布隆过滤器">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -166,13 +166,13 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.GoogleBloomFilter">
+  <component name="RunManager" selected="Application.SimpleCompare">
     <configuration name="BitSetUseFul" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.roily.algorithm.useful.bloom.BitSetUseFul" />
       <module name="javabase_base" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.algorithm.sort.*" />
+          <option name="PATTERN" value="com.roily.algorithm.useful.bloom.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -185,7 +185,7 @@
       <module name="javabase_base" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.algorithm.sort.*" />
+          <option name="PATTERN" value="com.roily.algorithm.useful.bloom.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -194,11 +194,11 @@
       </method>
     </configuration>
     <configuration name="GoogleBloomFilter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.roily.algorithm.sort.GoogleBloomFilter" />
+      <option name="MAIN_CLASS_NAME" value="com.roily.algorithm.useful.bloom.GoogleBloomFilter" />
       <module name="javabase_base" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.algorithm.sort.*" />
+          <option name="PATTERN" value="com.roily.algorithm.useful.bloom.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -206,12 +206,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HashUseFul" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.roily.algorithm.useful.bloom.HashUseFul" />
+    <configuration name="SimpleCompare" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.roily.algorithm.useful.strcompare.SimpleCompare" />
       <module name="javabase_base" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.algorithm.sort.*" />
+          <option name="PATTERN" value="com.roily.algorithm.useful.strcompare.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -223,7 +223,7 @@
       <module name="javabase_base" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roily.algorithm.sort.*" />
+          <option name="PATTERN" value="com.roily.algorithm.useful.bloom.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -250,11 +250,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SimpleCompare" />
         <item itemvalue="Application.GoogleBloomFilter" />
         <item itemvalue="Application.BloomFilter" />
         <item itemvalue="JUnit.BloomFilter.test" />
         <item itemvalue="Application.BitSetUseFul" />
-        <item itemvalue="Application.HashUseFul" />
       </list>
     </recent_temporary>
   </component>
@@ -455,13 +455,7 @@
       <workItem from="1657031093384" duration="18910000" />
       <workItem from="1657279646073" duration="9315000" />
       <workItem from="1657309889374" duration="4431000" />
-    </task>
-    <task id="LOCAL-00141" summary="外观模式demo">
-      <created>1655695570819</created>
-      <option name="number" value="00141" />
-      <option name="presentableId" value="LOCAL-00141" />
-      <option name="project" value="LOCAL" />
-      <updated>1655695570819</updated>
+      <workItem from="1657552849473" duration="2150000" />
     </task>
     <task id="LOCAL-00142" summary="命令模式">
       <created>1655700090791</created>
@@ -799,7 +793,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657312580079</updated>
     </task>
-    <option name="localTasksCounter" value="190" />
+    <task id="LOCAL-00190" summary="布隆过滤器">
+      <created>1657552940293</created>
+      <option name="number" value="00190" />
+      <option name="presentableId" value="LOCAL-00190" />
+      <option name="project" value="LOCAL" />
+      <updated>1657552940294</updated>
+    </task>
+    <option name="localTasksCounter" value="191" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -878,7 +879,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ClassUtils" />
     <MESSAGE value="BeanUtils" />
     <MESSAGE value="ReflectionUtils" />
     <MESSAGE value="Base64Utils" />
@@ -903,7 +903,8 @@
     <MESSAGE value="hashmap" />
     <MESSAGE value="bitset" />
     <MESSAGE value="bloomfilter" />
-    <option name="LAST_COMMIT_MESSAGE" value="bloomfilter" />
+    <MESSAGE value="布隆过滤器" />
+    <option name="LAST_COMMIT_MESSAGE" value="布隆过滤器" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

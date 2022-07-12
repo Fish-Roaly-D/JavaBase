@@ -1,4 +1,4 @@
-package com.roily.algorithm.sort;
+package com.roily.algorithm.useful.bloom;
 
 import com.google.common.hash.BloomFilter;
 import com.google.common.hash.Funnels;
