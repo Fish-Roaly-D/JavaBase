@@ -26,7 +26,6 @@ public class BitSetUseful {
 
         int[] values = new int[]{1, 1, 2, 3, 3, 4, 4, 6, 9, 4, 4, 4, 5};
         BitSet bitSet = new BitSet();
-
         for (int value : values) {
             bitSet.set(value);
         }
@@ -46,13 +45,10 @@ public class BitSetUseful {
         String fPath = root + "/file";
         String fName = "value.txt";
         BitSet bitSet = new BitSet();
-
         FileReader fileReader = new FileReader(new File(fPath, fName));
-
         char[] buffer = new char[1024];
         int length = 0;
         while ((length = fileReader.read(buffer)) != -1) {
-
             for (int i = 0; i < length; i++) {
                 if (buffer[i] >= '0' && buffer[i] <= '9')
                     bitSet.set(Integer.parseInt(buffer[i] + ""));
