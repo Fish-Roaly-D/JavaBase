@@ -43,15 +43,19 @@ public class test01 {
 
     /**
      * 上面的例子完全可以这样写
+     * - 一个n位的数据  右(左)移 n+k位，相当于右(左)移k位，即 (n+K)%取余，也就是(n+k)和 (n - 1)按位与。
      */
     @Test
     public void test(){
         int intX = 32;
         int longX = 64;
         System.out.println(1L>>1);
-        System.out.println((1L >> 64)+"等价于"+ (1L >> (64 & longX-1)));
-        System.out.println((1L >> 65)+"等价于"+ (1L >> (65 & longX-1)));
-        System.out.println((1L >> 66)+"等价于"+ (1L >> (66 & longX-1)));
+        System.out.println((1L >> 64)+"等价于"+ (1L >> (64 & (longX-1))));
+        System.out.println((1L >> 65)+"等价于"+ (1L >> (65 & (longX-1))));
+        System.out.println((1L >> 66)+"等价于"+ (1L >> (66 & (longX-1))));
+
+        System.out.println((112333333333333L >> 140)+"等价于"+ (112333333333333L >> (140 & (longX-1))));
+
 
     }
 
