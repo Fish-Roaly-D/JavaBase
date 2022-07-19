@@ -26,7 +26,7 @@ public class ArrayListLearn {
         String[] oldArray = new String[10];
         oldArray[0] = "123";
         //100为拷贝后新数组长度
-        //如果说newLength不足的话，新数组会被截断
+        //新数组长度位 min(original.length, newLength)
         String[] newArray = Arrays.copyOf(oldArray, 100);
 
         System.out.println("=========oldArray==========");
@@ -38,6 +38,7 @@ public class ArrayListLearn {
         System.out.println("newArray 长度" + newArray.length);
         System.out.println("newArray 哈希值" + newArray.hashCode());
         System.out.println("newArray[0] 哈希值" + newArray[0].hashCode());
+        System.err.println("array[0]哈希值相同，是一个浅拷贝");
 
         System.out.println("========如果说newLength不足的话，新数组会被截断=========");
         String[] oldArray1 = new String[]{"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"};

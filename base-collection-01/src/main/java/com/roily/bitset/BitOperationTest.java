@@ -2,17 +2,16 @@ package com.roily.bitset;
 
 import org.junit.Test;
 
-import java.util.ArrayList;
 import java.util.BitSet;
 
 /**
  * @version 1.0.0
- * @Description
- * @ClassName test01.java
+ * @Description 移位运算测试
+ * @ClassName BitOperationTest.java
  * @author: RoilyFish
  * @date: 2022/5/24 12:51
  */
-public class test01 {
+public class BitOperationTest {
 
     /**
      * 移位运算，int类型为32位，表示范围位 [-2^32,2^32]
@@ -102,7 +101,7 @@ public class test01 {
     }
 
     /**
-     * 测试break再if中执行
+     * 测试break在if中执行
      * 跳出for循环
      */
     @Test
