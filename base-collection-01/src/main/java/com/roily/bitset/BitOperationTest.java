@@ -2,17 +2,16 @@ package com.roily.bitset;
 
 import org.junit.Test;
 
-import java.util.ArrayList;
 import java.util.BitSet;
 
 /**
  * @version 1.0.0
- * @Description
- * @ClassName test01.java
+ * @Description 移位运算测试
+ * @ClassName BitOperationTest.java
  * @author: RoilyFish
  * @date: 2022/5/24 12:51
  */
-public class test01 {
+public class BitOperationTest {
 
     /**
      * 移位运算，int类型为32位，表示范围位 [-2^32,2^32]
@@ -43,15 +42,19 @@ public class test01 {
 
     /**
      * 上面的例子完全可以这样写
+     * - 一个n位的数据  右(左)移 n+k位，相当于右(左)移k位，即 (n+K)%取余，也就是(n+k)和 (n - 1)按位与。
      */
     @Test
     public void test(){
         int intX = 32;
         int longX = 64;
         System.out.println(1L>>1);
-        System.out.println((1L >> 64)+"等价于"+ (1L >> (64 & longX-1)));
-        System.out.println((1L >> 65)+"等价于"+ (1L >> (65 & longX-1)));
-        System.out.println((1L >> 66)+"等价于"+ (1L >> (66 & longX-1)));
+        System.out.println((1L >> 64)+"等价于"+ (1L >> (64 & (longX-1))));
+        System.out.println((1L >> 65)+"等价于"+ (1L >> (65 & (longX-1))));
+        System.out.println((1L >> 66)+"等价于"+ (1L >> (66 & (longX-1))));
+
+        System.out.println((112333333333333L >> 140)+"等价于"+ (112333333333333L >> (140 & (longX-1))));
+
 
     }
 
@@ -98,7 +101,7 @@ public class test01 {
     }
 
     /**
-     * 测试break再if中执行
+     * 测试break在if中执行
      * 跳出for循环
      */
     @Test
