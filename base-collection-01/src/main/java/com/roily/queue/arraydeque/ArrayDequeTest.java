@@ -8,13 +8,12 @@ import java.util.Arrays;
 
 /**
  * @version 1.0.0
- * @Description TODO
+ * @Description
  * @ClassName ArrayDequeTest.java
  * @author: RoilyFish
  * @date: 2022/4/28 23:36
  */
 public class ArrayDequeTest {
-
 
     /**
      * ArrayDeque.addFirst(),在head对应下标为0时，是从数组尾部开始添加元素的
@@ -27,8 +26,9 @@ public class ArrayDequeTest {
         //默认16
         ArrayDeque<String> strings = new ArrayDeque<>();
         strings.addFirst("abc");
-        // 1000 0000 0000 0000 0000 0000
-        // 0000                     1111
+
+        //15 补码  --->  **** *** 1111
+        //-1 补码  --->  原：1000 *** *** 0001 反： 1111 *** *** 1110  补：1111 *** *** 1111
         System.out.println((-1) & 15);
     }
 
@@ -45,11 +45,10 @@ public class ArrayDequeTest {
     }
 
     @Test
-    public void getLaset() {
+    public void getLast() {
 
         //默认16
         ArrayDeque<String> strings = new ArrayDeque<>();
-
         strings.addFirst("1");
         strings.addFirst("2");
         strings.addFirst("3");
