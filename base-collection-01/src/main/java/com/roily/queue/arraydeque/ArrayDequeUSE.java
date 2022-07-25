@@ -18,7 +18,7 @@ public class ArrayDequeUSE {
 
     @Test
     public void testMyQueue() {
-        MyQueue<String> myQueue = new MyQueue<String>();
+        MyQueue<String> myQueue = new MyQueue<>();
         for (int i = 0; i < 10; i++) {
             myQueue.add("" + i);
         }

@@ -7,7 +7,7 @@ import org.springframework.util.ObjectUtils;
 
 /**
  * @version 1.0.0
- * @Description 平衡二叉查找树
+ * @Description 平衡二叉查找树，是对二叉查找树的优化，避免其退化为链表，提高查找效率
  * @ClassName AVLTree.java
  * @author: RoilyFish
  * @date: 2022/5/18 22:55

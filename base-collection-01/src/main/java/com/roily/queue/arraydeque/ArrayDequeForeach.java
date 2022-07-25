@@ -19,7 +19,7 @@ public class ArrayDequeForeach {
     @Test
     public void test() {
 
-        Deque<Object> deque = new ArrayDeque<Object>();
+        Deque<Object> deque = new ArrayDeque<>();
 
         //默认调用  addLast方法
         for (Integer i = 0; i < 10; i++) {
@@ -30,19 +30,14 @@ public class ArrayDequeForeach {
             deque.addFirst(i);
         }
 
-
         System.out.println("===========for循环=============");
         for (Object obj : deque) {
             System.out.println(obj);
         }
         System.out.println("===========Collection接口继承Iterable接口api=============");
-        deque.forEach((obj) -> {
-            System.out.println(obj);
-        });
+        deque.forEach(System.out::println);
         System.out.println("===========Stream  api=============");
-        deque.stream().forEach((obj) -> {
-            System.out.println(obj);
-        });
+        deque.stream().forEach(System.out::println);
         System.out.println("===========迭代器=============");
         Iterator<Object> iterator = deque.iterator();
         while (iterator.hasNext()) {
@@ -59,7 +54,6 @@ public class ArrayDequeForeach {
         int size = deque.size();
         while (size-- > 0)
             System.out.println(deque.pop());
-
 
     }
 

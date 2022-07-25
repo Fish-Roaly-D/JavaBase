@@ -7,8 +7,7 @@ import java.util.Collections;
 import java.util.Comparator;
 
 /**
- * descripte:
- *
+ * descripte:comparator和comparable接口测试
  * @author: RoilyFish
  * @date: 2022/2/22
  */

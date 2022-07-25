@@ -13,10 +13,11 @@ import org.openjdk.jol.util.ObjectUtils;
 public class BST<T> {
 
     /**
-     * 二叉查找树，是特殊的完全二叉树，任意父节点的值大于其左子节点，小于其右子节点
+     * 二叉查找树，是特殊的完全二叉树，任意父节点的值大于其左子节点，小于其右子节点，如此表现有序性
+     *
+     * - 注意
+     * -- 若所插入数据已表现为有序性，二叉查找数会退化为链表，导致查找效率底下
      */
-
-
     class BSTNode {
         //左右子节点
         BSTNode lChild;
@@ -95,8 +96,6 @@ public class BST<T> {
     public void test() {
 
         BST<Integer> integerBST = new BST<>();
-
-
         integerBST.insert(6);
         integerBST.insert(2);
         integerBST.insert(3);
