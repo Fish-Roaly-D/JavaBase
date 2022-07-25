@@ -1,6 +1,7 @@
 package com.roily.classloader;
 
 /**
+ * @author rolyfish
  * @Date: 2022/07/25/16:19
  * @Description: 实例对象是否可以使用静态属性
  */
