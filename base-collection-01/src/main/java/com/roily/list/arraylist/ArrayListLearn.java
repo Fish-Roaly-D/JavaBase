@@ -2,6 +2,7 @@ package com.roily.list.arraylist;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.junit.Test;
 import org.openjdk.jol.vm.VM;
 
@@ -22,7 +23,7 @@ public class ArrayListLearn {
      * ②这个拷贝是一个浅拷贝
      */
     @Test
-    public void test01() {
+    public void testArrayCopy() {
         String[] oldArray = new String[10];
         oldArray[0] = "123";
         //100为拷贝后新数组长度
@@ -55,12 +56,20 @@ public class ArrayListLearn {
     }
 
     @Test
-    public void test02() {
+    public void sysArrayCopy() {
         int[] a = new int[10];
         a[0] = 0;
         a[1] = 1;
         a[2] = 2;
         a[3] = 3;
+        /**
+         * 参数：
+         * - 源数组
+         * - 源数组需要被拷贝数据的起始下标
+         * - 目标数组
+         * - 目标数组接受源数组数据的起始下标
+         * - 拷贝长度
+         */
         System.arraycopy(a, 2, a, 3, 3);
         //a[2]=99;
         for (int i = 0; i < a.length; i++) {
@@ -77,26 +86,41 @@ public class ArrayListLearn {
     }
 
     @Test
-    public void testVM01() {
-
+    public void StrASProperty01() {
+        //String有常量池的概念，借助VM获取其内存地址。或者直接等号判断
         String str = "abc";
         String str2 = "abc";
         System.out.println(str == str2);
         System.out.println(VM.current().addressOf(str));
         System.out.println(VM.current().addressOf(str2));
+
+        //使用new关键字创建String对象，对象被分配在堆内存，和普通引用对象是一样的
+        System.out.println();
+        String str3 = new String("abc");
+        String str4 = new String("abc");
+        System.out.println(str3 == str4);
+        System.out.println(VM.current().addressOf(str3));
+        System.out.println(VM.current().addressOf(str4));
+
     }
 
     @Test
-    public void testVM02() throws NoSuchFieldException {
-
-        testVm testVm1 = new testVm("123");
-        testVm testVm2 = new testVm("123");
-
-        Field str = testVm1.getClass().getDeclaredField("str");
-        Field str2 = testVm2.getClass().getDeclaredField("str");
-
-        System.out.println(VM.current().addressOf(str));
+    public void StrASProperty02() throws NoSuchFieldException {
+        //
+        StrASProperty strASProperty1 = new StrASProperty("123");
+        StrASProperty strASProperty2 = new StrASProperty("123");
+        Field str1 = strASProperty1.getClass().getDeclaredField("str");
+        Field str2 = strASProperty2.getClass().getDeclaredField("str");
+        System.out.println(str1 == str2);
+        System.out.println(VM.current().addressOf(str1));
         System.out.println(VM.current().addressOf(str2));
+
+        //str作为对象属性也是共用一个str对象
+        String val1 = strASProperty1.getStr();
+        String val2 = strASProperty2.getStr();
+        System.out.println(val1 == val2);
+        System.out.println(VM.current().addressOf(val1));
+        System.out.println(VM.current().addressOf(val2));
     }
 
 
@@ -116,7 +140,7 @@ public class ArrayListLearn {
         System.out.println(get02());
 
         System.out.println("对于基本数据类型只有值，return记住了值");
-        System.out.println(get03()+"");
+        System.out.println(get03() + "");
     }
 
     //return记住了引用str，但是String不可变，即return记住的引用所指向的String不变。
@@ -152,8 +176,9 @@ public class ArrayListLearn {
 }
 
 @Data
+@NoArgsConstructor
 @AllArgsConstructor
-class testVm {
+class StrASProperty {
 
     String str;
 
