@@ -19,27 +19,27 @@ public class MapLearn {
     @Test
     public void forBreak() {
         for (int i = 0; i < 100; i++) {
-            if (i>=20){
+            if (i >= 20) {
                 System.out.println(i);
                 break;
             }
         }
     }
 
-    //for循环break，结束循环,带lable。结束内部循环，继续外循环
+    //for循环break，结束循环,带label。结束内部循环，继续外循环
     @Test
     public void forBreak2() {
-
+        xxx:
         for (int i = 0; i < 100; i++) {
-            xxx:
-            for (int j = 0; i < 100; i++) {
-                if (j>=20){
-                    System.out.println(j);
+
+            for (int j = 0; j < 100; j++) {
+                if (j >= 20) {
+                    System.out.print(j + ",");
                     break xxx;
                 }
             }
+            System.out.println();
         }
-
     }
 
     /**
@@ -51,7 +51,7 @@ public class MapLearn {
         System.out.println(i);
     }
 
-    //HashMap的tableSizefor方法理解
+    //HashMap的tableSizeof方法理解
     public static int tableSizeForTest(int n) {
         //对自然数e求对数。结合换底公式
         double m = Math.log(n) / Math.log(2);
@@ -60,12 +60,9 @@ public class MapLearn {
         //2的m2幂次方
         return (int) Math.pow(2, m2);
     }
-
-
 }
 
 class Roilyfish {
-
 
     final String getValue(String str) {
         return str;
@@ -80,8 +77,8 @@ class Roilyfish {
 
 class Roilyfish2 extends Roilyfish {
     //不可以被重写
-    //@Override
-    //String getValue(String str) {
-    //    return super.getValue();
-    //}
+//    @Override
+//    String getValue(String str) {
+//        return super.getValue();
+//    }
 }
