@@ -44,7 +44,7 @@ public class ValueTransfer {
         System.out.println("修改后：" + sb1.toString());
 
         System.out.println("引用数据类型，修改引用");
-        final StringBuilder sb2= new StringBuilder("123");
+        final StringBuilder sb2 = new StringBuilder("123");
         System.out.println("原值：" + sb2.toString());
         referenceType2(sb2);
         System.out.println("修改后：" + sb2.toString());
