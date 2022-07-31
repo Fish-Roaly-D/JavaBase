@@ -72,6 +72,15 @@ public class StringType {
         System.out.println(testFinal.sb + ":" + VM.current().addressOf(testFinal.sb));
     }
 
+    @Test
+    public void testSubstring() {
+
+        String str = "123";
+
+        System.out.println(str.substring(0, 2));
+
+    }
+
 }
 
 class TestFinal {
