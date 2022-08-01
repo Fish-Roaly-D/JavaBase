@@ -117,4 +117,31 @@ public class IntegerType {
         System.out.println("equals方法：" + i1.equals(i2));
 
     }
+
+
+
+
+    @Test
+    public void testBoxingWhereEquals(){
+
+        int i3 = 1000;
+        int i4 = 1000;
+        Integer i5 = 1000;
+
+        System.out.println(i3 == i4);//true
+        System.out.println(i5 == i3);//false
+
+    }
+
+
+
+    Integer methodRe(){
+        return null;
+    }
+    @Test
+    public void testRe(){
+        int i = methodRe();
+    }
+
+
 }

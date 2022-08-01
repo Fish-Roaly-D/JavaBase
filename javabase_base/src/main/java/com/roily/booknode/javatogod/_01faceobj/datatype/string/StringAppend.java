@@ -1,5 +1,6 @@
 package com.roily.booknode.javatogod._01faceobj.datatype.string;
 
+import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
 
 /**
@@ -19,5 +20,20 @@ public class StringAppend {
     void method(String str1, String str2) {
         final String strX = str1 + "," + str2;
     }
+
+    @Test
+    public void testAppendByUtil(){
+        String[] value = {"hello", "你好", "hello"};
+        String result = StringUtils.join(value, ",");
+        System.out.println(result);
+    }
+
+
+    @Test
+    public void testAppendByStr(){
+        String join = String.join(",", "hello", "你好", "hello", "4");
+        System.out.println(join);
+    }
+
 
 }
