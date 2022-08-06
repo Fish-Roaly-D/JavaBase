@@ -26,6 +26,12 @@
         <module>designpatterns</module>
     </modules>
 
+    <!--  设置项目编码格式，不设置默认跟随编译器  -->
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+
     <dependencies>
         <!-- https://mvnrepository.com/artifact/junit/junit -->
         <dependency>
