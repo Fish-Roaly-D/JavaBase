@@ -45,8 +45,8 @@ public class AboutStream {
         System.out.println(sum);
 
         System.out.println("===============求和 求平均值===============");
-        Object collect = list.stream().mapToInt(Integer::valueOf).collect(Collectors., null, null);
-        System.out.println(collect);
+//        Object collect = list.stream().mapToInt(Integer::valueOf).collect(Collectors., null, null);
+//        System.out.println(collect);
 
         System.out.println("===============去重===============");
         List<String> collect4 = list.stream().distinct().collect(Collectors.toList());
