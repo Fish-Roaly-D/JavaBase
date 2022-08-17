@@ -4,10 +4,17 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.HashMap;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.DoubleStream;
+import java.util.stream.IntStream;
+import java.util.stream.LongStream;
+import java.util.stream.Stream;
 
 /**
+ * @author rolyfish
  * @Date: 2022/08/09/11:20
  * @Description:
  */
@@ -59,9 +66,9 @@ public class AboutStream {
 
         System.out.println("===============对每一个元素进行操作===============");
         List<String> collect5 = list.stream().peek(ele -> {
-          if (ele.equals("2")){
-              System.out.println("xxxx");
-          }
+            if (ele.equals("2")) {
+                System.out.println("xxxx");
+            }
         }).collect(Collectors.toList());
         collect5.stream().forEach(System.out::print);
         System.out.println();
@@ -70,15 +77,63 @@ public class AboutStream {
 
     @Test
     public void test2() {
-
-
+        final Stream<String> stringStream = Stream.of("1", "2", "3");
+        stringStream.filter("2"::equals);
+        stringStream.forEach(System.out::println);
     }
 
     @Test
     public void test3() {
 
+        final Stream<String> stringStream = Stream.of("1", "2", "3");
+        final Stream<String> stringStreamFilter = stringStream.filter("2"::equals);
+        stringStreamFilter.forEach(System.out::println);
+    }
+
+    @Test
+    public void test4() {
+
+        //通过集合类创建流
+        final Collection<String> strings = Arrays.asList("1", "2", "3");
+        final Stream<String> stream = strings.stream();
+
+        //Stream创建流
+        final Stream<String> stringStream = Stream.of("1", "2", "3");
+        final Stream<String> a = Stream.of("a");
+
+        //Arrays.stream(T[] t)
+        final Stream<String> stream1 = Arrays.stream(new String[]{"1", "2", "3"});
+
+        stream1.distinct().forEach(System.out::println);
 
     }
 
 
+    @Test
+    public void test5() {
+        final StringBuffer sb1 = new StringBuffer("1");
+        final StringBuffer sb2 = new StringBuffer("2");
+        final StringBuffer sb3 = new StringBuffer("3");
+
+
+        final Stream<StringBuffer> stream = Arrays.asList(sb1, sb2, sb3).stream();
+
+        final HashMap<Object, Object> collect;
+
+    }
+
+    @Test
+    public void test6() {
+        final StringBuffer sb1 = new StringBuffer("1");
+        final StringBuffer sb2 = new StringBuffer("2");
+        final StringBuffer sb3 = new StringBuffer("3");
+
+
+        final Stream<StringBuffer> stream = Arrays.asList(sb1, sb2, sb3).stream();
+
+        final IntStream intStream = stream.mapToInt(StringBuffer::length);
+        final DoubleStream doubleStream = stream.mapToDouble(StringBuffer::length);
+        final LongStream longStream = stream.mapToLong(StringBuffer::length);
+
+    }
 }
