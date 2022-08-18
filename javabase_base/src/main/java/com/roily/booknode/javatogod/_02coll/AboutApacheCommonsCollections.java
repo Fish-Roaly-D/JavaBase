@@ -1,6 +1,7 @@
 package com.roily.booknode.javatogod._02coll;
 
 import org.apache.commons.collections4.Bag;
+import org.apache.commons.collections4.BagUtils;
 import org.apache.commons.collections4.bag.CollectionBag;
 import org.apache.commons.collections4.bag.HashBag;
 import org.apache.commons.collections4.bag.PredicatedBag;
@@ -9,6 +10,8 @@ import org.apache.commons.collections4.bag.SynchronizedBag;
 import org.apache.commons.collections4.bag.SynchronizedSortedBag;
 import org.apache.commons.collections4.bag.TransformedBag;
 import org.apache.commons.collections4.bag.TreeBag;
+import org.apache.commons.collections4.bidimap.DualHashBidiMap;
+import org.apache.commons.collections4.bidimap.TreeBidiMap;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -98,18 +101,53 @@ public class AboutApacheCommonsCollections {
         System.out.println("TransformedBag.transformingBag " + result8);
 
         Bag<Object> bag2 = TransformedBag.transformedBag(hashBag, Object::hashCode);
-        bag2.add("xx",3);
+        bag2.add("xx", 3);
         String result9 = bag2.stream().map(Objects::toString).collect(Collectors.joining(",", "[", "]"));
         System.out.println("TransformedBag.transformingBag " + result9);
 
+        /**
+         * BagUtils  Bag工具类 协助生成Bag
+         */
+        final Bag<Object> bag = BagUtils.collectionBag(new HashBag<>());
 
     }
 
 
+    /**
+     * bidimap
+     * - bidimap的put()方法中key-value有任意重复的此条记录会被覆盖
+     */
     @Test
-    public void testBidiMap(){
+    public void testBidiMap() {
+
+        final DualHashBidiMap<String, Integer> dualHashBidiMap = new DualHashBidiMap<>();
+        dualHashBidiMap.put("a", 1);
+        dualHashBidiMap.put("b", 2);
+        dualHashBidiMap.put("c", 3);
+        dualHashBidiMap.put("d", 3);
+        dualHashBidiMap.put("e", 12);
+        dualHashBidiMap.put("e", 123);
+
+        System.out.println(dualHashBidiMap.get("a"));
+        System.out.println(dualHashBidiMap.getKey(1));
+        System.out.println(dualHashBidiMap.getKey(3));
+        System.out.println(dualHashBidiMap.values());
+        System.out.println(dualHashBidiMap.keySet());
 
 
+        final TreeBidiMap<String, Integer> treeBidiMap = new TreeBidiMap<>();
+        treeBidiMap.put("a", 1);
+        treeBidiMap.put("b", 2);
+        treeBidiMap.put("c", 3);
+        treeBidiMap.put("d", 3);
+        treeBidiMap.put("e", 12);
+        treeBidiMap.put("e", 123);
+
+        System.out.println(treeBidiMap.get("a"));
+        System.out.println(treeBidiMap.getKey(1));
+        System.out.println(treeBidiMap.getKey(3));
+        System.out.println(treeBidiMap.values());
+        System.out.println(treeBidiMap.keySet());
 
     }
 
