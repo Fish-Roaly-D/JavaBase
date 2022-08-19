@@ -2,6 +2,7 @@ package com.roily.booknode.javatogod._02coll;
 
 import org.apache.commons.collections4.Bag;
 import org.apache.commons.collections4.BagUtils;
+import org.apache.commons.collections4.IterableUtils;
 import org.apache.commons.collections4.bag.CollectionBag;
 import org.apache.commons.collections4.bag.HashBag;
 import org.apache.commons.collections4.bag.PredicatedBag;
@@ -12,9 +13,16 @@ import org.apache.commons.collections4.bag.TransformedBag;
 import org.apache.commons.collections4.bag.TreeBag;
 import org.apache.commons.collections4.bidimap.DualHashBidiMap;
 import org.apache.commons.collections4.bidimap.TreeBidiMap;
+import org.apache.commons.collections4.iterators.ArrayIterator;
+import org.apache.commons.collections4.iterators.ArrayListIterator;
+import org.apache.commons.collections4.iterators.BoundedIterator;
+import org.apache.commons.collections4.iterators.CollatingIterator;
 import org.junit.Test;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
@@ -150,5 +158,52 @@ public class AboutApacheCommonsCollections {
         System.out.println(treeBidiMap.keySet());
 
     }
+
+    /**
+     * Apache common 包为我们提供方便迭代的迭代器
+     */
+    @Test
+    public void testIterator() {
+
+        System.out.println("ArrayIterator");
+        /**
+         * ArrayIterator 数组迭代器，接受一个数组、起始下标、终止下标
+         */
+        Iterator<Object> arrayIterator1 = new ArrayIterator<>(Arrays.asList("1", "2", "3").toArray(), 0, 2);
+        while (arrayIterator1.hasNext()) {
+            System.out.println(arrayIterator1.next());
+        }
+
+        System.out.println("ArrayListIterator");
+
+        /**
+         * ArrayListIterator List迭代器
+         * 支持正向迭代、逆向迭代
+         */
+        ArrayListIterator<Object> arrayListIterator2 = new ArrayListIterator<>(Arrays.asList("1", "2", "3", "4", "5", "6").toArray(), 2, 6);
+        while (arrayListIterator2.hasNext()) {
+            System.out.println(arrayListIterator2.next());
+        }
+        while (arrayListIterator2.hasPrevious()) {
+            System.out.println(arrayListIterator2.previous());
+        }
+
+        System.out.println("BoundedIterator");
+        List<String> list = Arrays.asList("1", "2", "3", "4", "5");
+        BoundedIterator<String> boundedIterator = new BoundedIterator<>(list.iterator(), 2, 2);
+        while (boundedIterator.hasNext()) {
+            System.out.println(boundedIterator.next());
+        }
+
+        System.out.println("CollatingIterator");
+        List<String> list1 = Arrays.asList("5", "4", "1", "2", "3");
+        List<String> list2 = Arrays.asList("2", "1", "c", "d", "e");
+        CollatingIterator<String> collatingIterator = new CollatingIterator<>(String::compareTo, list1.iterator(), list2.iterator());
+        while (collatingIterator.hasNext()) {
+            System.out.print(collatingIterator.next());
+        }
+
+    }
+
 
 }

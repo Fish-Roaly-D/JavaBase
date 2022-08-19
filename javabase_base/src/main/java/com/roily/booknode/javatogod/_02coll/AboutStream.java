@@ -136,4 +136,48 @@ public class AboutStream {
         final LongStream longStream = stream.mapToLong(StringBuffer::length);
 
     }
+
+    @Test
+    public void testTwoList() {
+
+
+        ArrayList<Person> people = new ArrayList<>();
+
+        ArrayList<Name> names = new ArrayList<>();
+
+        Person person1 = new Person();
+        person1.setId(1);
+        person1.setAge("12");
+        Person person2 = new Person();
+        person2.setId(2);
+        person2.setAge("12");
+
+        Name name1 = new Name();
+        name1.setId(1);
+        name1.setName("name1");
+
+        Name name2 = new Name();
+        name2.setId(2);
+        name2.setName("name2");
+
+        people.add(person1);
+        people.add(person2);
+        names.add(name1);
+        names.add(name2);
+        List<Object> collect = people.stream().map(person ->
+                names.stream()
+                .filter(name -> {
+                    return person.id == name.id;
+                })
+                .map(name -> {
+                    person.setName(name.name);
+                    return person;
+                }).collect(Collectors.toList())).flatMap(Collection::stream
+        ).collect(Collectors.toList());
+
+        System.out.println(collect);
+
+    }
+
+
 }
