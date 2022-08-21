@@ -2,7 +2,8 @@ package com.roily.booknode.javatogod._02coll;
 
 import org.apache.commons.collections4.Bag;
 import org.apache.commons.collections4.BagUtils;
-import org.apache.commons.collections4.IterableUtils;
+import org.apache.commons.collections4.CollectionUtils;
+import org.apache.commons.collections4.MapIterator;
 import org.apache.commons.collections4.bag.CollectionBag;
 import org.apache.commons.collections4.bag.HashBag;
 import org.apache.commons.collections4.bag.PredicatedBag;
@@ -17,12 +18,16 @@ import org.apache.commons.collections4.iterators.ArrayIterator;
 import org.apache.commons.collections4.iterators.ArrayListIterator;
 import org.apache.commons.collections4.iterators.BoundedIterator;
 import org.apache.commons.collections4.iterators.CollatingIterator;
+import org.apache.commons.collections4.map.HashedMap;
 import org.junit.Test;
 
-import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
@@ -202,6 +207,71 @@ public class AboutApacheCommonsCollections {
         while (collatingIterator.hasNext()) {
             System.out.print(collatingIterator.next());
         }
+
+        System.out.println("MapIterator");
+        final HashMap<Object, Object> map = new HashMap<>(8);
+        map.put("1", "a");
+        map.put("2", "b");
+        map.put("3", "c");
+        map.put("4", "d");
+        map.put("5", "e");
+        map.put("6", "f");
+        map.put("7", "g");
+        map.put("8", "h");
+        //entry迭代器
+        final Iterator<Map.Entry<Object, Object>> iterator =
+                map.entrySet().iterator();
+        while (iterator.hasNext()) {
+            final Map.Entry<Object, Object> next = iterator.next();
+            System.out.println("key值:" + next.getKey() + "value值:" + next.getValue());
+        }
+        //key迭代器
+        map.keySet().iterator();
+        //value迭代器
+        map.values().iterator();
+        final HashedMap<Object, Object> hashedMap = new HashedMap<>(map);
+        final MapIterator<Object, Object> hashedMapIterator = hashedMap.mapIterator();
+        while (hashedMapIterator.hasNext()) {
+            System.out.println(hashedMapIterator.next());
+            System.out.println("key值:" + hashedMapIterator.getKey() + "value值:" + hashedMapIterator.getValue());
+        }
+
+        System.out.println("ApacheCollectionUtils");
+        System.out.println("ignore null");
+        final List<String> listX = new ArrayList<>(Arrays.asList("1", "2", "3", "4", "5"));
+        final List<String> listY = new ArrayList<>(Arrays.asList("1", "2", "c", "b", "5"));
+        System.out.println(CollectionUtils.addIgnoreNull(listX, null));
+        System.out.println(CollectionUtils.addIgnoreNull(listX, "6"));
+
+        System.out.println("merge  and  sort");
+        final List<String> collate1 = CollectionUtils.collate(listX, listY);
+        System.out.println(collate1);
+        final List<String> collate2 = CollectionUtils.collate(listX, listY, String::compareTo);
+        System.out.println(collate2);
+
+        System.out.println("安全空检查");
+        System.out.println(CollectionUtils.isEmpty(listX));
+        System.out.println(CollectionUtils.isNotEmpty(listX));
+
+        System.out.println("交集" + CollectionUtils.intersection(listX, listY));
+        System.out.println("并集" + CollectionUtils.union(listX, listY));
+        System.out.println("外集" + CollectionUtils.subtract(listX, listY));
+
+
+
+
+        final List<String> collect1 = listX.stream().filter(listY::contains).collect(Collectors.toList());
+        System.out.println("交集" + collect1);
+        final List<String> collect2 = listX.stream().filter(ele -> !listY.contains(ele)).collect(Collectors.toList());
+        System.out.println("外集" + collect2);
+
+        System.out.println("Stream 合并集合");
+        final ArrayList<List<String>> lists = new ArrayList<>();
+        lists.add(listX);
+        lists.add(listY);
+        final List<Object> collect = lists.stream().flatMap(Collection::stream).collect(Collectors.toList());
+        System.out.println("并集"+collect);
+
 
     }
 
