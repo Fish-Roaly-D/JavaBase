@@ -140,7 +140,6 @@ public class AboutStream {
     @Test
     public void testTwoList() {
 
-
         ArrayList<Person> people = new ArrayList<>();
 
         ArrayList<Name> names = new ArrayList<>();
@@ -179,5 +178,57 @@ public class AboutStream {
 
     }
 
+    /**
+     * 想要在一个集合内匹配另一个集合信息
+     */
+    @Test
+    public void testxx(){
+
+        ArrayList<Person> people = new ArrayList<>();
+        ArrayList<Name> names = new ArrayList<>();
+        Person person1 = new Person();
+        person1.setId(1);
+        person1.setAge("12");
+        Person person2 = new Person();
+        person2.setId(2);
+        person2.setAge("12");
+
+        Name name1 = new Name();
+        name1.setId(1);
+        name1.setName("name1");
+        Name name2 = new Name();
+        name2.setId(2);
+        name2.setName("name2");
+
+        people.add(person1);
+        people.add(person2);
+        names.add(name1);
+        names.add(name2);
+
+        final HashMap<Object, Object> collect = names.stream().collect(HashMap::new, (map, name) -> {
+            map.put(name.getId(),name);
+        }, (r1, r2) -> {
+            System.out.println(r1);
+        });
+
+
+
+        System.out.println(collect);
+
+
+    }
+
+
+    @Test
+    public void eeee(){
+
+        String str = "123"+"abc";
+        String str2 = "123x";
+        String str3 = "abcx";
+
+    }
+    void append(String str1 ,String str2){
+        String str3 = str1 + str2;
+    }
 
 }
