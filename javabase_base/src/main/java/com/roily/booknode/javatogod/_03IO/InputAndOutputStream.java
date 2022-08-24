@@ -4,15 +4,22 @@ import lombok.Data;
 import lombok.experimental.Accessors;
 import org.junit.Test;
 
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.FilterInputStream;
+import java.io.FilterOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.nio.charset.StandardCharsets;
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -126,12 +133,73 @@ public class InputAndOutputStream {
         }
     }
 
+    /**
+     * FilterInputStream 过滤流，对基本流提供给额外操作
+     * - DataInputStream
+     */
+    @Test
+    public void dataOutputStreamTest1() {
+        String filePath = "D:\\File\\Desktop\\blogXX\\foot\\testfile\\dataStreamFile.txt";
+        try (final DataOutputStream dataOutputStream = new DataOutputStream(new FileOutputStream(filePath, false))) {
+            //作为字节流，拥有字节流相关操作，写入字节或字节数组
+            //dataOutputStream.write("开开心心".getBytes(StandardCharsets.UTF_8));
+            dataOutputStream.writeUTF("可可爱爱");
+            dataOutputStream.writeUTF("可可爱爱");
+            dataOutputStream.writeUTF("开开心心");
+            dataOutputStream.flush();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void dataInputStreamTest1() {
+        String filePath = "D:\\File\\Desktop\\blogXX\\foot\\testfile\\dataStreamFile.txt";
+        try (final DataInputStream dataInputStream = new DataInputStream(new FileInputStream(filePath))) {
+            while (dataInputStream.available() > 0) {
+                System.out.println(dataInputStream.readUTF());
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * FilterInputStream 过滤流，对基本流提供给额外操作
+     * - bufferedInputStream
+     */
+    @Test
+    public void bufferedOutputStreamTest1() {
+        String filePath = "D:\\File\\Desktop\\blogXX\\foot\\testfile\\bufferStreamFile.txt";
+        try (final FilterOutputStream bufferedOutputStream = new BufferedOutputStream(new FileOutputStream(filePath, false), 1024)) {
+            //作为字节流，拥有字节流相关操作，写入字节或字节数组
+            bufferedOutputStream.write("abcde".getBytes(StandardCharsets.UTF_8));
+            bufferedOutputStream.flush();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void bufferedInputStreamTest1() {
+        String filePath = "D:\\File\\Desktop\\blogXX\\foot\\testfile\\bufferStreamFile.txt";
+        try (final FilterInputStream bufferedInputStream = new BufferedInputStream(new FileInputStream(filePath))) {
+             byte[] bytes = new byte[1024];
+            while (bufferedInputStream.available() > 0) {
+                bufferedInputStream.read(bytes);
+                System.out.println(Arrays.toString(bytes));
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 
 }
 
 @Data
 @Accessors(chain = true)
-class Person   implements Serializable {
+class Person implements Serializable {
 
     private static final long serialVersionUID = -8861126921891657698L;
 
