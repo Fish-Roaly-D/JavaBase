@@ -7,6 +7,7 @@ import lombok.Data;
  * @Description:
  */
 @AnnotationTest
+@AnnotationTest2
 @Data
 public class TestClass extends ClassPerson implements InterfaceTest{
 

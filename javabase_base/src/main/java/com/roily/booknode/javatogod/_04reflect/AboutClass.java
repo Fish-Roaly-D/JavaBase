@@ -10,8 +10,7 @@ import com.roily.booknode.javatogod._04reflect.source.TestClass;
 import org.junit.Test;
 import org.openjdk.jol.vm.VM;
 
-import java.lang.annotation.Annotation;
-import java.lang.reflect.AnnotatedType;
+import java.io.FileNotFoundException;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -203,7 +202,7 @@ public class AboutClass {
      * 使用反射获取其他信息
      */
     @Test
-    public void testGetOtherInfo() {
+    public void testGetOtherInfo() throws FileNotFoundException {
         final String string = new String();
         final Class<TestClass> testClassClass = TestClass.class;
         System.out.println("类名  => " + testClassClass.getSimpleName());
@@ -214,8 +213,13 @@ public class AboutClass {
         //其他加载器，扩展类加载器ext,引导类加载器我们得不到会返回null
         System.out.println("扩展类加载器 =>" + testClassClass.getClassLoader().getParent());
         System.out.println("扩展类加载器 =>" + testClassClass.getClassLoader().getParent().getParent());
-
-        System.out.println(testClassClass.getAnnotation(AnnotationTest.class));
+        //注意如果注解的保留策略需设置为@Retention(RetentionPolicy.RUNTIME)
+        System.out.println("runtime注解，运行期由VM保留  => " + testClassClass.getAnnotation(AnnotationTest.class));
+        for (Class<?> anInterface : testClassClass.getInterfaces()) {
+            System.out.println("获取接口  => " + anInterface);
+        }
+        System.out.println("获取父类  => " + testClassClass.getSuperclass());
+        System.out.println("获取类路径下，也就是classes根目录下的某个资源文件输入流   => " + testClassClass.getResourceAsStream("/test.properties"));
 
     }
 

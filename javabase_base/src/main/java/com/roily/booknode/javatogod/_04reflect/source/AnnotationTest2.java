@@ -7,7 +7,7 @@ import java.lang.annotation.RetentionPolicy;
  * @author rolyfish
  * @Date: 2022/08/25/10:13
  */
-@Retention(RetentionPolicy.RUNTIME)
-public @interface AnnotationTest {
+@Retention(RetentionPolicy.CLASS)
+public @interface AnnotationTest2 {
 
 }
