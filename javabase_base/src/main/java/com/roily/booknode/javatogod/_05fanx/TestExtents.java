@@ -1,6 +1,5 @@
 package com.roily.booknode.javatogod._05fanx;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -14,9 +13,10 @@ public class TestExtents {
      *
      * @param list
      */
-    public void tesExtents(List<? extends Fruit> list) {
+    public void  tesExtents(List<? extends Fruit> list) {
         //不可添加，因为在添加是不可确认唯一类型
         // list.add(new Fruit());
+        // list.add((Apple)new Fruit());
 
         final Fruit fruit = list.get(0);
     }
@@ -38,7 +38,10 @@ public class TestExtents {
 
     public static void main(String[] args) {
 
-        tesSuper(new ArrayList<>());
+        //tesSuper(new ArrayList<>());
+
+        final Apple fruit = (Apple)new Fruit();
+
     }
 
 
