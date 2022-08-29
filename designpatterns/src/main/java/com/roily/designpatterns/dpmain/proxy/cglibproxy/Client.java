@@ -14,7 +14,7 @@ public class Client {
 
     public static void main(String[] args) {
         //在指定目录下生成动态代理类，我们可以反编译看一下里面到底是一些什么东西
-        System.setProperty(DebuggingClassWriter.DEBUG_LOCATION_PROPERTY, "D:\\java\\java_workapace");
+        System.setProperty(DebuggingClassWriter.DEBUG_LOCATION_PROPERTY, "D:\\java\\java_workapace2");
 
         CgLibProxy cgLibProxy = new CgLibProxy();
 

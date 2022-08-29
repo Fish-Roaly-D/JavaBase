@@ -14,16 +14,20 @@ import java.lang.reflect.Method;
  */
 public class MyMethodInterceptor implements MethodInterceptor {
 
+    /**
+     * 拦截方法
+     *
+     * @param o           the enhanced obj  已被增强对象
+     * @param method      intercepted Method 被拦截方法
+     * @param objects     参数列表，基本类型会替换为包装类型
+     * @param methodProxy 代理方法
+     */
     @Override
     public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
-
-        System.out.println("开始增强");
-
-        //method.invoke(o, objects);
-
-        methodProxy.invokeSuper(o, objects);
-        System.out.println("增强结束");
-        return null;
+        System.out.println("被代理方法名称:" + method.getName());
+        System.out.println("=====开始增强=====");
+        final Object o1 = methodProxy.invokeSuper(o, objects);
+        System.out.println("=====增强结束=====");
+        return o1;
     }
-
 }
