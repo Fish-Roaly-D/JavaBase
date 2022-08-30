@@ -11,7 +11,6 @@
 
     <artifactId>javabase_base</artifactId>
 
-
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
         <dependency>
