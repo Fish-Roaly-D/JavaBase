@@ -5,12 +5,13 @@ import com.roily.booknode.javatogod._07Annotation.a03.annotation.RolyValid;
 import com.roily.booknode.javatogod._07Annotation.a03.annotation.RolyValue;
 import org.junit.Test;
 
-import javax.xml.crypto.Data;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
 import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * @Date: 2022/08/31/16:19
@@ -60,14 +61,30 @@ public class TestAnnotation {
         }
     }
 
-    @Test
-    public void testRolyService(){
 
-        final Annotation[] declaredAnnotations = RolyValueBean.class.getDeclaredAnnotations();
-
-        System.out.println(Arrays.asList(declaredAnnotations).contains(RolyComponent.class));
-
-
+    public static boolean testRolyService(Class classP) {
+        final List<Annotation> annotations = Arrays.asList(classP.getDeclaredAnnotations());
+        if (annotations.isEmpty()) {
+            return false;
+        } else {
+            final List<? extends Class<? extends Annotation>> annotationTypes = annotations.stream().map(Annotation::annotationType).collect(Collectors.toList());
+            if (annotationTypes.contains(RolyComponent.class)) {
+                return true;
+            }
+            for (Annotation annotation : annotations) {
+                if (annotation.annotationType() == RolyComponent.class) {
+                    return true;
+                }
+                return testRolyService(annotation.annotationType());
+            }
+        }
+        return false;
     }
+
+    public static void main(String[] args) {
+
+        System.out.println(testRolyService(RolyValueBean.class));
+    }
+
 
 }

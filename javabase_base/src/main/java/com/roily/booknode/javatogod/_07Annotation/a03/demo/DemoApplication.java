@@ -1,18 +1,6 @@
 package com.roily.booknode.javatogod._07Annotation.a03.demo;
 
-import org.springframework.util.CollectionUtils;
-import org.springframework.util.ResourceUtils;
-
-import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Optional;
-import java.util.regex.Matcher;
-import java.util.stream.Collectors;
 
 /**
  * @Date: 2022/08/31/13:48
@@ -25,10 +13,12 @@ public class DemoApplication {
      * 启动类
      */
     public static void main(String[] args) throws FileNotFoundException, ClassNotFoundException {
-
         Class.forName("com.roily.booknode.javatogod._07Annotation.a03.demo.BeanFactory");
-    }
 
+        System.out.println(BeanFactory.objList());
+
+        System.out.println("容器中的bean实例都是单例的:" + BeanFactory.getObjByName("UserDao") == BeanFactory.getObjByName("UserDao"));
+    }
 
 
 }

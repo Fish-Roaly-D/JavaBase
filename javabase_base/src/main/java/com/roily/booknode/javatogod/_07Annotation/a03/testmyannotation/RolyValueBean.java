@@ -3,7 +3,6 @@ package com.roily.booknode.javatogod._07Annotation.a03.testmyannotation;
 import com.roily.booknode.javatogod._07Annotation.a03.annotation.RolyService;
 import com.roily.booknode.javatogod._07Annotation.a03.annotation.RolyValid;
 import com.roily.booknode.javatogod._07Annotation.a03.annotation.RolyValue;
-import lombok.Value;
 
 /**
  * @Date: 2022/08/31/16:21

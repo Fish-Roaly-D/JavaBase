@@ -1,16 +1,19 @@
 package com.roily.booknode.javatogod._07Annotation.a03.demo;
 
+import com.roily.booknode.javatogod._07Annotation.a03.annotation.RolyComponent;
+import com.roily.booknode.javatogod._07Annotation.a03.annotation.RolyValue;
 import org.springframework.util.CollectionUtils;
 import org.springframework.util.ResourceUtils;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.lang.annotation.Annotation;
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Locale;
 import java.util.Map;
 import java.util.Optional;
 import java.util.regex.Matcher;
@@ -101,25 +104,72 @@ public class BeanFactory {
         try {
             //默认触发初始化
             beanClass = Class.forName(classPath);
-
             //判断是否需要创建
-
-
-
+            if (!shouldInit(beanClass)) {
+                return;
+            }
             final Object bean = beanClass.newInstance();
-
-
-
-
-
-
-
+            //注入属性
+            initProperty(bean);
             beanFactory.put(beanClass.getSimpleName(), bean);
-
-
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
+
+    private static void initProperty(Object bean) throws IllegalAccessException {
+        //获取所有的Field
+        final List<Field> fields = Arrays.asList(bean.getClass().getDeclaredFields());
+
+        for (Field field : fields) {
+            //设置允许访问
+            if (!field.isAccessible()) {
+                field.setAccessible(true);
+            }
+            //获取RolyValue注解的属性
+            final RolyValue declaredAnnotation = field.getDeclaredAnnotation(RolyValue.class);
+            if (null != declaredAnnotation) {
+                field.set(bean, declaredAnnotation.value());
+            }
+
+        }
+    }
+
+    /**
+     * 判断beanClass是否需要 自动注入 也就是是否包含@RolyComponent注解
+     *
+     * @param beanClass
+     * @return
+     */
+    public static boolean shouldInit(Class beanClass) {
+
+        final List<Annotation> annotations = Arrays.asList(beanClass.getDeclaredAnnotations());
+        if (annotations.isEmpty()) {
+            return false;
+        } else {
+            final List<? extends Class<? extends Annotation>> annotationTypes = annotations.stream().map(Annotation::annotationType).collect(Collectors.toList());
+            if (annotationTypes.contains(RolyComponent.class)) {
+                return true;
+            }
+            for (Annotation annotation : annotations) {
+                if (annotation.annotationType() == RolyComponent.class) {
+                    return true;
+                }
+                return shouldInit(annotation.annotationType());
+            }
+        }
+        return false;
+    }
+
+    public static Map<String, Object> objList() {
+
+        return beanFactory;
+    }
+
+    public static Object getObjByName(String name) {
+
+        return beanFactory.get(name);
+    }
+
 
 }
