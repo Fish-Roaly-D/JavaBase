@@ -21,4 +21,5 @@
 
 基础版本
 
-修改 new/2.txt
+修改 new/2.txt  1.txt
+新建new3 修改 1.txt
