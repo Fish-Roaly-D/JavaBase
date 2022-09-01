@@ -16,3 +16,5 @@
 1.txt 2.txt   new1  new2  1.txt
 
 同样的undo commit, rollback  commit
+
+第三种：后悔某次提交
