@@ -5,3 +5,7 @@
 第一种：提交本地、不push
 
 可以undo  commit 撤销提交，对不需要提交的执行rollback  待修改完成在提交
+
+新建的提交文件不可回到红色状态，已被git跟踪
+
+可以undo commit  --->  rollback  在 提交
