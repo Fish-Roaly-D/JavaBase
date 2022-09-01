@@ -5,5 +5,4 @@ package com.roily.booknode.javatogod._08date;
  * @Description:
  */
 public class TestRollback2 {
-    //修改2
 }
