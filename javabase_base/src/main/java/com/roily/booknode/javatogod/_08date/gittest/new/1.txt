@@ -9,3 +9,8 @@
 新建的提交文件不可回到红色状态，已被git跟踪
 
 可以undo commit  --->  rollback  在 提交
+
+
+第二种：提交本地、push远程
+
+1.txt 2.txt   new1  new2  1.txt
