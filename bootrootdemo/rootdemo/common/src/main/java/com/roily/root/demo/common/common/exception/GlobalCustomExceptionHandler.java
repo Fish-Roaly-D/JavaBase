@@ -15,7 +15,7 @@ import java.util.*;
 
 /**
  * @version 1.0.0
- * @Description 屈居异常处理器
+ * @Description 全局异常处理器
  * @ClassName GlobalCustomExceptionHandler.java
  * @author: RoilyFish
  * @date: 2022/5/27 0:30
