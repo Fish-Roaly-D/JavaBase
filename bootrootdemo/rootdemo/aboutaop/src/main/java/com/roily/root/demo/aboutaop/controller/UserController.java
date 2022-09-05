@@ -29,8 +29,7 @@ public class UserController {
 
     @RequestMapping(value = "list", method = RequestMethod.POST)
     public List<User> list() {
-        final List<User> records = userService.page().getRecords();
-        return records;
+        return userService.page().getRecords();
     }
 
 }

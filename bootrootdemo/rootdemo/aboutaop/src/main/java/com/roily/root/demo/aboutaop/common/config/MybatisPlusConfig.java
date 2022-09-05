@@ -1,4 +1,4 @@
-package com.roily.root.demo.aboutaop.common;
+package com.roily.root.demo.aboutaop.common.config;
 
 import com.baomidou.mybatisplus.annotation.DbType;
 import com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor;

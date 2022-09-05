@@ -1,4 +1,4 @@
-package com.roily.root.demo.aboutaop.util;
+package com.roily.root.demo.aboutaop.common.util;
 
 import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.IdType;
