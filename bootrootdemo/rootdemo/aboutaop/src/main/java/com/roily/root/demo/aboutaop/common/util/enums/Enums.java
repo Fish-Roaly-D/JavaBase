@@ -12,6 +12,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 /**
+ * @author rolyfish
  * @Date: 2022/09/05/17:26
  * @Description: 枚举工具类
  */
@@ -21,13 +22,17 @@ public class Enums {
      * 业务类型
      */
     @AllArgsConstructor
-    enum BusinessType implements EnumAbstractInterface<String, String> {
+    public enum BusinessType implements EnumAbstractInterface<String, String> {
+        /**
+         * 业务类型增删改查
+         */
         ADD("添加", "1"),
         DELETE("删除", "2"),
         QUERY("查询", "3"),
         UPDATE("更新", "4");
 
         private String desc;
+
         private String code;
 
         @Override

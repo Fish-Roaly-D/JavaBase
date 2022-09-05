@@ -24,6 +24,6 @@ public interface EnumAbstractInterface<K, V> {
      */
     Map<K, V> enumMap();
 
-    Enum[] values();
+
 
 }
