@@ -4,10 +4,8 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.Iterator;
 import java.util.ListIterator;
-import java.util.stream.Collectors;
 
 /**
  * @Date: 2022/09/05/13:21
