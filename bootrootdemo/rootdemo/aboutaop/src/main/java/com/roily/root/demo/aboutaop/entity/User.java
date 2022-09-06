@@ -26,7 +26,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @TableName("user")
-@ApiModel(value = "User对象", description = "")
+@ApiModel(value = "User对象", description = "User对象")
 public class User extends Model<User> {
 
     private static final long serialVersionUID = 1L;
@@ -39,30 +39,30 @@ public class User extends Model<User> {
     @TableField("name")
     private String name;
 
-    //@ApiModelProperty("邮箱")
-    //@TableField("email")
-    //private String email;
-    //
-    //@ApiModelProperty("逻辑删除")
-    //@TableField("deleted")
-    //@TableLogic
-    //private Integer deleted;
-    //
-    //@ApiModelProperty("乐观锁")
-    //@TableField("version")
-    //@Version
-    //private Integer version;
-    //
-    //@ApiModelProperty("插入时间")
-    //@TableField(value = "create_time", fill = FieldFill.INSERT)
-    //private LocalDateTime createTime;
-    //
-    //@ApiModelProperty("修改时间")
-    //@TableField(value = "update_time", fill = FieldFill.INSERT_UPDATE)
-    //private LocalDateTime updateTime;
-    //
-    //@TableField("tb_user_test_colum")
-    //private String tbUserTestColum;
+    @ApiModelProperty("邮箱")
+    @TableField("email")
+    private String email;
+
+    @ApiModelProperty("逻辑删除")
+    @TableField("deleted")
+    @TableLogic
+    private Integer deleted;
+
+    @ApiModelProperty("乐观锁")
+    @TableField("version")
+    @Version
+    private Integer version;
+
+    @ApiModelProperty("插入时间")
+    @TableField(value = "create_time", fill = FieldFill.INSERT)
+    private LocalDateTime createTime;
+
+    @ApiModelProperty("修改时间")
+    @TableField(value = "update_time", fill = FieldFill.INSERT_UPDATE)
+    private LocalDateTime updateTime;
+
+    @TableField("tb_user_test_colum")
+    private String tbUserTestColum;
 
 
     @Override
