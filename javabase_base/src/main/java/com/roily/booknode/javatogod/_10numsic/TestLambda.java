@@ -25,14 +25,13 @@ public class TestLambda {
         final List<Object> collect = integerList.stream().map(ele -> {
 
             System.out.println(str.length());
+            //str = "123";
             return 1;
         }).collect(Collectors.toList());
 
-
         String first = "";
         Comparator<String> comparator = (first1, second) -> Integer.compare(first.length(), second.length());
-
-
+        Comparator<String> x = (first1, second) -> Integer.compare(first.length(), second.length());
     }
 
 }
