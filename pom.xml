@@ -24,6 +24,7 @@
         <module>javabase_base</module>
         <module>threadcollection</module>
         <module>designpatterns</module>
+        <module>database_h2</module>
     </modules>
 
     <!--  设置项目编码格式，不设置默认跟随编译器  -->
