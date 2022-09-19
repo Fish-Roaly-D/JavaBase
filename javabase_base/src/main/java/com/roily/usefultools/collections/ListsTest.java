@@ -4,6 +4,7 @@ import com.google.common.collect.Lists;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
@@ -61,13 +62,20 @@ public class ListsTest {
     @Test
     public void splitList() {
 
-        List<Integer> randomCollection1 = CollectionUtilsTest.createRandomCollection(10, 0, 9);
+        List<Integer> randomCollection1 = CollectionUtilsTest.createRandomCollection(20, 0, 9);
         System.out.println(randomCollection1);
         List<List<Integer>> lists = Lists.partition(randomCollection1, 3);
         System.out.println("拆分后：");
         for (List<Integer> list : lists) {
             System.out.println(list);
         }
+        Collections.sort(randomCollection1);
+        System.err.println(randomCollection1);
+        //2 ,  5
+        List<List<Integer>> listsx = Lists.partition(randomCollection1, 5);
+        System.err.println(listsx.get(0));
+        System.err.println(listsx.get(1));
+        System.err.println(listsx.get(2));
     }
 
     /**
