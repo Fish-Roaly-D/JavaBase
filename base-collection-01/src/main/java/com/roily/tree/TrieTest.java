@@ -76,17 +76,13 @@ public class TrieTest {
 
     @Test
     public void test() {
-
         TrieTest trieTest = new TrieTest();
         String[] values = new String[]{"a", "to", "tea", "ted", "ten", "i", "in", "ind", "ifd"};
-
         for (int i = 0; i < values.length; i++) {
             trieTest.insert(values[i]);
         }
-
         System.out.println("==是否包含ten==>" + trieTest.search("ten"));
         System.out.println("==是否包含xxxx==>" + trieTest.search("xxxx"));
-
     }
 
 }

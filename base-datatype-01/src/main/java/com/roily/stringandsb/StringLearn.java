@@ -45,8 +45,10 @@ public class StringLearn {
         String str1 = "abc";
         String str2 = str1;
         str2 += "123";
+        String str3 = "abc123";
         System.out.println(str1);
         System.out.println(str2);
+        System.out.println(str3 == str2);
     }
 
     @Test

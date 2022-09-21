@@ -56,7 +56,7 @@ public class PropertiesTest {
      * 有一些类自带properties
      */
     @Test
-    public void test01() {
+    public void sysProperty() {
         Properties properties = System.getProperties();
         System.out.println(properties);
     }

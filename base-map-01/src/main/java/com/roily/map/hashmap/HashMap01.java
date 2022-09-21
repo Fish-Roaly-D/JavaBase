@@ -32,6 +32,8 @@ public class HashMap01 {
         System.out.println(0 ^ 1);
         System.out.println(1 ^ 0);
 
+
+
     }
 
     //if里面可以写表达式

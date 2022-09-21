@@ -1,8 +1,5 @@
 package com.roily.StringSummary.testDemo;
 
-import lombok.Data;
-import lombok.ToString;
-
 /**
  * descripte:
  *

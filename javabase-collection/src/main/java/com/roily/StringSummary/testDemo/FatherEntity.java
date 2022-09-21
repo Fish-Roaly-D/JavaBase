@@ -1,6 +1,5 @@
 package com.roily.StringSummary.testDemo;
 
-import com.roily.StringSummary.entity.User;
 import lombok.Data;
 import lombok.Getter;
 import lombok.ToString;

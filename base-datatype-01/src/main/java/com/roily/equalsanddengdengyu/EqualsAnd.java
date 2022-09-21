@@ -17,6 +17,7 @@ public class EqualsAnd {
     @Test
     public void ddy() {
         /**
+         * 等等于比较的是字面量
          * 对于基本数据类型：比较的是‘数值’是否相等
          * 对于引用数据类型：比较的是‘内存地址’是否相等
          */
