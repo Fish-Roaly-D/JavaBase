@@ -44,6 +44,8 @@ public class HanShu {
         Predicate<String> predicate1 =  (String ele) -> ele.startsWith("");
         Predicate<String> predicate2 =  (String ele) -> ele.startsWith("");
         predicate1.and(predicate2);
+
+
     }
 
 
