@@ -1,8 +1,11 @@
 package com.roily;
 
 import com.roily.entity.User;
+import com.roily.service.UserService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import java.util.List;
 
 /**
  * @Date: 2022/09/22/19:05
@@ -11,8 +14,11 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class demo {
 
     public static void main(String[] args) {
-        final ApplicationContext classPathXmlApplicationContext = new ClassPathXmlApplicationContext("application.xml");
-        final User user = classPathXmlApplicationContext.getBean("user", User.class);
-        System.out.println(user);
+
+        final ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+        final UserService userService = applicationContext.getBean("userServiceImpl", UserService.class);
+        final List<User> all = userService.getAll();
+        System.out.println(all);
+
     }
 }
