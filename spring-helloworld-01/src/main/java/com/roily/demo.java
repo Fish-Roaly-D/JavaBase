@@ -20,5 +20,10 @@ public class demo {
         final List<User> all = userService.getAll();
         System.out.println(all);
 
+        //final AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(ApplicationConfig.class);
+        //final UserService userService = ac.getBean("userService", UserService.class);
+        //
+        //final List<User> all = userService.getAll();
+        //System.out.println(all);
     }
 }
