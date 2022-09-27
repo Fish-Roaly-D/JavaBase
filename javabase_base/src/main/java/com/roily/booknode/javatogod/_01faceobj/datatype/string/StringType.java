@@ -37,6 +37,7 @@ public class StringType {
 
     /**
      * 我们都知道String其内部是字符数组，且是私有的，那么我们是否可以通过反射修改其私有属性
+     * String真的不可变么
      */
     @Test
     public void test3() throws NoSuchFieldException, IllegalAccessException {

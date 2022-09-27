@@ -9,6 +9,7 @@ import java.util.List;
  * @Date: 2022/09/26/14:18
  * @Description:
  */
+@Mapper
 public interface UserMapper {
 
     List<User> getAll();

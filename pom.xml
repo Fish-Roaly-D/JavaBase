@@ -29,6 +29,7 @@
         <module>designpatterns</module>
         <module>database_h2</module>
         <module>spring-helloworld-01</module>
+        <module>spring02-inectway</module>
     </modules>
 
     <!--  设置项目编码格式，不设置默认跟随编译器  -->
