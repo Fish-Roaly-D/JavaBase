@@ -2,11 +2,14 @@ package com.roily;
 
 import com.roily.common.config.AConfig;
 import com.roily.common.config.ApplicationConfig;
+import com.roily.common.config.ConfigDemo;
 import com.roily.entity.Component1;
 import com.roily.entity.Component2;
 import com.roily.entity.Person;
 import com.roily.entity.User;
+import com.roily.service.ServiceDemo;
 import com.roily.service.UserService;
+import org.checkerframework.checker.units.qual.A;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -91,6 +94,29 @@ public class TestMain {
 
         bean1.method();
 
+    }
+
+
+    /**
+     * @AutoWrite
+     */
+    @Test
+    public void testAutoWritexxx() {
+
+        final ApplicationContext cpx = new ClassPathXmlApplicationContext("ApplicationDaoDemo.xml");
+        final ServiceDemo serviceDemo = cpx
+                .getBean(ServiceDemo.class);
+
+    }
+    /**
+     * @AutoWrite
+     */
+    @Test
+    public void testAutoWritexxxconfig() {
+
+        final ApplicationContext ac = new AnnotationConfigApplicationContext(ConfigDemo.class);
+
+        final Object serviceDemo = ac.getBean("serviceDemo");
     }
 
 }

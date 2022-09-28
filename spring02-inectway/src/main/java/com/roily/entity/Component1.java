@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
  * @Date: 2022/09/27/16:23
  * @Description:
  */
-@Component
+// @Component
 public class Component1 {
 
     // @Autowired
