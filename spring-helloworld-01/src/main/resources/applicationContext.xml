@@ -22,4 +22,7 @@
 
     </bean>
 
+    <bean id = "person" class="com.roily.entity.Person">
+        <constructor-arg name="name" value="123"/>
+    </bean>
 </beans>

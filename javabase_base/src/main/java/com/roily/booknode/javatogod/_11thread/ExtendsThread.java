@@ -70,6 +70,10 @@ class ImplementsCallable implements Callable<String> {
         return Thread.currentThread().getName();
     }
 
+    /**
+     * peek要消费才起作用
+     * @param args
+     */
     public static void main(String[] args) {
 
         final StringBuilder sb1 = new StringBuilder("");
@@ -78,7 +82,7 @@ class ImplementsCallable implements Callable<String> {
 
         final List<StringBuilder> stringBuilders = Arrays.asList(sb1, sb3, sb2);
 
-        stringBuilders.stream().peek(ele -> ele.append("a"));
+        stringBuilders.stream().peek(ele -> ele.append("a")).toArray();
 
         System.out.println(stringBuilders);
 

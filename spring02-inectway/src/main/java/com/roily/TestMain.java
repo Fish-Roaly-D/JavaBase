@@ -119,4 +119,28 @@ public class TestMain {
         final Object serviceDemo = ac.getBean("serviceDemo");
     }
 
+    /**
+     * 自动注入bytype，如果存在多个，则报错
+     * @AutoWrite
+     */
+    @Test
+    public void testAutoWriteBytype() {
+
+        final ClassPathXmlApplicationContext cpx = new ClassPathXmlApplicationContext("classpath:ApplicationDemoInjectType.xml");
+
+
+        System.out.println();
+    }
+    /**
+     * 自动注入byname
+     * @AutoWrite
+     */
+    @Test
+    public void testAutoWriteByname() {
+
+        final AnnotationConfigApplicationContext apc = new AnnotationConfigApplicationContext(ConfigDemo.class);
+
+        System.out.println();
+    }
+
 }

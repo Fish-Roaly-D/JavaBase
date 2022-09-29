@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 
 import java.lang.reflect.Method;
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * @Date: 2022/09/26/16:10
@@ -41,4 +42,10 @@ public class LogAspect {
         return proceed;
     }
 
+    public static void main(String[] args) {
+
+        final List<String> list = Arrays.asList(new String[0]);
+
+
+    }
 }
