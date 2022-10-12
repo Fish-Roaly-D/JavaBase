@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-helloworld-01</artifactId>
+    <artifactId>spring00_helloworld</artifactId>
     <description>SpringHelloWorldDemo</description>
 
     <properties>
