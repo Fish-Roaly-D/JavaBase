@@ -3,7 +3,6 @@ package com.roily.booknode.pdai._01optional;
 import lombok.Data;
 import org.junit.Test;
 
-import javax.lang.model.element.Element;
 import java.util.Optional;
 import java.util.function.Supplier;
 
@@ -12,6 +11,15 @@ import java.util.function.Supplier;
  * @Description:
  */
 public class TestOptional01 {
+    /**
+     * 创建一个内部元素为null的Optional对象
+     */
+    @Test
+    public void testEmpty() {
+
+        final Optional<Object> empty = Optional.empty();
+
+    }
 
     /**
      * of为非null值创建Optional
