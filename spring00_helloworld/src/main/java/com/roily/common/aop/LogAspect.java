@@ -27,6 +27,7 @@ public class LogAspect {
 
     }
 
+
     @Around("pointCut()")
     public Object logAspect(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
         final MethodSignature signature = (MethodSignature)proceedingJoinPoint.getSignature();

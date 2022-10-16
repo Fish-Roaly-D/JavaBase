@@ -36,7 +36,7 @@ public class ApplicationASConfig {
      */
     @Bean("jdbcProperties")
     public Properties jdbcProperties() {
-        final InputStream in = ApplicationASConfig.class.getClassLoader().getResourceAsStream("db.properties");
+        final InputStream in = ApplicationASConfig.class.getClassLoader().getResourceAsStream("db2.properties");
         final Properties properties = new Properties();
         try {
             properties.load(in);
