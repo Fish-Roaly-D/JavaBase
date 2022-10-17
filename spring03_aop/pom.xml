@@ -17,6 +17,13 @@
     </properties>
 
     <dependencies>
+
+        <!-- spring -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+        </dependency>
+
         <!--  mysql      -->
         <dependency>
             <groupId>mysql</groupId>
@@ -47,10 +54,11 @@
             <artifactId>aspectjweaver</artifactId>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/cglib/cglib -->
         <dependency>
-            <groupId>cglib</groupId>
-            <artifactId>cglib</artifactId>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aspects</artifactId>
+            <version>5.3.23</version>
         </dependency>
+
     </dependencies>
 </project>

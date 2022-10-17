@@ -1,6 +1,5 @@
-package com.roily.configway.byxml.common;
+package com.roily.common;
 
-import com.roily.configway.byxml.service.ILog;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.reflect.MethodSignature;
 
@@ -19,14 +18,14 @@ public class LogAspectJ {
      * @return
      * @throws Throwable
      */
-    public Object around(ProceedingJoinPoint pjp, ILog iLog) throws Throwable {
-        System.out.println("环绕通知 --- 开始");
-        //方法签名
-        final MethodSignature signature = (MethodSignature) pjp.getSignature();
-        System.out.println("环绕通知 -- 方法名称:" + signature.getName());
-        final Object o = pjp.proceed();
-        System.out.println("环绕通知 -- 目标对象方法退出，返回结果：" + o);
-        return o;
+    public Object around(ProceedingJoinPoint pjp) throws Throwable {
+       System.out.println("环绕通知 --- 开始");
+       //方法签名
+       final MethodSignature signature = (MethodSignature) pjp.getSignature();
+       System.out.println("环绕通知 -- 方法名称:" + signature.getName());
+       final Object o = pjp.proceed();
+       System.out.println("环绕通知 -- 目标对象方法退出，返回结果：" + o);
+       return o;
     }
 
     /**
@@ -34,8 +33,7 @@ public class LogAspectJ {
      *
      * @return
      */
-    public void before(ILog iLog) {
-        iLog.log();
+    public void before() {
         System.out.println("前置通知");
     }
 
@@ -45,7 +43,7 @@ public class LogAspectJ {
      *
      * @return
      */
-    public void after(ILog iLog) {
+    public void after() {
         System.out.println("最终通知");
     }
 
@@ -54,7 +52,7 @@ public class LogAspectJ {
      *
      * @return
      */
-    public void afterReturning(String result, ILog iLog) {
+    public void afterReturning(String result) {
         System.out.println("后置通知,返回值：" + result);
 
     }
@@ -64,7 +62,7 @@ public class LogAspectJ {
      *
      * @return
      */
-    public void afterThrowing(Exception e, ILog iLog) {
+    public void afterThrowing(Exception e) {
         System.out.println("异常通知，异常" + e.getMessage());
     }
 

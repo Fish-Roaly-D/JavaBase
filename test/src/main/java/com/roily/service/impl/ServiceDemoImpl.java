@@ -1,6 +1,7 @@
-package com.roily.configway.byxml.service.impl;
+package com.roily.service.impl;
 
-import com.roily.configway.byxml.service.ServiceDemo;
+
+import com.roily.service.ServiceDemo;
 
 /**
  * @classname：ServiceDemo
@@ -23,9 +24,8 @@ public class ServiceDemoImpl implements ServiceDemo {
 
     @Override
     public String methode3() {
-        int i = 1 / 0;
         System.out.println("方法三执行");
-
+        //int i = 1 / 0;
         return "method3";
     }
 

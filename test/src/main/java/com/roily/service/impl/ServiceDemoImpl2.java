@@ -1,4 +1,4 @@
-package com.roily.configway.byxml.service.impl;
+package com.roily.service.impl;
 
 /**
  * @classname：ServiceDemo
@@ -9,7 +9,7 @@ package com.roily.configway.byxml.service.impl;
 public class ServiceDemoImpl2 {
 
     public String methode() {
-        System.out.println("此类未实现接口，将采用cglib代理 方法一执行");
+        System.out.println("cglib 方法一执行");
         return "method1";
     }
 

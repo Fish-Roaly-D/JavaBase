@@ -1,4 +1,6 @@
-package com.roily.configway.byxml.service.impl;
+package com.roily.configway.byannotation.service.impl;
+
+import org.springframework.stereotype.Service;
 
 /**
  * @classname：ServiceDemo
@@ -6,6 +8,7 @@ package com.roily.configway.byxml.service.impl;
  * @description:
  * @date: 2022/10/14 14:25
  */
+@Service
 public class ServiceDemoImpl2 {
 
     public String methode() {

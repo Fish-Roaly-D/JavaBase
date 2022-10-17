@@ -2,15 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <artifactId>javabase_root</artifactId>
-        <groupId>com.roily</groupId>
-        <version>1.0-SNAPSHOT</version>
-    </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.roily.springioc</groupId>
-    <artifactId>spring01_ioc</artifactId>
+    <groupId>com.roily</groupId>
+    <artifactId>test</artifactId>
+    <version>1.0.0</version>
+
+    <description>javabase_root,根模块</description>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -20,7 +18,16 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
+            <artifactId>spring-aspects</artifactId>
+            <version>5.3.23</version>
         </dependency>
+        <!-- spring -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.3.23</version>
+        </dependency>
+
     </dependencies>
+
 </project>
