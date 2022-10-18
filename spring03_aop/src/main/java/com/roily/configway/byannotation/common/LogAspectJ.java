@@ -40,6 +40,7 @@ public class LogAspectJ {
      */
     @Around("pointCut()  && this(iLog)")
     public Object around(ProceedingJoinPoint pjp, ILog iLog) throws Throwable {
+        iLog.log();
         System.out.println("环绕通知 --- 开始");
         //方法签名
         final MethodSignature signature = (MethodSignature) pjp.getSignature();
