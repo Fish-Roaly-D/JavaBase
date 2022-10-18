@@ -13,4 +13,11 @@
     <artifactId>base-collection-01</artifactId>
     <description>集合框架基础学习</description>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+        </dependency>
+    </dependencies>
+
 </project>
