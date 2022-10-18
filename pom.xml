@@ -32,6 +32,7 @@
         <module>spring01_ioc</module>
         <module>spring00_helloworld</module>
         <module>spring03_aop</module>
+        <module>spring04-mvc</module>
     </modules>
 
     <!--  设置项目编码格式，不设置默认跟随编译器  -->
@@ -99,6 +100,14 @@
                 <artifactId>spring-context</artifactId>
                 <version>${spring.context.version}</version>
             </dependency>
+
+            <!-- spring-context -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-webmvc</artifactId>
+                <version>5.3.23</version>
+            </dependency>
+
             <!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest-core -->
             <dependency>
                 <groupId>org.hamcrest</groupId>
