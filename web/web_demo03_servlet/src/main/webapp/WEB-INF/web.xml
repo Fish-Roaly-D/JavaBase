@@ -18,6 +18,55 @@
         <url-pattern>/demo</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>sa</servlet-name>
+        <servlet-class>com.roily.servlet.ServletAttribute</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>sa</servlet-name>
+        <url-pattern>/sa</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>sct</servlet-name>
+        <servlet-class>com.roily.servlet.SetContextContext</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>sct</servlet-name>
+        <url-pattern>/sct</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>gct</servlet-name>
+        <servlet-class>com.roily.servlet.GetServletContext</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>gct</servlet-name>
+        <url-pattern>/gct</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ssc</servlet-name>
+        <servlet-class>com.roily.servlet.SetSessionCookies</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ssc</servlet-name>
+        <url-pattern>/ssc</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>gsc</servlet-name>
+        <servlet-class>com.roily.servlet.GetSessionCookies</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>gsc</servlet-name>
+        <url-pattern>/gsc</url-pattern>
+    </servlet-mapping>
+
     <filter>
         <filter-name>encoding</filter-name>
         <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
