@@ -88,4 +88,33 @@
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 
+    <servlet>
+        <servlet-name>servlet1</servlet-name>
+        <servlet-class>com.roily.servlet.dispatcher.Servlet01</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>servlet1</servlet-name>
+        <url-pattern>/servlet1</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>servlet2</servlet-name>
+        <servlet-class>com.roily.servlet.dispatcher.Servlet02</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>servlet2</servlet-name>
+        <url-pattern>/servlet2</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>respwriter</servlet-name>
+        <servlet-class>com.roily.servlet.response.ResponseWriterDemo1</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>respwriter</servlet-name>
+        <url-pattern>/respwriter</url-pattern>
+    </servlet-mapping>
+
 </web-app>

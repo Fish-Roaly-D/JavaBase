@@ -64,11 +64,11 @@ public class StringType {
         TestFinal testFinal = new TestFinal();
         System.out.println(testFinal.sb + ":" + VM.current().addressOf(testFinal.sb));
         final Field sb = testFinal.getClass().getDeclaredField("sb");
-        final Field value = testFinal.getClass().getDeclaredField("value");
+        // final Field value = testFinal.getClass().getDeclaredField("value");
         final StringBuilder abc = new StringBuilder("abc");
         //反射破坏不可修改
         sb.setAccessible(true);
-        value.setAccessible(true);
+        // value.setAccessible(true);
         sb.set(testFinal, abc);
         System.out.println(testFinal.sb + ":" + VM.current().addressOf(testFinal.sb));
     }

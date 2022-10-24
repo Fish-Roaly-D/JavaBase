@@ -1,6 +1,9 @@
 package com.roily.booknode.javatogod._01faceobj.datatype.string;
 
 import org.junit.Test;
+import org.openjdk.jol.vm.VM;
+
+import java.util.ArrayList;
 
 /**
  * @Date: 2022/08/01/12:57
@@ -26,5 +29,35 @@ public class StringCache {
 
     }
 
+
+
+    @Test
+    public void testStringIntern(){
+
+
+        String str = "abc";
+
+        final String intern = str.intern();
+
+        System.out.println(VM.current().addressOf(str));
+        System.out.println(VM.current().addressOf(intern));
+
+
+    }
+
+
+}
+
+class demo{
+
+    char[] value;
+    int start;
+    int end;
+
+    public demo(char[] value, int start, int end) {
+        this.value = value;
+        this.start = start;
+        this.end = end;
+    }
 
 }
