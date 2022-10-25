@@ -33,6 +33,13 @@ class TestClass {
     public static void main(String[] args) {
         AboutStaticClass.StaticClass staticClass = new AboutStaticClass.StaticClass();
         System.out.println(AboutStaticClass.StaticClass.b);
+
+        //报错 非静态内部类的创建依赖于外部类实例
+        // final AboutStaticClass.InnerClass innerClass = new AboutStaticClass.InnerClass();
+
+        //ok
+        final AboutStaticClass aboutStatic = new AboutStaticClass();
+        final AboutStaticClass.InnerClass innerClass = aboutStatic.new InnerClass();
     }
 }
 
