@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.roily.mapper.UserMapper">
+    
+    <resultMap id="myResultMap" type="com.roily.entity.User2">
+
+        <result column="name" property="name" jdbcType="VARCHAR" />
+<!--        <result column="email" property="name" typeHandler="com.roily.typeHandler.MyStringHandler"/>-->
+
+    </resultMap>
+    
+    
+    
+    
+</mapper>
