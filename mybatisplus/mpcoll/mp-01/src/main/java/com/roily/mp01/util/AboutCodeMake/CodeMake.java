@@ -10,7 +10,6 @@ import com.baomidou.mybatisplus.generator.config.rules.DateType;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
 import com.baomidou.mybatisplus.generator.fill.Column;
-import com.roily.mp01.base.BaseController;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -56,7 +55,7 @@ class CodeMake {
                             .enableSwagger() // 开启 swagger 模式
                             .fileOverride() // 覆盖已生成文件
                             .disableOpenDir()//生成文件后、不要打开目录
-                            .outputDir("mp-01\\src\\main\\java"); // 指定输出目录
+                            .outputDir("mybatisplus\\mpcoll\\mp-01\\src\\main\\java"); // 指定输出目录
                 })
                 //包路径配置
                 .packageConfig(builder -> {
@@ -92,7 +91,6 @@ class CodeMake {
                                     System.out.println("tableInfo: " + tableInfo.getEntityName() + " objectMap: " + objectMap.size());
                                     System.out.println(objectMap);
                                 }
-
                             )
                             .customMap(Collections.singletonMap("test", "baomidou"))
                             //.customFile(Collections.singletonMap("test.txt", "/templates/entity.vm"))

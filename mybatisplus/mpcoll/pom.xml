@@ -29,7 +29,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <lombok.version>1.18.12</lombok.version>
+        <lombok.version>1.18.24</lombok.version>
         <mybatis-plus.spring.boot.version>3.5.1</mybatis-plus.spring.boot.version>
         <mybatis-plus-generator.version>3.5.2</mybatis-plus-generator.version>
         <swagger.version>2.1.13</swagger.version>
