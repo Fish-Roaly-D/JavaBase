@@ -1,14 +1,14 @@
 
 
-#mybatisplus хуж╬еДжц
+# mybatisplus О©╫О©╫ж╬О©╫О©╫О©╫О©╫
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
   global-config:
     db-config:
-      #logic-delete-field: flag # х╚╬жбъ╪╜и╬ЁЩ╣дй╣лЕвж╤нцШ(since 3.3.0,еДжц╨С©ирт╨Жбт╡╩еДжц╡╫жХ2)
-      logic-delete-value: 1 # бъ╪╜ряи╬ЁЩж╣(д╛хон╙ 1)
-      logic-not-delete-value: 0 # бъ╪╜н╢и╬ЁЩж╣(д╛хон╙ 0)
+      # logic-delete-field: flag # х╚О©╫О©╫О©╫ъ╪О©╫и╬О©╫О©╫О©╫О©╫й╣О©╫О©╫О©╫ж╤О©╫О©╫О©╫(since 3.3.0,О©╫О©╫О©╫ц╨О©╫О©╫О©╫т╨О©╫О©╫т╡О©╫О©╫О©╫О©╫ц╡О©╫О©╫О©╫2)
+      logic-delete-value: 1 # О©╫ъ╪О©╫О©╫О©╫и╬О©╫О©╫ж╣(д╛О©╫О©╫н╙ 1)
+      logic-not-delete-value: 0 # О©╫ъ╪О©╫н╢и╬О©╫О©╫ж╣(д╛О©╫О©╫н╙ 0)
       db-type: mysql
   mapper-locations: mapper/*.xml
   type-aliases-package: com.roily.entity
