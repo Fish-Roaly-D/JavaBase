@@ -1,7 +1,5 @@
 package com.roily.booknode.javatogod._05fanx;
 
-import org.junit.Test;
-
 import java.util.List;
 
 /**
@@ -18,6 +16,9 @@ public class TestFanxProbleam {
 
     public void method1(List<Integer> list){
 
+        final Integer integer = list.get(0);
+
+        System.out.println(integer);
     }
 
 }

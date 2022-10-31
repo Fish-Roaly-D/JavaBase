@@ -31,3 +31,4 @@ Mysql-jdbc/target
 
 .idea/*
 *.iml
+mybatisplus/mpcoll/.idea/*
