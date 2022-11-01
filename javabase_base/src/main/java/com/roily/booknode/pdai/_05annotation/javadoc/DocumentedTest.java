@@ -6,13 +6,13 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Target(ElementType.FIELD)
+@Target({ElementType.TYPE, ElementType.FIELD})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 public @interface DocumentedTest {
 
-    public String name() default "fieldName";
-    public String setFuncName() default "setField";
-    public String getFuncName() default "getField";
-    public boolean defaultDBValue() default false;
+     String name() default "fieldName";
+     String setFuncName() default "setField";
+     String getFuncName() default "getField";
+     boolean defaultDBValue() default false;
 }
