@@ -84,6 +84,11 @@ public class AboutClass {
         final ClassPersonPrivate classPersonPrivate = ClassPersonPrivate.class.newInstance();
         System.out.println(classPersonPrivate);
     }
+    @Test
+    public void testNewInstance22() throws InstantiationException, IllegalAccessException {
+        final ClassPersonPrivate classPersonPrivate = ClassPersonPrivate.class.newInstance();
+        System.out.println(classPersonPrivate);
+    }
 
     /**
      * Class的getConstructor方法可以获取，任意类的非私有构造器
