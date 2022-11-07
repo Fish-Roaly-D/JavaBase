@@ -2,6 +2,9 @@ package com.roily.test01;
 
 import java.io.InputStream;
 import java.sql.*;
+import java.util.Iterator;
+import java.util.Properties;
+import java.util.ServiceLoader;
 
 /**
  * descripte:
@@ -14,22 +17,59 @@ public class MysqlTest01 {
 
     public static void main(String[] args) throws SQLException {
 
-        //test1();
+        test1();
         //test2("部门一");
         //test2("部门一'"+"or'1 = 1 ");
         //test3("部门一");
         //test3("部门一'"+"or'1 = 1 ");
 
-        test5();
+        // test5();
+
+
+        // test6();
+
+
+    }
+
+
+    public static void test6() throws SQLException {
+        final ServiceLoader<Driver> load = ServiceLoader.load(Driver.class);
+        final Iterator<Driver> iterator = load.iterator();
+        while (iterator.hasNext()) {
+            final Driver next = iterator.next();
+
+            String url = "jdbc:mysql://localhost:3306/mybatis_plus?useUnicode=true&charactEncoding=utf8&useSSL=true&serverTimezone=GMT%2B8";
+            String user = "root";
+            String pass = "123456";
+
+            final Properties properties = new Properties();
+            properties.put("user", user);
+            properties.put("password", pass);
+
+            if (next instanceof com.mysql.cj.jdbc.Driver) {
+
+                final Connection connect = next.connect(url, properties);
+                final PreparedStatement prst = connect.prepareStatement("select * from user limit ?");
+                prst.setInt(1, 10);
+                final ResultSet resultSet = prst.executeQuery();
+                while (resultSet.next()) {
+                    System.out.println(resultSet.getObject(2));
+                }
+                resultSet.close();
+                prst.close();
+                connect.close();
+            }
+
+        }
     }
 
     public static void test1() throws SQLException {
-        try {
-            //注册驱动
-            Class.forName("com.mysql.cj.jdbc.Driver");
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
+        // try {
+        //     //注册驱动
+        //     Class.forName("com.mysql.cj.jdbc.Driver");
+        // } catch (ClassNotFoundException e) {
+        //     e.printStackTrace();
+        // }
         String url = "jdbc:mysql://localhost:3306/mybatis_plus?useUnicode=true&charactEncoding=utf8&useSSL=true&serverTimezone=GMT%2B8";
         String user = "root";
         String pass = "123456";
@@ -173,9 +213,9 @@ public class MysqlTest01 {
         String sql = "select * from department where 1 = 1";
 
         if (deptN != null)
-            sql+="and deptName = ?";
+            sql += "and deptName = ?";
         if (isDelete != null)
-            sql+="and `delete` = ?";
+            sql += "and `delete` = ?";
         PreparedStatement prep = conn.prepareStatement(sql);
 
         System.out.println(sql);
@@ -198,4 +238,5 @@ public class MysqlTest01 {
         prep.close();
         conn.close();
     }
+
 }
