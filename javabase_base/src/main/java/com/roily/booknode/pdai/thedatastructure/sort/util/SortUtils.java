@@ -1,6 +1,5 @@
 package com.roily.booknode.pdai.thedatastructure.sort.util;
 
-import com.sun.tools.javac.util.Assert;
 
 /**
  * @classname：SortUtils
@@ -16,7 +15,6 @@ public class SortUtils {
      * @return 集合
      */
     public static Integer[] createRandomColl(int size, int lowLimit, int highLimit) {
-        Assert.check(size > 0, "数组长度需要大于0");
         final Integer[] coll = new Integer[size];
         for (int i = 0; i < size; i++) {
             coll[i] = lowLimit + (int) (Math.random() * (highLimit - lowLimit));

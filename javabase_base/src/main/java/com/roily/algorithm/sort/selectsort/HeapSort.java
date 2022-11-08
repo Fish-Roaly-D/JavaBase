@@ -54,24 +54,25 @@ class HeapSortTest {
         int half = size >>> 1;
         while (k < half) {
             //当前为左子节点下标，后续更新为较小子节点下标
-            int child = (k << 1) + 1;
+            int l = (k << 1) + 1;
             //c当前为左子节点，后续为左右子节点较小值
-            int c = source[child];
-            int right = child + 1;
-            //右子节点小于左子节点，更新child和c
+            int c = source[l];
+            int right = l + 1;
+            //右子节点小于左子节点，更新l和c
             if (right < size && c > source[right]) {
-                c = source[child = right];
+                c = source[l = right];
             }
             //父节点小于较小子节点，跳出循环
             if (x <= c) {
                 break;
             }
+            source[l] = source[k];
             //更新父节点
             source[k] = c;
             //记录child，因为child对应元素被移动，需要检查其子节点是否合理
-            k = child;
+            k = l;
         }
-        source[k] = x;
+
     }
 
     /**
@@ -93,13 +94,16 @@ class HeapSortTest {
         System.out.println("生成一个小顶堆");
         System.out.println(CollectionUtils.arrayToList(heap));
 
+
+        final int[] ints = new int[10];
+
         System.out.println("堆排序后");
-        for (int i = 0; i < heap.length - 1; i++) {
+        for (int i = 0; i < heap.length; i++) {
             //待生成堆集合
-            final int[] tempColl = Arrays.copyOfRange(heap, i, heap.length - 1);
+            final int[] tempColl = Arrays.copyOfRange(heap, i, heap.length -1);
             heapSortTest.createHeap(tempColl);
-            heap[i] =tempColl[0];
+            ints[i] =tempColl[0];
         }
-        System.out.println(CollectionUtils.arrayToList(heap));
+        System.out.println(CollectionUtils.arrayToList(ints));
     }
 }
