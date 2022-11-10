@@ -7,114 +7,40 @@
                       http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0"
          metadata-complete="true">
-
     <servlet>
-        <servlet-name>demo</servlet-name>
-        <servlet-class>com.roily.servlet.ServletDemo</servlet-class>
+        <servlet-name>reqAcceptReqParamAndAttribute</servlet-name>
+        <servlet-class>com.roily.servlet.request.ReqAcceptReqParamAndAttribute</servlet-class>
     </servlet>
-
     <servlet-mapping>
-        <servlet-name>demo</servlet-name>
-        <url-pattern>/demo</url-pattern>
+        <servlet-name>reqAcceptReqParamAndAttribute</servlet-name>
+        <url-pattern>/reqAcceptReqParamAndAttribute</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>reqAcceptReqParamAndAttributeForWard</servlet-name>
+        <servlet-class>com.roily.servlet.request.ReqAcceptReqParamAndAttributeForWard</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>reqAcceptReqParamAndAttributeForWard</servlet-name>
+        <url-pattern>/reqAcceptReqParamAndAttributeForWard</url-pattern>
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>sa</servlet-name>
-        <servlet-class>com.roily.servlet.ServletAttribute</servlet-class>
+        <servlet-name>reqContentOtherValue</servlet-name>
+        <servlet-class>com.roily.servlet.request.ReqContentOtherValue</servlet-class>
     </servlet>
-
     <servlet-mapping>
-        <servlet-name>sa</servlet-name>
-        <url-pattern>/sa</url-pattern>
+        <servlet-name>reqContentOtherValue</servlet-name>
+        <url-pattern>/reqContentOtherValue</url-pattern>
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>sct</servlet-name>
-        <servlet-class>com.roily.servlet.SetContextContext</servlet-class>
+        <servlet-name>responseWriter</servlet-name>
+        <servlet-class>com.roily.servlet.response.ResponseWriter</servlet-class>
     </servlet>
-
     <servlet-mapping>
-        <servlet-name>sct</servlet-name>
-        <url-pattern>/sct</url-pattern>
+        <servlet-name>responseWriter</servlet-name>
+        <url-pattern>/responseWriter</url-pattern>
     </servlet-mapping>
 
-    <servlet>
-        <servlet-name>gct</servlet-name>
-        <servlet-class>com.roily.servlet.GetServletContext</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>gct</servlet-name>
-        <url-pattern>/gct</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>ssc</servlet-name>
-        <servlet-class>com.roily.servlet.SetSessionCookies</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>ssc</servlet-name>
-        <url-pattern>/ssc</url-pattern>
-    </servlet-mapping>
-    <servlet>
-        <servlet-name>gsc</servlet-name>
-        <servlet-class>com.roily.servlet.GetSessionCookies</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>gsc</servlet-name>
-        <url-pattern>/gsc</url-pattern>
-    </servlet-mapping>
-
-    <filter>
-        <filter-name>encoding</filter-name>
-        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
-        <init-param>
-            <param-name>encoding</param-name>
-            <param-value>utf-8</param-value>
-        </init-param>
-        <!--        <init-param>-->
-        <!--            <param-name>forceRequestEncoding</param-name>-->
-        <!--            <param-value>true</param-value>-->
-        <!--        </init-param>-->
-        <init-param>
-            <param-name>forceResponseEncoding</param-name>
-            <param-value>true</param-value>
-        </init-param>
-    </filter>
-    <filter-mapping>
-        <filter-name>encoding</filter-name>
-        <url-pattern>/*</url-pattern>
-    </filter-mapping>
-
-    <servlet>
-        <servlet-name>servlet1</servlet-name>
-        <servlet-class>com.roily.servlet.dispatcher.Servlet01</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>servlet1</servlet-name>
-        <url-pattern>/servlet1</url-pattern>
-    </servlet-mapping>
-    <servlet>
-        <servlet-name>servlet2</servlet-name>
-        <servlet-class>com.roily.servlet.dispatcher.Servlet02</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>servlet2</servlet-name>
-        <url-pattern>/servlet2</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>respwriter</servlet-name>
-        <servlet-class>com.roily.servlet.response.ResponseWriterDemo1</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>respwriter</servlet-name>
-        <url-pattern>/respwriter</url-pattern>
-    </servlet-mapping>
 
 </web-app>
