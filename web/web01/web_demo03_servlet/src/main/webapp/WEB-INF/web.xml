@@ -7,6 +7,12 @@
                       http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0"
          metadata-complete="true">
+
+    <error-page>
+        <location>
+            /WEB-INF/jsp/500.jsp
+        </location>
+    </error-page>
     <servlet>
         <servlet-name>reqAcceptReqParamAndAttribute</servlet-name>
         <servlet-class>com.roily.servlet.request.ReqAcceptReqParamAndAttribute</servlet-class>
@@ -41,6 +47,76 @@
         <servlet-name>responseWriter</servlet-name>
         <url-pattern>/responseWriter</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>respOtherValue</servlet-name>
+        <servlet-class>com.roily.servlet.response.RespOtherValue</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>respOtherValue</servlet-name>
+        <url-pattern>/respOtherValue</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>respSetStatus200</servlet-name>
+        <servlet-class>com.roily.servlet.response.RespSetStatus200</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>respSetStatus200</servlet-name>
+        <url-pattern>/respSetStatus200</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>respSetStatus500</servlet-name>
+        <servlet-class>com.roily.servlet.response.RespSetStatus500</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>respSetStatus500</servlet-name>
+        <url-pattern>/respSetStatus500</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>respSendError</servlet-name>
+        <servlet-class>com.roily.servlet.response.RespSendError</servlet-class>
+    </servlet>
 
+    <servlet-mapping>
+        <servlet-name>respSendError</servlet-name>
+        <url-pattern>/respSendError</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>responseSendCookie</servlet-name>
+        <servlet-class>com.roily.servlet.response.ResponseSendCookie</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>responseSendCookie</servlet-name>
+        <url-pattern>/responseSendCookie</url-pattern>
+    </servlet-mapping>
 
+    <servlet>
+        <servlet-name>reqDispatcher</servlet-name>
+        <servlet-class>com.roily.servlet.request.ReqDispatcher</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>reqDispatcher</servlet-name>
+        <url-pattern>/reqDispatcher</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>reqDispatcherServlet</servlet-name>
+        <servlet-class>com.roily.servlet.request.ReqDispatcherServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>reqDispatcherServlet</servlet-name>
+        <url-pattern>/reqDispatcherServlet</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>encoding</filter-name>
+        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>utf-8</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>encoding</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
 </web-app>
