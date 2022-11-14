@@ -8,6 +8,16 @@
          version="4.0"
          metadata-complete="true">
 
+    <context-param>
+        <param-name>initparam1</param-name>
+        <param-value>initvalue1</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>initparam2</param-name>
+        <param-value>initvalue2</param-value>
+    </context-param>
+
     <error-page>
         <location>
             /WEB-INF/jsp/500.jsp
@@ -105,6 +115,77 @@
     <servlet-mapping>
         <servlet-name>reqDispatcherServlet</servlet-name>
         <url-pattern>/reqDispatcherServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>respSendRedirect</servlet-name>
+        <servlet-class>com.roily.servlet.response.RespSendRedirect</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>respSendRedirect</servlet-name>
+        <url-pattern>/respSendRedirect</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>respSendRedirectInsite</servlet-name>
+        <servlet-class>com.roily.servlet.response.RespSendRedirectInsite</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>respSendRedirectInsite</servlet-name>
+        <url-pattern>/respSendRedirectInsite</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>cookieApi</servlet-name>
+        <servlet-class>com.roily.servlet.cookie.CookieApi</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>cookieApi</servlet-name>
+        <url-pattern>/cookieApi</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>sessionApi</servlet-name>
+        <servlet-class>com.roily.servlet.session.SessionApi</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>sessionApi</servlet-name>
+        <url-pattern>/sessionApi</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>sessionApiBrowserName</servlet-name>
+        <servlet-class>com.roily.servlet.session.SessionApiBrowserName</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>sessionApiBrowserName</servlet-name>
+        <url-pattern>/sessionApiBrowserName</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>servletName</servlet-name>
+        <servlet-class>com.roily.servlet.servletcontext.ServletName</servlet-class>
+        <init-param>
+            <param-name>key1</param-name>
+            <param-value>value1</param-value>
+        </init-param>
+        <init-param>
+            <param-name>key2</param-name>
+            <param-value>value2</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servletName</servlet-name>
+        <url-pattern>/servletName</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>servletContextApi</servlet-name>
+        <servlet-class>com.roily.servlet.servletcontext.ServletContextApi</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servletContextApi</servlet-name>
+        <url-pattern>/servletContextApi</url-pattern>
     </servlet-mapping>
 
     <filter>
