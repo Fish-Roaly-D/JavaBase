@@ -26,7 +26,7 @@ public class SessionApi extends HttpServlet {
         final String browser = req.getParameter("browser");
 
         final HttpSession session = req.getSession();
-        session.setMaxInactiveInterval(100);
+        session.setMaxInactiveInterval(15);
         session.setAttribute("browser", browser);
     }
 }

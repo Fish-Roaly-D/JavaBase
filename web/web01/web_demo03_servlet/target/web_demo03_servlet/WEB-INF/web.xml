@@ -192,6 +192,24 @@
     <listener>
         <listener-class>com.roily.servlet.listening.SessionListening</listener-class>
     </listener>
+    <!--   过滤器  -->
+    <filter>
+        <filter-name>fuckWorldFilter</filter-name>
+        <filter-class>com.roily.servlet.filtert.FilterBwkFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>fuckWorldFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <servlet>
+        <servlet-name>filterServlet</servlet-name>
+        <servlet-class>com.roily.servlet.filtert.FilterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>filterServlet</servlet-name>
+        <url-pattern>/filterServlet</url-pattern>
+    </servlet-mapping>
 
     <filter>
         <filter-name>encoding</filter-name>
