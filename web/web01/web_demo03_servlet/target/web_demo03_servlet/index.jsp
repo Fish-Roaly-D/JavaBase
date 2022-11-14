@@ -1,4 +1,5 @@
 <%@ page import="java.net.URLDecoder" %>
+<%@ page import="java.util.concurrent.atomic.AtomicInteger" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <body>
@@ -22,6 +23,9 @@
     // page	javax.servlet.jsp.HttpJspPage	类似于 Java 类的 this 关键字，表示当前 JSP 页面
     // exception	java.lang.Throwable	该对象用于处理 JSP 文件执行时发生的错误和异常；只有在 JSP 页面的 page 指令中指定 isErrorPage 的取值 true 时，才可以在本页面使用 exception 对象。
 
+    final AtomicInteger onlineNum = (AtomicInteger)pageContext.getAttribute("onlineNum");
+    out.println(onlineNum.get());
+
 %>
 
 ${cookie.name.name}
@@ -35,6 +39,9 @@ ${pageContext.session.getAttribute("browser")}
     <input type="submit" value="提交">
     <input type="button" onclick="submit()" value="提交">
 </form>
+
+${pageContext.getAttribute("onlineNum")}
+
 <script>
     function submit() {
         document.getElementById("form").submit();

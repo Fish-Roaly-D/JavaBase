@@ -188,6 +188,11 @@
         <url-pattern>/servletContextApi</url-pattern>
     </servlet-mapping>
 
+    <!--   监听器  -->
+    <listener>
+        <listener-class>com.roily.servlet.listening.SessionListening</listener-class>
+    </listener>
+
     <filter>
         <filter-name>encoding</filter-name>
         <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>

@@ -21,7 +21,6 @@ public class ServletName extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         resp.getWriter().println("ServletName");
-
         final String key1 = getInitParameter("key1");
         System.out.println(key1);
 
