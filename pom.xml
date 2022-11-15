@@ -12,9 +12,6 @@
     <description>javabase_root,根模块</description>
 
     <modules>
-        <module>threadbase</module>
-        <module>threadbase02</module>
-        <module>threadcollection</module>
         <module>database_h2</module>
         <module>javabase</module>
         <module>mybatis</module>
