@@ -1,0 +1,5 @@
+com\roily\mapper\DepartmentMapper.class
+com\roily\entity\Department.class
+com\roily\entity\Department$DepartmentBuilder.class
+com\roily\util\mybatisUtil.class
+com\roily\test\test01.class

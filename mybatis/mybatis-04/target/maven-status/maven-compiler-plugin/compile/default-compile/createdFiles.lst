@@ -1,0 +1,14 @@
+com\roily\mapper\DepartmentMapper.class
+com\roily\vo\QueryParam2$QueryParam2Builder.class
+com\roily\entity\Department.class
+com\roily\util\MybatisUtil.class
+com\roily\vo\QueryParam2.class
+com\roily\vo\QueryParam.class
+com\roily\vo\PageUtil.class
+com\roily\test.class
+com\roily\vo\Result.class
+com\roily\entity\Department$DepartmentBuilder.class
+com\roily\vo\QueryParam$QueryParamBuilder.class
+com\roily\vo\Result$ResultBuilder.class
+com\roily\vo\PageResult.class
+com\roily\vo\PageResult$PageResultBuilder.class

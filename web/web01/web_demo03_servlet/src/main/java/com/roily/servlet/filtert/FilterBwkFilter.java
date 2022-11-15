@@ -37,7 +37,6 @@ public class FilterBwkFilter implements Filter {
      * @throws IOException
      * @throws ServletException
      */
-    @lombok.SneakyThrows
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
         System.out.println("过滤器前置操作");
@@ -45,9 +44,14 @@ public class FilterBwkFilter implements Filter {
         if (!StringUtils.isEmpty(keyWorld)) {
             for (String world : keyWorlds) {
                 String xx = keyWorld.replace(world, "***");
-                final Field value = keyWorld.getClass().getDeclaredField("value");
-                value.setAccessible(true);
-                value.set(keyWorld, xx.toCharArray());
+                final Field value;
+                try {
+                    value = keyWorld.getClass().getDeclaredField("value");
+                    value.setAccessible(true);
+                    value.set(keyWorld, xx.toCharArray());
+                } catch (NoSuchFieldException | IllegalAccessException e) {
+                    e.printStackTrace();
+                }
             }
         }
         chain.doFilter(request, response);

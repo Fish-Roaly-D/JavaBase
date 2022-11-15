@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <properties resource="db.properties">
+    </properties>
+
+    <settings>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+<!--        <setting name="logImpl" value="STDOUT_LOGGING"/>-->
+        <setting name="logImpl" value="LOG4J"/>
+<!--        <setting name="cacheEnabled" value="false"/>-->
+    </settings>
+
+    <typeAliases>
+        <package name="com.roily.entity"/>
+        <package name="com.roily.pojo"/>
+    </typeAliases>
+
+    <environments default="dev1">
+        <environment id="dev1">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+
+    <mappers>
+        <mapper resource="xml/DepartmentMapper.xml"/>
+        <mapper resource="xml/Department2Mapper.xml"/>
+        <mapper resource="xml/EmployeeMapper.xml"/>
+<!--        <mapper url="file:E:/programmeTools/idea/git/JavaBase/Mybatis-02/src/main/resources/xml/DepartmentMapper.xml"/>-->
+<!--            <mapper class="com.roily.mapper.DepartmentMapper"/>-->
+    </mappers>
+</configuration>
