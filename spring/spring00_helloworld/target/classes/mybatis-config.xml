@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!--  日志配置和二级缓存  -->
+    <settings>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+        <setting name="cacheEnabled" value="true"/>
+    </settings>
+
+    <!--  别名配置，默认类名小写  -->
+    <typeAliases>
+        <package name="com.roily.entity"/>
+    </typeAliases>
+
+    <!--  mapper配置，可在其他地方配  -->
+    <!--    <mappers>-->
+    <!--        &lt;!&ndash;        <mapper resource="com/roily/dao/UserMapper.xml"/>&ndash;&gt;-->
+    <!--        &lt;!&ndash;        <mapper class="com.roily.dao.UserMapper"/>&ndash;&gt;-->
+    <!--        &lt;!&ndash;        <package name="com.roily.dao.UserMapper"/>&ndash;&gt;-->
+    <!--        <mapper resource="com/roily/dao/UserMapper.xml"/>-->
+    <!--    </mappers>-->
+</configuration>

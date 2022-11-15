@@ -17,7 +17,6 @@
         <module>spring01_ioc</module>
         <module>spring02-inectway</module>
         <module>spring03_aop</module>
-        <module>spring04-mvc</module>
     </modules>
 
     <properties>
