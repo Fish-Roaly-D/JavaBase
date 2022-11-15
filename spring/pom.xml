@@ -12,6 +12,14 @@
 
     <artifactId>spring</artifactId>
 
+    <modules>
+        <module>spring00_helloworld</module>
+        <module>spring01_ioc</module>
+        <module>spring02-inectway</module>
+        <module>spring03_aop</module>
+        <module>spring04-mvc</module>
+    </modules>
+
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
