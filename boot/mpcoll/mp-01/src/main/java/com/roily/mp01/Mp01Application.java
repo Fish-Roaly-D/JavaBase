@@ -4,7 +4,7 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@MapperScan({"com.com.roily.mp01.backstage.mapper"})
+@MapperScan({"com.roily.mp01.backstage.mapper"})
 @SpringBootApplication
 public class Mp01Application {
 

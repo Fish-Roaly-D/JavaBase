@@ -25,7 +25,7 @@
     </error-page>
     <servlet>
         <servlet-name>reqAcceptReqParamAndAttribute</servlet-name>
-        <servlet-class>com.com.roily.servlet.request.ReqAcceptReqParamAndAttribute</servlet-class>
+        <servlet-class>com.roily.servlet.request.ReqAcceptReqParamAndAttribute</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>reqAcceptReqParamAndAttribute</servlet-name>
@@ -33,7 +33,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>reqAcceptReqParamAndAttributeForWard</servlet-name>
-        <servlet-class>com.com.roily.servlet.request.ReqAcceptReqParamAndAttributeForWard</servlet-class>
+        <servlet-class>com.roily.servlet.request.ReqAcceptReqParamAndAttributeForWard</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>reqAcceptReqParamAndAttributeForWard</servlet-name>
@@ -42,7 +42,7 @@
 
     <servlet>
         <servlet-name>reqContentOtherValue</servlet-name>
-        <servlet-class>com.com.roily.servlet.request.ReqContentOtherValue</servlet-class>
+        <servlet-class>com.roily.servlet.request.ReqContentOtherValue</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>reqContentOtherValue</servlet-name>
@@ -51,7 +51,7 @@
 
     <servlet>
         <servlet-name>responseWriter</servlet-name>
-        <servlet-class>com.com.roily.servlet.response.ResponseWriter</servlet-class>
+        <servlet-class>com.roily.servlet.response.ResponseWriter</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>responseWriter</servlet-name>
@@ -59,7 +59,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>respOtherValue</servlet-name>
-        <servlet-class>com.com.roily.servlet.response.RespOtherValue</servlet-class>
+        <servlet-class>com.roily.servlet.response.RespOtherValue</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>respOtherValue</servlet-name>
@@ -67,7 +67,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>respSetStatus200</servlet-name>
-        <servlet-class>com.com.roily.servlet.response.RespSetStatus200</servlet-class>
+        <servlet-class>com.roily.servlet.response.RespSetStatus200</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>respSetStatus200</servlet-name>
@@ -75,7 +75,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>respSetStatus500</servlet-name>
-        <servlet-class>com.com.roily.servlet.response.RespSetStatus500</servlet-class>
+        <servlet-class>com.roily.servlet.response.RespSetStatus500</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>respSetStatus500</servlet-name>
@@ -83,7 +83,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>respSendError</servlet-name>
-        <servlet-class>com.com.roily.servlet.response.RespSendError</servlet-class>
+        <servlet-class>com.roily.servlet.response.RespSendError</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -92,7 +92,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>responseSendCookie</servlet-name>
-        <servlet-class>com.com.roily.servlet.response.ResponseSendCookie</servlet-class>
+        <servlet-class>com.roily.servlet.response.ResponseSendCookie</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>responseSendCookie</servlet-name>
@@ -101,7 +101,7 @@
 
     <servlet>
         <servlet-name>reqDispatcher</servlet-name>
-        <servlet-class>com.com.roily.servlet.request.ReqDispatcher</servlet-class>
+        <servlet-class>com.roily.servlet.request.ReqDispatcher</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>reqDispatcher</servlet-name>
@@ -110,7 +110,7 @@
 
     <servlet>
         <servlet-name>reqDispatcherServlet</servlet-name>
-        <servlet-class>com.com.roily.servlet.request.ReqDispatcherServlet</servlet-class>
+        <servlet-class>com.roily.servlet.request.ReqDispatcherServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>reqDispatcherServlet</servlet-name>
@@ -119,7 +119,7 @@
 
     <servlet>
         <servlet-name>respSendRedirect</servlet-name>
-        <servlet-class>com.com.roily.servlet.response.RespSendRedirect</servlet-class>
+        <servlet-class>com.roily.servlet.response.RespSendRedirect</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>respSendRedirect</servlet-name>
@@ -128,7 +128,7 @@
 
     <servlet>
         <servlet-name>respSendRedirectInsite</servlet-name>
-        <servlet-class>com.com.roily.servlet.response.RespSendRedirectInsite</servlet-class>
+        <servlet-class>com.roily.servlet.response.RespSendRedirectInsite</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>respSendRedirectInsite</servlet-name>
@@ -137,7 +137,7 @@
 
     <servlet>
         <servlet-name>cookieApi</servlet-name>
-        <servlet-class>com.com.roily.servlet.cookie.CookieApi</servlet-class>
+        <servlet-class>com.roily.servlet.cookie.CookieApi</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>cookieApi</servlet-name>
@@ -146,7 +146,7 @@
 
     <servlet>
         <servlet-name>sessionApi</servlet-name>
-        <servlet-class>com.com.roily.servlet.session.SessionApi</servlet-class>
+        <servlet-class>com.roily.servlet.session.SessionApi</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>sessionApi</servlet-name>
@@ -155,7 +155,7 @@
 
     <servlet>
         <servlet-name>sessionApiBrowserName</servlet-name>
-        <servlet-class>com.com.roily.servlet.session.SessionApiBrowserName</servlet-class>
+        <servlet-class>com.roily.servlet.session.SessionApiBrowserName</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>sessionApiBrowserName</servlet-name>
@@ -164,7 +164,7 @@
 
     <servlet>
         <servlet-name>servletName</servlet-name>
-        <servlet-class>com.com.roily.servlet.servletcontext.ServletName</servlet-class>
+        <servlet-class>com.roily.servlet.servletcontext.ServletName</servlet-class>
         <init-param>
             <param-name>key1</param-name>
             <param-value>value1</param-value>
@@ -181,7 +181,7 @@
 
     <servlet>
         <servlet-name>servletContextApi</servlet-name>
-        <servlet-class>com.com.roily.servlet.servletcontext.ServletContextApi</servlet-class>
+        <servlet-class>com.roily.servlet.servletcontext.ServletContextApi</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>servletContextApi</servlet-name>
@@ -190,12 +190,12 @@
 
     <!--   监听器  -->
     <listener>
-        <listener-class>com.com.roily.servlet.listening.SessionListening</listener-class>
+        <listener-class>com.roily.servlet.listening.SessionListening</listener-class>
     </listener>
     <!--   过滤器  -->
     <filter>
         <filter-name>fuckWorldFilter</filter-name>
-        <filter-class>com.com.roily.servlet.filtert.FilterBwkFilter</filter-class>
+        <filter-class>com.roily.servlet.filtert.FilterBwkFilter</filter-class>
     </filter>
     <filter-mapping>
         <filter-name>fuckWorldFilter</filter-name>
@@ -204,7 +204,7 @@
 
     <servlet>
         <servlet-name>filterServlet</servlet-name>
-        <servlet-class>com.com.roily.servlet.filtert.FilterServlet</servlet-class>
+        <servlet-class>com.roily.servlet.filtert.FilterServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>filterServlet</servlet-name>

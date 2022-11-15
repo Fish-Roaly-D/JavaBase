@@ -10,24 +10,24 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:component-scan base-package="com.com.roily"/>
+    <context:component-scan base-package="com.roily"/>
 
     <aop:aspectj-autoproxy/>
 
     <!--    注入目标类    -->
-    <bean id="serviceDemo" class="com.com.roily.service.impl.ServiceDemoImpl"/>
+    <bean id="serviceDemo" class="com.roily.service.impl.ServiceDemoImpl"/>
 
-    <bean id="serviceDemoImpl2" class="com.com.roily.service.impl.ServiceDemoImpl2"/>
+    <bean id="serviceDemoImpl2" class="com.roily.service.impl.ServiceDemoImpl2"/>
 
     <!--  注入通知  -->
-    <bean id="logAspect" class="com.com.roily.common.LogAspectJ"/>
+    <bean id="logAspect" class="com.roily.common.LogAspectJ"/>
 
     <aop:config>
         <!--  配置切面  -->
         <aop:aspect ref="logAspect">
             <!--     配置切入点       -->
-<!--            <aop:pointcut id="pointCut" expression="execution(* com.com.roily.configway.byxml.service.impl.*.*(..))"/>-->
-            <aop:pointcut id="pointCut" expression="execution(* com.com.roily.service.impl.*.*(..))"/>
+<!--            <aop:pointcut id="pointCut" expression="execution(* com.roily.configway.byxml.service.impl.*.*(..))"/>-->
+            <aop:pointcut id="pointCut" expression="execution(* com.roily.service.impl.*.*(..))"/>
             <!--     前置通知       -->
             <aop:before method="before" pointcut-ref="pointCut"/>
             <!--     后置通知       -->

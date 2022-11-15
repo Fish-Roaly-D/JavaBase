@@ -10,25 +10,25 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <!--    <context:component-scan base-package="com.com.roily.configway.byannotation"/>-->
+    <!--    <context:component-scan base-package="com.roily.configway.byannotation"/>-->
 
     <!--    <aop:aspectj-autoproxy/>-->
 
     <!--    注入目标类    -->
-    <bean id="serviceDemo" class="com.com.roily.configway.byannotation.service.impl.ServiceDemoImpl"/>
+    <bean id="serviceDemo" class="com.roily.configway.byannotation.service.impl.ServiceDemoImpl"/>
 
-    <bean id="serviceDemoImpl2" class="com.com.roily.configway.byannotation.service.impl.ServiceDemoImpl2"/>
+    <bean id="serviceDemoImpl2" class="com.roily.configway.byannotation.service.impl.ServiceDemoImpl2"/>
 
     <!--  注入通知  -->
-    <bean id="logAspect" class="com.com.roily.configway.byannotation.common.LogAspectJ"/>
+    <bean id="logAspect" class="com.roily.configway.byannotation.common.LogAspectJ"/>
 
     <aop:config>
         <!--  配置切面  -->
         <aop:aspect ref="logAspect">
             <!--     配置切入点       -->
             <aop:pointcut id="pointCut"
-                          expression="execution(* com.com.roily.configway.byannotation.service.impl.*.*(..)) &amp;&amp; this(iLog)"/>
-            <!--            <aop:pointcut id="pointCut" expression="execution(* com.com.roily.configway.byannotation.service.impl.ServiceDemoImpl2.*(..))"/>-->
+                          expression="execution(* com.roily.configway.byannotation.service.impl.*.*(..)) &amp;&amp; this(iLog)"/>
+            <!--            <aop:pointcut id="pointCut" expression="execution(* com.roily.configway.byannotation.service.impl.ServiceDemoImpl2.*(..))"/>-->
             <!--     前置通知       -->
             <aop:before method="before" pointcut-ref="pointCut"/>
             <!--     后置通知       -->
@@ -39,9 +39,9 @@
             <aop:after method="after" pointcut-ref="pointCut"/>
             <!--     环绕通知       -->
             <aop:around method="around" pointcut-ref="pointCut"/>
-            <aop:declare-parents types-matching="com.com.roily.configway.byannotation.service.impl.*"
-                                 implement-interface="com.com.roily.configway.byannotation.service.ILog"
-                                 default-impl="com.com.roily.configway.byannotation.service.impl.DefaultLogImpl"/>
+            <aop:declare-parents types-matching="com.roily.configway.byannotation.service.impl.*"
+                                 implement-interface="com.roily.configway.byannotation.service.ILog"
+                                 default-impl="com.roily.configway.byannotation.service.impl.DefaultLogImpl"/>
         </aop:aspect>
     </aop:config>
 

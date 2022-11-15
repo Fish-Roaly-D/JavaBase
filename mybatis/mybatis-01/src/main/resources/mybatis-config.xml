@@ -13,8 +13,8 @@
     </settings>
 
     <typeAliases>
-        <package name="com.com.roily.entity"/>
-<!--                <typeAlias type="com.com.roily.entity.Department" alias="deptAlias"/>-->
+        <package name="com.roily.entity"/>
+<!--                <typeAlias type="com.roily.entity.Department" alias="deptAlias"/>-->
     </typeAliases>
 
     <environments default="dev1">

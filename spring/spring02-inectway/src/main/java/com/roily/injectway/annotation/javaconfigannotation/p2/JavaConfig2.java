@@ -10,7 +10,7 @@ import org.springframework.context.annotation.ComponentScan;
  * @Date: 2022/10/11/11:06
  * @Description:
  */
-// @ComponentScan(basePackages = "com.com.roily.injectway.annotation.javaconfigannotation.p2")
+// @ComponentScan(basePackages = "com.roily.injectway.annotation.javaconfigannotation.p2")
 public class JavaConfig2 {
 
     @Bean

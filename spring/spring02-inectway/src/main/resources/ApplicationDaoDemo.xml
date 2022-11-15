@@ -3,13 +3,13 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-<!--    <bean id="daoDemo" class="com.com.roily.dao.DaoDemo">-->
+<!--    <bean id="daoDemo" class="com.roily.dao.DaoDemo">-->
 <!--    </bean>-->
 
-<!--    <bean id="daoDemox" class="com.com.roily.dao.DaoDemo">-->
+<!--    <bean id="daoDemox" class="com.roily.dao.DaoDemo">-->
 <!--    </bean>-->
 
-    <bean id="serviceDemo" class="com.com.roily.service.ServiceDemo">
+    <bean id="serviceDemo" class="com.roily.service.ServiceDemo">
 <!--        <property name="daoDemo" ref="daoDemo"/>-->
     </bean>
 

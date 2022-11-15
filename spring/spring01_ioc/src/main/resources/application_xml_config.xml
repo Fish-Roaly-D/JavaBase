@@ -7,16 +7,16 @@
     http://www.springframework.org/schema/context
     https://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="daoDemo01" class="com.com.roily.springioc.xmlconfig.DaoComponent"/>
+    <bean id="daoDemo01" class="com.roily.springioc.xmlconfig.DaoComponent"/>
 
-    <bean id="daoDemo02" class="com.com.roily.springioc.xmlconfig.DaoComponent"/>
+    <bean id="daoDemo02" class="com.roily.springioc.xmlconfig.DaoComponent"/>
 
-    <bean id="serviceDemo01" class="com.com.roily.springioc.xmlconfig.ServiceComponent">
+    <bean id="serviceDemo01" class="com.roily.springioc.xmlconfig.ServiceComponent">
         <!--    setter注入，属性必须存在对应setter方法    -->
         <property name="daoComponent" ref="daoDemo01"/>
     </bean>
 
-    <bean id="serviceDemo2" class="com.com.roily.springioc.xmlconfig.ServiceComponent2">
+    <bean id="serviceDemo2" class="com.roily.springioc.xmlconfig.ServiceComponent2">
         <!--   构造器注入必须存在符合参数参数数量的构造器   -->
         <constructor-arg name="daoComponent" ref="daoDemo01"/>
     </bean>

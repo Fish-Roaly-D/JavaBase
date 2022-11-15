@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-        <bean id="user" name="userAlias" class="com.com.roily.entity.User">
+        <bean id="user" name="userAlias" class="com.roily.entity.User">
             <property name="name" value="yuyc"/>
         </bean>
 

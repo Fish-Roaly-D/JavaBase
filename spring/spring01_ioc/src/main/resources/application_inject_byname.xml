@@ -6,10 +6,10 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
     https://www.springframework.org/schema/context/spring-context.xsd">
-    <context:component-scan base-package="com.com.roily.springioc.injectbyname"/>
+    <context:component-scan base-package="com.roily.springioc.injectbyname"/>
 
-    <bean id="daoDemo01" class="com.com.roily.springioc.injectbyname.DaoComponent"/>
+    <bean id="daoDemo01" class="com.roily.springioc.injectbyname.DaoComponent"/>
 
-    <bean id="daoDemo02" class="com.com.roily.springioc.injectbyname.DaoComponent"/>
+    <bean id="daoDemo02" class="com.roily.springioc.injectbyname.DaoComponent"/>
 
 </beans>

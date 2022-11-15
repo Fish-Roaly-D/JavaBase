@@ -23,7 +23,7 @@ import java.util.List;
 public class LogAspect {
     /**
      * 任意返回值
-     * com.com.roily.service包下任意方法  （。。）代表任意参数的方法
+     * com.roily.service包下任意方法  （。。）代表任意参数的方法
      */
     @Pointcut("execution(* com.roily.service.*.*(..))")
     public void pointCut() {

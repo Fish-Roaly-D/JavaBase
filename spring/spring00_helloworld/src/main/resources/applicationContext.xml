@@ -14,15 +14,15 @@
     <!--    引入外部配置  -->
     <import resource="classpath:spring-dao.xml"/>
 
-    <bean id="userServiceImpl" class="com.com.roily.service.impl.UserServiceImpl">
+    <bean id="userServiceImpl" class="com.roily.service.impl.UserServiceImpl">
         <property name="userMapper" ref="userMapper"/>
     </bean>
 
-    <bean id="logAspectj" class="com.com.roily.common.aop.LogAspect">
+    <bean id="logAspectj" class="com.roily.common.aop.LogAspect">
 
     </bean>
 
-    <bean id = "person" class="com.com.roily.entity.Person">
+    <bean id = "person" class="com.roily.entity.Person">
         <constructor-arg name="name" value="123"/>
     </bean>
 </beans>
