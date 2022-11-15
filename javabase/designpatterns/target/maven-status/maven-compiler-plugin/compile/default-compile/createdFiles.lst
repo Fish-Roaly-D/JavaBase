@@ -23,7 +23,6 @@ com\roily\designpatterns\dpmain\adapter\classadapter\macdemo\ArmSoft.class
 com\roily\designpatterns\dpmain\iterator\Iiterator.class
 com\roily\designpatterns\dpmain\template\AbstractCollection.class
 com\roily\designpatterns\dpmain\state\demo\Context.class
-com\roily\designpatterns\dp06_dip\error_demo\Ljava.class
 com\roily\designpatterns\dpmain\proxy\staticproxy\HouseOwner.class
 com\roily\designpatterns\dp08_OCP\demo01\IBook.class
 com\roily\designpatterns\dpmain\adapter\adapterclass\TargetInterface.class
@@ -48,6 +47,7 @@ com\roily\designpatterns\dpmain\builder\usebuilder\IBuilder.class
 com\roily\designpatterns\dpmain\decorator\simpledecorator\SimpleDecorator.class
 com\roily\designpatterns\dp05_lsp\error_demo\Son.class
 com\roily\designpatterns\dpmain\decorator\transparent\LLSimpleCar.class
+com\roily\designpatterns\dp06_dip\error_demo\ProGrammer.class
 com\roily\designpatterns\dpmain\state\StateTest.class
 com\roily\designpatterns\dpmain\adapter\interfaceadapter\ISource.class
 com\roily\designpatterns\dpmain\factory\abstractF\MiIPhone.class
@@ -91,7 +91,6 @@ com\roily\designpatterns\dp06_dip\error_demo\Programmer02.class
 com\roily\designpatterns\dpmain\proxy\jdkproxy\jdk01\SellHouse.class
 com\roily\designpatterns\dpmain\chainofresponsibility\demo\DoOperate.class
 com\roily\designpatterns\dp07_LOD\Student.class
-com\roily\designpatterns\dp06_dip\error_demo\LGo.class
 com\roily\designpatterns\dpmain\bridge\demo\AbstractDriverManager.class
 com\roily\designpatterns\dpmain\decorator\transparentdecorator\IComponent.class
 com\roily\designpatterns\dpmain\single\single02\Test02_Syn.class
@@ -117,6 +116,7 @@ com\roily\designpatterns\dpmain\proxy\cglibproxy\MyMethodInterceptor.class
 com\roily\designpatterns\dpmain\bridge\demo\DBCPDriverManager.class
 com\roily\designpatterns\dpmain\proxy\jdkproxy\jdkcannotproxyabsclass\Absclass.class
 com\roily\designpatterns\dpmain\single\single06\Test06.class
+com\roily\designpatterns\dp06_dip\error_demo\LJava.class
 com\roily\designpatterns\dp05_lsp\error_demo\Father3.class
 com\roily\designpatterns\dp08_OCP\demo01\Buyer.class
 com\roily\designpatterns\dpmain\bridge\MyBridge1.class
@@ -129,6 +129,7 @@ com\roily\designpatterns\dp08_OCP\demo01\BookStore.class
 com\roily\designpatterns\dpmain\memento\SignalDatabase.class
 com\roily\designpatterns\dp07_LOD\Source.class
 com\roily\designpatterns\dpmain\composite\open\DepartmentComponent.class
+com\roily\designpatterns\dp06_dip\error_demo\ProgramLanguageJAVA.class
 com\roily\designpatterns\dpmain\proxy\notstaticproxy\SellHouse.class
 com\roily\designpatterns\dp08_OCP\demo01\DiscountNovelBook.class
 com\roily\designpatterns\dp06_dip\error_demo\IProgramL.class
@@ -139,6 +140,7 @@ com\roily\designpatterns\dpmain\adapter\classadapter\ClassAdapterTest.class
 com\roily\designpatterns\dpmain\state\demo\StateTest.class
 com\roily\designpatterns\dp05_lsp\error_demo\Father2.class
 com\roily\designpatterns\dp02_spr\error_demo\Person.class
+com\roily\designpatterns\dp06_dip\error_demo\Lgo.class
 com\roily\designpatterns\dpmain\factory\simple\Computer.class
 com\roily\designpatterns\dpmain\single\single01\Test01.class
 com\roily\designpatterns\dp06_dip\error_demo\ProGrammerD4.class
@@ -181,7 +183,6 @@ com\roily\designpatterns\dpmain\builder\usebuilder\GreenCarDirector.class
 com\roily\designpatterns\dpmain\decorator\transparent\Autopilot.class
 com\roily\designpatterns\dp04_spr\demo01\demo02.class
 com\roily\designpatterns\dpmain\decorator\transparentdecorator\Component02.class
-com\roily\designpatterns\dp06_dip\error_demo\ProgramLanguageJava.class
 com\roily\designpatterns\dpmain\proxy\staticproxy\ClientTest.class
 com\roily\designpatterns\dpmain\single\single06\Singleton06.class
 com\roily\designpatterns\dp01_spr\ok_demo\IUserInfo.class
@@ -265,7 +266,6 @@ com\roily\designpatterns\dp03_spr\error_demo\BackOfficeWorker.class
 com\roily\designpatterns\dpmain\facade\demo\DigestiveDept.class
 com\roily\designpatterns\dpmain\state\demo\WaitPay.class
 com\roily\designpatterns\dp01_spr\ok_demo\IUserBusiness.class
-com\roily\designpatterns\dp06_dip\error_demo\Programmer.class
 com\roily\designpatterns\dpmain\strategy\strategydemo\ActionInterface.class
 com\roily\designpatterns\dpmain\flyweight\flyweightinjava\FlyweightInJava.class
 com\roily\designpatterns\dpmain\proxy\jdkproxy\jdk01\HouseOwner.class
