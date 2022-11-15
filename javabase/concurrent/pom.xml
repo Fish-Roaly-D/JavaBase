@@ -12,6 +12,11 @@
     <packaging>pom</packaging>
     <artifactId>concurrent</artifactId>
 
+    <modules>
+        <module>threadbase</module>
+        <module>threadbase02</module>
+        <module>threadcollection</module>
+    </modules>
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>

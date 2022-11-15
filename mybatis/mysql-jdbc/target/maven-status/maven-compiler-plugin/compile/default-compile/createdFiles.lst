@@ -1,9 +1,0 @@
-com\roily\test01\Department.class
-com\roily\test01\MysqlTest01.class
-com\roily\util\JdbcConnectionUtil.class
-com\roily\test01\MysqlTest03.class
-com\roily\test01\MysqlTest02.class
-com\roily\test03\TransactionTest.class
-com\roily\test02\ConnectionTest.class
-com\roily\test02\DaoTest.class
-com\roily\test02\BaseDao.class

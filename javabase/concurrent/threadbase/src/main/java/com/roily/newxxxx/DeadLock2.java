@@ -1,7 +1,5 @@
 package com.roily.newxxxx;
 
-import org.junit.Test;
-
 /**
  * descripte:
  *
@@ -20,6 +18,7 @@ public class DeadLock2 {
 
     public static void deadLock2() {
         Thread threadA = new Thread(new Runnable() {
+            @Override
             public void run() {
                 synchronized (resource_a) {
                     System.out.println("get resource a");

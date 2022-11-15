@@ -12,7 +12,6 @@
     <description>javabase_root,根模块</description>
 
     <modules>
-        <module>database_h2</module>
         <module>javabase</module>
         <module>mybatis</module>
         <module>spring</module>
