@@ -13,7 +13,7 @@
     </settings>
 
     <typeAliases>
-        <package name="com.roily.entity"/>
+        <package name="com.com.roily.entity"/>
     </typeAliases>
 
     <environments default="dev1">

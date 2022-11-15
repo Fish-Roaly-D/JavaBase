@@ -29,7 +29,7 @@ public class LogAspectJ {
      * 匹配指定方法
      * 语法格式：execution([方法的访问级别] 返回类型 [方法所在类的全路径名] 方法名(参数列表) [方法抛出异常类型])
      */
-    // @Pointcut(value = "execution(* com.roily.advice.demo01.service.impl.*.*(..))")
+    // @Pointcut(value = "execution(* com.com.roily.advice.demo01.service.impl.*.*(..))")
     // private void pointCut() {
     // }
     // @Pointcut(value = "execution(public * methodeArgs(..) throws RuntimeException)")
@@ -52,7 +52,7 @@ public class LogAspectJ {
     /**
      * 匹配方法：指定注解
      */
-    // @Pointcut(value = "@annotation(com.roily.advice.demo01.common.LogAnnotation)")
+    // @Pointcut(value = "@annotation(com.com.roily.advice.demo01.common.LogAnnotation)")
     // private void pointCut() {
     // }
 
@@ -62,40 +62,40 @@ public class LogAspectJ {
     // @Pointcut(value = "@args(..)")
     // private void pointCut() {
     // }
-    // @Pointcut(value = "@args(com.roily.advice.demo01.common.LogAnnotation, *, ..)")
+    // @Pointcut(value = "@args(com.com.roily.advice.demo01.common.LogAnnotation, *, ..)")
     // private void pointCut() {
     // }
 
     /**
      * 匹配指定类，及其子类所有方法
      */
-    // @Pointcut(value = "within(com.roily.advice.demo01.service.impl.*)")
+    // @Pointcut(value = "within(com.com.roily.advice.demo01.service.impl.*)")
     // private void pointCut() {
     // }
 
     /**
      * 匹配可以向上转型为this指定的类型的代理对象的所有方法
      */
-    // @Pointcut(value = "this(com.roily.advice.demo01.service.ServiceDemo)")
+    // @Pointcut(value = "this(com.com.roily.advice.demo01.service.ServiceDemo)")
     // private void pointCut() {
     // }
 
     /**
      * 匹配可以向上转型为target指定的类型的目标对象的所有方法
      */
-    // @Pointcut(value = "target(com.roily.advice.demo01.service.ServiceDemo+)")
+    // @Pointcut(value = "target(com.com.roily.advice.demo01.service.ServiceDemo+)")
     // private void pointCut() {
     // }
 
     /**
      * 匹配被标注了指定注解的类的所有方法
      */
-    // @Pointcut(value = "@within(com.roily.advice.demo01.common.LogAnnotation)")
+    // @Pointcut(value = "@within(com.com.roily.advice.demo01.common.LogAnnotation)")
     // private void pointCut() {
     // }
 
     // 匹配被标注了指定注解的类的所有方法
-    // @Pointcut(value = "@target(com.roily.advice.demo01.common.LogAnnotation)")
+    // @Pointcut(value = "@target(com.com.roily.advice.demo01.common.LogAnnotation)")
     // private void pointCut() {
     // }
 
@@ -111,37 +111,37 @@ public class LogAspectJ {
     //任意以`met`开头的方法
     // @Pointcut(value = "execution(public * met* (..))")
 
-    // com.roily.advice.demo01.service.ServiceDemo接口下的任意方法
-    // @Pointcut(value = "execution(public * com.roily.advice.demo01.service.ServiceDemo.*(..))")
+    // com.com.roily.advice.demo01.service.ServiceDemo接口下的任意方法
+    // @Pointcut(value = "execution(public * com.com.roily.advice.demo01.service.ServiceDemo.*(..))")
 
-    // com.roily.advice.demo01.service 包下的任意方法
-    // @Pointcut(value = "execution(public * com.roily.advice.demo01.service.*.*(..))")
+    // com.com.roily.advice.demo01.service 包下的任意方法
+    // @Pointcut(value = "execution(public * com.com.roily.advice.demo01.service.*.*(..))")
 
-    // com.roily.advice.demo01.service 包下及其子包的任意方法
-    // @Pointcut(value = "execution(public * com.roily.advice.demo01.service..*.*(..))")
+    // com.com.roily.advice.demo01.service 包下及其子包的任意方法
+    // @Pointcut(value = "execution(public * com.com.roily.advice.demo01.service..*.*(..))")
 
     // within同理
-    // @Pointcut(value = "within(com.roily.advice.demo01.service.*)")
-    // @Pointcut(value = "within(com.roily.advice.demo01.service..*)")
+    // @Pointcut(value = "within(com.com.roily.advice.demo01.service.*)")
+    // @Pointcut(value = "within(com.com.roily.advice.demo01.service..*)")
 
-    // 代理对象，可以向上转型为com.roily.advice.demo01.service.ServiceDemo任意连接点，及实现此接口的类的任意方法
-    // @Pointcut(value = "this(com.roily.advice.demo01.service.ServiceDemo)")
+    // 代理对象，可以向上转型为com.com.roily.advice.demo01.service.ServiceDemo任意连接点，及实现此接口的类的任意方法
+    // @Pointcut(value = "this(com.com.roily.advice.demo01.service.ServiceDemo)")
 
-    // 目标对象，可以向上转型为com.roily.advice.demo01.service.ServiceDemo任意连接点，及实现此接口的类的任意方法
-    // @Pointcut(value = "target(com.roily.advice.demo01.service.ServiceDemo)")
+    // 目标对象，可以向上转型为com.com.roily.advice.demo01.service.ServiceDemo任意连接点，及实现此接口的类的任意方法
+    // @Pointcut(value = "target(com.com.roily.advice.demo01.service.ServiceDemo)")
 
     // 参数列表对应的方法，第一个参数为Comparable的子类，第二个参数为Integer
     // @Pointcut(value = "args(Comparable+,Integer)")
 
     //目标对象被LogAnnotation注解标注
-    // @Pointcut(value = "@target(com.roily.advice.demo01.common.LogAnnotation)")
-    // @Pointcut(value = "@within(com.roily.advice.demo01.common.LogAnnotation)")
+    // @Pointcut(value = "@target(com.com.roily.advice.demo01.common.LogAnnotation)")
+    // @Pointcut(value = "@within(com.com.roily.advice.demo01.common.LogAnnotation)")
 
     //任意被LogAnnotation注解标注的方法
-    // @Pointcut(value = "@annotation(com.roily.advice.demo01.common.LogAnnotation)")
+    // @Pointcut(value = "@annotation(com.com.roily.advice.demo01.common.LogAnnotation)")
 
     //只接受一个参数，且参数类型对应类被LogAnnotation注解标注的方法
-    // @Pointcut(value = "@args(com.roily.advice.demo01.common.LogAnnotation)")
+    // @Pointcut(value = "@args(com.com.roily.advice.demo01.common.LogAnnotation)")
 
     //匹配id后缀为Service的bean
     @Pointcut(value = "bean(*Service)")

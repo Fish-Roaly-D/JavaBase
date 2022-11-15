@@ -57,13 +57,13 @@ class CodeMake {
                 //包路径配置
                 .packageConfig(builder -> {
                     builder
-                            .parent("com.roily.root.demo.aboutaop") // 设置父包名 会影响package
+                            .parent("com.com.roily.root.demo.aboutaop") // 设置父包名 会影响package
                             // .moduleName("backstage") // 设置父包模块名
                             .entity("entity")//实体类包名
                             .service("service")//service包名
                             .serviceImpl("service.impl")//impl包名
                             .mapper("mapper")//mapper接口包名
-                            .controller("controller")//controller包名
+                            .controller("com.com.roily.controller")//controller包名
                             .other("other")
                             //.xml("mp-01\\src\\main\\resources\\mapper")//mapper.xml 输出路径
                             //以上配置都基于父包路径
@@ -79,7 +79,7 @@ class CodeMake {
                             //.serviceImpl("/templates/serviceImpl.java")
                             //.mapper("/templates/mapper.java")
                             ////.mapperXml("/templates/mapper.xml")
-                            //.controller("/templates/controller.java")
+                            //.com.com.roily.controller("/templates/com.com.roily.controller.java")
                             .build();
                 })
                 .injectionConfig(builder -> {

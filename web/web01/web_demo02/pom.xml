@@ -6,11 +6,11 @@
 
   <parent>
     <artifactId>web01</artifactId>
-    <groupId>com.roily.web01</groupId>
+    <groupId>com.com.roily.web01</groupId>
     <version>1.0-SNAPSHOT</version>
   </parent>
 
-  <groupId>com.roily</groupId>
+  <groupId>com.com.roily</groupId>
   <artifactId>web_demo02</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>

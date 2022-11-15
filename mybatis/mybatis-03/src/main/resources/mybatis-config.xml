@@ -15,8 +15,8 @@
     </settings>
 
     <typeAliases>
-        <package name="com.roily.entity"/>
-        <package name="com.roily.pojo"/>
+        <package name="com.com.roily.entity"/>
+        <package name="com.com.roily.com.com.roily.pojo"/>
     </typeAliases>
 
     <environments default="dev1">
@@ -37,6 +37,6 @@
         <mapper resource="xml/Department2Mapper.xml"/>
         <mapper resource="xml/EmployeeMapper.xml"/>
 <!--        <mapper url="file:E:/programmeTools/idea/git/JavaBase/Mybatis-02/src/main/resources/xml/DepartmentMapper.xml"/>-->
-<!--            <mapper class="com.roily.mapper.DepartmentMapper"/>-->
+<!--            <mapper class="com.com.roily.mapper.DepartmentMapper"/>-->
     </mappers>
 </configuration>

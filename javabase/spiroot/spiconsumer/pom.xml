@@ -4,12 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>spiroot</artifactId>
-        <groupId>com.roily</groupId>
+        <groupId>com.com.roily</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.roily.spi</groupId>
+    <groupId>com.com.roily.spi</groupId>
     <artifactId>spiconsumer</artifactId>
 
     <properties>
@@ -19,17 +19,17 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.roily.spi</groupId>
+            <groupId>com.com.roily.spi</groupId>
             <artifactId>spi</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>com.roily.spi</groupId>
+            <groupId>com.com.roily.spi</groupId>
             <artifactId>spiimpl</artifactId>
             <version>1.0</version>
         </dependency>
         <dependency>
-            <groupId>com.roily.spi</groupId>
+            <groupId>com.com.roily.spi</groupId>
             <artifactId>spiimpl2</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>

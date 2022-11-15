@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
  * @Description:
  */
 @Configuration
-@MapperScan(basePackages = {"com.roily.root.demo.aboutaop.mapper"})
+@MapperScan(basePackages = {"com.com.roily.root.demo.aboutaop.mapper"})
 public class MybatisPlusConfig {
 
     /**

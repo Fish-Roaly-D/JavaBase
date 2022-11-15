@@ -8,13 +8,13 @@
        https://www.springframework.org/schema/context/spring-context.xsd">
 
     <!--  如果想要注解生效必须设置此标签，并在此之前引入对应的命名空间  -->
-    <context:component-scan base-package="com.roily.injectway.annotation.xmlannotation"/>
+    <context:component-scan base-package="com.com.roily.injectway.annotation.xmlannotation"/>
 
-    <bean id="daoDemo" class="com.roily.injectway.annotation.xmlannotation.DaoDemo">
+    <bean id="daoDemo" class="com.com.roily.injectway.annotation.xmlannotation.DaoDemo">
         <property name="value" value="123"/>
     </bean>
     <!--  此处设置autowire service不用添加注解 -->
-    <bean id="serviceDemo" class="com.roily.injectway.annotation.xmlannotation.ServiceDemo2">
+    <bean id="serviceDemo" class="com.com.roily.injectway.annotation.xmlannotation.ServiceDemo2">
 
     </bean>
 

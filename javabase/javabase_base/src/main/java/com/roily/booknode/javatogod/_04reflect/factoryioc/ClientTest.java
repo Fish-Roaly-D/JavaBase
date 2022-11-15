@@ -29,11 +29,11 @@ public class ClientTest {
         //System.out.println(apple);
         //final Fruit banana = MyCustomizeFactory.getInstance("Banana");
         //System.out.println(banana);
-        //final Fruit apple = MyCustomizeFactory.getInstanceWithReflect("apple","com.roily.booknode.javatogod._04reflect.factoryioc.Apple");
+        //final Fruit apple = MyCustomizeFactory.getInstanceWithReflect("apple","com.com.roily.booknode.javatogod._04reflect.factoryioc.Apple");
         //System.out.println(apple.getClass());
-        //final Fruit banana = MyCustomizeFactory.getInstanceWithReflect("banana","com.roily.booknode.javatogod._04reflect.factoryioc.Banana");
+        //final Fruit banana = MyCustomizeFactory.getInstanceWithReflect("banana","com.com.roily.booknode.javatogod._04reflect.factoryioc.Banana");
         //System.out.println(banana.getClass());
-        //final Fruit orange = MyCustomizeFactory.getInstanceWithReflect("orange","com.roily.booknode.javatogod._04reflect.factoryioc.Orange");
+        //final Fruit orange = MyCustomizeFactory.getInstanceWithReflect("orange","com.com.roily.booknode.javatogod._04reflect.factoryioc.Orange");
         //System.out.println(orange.getClass());
         final Fruit apple = MyCustomizeFactory.getInstanceWithReflect("Apple");
         System.out.println(apple.getClass());

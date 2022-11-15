@@ -26,7 +26,7 @@ import java.util.Properties;
 @EnableAspectJAutoProxy//aop,支持代理类
 @Configuration//声明此类为配置类
 @ComponentScan(basePackages = "com.roily")
-@MapperScan(basePackages = "com.roily.mapper")
+@MapperScan(basePackages = "com.com.roily.mapper")
 public class ApplicationASConfig {
 
     /**

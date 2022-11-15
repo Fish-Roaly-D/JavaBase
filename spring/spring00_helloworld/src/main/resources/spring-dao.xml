@@ -37,7 +37,7 @@
 
     <!--    扫描mapper -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.roily.mapper"/>
+        <property name="basePackage" value="com.com.roily.mapper"/>
     </bean>
 
 </beans>

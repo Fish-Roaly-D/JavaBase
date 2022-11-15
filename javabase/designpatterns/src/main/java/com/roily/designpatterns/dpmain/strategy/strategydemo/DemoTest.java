@@ -35,7 +35,7 @@ public class DemoTest {
     @Test
     public void test() throws ClassNotFoundException {
 
-        Class<?> aClass = Class.forName("com.roily.designpatterns.dpmain.strategy.strategydemo."+"AddAction");
+        Class<?> aClass = Class.forName("com.com.roily.designpatterns.dpmain.strategy.strategydemo."+"AddAction");
     }
 
 }

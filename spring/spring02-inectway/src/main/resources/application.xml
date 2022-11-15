@@ -10,30 +10,30 @@
        http://www.springframework.org/schema/context
        https://www.springframework.org/schema/context/spring-context.xsd">
 
-    <!--    <bean id="user" name="userAlias" class="com.roily.entity.User">-->
+    <!--    <bean id="user" name="userAlias" class="com.com.roily.entity.User">-->
     <!--        <property name="name" value="yuyc"/>-->
     <!--    </bean>-->
 
-    <!--    <bean id="person" class="com.roily.entity.Person">-->
+    <!--    <bean id="person" class="com.com.roily.entity.Person">-->
     <!--        <constructor-arg name="age" value="1"/>-->
     <!--        <constructor-arg name="name" value="1"/>-->
     <!--        <constructor-arg name="email" value="1"/>-->
     <!--    </bean>-->
 
-    <!--    <bean id="userDao" class="com.roily.dao.UserDao"/>-->
-    <!--    <bean id="userService" class="com.roily.service.UserService" autowire="constructor">-->
+    <!--    <bean id="userDao" class="com.com.roily.dao.UserDao"/>-->
+    <!--    <bean id="userService" class="com.com.roily.service.UserService" autowire="constructor">-->
     <!--    </bean>-->
-    <!--    <bean id="component1" class="com.roily.entity.Component1">-->
+    <!--    <bean id="component1" class="com.com.roily.entity.Component1">-->
     <!--        <property name="component2" ref="component2"/>-->
     <!--    </bean>-->
-    <!--    <bean id="component2" class="com.roily.entity.Component2">-->
+    <!--    <bean id="component2" class="com.com.roily.entity.Component2">-->
     <!--        <property name="component1" ref="component1"/>-->
     <!--    </bean>-->
 
-    <bean id="component1" class="com.roily.entity.Component1" autowire="constructor">
+    <bean id="component1" class="com.com.roily.entity.Component1" autowire="constructor">
         <constructor-arg name="component2" ref="component2"/>
     </bean>
-    <bean id="component2" class="com.roily.entity.Component2" autowire="constructor">
+    <bean id="component2" class="com.com.roily.entity.Component2" autowire="constructor">
         <constructor-arg name="component1" ref="component1"/>
     </bean>
 

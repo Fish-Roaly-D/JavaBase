@@ -60,6 +60,6 @@ mybatis-plus:
       logic-delete-value: 1 # 逻辑已删除值(默认为 1)
       logic-not-delete-value: 0 # 逻辑未删除值(默认为 0)
   mapper-locations: mapper/*.xml
-  type-aliases-package: com.roily.entity
-  type-handlers-package: com.roily.typeHandler
-  type-enums-package: com.roily.enums
+  type-aliases-package: com.com.roily.entity
+  type-handlers-package: com.com.roily.typeHandler
+  type-enums-package: com.com.roily.enums

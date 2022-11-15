@@ -1,11 +1,11 @@
-// package com.roily.mp01;
+// package com.com.roily.mp01;
 //
 //
 // import com.baomidou.mybatisplus.core.conditions.Wrapper;
 // import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-// import com.roily.mp01.backstage.entity.UserEntity;
-// import com.roily.mp01.backstage.mapper.UserMapper;
-// import com.roily.mp01.backstage.service.UserService;
+// import com.com.roily.mp01.backstage.entity.UserEntity;
+// import com.com.roily.mp01.backstage.mapper.UserMapper;
+// import com.com.roily.mp01.backstage.service.UserService;
 // import org.junit.jupiter.api.Test;
 // import org.springframework.beans.factory.annotation.Autowired;
 // import org.springframework.boot.test.context.SpringBootTest;
