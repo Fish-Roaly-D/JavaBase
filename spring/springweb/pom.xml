@@ -10,7 +10,9 @@
 
     <packaging>pom</packaging>
     <modules>
-
+        <module>01_createwebmodel</module>
+        <module>02_createwebappmodel</module>
+        <module>03_springmvcdemo</module>
     </modules>
 
     <properties>
@@ -25,6 +27,7 @@
         <jackson-databind.version>2.13.3</jackson-databind.version>
         <com.alibaba.fastjson.version>2.0.10</com.alibaba.fastjson.version>
 
+        <!--   以下依赖后期使用     -->
         <mysql.version>8.0.30</mysql.version>
         <mybatis.version>3.5.10</mybatis.version>
         <jol-core.version>0.16</jol-core.version>
