@@ -10,9 +10,7 @@
 
     <packaging>pom</packaging>
     <modules>
-        <module>spring4</module>
-        <module>demo02</module>
-        <module>demo03</module>
+
     </modules>
 
     <properties>
