@@ -16,7 +16,7 @@
 
     <typeAliases>
         <package name="com.roily.entity"/>
-        <package name="com.roily.com.roily.pojo"/>
+        <package name="com.roily.pojo"/>
     </typeAliases>
 
     <environments default="dev1">
