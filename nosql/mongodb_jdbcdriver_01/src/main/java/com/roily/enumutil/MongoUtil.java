@@ -11,6 +11,7 @@ import com.mongodb.client.MongoDatabase;
 public class MongoUtil {
 
     public static MongoClient mongoClient(String host, Integer port) {
+
         return new MongoClient(host, port);
     }
 
