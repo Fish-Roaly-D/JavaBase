@@ -1,0 +1,86 @@
+package com.roily;
+
+import com.alibaba.fastjson.JSON;
+import com.mongodb.BasicDBObject;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoCursor;
+import com.mongodb.client.MongoDatabase;
+import com.mongodb.client.model.InsertOneModel;
+import com.mongodb.client.model.UpdateOneModel;
+import com.mongodb.client.model.WriteModel;
+import com.roily.entity.Score;
+import com.roily.entity.User;
+import com.roily.enumutil.MongoUtil;
+import org.bson.BsonDocumentWrapper;
+import org.bson.BsonObjectId;
+import org.bson.Document;
+import org.junit.Test;
+
+import java.util.Arrays;
+import java.util.Collections;
+
+/**
+ * @Date: 2022/11/29/14:27
+ * @Description: insertDocumentTest
+ */
+public class InsertTest {
+
+    String LOCALHOST = "127.0.0.1";
+    String DEFAULT_DB = "test";
+    Integer DEFAULT_PORT = 27017;
+
+    final MongoDatabase mongoDatabase = MongoUtil.mongoDatabase(LOCALHOST, DEFAULT_PORT, DEFAULT_DB);
+
+    @Test
+    public void testInsertOne() {
+        final MongoCollection<Document> users = mongoDatabase.getCollection("users");
+        if (users.countDocuments() > 0)
+            users.drop();
+        final Document user = new Document("name", "yuyc").append("age", 22).append("scores", Arrays.asList(1, 2, 3));
+        users.insertOne(user);
+        for (Document document : users.find()) {
+            System.out.println(document.toJson());
+        }
+    }
+
+    @Test
+    public void testInsertMany() {
+        final MongoCollection<Document> users = mongoDatabase.getCollection("users");
+        if (users.countDocuments() > 0)
+            users.drop();
+        final Document user1 = new Document("name", "yuyc1").append("age", 22).append("scores", Arrays.asList(1, 2, 3));
+        final Document user2 = new Document("name", "yuyc2").append("age", 22).append("scores", Arrays.asList(1, 2, 3));
+        final Document user3 = new Document("name", "yuyc3").append("age", 22).append("scores", Arrays.asList(1, 2, 3));
+        users.insertMany(Arrays.asList(user1, user2, user3));
+        for (Document document : users.find()) {
+            System.out.println(document.toJson());
+        }
+    }
+
+    @Test
+    public void testBulk() {
+        final MongoCollection<Document> users = mongoDatabase.getCollection("users");
+        if (users.countDocuments() > 0)
+            users.drop();
+        final Document user1 = new Document("name", "yuyc1").append("age", 22).append("scores", Arrays.asList(1, 2, 3));
+        final Document user2 = new Document("name", "yuyc2").append("age", 22).append("scores", Arrays.asList(1, 2, 3));
+
+        final InsertOneModel<Document> userInsertOneModel1 = new InsertOneModel<>(Document.parse(JSON.toJSONString(user1)));
+        final InsertOneModel<Document> userInsertOneModel2 = new InsertOneModel<>(Document.parse(JSON.toJSONString(user2)));
+
+        final BasicDBObject filter = new BasicDBObject("name", "yuyc1");
+        final BasicDBObject update = new BasicDBObject("$set", new BasicDBObject("age", 99));
+        final WriteModel<Document> userUpdate = new UpdateOneModel<>(filter, update);
+
+        final Document filter2 = new Document("name", "yuyc1");
+        final Document update2 = new Document("$inc", new Document("age", 10));
+        final UpdateOneModel<Document> userUpdate2 = new UpdateOneModel<>(filter2, update2);
+
+        users.bulkWrite(Arrays.asList(userInsertOneModel1, userInsertOneModel2, userUpdate, userUpdate2));
+        for (Document document : users.find()) {
+            System.out.println(document.toJson());
+        }
+    }
+
+
+}

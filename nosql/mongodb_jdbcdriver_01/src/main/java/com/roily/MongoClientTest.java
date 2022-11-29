@@ -24,11 +24,11 @@ import java.util.List;
  * @Date: ${YEAR}/${MONTH}/${DAY}/${TIME}
  * @Description:
  */
-public class Main {
+public class MongoClientTest {
 
     public static void main(String[] args) {
 
-        MongoDatabase test = MongoUtil.mongoDatabase("127.0.0.1", 27017, "test");
+        MongoDatabase test = MongoUtil.mongoDatabase("localhost", 27017, "test");
 
         final MongoCollection<Document> userCol = test.getCollection("users");
 
