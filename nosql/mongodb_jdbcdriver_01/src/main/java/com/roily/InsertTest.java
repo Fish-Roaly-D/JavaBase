@@ -2,22 +2,24 @@ package com.roily;
 
 import com.alibaba.fastjson.JSON;
 import com.mongodb.BasicDBObject;
+import com.mongodb.MongoClientSettings;
+import com.mongodb.client.MongoClient;
+import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoCollection;
-import com.mongodb.client.MongoCursor;
 import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.model.InsertOneModel;
 import com.mongodb.client.model.UpdateOneModel;
 import com.mongodb.client.model.WriteModel;
-import com.roily.entity.Score;
-import com.roily.entity.User;
+import com.roily.entity.User2;
 import com.roily.enumutil.MongoUtil;
-import org.bson.BsonDocumentWrapper;
-import org.bson.BsonObjectId;
 import org.bson.Document;
+import org.bson.codecs.configuration.CodecRegistries;
+import org.bson.codecs.configuration.CodecRegistry;
+import org.bson.codecs.pojo.PojoCodecProvider;
 import org.junit.Test;
 
 import java.util.Arrays;
-import java.util.Collections;
+
 
 /**
  * @Date: 2022/11/29/14:27
@@ -82,5 +84,35 @@ public class InsertTest {
         }
     }
 
+    @Test
+    public void insertPojo() {
+        CodecRegistry pojoCodecRegistry = CodecRegistries.fromRegistries(MongoClientSettings.getDefaultCodecRegistry(),
+                CodecRegistries.fromProviders(PojoCodecProvider.builder().automatic(true).build()));
+        MongoClientSettings settings = MongoClientSettings.builder()
+                .codecRegistry(pojoCodecRegistry)
+                .build();
+        MongoClient mongoClient = MongoClients.create(settings);
+        final MongoCollection<User2> users = mongoClient.getDatabase("test")
+                .withCodecRegistry(pojoCodecRegistry)
+                .getCollection("users", User2.class);
+        users.deleteMany(new Document());
+        System.out.println("初始数据");
+        for (User2 user2 : users.find()) {
+            System.out.println(user2);
+        }
+        System.out.println("insert a pojo into collection");
+        User2 userOne = new User2("insertOne", 22);
+        users.insertOne(userOne);
+        for (User2 user2 : users.find()) {
+            System.out.println(user2);
+        }
+        System.out.println("insert many pojo into collection");
+        User2 userMany = new User2("insertMany", 22);
+        users.insertMany(Arrays.asList(userMany, userMany, userMany));
+        for (User2 user2 : users.find()) {
+            System.out.println(user2);
+        }
+
+    }
 
 }

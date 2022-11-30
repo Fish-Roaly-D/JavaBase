@@ -1,19 +1,19 @@
 package com.roily.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.experimental.Accessors;
-
-import java.util.List;
+import lombok.NoArgsConstructor;
 
 /**
  * @Date: 2022/11/29/11:07
  * @Description:
  */
 @Data
-@Accessors(chain = true)
-public class User {
+@AllArgsConstructor
+@NoArgsConstructor
+public class User2 {
+
     String name;
     Integer age;
-    List<Score> scoreList;
 
 }
