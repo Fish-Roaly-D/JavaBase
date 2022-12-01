@@ -12,6 +12,7 @@
 
     <modules>
         <module>mongodb_jdbcdriver_01</module>
+        <module>mongodb_springhelloworld_02</module>
     </modules>
 
 

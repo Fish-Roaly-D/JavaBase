@@ -93,7 +93,7 @@ public class InsertTest {
                 .build();
         MongoClient mongoClient = MongoClients.create(settings);
         final MongoCollection<User2> users = mongoClient.getDatabase("test")
-                .withCodecRegistry(pojoCodecRegistry)
+                // .withCodecRegistry(pojoCodecRegistry)
                 .getCollection("users", User2.class);
         users.deleteMany(new Document());
         System.out.println("初始数据");

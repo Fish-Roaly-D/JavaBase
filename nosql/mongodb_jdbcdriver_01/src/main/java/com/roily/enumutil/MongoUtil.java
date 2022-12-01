@@ -26,7 +26,7 @@ public class MongoUtil {
         return mongoClient(host, port).getDatabase(db);
     }
 
-    public static <T> MongoCollection<T> mongoCollection(Class<T> pojoClass, String pojoName, String connectionStr, String database) {
+    public static <T> MongoCollection<T> mongoCollection(Class<T> pojoClass, String collectionName, String connectionStr, String database) {
         CodecRegistry pojoCodecRegistry = CodecRegistries.fromRegistries(MongoClientSettings.getDefaultCodecRegistry(),
                 CodecRegistries.fromProviders(PojoCodecProvider.builder().automatic(true).build()));
         MongoClientSettings settings = MongoClientSettings.builder()
@@ -34,10 +34,16 @@ public class MongoUtil {
                 .applyConnectionString(new ConnectionString(connectionStr))
                 .build();
         com.mongodb.client.MongoClient mongoClient = MongoClients.create(settings);
+
         final MongoCollection<T> collection = mongoClient.getDatabase(database)
-                .withCodecRegistry(pojoCodecRegistry)
-                .getCollection(pojoName, pojoClass);
+                .getCollection(collectionName, pojoClass);
         return collection;
+    }
+
+    private final static String defaultConnectionStr = "mongodb://localhost:27017";
+
+    public static <T> MongoCollection<T> mongoCollection(Class<T> pojoClass, String collectionName, String database) {
+        return mongoCollection(pojoClass, collectionName, defaultConnectionStr, database);
     }
 
 }

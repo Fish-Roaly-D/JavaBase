@@ -26,6 +26,7 @@
         <mybatis.version>3.5.10</mybatis.version>
         <jol-core.version>0.16</jol-core.version>
         <spring.context.version>5.3.23</spring.context.version>
+        <spring.version>5.3.23</spring.version>
         <hamcrest-core.version>2.2</hamcrest-core.version>
         <com.alibaba.fastjson.version>2.0.10</com.alibaba.fastjson.version>
         <jackson-core.version>2.13.3</jackson-core.version>
@@ -88,7 +89,7 @@
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-webmvc</artifactId>
-                <version>5.3.23</version>
+                <version>${spring.version}</version>
             </dependency>
 
             <!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest-core -->
