@@ -23,7 +23,6 @@
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-
         <junit.version>4.13.2</junit.version>
         <lombok.version>1.18.24</lombok.version>
         <mysql.version>8.0.30</mysql.version>
@@ -37,7 +36,6 @@
         <jackson-databind.version>2.13.4.1</jackson-databind.version>
         <google.gson.version>2.9.0</google.gson.version>
         <mongo.driver.version>3.12.11</mongo.driver.version>
-
 
         <!-- 常用包 -->
         <apache.commons.lang3.version>3.12.0</apache.commons.lang3.version>
