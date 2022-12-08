@@ -1,19 +1,26 @@
 package com.roily.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.experimental.Accessors;
-
-import java.util.List;
+import lombok.NoArgsConstructor;
+import org.bson.types.ObjectId;
+import org.springframework.data.annotation.Id;
 
 /**
- * @Date: 2022/11/29/11:07
+ * @Date: 2022/12/08/16:39
  * @Description:
  */
 @Data
-@Accessors(chain = true)
+@AllArgsConstructor
+@NoArgsConstructor
 public class User {
-    String name;
-    Integer age;
-    List<Score> scoreList;
+    // @Id
+    private String idx;
+
+    // @Id
+    private String name;
+
+    private int age;
 
 }
+

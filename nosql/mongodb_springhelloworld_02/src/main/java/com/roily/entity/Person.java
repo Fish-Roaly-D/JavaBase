@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.bson.types.ObjectId;
+import org.springframework.data.annotation.TypeAlias;
 
 @Data
 @AllArgsConstructor
@@ -18,4 +19,8 @@ public final class Person {
 
     private Address address;
 
+    public Person setId(ObjectId id) {
+        this.id = id;
+        return this;
+    }
 }

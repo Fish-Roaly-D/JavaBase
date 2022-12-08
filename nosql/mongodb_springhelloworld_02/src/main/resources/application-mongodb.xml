@@ -7,22 +7,15 @@
                "http://www.springframework.org/schema/data/mongo https://www.springframework.org/schema/data/mongo/spring-mongo.xsd
           http://www.springframework.org/schema/beans
           https://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
     <context:property-placeholder location="classpath:mongodb.properties"/>
 
-
-    <mongo:mongo-client host="localhost" port="27017" id="mongoClient">
-        <mongo:client-settings connection-pool-max-connection-life-time="10"
-                               connection-pool-min-size="10"
-                               connection-pool-max-size="20"
-                               connection-pool-maintenance-frequency="10"
-                               connection-pool-maintenance-initial-delay="11"
-                               connection-pool-max-connection-idle-time="30"
-                               connection-pool-max-wait-time="15" />
+    <mongo:mongo-client host="${mongo.host}" port="${mongo.port}" id="mongoClient">
     </mongo:mongo-client>
 
     <bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
-        <constructor-arg ref="mongoClient"/>
-        <constructor-arg name="databaseName" value="geospatial"/>
+        <constructor-arg name="mongoClient" ref="mongoClient"/>
+        <constructor-arg name="databaseName" value="test"/>
     </bean>
 
 </beans>
