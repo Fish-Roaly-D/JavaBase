@@ -18,21 +18,21 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>com.roily.spi</groupId>
-            <artifactId>spi</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.roily.spi</groupId>
-            <artifactId>spiimpl</artifactId>
-            <version>1.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.roily.spi</groupId>
-            <artifactId>spiimpl2</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.roily.spi</groupId>-->
+<!--            <artifactId>spi</artifactId>-->
+<!--            <version>1.0-SNAPSHOT</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.roily.spi</groupId>-->
+<!--            <artifactId>spiimpl</artifactId>-->
+<!--            <version>1.0</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.roily.spi</groupId>-->
+<!--            <artifactId>spiimpl2</artifactId>-->
+<!--            <version>1.0-SNAPSHOT</version>-->
+<!--        </dependency>-->
     </dependencies>
 
 </project>

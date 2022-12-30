@@ -13,6 +13,7 @@
     <modules>
         <module>mongodb_jdbcdriver_01</module>
         <module>mongodb_springhelloworld_02</module>
+        <module>redis_jedis_01</module>
     </modules>
 
 
