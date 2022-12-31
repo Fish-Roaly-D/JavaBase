@@ -9,11 +9,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Set;
-import java.util.regex.Pattern;
-
 /**
  * @author: rolyfish
  */
@@ -28,11 +23,7 @@ public class TestredisTemplate {
             System.out.println(beanDefinitionName);
         }
         final RedisTemplate redisTemplate = app.getBean(RedisTemplate.class);
-        final Set keys = redisTemplate.keys("*");
-        final Long delete = redisTemplate.delete(Arrays.asList("redistemplate", "c1", "k1"));
-        System.out.println(delete);
-        keys.forEach(System.out::println);
-        final ValueOperations valueOperations = redisTemplate.opsForValue();
+        final ValueOperations<String,String> valueOperations = redisTemplate.opsForValue();
         valueOperations.set("redistemplate", "value");
         System.out.println(valueOperations.get("redistemplate"));
     }
