@@ -1,14 +1,8 @@
 server:
   servlet:
-    context-path: /aboutvalid
-  port: 8082
-
-  #配置Jackson时间格式转换
+    context-path: /redisdemo
+  port: 8083
 spring:
-  jackson:
-    date-format: yyyy-MM-dd HH:mm:ss
-    time-zone: GMT+8
-
   datasource:
     name: myBlog
     url: jdbc:mysql://localhost:3306/spring_all?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8&characterSetResults=utf8&useSSL=false
@@ -58,6 +52,16 @@ spring:
         enabled: true
         login-username: admin
         login-password: 123456
+  redis:
+    host: 10.211.55.4
+    port: 6379
+    password: 123123
+    lettuce:
+      pool:
+        max-active: 8  #最大连接
+        max-idle: 8   #最大空闲连接
+        min-idle: 0   #最小空闲连接
+        max-wait: 100ms #连接等待时间
 #mybatisplus 日志配置
 mybatis-plus:
   configuration:
@@ -73,3 +77,5 @@ mybatis-plus:
   type-aliases-package: com.roily.root.demo.aboutaop.entity
   type-handlers-package: com.roily.root.demo.aboutaop.typeHandler
   type-enums-package: com.roily.root.demo.aboutaop.enums
+
+

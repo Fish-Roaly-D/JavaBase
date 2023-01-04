@@ -7,7 +7,7 @@
     <groupId>com.roily.root.demo</groupId>
     <artifactId>root_demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>bootcollX</name>
+    <name>root_demo</name>
     <description>SpringBoot例子</description>
 
     <modules>
@@ -16,6 +16,7 @@
         <module>aboutvalid</module>
         <module>aboutannotation</module>
         <module>aboutaop</module>
+        <module>redis-demo</module>
     </modules>
     <properties>
         <java.version>1.8</java.version>

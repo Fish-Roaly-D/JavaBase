@@ -1,17 +1,11 @@
 server:
+  port: 8084
   servlet:
-    context-path: /aboutvalid
-  port: 8082
-
-  #配置Jackson时间格式转换
+    context-path: aop
 spring:
-  jackson:
-    date-format: yyyy-MM-dd HH:mm:ss
-    time-zone: GMT+8
-
   datasource:
     name: myBlog
-    url: jdbc:mysql://localhost:3306/spring_all?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8&characterSetResults=utf8&useSSL=false
+    url: jdbc:mysql://localhost:3306/test_database?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8&characterSetResults=utf8&useSSL=false
     username: root
     password: 123456
     type: com.alibaba.druid.pool.DruidDataSource
