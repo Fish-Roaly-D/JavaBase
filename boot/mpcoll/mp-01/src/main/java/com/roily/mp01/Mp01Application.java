@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
-@MapperScan({"com.roily.mp01.backstage.mapper"})
+@MapperScan({"com.roily.mp01.mapper"})
 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
 public class Mp01Application {
 

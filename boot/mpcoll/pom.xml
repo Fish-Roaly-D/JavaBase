@@ -13,7 +13,6 @@
         <module>mp-01</module>
         <module>aboutswagger</module>
         <module>demo</module>
-        <module>redis-demo</module>
     </modules>
 
     <!--   打包方式 -->
