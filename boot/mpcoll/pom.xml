@@ -13,6 +13,7 @@
         <module>mp-01</module>
         <module>aboutswagger</module>
         <module>demo</module>
+        <module>redis-demo</module>
     </modules>
 
     <!--   打包方式 -->
@@ -20,10 +21,10 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <spring-boot-starter.version>2.6.6</spring-boot-starter.version>
-        <spring-boot-starter-web.version>2.6.6</spring-boot-starter-web.version>
-        <spring-boot-starter-test.version>2.6.6</spring-boot-starter-test.version>
-        <spring-boot-starter-freemarker.version>2.6.6</spring-boot-starter-freemarker.version>
+        <spring-boot-starter.version>3.0.0</spring-boot-starter.version>
+        <spring-boot-starter-web.version>3.0.0</spring-boot-starter-web.version>
+        <spring-boot-starter-test.version>3.0.0</spring-boot-starter-test.version>
+        <spring-boot-starter-freemarker.version>3.0.0</spring-boot-starter-freemarker.version>
         <mysql.version>8.0.28</mysql.version>
         <druid.version>1.2.8</druid.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

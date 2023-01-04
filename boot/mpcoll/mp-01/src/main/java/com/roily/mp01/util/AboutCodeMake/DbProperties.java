@@ -13,7 +13,7 @@ import lombok.Getter;
 @Getter
 public enum DbProperties {
 
-    URL("url", "jdbc:mysql://localhost:3306/mybatis_plus?useUnicode=true&charactEncoding=utf8&useSSL=true&serverTimezone=GMT%2B8"),
+    URL("url", "jdbc:mysql://localhost:3306/spring_all?useUnicode=true&charactEncoding=utf8&useSSL=true&serverTimezone=GMT%2B8"),
     USER("user", "root"),
     PASSWORD("pass", "123456");
 

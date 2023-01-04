@@ -42,7 +42,7 @@ class CodeMake {
 
         //配置 entity service xml impl 等文件输出路径
         Map<OutputFile, String> outputFileStringMap =
-                Collections.singletonMap(OutputFile.xml, "mp-01\\src\\main\\resources\\mapper");
+                Collections.singletonMap(OutputFile.xml, "boot\\mpcoll\\mp-01\\src\\main\\resources\\mapper");
 
 
         FastAutoGenerator
@@ -55,7 +55,7 @@ class CodeMake {
                             .enableSwagger() // 开启 swagger 模式
                             .fileOverride() // 覆盖已生成文件
                             .disableOpenDir()//生成文件后、不要打开目录
-                            .outputDir("mybatisplus\\mpcoll\\mp-01\\src\\main\\java"); // 指定输出目录
+                            .outputDir("boot\\mpcoll\\mp-01\\src\\main\\java"); // 指定输出目录
                 })
                 //包路径配置
                 .packageConfig(builder -> {
@@ -97,7 +97,7 @@ class CodeMake {
                             .build();
                 })
                 .strategyConfig(builder -> {
-                    builder.addInclude("user")// 设置需要生成的表名
+                    builder.addInclude("student")// 设置需要生成的表名
                             .addTablePrefix("t_", "c_") // 设置过滤表前缀
                             .addTableSuffix("_info")// 设置过滤表后缀
                             //.addFieldPrefix("") // 设置过滤字段前缀
