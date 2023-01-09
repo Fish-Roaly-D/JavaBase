@@ -32,3 +32,4 @@ Mysql-jdbc/target
 .idea/*
 *.iml
 boot/mpcoll/.idea/*
+*.idea/*

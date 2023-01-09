@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/mp-01/pom.xml" />
-        <option value="$PROJECT_DIR$/aboutswagger/pom.xml" />
-        <option value="$PROJECT_DIR$/demo/pom.xml" />
+        <option value="$PROJECT_DIR$/aboutfile/pom.xml" />
+        <option value="$PROJECT_DIR$/aboutvalid/pom.xml" />
+        <option value="$PROJECT_DIR$/aboutannotation/pom.xml" />
+        <option value="$PROJECT_DIR$/aboutaop/pom.xml" />
       </list>
     </option>
   </component>
