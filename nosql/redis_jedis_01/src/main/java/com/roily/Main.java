@@ -13,9 +13,10 @@ public class Main {
         config.setMaxIdle(10);
         config.setTestOnBorrow(true);
         config.setTestOnReturn(true);
-        JedisPool pool = new JedisPool(config, "10.211.55.4", 6379, 6000, "123123");
+        // JedisPool pool = new JedisPool(config, "10.211.55.4", 6379, 6000, "123123");
+        JedisPool pool = new JedisPool(config, "127.0.0.1", 6379, 6000);
         try (Jedis jedis = pool.getResource()) {
-            jedis.auth("123123");
+            // jedis.auth("123123");
             jedis.set("k1", "v1");
             final String k1 = jedis.get("k1");
             System.out.println(k1);
