@@ -28,6 +28,7 @@ Base-DataType-01/target
 Mysql-DataSource/target
 Mysql-jdbc/target
 */target
+boot/rootdemo/aboutannotation/target/
 
 .idea/*
 *.iml
