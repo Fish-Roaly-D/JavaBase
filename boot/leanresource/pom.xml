@@ -3,6 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.5.7</version>
+        <relativePath/>
+    </parent>
+
     <artifactId>leanresource</artifactId>
     <groupId>com.roily</groupId>
     <version>1.0-SNAPSHOT</version>
@@ -12,6 +19,7 @@
     <description>网上下载项目</description>
 
     <modules>
+        <module>redis-demo</module>
     </modules>
 
     <!--   打包方式 -->
@@ -38,22 +46,22 @@
 
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>org.mybatis</groupId>
-                <artifactId>mybatis</artifactId>
-                <version>${mybatis.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>mysql</groupId>
-                <artifactId>mysql-connector-java</artifactId>
-                <version>${mysql.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/junit/junit -->
-            <dependency>
-                <groupId>junit</groupId>
-                <artifactId>junit</artifactId>
-                <version>${junit.version}</version>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>org.mybatis</groupId>-->
+<!--                <artifactId>mybatis</artifactId>-->
+<!--                <version>${mybatis.version}</version>-->
+<!--            </dependency>-->
+<!--            <dependency>-->
+<!--                <groupId>mysql</groupId>-->
+<!--                <artifactId>mysql-connector-java</artifactId>-->
+<!--                <version>${mysql.version}</version>-->
+<!--            </dependency>-->
+<!--            &lt;!&ndash; https://mvnrepository.com/artifact/junit/junit &ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>junit</groupId>-->
+<!--                <artifactId>junit</artifactId>-->
+<!--                <version>${junit.version}</version>-->
+<!--            </dependency>-->
 
             <dependency>
                 <groupId>org.projectlombok</groupId>
@@ -62,67 +70,67 @@
                 <scope>provided</scope>
             </dependency>
 
-            <!-- 获取内存地址 -->
-            <dependency>
-                <groupId>org.openjdk.jol</groupId>
-                <artifactId>jol-core</artifactId>
-                <version>${jol-core.version}</version>
-                <scope>provided</scope>
-            </dependency>
+<!--            &lt;!&ndash; 获取内存地址 &ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>org.openjdk.jol</groupId>-->
+<!--                <artifactId>jol-core</artifactId>-->
+<!--                <version>${jol-core.version}</version>-->
+<!--                <scope>provided</scope>-->
+<!--            </dependency>-->
 
-            <!-- spring-context -->
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-context</artifactId>
-                <version>${spring.context.version}</version>
-            </dependency>
+<!--            &lt;!&ndash; spring-context &ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>org.springframework</groupId>-->
+<!--                <artifactId>spring-context</artifactId>-->
+<!--                <version>${spring.context.version}</version>-->
+<!--            </dependency>-->
 
-            <!-- spring-context -->
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-webmvc</artifactId>
-                <version>${spring.version}</version>
-            </dependency>
+<!--            &lt;!&ndash; spring-context &ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>org.springframework</groupId>-->
+<!--                <artifactId>spring-webmvc</artifactId>-->
+<!--                <version>${spring.version}</version>-->
+<!--            </dependency>-->
 
-            <!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest-core -->
-            <dependency>
-                <groupId>org.hamcrest</groupId>
-                <artifactId>hamcrest-core</artifactId>
-                <version>${hamcrest-core.version}</version>
-            </dependency>
+<!--            &lt;!&ndash; https://mvnrepository.com/artifact/org.hamcrest/hamcrest-core &ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>org.hamcrest</groupId>-->
+<!--                <artifactId>hamcrest-core</artifactId>-->
+<!--                <version>${hamcrest-core.version}</version>-->
+<!--            </dependency>-->
 
-            <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
-            <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>fastjson</artifactId>
-                <version>${com.alibaba.fastjson.version}</version>
-            </dependency>
+<!--            &lt;!&ndash; https://mvnrepository.com/artifact/com.alibaba/fastjson &ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>com.alibaba</groupId>-->
+<!--                <artifactId>fastjson</artifactId>-->
+<!--                <version>${com.alibaba.fastjson.version}</version>-->
+<!--            </dependency>-->
 
-            <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
-            <dependency>
-                <groupId>com.fasterxml.jackson.core</groupId>
-                <artifactId>jackson-core</artifactId>
-                <version>${jackson-core.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations -->
-            <dependency>
-                <groupId>com.fasterxml.jackson.core</groupId>
-                <artifactId>jackson-annotations</artifactId>
-                <version>${jackson-annotations.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+<!--            &lt;!&ndash; https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core &ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>com.fasterxml.jackson.core</groupId>-->
+<!--                <artifactId>jackson-core</artifactId>-->
+<!--                <version>${jackson-core.version}</version>-->
+<!--            </dependency>-->
+<!--            &lt;!&ndash; https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations &ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>com.fasterxml.jackson.core</groupId>-->
+<!--                <artifactId>jackson-annotations</artifactId>-->
+<!--                <version>${jackson-annotations.version}</version>-->
+<!--            </dependency>-->
+<!--            &lt;!&ndash; https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind &ndash;&gt;-->
 
-            <dependency>
-                <groupId>com.fasterxml.jackson.core</groupId>
-                <artifactId>jackson-databind</artifactId>
-                <version>${jackson-databind.version}</version>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>com.fasterxml.jackson.core</groupId>-->
+<!--                <artifactId>jackson-databind</artifactId>-->
+<!--                <version>${jackson-databind.version}</version>-->
+<!--            </dependency>-->
             <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
-            <dependency>
-                <groupId>com.google.code.gson</groupId>
-                <artifactId>gson</artifactId>
-                <version>${google.gson.version}</version>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>com.google.code.gson</groupId>-->
+<!--                <artifactId>gson</artifactId>-->
+<!--                <version>${google.gson.version}</version>-->
+<!--            </dependency>-->
             <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 apache常用工具类 -->
             <dependency>
                 <groupId>org.apache.commons</groupId>
