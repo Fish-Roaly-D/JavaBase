@@ -42,8 +42,7 @@ class CodeMake {
 
         //配置 entity service xml impl 等文件输出路径
         Map<OutputFile, String> outputFileStringMap =
-                Collections.singletonMap(OutputFile.xml, "boot\\mpcoll\\mp-01\\src\\main\\resources\\mapper");
-
+                Collections.singletonMap(OutputFile.xml, "d:xxx");
 
         FastAutoGenerator
                 .create(dataSourceConfigBuilder)
@@ -55,18 +54,18 @@ class CodeMake {
                             .enableSwagger() // 开启 swagger 模式
                             .fileOverride() // 覆盖已生成文件
                             .disableOpenDir()//生成文件后、不要打开目录
-                            .outputDir("boot\\mpcoll\\mp-01\\src\\main\\java"); // 指定输出目录
+                            .outputDir("d:xxx"); // 指定输出目录
                 })
                 //包路径配置
                 .packageConfig(builder -> {
                     builder
                             .parent("com.roily.mp01") // 设置父包名 会影响package
-                            .moduleName("backstage") // 设置父包模块名
+                            // .moduleName("backstage") // 设置父包模块名
                             .entity("entity")//实体类包名
                             .service("service")//service包名
                             .serviceImpl("service.impl")//impl包名
                             .mapper("mapper")//mapper接口包名
-                            .controller("com.roily.controller")//controller包名
+                            .controller("controller")//controller包名
                             .other("other")
                             //.xml("mp-01\\src\\main\\resources\\mapper")//mapper.xml 输出路径
                             //以上配置都基于父包路径
@@ -97,7 +96,7 @@ class CodeMake {
                             .build();
                 })
                 .strategyConfig(builder -> {
-                    builder.addInclude("student")// 设置需要生成的表名
+                    builder.addInclude("user")// 设置需要生成的表名
                             .addTablePrefix("t_", "c_") // 设置过滤表前缀
                             .addTableSuffix("_info")// 设置过滤表后缀
                             //.addFieldPrefix("") // 设置过滤字段前缀

@@ -1,4 +1,4 @@
-package com.roily.root.demo.aboutaop.entity;
+package com.roily.mp01.entity;
 
 import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.IdType;
@@ -8,16 +8,17 @@ import com.baomidou.mybatisplus.annotation.TableLogic;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.Version;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
+import java.io.Serializable;
+import java.time.LocalDateTime;
+import java.util.Date;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
-import org.assertj.core.util.DateUtil;
-
-import java.io.Serializable;
-import java.time.LocalDateTime;
-import java.util.Date;
+import org.springframework.format.annotation.DateTimeFormat;
 
 /**
  * <p>
@@ -25,48 +26,40 @@ import java.util.Date;
  * </p>
  *
  * @author roilyFish
- * @since 2022-09-05
+ * @since 2023-02-02
  */
-@Getter
-@Setter
+@Data
 @TableName("user")
 @ApiModel(value = "User对象", description = "")
 public class User extends Model<User> {
 
     private static final long serialVersionUID = 1L;
 
-    @ApiModelProperty("主键ID")
+    @ApiModelProperty("主键")
     @TableId(value = "id", type = IdType.AUTO)
-    private Long id;
+    private Integer id;
 
     @ApiModelProperty("姓名")
     @TableField("name")
     private String name;
 
-    @ApiModelProperty("邮箱")
+    @ApiModelProperty("邮件")
     @TableField("email")
     private String email;
 
-    @ApiModelProperty("逻辑删除")
-    @TableField("deleted")
+    @TableField(value = "is_delete",fill = FieldFill.INSERT)
     @TableLogic
-    private Integer deleted;
+    private Integer isDelete;
 
-    @ApiModelProperty("乐观锁")
     @TableField("version")
     @Version
-    private Integer version;
+    private String version;
 
-    @ApiModelProperty("插入时间")
     @TableField(value = "create_time", fill = FieldFill.INSERT)
     private Date createTime;
 
-    @ApiModelProperty("修改时间")
     @TableField(value = "update_time", fill = FieldFill.INSERT_UPDATE)
     private Date updateTime;
-
-    @TableField("tb_user_test_colum")
-    private String tbUserTestColum;
 
 
     @Override
