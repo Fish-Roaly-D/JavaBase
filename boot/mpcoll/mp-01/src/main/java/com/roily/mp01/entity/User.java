@@ -53,7 +53,7 @@ public class User extends Model<User> {
 
     @TableField("version")
     @Version
-    private String version;
+    private Integer version;
 
     @TableField(value = "create_time", fill = FieldFill.INSERT)
     private Date createTime;

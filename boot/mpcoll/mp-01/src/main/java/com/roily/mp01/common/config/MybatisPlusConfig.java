@@ -11,6 +11,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
 /**
@@ -23,31 +24,37 @@ public class MybatisPlusConfig {
 
     /**
      * mp 分页插件
+     *
      * @return
      */
     @Bean
     public MybatisPlusInterceptor mybatisPlusInterceptor() {
         MybatisPlusInterceptor interceptor = new MybatisPlusInterceptor();
         // 向MyBatis-Plus的过滤器链中添加分页拦截器，需要设置数据库类型（主要用于分页方言）
+        // 分页插件
         interceptor.addInnerInterceptor(new PaginationInnerInterceptor(DbType.MYSQL));
+        // 乐观锁插件
         interceptor.addInnerInterceptor(new OptimisticLockerInnerInterceptor());
         return interceptor;
     }
 
-
-    @Component
-    public static class MyFillHandler implements MetaObjectHandler {
-        @Override
-        public void insertFill(MetaObject metaObject) {
-            // 起始版本 3.3.0(推荐使用)
-            this.strictInsertFill(metaObject, "createTime", Date.class, new Date());
-            this.strictInsertFill(metaObject, "updateTime", Date.class, new Date());
-            this.strictInsertFill(metaObject, "isDelete", Integer.class, 0);
-        }
-        @Override
-        public void updateFill(MetaObject metaObject) {
-            // 起始版本 3.3.0(推荐)
-            this.strictUpdateFill(metaObject, "updateTime", Date.class, new Date());
-        }
-    }
+    // @Component
+    // public static class MyFillHandler implements MetaObjectHandler {
+    //     @Override
+    //     public void insertFill(MetaObject metaObject) {
+    //         // 起始版本 3.3.0(推荐使用)
+    //         this.strictInsertFill(metaObject, "createTime", Date.class, new Date());
+    //         this.strictInsertFill(metaObject, "updateTime", Date.class, new Date());
+    //         this.strictInsertFill(metaObject, "isDelete", Integer.class, 0);
+    //         this.strictInsertFill(metaObject, "version", Integer.class, 0);
+    //     }
+    //
+    //     @Override
+    //     public void updateFill(MetaObject metaObject) {
+    //         // 起始版本 3.3.0(推荐)
+    //         this.strictUpdateFill(metaObject, "updateTime", Date.class, new Date());
+    //
+    //         setFieldValByName("updateTime", LocalDateTime.now(),metaObject);
+    //     }
+    // }
 }
