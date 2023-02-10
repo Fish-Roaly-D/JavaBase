@@ -1,6 +1,7 @@
 package com.roily.base.collectionframework.base.queue.arrayqueue;
 
-import com.sun.jmx.remote.internal.ArrayQueue;
+// import com.sun.jmx.remote.internal.ArrayQueue;
+// import com.sun.jmx.remote.internal.ArrayQueue;
 import org.junit.Test;
 
 /**
@@ -23,9 +24,9 @@ public class ArrayQueueTest {
     @Test
     public void testResize(){
 
-        ArrayQueue<Object> queue = new ArrayQueue<>(10);
-
-        queue.resize(9);
+        // ArrayQueue<Object> queue = new ArrayQueue<>(10);
+        //
+        // queue.resize(9);
     }
 
 

@@ -52,7 +52,4 @@ class RedisStringTests {
         System.out.println("entries = " + entries);
     }
 
-    @Test
-    void name() {
-    }
 }

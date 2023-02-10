@@ -4,8 +4,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
-import javax.annotation.Resource;
-
 @SpringBootApplication(scanBasePackages =
         {
                 "com.roily.root.demo.common.*",
