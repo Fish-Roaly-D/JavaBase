@@ -9,16 +9,23 @@
     </bean>
     <bean id="redisStandaloneConfiguration"
           class="org.springframework.data.redis.connection.RedisStandaloneConfiguration">
-        <!--        <property name="hostName" value="10.211.55.4"/>-->
-        <property name="hostName" value="127.0.0.1"/>
+        <property name="hostName" value="10.211.55.4"/>
+        <!--        <property name="hostName" value="127.0.0.1"/>-->
         <property name="port" value="6379"/>
-        <!--        <property name="password" ref="redisPass"/>-->
+        <property name="password" ref="redisPass"/>
     </bean>
 
     <!--  不设置则使用默认连接池配置  -->
     <bean id="jedisPoolConfig" class="org.apache.commons.pool2.impl.GenericObjectPoolConfig">
-        <property name="maxTotal" value="1024"/>
+        <!--    最大连接数    -->
+        <property name="maxTotal" value="10"/>
+        <!--    最大空闲连接    -->
         <property name="maxIdle" value="10"/>
+        <!--    最小空闲连接    -->
+        <property name="minIdle" value="1"/>
+        <!--    没有连接，等待时长    -->
+        <property name="maxWaitMillis" value="1000"/>
+        <!--        获取连接前对连接进行校验，校验不通过则销毁当前连接，重新借一个新的连接-->
         <property name="testOnBorrow" value="true"/>
         <property name="testOnReturn" value="true"/>
     </bean>

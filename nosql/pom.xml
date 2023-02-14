@@ -47,6 +47,7 @@
         <aspectjweaver.version>1.9.9.1</aspectjweaver.version>
         <cglib.version>3.3.0</cglib.version>
         <hutool-all.version>5.8.10</hutool-all.version>
+        <slf4j.impl.version>2.19.0</slf4j.impl.version>
     </properties>
 
     <dependencyManagement>
