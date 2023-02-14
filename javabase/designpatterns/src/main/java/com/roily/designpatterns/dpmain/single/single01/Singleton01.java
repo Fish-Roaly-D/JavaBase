@@ -1,5 +1,7 @@
 package com.roily.designpatterns.dpmain.single.single01;
 
+import java.io.Serializable;
+
 /**
  * @version 1.0.0
  * @Description 懒汉式、非线程安全、lazy loading
@@ -7,7 +9,7 @@ package com.roily.designpatterns.dpmain.single.single01;
  * @author: RoilyFish
  * @date: 2022/6/2 11:01
  */
-public class Singleton01 {
+public class Singleton01 implements Serializable {
 
     private static Singleton01 instance;
 
