@@ -9,9 +9,9 @@ spring:
     username: root
     password: 123456
   redis:
-    host: 127.0.0.1
+    host: 10.211.55.4
     port: 6379
-#    password: 123321
+    password: 123123
     lettuce:
       pool:
         max-active: 10
@@ -19,7 +19,7 @@ spring:
         min-idle: 1
         time-between-eviction-runs: 10s
   jackson:
-    default-property-inclusion: non_null # JSON处理时忽略非空字段
+    default-property-inclusion: non_null # JSON处理时忽略空字段
 mybatis-plus:
   type-aliases-package: com.hmdp.entity # 别名扫描包
 logging:
