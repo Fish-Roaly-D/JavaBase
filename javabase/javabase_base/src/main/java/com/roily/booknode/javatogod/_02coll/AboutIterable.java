@@ -78,8 +78,9 @@ public class AboutIterable {
         //fail-sfae 集合修改
         for (String s : cowList) {
             if ("1".equals(s)){
-                cowList.remove(s);
+                cowList.remove("3");
             }
+            System.out.println(s);
         }
         //已经修改
         System.out.println(cowList);
