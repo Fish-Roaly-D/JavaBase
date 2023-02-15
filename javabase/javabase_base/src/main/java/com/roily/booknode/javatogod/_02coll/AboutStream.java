@@ -1,20 +1,16 @@
 package com.roily.booknode.javatogod._02coll;
 
-import com.google.common.base.Function;
-import org.checkerframework.checker.units.qual.K;
 import org.junit.Test;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
-import java.util.Collections;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
-import java.util.Map;
 import java.util.Optional;
-import java.util.function.Consumer;
-import java.util.function.Supplier;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.DoubleStream;
 import java.util.stream.IntStream;
@@ -41,8 +37,10 @@ public class AboutStream {
         list.stream().forEach(System.out::print);
         System.out.println();
 
+        Predicate<String> predicate = (ele) -> ele.equals("2");
+        predicate =  predicate.or(ele->ele.equals("3"));
         System.out.println("===============过滤===============");
-        List<String> collect2 = list.stream().filter((ele) -> ele.equals("2")).collect(Collectors.toList());
+        List<String> collect2 = list.stream().filter(predicate.or(ele -> ele.equals("4"))).collect(Collectors.toList());
         collect2.stream().forEach(System.out::print);
         System.out.println();
 
@@ -168,16 +166,12 @@ public class AboutStream {
         people.add(person2);
         names.add(name1);
         names.add(name2);
-        List<Object> collect = people.stream().map(person ->
-                names.stream()
-                        .filter(name -> {
-                            return person.id == name.id;
-                        })
-                        .map(name -> {
-                            person.setName(name.name);
-                            return person;
-                        }).collect(Collectors.toList())).flatMap(Collection::stream
-        ).collect(Collectors.toList());
+        List<Object> collect = people.stream().map(person -> names.stream().filter(name -> {
+            return person.id == name.id;
+        }).map(name -> {
+            person.setName(name.name);
+            return person;
+        }).collect(Collectors.toList())).flatMap(Collection::stream).collect(Collectors.toList());
 
         System.out.println(collect);
 
@@ -250,6 +244,22 @@ public class AboutStream {
         collect.forEach(System.out::print);
 
     }
+    /**
+     * 可以做 整合
+     */
+    @Test
+    public void testFlatMap2() {
+
+        final List<String> lists = Arrays.asList("flag1,flag2,flag3","flag5,flag6,flag7");
+
+        final LinkedList<String> collect = lists.stream().flatMap(ele -> {
+            final String[] split = ele.split(",");
+            return Arrays.stream(split);
+        }).collect(Collectors.toCollection(LinkedList::new));
+
+        collect.forEach(System.out::print);
+
+    }
 
     /**
      * 将多个Stream合并成一个Stream
@@ -259,9 +269,7 @@ public class AboutStream {
         final List<Integer> list1 = Arrays.asList(1, 2, 3);
         final List<String> list2 = Arrays.asList("1", "2", "3");
         final List<? extends List<? extends Serializable>> lists = Arrays.asList(list1, list2);
-        final List<String> collect = lists.stream().flatMap(list ->
-                list.stream().map(Object::toString)
-        ).collect(Collectors.toList());
+        final List<String> collect = lists.stream().flatMap(list -> list.stream().map(Object::toString)).collect(Collectors.toList());
         collect.stream().forEach(System.out::print);
     }
 
@@ -316,6 +324,19 @@ public class AboutStream {
         System.out.println("并行流，addall" + map3);
 
 
+    }
+
+
+    @Test
+    public void testCollect(){
+
+        final List<Integer> list1 = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 0);
+
+        final StringBuilder sb = list1.stream().collect(StringBuilder::new, StringBuilder::append, (sb1, sb2) ->
+            sb1.append(sb2.toString())
+        );
+
+        System.out.println(sb);
 
     }
 

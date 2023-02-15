@@ -3,6 +3,8 @@ package com.roily.booknode.javatogod._02coll;
 import org.junit.Test;
 
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashSet;
 import java.util.IntSummaryStatistics;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
@@ -52,8 +54,8 @@ public class CollAndCollor {
         System.out.println(map3);
 
         //转化集合后，可以再操作一次
-        final List<String> collect5 = list1.stream().collect(Collectors.collectingAndThen(Collectors.toList(),
-                (list -> list.stream().filter("abc"::contains).collect(Collectors.toList()))));
+        final Set<String> collect5 = list1.stream().collect(Collectors.collectingAndThen(Collectors.toList(),
+                (list -> list.stream().filter("abc"::contains).collect(Collectors.collectingAndThen(Collectors.toSet(),(HashSet::new))))));
         collect5.forEach(System.out::println);
 
         //将元素以字符串形式拼接

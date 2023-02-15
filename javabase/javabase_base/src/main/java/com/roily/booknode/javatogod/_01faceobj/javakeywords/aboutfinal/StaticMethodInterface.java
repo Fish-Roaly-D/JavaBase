@@ -15,6 +15,8 @@ public class StaticMethodInterface implements Interface1,Interface2 {
 
 interface Interface1{
 
+
+
     static void method(){
         System.out.println("Interface1");
     }

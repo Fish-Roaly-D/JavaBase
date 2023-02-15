@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
+import java.util.ListIterator;
 
 /**
  * @classname：FailFast
@@ -20,8 +21,8 @@ public class FailFast {
         final List<String> list = new ArrayList<>(Arrays.asList("1", "2", "3"));
         final Iterator<String> iterator = list.iterator();
         while (iterator.hasNext()) {
-            //list.remove("1");
-            //list.add("1");
+            list.remove("1");
+            list.add("1");
             iterator.next();
         }
     }
@@ -34,5 +35,15 @@ public class FailFast {
         }
     }
 
+    @Test
+    public void test3() {
+        final List<String> list = new ArrayList<>(Arrays.asList("1", "2", "3"));
+        final ListIterator<String> listIterator = list.listIterator();
+        while (listIterator.hasNext()) {
+            if ("3".equals(listIterator.next()))
+                listIterator.add("add");
+        }
+        System.out.println(list);
+    }
 
 }
