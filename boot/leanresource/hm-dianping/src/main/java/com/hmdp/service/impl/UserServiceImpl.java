@@ -28,7 +28,7 @@ import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 import static com.hmdp.utils.RedisConstants.*;
-import static com.hmdp.utils.SystemConstants.USER_NICK_NAME_PREFIX;
+import static com.hmdp.utils.SystemConstants.*;
 
 /**
  * <p>
@@ -156,7 +156,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
             if ((num & 1) == 0) {
                 // 如果为0，说明未签到，结束
                 break;
-            }else {
+            } else {
                 // 如果不为0，说明已签到，计数器+1
                 count++;
             }
@@ -169,8 +169,8 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
     private User createUserWithPhone(String phone) {
         // 1.创建用户
         User user = new User();
-        user.setPhone(phone);
-        user.setNickName(USER_NICK_NAME_PREFIX + RandomUtil.randomString(10));
+        user.setPhone(phone)
+                .setNickName(USER_NICK_NAME_PREFIX + RandomUtil.randomString(10));
         // 2.保存用户
         save(user);
         return user;

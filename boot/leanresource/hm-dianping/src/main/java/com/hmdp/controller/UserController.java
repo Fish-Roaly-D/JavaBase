@@ -39,6 +39,8 @@ public class UserController {
      */
     @PostMapping("code")
     public Result sendCode(@RequestParam("phone") String phone, HttpSession session) {
+
+        log.info("当前线程："+ Thread.currentThread().getName());
         // 发送短信验证码并保存验证码
         return userService.sendCode(phone, session);
     }
@@ -49,6 +51,8 @@ public class UserController {
      */
     @PostMapping("/login")
     public Result login(@RequestBody LoginFormDTO loginForm, HttpSession session){
+
+        log.info("当前线程："+ Thread.currentThread().getName());
         // 实现登录功能
         return userService.login(loginForm, session);
     }
@@ -59,12 +63,14 @@ public class UserController {
      */
     @PostMapping("/logout")
     public Result logout(){
+        log.info("当前线程："+ Thread.currentThread().getName());
         // TODO 实现登出功能
         return Result.fail("功能未完成");
     }
 
     @GetMapping("/me")
     public Result me(){
+        log.info("当前线程："+ Thread.currentThread().getName());
         // 获取当前登录的用户并返回
         UserDTO user = UserHolder.getUser();
         return Result.ok(user);
@@ -72,6 +78,7 @@ public class UserController {
 
     @GetMapping("/info/{id}")
     public Result info(@PathVariable("id") Long userId){
+        log.info("当前线程："+ Thread.currentThread().getName());
         // 查询详情
         UserInfo info = userInfoService.getById(userId);
         if (info == null) {
@@ -86,6 +93,7 @@ public class UserController {
 
     @GetMapping("/{id}")
     public Result queryUserById(@PathVariable("id") Long userId){
+        log.info("当前线程："+ Thread.currentThread().getName());
         // 查询详情
         User user = userService.getById(userId);
         if (user == null) {
@@ -98,11 +106,13 @@ public class UserController {
 
     @PostMapping("/sign")
     public Result sign(){
+        log.info("当前线程："+ Thread.currentThread().getName());
         return userService.sign();
     }
 
     @GetMapping("/sign/count")
     public Result signCount(){
+        log.info("当前线程："+ Thread.currentThread().getName());
         return userService.signCount();
     }
 }
