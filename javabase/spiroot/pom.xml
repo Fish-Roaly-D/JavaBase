@@ -16,6 +16,9 @@
 
     <modules>
         <module>spiconsumer</module>
+        <module>spi</module>
+        <module>spiimpl</module>
+        <module>spiimpl2</module>
     </modules>
 
     <properties>

@@ -43,6 +43,7 @@
         <aspectjweaver.version>1.9.9.1</aspectjweaver.version>
         <cglib.version>3.3.0</cglib.version>
         <hutool-all.version>5.8.10</hutool-all.version>
+        <fastjson.version>2.0.23</fastjson.version>
     </properties>
 
     <dependencyManagement>
@@ -103,6 +104,12 @@
                 <artifactId>hutool-all</artifactId>
                 <version>${hutool-all.version}</version>
             </dependency>
+            <!-- https://mvnrepository.com/artifact/com.alibaba.fastjson2/fastjson2 -->
+            <dependency>
+                <groupId>com.alibaba.fastjson2</groupId>
+                <artifactId>fastjson2</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
 
         </dependencies>
 
@@ -145,6 +152,10 @@
         <dependency>
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.fastjson2</groupId>
+            <artifactId>fastjson2</artifactId>
         </dependency>
     </dependencies>
 
