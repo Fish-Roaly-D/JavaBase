@@ -60,8 +60,8 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
 
         // 5.发送验证码
         log.debug("发送短信验证码成功，验证码：{}", code);
-        // 返回ok
-        return Result.ok();
+        // 返回success
+        return Result.success();
     }
 
     @Override
@@ -105,7 +105,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
         stringRedisTemplate.expire(tokenKey, LOGIN_USER_TTL, TimeUnit.MINUTES);
 
         // 8.返回token
-        return Result.ok(token);
+        return Result.success(token);
     }
 
     @Override
@@ -121,7 +121,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
         int dayOfMonth = now.getDayOfMonth();
         // 5.写入Redis SETBIT key offset 1
         stringRedisTemplate.opsForValue().setBit(key, dayOfMonth - 1, true);
-        return Result.ok();
+        return Result.success();
     }
 
     @Override
@@ -143,11 +143,11 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
         );
         if (result == null || result.isEmpty()) {
             // 没有任何签到结果
-            return Result.ok(0);
+            return Result.success(0);
         }
         Long num = result.get(0);
         if (num == null || num == 0) {
-            return Result.ok(0);
+            return Result.success(0);
         }
         // 6.循环遍历
         int count = 0;
@@ -163,7 +163,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
             // 把数字右移一位，抛弃最后一个bit位，继续下一个bit位
             num >>>= 1;
         }
-        return Result.ok(count);
+        return Result.success(count);
     }
 
     private User createUserWithPhone(String phone) {

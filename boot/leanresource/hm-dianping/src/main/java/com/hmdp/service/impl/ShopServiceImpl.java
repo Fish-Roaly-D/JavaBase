@@ -60,7 +60,7 @@ public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IS
             return Result.fail("店铺不存在！");
         }
         // 7.返回
-        return Result.ok(shop);
+        return Result.success(shop);
     }
 
     @Override
@@ -74,7 +74,7 @@ public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IS
         updateById(shop);
         // 2.删除缓存
         stringRedisTemplate.delete(CACHE_SHOP_KEY + id);
-        return Result.ok();
+        return Result.success();
     }
 
     @Override
@@ -86,7 +86,7 @@ public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IS
                     .eq("type_id", typeId)
                     .page(new Page<>(current, SystemConstants.DEFAULT_PAGE_SIZE));
             // 返回数据
-            return Result.ok(page.getRecords());
+            return Result.success(page.getRecords());
         }
 
         // 2.计算分页参数
@@ -104,12 +104,12 @@ public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IS
                 );
         // 4.解析出id
         if (results == null) {
-            return Result.ok(Collections.emptyList());
+            return Result.success(Collections.emptyList());
         }
         List<GeoResult<RedisGeoCommands.GeoLocation<String>>> list = results.getContent();
         if (list.size() <= from) {
             // 没有下一页了，结束
-            return Result.ok(Collections.emptyList());
+            return Result.success(Collections.emptyList());
         }
         // 4.1.截取 from ~ end的部分
         List<Long> ids = new ArrayList<>(list.size());
@@ -129,6 +129,6 @@ public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IS
             shop.setDistance(distanceMap.get(shop.getId().toString()).getValue());
         }
         // 6.返回
-        return Result.ok(shops);
+        return Result.success(shops);
     }
 }

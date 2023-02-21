@@ -204,7 +204,7 @@ public class VoucherOrderServiceImpl extends ServiceImpl<VoucherOrderMapper, Vou
             return Result.fail(r == 1 ? "库存不足" : "不能重复下单");
         }
         // 3.返回订单id
-        return Result.ok(orderId);
+        return Result.success(orderId);
     }
 
     /*@Override
@@ -235,7 +235,7 @@ public class VoucherOrderServiceImpl extends ServiceImpl<VoucherOrderMapper, Vou
         orderTasks.add(voucherOrder);
 
         // 3.返回订单id
-        return Result.ok(orderId);
+        return Result.success(orderId);
     }*/
     /*@Override
     public Result seckillVoucher(Long voucherId) {
@@ -308,7 +308,7 @@ public class VoucherOrderServiceImpl extends ServiceImpl<VoucherOrderMapper, Vou
             save(voucherOrder);
 
             // 7.返回订单id
-            return Result.ok(orderId);
+            return Result.success(orderId);
         } finally {
             // 释放锁
             redisLock.unlock();
@@ -361,7 +361,7 @@ public class VoucherOrderServiceImpl extends ServiceImpl<VoucherOrderMapper, Vou
             save(voucherOrder);
 
             // 7.返回订单id
-            return Result.ok(orderId);
+            return Result.success(orderId);
         } finally {
             // 释放锁
             redisLock.unlock();
@@ -405,7 +405,7 @@ public class VoucherOrderServiceImpl extends ServiceImpl<VoucherOrderMapper, Vou
             save(voucherOrder);
 
             // 7.返回订单id
-            return Result.ok(orderId);
+            return Result.success(orderId);
         }
     }*/
 }

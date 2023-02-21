@@ -60,7 +60,7 @@ public class FollowServiceImpl extends ServiceImpl<FollowMapper, Follow> impleme
                 stringRedisTemplate.opsForSet().remove(key, followUserId.toString());
             }
         }
-        return Result.ok();
+        return Result.success();
     }
 
     @Override
@@ -70,7 +70,7 @@ public class FollowServiceImpl extends ServiceImpl<FollowMapper, Follow> impleme
         // 2.查询是否关注 select count(*) from tb_follow where user_id = ? and follow_user_id = ?
         Integer count = query().eq("user_id", userId).eq("follow_user_id", followUserId).count();
         // 3.判断
-        return Result.ok(count > 0);
+        return Result.success(count > 0);
     }
 
     @Override
@@ -83,7 +83,7 @@ public class FollowServiceImpl extends ServiceImpl<FollowMapper, Follow> impleme
         Set<String> intersect = stringRedisTemplate.opsForSet().intersect(key, key2);
         if (intersect == null || intersect.isEmpty()) {
             // 无交集
-            return Result.ok(Collections.emptyList());
+            return Result.success(Collections.emptyList());
         }
         // 3.解析id集合
         List<Long> ids = intersect.stream().map(Long::valueOf).collect(Collectors.toList());
@@ -92,6 +92,6 @@ public class FollowServiceImpl extends ServiceImpl<FollowMapper, Follow> impleme
                 .stream()
                 .map(user -> BeanUtil.copyProperties(user, UserDTO.class))
                 .collect(Collectors.toList());
-        return Result.ok(users);
+        return Result.success(users);
     }
 }

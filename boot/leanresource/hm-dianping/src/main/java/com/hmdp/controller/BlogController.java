@@ -46,7 +46,7 @@ public class BlogController {
                 .eq("user_id", user.getId()).page(new Page<>(current, SystemConstants.MAX_PAGE_SIZE));
         // 获取当前页数据
         List<Blog> records = page.getRecords();
-        return Result.ok(records);
+        return Result.success(records);
     }
 
     @GetMapping("/hot")
@@ -73,7 +73,7 @@ public class BlogController {
                 .eq("user_id", id).page(new Page<>(current, SystemConstants.MAX_PAGE_SIZE));
         // 获取当前页数据
         List<Blog> records = page.getRecords();
-        return Result.ok(records);
+        return Result.success(records);
     }
 
     @GetMapping("/of/follow")

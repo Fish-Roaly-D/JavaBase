@@ -69,7 +69,7 @@ public class UserController {
     public Result me(){
         // 获取当前登录的用户并返回
         UserDTO user = UserHolder.getUser();
-        return Result.ok(user);
+        return Result.success(user);
     }
 
     @GetMapping("/info/{id}")
@@ -78,12 +78,12 @@ public class UserController {
         UserInfo info = userInfoService.getById(userId);
         if (info == null) {
             // 没有详情，应该是第一次查看详情
-            return Result.ok();
+            return Result.success();
         }
         info.setCreateTime(null);
         info.setUpdateTime(null);
         // 返回
-        return Result.ok(info);
+        return Result.success(info);
     }
 
     @GetMapping("/{id}")
@@ -91,11 +91,11 @@ public class UserController {
         // 查询详情
         User user = userService.getById(userId);
         if (user == null) {
-            return Result.ok();
+            return Result.success();
         }
         UserDTO userDTO = BeanUtil.copyProperties(user, UserDTO.class);
         // 返回
-        return Result.ok(userDTO);
+        return Result.success(userDTO);
     }
 
     @PostMapping("/sign")

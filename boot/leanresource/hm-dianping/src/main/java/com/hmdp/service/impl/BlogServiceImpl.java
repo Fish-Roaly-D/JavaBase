@@ -63,7 +63,7 @@ public class BlogServiceImpl extends ServiceImpl<BlogMapper, Blog> implements IB
             this.queryBlogUser(blog);
             this.isBlogLiked(blog);
         });
-        return Result.ok(records);
+        return Result.success(records);
     }
 
     @Override
@@ -77,7 +77,7 @@ public class BlogServiceImpl extends ServiceImpl<BlogMapper, Blog> implements IB
         queryBlogUser(blog);
         // 3.查询blog是否被点赞
         isBlogLiked(blog);
-        return Result.ok(blog);
+        return Result.success(blog);
     }
 
     private void isBlogLiked(Blog blog) {
@@ -118,7 +118,7 @@ public class BlogServiceImpl extends ServiceImpl<BlogMapper, Blog> implements IB
                 stringRedisTemplate.opsForZSet().remove(key, userId.toString());
             }
         }
-        return Result.ok();
+        return Result.success();
     }
 
     @Override
@@ -127,7 +127,7 @@ public class BlogServiceImpl extends ServiceImpl<BlogMapper, Blog> implements IB
         // 1.查询top5的点赞用户 zrange key 0 4
         Set<String> top5 = stringRedisTemplate.opsForZSet().range(key, 0, 4);
         if (top5 == null || top5.isEmpty()) {
-            return Result.ok(Collections.emptyList());
+            return Result.success(Collections.emptyList());
         }
         // 2.解析出其中的用户id
         List<Long> ids = top5.stream().map(Long::valueOf).collect(Collectors.toList());
@@ -139,7 +139,7 @@ public class BlogServiceImpl extends ServiceImpl<BlogMapper, Blog> implements IB
                 .map(user -> BeanUtil.copyProperties(user, UserDTO.class))
                 .collect(Collectors.toList());
         // 4.返回
-        return Result.ok(userDTOS);
+        return Result.success(userDTOS);
     }
 
     @Override
@@ -163,7 +163,7 @@ public class BlogServiceImpl extends ServiceImpl<BlogMapper, Blog> implements IB
             stringRedisTemplate.opsForZSet().add(key, blog.getId().toString(), System.currentTimeMillis());
         }
         // 5.返回id
-        return Result.ok(blog.getId());
+        return Result.success(blog.getId());
     }
 
     @Override
@@ -176,7 +176,7 @@ public class BlogServiceImpl extends ServiceImpl<BlogMapper, Blog> implements IB
                 .reverseRangeByScoreWithScores(key, 0, max, offset, 2);
         // 3.非空判断
         if (typedTuples == null || typedTuples.isEmpty()) {
-            return Result.ok();
+            return Result.success();
         }
         // 4.解析数据：blogId、minTime（时间戳）、offset
         List<Long> ids = new ArrayList<>(typedTuples.size());
@@ -212,7 +212,7 @@ public class BlogServiceImpl extends ServiceImpl<BlogMapper, Blog> implements IB
         r.setOffset(os);
         r.setMinTime(minTime);
 
-        return Result.ok(r);
+        return Result.success();
     }
 
     private void queryBlogUser(Blog blog) {
