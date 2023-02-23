@@ -108,3 +108,16 @@ public class UserController {
         return userService.signCount();
     }
 }
+    //
+    //docker run   -p 80:80   --name test-nginx   -v  /Users/rolyfish/home/nginx/docker-nginx/nginx.conf:/etc/nginx/nginx.conf  -v  /Users/rolyfish/home/nginx/docker-nginx/conf.d:/etc/nginx/conf.d  -v  /Users/rolyfish/home/nginx/docker-nginx/logs:/var/log/nginx  -v /Users/rolyfish/home/nginx/docker-nginx/html:/usr/share/nginx/html   -d nginx:stable-perl
+    //
+    //
+    //
+    //    docker run \
+    //    -p 80:8084 \
+    //    --name nginx-3 \
+    //    -v /Users/rolyfish/home/nginx/docker-nginx/nginx.conf:/etc/nginx/nginx.conf \
+    //    -v /Users/rolyfish/home/nginx/docker-nginx/conf.d:/etc/nginx/conf.d \
+    //    -v /Users/rolyfish/home/nginx/docker-nginx/logs:/var/log/nginx \
+    //    -v /Users/rolyfish/home/nginx/docker-nginx/html:/usr/share/nginx/html \
+    //    -d nginx:latest
