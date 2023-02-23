@@ -34,21 +34,21 @@ public class Result<T> {
 
     }
 
-    public static <T> Result success(String msg, Integer code, T data) {
+    public static <T> Result ok(String msg, Integer code, T data) {
 
         return Result.builder().code(code).message(msg).data(data).build();
 
     }
 
-    public static <T> Result success(String msg,  T data) {
+    public static <T> Result ok(String msg,  T data) {
 
-        return Result.success(msg,DEFAULT_SUCCESS_CODE,data);
+        return Result.ok(msg,DEFAULT_SUCCESS_CODE,data);
 
     }
 
-    public static <T> Result success(String msg) {
+    public static <T> Result ok(String msg) {
 
-        return Result.success(msg,DEFAULT_SUCCESS_CODE,null);
+        return Result.ok(msg,DEFAULT_SUCCESS_CODE,null);
 
     }
 

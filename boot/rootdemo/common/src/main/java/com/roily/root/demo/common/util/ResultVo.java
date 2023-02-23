@@ -63,7 +63,7 @@ public class ResultVo<T> implements Serializable {
      * @param <T>  范型
      * @return ResultVo<T>
      */
-    public static <T> ResultVo<T> success(String msg, T data) {
+    public static <T> ResultVo<T> ok(String msg, T data) {
         return info(DEFAULT_SUCCESS_CODE, msg, data);
     }
 
@@ -74,8 +74,8 @@ public class ResultVo<T> implements Serializable {
      * @param <T> 范型
      * @return ResultVo<T>
      */
-    public static <T> ResultVo<T> success(String msg) {
-        return success(msg, null);
+    public static <T> ResultVo<T> ok(String msg) {
+        return ok(msg, null);
     }
 
 
@@ -86,8 +86,8 @@ public class ResultVo<T> implements Serializable {
      * @param <T>  范型
      * @return ResultVo<T>
      */
-    public static <T> ResultVo<T> success(T data) {
-        return success(DEFAULT_SUCCESS_MSG, data);
+    public static <T> ResultVo<T> ok(T data) {
+        return ok(DEFAULT_SUCCESS_MSG, data);
     }
 
     /**
@@ -96,8 +96,8 @@ public class ResultVo<T> implements Serializable {
      * @param <T> 范型
      * @return ResultVo<T>
      */
-    public static <T> ResultVo<T> success() {
-        return success(DEFAULT_SUCCESS_MSG, null);
+    public static <T> ResultVo<T> ok() {
+        return ok(DEFAULT_SUCCESS_MSG, null);
     }
 
     /**
