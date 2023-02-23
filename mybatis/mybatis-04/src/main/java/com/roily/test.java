@@ -77,7 +77,7 @@ public class test<T> {
         pageResult.setList(all);
         pageResult.setCurrentPage(pageUtil.currentPage);
         pageResult.setLimit(pageUtil.limit);
-        Result result = Result.success("ok", pageResult);
+        Result result = Result.ok("ok", pageResult);
         System.out.println(result);
     }
 
@@ -93,7 +93,7 @@ public class test<T> {
 
         List<Department> all4 = mapper.getAll4(queryParam2);
 
-        Result ok = Result.success("ok", 123, all4);
+        Result ok = Result.ok("ok", 123, all4);
 
         System.out.println(ok);
     }
