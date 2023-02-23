@@ -40,7 +40,7 @@ public class ParamsValidTest {
         }
         log.info("参数:{}", validTestVo);
 
-        return ResultVo.success();
+        return ResultVo.ok();
     }
 
     @RequestMapping(value = "/valid", method = RequestMethod.POST)
@@ -49,7 +49,7 @@ public class ParamsValidTest {
         log.info("参数:{}", validTestVo);
         //log.info("参数校验结果:{}", bindingResult);
 
-        return ResultVo.success();
+        return ResultVo.ok();
     }
 
     @RequestMapping(value = "/validated", method = RequestMethod.POST)
@@ -57,7 +57,7 @@ public class ParamsValidTest {
 
         log.info("参数:{}", validTestVo);
 
-        return ResultVo.success();
+        return ResultVo.ok();
     }
 
     @RequestMapping(value = "/validated2", method = RequestMethod.POST)
@@ -65,7 +65,7 @@ public class ParamsValidTest {
 
         log.info("参数:{}", param01);
 
-        return ResultVo.success();
+        return ResultVo.ok();
 
     }
 
@@ -80,7 +80,7 @@ public class ParamsValidTest {
         log.info("参数:{}", param01);
         //log.info("参数校验结果:{}", bindingResult);
 
-        return ResultVo.success();
+        return ResultVo.ok();
     }
 
 }
