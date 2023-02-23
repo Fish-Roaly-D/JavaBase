@@ -107,7 +107,7 @@ public class FileInterfaceImpl implements FileInterface {
                 .setFileType(contentType)
                 .setSize(size.toString());
 
-        return ResultVo.success("文件上传成功", fileRespVo);
+        return ResultVo.ok("文件上传成功", fileRespVo);
     }
 
     @Override
@@ -121,6 +121,6 @@ public class FileInterfaceImpl implements FileInterface {
             }
         });
 
-        return ResultVo.success("文件上传成功", list);
+        return ResultVo.ok("文件上传成功", list);
     }
 }
