@@ -10,11 +10,11 @@ public class StaticCodeTest {
     private static StaticCodeTest staticCodeTest = new StaticCodeTest();
     private static int a;
     private static int b = 0;
-    //
-    //static {
-    //    a = 10;
-    //    b = 9;
-    //}
+
+    static {
+       a = 10;
+       b = 9;
+    }
 
     public StaticCodeTest() {
         a++;
@@ -24,5 +24,7 @@ public class StaticCodeTest {
     public static void main(String[] args) {
         System.out.println(a);
         System.out.println(b);
+        System.out.println(staticCodeTest.a);
+        System.out.println(staticCodeTest.b);
     }
 }
