@@ -12,7 +12,7 @@ public class MultiThreads {
         AtomicInteger no = new AtomicInteger();
         System.out.println(Thread.currentThread().getName());
         System.out.println("通过线程池创建线程");
-        ExecutorService executorService = new ThreadPoolExecutor(1, 1, 60L, TimeUnit.SECONDS,
+        ExecutorService executorService = new ThreadPoolExecutor(10, 10, 60L, TimeUnit.SECONDS,
                 new ArrayBlockingQueue<Runnable>(10), (r) -> {
             //线程名前缀
             String namePrefix = "线程：";

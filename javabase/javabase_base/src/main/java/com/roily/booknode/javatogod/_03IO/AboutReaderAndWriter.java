@@ -29,6 +29,10 @@ public class AboutReaderAndWriter {
     public void testReader() {
         final String s = AccessController.doPrivileged(
                 new GetPropertyAction("file.encoding"));
+
+
+
+
         System.out.println(s);
     }
 

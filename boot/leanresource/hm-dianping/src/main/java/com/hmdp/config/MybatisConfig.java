@@ -8,8 +8,12 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class MybatisConfig {
-    @Bean
-    public MybatisPlusInterceptor mybatisPlusInterceptor() {
+
+    /**
+     * mp 分页拦截器
+     * @return
+     */
+    public @Bean MybatisPlusInterceptor mybatisPlusInterceptor() {
         MybatisPlusInterceptor interceptor = new MybatisPlusInterceptor();
         interceptor.addInnerInterceptor(new PaginationInnerInterceptor(DbType.MYSQL));
         return interceptor;

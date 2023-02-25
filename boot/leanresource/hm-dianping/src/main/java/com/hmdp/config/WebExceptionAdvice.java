@@ -9,6 +9,11 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 @RestControllerAdvice
 public class WebExceptionAdvice {
 
+    /**
+     * 异常处理类，捕获运行时异常
+     * @param e
+     * @return
+     */
     @ExceptionHandler(RuntimeException.class)
     public Result handleRuntimeException(RuntimeException e) {
         log.error(e.toString(), e);
