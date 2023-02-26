@@ -9,8 +9,10 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
+import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Function;
 
@@ -23,7 +25,9 @@ public class CacheClient {
 
     private final StringRedisTemplate stringRedisTemplate;
 
-    private static final ExecutorService CACHE_REBUILD_EXECUTOR = Executors.newFixedThreadPool(10);
+    //private static final ExecutorService CACHE_REBUILD_EXECUTOR = Executors.newFixedThreadPool(10);
+    private static final ExecutorService CACHE_REBUILD_EXECUTOR = new ThreadPoolExecutor(10, 10, 60L, TimeUnit.SECONDS,
+            new ArrayBlockingQueue<>(10));
 
     public CacheClient(StringRedisTemplate stringRedisTemplate) {
         this.stringRedisTemplate = stringRedisTemplate;
@@ -42,8 +46,21 @@ public class CacheClient {
         stringRedisTemplate.opsForValue().set(key, JSONUtil.toJsonStr(redisData));
     }
 
-    public <R,ID> R queryWithPassThrough(
-            String keyPrefix, ID id, Class<R> type, Function<ID, R> dbFallback, Long time, TimeUnit unit){
+    /**
+     * 解决缓存穿透：缓存和数据库都没有命中
+     * - 设置null值
+     * - 布隆过滤器
+     * <p>
+     * 可以将key设置的复杂点避免被穿透
+     * <p>
+     * 发起查询
+     * - 缓存命中且不是null值 直接返回
+     * - 缓存命中是null值 直接返回null
+     * - 缓存未命中数据库命中 更新缓存并返回
+     * - 缓存未命中数据库未命中 更新缓存值为null值，直接返回
+     */
+    public <R, ID> R queryWithPassThrough(
+            String keyPrefix, ID id, Class<R> type, Function<ID, R> dbFallback, Long time, TimeUnit unit) {
         String key = keyPrefix + id;
         // 1.从redis查询商铺缓存
         String json = stringRedisTemplate.opsForValue().get(key);
@@ -72,6 +89,35 @@ public class CacheClient {
         return r;
     }
 
+    /**
+     * 解决缓存雪崩 ： 指的是同一段时间大量的key同时失效或redis宕机，导致大量请求打到数据库
+     * - 给不同的Key的TTL添加随机值   当前采用此方式
+     * - 利用Redis集群提高服务的可用性 哨兵模式
+     * - 给缓存业务添加降级限流策略  限流
+     * - 给业务添加多级缓存
+     * <p>
+     * <p>
+     * 缓存击穿：
+     * 缓存击穿问题也叫热点Key问题，就是一个被高并发访问并且缓存重建业务较复杂的key突然失效了，无数的请求访问会在瞬间给数据库带来巨大的冲击。
+     * 通过逻辑过期解决缓存击穿：设置逻辑过期时间，此数据会一直存在
+     * - 查询缓存命中 则直接返回
+     * - 查询缓存未命中 返回null(一定会命中)
+     * - 查询缓存命中 数据未过期 直接返回
+     * - 查询缓存命中 数据过期 获取锁 创建线程进行缓存重建
+     * - 查询缓存命中 数据过期 获取锁失败 返回旧数据
+     * <p>
+     * 数据不一致
+     *
+     * @param keyPrefix
+     * @param id
+     * @param type
+     * @param dbFallback
+     * @param time
+     * @param unit
+     * @param <R>
+     * @param <ID>
+     * @return
+     */
     public <R, ID> R queryWithLogicalExpire(
             String keyPrefix, ID id, Class<R> type, Function<ID, R> dbFallback, Long time, TimeUnit unit) {
         String key = keyPrefix + id;
@@ -87,7 +133,7 @@ public class CacheClient {
         R r = JSONUtil.toBean((JSONObject) redisData.getData(), type);
         LocalDateTime expireTime = redisData.getExpireTime();
         // 5.判断是否过期
-        if(expireTime.isAfter(LocalDateTime.now())) {
+        if (expireTime.isAfter(LocalDateTime.now())) {
             // 5.1.未过期，直接返回店铺信息
             return r;
         }
@@ -97,7 +143,7 @@ public class CacheClient {
         String lockKey = LOCK_SHOP_KEY + id;
         boolean isLock = tryLock(lockKey);
         // 6.2.判断是否获取锁成功
-        if (isLock){
+        if (isLock) {
             // 6.3.成功，开启独立线程，实现缓存重建
             CACHE_REBUILD_EXECUTOR.submit(() -> {
                 try {
@@ -107,7 +153,7 @@ public class CacheClient {
                     this.setWithLogicalExpire(key, newR, time, unit);
                 } catch (Exception e) {
                     throw new RuntimeException(e);
-                }finally {
+                } finally {
                     // 释放锁
                     unlock(lockKey);
                 }
@@ -117,6 +163,25 @@ public class CacheClient {
         return r;
     }
 
+    /**
+     * 缓存击穿：
+     * 缓存击穿问题也叫热点Key问题，就是一个被高并发访问并且缓存重建业务较复杂的key突然失效了，无数的请求访问会在瞬间给数据库带来巨大的冲击。
+     * 互斥锁解决缓存击穿：缓存不存在且构建较复杂
+     * - 缓存存在  直接返回
+     * - 缓存不存在 命中的是null值 直接返回
+     * - 缓存不存在 获取互斥锁成功 进行缓存重建
+     * - 缓存不存在 获取互斥锁失败 睡眠 重新请求
+     *
+     * @param keyPrefix
+     * @param id
+     * @param type
+     * @param dbFallback
+     * @param time
+     * @param unit
+     * @param <R>
+     * @param <ID>
+     * @return
+     */
     public <R, ID> R queryWithMutex(
             String keyPrefix, ID id, Class<R> type, Function<ID, R> dbFallback, Long time, TimeUnit unit) {
         String key = keyPrefix + id;
@@ -158,7 +223,7 @@ public class CacheClient {
             this.set(key, r, time, unit);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
-        }finally {
+        } finally {
             // 7.释放锁
             unlock(lockKey);
         }

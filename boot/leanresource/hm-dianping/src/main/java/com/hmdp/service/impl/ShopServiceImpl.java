@@ -79,7 +79,7 @@ public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IS
     @Override
     public Result queryShopByType(Integer typeId, Integer current, Double x, Double y) {
         // 1.判断是否需要根据坐标查询
-        if (x == null || y == null) {
+        if (x != null || y == null) {
             // 不需要坐标查询，按数据库查询
             Page<Shop> page = query()
                     .eq("type_id", typeId)
