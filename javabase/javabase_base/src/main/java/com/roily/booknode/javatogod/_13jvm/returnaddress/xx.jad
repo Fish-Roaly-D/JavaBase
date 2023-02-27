@@ -1,0 +1,133 @@
+Classfile /E:/programmeTools/idea/git/JavaBase/javabase/javabase_base/target/classes/com/roily/booknode/javatogod/_13jvm/returnaddress/ReturnAddress.class
+  Last modified 2023-2-27; size 1111 bytes     
+  MD5 checksum d2deef62d40fa959f7982fe0e89df1fb
+  Compiled from "ReturnAddress.java"           
+public class com.roily.booknode.javatogod._13jvm.returnaddress.ReturnAddress
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #11.#36        // java/lang/Object."<init>":()V
+   #2 = Methodref          #10.#37        // com/roily/booknode/javatogod/_13jvm/returnaddress/ReturnAddress.method2:()Ljava/lang/String;
+   #3 = Methodref          #10.#38        // com/roily/booknode/javatogod/_13jvm/returnaddress/ReturnAddress.method3:()Ljava/lang/StringBuilder;
+   #4 = String             #39            // 123
+   #5 = Class              #40            // java/lang/StringBuilder
+   #6 = Methodref          #5.#41         // java/lang/StringBuilder."<init>":(Ljava/lang/String;)V
+   #7 = Class              #42            // com/roily/booknode/javatogod/_13jvm/stack/StackFrame
+   #8 = Methodref          #7.#36         // com/roily/booknode/javatogod/_13jvm/stack/StackFrame."<init>":()V
+   #9 = Methodref          #7.#43         // com/roily/booknode/javatogod/_13jvm/stack/StackFrame.method1:()V
+  #10 = Class              #44            // com/roily/booknode/javatogod/_13jvm/returnaddress/ReturnAddress
+  #11 = Class              #45            // java/lang/Object
+  #12 = Utf8               <init>
+  #13 = Utf8               ()V
+  #14 = Utf8               Code
+  #15 = Utf8               LineNumberTable
+  #16 = Utf8               LocalVariableTable
+  #17 = Utf8               this
+  #18 = Utf8               Lcom/roily/booknode/javatogod/_13jvm/returnaddress/ReturnAddress;
+  #19 = Utf8               method1
+  #20 = Utf8               str1
+  #21 = Utf8               Ljava/lang/String;
+  #22 = Utf8               sb
+  #23 = Utf8               Ljava/lang/StringBuilder;
+  #24 = Utf8               method2
+  #25 = Utf8               ()Ljava/lang/String;
+  #26 = Utf8               method3
+  #27 = Utf8               ()Ljava/lang/StringBuilder;
+  #28 = Utf8               main
+  #29 = Utf8               ([Ljava/lang/String;)V
+  #30 = Utf8               args
+  #31 = Utf8               [Ljava/lang/String;
+  #32 = Utf8               stackFrame
+  #33 = Utf8               Lcom/roily/booknode/javatogod/_13jvm/stack/StackFrame;
+  #34 = Utf8               SourceFile
+  #35 = Utf8               ReturnAddress.java
+  #36 = NameAndType        #12:#13        // "<init>":()V
+  #37 = NameAndType        #24:#25        // method2:()Ljava/lang/String;
+  #38 = NameAndType        #26:#27        // method3:()Ljava/lang/StringBuilder;
+  #39 = Utf8               123
+  #40 = Utf8               java/lang/StringBuilder
+  #41 = NameAndType        #12:#46        // "<init>":(Ljava/lang/String;)V
+  #42 = Utf8               com/roily/booknode/javatogod/_13jvm/stack/StackFrame
+  #43 = NameAndType        #19:#13        // method1:()V
+  #44 = Utf8               com/roily/booknode/javatogod/_13jvm/returnaddress/ReturnAddress
+  #45 = Utf8               java/lang/Object
+  #46 = Utf8               (Ljava/lang/String;)V
+{
+  public com.roily.booknode.javatogod._13jvm.returnaddress.ReturnAddress();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 9: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lcom/roily/booknode/javatogod/_13jvm/returnaddress/ReturnAddress;
+
+  public void method1();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=3, args_size=1
+         0: aload_0
+         1: invokevirtual #2                  // Method method2:()Ljava/lang/String;
+         4: astore_1
+         5: aload_0
+         6: invokevirtual #3                  // Method method3:()Ljava/lang/StringBuilder;
+         9: astore_2
+        10: return
+      LineNumberTable:
+        line 12: 0
+        line 13: 5
+        line 14: 10
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      11     0  this   Lcom/roily/booknode/javatogod/_13jvm/returnaddress/ReturnAddress;
+            5       6     1  str1   Ljava/lang/String;
+           10       1     2    sb   Ljava/lang/StringBuilder;
+
+  public java.lang.String method2();
+    descriptor: ()Ljava/lang/String;
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: ldc           #4                  // String 123
+         2: areturn
+      LineNumberTable:
+        line 17: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       3     0  this   Lcom/roily/booknode/javatogod/_13jvm/returnaddress/ReturnAddress;
+
+  public java.lang.StringBuilder method3();
+    descriptor: ()Ljava/lang/StringBuilder;
+    flags: ACC_PUBLIC
+    Code:
+      stack=3, locals=1, args_size=1
+         0: new           #5                  // class java/lang/StringBuilder
+         3: dup
+         4: ldc           #4                  // String 123
+         6: invokespecial #6                  // Method java/lang/StringBuilder."<init>":(Ljava/lang/String;)V
+         9: areturn
+      LineNumberTable:
+        line 21: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+         7: astore_1
+         8: aload_1
+         9: invokevirtual #9                  // Method com/roily/booknode/javatogod/_13jvm/stack/StackFrame.method1:()V
+        12: return
+      LineNumberTable:
+        line 27: 0
+        line 28: 8
+        line 30: 12
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      13     0  args   [Ljava/lang/String;
+            8       5     1 stackFrame   Lcom/roily/booknode/javatogod/_13jvm/stack/StackFrame;
+}
+SourceFile: "ReturnAddress.java"

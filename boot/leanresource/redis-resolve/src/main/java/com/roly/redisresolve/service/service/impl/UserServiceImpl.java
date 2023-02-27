@@ -14,11 +14,8 @@ import javax.servlet.http.HttpSession;
 @Service
 public class UserServiceImpl implements UserService {
     @Override
-    public ResultVo<String> login(HttpSession session, String phone) {
-        final UserDto user = (UserDto) session.getAttribute(phone);
-        if (null != user) {
-            return ResultVo.ok(JSONUtil.toJsonStr(user));
-        }
-        return ResultVo.error("用户无权限");
+    public ResultVo<String> view(HttpSession session, String phone) {
+
+        return ResultVo.ok();
     }
 }

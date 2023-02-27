@@ -1,10 +1,12 @@
 package com.roly.redisresolve.common.config;
 
+import com.roly.redisresolve.common.interceptor.LoginInterceptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
 import org.springframework.core.env.Profiles;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import springfox.documentation.builders.RequestHandlerSelectors;
@@ -19,7 +21,7 @@ import java.util.ArrayList;
 
 /**
  * @version 1.0.0
- * @Description TODO
+ * @Description
  * @ClassName GloableConfig.java
  * @author: RoilyFish
  * @date: 2022/4/9 17:18
@@ -81,6 +83,27 @@ public class GloableConfig implements WebMvcConfigurer {
 
         registry.addResourceHandler("/webjars/springfox-swagger-ui/**")
                 .addResourceLocations("classpath:/META-INF/resources/webjars/springfox-swagger-ui/");
+
+        registry.addResourceHandler("swagger-ui.html")
+                .addResourceLocations("classpath:/META-INF/resources/");
+        registry.addResourceHandler("/webjars/**")
+                .addResourceLocations("classpath:/META-INF/resources/webjars/");
+    }
+
+
+    /**
+     * 添加拦截器
+     *
+     * @param registry
+     */
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor(new LoginInterceptor())
+                .addPathPatterns("/**")
+                .excludePathPatterns("/user/init/**")
+                .excludePathPatterns("/swagger-resources/**", "/webjars/**", "/v2/**", "/swagger-ui.html/**")
+                .order(0);
+        WebMvcConfigurer.super.addInterceptors(registry);
     }
 
 }

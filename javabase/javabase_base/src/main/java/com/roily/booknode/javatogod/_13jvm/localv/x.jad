@@ -1,0 +1,143 @@
+Classfile /E:/programmeTools/idea/git/JavaBase/javabase/javabase_base/src/main/java/com/roily/booknode/javatogod/_13jvm/localv/LocalVariables.class
+Last modified 2023-2-27; size 690 bytes
+        MD5 checksum a3f5bd3535429cd0697d096c9736474a
+        Compiled from "LocalVariables.java"
+public class com.roily.booknode.javatogod._13jvm.localv.LocalVariables
+        minor version: 0
+        major version: 52
+        flags: ACC_PUBLIC, ACC_SUPER
+        Constant pool:
+        #1 = Methodref          #6.#22         // java/lang/Object."<init>":()V                                          
+        #2 = Methodref          #3.#23         // com/roily/booknode/javatogod/_13jvm/localv/LocalVariables.method2:(II)I
+        #3 = Class              #24            // com/roily/booknode/javatogod/_13jvm/localv/LocalVariables              
+        #4 = Methodref          #3.#22         // com/roily/booknode/javatogod/_13jvm/localv/LocalVariables."<init>":()V 
+        #5 = Methodref          #3.#25         // com/roily/booknode/javatogod/_13jvm/localv/LocalVariables.method3:()V  
+        #6 = Class              #26            // java/lang/Object                                                       
+        #7 = Utf8               <init>                                                                                   
+   #8 = Utf8               ()V
+           #9 = Utf8               Code
+           #10 = Utf8               LineNumberTable
+           #11 = Utf8               methodStatic
+           #12 = Utf8               methodThis
+           #13 = Utf8               method1
+           #14 = Utf8               (I)I
+           #15 = Utf8               method2
+           #16 = Utf8               (II)I
+           #17 = Utf8               method3
+           #18 = Utf8               main
+           #19 = Utf8               ([Ljava/lang/String;)V
+           #20 = Utf8               SourceFile
+           #21 = Utf8               LocalVariables.java
+           #22 = NameAndType        #7:#8          // "<init>":()V
+           #23 = NameAndType        #15:#16        // method2:(II)I
+           #24 = Utf8               com/roily/booknode/javatogod/_13jvm/localv/LocalVariables
+           #25 = NameAndType        #17:#8         // method3:()V
+           #26 = Utf8               java/lang/Object
+           {
+public com.roily.booknode.javatogod._13jvm.localv.LocalVariables();
+        descriptor: ()V
+        flags: ACC_PUBLIC
+        Code:
+        stack=1, locals=1, args_size=1
+        0: aload_0
+        1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+        4: return
+        LineNumberTable:
+        line 7: 0
+
+static void methodStatic();
+        descriptor: ()V
+        flags: ACC_STATIC
+        Code:
+        stack=0, locals=0, args_size=0
+        0: return
+        LineNumberTable:
+        line 11: 0
+
+        void methodThis();
+        descriptor: ()V
+        flags:
+        Code:
+        stack=0, locals=1, args_size=1
+        0: return
+        LineNumberTable:
+        line 16: 0
+
+public int method1(int);
+        descriptor: (I)I
+        flags: ACC_PUBLIC
+        Code:
+        stack=3, locals=5, args_size=2
+        0: iconst_1
+        1: istore_2
+        2: iconst_2
+        3: istore_3
+        4: aload_0
+        5: iload_2
+        6: iload_3
+        7: invokevirtual #2                  // Method method2:(II)I
+        10: istore        4
+        12: iload         4
+        14: ireturn
+        LineNumberTable:
+        line 20: 0
+        line 21: 2
+        line 22: 4
+        line 23: 12
+
+public int method2(int, int);
+        descriptor: (II)I
+        flags: ACC_PUBLIC
+        Code:
+        stack=2, locals=4, args_size=3
+        0: iload_1
+        1: iload_2
+        2: iadd
+        3: istore_3
+        4: iload_3
+        5: ireturn
+        LineNumberTable:
+        line 49: 0
+        line 50: 4
+
+public void method3();
+        descriptor: ()V
+        flags: ACC_PUBLIC
+        Code:
+        stack=2, locals=3, args_size=1
+        0: iconst_1
+        1: istore_1
+        2: iconst_2
+        3: istore_2
+        4: iload_1
+        5: iconst_1
+        6: iadd
+        7: istore_2
+        8: iconst_2
+        9: istore_2
+        10: return
+        LineNumberTable:
+        line 55: 0
+        line 57: 2
+        line 58: 4
+        line 60: 8
+        line 61: 10
+
+public static void main(java.lang.String[]);
+        descriptor: ([Ljava/lang/String;)V
+        flags: ACC_PUBLIC, ACC_STATIC
+        Code:
+        stack=2, locals=2, args_size=1
+        0: new           #3                  // class com/roily/booknode/javatogod/_13jvm/localv/LocalVariables
+        3: dup
+        4: invokespecial #4                  // Method "<init>":()V
+        7: astore_1
+        8: aload_1
+        9: invokevirtual #5                  // Method method3:()V
+        12: return
+        LineNumberTable:
+        line 65: 0
+        line 66: 8
+        line 67: 12
+        }
+        SourceFile: "LocalVariables.java"

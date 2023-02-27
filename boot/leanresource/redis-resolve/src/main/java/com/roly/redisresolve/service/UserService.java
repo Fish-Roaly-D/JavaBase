@@ -9,5 +9,5 @@ import javax.servlet.http.HttpSession;
  * @author: rolyfish
  */
 public interface UserService {
-    ResultVo<String> login(HttpSession session, String phone);
+    ResultVo<String> view(HttpSession session, String phone);
 }
