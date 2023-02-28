@@ -1,9 +1,5 @@
 package com.roily.booknode.javatogod._11thread.threadLocal;
 
-import cn.hutool.db.Session;
-import lombok.Data;
-import org.junit.Assert;
-
 /**
  * @author: rolyfish
  */
