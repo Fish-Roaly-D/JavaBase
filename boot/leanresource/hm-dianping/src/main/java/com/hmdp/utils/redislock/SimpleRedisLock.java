@@ -1,4 +1,4 @@
-package com.hmdp.utils;
+package com.hmdp.utils.redislock;
 
 import cn.hutool.core.lang.UUID;
 import org.springframework.core.io.ClassPathResource;
