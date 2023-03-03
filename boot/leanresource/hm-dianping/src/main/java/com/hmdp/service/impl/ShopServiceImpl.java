@@ -1,6 +1,7 @@
 package com.hmdp.service.impl;
 
 import cn.hutool.core.util.StrUtil;
+import cn.hutool.json.JSONUtil;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.hmdp.dto.Result;
@@ -9,6 +10,8 @@ import com.hmdp.mapper.ShopMapper;
 import com.hmdp.service.IShopService;
 import com.hmdp.utils.CacheClient;
 import com.hmdp.utils.SystemConstants;
+import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.geo.Distance;
 import org.springframework.data.geo.GeoResult;
 import org.springframework.data.geo.GeoResults;
@@ -19,17 +22,23 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
-import static com.hmdp.utils.RedisConstants.*;
+import static com.hmdp.utils.RedisConstants.CACHE_NULL_TTL;
+import static com.hmdp.utils.RedisConstants.CACHE_SHOP_KEY;
+import static com.hmdp.utils.RedisConstants.CACHE_SHOP_TTL;
+import static com.hmdp.utils.RedisConstants.PASS_THROUGH_VALUE;
+import static com.hmdp.utils.RedisConstants.SHOP_GEO_KEY;
 
 /**
  * <p>
- *  服务实现类
+ * 服务实现类
  * </p>
- *
-
  */
 @Service
 public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IShopService {
@@ -41,11 +50,12 @@ public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IS
     @Resource
     private CacheClient cacheClient;
 
+
     @Override
     public Result queryById(Long id) {
         // 解决缓存穿透
-        Shop shop = cacheClient
-                .queryWithPassThrough(CACHE_SHOP_KEY, id, Shop.class, this::getById, CACHE_SHOP_TTL, TimeUnit.MINUTES);
+        //Shop shop = cacheClient
+        //        .queryWithPassThrough(CACHE_SHOP_KEY, id, Shop.class, this::getById, CACHE_SHOP_TTL, TimeUnit.MINUTES);
 
         // 互斥锁解决缓存击穿
         // Shop shop = cacheClient
@@ -55,12 +65,74 @@ public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IS
         // Shop shop = cacheClient
         //         .queryWithLogicalExpire(CACHE_SHOP_KEY, id, Shop.class, this::getById, 20L, TimeUnit.SECONDS);
 
+        // 自己实现的 解决缓存穿透
+        // final Shop shop = this.queryWithPassThrough(id);
+
+        // 互斥锁解决缓存击穿-单机
+        final Shop shop = this.queryWithMutexSingle(id);
         if (shop == null) {
             return Result.fail("店铺不存在！");
         }
         // 7.返回
         return Result.ok(shop);
     }
+
+    private Shop queryWithPassThrough(Long id) {
+        final String key = CACHE_SHOP_KEY + id;
+        // 1 通过id查询缓存
+        final String value = stringRedisTemplate.opsForValue().get(key);
+        // 2.1 缓存命中且不为 "NULL" 返回数据
+        if (StringUtils.isNotBlank(value) && !PASS_THROUGH_VALUE.equals(value)) {
+            return JSONUtil.toBean(value, Shop.class);
+        }
+        // 2.2 命中 为空"NULL" 返回null 不再查询数据库
+        if (PASS_THROUGH_VALUE.equals(value)) {
+            return null;
+        }
+        // 3 查询数据库
+        final Shop shop = this.getById(id);
+        // 3.1 数据库未命中，空值写入缓存 返回null
+        if (null == shop) {
+            stringRedisTemplate.opsForValue().set(key, PASS_THROUGH_VALUE, CACHE_NULL_TTL, TimeUnit.MINUTES);
+            return null;
+        }
+        // 3.2 数据库命中， 写入缓存 返回数据
+        stringRedisTemplate.opsForValue().set(key, JSONUtil.toJsonStr(shop), CACHE_NULL_TTL, TimeUnit.MINUTES);
+        return shop;
+    }
+
+    /**
+     * 互斥锁，阻塞线程，浪费资源
+     * @param id
+     * @return
+     */
+    private Shop queryWithMutexSingle(Long id) {
+        final String key = CACHE_SHOP_KEY + id;
+        // 1 通过id查询缓存
+        final String value = stringRedisTemplate.opsForValue().get(key);
+        // 2.1 缓存命中且不为 "NULL" 返回数据
+        if (StringUtils.isNotBlank(value) && !PASS_THROUGH_VALUE.equals(value)) {
+            return JSONUtil.toBean(value, Shop.class);
+        }
+        // 2.2 命中 为空"NULL" 返回null 不再查询数据库
+        if (PASS_THROUGH_VALUE.equals(value)) {
+            return null;
+        }
+        // 3 获取互斥锁
+        synchronized ((Thread.currentThread().getId()+"lock").intern()){
+            // 3 查询数据库
+            final Shop shop = this.getById(id);
+            // 3.1 数据库未命中，空值写入缓存 返回null
+            if (null == shop) {
+                stringRedisTemplate.opsForValue().set(key, PASS_THROUGH_VALUE, CACHE_NULL_TTL, TimeUnit.MINUTES);
+                return null;
+            }
+            // 3.2 数据库命中， 写入缓存 返回数据
+            stringRedisTemplate.opsForValue().set(key, JSONUtil.toJsonStr(shop), CACHE_NULL_TTL, TimeUnit.MINUTES);
+            return shop;
+        }
+    }
+
 
     @Override
     @Transactional
