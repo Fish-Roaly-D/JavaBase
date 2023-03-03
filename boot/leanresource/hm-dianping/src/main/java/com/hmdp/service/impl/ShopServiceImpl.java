@@ -10,6 +10,8 @@ import com.hmdp.mapper.ShopMapper;
 import com.hmdp.service.IShopService;
 import com.hmdp.utils.CacheClient;
 import com.hmdp.utils.SystemConstants;
+import com.hmdp.utils.redislock.ILock;
+import com.hmdp.utils.redislock.MyDefinedSimpleRedisLock;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.geo.Distance;
@@ -22,12 +24,14 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
+import java.time.temporal.ValueRange;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.locks.ReentrantLock;
 
 import static com.hmdp.utils.RedisConstants.CACHE_NULL_TTL;
 import static com.hmdp.utils.RedisConstants.CACHE_SHOP_KEY;
@@ -43,6 +47,7 @@ import static com.hmdp.utils.RedisConstants.SHOP_GEO_KEY;
 @Service
 public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IShopService {
 
+    ReentrantLock lock = new ReentrantLock();
 
     @Resource
     private StringRedisTemplate stringRedisTemplate;
@@ -65,11 +70,13 @@ public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IS
         // Shop shop = cacheClient
         //         .queryWithLogicalExpire(CACHE_SHOP_KEY, id, Shop.class, this::getById, 20L, TimeUnit.SECONDS);
 
+
+
         // 自己实现的 解决缓存穿透
         // final Shop shop = this.queryWithPassThrough(id);
 
-        // 互斥锁解决缓存击穿-单机
-        final Shop shop = this.queryWithMutexSingle(id);
+        // 互斥锁解决缓存击穿
+        final Shop shop = this.queryWithMutex(id);
         if (shop == null) {
             return Result.fail("店铺不存在！");
         }
@@ -103,10 +110,11 @@ public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IS
 
     /**
      * 互斥锁，阻塞线程，浪费资源
+     *
      * @param id
      * @return
      */
-    private Shop queryWithMutexSingle(Long id) {
+    private Shop queryWithMutex(Long id) {
         final String key = CACHE_SHOP_KEY + id;
         // 1 通过id查询缓存
         final String value = stringRedisTemplate.opsForValue().get(key);
@@ -119,17 +127,30 @@ public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IS
             return null;
         }
         // 3 获取互斥锁
-        synchronized ((Thread.currentThread().getId()+"lock").intern()){
-            // 3 查询数据库
-            final Shop shop = this.getById(id);
-            // 3.1 数据库未命中，空值写入缓存 返回null
-            if (null == shop) {
-                stringRedisTemplate.opsForValue().set(key, PASS_THROUGH_VALUE, CACHE_NULL_TTL, TimeUnit.MINUTES);
-                return null;
+        final ILock redisLock = new MyDefinedSimpleRedisLock("shop:" + id, stringRedisTemplate);
+        try {
+            final boolean b = redisLock.tryLock(1800);
+            if (b) {
+                // 缓存重建
+                final Shop shop = this.getById(id);
+                // 3.1 数据库未命中，空值写入缓存 返回null
+                if (null == shop) {
+                    stringRedisTemplate.opsForValue().set(key, PASS_THROUGH_VALUE, CACHE_NULL_TTL, TimeUnit.MINUTES);
+                    return null;
+                }
+                stringRedisTemplate.opsForValue().set(key, JSONUtil.toJsonStr(shop), CACHE_NULL_TTL, TimeUnit.MINUTES);
+                return shop;
+            } else {
+                // 自旋重试
+                try {
+                    Thread.sleep(200);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+                return queryWithMutex(id);
             }
-            // 3.2 数据库命中， 写入缓存 返回数据
-            stringRedisTemplate.opsForValue().set(key, JSONUtil.toJsonStr(shop), CACHE_NULL_TTL, TimeUnit.MINUTES);
-            return shop;
+        } finally {
+            redisLock.unlock();
         }
     }
 

@@ -1,5 +1,7 @@
 package com.hmdp.utils.redislock;
 
+import java.util.concurrent.TimeUnit;
+
 public interface ILock {
 
     /**
