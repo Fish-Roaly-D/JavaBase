@@ -7,6 +7,10 @@ import java.time.LocalDateTime;
 import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
 
+/**
+ * 全局唯一id生成策略
+ * @author rolyfish
+ */
 @Component
 public class RedisIdWorker {
     /**

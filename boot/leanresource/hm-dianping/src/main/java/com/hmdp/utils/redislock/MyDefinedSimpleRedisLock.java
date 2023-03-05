@@ -10,8 +10,6 @@ import java.util.concurrent.TimeUnit;
  */
 public class MyDefinedSimpleRedisLock implements ILock {
 
-    private static final String KEY_PREV = "lock:";
-
     /**
      * 分布式锁的key名称
      */
@@ -25,7 +23,7 @@ public class MyDefinedSimpleRedisLock implements ILock {
     }
 
     public boolean tryLock(long timeoutSec, TimeUnit timeUnit) {
-        return Boolean.TRUE.equals(stringRedisTemplate.opsForValue().setIfAbsent(KEY_PREV + key, Thread.currentThread().getId() + "", timeoutSec, timeUnit));
+        return Boolean.TRUE.equals(stringRedisTemplate.opsForValue().setIfAbsent(key, Thread.currentThread().getId() + "", timeoutSec, timeUnit));
     }
 
     @Override
@@ -33,9 +31,12 @@ public class MyDefinedSimpleRedisLock implements ILock {
         return tryLock(timeoutSec, TimeUnit.SECONDS);
     }
 
+    /**
+     * 分布式锁id，这里简单固定，后面需要优化成唯一id
+     */
     @Override
     public void unlock() {
         // 释放锁
-        stringRedisTemplate.delete(KEY_PREV + key);
+        stringRedisTemplate.delete(key);
     }
 }

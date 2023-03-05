@@ -22,4 +22,6 @@ public class RedisConstants {
 
 
     public static final String PASS_THROUGH_VALUE = "NULL";
+
+    public static final String UNIQUE_ID_KEY_ORDER = "NULL";
 }

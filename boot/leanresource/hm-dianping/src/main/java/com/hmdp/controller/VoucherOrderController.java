@@ -22,7 +22,7 @@ import javax.annotation.Resource;
 @RequestMapping("/voucher-order")
 public class VoucherOrderController {
 
-    @Resource
+    @Resource(name = "voucherOrderServiceImpl2")
     private IVoucherOrderService voucherOrderService;
 
     @PostMapping("seckill/{id}")

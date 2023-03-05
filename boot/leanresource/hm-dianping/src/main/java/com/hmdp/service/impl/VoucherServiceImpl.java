@@ -7,7 +7,9 @@ import com.hmdp.entity.Voucher;
 import com.hmdp.mapper.VoucherMapper;
 import com.hmdp.service.ISeckillVoucherService;
 import com.hmdp.service.IVoucherService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -45,13 +47,32 @@ public class VoucherServiceImpl extends ServiceImpl<VoucherMapper, Voucher> impl
         // 保存优惠券
         save(voucher);
         // 保存秒杀信息
-        SeckillVoucher seckillVoucher = new SeckillVoucher();
-        seckillVoucher.setVoucherId(voucher.getId());
-        seckillVoucher.setStock(voucher.getStock());
-        seckillVoucher.setBeginTime(voucher.getBeginTime());
-        seckillVoucher.setEndTime(voucher.getEndTime());
+        final SeckillVoucher seckillVoucher = SeckillVoucher.builder()
+                .voucherId(voucher.getId())
+                .stock(voucher.getStock())
+                .beginTime(voucher.getBeginTime())
+                .endTime(voucher.getEndTime()).build();
         seckillVoucherService.save(seckillVoucher);
         // 保存秒杀库存到Redis中
         stringRedisTemplate.opsForValue().set(SECKILL_STOCK_KEY + voucher.getId(), voucher.getStock().toString());
+    }
+
+    @Override
+    @Transactional
+    public void saveVoucher(Voucher voucher) {
+        this.save(voucher);
+        // 秒杀券 添加到 skill_voucher表中
+        if (Integer.valueOf(1).equals(voucher.getType())) {
+            final SeckillVoucher seckillVoucher = SeckillVoucher.builder()
+                    .voucherId(voucher.getId())
+                    .stock(voucher.getStock())
+                    .createTime(voucher.getCreateTime())
+                    .beginTime(voucher.getBeginTime())
+                    .endTime(voucher.getEndTime())
+                    .updateTime(voucher.getUpdateTime()).build();
+            seckillVoucherService.save(seckillVoucher);
+            // 秒杀券 库存存入 redis
+            stringRedisTemplate.opsForValue().set(SECKILL_STOCK_KEY,(seckillVoucher.getStock()+"").intern());
+        }
     }
 }
