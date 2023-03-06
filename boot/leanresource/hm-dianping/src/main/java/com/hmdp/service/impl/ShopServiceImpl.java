@@ -176,17 +176,14 @@ public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IS
     public void initShop(Long... shopIds) {
         for (Long shopId : shopIds) {
             final String key = CACHE_SHOP_KEY + shopId;
-            threadPoolExecutor.submit(new Runnable() {
-                @Override
-                public void run() {
-                    // 2.2.2.1 查询数据库
-                    final Shop shop = getById(shopId);
-                    // 2.2.2.2 构建RedisData
-                    final RedisData redisData = new RedisData();
-                    redisData.setExpireTime(LocalDateTime.now().plusSeconds(CACHE_SHOP_TTL));
-                    redisData.setData(shop);
-                    stringRedisTemplate.opsForValue().set(key, JSONUtil.toJsonStr(redisData));
-                }
+            threadPoolExecutor.submit(() -> {
+                // 2.2.2.1 查询数据库
+                final Shop shop = getById(shopId);
+                // 2.2.2.2 构建RedisData
+                final RedisData redisData = new RedisData();
+                redisData.setExpireTime(LocalDateTime.now().plusSeconds(CACHE_SHOP_TTL));
+                redisData.setData(shop);
+                stringRedisTemplate.opsForValue().set(key, JSONUtil.toJsonStr(redisData));
             });
         }
     }
