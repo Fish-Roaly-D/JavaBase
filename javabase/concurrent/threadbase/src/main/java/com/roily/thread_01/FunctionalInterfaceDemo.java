@@ -1,12 +1,12 @@
 package com.roily.thread_01;
 
 /**
- * descripte:
+ * descripte: 函数式接口的简化过程
  *
  * @author: RoilyFish
  * @date: 2022/3/13
  */
-public class classTest {
+public class FunctionalInterfaceDemo {
 
     //内部类
     class Student2 implements Person {
@@ -77,8 +77,7 @@ interface Person2 {
     public void say(String str1,String str2);
 }
 
-class tt{
-
+class TestDemo{
 
     public static void main(String[] args) {
 

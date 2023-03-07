@@ -1,5 +1,10 @@
 package com.roily.thread_02;
 
+/**
+ * 线程终端
+ *
+ *  Thread.sleep(1000);被中断会出现中断异常
+ */
 public class InterruptDemo {
 
     public static void main(String[] args) {

@@ -12,7 +12,7 @@ import javax.annotation.Resource;
 /**
  * mvc配置类
  */
-@Configuration
+// @Configuration
 public class MvcConfig implements WebMvcConfigurer {
 
     @Resource

@@ -2,16 +2,14 @@ package com.roily;
 
 import org.junit.Test;
 
-import java.util.concurrent.atomic.AtomicInteger;
-
 /**
  * @version 1.0.0
- * @Description TODO
+ * @Description 局部变量没有线程安全问题，因为局部变量表在栈帧内，虚拟机栈是线程私有
  * @ClassName ThreadJUBUBIANLIANG.java
  * @author: RoilyFish
  * @date: 2022/5/3 19:52
  */
-public class ThreadJUBUBIANLIANG {
+public class ThreadLocalV {
 
     //方法参数为  传入参数的拷贝
     public void jubu(Integer value) {

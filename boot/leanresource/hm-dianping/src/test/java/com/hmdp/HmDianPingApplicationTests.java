@@ -15,8 +15,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
@@ -60,6 +64,7 @@ class HmDianPingApplicationTests {
         System.out.println("time = " + (end - begin));
     }
 
+
     @Test
     void testSaveShop() throws InterruptedException {
         Shop shop = shopService.getById(1L);
@@ -99,7 +104,7 @@ class HmDianPingApplicationTests {
         for (int i = 0; i < 1000000; i++) {
             j = i % 1000;
             values[j] = "user_" + i;
-            if(j == 999){
+            if (j == 999) {
                 // 发送到Redis
                 stringRedisTemplate.opsForHyperLogLog().add("hl2", values);
             }
@@ -108,4 +113,7 @@ class HmDianPingApplicationTests {
         Long count = stringRedisTemplate.opsForHyperLogLog().size("hl2");
         System.out.println("count = " + count);
     }
+
+
+
 }

@@ -11,7 +11,7 @@ spring:
   jackson:
     default-property-inclusion: non_null # JSON处理时忽略非空字段
   profiles:
-    active: mac
+    active: x86
 mybatis-plus:
   type-aliases-package: com.hmdp.entity # 别名扫描包
 logging:

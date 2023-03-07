@@ -5,12 +5,12 @@ import org.junit.Test;
 import java.util.concurrent.*;
 
 /**
- * descripte:
+ * descripte: 测试如何创建和启动线程线程
  *
  * @author: RoilyFish
  * @date: 2022/3/13
  */
-public class testStart {
+public class TestHowToCreate {
 
 
     /**

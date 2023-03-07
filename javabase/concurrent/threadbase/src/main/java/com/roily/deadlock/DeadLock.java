@@ -1,12 +1,12 @@
-package com.roily.newxxxx;
+package com.roily.deadlock;
 
 /**
- * descripte:
+ * descripte: 死锁
  *
  * @author: RoilyFish
  * @date: 2022/3/13
  */
-public class DeadLock2 {
+public class DeadLock {
 
 
     private static String resource_a = "A";

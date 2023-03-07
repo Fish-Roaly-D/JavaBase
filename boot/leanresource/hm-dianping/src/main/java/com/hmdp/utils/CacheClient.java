@@ -5,6 +5,7 @@ import cn.hutool.core.util.StrUtil;
 import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Component;
 
@@ -25,18 +26,31 @@ public class CacheClient {
 
     private final StringRedisTemplate stringRedisTemplate;
 
-    //private static final ExecutorService CACHE_REBUILD_EXECUTOR = Executors.newFixedThreadPool(10);
     private static final ExecutorService CACHE_REBUILD_EXECUTOR = new ThreadPoolExecutor(10, 10, 60L, TimeUnit.SECONDS,
             new ArrayBlockingQueue<>(10));
 
-    public CacheClient(StringRedisTemplate stringRedisTemplate) {
+    public CacheClient(@Autowired StringRedisTemplate stringRedisTemplate) {
         this.stringRedisTemplate = stringRedisTemplate;
     }
 
+    /**
+     * 往redis添加普通对象
+     * @param key    key值
+     * @param value  value值，Java对象转为Json字符串
+     * @param time   过期时间
+     * @param unit   时间单位
+     */
     public void set(String key, Object value, Long time, TimeUnit unit) {
         stringRedisTemplate.opsForValue().set(key, JSONUtil.toJsonStr(value), time, unit);
     }
 
+    /**
+     * 往redis添加逻辑过期对象
+     * @param key       key值
+     * @param value     value值，Java对象转为Json字符串
+     * @param time      过期时间
+     * @param unit      时间单位
+     */
     public void setWithLogicalExpire(String key, Object value, Long time, TimeUnit unit) {
         // 设置逻辑过期
         RedisData redisData = new RedisData();
@@ -58,9 +72,18 @@ public class CacheClient {
      * - 缓存命中是null值 直接返回null
      * - 缓存未命中数据库命中 更新缓存并返回
      * - 缓存未命中数据库未命中 更新缓存值为null值，直接返回
+     *
+     * @param keyPrefix  key前缀
+     * @param id         id
+     * @param type       返回数据类型
+     * @param dbFallback 函数式接口的实现，入参为ID，出参为R
+     * @param time       过期时间
+     * @param unit       日期单位
+     * @return           R
+     * @param <R>        返回类型
+     * @param <ID>       ID
      */
-    public <R, ID> R queryWithPassThrough(
-            String keyPrefix, ID id, Class<R> type, Function<ID, R> dbFallback, Long time, TimeUnit unit) {
+    public <R, ID> R queryWithPassThrough(String keyPrefix, ID id, Class<R> type, Function<ID, R> dbFallback, Long time, TimeUnit unit) {
         String key = keyPrefix + id;
         // 1.从redis查询商铺缓存
         String json = stringRedisTemplate.opsForValue().get(key);
@@ -107,19 +130,8 @@ public class CacheClient {
      * - 查询缓存命中 数据过期 获取锁失败 返回旧数据
      * <p>
      * 数据不一致
-     *
-     * @param keyPrefix
-     * @param id
-     * @param type
-     * @param dbFallback
-     * @param time
-     * @param unit
-     * @param <R>
-     * @param <ID>
-     * @return
      */
-    public <R, ID> R queryWithLogicalExpire(
-            String keyPrefix, ID id, Class<R> type, Function<ID, R> dbFallback, Long time, TimeUnit unit) {
+    public <R, ID> R queryWithLogicalExpire(String keyPrefix, ID id, Class<R> type, Function<ID, R> dbFallback, Long time, TimeUnit unit) {
         String key = keyPrefix + id;
         // 1.从redis查询商铺缓存
         String json = stringRedisTemplate.opsForValue().get(key);
@@ -171,16 +183,6 @@ public class CacheClient {
      * - 缓存不存在 命中的是null值 直接返回
      * - 缓存不存在 获取互斥锁成功 进行缓存重建
      * - 缓存不存在 获取互斥锁失败 睡眠 重新请求
-     *
-     * @param keyPrefix
-     * @param id
-     * @param type
-     * @param dbFallback
-     * @param time
-     * @param unit
-     * @param <R>
-     * @param <ID>
-     * @return
      */
     public <R, ID> R queryWithMutex(
             String keyPrefix, ID id, Class<R> type, Function<ID, R> dbFallback, Long time, TimeUnit unit) {
@@ -231,11 +233,21 @@ public class CacheClient {
         return r;
     }
 
+    /**
+     * 获取锁
+     * 借助Redis的Setnx命令，如果key存在则返回0，key不存在则返回1。Spring对结果做了封装，映射成了true or false
+     * @param key 分布式锁的key
+     * @return
+     */
     private boolean tryLock(String key) {
         Boolean flag = stringRedisTemplate.opsForValue().setIfAbsent(key, "1", 10, TimeUnit.SECONDS);
         return BooleanUtil.isTrue(flag);
     }
 
+    /**
+     * 释放锁
+     * @param key
+     */
     private void unlock(String key) {
         stringRedisTemplate.delete(key);
     }
