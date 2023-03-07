@@ -13,17 +13,17 @@ import java.time.LocalDateTime;
 
 /**
  * <p>
- * 秒杀优惠券表，与优惠券是一对一关系
+ * 秒杀优惠券表，与优惠券是一对一关系,
  * </p>
  *
-
+ * @author rolyfish
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
 @Builder
-@TableName("tb_seckill_voucher")
-public class SeckillVoucher/* implements Serializable */{
+@TableName("tb_seckill_voucher_add")
+public class SeckillVoucherAdd implements Serializable {
 
     private static final long serialVersionUID = 1L;
 

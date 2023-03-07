@@ -3,6 +3,7 @@ package com.hmdp;
 import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.hmdp.entity.SeckillVoucher;
+import com.hmdp.entity.VoucherOrder;
 import com.hmdp.service.ISeckillVoucherService;
 import org.checkerframework.checker.units.qual.A;
 import org.junit.jupiter.api.Test;
@@ -11,6 +12,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.redis.core.StringRedisTemplate;
 
+import java.util.List;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
@@ -146,5 +148,15 @@ public class SimpleTest {
         return;
     }
 
+    @Test
+    public void testLambdaQuery() {
+
+        final List<SeckillVoucher> list = seckillVoucherService.list(new LambdaUpdateWrapper<>());
+
+        final Integer count = seckillVoucherService.lambdaQuery()
+                .eq(SeckillVoucher::getVoucherId, 1)
+                .eq(SeckillVoucher::getVoucherId, 1).count();
+
+    }
 }
 

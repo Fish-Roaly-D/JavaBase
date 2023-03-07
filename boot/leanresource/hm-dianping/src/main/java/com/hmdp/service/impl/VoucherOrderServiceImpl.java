@@ -206,6 +206,11 @@ public class VoucherOrderServiceImpl extends ServiceImpl<VoucherOrderMapper, Vou
         return Result.ok(orderId);
     }
 
+    @Override
+    public Result createVoucherOrder(Long voucherId) {
+        return null;
+    }
+
     /*@Override
     public Result seckillVoucher(Long voucherId) {
         Long userId = UserHolder.getUser().getId();
