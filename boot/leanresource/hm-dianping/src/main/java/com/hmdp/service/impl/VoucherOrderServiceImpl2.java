@@ -25,6 +25,7 @@ import com.hmdp.utils.redislock.ILock;
 import com.hmdp.utils.redislock.MyDefinedSimpleRedisLock;
 import lombok.extern.slf4j.Slf4j;
 import org.checkerframework.checker.units.qual.A;
+import org.redisson.Redisson;
 import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
 import org.springframework.aop.framework.AopContext;
@@ -51,9 +52,12 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.locks.ReentrantLock;
 
 import static com.hmdp.utils.RedisConstants.LOCK_SHOP_TTL;
 import static com.hmdp.utils.RedisConstants.LOCK_USER_KEY;
+import static com.hmdp.utils.RedisConstants.LOCK_USER_TIMEOUT;
 import static com.hmdp.utils.RedisConstants.LOCK_USER_TTL;
 import static com.hmdp.utils.RedisConstants.UNIQUE_ID_KEY_ORDER;
 
@@ -81,6 +85,9 @@ public class VoucherOrderServiceImpl2 extends ServiceImpl<VoucherOrderMapper, Vo
 
     @Autowired
     StringRedisTemplate redisTemplate;
+
+    @Autowired
+    RedissonClient redisson;
 
     @Override
     public Result seckillVoucher(Long voucherId) {
@@ -118,9 +125,7 @@ public class VoucherOrderServiceImpl2 extends ServiceImpl<VoucherOrderMapper, Vo
                 return Result.fail("库存不足");
             }
             // 4. 扣减库存
-            final boolean success = seckillVoucherService.update()
-                    .setSql("stock = stock-1")
-                    .eq("voucher_id", seckillVoucher.getVoucherId()).update();
+            final boolean success = seckillVoucherService.update().setSql("stock = stock-1").eq("voucher_id", seckillVoucher.getVoucherId()).update();
             if (!success) {
                 return Result.fail("库存不足");
             }
@@ -165,20 +170,36 @@ public class VoucherOrderServiceImpl2 extends ServiceImpl<VoucherOrderMapper, Vo
         }
         final UserDTO user = UserHolder.getUser();
         final Long userId = user.getId();
-        // 分布式锁  使用用户id作为key
-        final ILock redisLock = new MyDefinedSimpleRedisLock(LOCK_USER_KEY + userId, redisTemplate);
-        final boolean b = redisLock.tryLock(LOCK_USER_TTL);
-        if (!b) {
-            // 重试或者失败
-            //return optimisticLock(voucherId);
-            // 重复下单是不允许的可以返回失败
-            return Result.fail("不要重复下单!!");
+        RLock redisLock = null;
+        try {
+            // 分布式锁  使用用户id作为key
+            //final ILock redisLock = new MyDefinedSimpleRedisLock(LOCK_USER_KEY + userId, redisTemplate);
+            //这就是一个可重入锁
+            redisLock = redisson.getLock(LOCK_USER_KEY + userId);
+            final boolean b = redisLock.tryLock(LOCK_USER_TIMEOUT, LOCK_USER_TTL, TimeUnit.SECONDS);
+            if (!b) {
+                // 重试或者失败
+                //return optimisticLock(voucherId);
+                // 重复下单是不允许的可以返回失败
+                return Result.fail("不要重复下单!!");
+            }
+            try {
+                boolean isReentrant = redisLock.tryLock(LOCK_USER_TIMEOUT, LOCK_USER_TTL, TimeUnit.SECONDS);
+                log.info(isReentrant ? "可重入" : "不可重入");
+            }finally {
+                redisLock.unlock();
+            }
+            // 获取当前对象的代理对象,Spring会为我们生成代理对象来处理事务
+            final IVoucherOrderService voucherOrderService = (IVoucherOrderService) AopContext.currentProxy();
+            // this当前对象调用方法事务不会生效
+            //return this.createVoucherOrder(voucherId);
+            return voucherOrderService.createVoucherOrder(voucherId);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        } finally {
+            redisLock.unlock();
         }
-        // 获取当前对象的代理对象,Spring会为我们生成代理对象来处理事务
-        final IVoucherOrderService voucherOrderService = (IVoucherOrderService) AopContext.currentProxy();
-        // this当前对象调用方法事务不会生效
-        //return this.createVoucherOrder(voucherId);
-        return voucherOrderService.createVoucherOrder(voucherId);
+
         //synchronized (userId.toString().intern()) {
         //    // 获取当前对象的代理对象,Spring会为我们生成代理对象来处理事务
         //    final IVoucherOrderService voucherOrderService = (IVoucherOrderService) AopContext.currentProxy();
@@ -219,12 +240,9 @@ public class VoucherOrderServiceImpl2 extends ServiceImpl<VoucherOrderMapper, Vo
             return Result.fail("该用户" + userId + "已经下过单");
         }
         // 4. 扣减库存， ==扣减库存时判断库存是否被修改过==
-        final boolean success = seckillVoucherService.update()
-                .setSql("stock = stock-1")
-                .eq("voucher_id", voucherId)
+        final boolean success = seckillVoucherService.update().setSql("stock = stock-1").eq("voucher_id", voucherId)
                 //.eq("stock", seckillVoucher.getStock())
-                .gt("stock", 0)
-                .update();
+                .gt("stock", 0).update();
         // 如果更新失败则重试
         if (!success) {
             return optimisticLock(voucherId);
@@ -257,12 +275,9 @@ public class VoucherOrderServiceImpl2 extends ServiceImpl<VoucherOrderMapper, Vo
             return Result.fail("库存不足");
         }
         // 4. 扣减库存， ==扣减库存时判断库存是否被修改过==
-        final boolean success = seckillVoucherAddService.update()
-                .setSql("stock = stock-1")
-                .eq("voucher_id", seckillVoucherAdd.getVoucherId())
+        final boolean success = seckillVoucherAddService.update().setSql("stock = stock-1").eq("voucher_id", seckillVoucherAdd.getVoucherId())
                 //.eq("stock", seckillVoucher.getStock())
-                .gt("stock", 0)
-                .update();
+                .gt("stock", 0).update();
         // 如果更新失败则重试
         if (!success) {
             return optimisticLock(voucherId);
