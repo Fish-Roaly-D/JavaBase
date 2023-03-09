@@ -25,9 +25,15 @@ public class RedissonConfig {
     //    // 创建RedissonClient对象
     //    return Redisson.create(config);
     //}
-    @Bean(name = "redissonClient2")
-    public RedissonClient redissonClient2() throws IOException {
+    @Bean
+    public RedissonClient redissonClient() throws IOException {
         final Config config = Config.fromYAML(new File(new ClassPathResource("redisson.yml").getAbsolutePath()));
+        return Redisson.create(config);
+    }
+
+    @Bean(name = "redissonClient1")
+    public RedissonClient redissonClient1() throws IOException {
+        final Config config = Config.fromYAML(new File(new ClassPathResource("redisson2.yml").getAbsolutePath()));
         return Redisson.create(config);
     }
 

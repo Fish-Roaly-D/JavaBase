@@ -30,6 +30,7 @@ import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
 import org.springframework.aop.framework.AopContext;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.data.redis.connection.stream.Consumer;
 import org.springframework.data.redis.connection.stream.MapRecord;
@@ -87,6 +88,7 @@ public class VoucherOrderServiceImpl2 extends ServiceImpl<VoucherOrderMapper, Vo
     StringRedisTemplate redisTemplate;
 
     @Autowired
+    @Qualifier("redissonClient")
     RedissonClient redisson;
 
     @Override
@@ -186,7 +188,7 @@ public class VoucherOrderServiceImpl2 extends ServiceImpl<VoucherOrderMapper, Vo
             try {
                 boolean isReentrant = redisLock.tryLock(LOCK_USER_TIMEOUT, LOCK_USER_TTL, TimeUnit.SECONDS);
                 log.info(isReentrant ? "可重入" : "不可重入");
-            }finally {
+            } finally {
                 redisLock.unlock();
             }
             // 获取当前对象的代理对象,Spring会为我们生成代理对象来处理事务
