@@ -18,10 +18,10 @@ import java.util.List;
 @Slf4j
 @RestController
 @SpringBootApplication
-public class SpringbootDenoMultidatasourceApplication {
+public class SpringbootDemoMultidatasourceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringbootDenoMultidatasourceApplication.class, args);
+        SpringApplication.run(SpringbootDemoMultidatasourceApplication.class, args);
     }
 
     @Autowired

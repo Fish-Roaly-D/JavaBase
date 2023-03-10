@@ -11,7 +11,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <modules>
-        <module>springboot-deno-multidatasource</module>
+        <module>springboot-demo-multidatasource</module>
+        <module>springboot-demo-mybatisplus-multidatasource</module>
     </modules>
 
     <properties>
@@ -22,6 +23,7 @@
         <mysql.version>8.0.30</mysql.version>
         <postgresql.version>42.3.3</postgresql.version>
         <druid.version>1.2.11</druid.version>
+        <mybatis-plus.version>3.5.3.1</mybatis-plus.version>
 
         <junit.version>4.13.2</junit.version>
         <lombok.version>1.18.24</lombok.version>
@@ -78,6 +80,12 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>druid-spring-boot-starter</artifactId>
                 <version>${druid.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus.version}</version>
             </dependency>
 
             <dependency>
