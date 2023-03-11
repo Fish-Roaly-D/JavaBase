@@ -185,12 +185,6 @@ public class VoucherOrderServiceImpl2 extends ServiceImpl<VoucherOrderMapper, Vo
                 // 重复下单是不允许的可以返回失败
                 return Result.fail("不要重复下单!!");
             }
-            try {
-                boolean isReentrant = redisLock.tryLock(LOCK_USER_TIMEOUT, LOCK_USER_TTL, TimeUnit.SECONDS);
-                log.info(isReentrant ? "可重入" : "不可重入");
-            } finally {
-                redisLock.unlock();
-            }
             // 获取当前对象的代理对象,Spring会为我们生成代理对象来处理事务
             final IVoucherOrderService voucherOrderService = (IVoucherOrderService) AopContext.currentProxy();
             // this当前对象调用方法事务不会生效

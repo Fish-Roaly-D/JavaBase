@@ -24,4 +24,5 @@ public interface IUserService extends IService<User> {
 
     Result signCount();
 
+    Result createSecKillUserDate(Long num, String basephone);
 }

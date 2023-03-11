@@ -106,4 +106,17 @@ public class UserController {
     public Result signCount(){
         return userService.signCount();
     }
+
+
+    /**
+     * 发送手机验证码
+     */
+    @PostMapping("createseckilluserdate")
+    public Result createSecKillUserDate(@RequestParam("num") Long num,@RequestParam("basephone") String basephone) {
+        // 发送短信验证码并保存验证码
+        return userService.createSecKillUserDate(num, basephone);
+    }
+
+
+
 }

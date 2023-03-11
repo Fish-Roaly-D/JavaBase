@@ -14,14 +14,24 @@ import com.hmdp.service.IUserService;
 import com.hmdp.utils.RegexUtils;
 import com.hmdp.utils.UserHolder;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.io.IOUtils;
 import org.springframework.data.redis.connection.BitFieldSubCommands;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
+import java.awt.*;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.OutputStream;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -58,7 +68,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
         // 5.发送验证码
         log.debug("发送短信验证码成功，验证码：{}", code);
         // 返回ok
-        return Result.ok();
+        return Result.ok(code);
     }
 
     @Override
@@ -171,5 +181,37 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
         // 2.保存用户
         save(user);
         return user;
+    }
+
+    @Override
+    public Result createSecKillUserDate(Long num, String basephone) {
+        String phone = "";
+        final List<String> tockens = new ArrayList<>();
+        final Integer nums = Integer.valueOf(num + "");
+
+        for (int i = 0; i < nums; i++) {
+            int l = String.valueOf(i).length();
+            phone = basephone.substring(0, basephone.length() - l) + i;
+
+            // 发送验证码
+            final Result result = sendCode(phone, null);
+            // 验证码
+            final String code = (String) result.getData();
+            final LoginFormDTO loginFormDTO = new LoginFormDTO();
+            loginFormDTO.setCode(code);
+            loginFormDTO.setPhone(phone);
+            loginFormDTO.setPassword("defaultpassword");
+            final Result login = login(loginFormDTO, null);
+            tockens.add((String) login.getData());
+        }
+        // 写入文件
+        String filePath = "/Users/rolyfish/Desktop/software/apache-jmeter-5.5/jmetertestfile/tockens.txt";
+        try (FileWriter fileWriter = new FileWriter(filePath, true)) {
+
+            IOUtils.writeLines(tockens, System.lineSeparator(), fileWriter);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        return null;
     }
 }
