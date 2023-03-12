@@ -19,35 +19,41 @@ import org.redisson.api.RedissonClient;
 import org.springframework.aop.framework.AopContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.data.redis.core.script.DefaultRedisScript;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.annotation.PostConstruct;
 import java.time.LocalDateTime;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.LinkedBlockingDeque;
+import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 import static com.hmdp.utils.RedisConstants.LOCK_USER_KEY;
 import static com.hmdp.utils.RedisConstants.LOCK_USER_TIMEOUT;
 import static com.hmdp.utils.RedisConstants.LOCK_USER_TTL;
+import static com.hmdp.utils.RedisConstants.SECKILL_ORDER_KEY;
+import static com.hmdp.utils.RedisConstants.SECKILL_STOCK_KEY;
 import static com.hmdp.utils.RedisConstants.UNIQUE_ID_KEY_ORDER;
 
 /**
  * <p>
- * 服务实现类
+ * 基于阻塞队列实现秒杀
  * </p>
  * @author rolyfish
  */
 @Slf4j
 @Service
-public class VoucherOrderServiceImpl2 extends ServiceImpl<VoucherOrderMapper, VoucherOrder> implements IVoucherOrderService {
+public class VoucherOrderServiceImpl3 extends ServiceImpl<VoucherOrderMapper, VoucherOrder> implements IVoucherOrderService {
 
-
-    @Override
-    public Result createVoucherOrder(VoucherOrder voucherId) {
-        return null;
-    }
 
     @Autowired
     IVoucherService voucherService;
@@ -68,15 +74,121 @@ public class VoucherOrderServiceImpl2 extends ServiceImpl<VoucherOrderMapper, Vo
     @Qualifier("redissonClient")
     RedissonClient redisson;
 
+    // 设置容量防止溢出
+    private final static BlockingQueue<VoucherOrder> ORDER_TASKS = new ArrayBlockingQueue<>(1024 * 1024);
+    // 线程池
+    private static final ExecutorService SECKILL_EXECUTOR_SERVICE = new ThreadPoolExecutor(10, 10, 60L, TimeUnit.SECONDS, new LinkedBlockingDeque<>(), r -> new Thread(r));
+
+    private IVoucherOrderService voucherOrderServiceProxy = null;
+
+    // 当类初始化之后执行此方法
+    @PostConstruct
+    private void init() {
+        SECKILL_EXECUTOR_SERVICE.submit(() -> {
+            // 从阻塞对列拿订单信息,并创建
+            while (true) {
+                final VoucherOrder voucherOrder = ORDER_TASKS.take();
+                handleVoucherOrder(voucherOrder);
+            }
+        });
+    }
+
+    /**
+     * 线程池中调用的此方法,获取不到代理对象,需要再主线程获取
+     *
+     */
+    private void handleVoucherOrder(VoucherOrder voucherOrder) {
+        // 1.查询优惠券信息
+        Long voucherId = voucherOrder.getVoucherId();
+        final SeckillVoucher seckillVoucher = seckillVoucherService.getById(voucherId);
+        // 2. 判断起始时间
+        if (seckillVoucher.getBeginTime().isAfter(LocalDateTime.now())) {
+            log.info("秒杀未开始");
+            return;
+        }
+        if (seckillVoucher.getEndTime().isBefore(LocalDateTime.now())) {
+            log.info("秒杀已经结束");
+            return;
+        }
+        // 3. 判断库存
+        if (seckillVoucher.getStock() <= 0) {
+            log.info("库存不足");
+            return;
+        }
+        RLock redisLock = null;
+        try {
+            redisLock = redisson.getLock(LOCK_USER_KEY + voucherOrder.getUserId());
+            final boolean b = redisLock.tryLock(LOCK_USER_TIMEOUT, LOCK_USER_TTL, TimeUnit.SECONDS);
+            if (!b) {
+                log.info("不要重复下单!!");
+                return;
+            }
+            voucherOrderServiceProxy.createVoucherOrder(voucherOrder);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        } finally {
+            assert redisLock != null;
+            redisLock.unlock();
+        }
+    }
+
+
     @Override
     public Result seckillVoucher(Long voucherId) {
 
         // 悲观锁
         //return pessimismLock(voucherId);
         // 乐观锁
-        return optimisticLock(voucherId);
+        //return optimisticLock(voucherId);
         // 分段锁
         //return splitLock(voucherId);
+
+        // lua脚本实现秒杀
+        return luaSeckillOrder(voucherId);
+    }
+
+    private static final DefaultRedisScript<Long> SECKILL_SCRIPT = new DefaultRedisScript<>();
+
+    static {
+        SECKILL_SCRIPT.setLocation(new ClassPathResource("lua/seckill.lua"));
+        SECKILL_SCRIPT.setResultType(Long.class);
+    }
+
+    /**
+     * lua脚本实现秒杀,redis单线程
+     * - 初始化 lua脚本
+     * - 执行lua脚本
+     *
+     */
+    private Result luaSeckillOrder(Long voucherId) {
+        UserDTO user = UserHolder.getUser();
+        final Long result = redisTemplate.execute(SECKILL_SCRIPT,
+                Collections.emptyList(),
+                user.getId().toString(),
+                SECKILL_STOCK_KEY + voucherId,
+                SECKILL_ORDER_KEY + voucherId);
+        assert result != null;
+        final int resultI = result.intValue();
+        if (resultI != 0) {
+            return Result.fail(resultI == 1 ? "库存不足x" : "您已经下过单了" + user.getId());
+        }
+
+        // 创建订单信息放入阻塞队列
+        // 1.1 全军唯一订单ID
+        long orderId = redisIdWorker.nextId(UNIQUE_ID_KEY_ORDER);
+        // 1.2 用户ID
+        long userid = user.getId();
+        final VoucherOrder voucherOrder = new VoucherOrder();
+        voucherOrder.setId(orderId);
+        voucherOrder.setUserId(userid);
+        voucherOrder.setVoucherId(voucherId);
+        try {
+            ORDER_TASKS.put(voucherOrder);
+        } catch (InterruptedException e) {
+            log.info("线程终端异常");
+        }
+        voucherOrderServiceProxy = (IVoucherOrderService) AopContext.currentProxy();
+        return Result.ok("用户:" + user.getId() + "购买订单:" + voucherId + "成功");
     }
 
     /**
@@ -195,7 +307,7 @@ public class VoucherOrderServiceImpl2 extends ServiceImpl<VoucherOrderMapper, Vo
      * synchronized锁释放，但是事务没有提交
      * 解决：对整个方法加锁
      *
-     * @param voucherId 订单id
+     * @param voucherId 定单id
      * @return Result.class
      */
     @Transactional
@@ -231,6 +343,34 @@ public class VoucherOrderServiceImpl2 extends ServiceImpl<VoucherOrderMapper, Vo
         // 6.返回订单
         return Result.ok(voucherOrder);
 
+    }
+
+    @Transactional
+    @Override
+    public Result createVoucherOrder(VoucherOrder voucherOrder) {
+        final Long voucherId = voucherOrder.getVoucherId();
+        final Long userId = voucherOrder.getUserId();
+        // 判断此用户是否已
+        // 经下过单
+        final Map<String, Object> map = new HashMap<>();
+        map.put("voucher_id", voucherId);
+        map.put("user_id", userId);
+        final Integer count = this.query().allEq(map).count();
+        if (count > 0) {
+            return Result.fail("该用户" + userId + "已经下过单");
+        }
+        // 4. 扣减库存， ==扣减库存时判断库存是否被修改过==
+        final boolean success = seckillVoucherService.update().setSql("stock = stock-1").eq("voucher_id", voucherId)
+                //.eq("stock", seckillVoucher.getStock())
+                .gt("stock", 0).update();
+        // 如果更新失败则重试
+        if (!success) {
+            return optimisticLock(voucherId);
+        }
+        // 保存订单
+        this.save(voucherOrder);
+        // 6.返回订单
+        return Result.ok(voucherOrder);
     }
 
     @Transactional

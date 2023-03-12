@@ -9,6 +9,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  *  服务类
  * </p>
  *
+ * @author rolyfish
 
  */
 public interface IVoucherOrderService extends IService<VoucherOrder> {
@@ -16,4 +17,5 @@ public interface IVoucherOrderService extends IService<VoucherOrder> {
     Result seckillVoucher(Long voucherId);
 
     Result createVoucherOrder(Long voucherId);
+    Result createVoucherOrder(VoucherOrder voucherId);
 }

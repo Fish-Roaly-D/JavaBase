@@ -13,6 +13,7 @@ import com.hmdp.mapper.UserMapper;
 import com.hmdp.service.IUserService;
 import com.hmdp.utils.RegexUtils;
 import com.hmdp.utils.UserHolder;
+import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.IOUtils;
 import org.springframework.data.redis.connection.BitFieldSubCommands;
@@ -21,31 +22,33 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
-import java.awt.*;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.OutputStream;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
-import static com.hmdp.utils.RedisConstants.*;
+import static com.hmdp.utils.RedisConstants.LOGIN_CODE_KEY;
+import static com.hmdp.utils.RedisConstants.LOGIN_CODE_TTL;
+import static com.hmdp.utils.RedisConstants.LOGIN_USER_KEY;
+import static com.hmdp.utils.RedisConstants.LOGIN_USER_TTL;
+import static com.hmdp.utils.RedisConstants.USER_SIGN_KEY;
 import static com.hmdp.utils.SystemConstants.USER_NICK_NAME_PREFIX;
 
 /**
  * <p>
  * 服务实现类
  * </p>
+ * @author rolyfish
  */
 @Slf4j
+@Setter
 @Service
 public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IUserService {
 
@@ -185,14 +188,16 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
 
     @Override
     public Result createSecKillUserDate(Long num, String basephone) {
-        String phone = "";
+
+        final long basephoneLong = Long.parseLong(basephone);
+
+        String phone;
         final List<String> tockens = new ArrayList<>();
-        final Integer nums = Integer.valueOf(num + "");
+        final int nums = Integer.parseInt(num + "");
 
-        for (int i = 0; i < nums; i++) {
-            int l = String.valueOf(i).length();
-            phone = basephone.substring(0, basephone.length() - l) + i;
-
+        final HashSet<String> phones = new HashSet<>();
+        for (int i = 1; i <= nums; i++) {
+            phone = Long.toString(basephoneLong + i);
             // 发送验证码
             final Result result = sendCode(phone, null);
             // 验证码
@@ -200,9 +205,13 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
             final LoginFormDTO loginFormDTO = new LoginFormDTO();
             loginFormDTO.setCode(code);
             loginFormDTO.setPhone(phone);
+            final boolean add = phones.add(phone);
+            if (!add) {
+                log.info("重复号码：" + phone);
+            }
             loginFormDTO.setPassword("defaultpassword");
             final Result login = login(loginFormDTO, null);
-            tockens.add((String) login.getData());
+            tockens.add(login.getData() + ",");
         }
         // 写入文件
         String filePath = "/Users/rolyfish/Desktop/software/apache-jmeter-5.5/jmetertestfile/tockens.txt";
@@ -213,5 +222,22 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
             throw new RuntimeException(e);
         }
         return null;
+    }
+
+
+    public void check() {
+        String filePath = "/Users/rolyfish/Desktop/software/apache-jmeter-5.5/jmetertestfile/tockens.txt";
+        try (FileReader fileReader = new FileReader(filePath)) {
+            final List<String> tokenList = IOUtils.readLines(fileReader);
+            tokenList.forEach(token -> {
+                // 2.基于TOKEN获取redis中的用户
+                Map<Object, Object> userMap = stringRedisTemplate.opsForHash().entries(LOGIN_USER_KEY + token.substring(0, token.length() - 1));
+                // 5.将查询到的hash数据转为UserDTO
+                UserDTO userDTO = BeanUtil.fillBeanWithMap(userMap, new UserDTO(), false);
+                log.info(userDTO + "tocken:" + token);
+            });
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

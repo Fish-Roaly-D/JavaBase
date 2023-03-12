@@ -18,7 +18,6 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.script.DefaultRedisScript;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
 import java.time.Duration;
 import java.util.Collections;
@@ -32,6 +31,7 @@ import java.util.concurrent.Executors;
  * 服务实现类
  * </p>
  *
+ * @author rolyfish
 
  */
 @Slf4j
@@ -143,7 +143,8 @@ public class VoucherOrderServiceImpl extends ServiceImpl<VoucherOrderMapper, Vou
         }
     }*/
 
-    private void createVoucherOrder(VoucherOrder voucherOrder) {
+    @Override
+    public Result createVoucherOrder(VoucherOrder voucherOrder) {
         Long userId = voucherOrder.getUserId();
         Long voucherId = voucherOrder.getVoucherId();
         // 创建锁对象
@@ -154,7 +155,7 @@ public class VoucherOrderServiceImpl extends ServiceImpl<VoucherOrderMapper, Vou
         if (!isLock) {
             // 获取锁失败，直接返回失败或者重试
             log.error("不允许重复下单！");
-            return;
+            return null;
         }
 
         try {
@@ -164,7 +165,7 @@ public class VoucherOrderServiceImpl extends ServiceImpl<VoucherOrderMapper, Vou
             if (count > 0) {
                 // 用户已经购买过了
                 log.error("不允许重复下单！");
-                return;
+                return null;
             }
 
             // 6.扣减库存
@@ -175,7 +176,7 @@ public class VoucherOrderServiceImpl extends ServiceImpl<VoucherOrderMapper, Vou
             if (!success) {
                 // 扣减失败
                 log.error("库存不足！");
-                return;
+                return null;
             }
 
             // 7.创建订单
@@ -184,6 +185,7 @@ public class VoucherOrderServiceImpl extends ServiceImpl<VoucherOrderMapper, Vou
             // 释放锁
             redisLock.unlock();
         }
+        return null;
     }
 
     @Override
@@ -196,6 +198,7 @@ public class VoucherOrderServiceImpl extends ServiceImpl<VoucherOrderMapper, Vou
                 Collections.emptyList(),
                 voucherId.toString(), userId.toString(), String.valueOf(orderId)
         );
+        assert result != null;
         int r = result.intValue();
         // 2.判断结果是否为0
         if (r != 0) {

@@ -7,9 +7,7 @@ import com.hmdp.entity.Voucher;
 import com.hmdp.mapper.VoucherMapper;
 import com.hmdp.service.ISeckillVoucherService;
 import com.hmdp.service.IVoucherService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
-import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -20,10 +18,9 @@ import static com.hmdp.utils.RedisConstants.SECKILL_STOCK_KEY;
 
 /**
  * <p>
- *  服务实现类
+ * 服务实现类
  * </p>
- *
-
+ * @author rolyfish
  */
 @Service
 public class VoucherServiceImpl extends ServiceImpl<VoucherMapper, Voucher> implements IVoucherService {
@@ -72,7 +69,7 @@ public class VoucherServiceImpl extends ServiceImpl<VoucherMapper, Voucher> impl
                     .updateTime(voucher.getUpdateTime()).build();
             seckillVoucherService.save(seckillVoucher);
             // 秒杀券 库存存入 redis
-            stringRedisTemplate.opsForValue().set(SECKILL_STOCK_KEY,(seckillVoucher.getStock()+"").intern());
+            stringRedisTemplate.opsForValue().set(SECKILL_STOCK_KEY + voucher.getId(), (seckillVoucher.getStock() + "").intern());
         }
     }
 }
