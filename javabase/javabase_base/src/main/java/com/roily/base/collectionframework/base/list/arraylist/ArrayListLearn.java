@@ -106,7 +106,7 @@ public class ArrayListLearn {
 
     @Test
     public void StrASProperty02() throws NoSuchFieldException {
-        //
+
         StrASProperty strASProperty1 = new StrASProperty("123");
         StrASProperty strASProperty2 = new StrASProperty("123");
         Field str1 = strASProperty1.getClass().getDeclaredField("str");
@@ -163,7 +163,6 @@ public class ArrayListLearn {
         }
     }
 
-    //"return记住了引用sb，但是可以被修改。所以此例返回“123abc”"
     public int get03() {
         int i = 0;
         try {
@@ -181,5 +180,6 @@ public class ArrayListLearn {
 class StrASProperty {
 
     String str;
+    static String str2;
 
 }
