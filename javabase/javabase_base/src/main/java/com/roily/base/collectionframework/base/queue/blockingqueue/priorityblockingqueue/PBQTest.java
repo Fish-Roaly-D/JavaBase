@@ -2,7 +2,6 @@ package com.roily.base.collectionframework.base.queue.blockingqueue.prioritybloc
 
 import com.sun.jmx.remote.internal.ArrayQueue;
 import org.junit.Test;
-
 import java.util.PriorityQueue;
 import java.util.concurrent.PriorityBlockingQueue;
 import java.util.concurrent.TimeUnit;
@@ -20,6 +19,8 @@ public class PBQTest {
     @Test
     public void testConstructor(){
         ArrayQueue<Integer> aQueue = new ArrayQueue<>(10);
+
+
         for (int i = 10; i > 0; i--) {
             aQueue.add(i);
         }
