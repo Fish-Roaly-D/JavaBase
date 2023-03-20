@@ -34,4 +34,26 @@ public class LinkedListTest {
 
     }
 
+
+    static boolean method1(){
+        System.out.println(1);
+        return false;
+    }
+    static boolean method2(){
+        System.out.println(2);
+        return false;
+    }
+
+
+    public static void main(String[] args) {
+
+
+
+
+    }
+
+
+
+
+
 }
