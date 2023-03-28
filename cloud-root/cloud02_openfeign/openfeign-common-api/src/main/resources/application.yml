@@ -1,0 +1,4 @@
+feign:
+  provider:
+    url: localhost:8081
+    path: feign

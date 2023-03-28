@@ -18,6 +18,7 @@
 
     <modules>
         <module>cloud01_dubbo_zookeeper</module>
+        <module>cloud02_openfeign</module>
     </modules>
 
     <properties>
