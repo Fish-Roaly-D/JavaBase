@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
+ * @author rolyfish
  * @Date: ${YEAR}/${MONTH}/${DAY}/${TIME}
  * @Description:
  */

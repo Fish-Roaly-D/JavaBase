@@ -3,6 +3,9 @@ package com.roly.api;
 import org.springframework.cloud.openfeign.FallbackFactory;
 import org.springframework.stereotype.Component;
 
+/**
+ * @author rolyfish
+ */
 @Component
 public class ErrorMessage implements FallbackFactory<ProviderApi> {
     @Override
