@@ -5,7 +5,7 @@
 
     <parent>
         <artifactId>cloud-root</artifactId>
-        <groupId>com.example</groupId>
+        <groupId>com.roly</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
@@ -24,7 +24,7 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <openfeign.version>4.0.1</openfeign.version>
+        <openfeign.version>3.1.0</openfeign.version>
     </properties>
 
     <dependencyManagement>

@@ -5,8 +5,6 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class ErrorMessage implements FallbackFactory<ProviderApi> {
-
-
     @Override
     public ProviderApi create(Throwable cause) {
 

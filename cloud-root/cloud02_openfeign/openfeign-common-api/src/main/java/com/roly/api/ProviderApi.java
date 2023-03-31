@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @Date: 2023/03/28/17:00
  * @Description:
  */
-@FeignClient(name = "feignTest", url = "localhost:8081/feign")
+@FeignClient(name = "feignTest", url = "localhost:8081/feign",fallback = ErrorMessage.class)
 public interface ProviderApi {
 
     @RequestMapping(value = "/test1/{data}", method = RequestMethod.GET)
