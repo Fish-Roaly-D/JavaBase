@@ -31,10 +31,10 @@ public class RedissonConfig {
         return Redisson.create(config);
     }
 
-    @Bean(name = "redissonClient1")
-    public RedissonClient redissonClient1() throws IOException {
-        final Config config = Config.fromYAML(new File(new ClassPathResource("redisson2.yml").getAbsolutePath()));
-        return Redisson.create(config);
-    }
+    //@Bean(name = "redissonClient1")
+    //public RedissonClient redissonClient1() throws IOException {
+    //    final Config config = Config.fromYAML(new File(new ClassPathResource("redisson2.yml").getAbsolutePath()));
+    //    return Redisson.create(config);
+    //}
 
 }
