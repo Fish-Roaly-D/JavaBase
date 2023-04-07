@@ -209,7 +209,7 @@ public class VoucherOrderServiceImpl2 extends ServiceImpl<VoucherOrderMapper, Vo
         final Map<String, Object> map = new HashMap<>();
         map.put("voucher_id", voucherId);
         map.put("user_id", userId);
-        final Integer count = this.query().allEq(map).count();
+        final Long count = this.query().allEq(map).count();
         if (count > 0) {
             return Result.fail("该用户" + userId + "已经下过单");
         }
@@ -280,7 +280,7 @@ public class VoucherOrderServiceImpl2 extends ServiceImpl<VoucherOrderMapper, Vo
      * @return Result.class
      */
     @Transactional
-    Result splitLock(Long voucherId) {
+    public Result splitLock(Long voucherId) {
         //对于进来的请求进行散列
         int flag = (Thread.currentThread().getId() + "").hashCode() & 1;
         return flag > 0 ? optimisticLock(voucherId) : optimisticLockAdd(voucherId);

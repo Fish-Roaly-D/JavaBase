@@ -31,6 +31,10 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.script.DefaultRedisScript;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.annotation.PostConstruct;
 import java.time.Duration;
@@ -409,7 +413,7 @@ public class VoucherOrderServiceImpl3 extends ServiceImpl<VoucherOrderMapper, Vo
         final Map<String, Object> map = new HashMap<>();
         map.put("voucher_id", voucherId);
         map.put("user_id", userId);
-        final Integer count = this.query().allEq(map).count();
+        final Long count = this.query().allEq(map).count();
         if (count > 0) {
             return Result.fail("该用户" + userId + "已经下过单");
         }
@@ -443,7 +447,7 @@ public class VoucherOrderServiceImpl3 extends ServiceImpl<VoucherOrderMapper, Vo
         final Map<String, Object> map = new HashMap<>();
         map.put("voucher_id", voucherId);
         map.put("user_id", userId);
-        final Integer count = this.query().allEq(map).count();
+        final Long count = this.query().allEq(map).count();
         if (count > 0) {
             return Result.fail("该用户" + userId + "已经下过单");
         }
@@ -512,6 +516,11 @@ public class VoucherOrderServiceImpl3 extends ServiceImpl<VoucherOrderMapper, Vo
         //对于进来的请求进行散列
         int flag = (Thread.currentThread().getId() + "").hashCode() & 1;
         return flag > 0 ? optimisticLock(voucherId) : optimisticLockAdd(voucherId);
+    }
+
+    @RequestMapping(value = "test",method = RequestMethod.POST)
+    public String test(@RequestBody Map map){
+        return "test";
     }
 
 }

@@ -32,7 +32,6 @@ import java.util.concurrent.Executors;
  * </p>
  *
  * @author rolyfish
-
  */
 @Slf4j
 @Service
@@ -160,7 +159,7 @@ public class VoucherOrderServiceImpl extends ServiceImpl<VoucherOrderMapper, Vou
 
         try {
             // 5.1.查询订单
-            int count = query().eq("user_id", userId).eq("voucher_id", voucherId).count();
+            Long count = query().eq("user_id", userId).eq("voucher_id", voucherId).count();
             // 5.2.判断是否存在
             if (count > 0) {
                 // 用户已经购买过了
