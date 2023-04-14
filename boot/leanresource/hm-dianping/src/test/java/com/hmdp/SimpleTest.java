@@ -6,12 +6,22 @@ import com.hmdp.entity.SeckillVoucher;
 import com.hmdp.entity.Shop;
 import com.hmdp.service.ISeckillVoucherService;
 import com.hmdp.service.IShopService;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.geo.Circle;
+import org.springframework.data.geo.Distance;
+import org.springframework.data.geo.GeoResult;
+import org.springframework.data.geo.GeoResults;
+import org.springframework.data.geo.Metric;
+import org.springframework.data.geo.Metrics;
 import org.springframework.data.geo.Point;
 import org.springframework.data.redis.connection.RedisGeoCommands;
 import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.data.redis.domain.geo.GeoReference;
+import org.springframework.data.redis.domain.geo.GeoShape;
 
 import java.util.List;
 import java.util.Map;
@@ -32,6 +42,7 @@ import static com.hmdp.utils.RedisConstants.PASS_THROUGH_VALUE;
 /**
  * @author: rolyfish
  */
+@Slf4j
 @SpringBootTest
 public class SimpleTest {
 
@@ -174,5 +185,37 @@ public class SimpleTest {
             redisTemplate.opsForGeo().add("shop:geo:" + shopType, geoS);
         }
     }
+
+    @Test
+    public void testGeoSearch() {
+
+        // 按经纬度查询
+        final GeoResults<RedisGeoCommands.GeoLocation<String>> geoResults1 = redisTemplate.opsForGeo().geoRadius("shop:geo:1", new Circle(new Point(120.149993, 30.334229), new Distance(10, Metrics.KILOMETERS)), RedisGeoCommands.GeoRadiusCommandArgs.newGeoRadiusArgs().limit(10).sort(Sort.Direction.ASC).includeCoordinates().includeDistance());
+        for (GeoResult<RedisGeoCommands.GeoLocation<String>> geoResult : geoResults1) {
+            log.info(String.valueOf(geoResult));
+        }
+        log.info("\n");
+
+        // 按member查询
+        final GeoResults<RedisGeoCommands.GeoLocation<String>> geoResults2 = redisTemplate.opsForGeo().radius("shop:geo:1", "1", new Distance(10, Metrics.KILOMETERS), RedisGeoCommands.GeoRadiusCommandArgs.newGeoRadiusArgs().limit(10).sort(Sort.Direction.ASC).includeCoordinates().includeDistance());
+        for (GeoResult<RedisGeoCommands.GeoLocation<String>> geoResult : geoResults2) {
+            log.info(geoResult + "");
+        }
+        log.info("\n");
+
+        final GeoResults<RedisGeoCommands.GeoLocation<String>> search1 = redisTemplate.opsForGeo().search("shop:geo:1", GeoReference.fromMember("1"), new Distance(10, Metrics.KILOMETERS), RedisGeoCommands.GeoRadiusCommandArgs.newGeoRadiusArgs().limit(10).sort(Sort.Direction.ASC).includeCoordinates().includeDistance());
+        for (GeoResult<RedisGeoCommands.GeoLocation<String>> geoResult : search1) {
+            log.info(geoResult + "");
+        }
+        log.info("\n");
+
+
+        final GeoResults<RedisGeoCommands.GeoLocation<String>> search2 = redisTemplate.opsForGeo().search("shop:geo:1", GeoReference.fromCircle(new Circle(new Point(120.149993, 30.334229), new Distance(10, Metrics.KILOMETERS))), new Distance(10, Metrics.KILOMETERS), RedisGeoCommands.GeoRadiusCommandArgs.newGeoSearchArgs().limit(10).sort(Sort.Direction.ASC).includeCoordinates().includeDistance());
+        for (GeoResult<RedisGeoCommands.GeoLocation<String>> geoResult : search2) {
+            log.info(geoResult + "");
+        }
+        log.info("\n");
+    }
+
 }
 
