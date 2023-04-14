@@ -9,10 +9,9 @@ import javax.servlet.http.HttpSession;
 
 /**
  * <p>
- *  服务类
+ * 服务类
  * </p>
- *
-
+ * @author rolyfish
  */
 public interface IUserService extends IService<User> {
 
@@ -25,4 +24,9 @@ public interface IUserService extends IService<User> {
     Result signCount();
 
     Result createSecKillUserDate(Long num, String basephone);
+
+    /**
+     * 当月最大签到天数
+     */
+    Result signMaxCount();
 }

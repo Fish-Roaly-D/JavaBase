@@ -16,11 +16,11 @@ import com.hmdp.utils.UserHolder;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.IOUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.connection.BitFieldSubCommands;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -28,6 +28,7 @@ import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -45,6 +46,7 @@ import static com.hmdp.utils.SystemConstants.USER_NICK_NAME_PREFIX;
  * <p>
  * 服务实现类
  * </p>
+ *
  * @author rolyfish
  */
 @Slf4j
@@ -52,8 +54,8 @@ import static com.hmdp.utils.SystemConstants.USER_NICK_NAME_PREFIX;
 @Service
 public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IUserService {
 
-    @Resource
-    private StringRedisTemplate stringRedisTemplate;
+    @Autowired
+    private StringRedisTemplate redisTemplate;
 
     @Override
     public Result sendCode(String phone, HttpSession session) {
@@ -66,7 +68,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
         String code = RandomUtil.randomNumbers(6);
 
         // 4.保存验证码到 session
-        stringRedisTemplate.opsForValue().set(LOGIN_CODE_KEY + phone, code, LOGIN_CODE_TTL, TimeUnit.MINUTES);
+        redisTemplate.opsForValue().set(LOGIN_CODE_KEY + phone, code, LOGIN_CODE_TTL, TimeUnit.MINUTES);
 
         // 5.发送验证码
         log.debug("发送短信验证码成功，验证码：{}", code);
@@ -83,7 +85,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
             return Result.fail("手机号格式错误！");
         }
         // 3.从redis获取验证码并校验
-        String cacheCode = stringRedisTemplate.opsForValue().get(LOGIN_CODE_KEY + phone);
+        String cacheCode = redisTemplate.opsForValue().get(LOGIN_CODE_KEY + phone);
         String code = loginForm.getCode();
         if (cacheCode == null || !cacheCode.equals(code)) {
             // 不一致，报错
@@ -110,9 +112,9 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
                         .setFieldValueEditor((fieldName, fieldValue) -> fieldValue.toString()));
         // 7.3.存储
         String tokenKey = LOGIN_USER_KEY + token;
-        stringRedisTemplate.opsForHash().putAll(tokenKey, userMap);
+        redisTemplate.opsForHash().putAll(tokenKey, userMap);
         // 7.4.设置token有效期
-        stringRedisTemplate.expire(tokenKey, LOGIN_USER_TTL, TimeUnit.MINUTES);
+        redisTemplate.expire(tokenKey, LOGIN_USER_TTL, TimeUnit.MINUTES);
 
         // 8.返回token
         return Result.ok(token);
@@ -125,55 +127,120 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
         // 2.获取日期
         LocalDateTime now = LocalDateTime.now();
         // 3.拼接key
-        String keySuffix = now.format(DateTimeFormatter.ofPattern(":yyyyMM"));
+        String keySuffix = now.format(DateTimeFormatter.ofPattern(":yyyy:MM"));
         String key = USER_SIGN_KEY + userId + keySuffix;
         // 4.获取今天是本月的第几天
         int dayOfMonth = now.getDayOfMonth();
         // 5.写入Redis SETBIT key offset 1
-        stringRedisTemplate.opsForValue().setBit(key, dayOfMonth - 1, true);
+        redisTemplate.opsForValue().setBit(key, dayOfMonth - 1, true);
         return Result.ok();
     }
 
     @Override
     public Result signCount() {
-        // 1.获取当前登录用户
-        Long userId = UserHolder.getUser().getId();
-        // 2.获取日期
-        LocalDateTime now = LocalDateTime.now();
-        // 3.拼接key
-        String keySuffix = now.format(DateTimeFormatter.ofPattern(":yyyyMM"));
-        String key = USER_SIGN_KEY + userId + keySuffix;
-        // 4.获取今天是本月的第几天
-        int dayOfMonth = now.getDayOfMonth();
-        // 5.获取本月截止今天为止的所有的签到记录，返回的是一个十进制的数字 BITFIELD sign:5:202203 GET u14 0
-        List<Long> result = stringRedisTemplate.opsForValue().bitField(
-                key,
+        return signCount(LocalDateTime.now());
+    }
+
+    public Result signCount(LocalDateTime now) {
+        // 0 获取当前用户id
+        final Long userId = UserHolder.getUser().getId();
+        // 1 获取当前为本月第几天
+        //final Integer currentDay = now.getDayOfMonth();
+        final String format = now.format(DateTimeFormatter.ofPattern(":yyyy:MM"));
+        // 2 使用bitfield命令,获得本月所有签到记录(10进制返回) BITFIELD key [GET type offset]
+        String key = USER_SIGN_KEY + userId + format;
+        final List<Long> signs = redisTemplate.opsForValue().bitField(key,
                 BitFieldSubCommands.create()
-                        .get(BitFieldSubCommands.BitFieldType.unsigned(dayOfMonth)).valueAt(0)
-        );
-        if (result == null || result.isEmpty()) {
-            // 没有任何签到结果
+                        .get(BitFieldSubCommands.BitFieldType.unsigned(now.getDayOfMonth()))
+                        .valueAt(0));
+        // 3 结果为空返回0
+        if (signs == null || signs.size() == 0) {
             return Result.ok(0);
         }
-        Long num = result.get(0);
-        if (num == null || num == 0) {
+        // 4 得到结果遍历
+        Long sign = signs.get(0);
+        if (sign == null || sign == 0) {
             return Result.ok(0);
         }
-        // 6.循环遍历
         int count = 0;
         while (true) {
-            // 6.1.让这个数字与1做与运算，得到数字的最后一个bit位  // 判断这个bit位是否为0
-            if ((num & 1) == 0) {
-                // 如果为0，说明未签到，结束
+            if ((sign & 1) == 0) {
+                // 4.1 当天未签到 break 跳出循环 返回结果
                 break;
             } else {
-                // 如果不为0，说明已签到，计数器+1
+                // 4.2 当天签到 计数器加一
                 count++;
+                sign >>>= 1;
             }
-            // 把数字右移一位，抛弃最后一个bit位，继续下一个bit位
-            num >>>= 1;
         }
         return Result.ok(count);
+    }
+
+    //@Override
+    //public Result signCount() {
+    //    // 1.获取当前登录用户
+    //    Long userId = UserHolder.getUser().getId();
+    //    // 2.获取日期
+    //    LocalDateTime now = LocalDateTime.now();
+    //    // 3.拼接key
+    //    String keySuffix = now.format(DateTimeFormatter.ofPattern(":yyyyMM"));
+    //    String key = USER_SIGN_KEY + userId + keySuffix;
+    //    // 4.获取今天是本月的第几天
+    //    int dayOfMonth = now.getDayOfMonth();
+    //    // 5.获取本月截止今天为止的所有的签到记录，返回的是一个十进制的数字 BITFIELD sign:5:202203 GET u14 0
+    //    List<Long> result = stringRedisTemplate.opsForValue().bitField(
+    //            key,
+    //            BitFieldSubCommands.create()
+    //                    .get(BitFieldSubCommands.BitFieldType.unsigned(dayOfMonth)).valueAt(0)
+    //    );
+    //    if (result == null || result.isEmpty()) {
+    //        // 没有任何签到结果
+    //        return Result.ok(0);
+    //    }
+    //    Long num = result.get(0);
+    //    if (num == null || num == 0) {
+    //        return Result.ok(0);
+    //    }
+    //    // 6.循环遍历
+    //    int count = 0;
+    //    while (true) {
+    //        // 6.1.让这个数字与1做与运算，得到数字的最后一个bit位  // 判断这个bit位是否为0
+    //        if ((num & 1) == 0) {
+    //            // 如果为0，说明未签到，结束
+    //            break;
+    //        } else {
+    //            // 如果不为0，说明已签到，计数器+1
+    //            count++;
+    //        }
+    //        // 把数字右移一位，抛弃最后一个bit位，继续下一个bit位
+    //        num >>>= 1;
+    //    }
+    //    return Result.ok(count);
+    //}
+
+    @Override
+    public Result signMaxCount() {
+        LocalDateTime now = LocalDateTime.now();
+        List<Integer> signCountOfMouth = new ArrayList<>();
+        final int dayOfMonth = now.getDayOfMonth();
+        final LocalDateTime threshold = now.plusDays(-dayOfMonth + 1);
+        while (now.isAfter(threshold)) {
+            // 获取当日连续签到次数
+            final Result result = signCount(now);
+            int plusDays;
+            if (result == null || result.getData() == null || (Integer) result.getData() == 0) {
+                // 日期后移
+                plusDays = -1;
+                signCountOfMouth.add(0);
+            } else {
+                final Integer count = (Integer) result.getData();
+                plusDays = -count;
+                signCountOfMouth.add(count);
+            }
+            now = now.plusDays(plusDays);
+        }
+        final Integer max = Collections.max(signCountOfMouth);
+        return Result.ok(max);
     }
 
     private User createUserWithPhone(String phone) {
@@ -193,7 +260,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
 
         String phone;
         final List<String> tockens = new ArrayList<>();
-        final int nums = Integer.parseInt(num + "");
+        final int nums = Integer.parseInt(String.valueOf(num));
 
         final HashSet<String> phones = new HashSet<>();
         for (int i = 1; i <= nums; i++) {
@@ -231,7 +298,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
             final List<String> tokenList = IOUtils.readLines(fileReader);
             tokenList.forEach(token -> {
                 // 2.基于TOKEN获取redis中的用户
-                Map<Object, Object> userMap = stringRedisTemplate.opsForHash().entries(LOGIN_USER_KEY + token.substring(0, token.length() - 1));
+                Map<Object, Object> userMap = redisTemplate.opsForHash().entries(LOGIN_USER_KEY + token.substring(0, token.length() - 1));
                 // 5.将查询到的hash数据转为UserDTO
                 UserDTO userDTO = BeanUtil.fillBeanWithMap(userMap, new UserDTO(), false);
                 log.info(userDTO + "tocken:" + token);

@@ -6,7 +6,6 @@ import com.hmdp.dto.LoginFormDTO;
 import com.hmdp.dto.Result;
 import com.hmdp.dto.UserDTO;
 import com.hmdp.entity.User;
-import com.hmdp.entity.UserInfo;
 import com.hmdp.service.IUserInfoService;
 import com.hmdp.service.IUserService;
 import com.hmdp.service.impl.UserServiceImpl;
@@ -52,7 +51,7 @@ public class UserController {
     @PostMapping("check")
     public Result check() {
         final UserServiceImpl userServiceImpl = new UserServiceImpl();
-        userServiceImpl.setStringRedisTemplate(redisTemplate);
+        userServiceImpl.setRedisTemplate(redisTemplate);
         userServiceImpl.check();
         return null;
     }
@@ -98,12 +97,11 @@ public class UserController {
     /**
      * 查询用户详细信息，用户需要自己完善详细信息
      *
-     * @param userId
-     * @return
+     * @param userId 用户id
      */
     @GetMapping("/info/{id}")
     public Result info(@PathVariable("id") Long userId) {
-      return   userInfoService.infoDetailById(userId);
+        return userInfoService.infoDetailById(userId);
     }
 
     @GetMapping("/{id}")
@@ -126,6 +124,11 @@ public class UserController {
     @GetMapping("/sign/count")
     public Result signCount() {
         return userService.signCount();
+    }
+
+    @GetMapping("/sign/maxcount")
+    public Result signMaxCount() {
+        return userService.signMaxCount();
     }
 
 
