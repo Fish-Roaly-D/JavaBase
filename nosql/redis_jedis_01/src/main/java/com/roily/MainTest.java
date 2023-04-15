@@ -8,8 +8,11 @@ import redis.clients.jedis.JedisPool;
 
 import java.time.Duration;
 
-public class Main {
-    public static void main(String[] args) {
+/**
+ * @author rolyfish
+ */
+public class MainTest {
+    public static void main(String[] args) throws RuntimeException {
         final GenericObjectPoolConfig<Jedis> config = new GenericObjectPoolConfig<>();
         // 最大连接数
         config.setMaxTotal(10);
@@ -36,10 +39,12 @@ public class Main {
 
     @Test
     public void test() {
+
         final Jedis jedis = new Jedis("10.211.55.4", 6379);
         jedis.auth("123123");
         jedis.set("key", "value");
         System.out.println(jedis.get("key"));
+        jedis.close();
     }
 
     @Test

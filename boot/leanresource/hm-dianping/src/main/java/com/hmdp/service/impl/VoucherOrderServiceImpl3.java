@@ -31,7 +31,6 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.script.DefaultRedisScript;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -363,8 +362,7 @@ public class VoucherOrderServiceImpl3 extends ServiceImpl<VoucherOrderMapper, Vo
             if (!b) {
                 // 重试或者失败
                 //return optimisticLock(voucherId);
-                // 重复下单是不允许的可以返回失败
-                return Result.fail("不要重复下单!!");
+                return Result.fail("失败!!");
             }
             // 获取当前对象的代理对象,Spring会为我们生成代理对象来处理事务
             final IVoucherOrderService voucherOrderService = (IVoucherOrderService) AopContext.currentProxy();

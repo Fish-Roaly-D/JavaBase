@@ -3,6 +3,7 @@ package com.roily.springxmltest;
 import com.roily.config.RedisConfigration;
 import com.roily.util.User;
 import lombok.Data;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -20,7 +21,8 @@ import java.util.List;
  * @author: rolyfish
  */
 @Data
-public class TestredisTemplate {
+@Slf4j
+public class TestRedisTemplate {
 
     @Test
     public void test1() {
