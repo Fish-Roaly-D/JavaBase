@@ -8,6 +8,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
@@ -16,6 +17,7 @@ import java.time.LocalDateTime;
  * 秒杀优惠券表，与优惠券是一对一关系
  * </p>
  *
+ * @author rolyfish
 
  */
 @Data
@@ -25,6 +27,7 @@ import java.time.LocalDateTime;
 @TableName("tb_seckill_voucher")
 public class SeckillVoucher implements Serializable {
 
+    @Serial
     private static final long serialVersionUID = 1L;
 
     /**

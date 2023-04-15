@@ -4,15 +4,13 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Spliterator;
 import java.util.concurrent.CopyOnWriteArrayList;
-import java.util.stream.Collectors;
 
 /**
+ * @author rolyfish
  * @Date: 2022/08/09/11:20
  * @Description:
  */
@@ -32,7 +30,9 @@ public class AboutIterable {
         System.out.println("        spliterator   forEachRemaining");
 
         Spliterator<String> spliterator1 = list.spliterator();
-        while (spliterator1.tryAdvance(System.out::print)) ;
+        while (spliterator1.tryAdvance(System.out::print)) {
+
+        }
         System.out.println("         spliterator   tryAdvance");
     }
 
@@ -59,7 +59,7 @@ public class AboutIterable {
 
         Spliterator<String> spliterator = list.spliterator();
 
-        Spliterator<String> spliteratorTemp = null;
+        Spliterator<String> spliteratorTemp;
         while (null != (spliteratorTemp = spliterator.trySplit())) {
             spliteratorTemp.forEachRemaining(System.out::print);
             System.out.println();

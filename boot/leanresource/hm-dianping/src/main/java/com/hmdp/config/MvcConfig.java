@@ -11,8 +11,9 @@ import javax.annotation.Resource;
 
 /**
  * mvc配置类
+ * @author rolyfish
  */
-// @Configuration
+ @Configuration
 public class MvcConfig implements WebMvcConfigurer {
 
     @Resource
@@ -22,7 +23,7 @@ public class MvcConfig implements WebMvcConfigurer {
      * 配置拦截器，并设置等级，默认都是0
      * - 登录拦截器  拦截未登录不可访问某些APi的请求
      * - 刷新tocken有效时间
-     * @param registry
+     * @param registry 拦截器
      */
     @Override
     public void addInterceptors(InterceptorRegistry registry) {

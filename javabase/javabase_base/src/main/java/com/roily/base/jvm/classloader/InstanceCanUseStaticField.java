@@ -23,8 +23,8 @@ public class InstanceCanUseStaticField {
 
         System.out.println("使用示例名加属性名调用静态成员变量");
         InstanceCanUseStaticField instanceCanUseStaticField = new InstanceCanUseStaticField();
-        System.out.println("静态成员变量属于类，可以被所有实例共享" + (instanceCanUseStaticField.staticStr));
-        System.out.println("也可以修改" + (instanceCanUseStaticField.staticStr = "123"));
+        System.out.println("静态成员变量属于类，可以被所有实例共享" + (staticStr));
+        System.out.println("也可以修改" + (staticStr = "123"));
 
     }
 

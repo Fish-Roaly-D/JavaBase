@@ -9,8 +9,8 @@ import java.util.concurrent.Callable;
  * @date: 2022/3/13
  */
 public class MyCallable implements Callable<String> {
-
-    public String call() throws Exception {
+    @Override
+    public String call() {
         //业务
         for (int i = 0; i < 10; i++) {
             System.out.println(Thread.currentThread().getName()+"=>"+i);

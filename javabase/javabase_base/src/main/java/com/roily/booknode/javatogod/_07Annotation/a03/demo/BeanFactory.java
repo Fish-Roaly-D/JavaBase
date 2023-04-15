@@ -123,7 +123,7 @@ public class BeanFactory {
 
         for (Field field : fields) {
             //设置允许访问
-            if (!field.isAccessible()) {
+            if (!field.canAccess(bean)) {
                 field.setAccessible(true);
             }
             //获取RolyValue注解的属性

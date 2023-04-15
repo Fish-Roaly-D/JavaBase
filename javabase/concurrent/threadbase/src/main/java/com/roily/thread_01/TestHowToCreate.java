@@ -89,6 +89,7 @@ public class TestHowToCreate {
 
         FutureTask<String> futureTask = null;
         new Thread(futureTask = new FutureTask<String>(new Runnable() {
+            @Override
             public void run() {
                 System.out.println(1);
             }
@@ -110,6 +111,7 @@ public class TestHowToCreate {
 
         FutureTask<String> futureTask = null;
         futureTask = new FutureTask<String>(new Runnable() {
+            @Override
             public void run() {
                 System.out.println(1);
             }
@@ -124,6 +126,7 @@ public class TestHowToCreate {
 
         FutureTask<String> futureTask = null;
         new Thread(futureTask = new FutureTask<String>(new Callable<String>() {
+            @Override
             public String call() throws Exception {
                 return "result";
             }

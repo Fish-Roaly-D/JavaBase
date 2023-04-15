@@ -12,19 +12,17 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Reader;
 import java.io.StringReader;
-import java.text.DateFormat;
+import java.nio.charset.Charset;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Collection;
-import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
 import java.util.stream.Collectors;
 
 /**
@@ -151,7 +149,7 @@ public class Test01 {
             try (final FileInputStream fileInputStream = new FileInputStream(file2); final FileOutputStream fileOutputStream = new FileOutputStream(file1, true)) {
                 final List<String> list = IOUtils.readLines(fileInputStream, "utf-8");
 
-                IOUtils.writeLines(list, null, fileOutputStream);
+                IOUtils.writeLines(list, null, fileOutputStream, Charset.defaultCharset());
 
             }
         }

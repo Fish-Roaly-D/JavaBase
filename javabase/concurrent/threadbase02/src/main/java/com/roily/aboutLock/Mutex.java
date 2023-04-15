@@ -13,11 +13,13 @@ class Mutex implements Lock, java.io.Serializable {
     // 重写方法
     private static class Sync extends AbstractQueuedSynchronizer {
         // Reports whether in locked state
+        @Override
         protected boolean isHeldExclusively() {
             return getState() == 1;
         }
 
         // Acquires the lock if state is zero
+        @Override
         public boolean tryAcquire(int acquires) {
             assert acquires == 1; // Otherwise unused
             if (compareAndSetState(0, 1)) {
@@ -28,6 +30,7 @@ class Mutex implements Lock, java.io.Serializable {
         }
 
         // Releases the lock by setting state to zero
+        @Override
         protected boolean tryRelease(int releases) {
             assert releases == 1; // Otherwise unused
             if (getState() == 0) throw new IllegalMonitorStateException();
@@ -53,18 +56,19 @@ class Mutex implements Lock, java.io.Serializable {
     private final Sync sync = new Sync();
 
     //使用同步器的模板方法实现自己的同步语义
+    @Override
     public void lock() {
         sync.acquire(1);
     }
-
+    @Override
     public boolean tryLock() {
         return sync.tryAcquire(1);
     }
-
+    @Override
     public void unlock() {
         sync.release(1);
     }
-
+    @Override
     public Condition newCondition() {
         return sync.newCondition();
     }
@@ -76,11 +80,11 @@ class Mutex implements Lock, java.io.Serializable {
     public boolean hasQueuedThreads() {
         return sync.hasQueuedThreads();
     }
-
+    @Override
     public void lockInterruptibly() throws InterruptedException {
         sync.acquireInterruptibly(1);
     }
-
+    @Override
     public boolean tryLock(long timeout, TimeUnit unit)
             throws InterruptedException {
         return sync.tryAcquireNanos(1, unit.toNanos(timeout));

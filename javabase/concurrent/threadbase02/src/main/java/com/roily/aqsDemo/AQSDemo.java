@@ -73,8 +73,9 @@ class AQSStatus {
                 if (false) {
                     return;
                 }
-                if (a++ > 10)
+                if (a++ > 10) {
                     throw new Exception();
+                }
             }
         } finally {
             System.out.println("XXXXXX");

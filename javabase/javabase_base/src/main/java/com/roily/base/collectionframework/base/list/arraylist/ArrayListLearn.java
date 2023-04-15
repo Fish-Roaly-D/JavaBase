@@ -32,12 +32,12 @@ public class ArrayListLearn {
 
         System.out.println("=========oldArray==========");
         System.out.println("oldArray 长度" + oldArray.length);
-        System.out.println("oldArray 哈希值" + oldArray.hashCode());
+        System.out.println("oldArray 哈希值" + Arrays.hashCode(oldArray));
         System.out.println("oldArray[0] 哈希值" + oldArray[0].hashCode());
 
         System.out.println("=========newArray==========");
         System.out.println("newArray 长度" + newArray.length);
-        System.out.println("newArray 哈希值" + newArray.hashCode());
+        System.out.println("newArray 哈希值" + Arrays.hashCode(newArray));
         System.out.println("newArray[0] 哈希值" + newArray[0].hashCode());
         System.err.println("array[0]哈希值相同，是一个浅拷贝");
 
@@ -72,15 +72,15 @@ public class ArrayListLearn {
          */
         System.arraycopy(a, 2, a, 3, 3);
         //a[2]=99;
-        for (int i = 0; i < a.length; i++) {
-            System.out.print(a[i] + " ");
+        for (int j : a) {
+            System.out.print(j + " ");
         }
     }
 
     //ArrayList的size指的是元素个数，而不是数组长度
     @Test
     public void testSize() {
-        ArrayList<Object> list = new ArrayList<Object>(10);
+        ArrayList<Object> list = new ArrayList<>(10);
         System.out.println(list.size());
         //size是arrayList数组elementData中元素的个数，并不是数组定义长度
     }
@@ -106,7 +106,7 @@ public class ArrayListLearn {
 
     @Test
     public void StrASProperty02() throws NoSuchFieldException {
-
+        //
         StrASProperty strASProperty1 = new StrASProperty("123");
         StrASProperty strASProperty2 = new StrASProperty("123");
         Field str1 = strASProperty1.getClass().getDeclaredField("str");
@@ -140,7 +140,7 @@ public class ArrayListLearn {
         System.out.println(get02());
 
         System.out.println("对于基本数据类型只有值，return记住了值");
-        System.out.println(get03() + "");
+        System.out.println(get03());
     }
 
     //return记住了引用str，但是String不可变，即return记住的引用所指向的String不变。
@@ -163,6 +163,7 @@ public class ArrayListLearn {
         }
     }
 
+    //"return记住了引用sb，但是可以被修改。所以此例返回“123abc”"
     public int get03() {
         int i = 0;
         try {
@@ -180,6 +181,5 @@ public class ArrayListLearn {
 class StrASProperty {
 
     String str;
-    static String str2;
 
 }

@@ -34,8 +34,9 @@ public class ABQConcurrent {
         //会报NoSuchElementException异常，也就是first节点为空，在当前线程获取时，已经有节点修改了first节点为空
         for (int i = 0; i < 10; i++) {
             new Thread(()->{
-                while (list.size() > 0)
+                while (list.size() > 0) {
                     list.pop();
+                }
             }).start();
         }
 
@@ -55,8 +56,9 @@ public class ABQConcurrent {
         //是没有问题的
         for (int i = 0; i < 10; i++) {
             new Thread(()->{
-                while (list.size() > 0)
+                while (list.size() > 0) {
                     list.poll();
+                }
             }).start();
         }
 

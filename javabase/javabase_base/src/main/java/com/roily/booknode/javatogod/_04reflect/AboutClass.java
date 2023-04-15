@@ -13,6 +13,7 @@ import org.openjdk.jol.vm.VM;
 import java.io.FileNotFoundException;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Arrays;
 
@@ -70,8 +71,8 @@ public class AboutClass {
      * 切会触发类的初始化
      */
     @Test
-    public void testNewInstance1() throws InstantiationException, IllegalAccessException {
-        final ClassPerson classPerson = ClassPerson.class.newInstance();
+    public void testNewInstance1() throws InstantiationException, IllegalAccessException, NoSuchMethodException, InvocationTargetException {
+        final ClassPerson classPerson = ClassPerson.class.getDeclaredConstructor(ClassPerson.class).newInstance();
         System.out.println(classPerson);
     }
 
@@ -80,13 +81,13 @@ public class AboutClass {
      * 会报java.lang.IllegalAccessException异常
      */
     @Test
-    public void testNewInstance2() throws InstantiationException, IllegalAccessException {
-        final ClassPersonPrivate classPersonPrivate = ClassPersonPrivate.class.newInstance();
+    public void testNewInstance2() throws InstantiationException, IllegalAccessException, NoSuchMethodException, InvocationTargetException {
+        final ClassPersonPrivate classPersonPrivate = ClassPersonPrivate.class.getDeclaredConstructor(ClassPersonPrivate.class).newInstance();
         System.out.println(classPersonPrivate);
     }
     @Test
-    public void testNewInstance22() throws InstantiationException, IllegalAccessException {
-        final ClassPersonPrivate classPersonPrivate = ClassPersonPrivate.class.newInstance();
+    public void testNewInstance22() throws InstantiationException, IllegalAccessException, NoSuchMethodException, InvocationTargetException {
+        final ClassPersonPrivate classPersonPrivate = ClassPersonPrivate.class.getDeclaredConstructor(ClassPersonPrivate.class).newInstance();
         System.out.println(classPersonPrivate);
     }
 

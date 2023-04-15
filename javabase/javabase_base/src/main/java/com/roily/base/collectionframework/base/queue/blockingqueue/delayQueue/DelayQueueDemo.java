@@ -72,7 +72,7 @@ public class DelayQueueDemo {
     public static void removeOrder() {
         String hadPay = "线程T2：1";
         //线程T2：9
-        orderQueue.remove(new Order(hadPay,0l));
+        orderQueue.remove(new Order(hadPay, 0L));
 
         System.err.println(hadPay + "号订单已经完成支付、退出等待队列");
     }

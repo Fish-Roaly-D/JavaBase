@@ -1,10 +1,13 @@
 package com.hmdp.utils;
 
+/**
+ * @author rolyfish
+ */
 public class RedisConstants {
     public static final String LOGIN_CODE_KEY = "login:code:";
     public static final Long LOGIN_CODE_TTL = 2L;
     public static final String LOGIN_USER_KEY = "login:token:";
-    public static final Long LOGIN_USER_TTL = 36000L;
+    public static final Long LOGIN_USER_TTL = 36000000000000L;
 
     public static final Long CACHE_NULL_TTL = 2L;
 
@@ -12,9 +15,14 @@ public class RedisConstants {
     public static final String CACHE_SHOP_KEY = "cache:shop:";
 
     public static final String LOCK_SHOP_KEY = "lock:shop:";
+    public static final String LOCK_USER_KEY = "lock:user:";
+    public static final Long LOCK_USER_TTL = 300L;
+    public static final Long LOCK_USER_TIMEOUT = 300L;
     public static final Long LOCK_SHOP_TTL = 10L;
 
     public static final String SECKILL_STOCK_KEY = "seckill:stock:";
+    public static final String SECKILL_VOUCHER_KEY = "seckill:order:";
+    public static final String SECKILL_STREAMQUEUEORDER_KEY = "stream.orders";
     public static final String BLOG_LIKED_KEY = "blog:liked:";
     public static final String FEED_KEY = "feed:";
     public static final String SHOP_GEO_KEY = "shop:geo:";
@@ -23,5 +31,5 @@ public class RedisConstants {
 
     public static final String PASS_THROUGH_VALUE = "NULL";
 
-    public static final String UNIQUE_ID_KEY_ORDER = "NULL";
+    public static final String UNIQUE_ID_KEY_ORDER = "order";
 }

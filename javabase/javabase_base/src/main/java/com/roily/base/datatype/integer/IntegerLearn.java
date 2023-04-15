@@ -59,11 +59,11 @@ public class IntegerLearn {
         long l1 = 10;
         long l2 = 10;
         System.out.println(l1 == l2);
-        Long L1 = 1000l;
-        Long L2 = 1000l;
+        Long L1 = 1000L;
+        Long L2 = 1000L;
         System.out.println(L1 == L2);
-        Long L3 = 127l;
-        Long L4 = 127l;
+        Long L3 = 127L;
+        Long L4 = 127L;
         System.out.println(L3 == L4);
 
         /**

@@ -1,6 +1,7 @@
 package com.hmdp.service.impl;
 
 import cn.hutool.core.bean.BeanUtil;
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.hmdp.dto.Result;
@@ -12,6 +13,7 @@ import com.hmdp.service.IUserService;
 import com.hmdp.utils.UserHolder;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.util.Collections;
@@ -23,8 +25,7 @@ import java.util.stream.Collectors;
  * <p>
  * 服务实现类
  * </p>
- *
-
+ * @author rolyfish
  */
 @Service
 public class FollowServiceImpl extends ServiceImpl<FollowMapper, Follow> implements IFollowService {
@@ -35,6 +36,7 @@ public class FollowServiceImpl extends ServiceImpl<FollowMapper, Follow> impleme
     private IUserService userService;
 
     @Override
+    @Transactional
     public Result follow(Long followUserId, Boolean isFollow) {
         // 1.获取登录用户
         Long userId = UserHolder.getUser().getId();
@@ -67,7 +69,8 @@ public class FollowServiceImpl extends ServiceImpl<FollowMapper, Follow> impleme
         // 1.获取登录用户
         Long userId = UserHolder.getUser().getId();
         // 2.查询是否关注 select count(*) from tb_follow where user_id = ? and follow_user_id = ?
-        Integer count = query().eq("user_id", userId).eq("follow_user_id", followUserId).count().intValue();
+        final long count = count(new LambdaQueryWrapper<Follow>().eq(Follow::getFollowUserId, followUserId));
+        //Integer count = query().eq("user_id", userId).eq("follow_user_id", followUserId).count().intValue();
         // 3.判断
         return Result.ok(count > 0);
     }

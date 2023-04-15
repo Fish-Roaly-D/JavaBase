@@ -34,6 +34,7 @@ public class DeadLock {
             }
         });
         Thread threadB = new Thread(new Runnable() {
+            @Override
             public void run() {
                 synchronized (resource_b) {
                     System.out.println("get resource b");
