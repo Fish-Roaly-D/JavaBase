@@ -1,0 +1,75 @@
+server:
+  servlet:
+    context-path: /demotest
+  port: 8082
+
+  #??Jackson??????
+spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+  datasource:
+    name: myBlog
+    url: jdbc:mysql://localhost:3317/test_scrollquery?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8&characterSetResults=utf8&useSSL=false
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    druid:
+      initialSize: 1
+      minIdle: 1
+      maxActive: 20
+      maxWait: 60000
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: select 'x'
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      poolPreparedStatements: false
+      maxOpenPreparedStatements: 20
+      #??StatFilter
+      filter:
+        stat:
+          enabled: true
+          log-slow-sql: true
+          slow-sql-millis: 1000
+        #??Slf4jFilter
+        slf4j:
+          enabled: true
+          data-source-log-enabled: false
+          connection-log-enabled: false
+          statement-log-enabled: false
+          result-set-log-enabled: false
+        #??WallFilter
+        wall:
+          enabled: true
+          log-violation: true
+          throw-exception: false
+          config:
+            delete-where-none-check: true
+      #??Web
+      web-stat-filter:
+        enabled: true
+        exclusions: /druid/*,*.js,*.gif,*.jpg,*.bmp,*.png,*.css,*.ico
+        url-pattern: /*
+      stat-view-servlet:
+        enabled: true
+        login-username: admin
+        login-password: 123456
+#mybatisplus ????
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+  #    cache-enabled: true
+  global-config:
+    db-config:
+      #logic-delete-field: flag # ????????????(since 3.3.0,????????????2)
+      logic-delete-value: 1 # ??????(??? 1)
+      logic-not-delete-value: 0 # ??????(??? 0)
+  mapper-locations: mapper/*.xml
+  type-aliases-package: com.roly.demotest.entity
+  type-handlers-package: com.roly.demotest.typeHandler
+  type-enums-package: com.roly.demotest.enums
