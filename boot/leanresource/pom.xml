@@ -22,6 +22,8 @@
         <module>redis-demo</module>
         <module>hm-dianping</module>
         <module>redis-resolve</module>
+        <module>sentineldemo</module>
+<!--        <module>sentinel-demo</module>-->
     </modules>
 
     <!--   打包方式 -->
