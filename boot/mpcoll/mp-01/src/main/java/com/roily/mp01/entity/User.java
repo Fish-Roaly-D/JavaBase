@@ -8,17 +8,14 @@ import com.baomidou.mybatisplus.annotation.TableLogic;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.Version;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
-import java.io.Serializable;
-import java.time.LocalDateTime;
-import java.util.Date;
-
 import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
-import org.springframework.format.annotation.DateTimeFormat;
+import lombok.EqualsAndHashCode;
+
+import java.io.Serializable;
+import java.time.LocalDateTime;
 
 /**
  * <p>
@@ -28,6 +25,7 @@ import org.springframework.format.annotation.DateTimeFormat;
  * @author roilyFish
  * @since 2023-02-02
  */
+@EqualsAndHashCode(callSuper = true)
 @Data
 @TableName("user")
 @ApiModel(value = "User对象", description = "")
@@ -56,11 +54,21 @@ public class User extends Model<User> {
     private Integer version;
 
     @TableField(value = "create_time", fill = FieldFill.INSERT)
-    private Date createTime;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
+    private LocalDateTime createTime;
 
     @TableField(value = "update_time", fill = FieldFill.INSERT_UPDATE)
-    private Date updateTime;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
+    private LocalDateTime updateTime;
 
+    @TableField(exist = false)
+    private Integer userId;
+
+    @TableField(exist = false)
+    private String city;
+
+    @TableField(exist = false)
+    private String address;
 
     @Override
     public Serializable pkVal() {

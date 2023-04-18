@@ -1,26 +1,25 @@
 package com.roily.mp01;
 
+import cn.hutool.json.JSONUtil;
 import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
+import com.github.yulichang.wrapper.MPJLambdaWrapper;
+import com.roily.mp01.entity.Address;
 import com.roily.mp01.entity.User;
 import com.roily.mp01.service.UserService;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
-import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
 
 /**
  * @Date: 2022/10/26/14:19
@@ -28,6 +27,7 @@ import java.util.concurrent.TimeUnit;
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest
+@Slf4j
 public class TestClass {
 
     @Autowired
@@ -36,9 +36,9 @@ public class TestClass {
     @Test
     public void testLogicField() {
 
-        final User user = new User();
-        user.setName("yuyc");
-        userService.save(user);
+        //final User user = new User();
+        //user.setName("yuyc");
+        //userService.save(user);
 
         final List<User> list = userService.list();
         System.out.println(list);
@@ -50,6 +50,7 @@ public class TestClass {
 
         System.out.println(user);
     }
+
     @Test
     public void updateTime() {
 
@@ -89,7 +90,7 @@ public class TestClass {
 
         final ExecutorService service = Executors.newFixedThreadPool(10);
 
-        final Collection<Callable<Boolean>> threads = Arrays.asList(update1, update2, update3, update4, update5);
+        final List threads = Arrays.asList(update1, update2, update3, update4, update5);
 
         final List<Future<Boolean>> futures = service.invokeAll(threads);
 
@@ -104,5 +105,20 @@ public class TestClass {
         service.shutdown();
 
     }
+
+
+    /**
+     * mp不支持联表查询,mpj插件配合可支持联表查询
+     */
+    @Test
+    public void testMpJoiner() {
+        final List<User> list = userService.list(new MPJLambdaWrapper<User>()
+                .selectAll(User.class)//查询user表全部字段
+                .select(Address::getCity, Address::getAddress)
+                .leftJoin(Address.class, Address::getUserId, User::getId));
+        log.info("结果：{}", JSONUtil.toJsonStr(list));
+
+    }
+
 
 }
