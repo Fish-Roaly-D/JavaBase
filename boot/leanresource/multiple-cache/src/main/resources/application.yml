@@ -1,0 +1,41 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: itemservice
+  datasource:
+    # url: jdbc:mysql://10.211.55.5:3306/item?useSSL=false
+    url: jdbc:mysql://127.0.0.1:3306/item?useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    host: 10.211.55.4
+    port: 6380
+    password: 123123
+    lettuce:
+      pool:
+        max-active: 10
+        max-idle: 10
+        min-idle: 1
+        time-between-eviction-runs: 10s
+mybatis-plus:
+  type-aliases-package: com.heima.item.pojo
+  configuration:
+    map-underscore-to-camel-case: true
+  global-config:
+    db-config:
+      update-strategy: not_null
+      id-type: auto
+logging:
+  level:
+    com.heima: debug
+  pattern:
+    dateformat: HH:mm:ss:SSS
+
+canal:
+  # canal的集群名字，要与安装canal时设置的名称一致
+  destination: item
+  # server: 10.211.55.55:11111 # canal服务地址
+  server: 127.0.0.1:11111 # canal服务地址
+

@@ -23,7 +23,7 @@
         <module>hm-dianping</module>
         <module>redis-resolve</module>
         <module>sentineldemo</module>
-<!--        <module>sentinel-demo</module>-->
+        <module>multiple-cache</module>
     </modules>
 
     <!--   打包方式 -->
@@ -35,6 +35,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <mysql.version>8.0.28</mysql.version>
+        <mybatisplus.version>3.5.3.1</mybatisplus.version>
+
         <druid.version>1.2.8</druid.version>
         <lombok.version>1.18.24</lombok.version>
         <!-- 常用包 -->
@@ -120,6 +122,12 @@
                 <groupId>com.alibaba.fastjson2</groupId>
                 <artifactId>fastjson2</artifactId>
                 <version>${fastjson.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-boot-starter -->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatisplus.version}</version>
             </dependency>
 
         </dependencies>
