@@ -9,7 +9,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>muitple-cache</artifactId>
+    <artifactId>multiple-cache</artifactId>
     <version>1.0</version>
 
     <properties>

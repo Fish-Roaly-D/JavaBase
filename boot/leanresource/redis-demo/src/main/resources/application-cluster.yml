@@ -1,0 +1,17 @@
+application:
+  yml:
+logging:
+  level:
+    io.lettuce.core: debug
+  pattern:
+    dateformat: MM-dd HH:mm:ss:SSS
+spring:
+  redis:
+    cluster:
+      nodes:
+        - 10.211.55.4:7001
+        - 10.211.55.4:7002
+        - 10.211.55.4:7003
+        - 10.211.55.4:8001
+        - 10.211.55.4:8002
+        - 10.211.55.4:8003
