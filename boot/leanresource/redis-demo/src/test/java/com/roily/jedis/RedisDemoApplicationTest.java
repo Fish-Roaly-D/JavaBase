@@ -7,7 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.redis.core.RedisTemplate;
 
 @SpringBootTest
-class RedisDemoApplicationTestsx{
+class RedisDemoApplicationTest{
 
     @Autowired
     private RedisTemplate<String,Object> redisTemplate;

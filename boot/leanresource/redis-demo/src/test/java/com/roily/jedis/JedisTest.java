@@ -23,7 +23,7 @@ public class JedisTest {
     final static int HASH_MAX_LEN = 500/*3*/;
 
     @BeforeEach
-    private void init() {
+    public void init() {
         jedis = new Jedis("10.211.55.4", 6380);
         jedis.auth("123123");
     }
@@ -54,28 +54,28 @@ public class JedisTest {
                 // 判断key的类型
                 String type = jedis.type(key);
                 switch (type) {
-                    case "string":
+                    case "string" -> {
                         len = jedis.strlen(key);
                         maxLen = STR_MAX_LEN;
-                        break;
-                    case "hash":
+                    }
+                    case "hash" -> {
                         len = jedis.hlen(key);
                         maxLen = HASH_MAX_LEN;
-                        break;
-                    case "list":
+                    }
+                    case "list" -> {
                         len = jedis.llen(key);
                         maxLen = HASH_MAX_LEN;
-                        break;
-                    case "set":
+                    }
+                    case "set" -> {
                         len = jedis.scard(key);
                         maxLen = HASH_MAX_LEN;
-                        break;
-                    case "zset":
+                    }
+                    case "zset" -> {
                         len = jedis.zcard(key);
                         maxLen = HASH_MAX_LEN;
-                        break;
-                    default:
-                        break;
+                    }
+                    default -> {
+                    }
                 }
                 if (len >= maxLen) {
                     logger.info("Found big key : {}, type:{} , length or size: {}", key, type, len);
@@ -85,7 +85,7 @@ public class JedisTest {
     }
 
     @AfterEach
-    private void resolveJedis() {
+    public void resolveJedis() {
         jedis.close();
     }
 }

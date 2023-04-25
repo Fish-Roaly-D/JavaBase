@@ -11,6 +11,7 @@ import redis.clients.jedis.Connection;
 import redis.clients.jedis.HostAndPort;
 import redis.clients.jedis.JedisCluster;
 
+import java.time.Duration;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -32,7 +33,7 @@ public class JedisClusterTest {
         config.setMaxTotal(8);
         config.setMaxIdle(8);
         config.setMinIdle(0);
-        config.setMaxWaitMillis(1000);
+        config.setMaxWait(Duration.ofMillis(1000));
         HashSet<HostAndPort> nodes = new HashSet<>();
         nodes.add(new HostAndPort("10.211.55.4", 7001));
         nodes.add(new HostAndPort("10.211.55.4", 7002));
@@ -59,7 +60,7 @@ public class JedisClusterTest {
         // 串行的去执行mset的逻辑
         for (List<Map.Entry<String, String>> list : result.values()) {
             String[] arr = new String[list.size() * 2];
-            int j = 0;
+            int j;
             for (int i = 0; i < list.size(); i++) {
                 j = i << 2;
                 Map.Entry<String, String> e = list.get(i);

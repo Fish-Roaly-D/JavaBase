@@ -26,6 +26,7 @@ class BatchRedisTest {
         map.put("sex", "Female");
         redisTemplate.opsForValue().multiSet(map);
         List<String> strings = redisTemplate.opsForValue().multiGet(Arrays.asList("name", "age", "sex"));
+        assert strings != null;
         strings.forEach(System.out::println);
     }
 

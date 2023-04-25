@@ -19,7 +19,7 @@ public class JedisBigHashTest {
     final static int HASH_MAX_LEN = 500/*3*/;
 
     @BeforeEach
-    private void init() {
+    public void init() {
         jedis = new Jedis("10.211.55.4", 6380);
         jedis.auth("123123");
     }
@@ -77,7 +77,7 @@ public class JedisBigHashTest {
     }
 
     @AfterEach
-    void tearDown() {
+    public void tearDown() {
         if (jedis != null) {
             jedis.close();
         }
