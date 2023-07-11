@@ -27,6 +27,4 @@ Java基础小demo
 - - mongoDB
 - - redis-jedis 
 ```
-1
-2
-3
+
