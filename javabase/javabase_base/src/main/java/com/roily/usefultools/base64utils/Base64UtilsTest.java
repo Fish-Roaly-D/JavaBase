@@ -21,6 +21,10 @@ public class Base64UtilsTest {
         System.out.println("加密后：=》" + strEncode);
         String strDeCode = new String(Base64Utils.decode(strEncode.getBytes(StandardCharsets.UTF_8)));
         System.out.println("解密后：=》" + strDeCode);
+
+        String encodeToUrlSafeString = Base64Utils.encodeToUrlSafeString("http://tester.xxl-job.orsd.tech/jobinfo?jobGroup=56".getBytes(StandardCharsets.UTF_8));
+        byte[] decode = Base64Utils.decodeFromString(encodeToUrlSafeString);
+        System.out.println(new String(decode,StandardCharsets.UTF_8));
     }
 
 }

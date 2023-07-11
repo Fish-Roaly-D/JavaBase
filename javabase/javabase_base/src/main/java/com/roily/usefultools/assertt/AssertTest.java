@@ -59,9 +59,9 @@ public class AssertTest {
     @Test
     public void assertAssignable() {
         //通过
-        Assert.isAssignable(List.class, ArrayList.class);
+        Assert.isAssignable(List.class, ArrayList.class, "不可强转");
         //通过
-        Assert.isAssignable(Object.class, ArrayList.class);
+        Assert.isAssignable(Object.class, ArrayList.class,()->"不可强转");
         //可以
         Assert.isAssignable(Collection.class, List.class);
         //可以

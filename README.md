@@ -25,7 +25,7 @@ Java基础小demo
 - - SpringWeb ## 整合MVC
 - Nosql
 - - mongoDB
-- - redis-jedis
+- - redis-jedis 
 ```
 1
 2
